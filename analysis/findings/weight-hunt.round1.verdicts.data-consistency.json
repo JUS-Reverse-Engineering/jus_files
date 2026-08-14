@@ -1,0 +1,37 @@
+{
+  "subsystem": "weight-hunt",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Disasm at 0x02158F44-0x02158F88 (ov6) matches the cited evidence byte-for-byte. jpower.json's actual hitstun set is {0:131, 5:173, 10:3, 50:4} entries (matches the {0,5,10,50} reference). Applying duration/10*(tbl_val*2)+duration: duration=0→0; duration=5→5 (integer div truncates 5/10=0, so sub-10 durations are unaffected by k -- an architecturally sane 'no scaling below the unit' behavior, not a contradiction); duration=10→10+2k; duration=50→50+10k. For plausible small per-index table values (k=0..7), all outputs stay in the 0-120 frame range (max 120 at duration=50,k=7); k=8 already overflows that budget for duration=50 but not for duration=10, consistent with a modest weight-class multiplier table."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Disasm 0x0200D12C-0x0200D1A4 reproduces the cited evidence exactly (eor/and/rsb sign normalization, cmp/sub/lsr shift-count ladder, add pc,pc,r2,lsl#2 jump into adc/sublo steps). The entire window is register-only ALU plus a code jump table for the unrolled loop -- no ldr/ldrb from any per-character or per-index data table appears anywhere in the routine, confirming the 'generic, no character-specific data baked in' assertion."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Address arithmetic checks out exactly: 'add r1,sb,#0x100' then 'ldrsb r1,[r1,#0xe0]' = sb+0x1e0 (0x100+0xe0=0x1e0), matching the claimed object offset. The pc-relative literal at 0x02158F64 (pool addr 0x021590EC) resolves to 0x02172960 via query.py, confirming the described double-indirection ([[literal]] then +index*4) rather than a direct table pointer. Whether sb+0x1e0 is per-character-static (a weight candidate) vs per-hit dynamic is not resolvable from any static reference dataset available here (no chr_b/jpower field maps to this runtime object offset) -- the claim itself flags this correctly as unconfirmed, so the mechanical parts are UPHELD while the weight-candidacy question stays open as the claim states."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Cross-checked against the authoritative C# schema (src/JUS.Tool/Combat/Formats/BattleCharacterEntry.cs + Binary2BattleCharacter.cs): record offset +0x0 is read FIRST as `FormType` (byte; 0=Normal,1=Powered,2=Transformed), exactly matching chr_b.json's exported 'formType' field label. Getter disasm 0x0214E480-0x0214E4BC reproduces the evidence exactly, including both gating checks (work+6==0; (work[0xb]>>4)==3) and charIndex=work+7 with stride 0x3c=60, which equals BattleCharacterEntry.EntrySize (60 bytes) exactly. Edajima's own entry (roster index 67, oj_b_02, per docs/research/chr_b-Complete-Mapping.md) has formType=0 -- identical to 35/74 (47%) of the entire roster, i.e. completely unremarkable. This confirms the getter mechanics and resolves the claim's own open question (offset+0 IS 'formType'), while also refuting any hope that formType correlates with Edajima's known heaviness."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Disasm 0x02151B50-0x02151B98 shows the offset-0 getter (0x214e480) is actually called TWICE in this record-builder (0x2151b74 and 0x2151b88, not just once as the claim's address list shows), and the first call's return value is immediately used as an INDEX into a second pc-relative byte lookup table before being stored to r7+6 -- i.e. raw formType (0/1/2, plus a 3-branch for an unrelated work+1 path) is being remapped into a display/icon-selection byte. That is exactly the shape of icon/portrait selection for a roster/select-screen record, not a battle-physics input, strengthening (not just permitting) the claim's 'UI/category attribute' reading. Combined with claim 4/idx3's finding that Edajima's formType=0 is unremarkable, this is consistent data support for ruling this out as the weight field."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Disasm confirms the literal at 0x0214D5BC is exactly 0x0214BD80 -- the identical chr_b singleton pointer used by the claim-4 getter (which derefs +0x40 for the chr_b array; this helper derefs +0x60 for the flag words) -- and the one located call site (0x0215CE50-0x0215CE78) does compose its index from move-record bytes [r8+0xe]/[r8+0x43]/[r8+0x44], not a charIndex, exactly as claimed. However, docs/research/ARM9-Research-Guide.md and Passives-Reference.md document Edajima's actual 'hard to knock back' passive as driven by koma.bin's PassiveIndex byte (offset+7 of the 12-byte koma record) into a separate ~50-entry ARM9 passive table -- a data path this round's search space (chr_b-singleton xrefs, ov5/ov6 disasm) never touched. The claim's own hedge ('not confirmed per-character passives') is therefore consistent with the data: this singleton+0x60 bit table is verified real, but nothing here establishes it as the Edajima-passive/weight mechanism, and the documented actual location (koma.bin PassiveIndex) remains outside the examined search space."
+    }
+  ]
+}

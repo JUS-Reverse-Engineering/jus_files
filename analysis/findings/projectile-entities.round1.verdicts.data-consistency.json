@@ -1,0 +1,32 @@
+{
+  "subsystem": "projectile-entities",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural (global pool manager at literal 0x0214BE14, free/active/retire list anchors at +0xc/+0x14/+0x1c) with no asserted capacity number or data-field identity to test. No static JSON corpus (2,047 battle + 747 support + 43 item collision entries, 311 jpower attack rows, chr_b.json) encodes runtime pool/entity state, so nothing in the data can contradict a generic fixed-slot free-list allocator. No data implication; UPHELD on absence of contradiction."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Destroy primitive symmetric to the Q1 alloc claim (same manager +0xc active-list / +0x1c retire-list pair, same 0x2037c24/0x2037b98 utilities); '32 call sites' is a static call-graph fact, not something any collision/jpower/chr_b JSON field encodes. No data corpus models runtime entity lifecycle, so there is nothing to test or contradict. UPHELD on data grounds only."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Independently reloaded all 281 collision JSONs: merged nonzero ProjectileId set across 2,794 entries (2,047 battle + 747 support) has exactly 26 distinct values (matches round-2's 15 battle / 25 support counts), and value 2 is NEVER among them -- while collisionType==2 occurs 240/2,047 times in battle and 13/747 in support. This corroborates, not contradicts, the claim's own hedge that the case-9 '+0x1b==2' comparison is a move-kind/collisionType-like enum rather than literal on-disk ProjectileId (CollisionEntry.cs offset +3). Also, offsets +0x1a/+0x1b exceed CollisionEntry.EntrySize=20 bytes, structurally ruling out a direct 1:1 map onto the raw 20-byte disk record, consistent with the claim's own 'nested sub-object' framing."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Ownership back-pointer claim (wrapper+0xc holds the MoveInfo pointer) describes a runtime struct layout with no counterpart in any exported JSON (collision entries and jpower rows are static authored per-move data, not live MoveInfo/wrapper instances). No data field exists to confirm or refute a specific in-memory offset. No data implication; UPHELD by default (no contradiction found)."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Despawn thresholds are pure per-frame runtime counters (16-bit age vs 0x20=32; a 32-bit field vs 0x100=256 then vs literal-pool word 0x0003FF00, re-confirmed present at 0x0216CAEC by direct disasm) with no corresponding field in collision/jpower/chr_b JSON (durationMult range checked: {0,1,2,5,10,16,25,30,40,50,100,120}, none matching these runtime constants in any obvious scaled way). No static data corpus captures per-entity runtime lifetime/position state, so nothing can contradict these numbers. UPHELD on data grounds only."
+    }
+  ]
+}

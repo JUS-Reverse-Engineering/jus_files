@@ -1,0 +1,37 @@
+{
+  "subsystem": "hitstun-timers",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Disasm at 0x02053528-0x02053620 confirms r8 is the ctor's own arg0 ('this'), never rebased (only 'mov r8, r0' at entry, no later 'add r8,r8,#N'), and is used to str-zero +0x98, +0x9c, +0xa0 (mirror of +0x9c), +0xa4-0xac (12-byte memset via 0x0205174c, r0=0), +0xb0, +0xb4 in the same block as GDB-known +0x78=0 and +0x88=0. Zero-at-construction matches the doc's 'timers run only during hitstun/recovery' behavior (idle baseline = 0), and the unchanging r8 base rules out the base-aliasing failure mode seen in claim 2 -- no contradiction."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Verified disasm at ov0:0x02157138-0x021574D0: 'mov r0,#0xac' (172) precedes 'bl 0x201a21c' (sl=result), then strb writes of network/config booleans (e.g. tst r0,#0x100000 -> sl+0x98) at sl+0x98/0x99/0x9a are byte-mirrored into sl+0x9d-0xa1, including sl+0xa0. This 172-byte object is far smaller than the character struct (>=0x102 bytes) and its +0xa0 is a plain 1-byte settings mirror, not a 16-bit timer field -- confirms coincidental offset reuse, no contradiction with the +0x98-0xba findings."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Verified disasm at 0x02081148-0x02081644: r8 = [r5+0xc] + 0xa4 (0x02081160), so subsequent [r8+0xa8]/[r8+0xaa]/[r8+0xb0] accesses resolve to true_base+0x14c/+0x14e/+0x154 -- well outside 0x98-0xba, and on a different base object ([r5+0xc], not the character-struct r8) than the constructor's r8 in claim 0. Confirms the aliasing false-lead exactly as described; no contradiction."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Disasm at ov6:0x02158E78-0x02158E84 matches the claim verbatim (ldrsb/cmp/subne/strbne, floor-at-0 decrement on sl+0xe0). A -1-per-frame counter sampled once every 3-5 frames (rather than every single frame) would produce exactly the GDB-documented '-5/-3 alternating' delta at +0x98-0xba, so this idiom is not contradicted by that observation. The claim is also honest that no +0x98-0xba occurrence was confirmed this round, matching what the evidence shows."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Traced r1's full provenance in 0x02085704 (called from ov6:0x02161E8C and ov12:0x021C433A, matching the claim exactly): [r8+0x1a] = ldrh([sl+0x10]+0x30) + r5, where r5 is a loop index bounded by 'cmp r5,[r7,#0x10]; blt' -- a small per-attack sub-hit count. This bounds the value written to [r0+0xa0] to a small integer (base halfword plus a ~0-10 index), matching jpower.json's actual hitstun value set {0,5,10,50} (n=311, max=50) rather than Q12 position magnitudes (raw_coord<<12 = tens of thousands). The 0x800000 OR at 0x0207D174 also lands in byte +0x7A of the +0x78 word, not overwriting the GDB-verified low state byte itself -- no contradiction with either known field's documented semantics."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Verified disasm at ov4:0x02151E7C-0x02151EA0: 'lsl r0,r0,#0xc' and 'lsl r3,r3,#0xc' immediately follow the ldrsh reads of [r4+0xa2]/[r4+0xa0], and the x4096-scaled values are passed into 0x0214E1B8 which stores them into a transform object's +0xc/+0x10. The x4096 (Q12) shift is the canonical integer-to-fixed-point coordinate conversion, not timer arithmetic -- the arithmetic shape clearly implies position/placement for this code path, consistent with (and reinforcing, not newly contradicting) the already-documented +0xA0 'Negative Status Flags vs Countdown Timer' overlap noted in Character-State-Struct.md."
+    }
+  ]
+}

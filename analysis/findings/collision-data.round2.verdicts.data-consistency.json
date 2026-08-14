@@ -1,0 +1,72 @@
+{
+  "subsystem": "collision-data",
+  "round": 2,
+  "lens": "data-consistency+aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Independently recomputed from all 74 battle files (n=2047 entries): non-terminator hitTier {0:31,1:789,2:529,3:512} (min0/max3/distinct4); terminator-only {0:118,1:25,2:22,3:21}, 118/186=0.6344 at tier0; jpower (311 rows) totalDamage min0/max600/distinct13, damage1 min0/max400/distinct16. Exact match on every number."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: collisionType=5 (n=454) tier distribution {0:7,1:115,2:116,3:216}, pooled tier3 fraction 216/454=0.4758; 61/74 chars have >=1 ct5 entry, 18 at 100%, 7 at 0%, 36 partial (dg_b_02 13/13, op_b_03 1/33, bb_b_04 0/4 all match). Exact match; the 'not a strong predictor / coin-flip' text is fairly characterized given the pooled fraction near 0.5."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: collisionType=3 (n=885) distribution {0:2,1:522,2:280,3:81}, tier1 fraction 522/885=0.5898; all 74/74 chars have >=1 ct3 entry; strict-majority-tier1 in 43/74 chars; db_b_01 remains non-majority at 5/12=0.4167. Exact match on all cited numbers and on the 'modest majority, weaker than round 1' characterization."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Recomputed per-tier knockback averages (non-terminator): tier0 n=31 avg=7.6452, tier1 n=789 avg=14.7567, tier2 n=529 avg=15.8507, tier3 n=512 avg=12.4219 -- non-monotonic (rises then drops at tier3), matching exactly. Per-character: 17/74 monotonic, 55/74 non-monotonic, 2/74 insufficient-data -- exact match, and the 'large majority of individual characters fail to show the ranking' text is accurate (74.3% non-monotonic)."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Recomputed pooled projectileId (battle, n=2047, incl. terminator): {-34:2,-32:9,-31:15,-30:2,-28:4,-26:1,-25:2,-24:1,-23:1,-22:1,-20:3,-19:1,-18:2,0:2000,18:2,36:1}; nonzero=47/2047=0.0230, 15 distinct nonzero values, 25/74 chars affected; support nonzero=172/747=0.2303 across 25 distinct values. Confirmed the two positive values (18, 36) belong to oj_b_01 and yh_b_03 respectively. Exact match; 'far more consistent with a real enum than a sentinel' is well supported by 15-25 distinct values."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: collisionType==4 non-terminator entries=272, of those projectileId!=0=31; across all 47 nonzero-projectileId entries (incl. terminator) collisionType distribution={1:1,4:35,5:11}, union{4,5}=46/47=0.9787; 8/47 nonzero-projectileId rows are isTerminator=True (nk_b_01, oj_b_01, rk_b_01, yh_b_03, na_b_02 x3, hs_b_01); hs_b_01's row is verified exactly (collisionType=1, hitTier=0, projectileId=-19, isTerminator=True). Exact match on every figure."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Recomputed per-character hitProperties constancy using ALL entries per file (incl. terminator rows, matching the claim's own methodology): 48/74=0.6486 single-valued, 26/74=0.3514 varying, with bb_b_01/02/03 mixing {1,3}, db_b_04 mixing {0,1,5}, and nn_b_01/op_b_05/yo_b_01 each mixing {0,1,2} -- all exact matches. Pooled battle distribution {0:1051,1:599,2:23,3:373,5:1}, bit1-without-bit0=23/2047, support pooled includes value 6 -- all exact. (Note: computing constancy over non-terminator-only entries instead gives 53/74 and 21/74 -- the claim's all-entries-per-file convention is the one that reproduces its own cited numbers.)"
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Recomputed hitProperties on the 47 nonzero-projectileId entries: {0:14,1:32,3:1}; hitProperties==1 baseline=599/2047=0.2926, within-subset rate=32/47=0.6809 (more than double baseline). Exact match on all three numbers."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Recomputed damageFlags==0 (non-terminator, battle, n=1861): 872/1861=0.4686; per-character extremes bu_b_01 0/31, sk_b_01 0/14, dt_b_04 1/1; exactly 1/74 chars at 100% zero, 2/74 at 0% zero; support rate 211/486=0.4342. Exact match on every figure; 'coin-flip, slightly under half' is an accurate read of 0.4686."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UPHELD",
+      "reason": "Recomputed hitModifier (pooled incl. terminator, battle n=2047): {0:2038,2:3,6:2,18:1,20:1,25:1,34:1}, 9/2047=0.44% nonzero, exact per-row match (bl_b_03=18, db_b_07=34 on a terminator row, op_b_03=20 and 25, sk_b_02=6 x2, tr_b_01=2 x3); support distinct=[0,10,15,20], item distinct=[0,30] -- all exact. One discrepancy: the claim's own enumeration lists only 5 distinct characters (bl_b_03, db_b_07, op_b_03, sk_b_02, tr_b_01) but the prose says '6 distinct characters' -- cited '6' vs recomputed '5'; does not affect the core 'not constant at 0' finding."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Recomputed isTerminator per-file histogram {0:27,1:13,2:6,3:9,4:8,5:3,6:2,7:2,8:2,9:1,36:1}, 27/74 files with zero terminators, kn_b_01 max=36 terminators in a 60-entry file; terminator-row damageFlags==255 rate 145/186=0.7796, knockback==255 rate 157/186=0.8441, both 116/186=0.6237. Exact match on every figure."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UNSURE",
+      "reason": "Every individual number reproduces exactly (ct5->tier3: support 77/206=0.3738 vs battle 0.4758; ct3->tier1: support 39/52=0.7500 vs battle 0.5898; projectileId nonzero: support 0.2303 vs battle 0.0230; hitProps constancy: support 0.8155 vs battle 0.6486; damageFlags==0: support 0.4342 vs battle 0.4686), but the framing 'generally showing MORE variance' is ambiguous against its own data: axis (3) is explicitly described as support being MORE consistent (i.e. statistically LESS varying) than battle, and axis (4) is 'nearly identical' -- only under a loose 'distance from 50/50' reading of 'variance' do all four axes point the same direction; under a literal statistical-variance reading, one axis directly contradicts the summary sentence."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: collision schema=23 keys, jpower schema=20 keys, 0 shared keys; 1 distinct key-set across all 281 collision files; 'count' field mismatches=0 for battle/support/item; reserved0-3 tuples={(0,0,0,0)} across all 2047 battle entries; durationMult distinct=[0,1,2,5,10,16,25,30,40,50,100,120] with 30/1861=1.61% nonzero; width range -35..47, height range -33..30, negative-width-or-height=192/1861=10.32%; extFlags!=0=107/2047=5.23%; bitfield-decomposition mismatches=0. Exact match on every figure."
+    }
+  ]
+}

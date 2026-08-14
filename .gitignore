@@ -1,0 +1,10 @@
+# Extractions are tracked here; raw cartridge images are not.
+# Anyone with the cart can regenerate these, and git handles a 64MB blob badly.
+*.nds
+*.sav
+*.dsv
+
+# Local scratch
+.DS_Store
+__pycache__/
+*.pyc

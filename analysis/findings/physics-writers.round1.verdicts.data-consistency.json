@@ -1,0 +1,32 @@
+{
+  "subsystem": "physics-writers",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "REFUTED",
+      "reason": "The register read at +0xE8/+0x130 (r1 in the evidence) is not a collision-entry pointer: live disasm at 0x02158B94-0x02158B9C shows r1 = [[sl+0x1a8]+0x10], the same base also read at +0x40, +0x158, +0x160 and +0x173 within this function, so it is a >=0x174-byte per-character workspace, not a 20-byte CollisionEntry (ARM9-Research-Guide.md L313, Multi-Hitbox-Mechanics.md L129) -- +0xE8 (232B) and +0x130 (304B) are 11.6x/15.2x past one entry's bounds. This directly contradicts damage-pipeline.round1 claim 7 (identical addresses 0x02158BA8-0x02158BCC), which already labeled this base a 'per-character scratch workspace' and left its writer unresolved (verdicts aliasing:UNSURE, data-consistency:UNSURE, capped to SPECULATIVE) -- it never called it 'the collision entry'."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x020781E4-0x02078288: confirmed the negative-delta path (r1<0) alone is gated by ldrsb [r4+0x500+0xcf]=+0x5CF (popne on nonzero flag), while the r1>=0 mirror branch at 0x207824c has no such check, and the accumulator at [r4+0x5C8] wraps by exactly add/sub #0x6400 = 0x64*0x100 = 25600 (100x256), matching the claimed Q8/percent framing. +0x5C8 is indeed far outside the GDB-verified +0x6A-0xBA physics region on the same charPtr ([sl+0x1b4], independently confirmed live out to +0x56c via damage-pipeline's 3x-UPHELD trampoline claims), so the 'not velocity' conclusion is numerically well-supported."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "REFUTED",
+      "reason": "The claim's central premise -- '0x020783CC tail-jumps into 0x020783DC' -- is falsified by the pool literal itself: bytes at 0x020783D8 are 88 84 07 02 (LE) = 0x02078488, so 'bx ip' at 0x020783D4 jumps to 0x02078488, not 0x020783DC. This is the exact address/bytes damage-pipeline.round1 claim 5 already cross-verified (3x UPHELD) as jumping to 0x02078488 ('ApplyDeltaToCurrent'). 0x020783DC is a separate, independently-called function (its +0x558 linked-list/node+0x40/+0x3C gating is real, re-verified) that happens to sit immediately after the pool word but is not reached via this trampoline's tail jump."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "REFUTED",
+      "reason": "The claim attributes the +0x6A comparator's object to 'the ov6 wrapper/player struct (sl)', but the only call site inside 0x02158B20 (xrefs-to confirms it as the caller) is at 0x02158E40-0x02158E48: 'ldr r0,[sl,#0x1a4]; mov r1,r4; bl 0x21607c0' -- r0 is [sl+0x1a4], a third distinct sub-object, not sl itself and not the char struct at [sl+0x1b4] (whose +0x5CD supplies r4/r1 here). Since this +0x6A lives on neither the wrapper nor the GDB-verified character struct, it cannot serve as evidence about either object's +0x6A field; the claim's own gdb_check ('confirm r0 == the wrapper/player pointer') is already answered false by static data."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x021619D8-0x021619FC in ov7: confirmed 'add r0, r4, #0x100' precedes 'strh r3,[r0,#0x68]' / 'strh r1,[r0,#0x6a]' (absolute +0x168/+0x16A), and a follow-on 2-iteration loop ('add r1,r4,ip,lsl#1; add r1,r1,#0x100; strh r0,[r1,#0x6c]') resolves to absolute +0x16C(+2*ip). Numbers match the claim exactly and demonstrate a genuine base-folding aliasing hazard for +0x68/0x6A/0x6C immediates -- consistent with (and a good concrete instance of) the base-pointer-misattribution risk also exposed by claim 3."
+    }
+  ]
+}

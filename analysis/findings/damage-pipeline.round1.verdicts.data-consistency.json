@@ -1,0 +1,52 @@
+{
+  "subsystem": "damage-pipeline",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "0x020784E4 returns a 0/1 boolean, never a magnitude, so it structurally cannot be the known-good formula floor(damage1/5)+(tier-2), which always outputs an integer damage amount. Re-disassembly of 0x020784E4-0x02078510 exactly matches the quoted mul->div100(0x0200D12C)->lsl/asr16->cmp sequence, and mul-by-r1/div-100 with r1=25 computes exactly 25% of max (25/100=0.25) with no arithmetic discrepancy."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembly of both call sites (0x02158D84-0x02158D8C and 0x021608F8-0x02160918) confirms literal r1=0x19 (25) exactly as quoted. The docs document at least two previously-unquantified low-HP/threshold mechanics this could instantiate: Cheat-Code-Analysis.md 0x2B 'Increase SP when attacking/blocking at low health', and Combat-Mechanics-Reference.md's hidden 'damage since last knockdown' gauge with an explicit 'UNKNOWN: exact threshold value' -- 25% is a plausible fill for either, and nothing in the known-good data contradicts it."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Direct re-disassembly of 0x0200D12C confirms the exact quoted normalize/long-division idiom (eor/and sign save, cmp+rsblt absolute value, cmp/blo early-out), invoked with 'mov r1,#0x64' (100) immediately before the bl -- consistent with ARMv5TE having no hardware integer-divide instruction, matching the claim's framing."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran the pool-values check: literal 0x66666667 (signed /5 magic) appears at exactly 3 addresses (0x020563CC, 0x020586F4, 0x02058798) and 0xCCCCCCCD (unsigned /5 magic) at exactly 1 (0x02052A38) -- 4 total, matching the claim's count and locations exactly, none in the char+0x56c neighborhood."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "The real on-disk jpower.bin layout (scripts/extract_character_data.py: read_jpower_entry) places damage1 at entry offset +0x0C, not +0x16, so rejecting the '+0x16=jpower.damage1' hypothesis is well-founded. Per-hit magnitudes floor(damage1/5)+(tier-2) from jpower.json (207/222 attack entries have damage1<=60 -> damage<=13; rare outliers up to damage1=400 -> damage~80) fit comfortably under a 16-bit current/max pair sized like chr_b.json's combat-stat fields (320-5784 range). Independently corroborated by physics-writers.round1.json claim 3 analyzing the identical 0x02078488 bytes and reaching the same current/max-stat conclusion."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Directly re-disassembled 0x020783CC-0x020783D8: the literal-pool word at 0x020783D8 is confirmed to be bytes 88 84 07 02 = little-endian 0x02078488, exactly the claimed bx target. This also refutes a conflicting reading in physics-writers.round1.json claim 3, which assumed the trampoline instead falls through into the linked-list walker at 0x020783DC (that address is a distinct function starting immediately after the pool word, not the jump target)."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembly of 0x02158BA8-0x02158BC0 matches the claim verbatim. physics-writers.round1.json claim 0 independently examined the exact same instructions and reached the same conclusion (negated scratch field fed as delta into the now-confirmed 0x02078488 clamp accumulator via the 0x020783CC trampoline), giving two-tracer corroboration on the same static evidence."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UNSURE",
+      "reason": "physics-writers.round1.json claim 0 examined the identical instructions (0x02158BA8-0x02158BCC) and instead interprets [r1+0xE8]/[r1+0x130] as collision-entry knockback X/Y components feeding a modulo-0x6400 Q8 percentage counter at 0x020781E4 -- a reading equally consistent with the disassembly. Neither jpower.json nor chr_b.json exposes a field that can discriminate 'computed damage magnitude' from 'knockback magnitude' at this scratch offset, matching the claim's own SPECULATIVE confidence and unresolved writer-search."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "docs/research/ARM9-Research-Guide.md's Quick Reference explicitly documents two separate multipliers side by side: 'attack_boost = 1.2x // Universal multiplier' and 'nature_advantage = 1.5x // Type advantage multiplier'. The tracer's found scale (mul by 0x78=120, div 100 = exactly 1.20x, re-confirmed by direct disassembly of 0x02158DC4-0x02158DD0) matches attack_boost precisely and is numerically distinct from the 1.5x nature bonus (which would require a multiplier of 150, not 120), so the claim's rejection of the nature-multiplier hypothesis is directly confirmed by this pre-existing documented mechanic."
+    }
+  ]
+}

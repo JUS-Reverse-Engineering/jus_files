@@ -1,0 +1,27 @@
+{
+  "subsystem": "hitbox-priority",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x02074728: at 0x02074730 r4 <- pool[0x02074C1C]=0x020924B4, then 0x02074740 `ldr r6,[r4,r8,lsl#3]` reads word1 of entry r8; at 0x02074780 r1 <- pool[0x02074C2C]=0x020924B0, then 0x02074788 `ldr r1,[r1,r8,lsl#3]` reads word0 of the SAME entry r8. Both loads use the identical index register r8 with lsl #3 (stride 8) and bases exactly 4 bytes apart, confirming a homogeneous {word0@+0, word1@+4} 8-byte-stride record layout rather than a bare pointer array."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "0x0207478C/0x02074790 pass word0 (r1, loaded 4 instrs earlier at 0x02074788 and still live) as the source argument into 0x020741BC, whose body (0x020741C0-0x020741F0) is exactly a strcat idiom: skip to the dest's NUL via ldrsb+cmp+bne, then copy src->dest with ldrsb r2,[r1],#1 / strb r2,[r0],#1 looped until a zero byte, then an explicit NUL store -- the same idiom as the cited sibling loop at 0x02074004/0x02074008/0x0207400C. Raw data at 0x0209E92C+0x0209E930, read byte-order (64 62 5f 62 | 5f 30 31 00), decodes to 'd','b','_','b','_','0','1','\\0' = \"db_b_01\\0\", exactly matching the claim."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Re-disasm of ov0 0x0214EFAC confirms the exact bit-extraction and bound: 0x0214EFE0 `add r0,r1,r2,lsl#3` (stride-8 index), 0x0214EFE4 `ldr r0,[r0,#4]` (word1), 0x0214EFE8 `lsr r0,r0,#0xe` then 0x0214EFEC `and r0,r0,#0x3f` == bits 14-19 of word1 exactly as claimed, then 0x0214EFF0 `cmp r7,r0`. The loop increments r2 at 0x0214F030 and 0x0214F034 `cmp r2,#0x4a` / 0x0214F038 `blt` back to 0x0214EFE0 is an explicit code-enforced bound of 74 iterations (indices 0..73), not merely inferred from data. Pool value at 0x0214EFD8 confirmed = 0x020924B0."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Cited instructions match verbatim: 0x0215A03C/0x0215A048 (r0=r6+0x130, r1=6, bl 0x215FC78) and 0x0215A04C/0x0215A054 (r1=0xa, bl 0x215FC78) are exact; the callee 0x0215FC78 is indeed a small (52-byte) bit-test-then-jump-table dispatcher, consistent with 'sub-state-flag setter'. Gating fields r6+0xCB/+0xD2/+0xD3 and r6+0x1A4/+0x1A8 all appear in the full 465-instruction function body as claimed, and a full re-scan of every cmp/ldrb in the function found no two-different-base-register field comparison (the closest candidates, e.g. 0x0215A184-0x0215A26C, compare a counter loaded via r6+0x1A4/0x1A8 against a pool-constant cap, not against a second character struct) -- confirming the claim's own hedge that no clash-resolution comparison was found here. Minor imprecision: id 0x8 is not actually observed among the calls into 0x0215FC78 in this function (only 0xf, 6, 0xa, 4, 0xe were found); the claim's parenthetical list ('observed: 4, 6, 8, 0xA, 0xE...') is not fully reproducible, though this is outside the claim's cited address/evidence set and the claim is already self-labeled SPECULATIVE with no static callers found for 0x02159EF8 either (0 callers in the xref db), so 'called every frame' is architectural framing, not something the cited disasm itself proves."
+    }
+  ]
+}

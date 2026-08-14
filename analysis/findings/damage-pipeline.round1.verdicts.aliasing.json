@@ -1,0 +1,52 @@
+{
+  "subsystem": "damage-pipeline",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: 0x020784E4 could itself be the per-hit damage-total formula, or a probability/RNG threshold check, rather than a pure boolean gate on a gauge pair. Re-disassembled 0x020784E4-0x02078510 directly (the input evidence string lists 0x02078504/0x0207850C/0x02078508 out of address order, but re-checking confirmed the mnemonics are correctly paired per-address: movle r0,#1 is at 0x02078508, movgt r0,#0 at 0x0207850C); the two fields read (+0x16, +0x18) are the exact offsets later independently confirmed (claim 4) to be a clamped max/current pair, so this is genuinely 'current<=pct%*max', not a damage-total formula."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the two callers passing 25 could be coincidental, or both could belong to the same narrow mechanic (weakening 'not a variable threshold' as a generalization). Confirmed via callers/xrefs that exactly 2 static call sites exist (0x02158D8C, 0x02160918), both mov r1,#0x19; traced both enclosing functions and found they are unrelated subsystems (one a low-gauge stat-scaling block inside per-hit resolution, the other a per-frame AI average-enemy-distance tracker) independently reusing the identical 25% test, which reinforces 25% as a fixed shared 'is-critical' flag rather than a one-off coincidence."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: 0x0200D12C could be a differently-shaped generic routine (modulo-only, or a fixed-point helper) that merely resembles division. Full disassembly of the 524-byte routine (sign-save via eor/and, cmp+rsblt abs-value on both operands, beq divide-by-zero handler, blo early-out, shift-count normalization, then 'add pc,pc,r2,lsl#2' jumping into a 16x-unrolled adcs/sublo restoring-division loop) is the textbook ARM libc long-division routine, matching the claim exactly; it has 34 distinct caller functions / 358 raw call sites ROM-wide, confirming reuse as a generic division primitive rather than something damage-specific."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the magic-constant scan may have been scoped to arm9 only, missing ov6 (where 73 of the 358 div-routine call sites actually live), making the 'no /5 magic-multiply near damage code' claim a scope artifact rather than a true negative. Verified empirically that xrefs.json's literal_loads index is not arm9-restricted (a control pool-values query for an unrelated value range returned ov0/ov7 hits), so the scan legitimately covered the whole ROM including ov6; all 4 magic-constant occurrences found are still in arm9 and unrelated to jpower, so the negative result holds (the 'arm9-wide' label in the claim undersells its actual global scope but doesn't invalidate the finding)."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: +0x16/+0x18 could be a different kind of pair entirely (e.g. a timer/counter, echoing this project's prior timer-vs-velocity misread) rather than a max/current gauge. Re-derived the clamp-to-[0,max] and cap-at-0x4000 arithmetic directly from disasm and it matches the claim precisely; however, ApplyDeltaToCurrent (0x02078488) is also invoked from an unrelated linked-list walker over charPtr+0x558 nodes (not +0x56c), and GrowMax (0x020784B8) has exactly one caller (0x0215C73C), gated by an unrelated buff-flag bit with no connection to any hit-resolution code path -- so this is best read as a generic reusable 'Meter' utility rather than a damage-pipeline-exclusive struct, which is consistent with (not a refutation of) the claim's own hedged phrasing and its GDB follow-up."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the trampoline could be a damage-application-specific entry point rather than a generic add-to-meter primitive. xrefs-to confirms exactly 8 branch sites, all in ov6, matching the claim; but walking each site shows several (0x02159274, 0x0215952C, 0x02159668, reached through what look like dispatch-table handler stubs at 0x02159260 etc.) pass positive, scaled (x64) deltas with no negation -- i.e. additions consistent with heal/charge-grant effects, not damage. Claim 5 only asserts the mechanical fact (8 sites, tail-call target) and explicitly defers the damage-specific reading to the next claim, so as written it stands; the generic-reuse finding is a caveat for how it should be interpreted, not a refutation of this claim's content."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the [r1+0x40] bit-0x800 gate could select an unrelated per-frame passive tick (regen/decay) rather than 'a hit just landed,' which would undercut reading this site as a damage write. The enclosing function first checks adjacent hit-state bits (0x200 in [r1+0x158]/[r1+0x160]) to drive a state-dispatch call, then gates the negated-delta writes on the 0x800 bit and follows up with distinct SFX per branch (id 7 vs id 9 depending on which of the two deltas was nonzero) -- an event-gated, multi-branch shape that fits hit-resolution far better than an unconditional passive tick, so this remains the best static candidate for the damage-write site."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UNSURE",
+      "reason": "Alternative considered: field_0xe8 could encode knockback/hitstun or a guard-reduction magnitude rather than per-hit damage. Checked the sibling field_0x130's destination (0x020781E4 on charPtr+0x5c8) and found it is a structurally different system -- a raw 32-bit value with a borrow/wrap loop that calls out to a side-effect function (0x207830c) when it goes negative, not a clamped meter -- confirming 0xe8 and 0x130 drive genuinely different mechanics, but this does not by itself prove 0xe8 is damage. No static evidence resolves the magnitude; the decisive observation remains the tracer's own proposed GDB check: break at 0x02158BA8 and compare [r1+0xe8] against the emulator-derived floor(damage1/5)+(tier-2) value for a real hit."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "REFUTED",
+      "reason": "Alternative fits strictly better: rather than 'an unrelated one-time bonus (first-hit/combo-starter scaling),' this x1.20 scale is directly and causally gated behind the very <=25%-of-max check from claims 0-1 -- the block computing and storing r4*120/100 (0x02158DC4-0x2158DD8) is only reachable when the call at 0x02158D8C (mov r1,#0x19; bl 0x20784e4, the exact call site cited in claim 1) returns true. The tracer's own claims 1 and 8 describe the same code region without connecting them; the x1.20 multiplier is best read as a low-gauge/'desperation' scaling bonus tied to the 25% threshold rather than an independent combo-starter mechanic (the 'not x1.5' numeric observation itself is still correct)."
+    }
+  ]
+}

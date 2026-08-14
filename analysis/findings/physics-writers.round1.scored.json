@@ -1,0 +1,61 @@
+{
+  "subsystem": "physics-writers",
+  "round": 1,
+  "scoring": [
+    {
+      "claim_idx": 0,
+      "original": "PLAUSIBLE",
+      "final": "SPECULATIVE",
+      "rule": "demoted: >=2 REFUTED",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "REFUTED",
+        "data-consistency": "REFUTED"
+      }
+    },
+    {
+      "claim_idx": 1,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 2,
+      "original": "PLAUSIBLE",
+      "final": "SPECULATIVE",
+      "rule": "demoted: >=2 REFUTED",
+      "verdicts": {
+        "disasm-correctness": "REFUTED",
+        "aliasing": "UPHELD",
+        "data-consistency": "REFUTED"
+      }
+    },
+    {
+      "claim_idx": 3,
+      "original": "PLAUSIBLE",
+      "final": "SPECULATIVE",
+      "rule": "demoted: >=2 REFUTED",
+      "verdicts": {
+        "disasm-correctness": "REFUTED",
+        "aliasing": "UPHELD",
+        "data-consistency": "REFUTED"
+      }
+    },
+    {
+      "claim_idx": 4,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    }
+  ]
+}

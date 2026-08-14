@@ -1,0 +1,27 @@
+{
+  "subsystem": "hitbox-priority",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "docs/research/ARM9-Research-Guide.md (pre-existing project doc, independent of this trace) already documents 0x0924B0 as an 8-byte-entry table -- 'Bytes 0-3: Pointer to filename string / Bytes 4-7: Extra data' -- and both docs/design/ARM9-Analysis-Pipeline.md ('Collision table at 0x0924B0 ... 74 entries x 8B - Confirmed') and docs/AI-ASSISTANT-GUIDE.md ('0x0924B0 | Collision file pointer table (74 entries)') restate the same 8-byte/74-entry shape, exactly matching the claim's homogeneous {word0@+0, word1@+4} record layout."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "ARM9-Research-Guide.md's own worked parsing example for this exact table gives '[0] db_b_01 - extra=0x0005C100' -- the identical index-0 string and word1 value the claim quotes -- confirming word0 is a pointer to the character-ID C-string. The 4 exported collision filenames (bb_b_01, bl_b_01, db_b_01, ds_b_03) match docs/research/chr_b-Complete-Mapping.md table indices 47, 39, 0, and 58 respectively (Bo-bobo, Ichigo, Goku, Caramelman), confirming these table-derived IDs are exactly what's used to build the collision resource keys."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "REFUTED",
+      "reason": "The 74-entry count and cmp #0x4a loop bound are independently correct (chr_b.json has exactly 74 records, count=74, matching the project's known 74-character roster), but the 'class-id' interpretation of bits 14-19 is contradicted by data on two counts: chr_b.json's real classId field ranges 256-684 (e.g. Goku=256) which needs >=10 bits and cannot fit a 6-bit (0-63) field at all, and the claim's own worked example is self-contradictory -- (0x0005C100>>14)&0x3F and (0x0005C200>>14)&0x3F both evaluate to 0x17 (23), not the claimed sequential 0x16/0x17 -- so this bit-slice is not chr_b.json's classId despite sharing the name, and is not shown to be a dense per-character id either."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UNSURE",
+      "reason": "This claim concerns live per-character combat-state struct offsets in ov6 (0x02159EF8: +0x130, +0xCB/+0xD2/+0xD3, +0x1A4/+0x1A8), which have no representation in chr_b.json or the 4 collision export files -- the reference data available to this lens cannot confirm or refute runtime struct layout. The tracer itself already labels this SPECULATIVE with unresolved open questions, and no gdb_check was run."
+    }
+  ]
+}

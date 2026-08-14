@@ -1,0 +1,32 @@
+{
+  "subsystem": "projectile-entities",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Full re-disasm of 0x020834D4 matches every cited byte exactly: r4=deref(literal 0x0214BE14) manager ptr; r4=[r0+0x14] candidate entity, beq-to-return-0 on NULL (no malloc); blx ip constructor callback then str r0,[r4,#0x30]; final cmp r5,#0/beq splits into the SAME unlink(0x2037c24, &manager+0x14) then append(0x2037b98) pair, targeting &manager+0xc on success (r5==0) vs &manager+0x1c on failure (r5!=0) -- exactly the free-list/active-list allocator described. Callers/xrefs confirm trampoline 0x02083624 <- hitbox loop 0x02085704, and direct ov6 callers 0x02164F0C/0x02164F48/0x02168E44 all resolve as claimed."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Re-disasm of 0x02083648 matches every cited byte: orr bit0 into [r4,#0x2c]; bl through [r4,#0x10] on-destroy hook; bl 0x2037c24 on &manager+0xc (unlink from active list) then bl 0x2037b98 on &manager+0x1c (append retire list) -- the exact same utility+list pair used by claim-0's FAILURE path, confirming the symmetric alloc/free design. One caveat: the claim's caller-count breakdown '32 sites (2 arm9, 30 ov6)' does not match query.py's callers output, which shows 4 raw arm9 entries (2 real bl call sites at 0x02083474/0x02085A5C, each inside a genuine loop, plus 2 duplicate 'functions.json: caller function, same-region' annotations for their enclosing functions) and 28 real ov6 bl sites -- i.e. 30 distinct real call sites (2 arm9 + 28 ov6), not the claimed 2/30 split; the destructor mechanics themselves are correctly computed regardless."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "All cited bytes at 0x02157684-0x02157700 match exactly, and the dispatcher mechanics are real: 'cmp r2,#0xc; addls pc,pc,r2,lsl#2' is a genuine 13-entry bounded jump table (valid r2 in [0,12]); the cited block does load r1=[r4,#0x1a8] (MoveInfo) and reach bl 0x2168cf4 with the described +0x1a/+0x1b signed-byte reads and [ip,#0x8c]-indexed sub-table lookup packed into the call args, exactly as quoted. One caveat: applying the standard ARM PC+8 pipeline rule (the same convention already validated in the sibling damage-pipeline verdicts for pc-relative literal loads) to the jump table shows the branch instruction immediately after 'addls' at 0x21574E8 is the out-of-range DEFAULT case, and the real table starts at 0x21574EC for index 0 -- under this arithmetic, target 0x2157684 is reached by r2=7, not r2=8 as the claim's headline states (and the companion +0x1b==2 case at 0x21575e8 is r2=8, not r2=9 as stated in open_questions). This is an off-by-one in the case-index labels, not in the disassembled control flow or the described mechanics, which are otherwise accurate."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "All cited bytes at 0x02168CF4-0x02168E5C match exactly. Confirmed r4=r1 at entry (0x02168CFC) is never overwritten anywhere in the traced body (only read via 'mov r0,r4' / 'ldr ..,[r4,#0x10]' at several points), so the value stored via 'str r4,[r6,#0xc]' at 0x02168E5C is genuinely the original MoveInfo argument; bl 0x20834d4 (claim-0's constructor) at 0x02168E44 followed immediately by str r0,[r6,#8] and the NULL-check beq confirm the wrapper+8/wrapper+0xc ownership layout exactly as described."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "All cited bytes at 0x0216CA00-0x0216CAE0 match exactly, and three of the four conditions are computed exactly as described: (a) the [x+0x78]&0xf outer gate plus the three OR'd sub-conditions ([entity+8]->+8 bit 0x1000, [x+0x38] bit 0x1, helper 0x216ee14's return) all correctly funnel into the destroy call at 0x0216CA44; (c) the [r4] vs 0x100 compare correctly gates the destroy at 0x0216CAB4. Two caveats on precision: (b) the age-counter destroy at 0x0216CA8C is not purely 'age>32 implies destroy' -- there is an unquoted extra gate at 0x0216CA74-0x0216CA7C ('ldrb r0,[r7,#6]; tst r0,#2; bne 0x216ca98') that suppresses the destroy even when the pre-increment age exceeds 32, if flags bit 1 is set; (d) the claim's closing sentence 'the still alive path returning 1 only when under BOTH thresholds' mischaracterizes the actual range check -- reaching the alive path at 0x0216CAC0 already requires r1>=0x100 (i.e. AT/OVER the first threshold, not under it), and alive is returned only when additionally r1<=0x3FF00 (under the second, larger threshold); the real semantics are 'alive iff r1 is within the bounded range [0x100, 0x3FF00]', not 'under both thresholds'. The core thesis of four independent kill conditions converging on the shared destroy primitive with a flags-byte-clear beforehand is otherwise fully verified."
+    }
+  ]
+}

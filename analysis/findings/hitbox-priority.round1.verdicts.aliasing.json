@@ -1,0 +1,27 @@
+{
+  "subsystem": "hitbox-priority",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Tested the alternative that word0/word1 are really two SEPARATE parallel 74-entry arrays (a pointer array + an unrelated array happening to sit 4 bytes later) rather than one interleaved record. Direct dump of the full table (query.py disasm 0x020924B0 148, i.e. all 74 entries through 0x020926FC) shows a clean, unbroken (pointer, small-int) pairing at every one of the 74 slots; every 'word1' value is <=0x000A8400, far too small to ever be a valid 0x02xxxxxx/0x09xxxxxx ARM9 pointer, so it cannot be the start of a second pointer array. This rules out the parallel-arrays alternative and confirms one homogeneous 8-byte {ptr, packed-word} record."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "REFUTED",
+      "reason": "word0 -> C-string is solid (verified 'db_b_01', 'db_b_10', 'op_b_08', 'jj_b_02', 'bl_b_01', 'bb_b_04', 'mr_b_01', 'nk_b_01', 'dt_b_04' at indices 0,9,19,29,39,49,59,69,73 -- all '<series>_b_<NN>' battle-char IDs). But the specific cited consumer (arm9 0x02074728) builds two keys from it: 'chr/'+id+'c.aar' (stored to [sl]) and 'chr/'+id+'_N' (N from a variant array, stored to [sl+4]) via the memcpy/strcat/0x020101F4 idiom. This project's own docs/research/ARM9-Research-Guide.md:30 documents exactly this pattern ('bl_b_01c.aar', 'bl_b_01_4c.aar') as the SPRITE ARCHIVE naming convention, distinct from the documented collision path 'ChrBin.aar/chr/col/*.bin' (docs/formats/Combat-Formats.md:14, docs/research/Multi-Hitbox-Mechanics.md:234) which uses a static shared container + .bin extension, never a per-character '<id>c.aar'. The cited call site therefore builds a sprite/graphics resource key, not a collision key -- the same mislabeling ('Collision file pointer table') is in fact baked into ~50 other docs/characters/*.md files referencing this exact address, suggesting a project-wide inherited misnomer rather than a fresh error, which the tracer's claim reproduces."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "REFUTED",
+      "reason": "Two independent findings beat the claim's framing. (1) The open_question's specific data point ('entry0/entry1 word1=0x0005C100/0x0005C200 -> ids 0x16/0x17') is empirically false: a full dump of all 74 word1 values shows bits14-19 forms contiguous RUNS of a repeated value (e.g. indices 0-11 all =0x17), giving only 28 distinct values across 74 entries -- not a dense per-entry 0..73 index -- and this set does not correlate with chr_b.json's documented classId field (16-bit, range 256-684, 'high byte=major/low=sub' per docs/formats/Combat-Formats.md:38) beyond chance-level overlap (~19 of 28, matching random-overlap expectation for a 64-value space). (2) Tracing what ov0 0x0214EFAC actually does with a successful/failed match: on match it resolves an alias value into a caller struct field unrelated to collision; on NO match it builds 'ending/<koma-series>.aar' and 'ending/<koma-series>_e.aar' sprite keys via a completely separate koma/series-prefix table (0x0209E780, the doc-documented 'Koma name table'), not via the character-ID string at all. This looks like ending-credits/portrait resolution code, not a hitbox/collision lookup -- a materially better-fitting alternative than treating this function as part of the hitbox-priority pipeline."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Disassembled 0x0215FC78 in full: it is a generic bitmask-gated dispatcher (tst bit r1 of [r0+0xc], then either an inline field-copy handler for state 4/6/8/0xA/0xE or a jump-table blx) called from 21 distinct sites across ov6 for what look like ordinary per-character timer/counter copy-or-reset bookkeeping -- a mundane alternative to 'clash-resolution code'. This doesn't beat the claim, though: claim 3 already self-labels SPECULATIVE and explicitly states it was 'not confirmed to BE the clash-resolution code, only a plausible place to keep tracing from,' and its own gdb_check is precisely the kind of dynamic test needed to distinguish 'generic per-character bookkeeping' from 'hit-priority-relevant' -- the alternative found here is interpretation-neutral with respect to what was actually asserted."
+    }
+  ]
+}

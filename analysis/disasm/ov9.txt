@@ -1,0 +1,8 @@
+0x0214CD20: 00000000  andeq r0, r0, r0
+0x0214CD24: 00000000  andeq r0, r0, r0
+0x0214CD28: 00000000  andeq r0, r0, r0
+0x0214CD2C: 00000000  andeq r0, r0, r0
+0x0214CD30: 00000000  andeq r0, r0, r0
+0x0214CD34: 00000000  andeq r0, r0, r0
+0x0214CD38: 00000000  andeq r0, r0, r0
+0x0214CD3C: 00000000  andeq r0, r0, r0

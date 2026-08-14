@@ -1,0 +1,31 @@
+{
+  "characterId": "ds_s_03",
+  "entries": [
+    {
+      "collisionType": 4,
+      "subType": 5,
+      "extFlags": 0,
+      "projectileId": 0,
+      "frameStart": 4,
+      "durationMult": 0,
+      "reserved0": 0,
+      "hitModifier": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "positionFlags": 0,
+      "reserved1": 0,
+      "width": 12,
+      "height": 2,
+      "damageFlags": 13,
+      "knockback": 16,
+      "hitTier": 3,
+      "hitProperties": 3,
+      "reserved2": 0,
+      "reserved3": 0,
+      "isTerminator": false,
+      "damageFlagsLow": 13,
+      "hasSpecialFlag": false
+    }
+  ],
+  "count": 1
+}

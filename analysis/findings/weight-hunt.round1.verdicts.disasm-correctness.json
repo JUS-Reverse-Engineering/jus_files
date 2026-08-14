@@ -1,0 +1,37 @@
+{
+  "subsystem": "weight-hunt",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disasm of 0x02158F40-0x02158F88 (ov6) confirms the exact order: strh r2,[r6,#0xe] (0x02158F50) stores the duration before division; mov r1,#0xa (0x02158F4C) precedes the reload ldrh r0,[r6,#0xe] (0x02158F58) and bl 0x200d12c (0x02158F5C), so r0=dividend, r1=10=divisor going into the call. After the call, ldrh r3,[r6,#0xe] (0x02158F70) re-reads the untouched original duration (nothing wrote slot+0xe between 0x2158F50 and 0x2158F70), r2=[table+0x4c] (0x02158F78) is doubled via lsl r2,r2,#1 (0x02158F80), and mla r2,r0,r2,r3 (0x02158F84) computes quotient*doubled_table+duration in one instruction, stored back via strh r2,[r6,#0xe] (0x02158F88). Confirmed 0x0200D12C returns its quotient in r0 (see claim 1 verdict), so the divide-then-multiply order and single-MLA structure are exactly as claimed."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Full re-disasm of 0x0200D12C-0x0200D334 confirms a generic signed restoring-division routine: eor ip,r0,r1/and ip,ip,#0x80000000 captures the quotient sign, rsblt on r0 and r1 takes absolute values (with addlt ip,ip,#1 tagging dividend-sign for the remainder), a cmp/suble/lsrle ladder (0x0200D160-0x0200D184) computes a leading-zero-based shift count into r2, add pc,pc,r2,lsl#2 (0x0200D198) jumps into a table of exactly 32 adcs/sublo/adcs triples (0x0200D1A0 through 0x0200D31C, i.e. (0x320-0x1A0)/12=32 iterations), and the tail (0x0200D320-0x0200D334) reapplies signs via ands/rsbne to r0 (quotient) and r1 (remainder) before bx lr. No literal pool loads or global-state reads appear anywhere in the routine -- only algorithmic constants (#0x1c,#0x10,#8,#4,#0x80000000,#1) -- confirming it is purely generic with no character-specific data, and confirming r0 holds the quotient on return (used by claim 1's MLA)."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "0x02158F60-0x02158F78 confirms: add r1,sb,#0x100 then ldrsb r1,[r1,#0xe0] reads a SIGNED byte at sb+0x1e0 exactly (0x100+0xe0), independent of r8 (the function's 2nd parameter, held live throughout via strh r8,[r6,#0xc] at 0x02158F40 but never referenced again in this span). ldr r2,[pc,#0x180] loads a pool literal that is itself the address of a pointer variable; ldr r2,[r2] dereferences it (this is the double indirection: literal->deref); add r1,r2,r1,lsl#2 (0x02158F74) then computes tablebase+idx*4, which is precisely the r1 register consumed by claim 0's ldr r2,[r1,#0x4c] (0x02158F78) -- i.e. this IS the 'table' from claim 1, and its index is the sb+0x1e0 byte, not r8."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "0x0214E480-0x0214E4B8 (ov5) confirms exactly: ldrb r1,[r0,#6]/cmp r1,#0/bne skips the offset-0 path unless work+6==0; ldrb r1,[r0,#0xb]/asr r1,r1,#4/and r1,r1,#0xf/cmp r1,#3/bne skips unless the high nibble of work+0xb==3. On the fall-through path: ldr r1,[pc,#0x50] resolves (PC+8+0x50=0x0214E4F8) to the literal .word 0x0214BD80 -- the same chr_b singleton address used elsewhere; ldrb r2,[r0,#7] sources charIndex from work+7; ldr r1,[r1] dereferences the singleton (deref #1); mov r0,#0x3c/smulbb r0,r2,r0 computes charIndex*60; ldr r1,[r1,#0x40] dereferences the record-array base at singleton+0x40 (deref #2); ldrb r1,[r1,r0] reads byte at recordBase+charIndex*60+0, i.e. record offset +0x0 with no additional displacement. Cross-checked against the known statA/B/C getter at arm9 0x020771A0, which uses the identical singleton-deref+(+0x40)+charIndex*0x3C addressing (mla r3,r6,#0x3c,r5 then ldrh at +8/+0xa/+0xc) -- confirming the analogous scheme claim."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "0x02151B58-0x02151B84 (ov5) confirmed in wide context (0x02151A80-0x2151BA4): r4 is the 'work' object (same r4 fields +6/+7/+8/+9 that the getter itself reads as work+6/+7), and r0=r4 is unmodified from the explicit mov r0,r4 at 0x02151B18 all the way to bl 0x214e480 at 0x02151B74, confirming the getter's argument really is this work object. The getter's return value r0 is then used at 0x02151B78 (ldr r1,[pc,#0x154]) / 0x02151B7C (ldrb r1,[r1,r0,lsl#1]) as an INDEX into a second lookup table, and that resulting byte r1 -- not raw r0 -- is stored via strb r1,[r7,#6] (0x02151B84); this is a real, if indirect, use of the getter's return value to determine field +6, matching the claim's phrasing ('uses its return value to fill...'). Fields +2..+5 are confirmed filled from other r4-derived (+6,+8,+9) byte-table lookups in the same block, and a second bl 0x214e480 (0x02151B88, with r0=r4 again) immediately follows to fill field +7 -- consistent with 'otherwise populated from small per-charIndex byte lookups.'"
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "REFUTED",
+      "reason": "The claim's own cited call site 0x0215CE78 disassembles to bl #0x214d560 -- but 0x0214D560's function body (which query.py's function-boundary DB merges with 0x0214D594-0x5BC into one 92-byte 'function', evidently a boundary-detection artifact since it has no push/pop prologue) ALWAYS returns via an unconditional bx lr at 0x0214D590 (bxeq lr at 0x214D57C is the only conditional exit; 0x214D590 is condition AL). There is no branch anywhere in 0x0214D560-0x590 that reaches 0x0214D594, so the call at 0x0215CE78 never executes the described lsr r2,r0,#5/and r3,r0,#0x1f/tst bit-test logic at all. Instead, 0x0214D560's actual body (add r2,r2,r2,lsl#2/add r1,r0+..*4/ldr r2,[r1,#0x14]/cmp against cached r0+0xc0 or r0+0xc4/ldreq from r0+0xb8 or r0+0xbc) is a distinct 2-slot cache/memoization lookup keyed on a different base pointer (r0=ldr r0,[sb,#4] at 0x0215CE6C, not the chr_b/flag singleton), unrelated to any bitfield test. Confirmed via `xrefs-to 0x0214D560` (only caller: 0x0215CE78/0x0215CE18) and `xrefs-to 0x0214D594` (only reference: an indirect literal_load pool value 0x0214D594 at 0x0214CF8C in ov1, not a direct bl from anywhere). The GetFlag-shaped code at 0x0214D594-0x5B8 genuinely exists and does read singleton(0x0214BD80)->+0x60->[idx>>5]/tst(idx&0x1f) as described, but it is reached only via that indirect ov1 pointer reference, not via the cited call site -- so the claim's conclusion that 'this specific call site tests per-move flags' is unsupported: it does not invoke the flag-test helper at all."
+    }
+  ]
+}

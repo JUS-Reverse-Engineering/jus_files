@@ -1,0 +1,37 @@
+{
+  "subsystem": "hitstun-timers",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: r8 could be a wrapper one indirection removed from the true GDB base-chain struct rather than the struct itself. Doesn't matter here -- the ctor zeroes +0x98/+0x9c/+0xa0/+0xa4-ac(memset)/+0xb0/+0xb4 on the exact same never-reassigned r8 that also gets +0x78=0 and +0x88=0 in the same basic-block run, and r8's ctor is reached only via the per-character-overlay-slot trampoline (ov8:0x02150392, 9x) plus arm9:0x0205372C -- so whatever level of indirection 'the character struct' sits at, +0x98-0xb4 and the GDB-verified +0x78/+0x88 are provably the same object. No alternative changes that co-location conclusion."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the sl object could be a wrapper sub-object stored back into some outer character-adjacent struct (per the sl+0x1a4/+0x1a8 pattern flagged as a project-wide risk), making the 0x98-0xa1 overlap non-coincidental after all. Re-disassembly shows no such link: this is a config/settings allocator (mov r0,#0xac; bl 0x201a21c) whose 0x98-0x9a byte flags are read straight from ARM9 global config words and immediately byte-mirrored to 0x9d-0xa1 in the same block -- generic settings-copy logic with zero fields resembling state/timer semantics and 0 statically-found callers (likely a mode-setup routine invoked via table), confirming the offset overlap is coincidental as the tracer concluded."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: r0=[r5+0xc] could itself be the real character struct, making r8+0xa8/+0xaa/+0xb0 genuine (if uncharted) character-struct fields rather than an unrelated object. Verified this doesn't matter arithmetically: r8=r0+0xa4 is never reassigned across the function, so those accesses land at r0+0x14c/+0x14e/+0x154 -- together with sibling fields on the same r8 at +0xac/+0xc4/+0xc8/+0xce/+0xcf/+0xd0 (hit-count/juggle-scaling comparisons) this is a coherent combo-tracking sub-record well outside the documented 0x98-0xba span regardless of whose struct r0 is, so the base-provenance aliasing call stands."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: +0xe0 could be something other than a generic countdown (e.g. a lookup index), given the same function block also uses an unrelated field at sb+0x100+0xe0 (=sb+0x1e0) as a signed-byte table index a few lines later -- a reminder of exactly this codebase's offset-coincidence problem. That doesn't undermine the claim though: it only asserts sl+0xe0 is a concrete instance of the generic decrement-with-floor idiom (verified byte-for-byte: ldrsb/cmp/subne/strbne), not that it IS the hitstun timer -- and it explicitly concedes 'sl' identity is unresolved, which matches what I found."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "REFUTED",
+      "reason": "Alternative: 0x0207D16C is a generic 'write per-hitbox slot index + toggle an unrelated bit-flags byte' utility, not a hitstun-timer-init+launched-flag pair. Decisive evidence: the orr #0x800000 sets bit23 = bit7 of the byte at +0x7A (word-offset 2), never touching the low byte +0x78 that GDB actually observed cycling 0x00/0x22/0xC0 -- and the immediately-preceding sibling leaf at 0x0207D160 clears a *different* bit (0x20000, bit1) of that same +0x7A byte, proving +0x7A is a generic flags byte unrelated to the launched-state enum. Corroborating: tracing r1 back through the caller (0x020858D8-E4) shows it equals (sl->0x10)->0x30 + loop-index r5, i.e. a per-hitbox-instance slot number, not a jpower-derived frame count -- both halves of the claimed 'atomic hitstun-init shape' are better explained as unrelated bookkeeping."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "REFUTED",
+      "reason": "Alternative: r4=[r5+4] in ov4:0x02151E04 is a distinct, vtable-dispatched per-effect/attack-instance object (0 static callers, reached only via indirect call) that coincidentally reuses offsets +0xa0/+0xa2 -- not the GDB base-chain character struct -- so there is no real timer-vs-position conflict on one struct, just this round's third instance of the coincidental-offset-reuse pattern already proven twice (claims 1 and 2). This fits strictly better than 'same struct, contradictory field' because: GDB ground truth already independently confirms +0xa0/+0xa2 decrementing as a timer on the real struct across multiple characters, and feeding a raw hitstun-frame count through the observed lsl #0xc (Q12 scale) into a sprite-placement store (target->0xc/0x10 plus a visibility-flag toggle at target->0x24) would produce nonsensical on-screen coordinates -- the values here are genuinely positional, just on a different object. Residual discriminator if pursued live: break at ov4:0x02151E04 entry and diff r4 against the live GDB character-struct pointer for the acting character -- non-matching confirms 'different struct' outright."
+    }
+  ]
+}

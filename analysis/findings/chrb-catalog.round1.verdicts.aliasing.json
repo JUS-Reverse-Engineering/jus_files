@@ -1,0 +1,87 @@
+{
+  "subsystem": "chrb-catalog",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: *(0x0214BD80) could be reassigned to different objects at different times, making 'manager+0xNN' claims at different call sites refer to different underlying structs rather than one persistent singleton. Re-ran `xrefs-to 0x0214BD80` directly (97 literal_load hits, 0 branch, 0 caller -- matches the catalog's own count) and inspected the alloc site disasm at 0x0207602C-0x02076040: exactly ONE instruction in the entire ROM stores into the pointer variable itself (`str r0,[r3]` where r3=&0x0214BD80, immediately after a `bl` allocator call); every other of the 97 hits only DEREFERENCES this same fixed pointer value and adds a distinct field offset (confirmed via the completeness catalog's exhaustive per-hit classification, where only this one row carries manager_slot='alloc'). This rules out the 'reassigned to a different object mid-ROM' alternative for every statically visible path (residual blind spot: a non-literal-pool write via a register copied in from elsewhere would not show up in this scan, but no such site was found)."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: chr_b offsets +8/+0xA/+0xC could be a movement/speed field (echoing the prior campaign's timer-vs-velocity misread) rather than a stat-requirement eligibility matcher. Fully disassembled the 356-byte function 0x02077178: the statA/B/C triple is packed onto the stack, then compared via bare `cmp r3,sl` (equality, not a threshold) against a per-technique table's [+2] field inside a 4-slot loop (stride 0x14) with an increment-on-match counter (r4). No velocity/physics computation (no per-frame delta accumulation, no coordinate arithmetic) appears anywhere in the function -- the shape is unambiguously a discrete-match counter, not a movement selector. REFUTES the movement/speed alternative."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: charStruct+0x558 (list write side, mutated by 0x020772E4) and charStruct+0x56C (pointer read side, consumed by 0x020784E4) could reference DIFFERENT objects, making the cache-to-hitcheck link merely structurally suggestive rather than proven -- this is exactly the open_question the original claim itself flagged. Found the missing link: function 0x02077E70 ('activate this move as current') takes a candidate move-struct pointer as its argument (r1->r5), reads that SAME struct's +0x18 field (the exact field 0x020772E4 writes) to compare priority against whatever struct charStruct+0x56C currently points to, and on selection stores r5 UNMODIFIED into charStruct+0x56C at 0x02077FDC (`str r5,[r6,#0x56c]`) -- i.e. the object landing at +0x56C is a raw, untransformed node of the same kind 0x020772E4 walks at +0x558. This closes the gap and REFUTES the 'different object' alternative; the cache-write and cache-read sides provably touch the identical struct type/instance."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the 5 independent byte reads (chr_b offsets +3..+7) could be alignment-split reads of the u32 'Flags' bitmask later reassembled via shift/OR (an endianness/alignment artifact) rather than genuinely independent ability IDs. Fully disassembled function 0x02077768 (460 bytes): the sb=0..4 loop reads exactly ONE byte per iteration (`ldrb r1,[r1,#3]` at recordBase+sb+3) and immediately dispatches it through the manager+0x50 ability table and a jump-table blx EACH iteration; no register persists across iterations except the loop counter itself, and none of the per-byte handler stubs (0x2077944/54/64/74, which write single bytes to unrelated move-struct fields +0x4a/+0x4b/+0x4c or fold one byte into +0x16) ever OR/shift-combine multiple fetched bytes into one value. REFUTES the bitmask-reconstruction alternative."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the 'cache' routine 0x02077C0C could actually be writing non-chr_b-derived values into the same move-struct offsets, i.e. the offset match to the claim could be coincidental rather than a genuine chr_b copy. Fully disassembled the 164-byte function and traced every one of its 9 stores back to a specific chr_b record byte at the independently re-derived recordBase (=*(0x0214BD80)+0x40+PassiveIndex*0x3C): +0->0x13, +1->0x11, +2->0x10, +(0x10+4i)->0x16(<<6)/dup 0x18, +(0x11+4i)->0x49 (with the exact 'cmp #0; moveq #4' default-to-4 pattern), +(0x12/0x13+4i)->0x14/0x15, +0x30->0x2E, +(0x32+2i)->0x30 -- an exact address-for-address match. Also found the immediately-adjacent sibling function 0x02077CB8 applies the structurally identical pattern to chr_s (manager+0x48, stride 0x14) instead, confirming the +0x40/0x3C vs +0x48/0x14 pairing is a deliberate per-table cache design, not a copy-paste aliasing error. REFUTES the alternative."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the offset/element-size attribution between the two BattleParams getters could be swapped or one of them could target a different table. Direct disasm confirms 0x02078514 = `add r0,r0,r1,lsl#1; ldrh r0,[r0,#0x24]` (ushort @ +0x24) and 0x0207853C = `add r0,r0,r1; ldrb r0,[r0,#0x2c]` (byte @ +0x2c) exactly as attributed; both independently re-derive the identical chr_b recordBase via the PassiveIndex(+0x41)/0x3C-stride signature seen throughout the whole catalog. No swap, no cross-table aliasing."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: ov11 function 0x02174330 could be menu-side deck-builder logic rather than in-battle AI, undermining the 'genuine battle-time chr_b consumer' framing. Queried `strings ov11 --all` directly (filtered for battle/AI terms) and found un-garbled ASCII debug labels: BattleAI_Create, BattleAI.cpp, BattleAIDeck_Create, BattleAI_Deck.cpp, BattleAIMove_Create, BattleAIState_Create, BattleAIObj_CreateBranchNode, BattleAI_JobAtkBrh.cpp, BattleAIObj_CreateCommandNode, BattleAI_JobAtkCmd.cpp -- an unambiguous decision-tree/behavior-tree naming scheme (branch/command nodes, per-turn 'Job' actions), with zero menu/UI/cursor/select strings anywhere in ov11. REFUTES the menu-deck-builder alternative. Side finding (does not change the verdict): `callers 0x02078514` mis-resolves to 0x020784E4's ov6 callers because functions.json's boundary detector folds the leaf getter into the preceding 84-byte function's span; the original claim correctly used `xrefs-to` instead, which is unaffected and independently reproduced here (1 branch-caller each, both in ov11's 0x02174330)."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: stride-0x3C indexing at these 3 sites could target a different manager sub-table that happens to share the same stride. Checked every other manager sub-table's stride in the completeness catalog (koma=0xC, kshape's own record shape, chr_s=0x14, unidentified 212-byte table=0xD4, 36-byte table=0x24) -- none reuse 0x3C; it is unique to chr_b's own +0x40 array. Full disasm of 0x0214D944 additionally shows the SAME function's OTHER selector-nibble branches reading chr_s (manager+0x48) instead of chr_b for non-'special form' cases, giving a clean positive local contrast that rules out mis-slotting. REFUTES the wrong-table alternative."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered (the sharpest form of the aliasing risk): is the Thumb-looking decode at 0x0214E26C/0x0214E2BC a genuine BX-into-different-logic, meaning these two getters do NOT read chr_b FormType at all? Re-disassembled both 0x0214E238 and 0x0214E284: the anomaly begins at the EXACT same relative offset in both (immediately after the identical `mov r0,#0x3c`/`smulbb r0,r2,r0` pair), and the preceding preamble matches the 3 already-confirmed family members opcode-for-opcode. Critically, no bx/blx (the only ARMv5TE instructions that can change instruction set) appears anywhere before the anomalous bytes in either function -- the CPU architecturally cannot be executing real Thumb code here without one. Direct byte inspection also finds the tell-tale 'bx lr' signature (raw word 0xE12FFF1E, same bytes seen terminating the ground-truth getter) reappearing a few bytes into the 'Thumb' region (decoded there as bogus 'vrhadd.u16'), confirming the underlying bytes are an ordinary ARM function tail and the listing is merely mis-aligned (a 2-byte drift), not a real code divergence. REFUTES the wrong-table/different-logic alternative; the original PLAUSIBLE (not CONFIRMED_STATIC) label remains appropriate only because this query interface cannot re-render the corrected mnemonic, not because a real aliasing risk survives."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: ov6 could hold a COPY of the chr_b array base pointer obtained at an earlier init call, letting it consume chr_b live without a fresh literal_load of 0x0214BD80 (invisible to this xref-based catalog). Fully disassembled the only ov6 hit's function (0x0215FAC4, 112 bytes, all 28 instructions inspected): the loaded pointer is used exactly once, for `ldr r3,[r2,#0x50]` (ability table), and no other register in the function is later used as a chr_b-array base. Broadened the check ROM-wide via `callers` on every known chr_b-array-accessor function (0x02077178, 0x020772E4, 0x02077768, 0x02077C0C, 0x02078514, 0x0207853C, and loader 0x02075FBC): NONE has any caller in ov6. The only ov6-reachable member of the family is the cache-READER 0x020784E4, which (per idx2/idx10) reads a move-struct field, never 0x0214BD80 itself. Combined with the exact 97/97 hit-count reproduction (idx12-14), there is no unaccounted arm9 site that could be quietly feeding a chr_b pointer into ov6. REFUTES the hidden-copy alternative, within the acknowledged static blind spot (a register-indirect/bx-ip call from ov6 into an un-indexed getter would remain invisible to this method)."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the +0x16/+0x18 fields 0x020784E4 reads via charStruct+0x56C could be a coincidentally-identical offset pair belonging to a DIFFERENT field/object than the one 0x020772E4/0x02077C0C write, rather than a genuine cache link. This is the same structural gap closed for idx2: function 0x02077E70 proves the object stored into +0x56C is a raw, unmodified move-struct-list-node pointer from the same +0x558-rooted list, selected by directly comparing candidate/current nodes' +0x18 fields -- the exact field 0x020784E4 later reads. Also confirmed function-size (876 bytes) and the exact call-site disasm (`mov r1,#0x19; bl 0x20784e4; cmp r0,#0`) at 0x02158D84-0x02158D90 match the claim verbatim, and the second caller (0x02160918) resolves to a distinct enclosing function (0x021607FC), consistent with the damage-pipeline round's independent finding that the two 0x020784E4 callers belong to unrelated subsystems. REFUTES the coincidental-offset alternative."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: 0x021752B8's manager+0x48/stride-0x14 read could be a mis-scanned chr_b access (an offset-decoding slip making chr_s data look like a different table). The disasm is internally self-consistent and unambiguous (`ldr r2,[r0,#0x48]; mov r0,#0x14; mla`), and 0x14-stride reads of manager+0x48 recur identically at multiple other confirmed chr_s sites across the catalog (0x0214E43C, the chr_s-cache sibling 0x02077CB8/0x02077CBC, 0x02078148), while chr_b's own signature is always manager+0x40 paired with stride 0x3C and never overlaps with the 0x48/0x14 pair anywhere in the 97-hit set. No aliasing risk; the getter unambiguously targets chr_s, not chr_b."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: one or more of the 43 'sibling field' arm9 hits could actually be an un-cross-referenced second consumer of chr_b's own +0x40 array (a coverage gap disguised as a sibling-table hit). Independently re-ran `xrefs-to 0x0214BD80`: exactly 97 hits, split arm9=51/ov5=44/ov6=1/ov11=1, matching the claimed totals exactly. Programmatically scanned the full_hit_catalog_97_rows appendix and confirmed exactly 13 rows (12 distinct code locations) carry a non-null chr_b_record_offset -- all already accounted for by claims idx0-5 (7 arm9 record-offset rows + the chr_b.bin handle-store row 0x020760F8 = 8 'chr_b-touching' arm9 rows, matching the claim's own '8' count) -- leaving exactly 51-8=43 arm9 rows as sibling-field hits, which is the count under test. Spot-checked several of the larger sibling tables (+0x44 212-byte, +0x4C 36-byte, +0x54 12-byte) and found each independently cross-confirmed by multiple ov5 accessor functions using the SAME base+stride, ruling out a coincidental collision with chr_b's own +0x40/0x3C signature. REFUTES the coverage-gap alternative; arithmetic and region totals are exact."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: same coverage-gap concern as idx12, applied to the 38 remaining ov5 hits. Confirmed via the same independent 97-hit re-run (ov5=44 total) and programmatic scan (6 ov5 rows carry non-null chr_b_record_offset -- 0x0214D95C/0x0214DC28/0x0214E258/0x0214E2A8/0x0214E4A0/0x0214E4D0, matching the claim's own '6' count exactly), leaving 44-6=38 as the sibling-field set under test. The koma sub-table (+0x34, stride 0xC) family in particular is cross-confirmed by 7+ independent ov5 accessors sharing that exact base+stride, distinct from chr_b's 0x40/0x3C pair. REFUTES the coverage-gap alternative; arithmetic and region totals are exact."
+    },
+    {
+      "claim_idx": 14,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the master offset table's MATCH/MISMATCH calls could rest on an incomplete or miscounted hit survey, understating aliasing risk (e.g. a hidden 33rd offset touch, or the CharId/Flags mismatch being an artifact of missed instructions). Independently reproduced the exact totals underpinning this claim: 97 total hits (arm9=51/ov5=44/ov6=1/ov11=1) and exactly 13 chr_b-array-dereferencing rows (12 distinct locations), both matching the claim's own figures bit-for-bit. The CharId/Flags-as-independent-byte-IDs finding was independently re-verified via full disasm of 0x02077768 (idx3) with no bitmask-reconstruction found anywhere; the ClassId(+0xE)-unobserved finding was confirmed by checking that none of the 13 chr_b_record_offset entries reference offset 0xE. REFUTES the incomplete-survey alternative; the offset table's coverage is exhaustive and internally consistent."
+    },
+    {
+      "claim_idx": 15,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: this synthesis's three-part answer (ov6 direct-negative / ov6 cache-positive / ov11 live-positive) could collapse if any one leg were wrong -- e.g. if ov6 secretly held a cached chr_b pointer copy (leg 1), if the +0x16/+0x18 cache-link were only coincidental (leg 2), or if ov11's 'live' consumer were actually menu code (leg 3). Each leg was independently stress-tested above: leg 1 (idx9) -- no chr_b-accessor function has any ov6 caller, and the sole ov6 hit never touches manager+0x40; leg 2 (idx2/idx10) -- function 0x02077E70 proves the +0x558-list-node object written by the cache-writer is the SAME raw pointer later read via +0x56C; leg 3 (idx6) -- ov11's genuine BattleAI_*.cpp debug strings (branch/command-node, per-turn Job naming) rule out a menu/deck-builder reading. All three legs survive their strongest alternative explanations, so the synthesis's 'nuanced yes, via caching plus a separate live-reading overlay' framing is corroborated rather than merely asserted."
+    }
+  ]
+}

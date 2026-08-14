@@ -1,0 +1,82 @@
+{
+  "subsystem": "collision-data",
+  "round": 1,
+  "lens": "data-consistency+aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Independently recomputed: glob of *_collision.json in exported_combat/ = 4 files (bb_b_01, bl_b_01, db_b_01, ds_b_03); chr_b.json entries = 74; coverage = 4/74 = 5.41%. Exact match; pure coverage fact, no correlation involved."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Recomputed key-union intersection between all collision entries and all jpower entries = empty set (0 shared keys) -- confirmed. Minor inaccuracy noted: collision entries actually have 23 fields (collisionType, subType, extFlags, projectileId, frameStart, durationMult, reserved0, hitModifier, offsetX, offsetY, positionFlags, reserved1, width, height, damageFlags, knockback, hitTier, hitProperties, reserved2, reserved3, isTerminator, damageFlagsLow, hasSpecialFlag), not 22 as the claim text states; jpower's 20-field count is correct. This is a cosmetic off-by-one in the prose, not the underlying '0 shared keys' fact, which holds."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Recomputed exactly: hitTier non-terminator histogram {0:1,1:43,2:19,3:28}, min=0 max=3 distinct=4; jpower totalDamage min=0 max=600 distinct=13; damage1 min=0 max=400 distinct=16. This is a shape-comparison across two unlinked populations and the claim is already carefully hedged ('shape comparison ... not a proof'), so per the alternative-interpretation guidance it is UPHELD rather than UNSURE."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UNSURE",
+      "reason": "Pooled fractions reproduce exactly (collisionType=5 tier3 14/16=0.875; collisionType=3 tier1 28/43=0.6512), but per-file breakdown shows the two halves are not equally robust: collisionType=5->tier3 holds in all 3 files that contain it (bb_b_01 7/9=78%, db_b_01 6/6=100%, ds_b_03 1/1=100%), while collisionType=3->tier1 is inconsistent across characters (bb_b_01 6/11=55%, bl_b_01 7/7=100%, db_b_01 only 5/12=42% -- actually tier2-majority, ds_b_03 10/13=77%). Since one of the two supporting crosstabs is driven by character-specific variation rather than a uniform predictor relationship, 'strong categorical predictor' is not fully settled by this 4-file sample; discriminating observation: db_b_01 alone flips the collisionType=3 pattern from tier1-majority to tier2-majority."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "REFUTED",
+      "reason": "Pooled averages reproduce exactly (tier1=14.49, tier2=12.11, tier3=15.00), but this pattern is a single-file pooling artifact: bl_b_01's 20 entries are ALL at hitTier=1 with an anomalously high average knockback of 21.05 (min1/max29), which alone inflates the pooled tier1 average. Excluding bl_b_01, the remaining 3 files give tier1 avg=8.78 (n=23), tier2 avg=12.11 (n=19), tier3 avg=15.00 (n=28) -- a monotonically INCREASING trend, the opposite of the claim's 'non-monotonic' conclusion. The correlation does not survive per-character breakdown."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Recomputed hitModifier distinct values across all 91 non-terminator entries and all 92 pooled entries = {0} in both cases. Exact match; pure distributional fact."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Recomputed projectileId pooled histogram = {0: 90, -32: 2}, both nonzero occurrences in bb_b_01 and db_b_01 with collisionType=4. Exact match; the n=2 sentinel-vs-per-instance-id interpretation is already explicitly hedged in open_questions, satisfying the hedging bar for UPHELD."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: collisionType==4 non-terminator entries = 12, of those with projectileId!=0 = 2; nonzero-projectileId entries with collisionType!=4 = 0. Exact match on both necessary-condition and non-sufficiency counts."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Recomputed per-file hitProperties distributions exactly match: bb_b_01 {3:23,1:1}, bl_b_01 {0:20}, db_b_01 {0:25}, ds_b_03 {3:22,0:1}; bit1-without-bit0 count = 0. The claim's own thesis is the per-file constancy pattern itself (not a cross-file correlation), and it is explicitly hedged as needing a larger sample to test within-character variation, so UPHELD."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UPHELD",
+      "reason": "Recomputed: bb_b_01's nonzero-projectileId entry has hitProperties=3, db_b_01's has hitProperties=0. Exact match on n=2; claim already flags in its own open_questions that this may just reflect per-file constancy rather than a meaningful gate, which is the correct caveat."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Recomputed damageFlags==0 fraction (non-terminator) = 52/91 = 0.5714, exact match. Per-file zero-counts also match (bb_b_01 12/23, bl_b_01 1/20, db_b_01 23/25, ds_b_03 16/23); note the per-file denominators printed in the claim's evidence_data (24/20/25/23) are raw per-file totals including the one terminator row rather than non-terminator-only counts, a minor labeling inconsistency that doesn't change any zero-count. bl_b_01's outlier status (1/20) is correctly flagged and is consistent with bl_b_01 also being an outlier on hitProperties (idx 8) and knockback (idx 4)."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "Recomputed bitfield check (damageFlagsLow == damageFlags & 0x3F and hasSpecialFlag == bool(damageFlags & 0x40)) across all 92 pooled entries: 0 mismatches; hasSpecialFlag distribution {False:90, True:2}. Exact match; purely mechanical/derived-field fact."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "Recomputed isTerminator counts per file: bb_b_01=1/24, bl_b_01=0/20, db_b_01=0/25, ds_b_03=0/23; the one terminator row has damageFlags=255, knockback=255, hasSpecialFlag=True, collisionType=0, hitTier=0. Exact match."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Recomputed distinct (reserved0..reserved3) tuples across all 92 pooled entries = {(0,0,0,0)} only. Exact match."
+    },
+    {
+      "claim_idx": 14,
+      "verdict": "UPHELD",
+      "reason": "Recomputed all ranges exactly: frameStart 0..80; durationMult distinct {0,10,100} with the two nonzero rows at db_b_01 (100, collisionType=4, projectileId=-32) and ds_b_03 (10, collisionType=3); width -8..30; height -13..30; 11/91 non-terminator entries with negative width or height. Exact match; the directional-offset-vs-signed-magnitude ambiguity is correctly left open rather than resolved."
+    }
+  ]
+}

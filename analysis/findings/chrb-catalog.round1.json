@@ -1,0 +1,1886 @@
+{
+  "subsystem": "chrb-catalog",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "The chr_b singleton is *(0x0214BD80), a global pointer to a large 'battle resource manager' struct. Inside the arm9 battle-init loader (function 0x02075FBC, part of a ~1KB routine that sequentially loads koma.bin/komatxt.bin/kshape.bin/chr_b.bin/chr_s.bin/ability.bin/... into the SAME manager struct), the chr_b.bin file handle is opened (preceded by the filename load resolving to string 'bin/chr_b.bin' at 0x0209F5D4) and stored at manager+0xC (hit 0x020760F8), then handle->+4->vtable->[+0x2C] ('GetData') is virtual-called and its result -- the actual 60-byte-record array base -- is stored at manager+0x40 (hit 0x02076120). This is the ONE place in the ROM where chr_b's array pointer is established; every other confirmed chr_b consumer (13 more sites catalogued in this file) computes recordBase = *(0x0214BD80)+0x40 + index*0x3C from this cached pointer.",
+      "addresses": [
+        "0x020760F8",
+        "0x02076120"
+      ],
+      "evidence_disasm": "0x020760F8: ldr r2, [pc, #0x2bc] | 0x02076100: ldr r3, [r2] | 0x02076104: str r0, [r3, #0xc] | 0x0207610C: ldr r0, [r0, #0xc] | 0x02076110: ldr r0, [r0, #4] | 0x02076114: ldr r2, [r0] | 0x02076118: ldr r2, [r2, #0x2c] | 0x0207611C: blx r2 | 0x02076120: ldr r1, [pc, #0x294] | 0x02076124: ldr r1, [r1] | 0x02076128: str r0, [r1, #0x40]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "arm9 function 0x02077178 (hit 0x020771A0) reads chr_b record offsets +8(statA)/+0xA(statB)/+0xC(statC) as a 16-bit triple: recordBase = *(0x0214BD80)+0x40 + charIndex*0x3C, charIndex read from a character-context struct's own cached byte at +0x41. The triple is packed onto the stack and later compared (bare equality, not a threshold/tier check) against a per-technique data table entry -- this is a koma/technique stat-requirement eligibility matcher, not a movement/speed selector (matches the prior campaign's movement.round1 finding). This getter is called from ov5 (menu, 0x0215A31C) and from arm9 0x020772E4 (see next claim), i.e. it is core simulation code, not ov5-exclusive.",
+      "addresses": [
+        "0x020771A0"
+      ],
+      "evidence_disasm": "0x020771A0: ldr r3, [pc, #0x134] | 0x020771A4: ldrb r6, [r1, #0x41] | 0x020771A8: ldr r5, [r3] | 0x020771AC: mov r3, #0x3c | 0x020771B0: ldr r5, [r5, #0x40] | 0x020771B4: ldr lr, [r1, #0x38] | 0x020771B8: mla r3, r6, r3, r5 | 0x020771BC: ldrh r6, [r3, #8] | 0x020771C0: ldrh r5, [r3, #0xa] | 0x020771C4: ldrh r3, [r3, #0xc]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "arm9 function 0x020772E4 (hit 0x02077310) walks a per-character 'active technique/hitbox' linked list at charStruct+0x558 and, for each node, reads chr_b record offset 0x10+4*idx (CombatStat(idx+1)Value, LOW byte; recordBase = *(0x0214BD80)+0x40 + PassiveIndex*0x3C) and folds it (with a clamp against 0x4000) into an 'attack property' value CACHED into the active-move/technique struct's own +0x16 field (duplicated to +0x18). Separately, arm9 0x020784E4 (a tiny leaf, called from ov6's hit-resolution function 0x02158B20 at call site 0x02158D8C) reads that SAME move-struct's +0x16 and +0x18 fields and compares them -- i.e. the chr_b-derived CombatStat value that reaches ov6's hit-resolution path is a value CACHED at technique-setup time, not read live from chr_b during the hit check itself. This directly supports the prompt's cache-at-load/cache-at-setup hypothesis, generalized from 'weight/knockback' to 'attack-property' scaling.",
+      "addresses": [
+        "0x02077310",
+        "0x020784E8",
+        "0x020784EC",
+        "0x020784FC"
+      ],
+      "evidence_disasm": "0x02077310: ldr r5, [pc, #0x90] | 0x02077340: ldr r1, [r5] | 0x02077344: ldrb r3, [r8, #0x41] | 0x02077348: ldr ip, [r1, #0x40] | 0x0207734C: ldr r2, [r8, #0x34] | 0x02077350: mla ip, r3, r4, ip | 0x02077364: add r1, ip, r1, lsl #2 | 0x02077368: ldrb r1, [r1, #0x10] | 0x02077384: strh r0, [r8, #0x16] | 0x02077388: ldrsh r0, [r8, #0x16] | 0x020784E8: ldr r4, [r0, #0x56c] | 0x020784EC: ldrsh r2, [r4, #0x16] | 0x020784FC: ldrsh r1, [r4, #0x18]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Confirm at runtime that the move-struct written by 0x020772E4 (charStruct+0x558 list node) is the SAME object later read via charStruct+0x56C in 0x020784E4 -- the two offsets (+0x558 list vs +0x56C pointer) are close but not proven identical here; if they differ, the cache-to-hitcheck link is only structurally suggestive, not proven."
+      ]
+    },
+    {
+      "claim": "arm9 function 0x02077768 (hit 0x020777A8) loops over chr_b record offsets +3..+7 (CharId, then all 4 bytes of the 'Flags' u32) ONE BYTE AT A TIME (recordBase = *(0x0214BD80)+0x40 + PassiveIndex*0x3C), using each byte's raw VALUE as an index into the manager+0x50 ability/passive-effect lookup table to select a per-byte dispatch (no-op / direct call to 0x2077a74 / jump-table call through a second table). No instruction anywhere in the 97 xref hits to 0x0214BD80 reads offset +4 as a single 32-bit load -- Flags is consumed exclusively as up to 5 independent byte-sized ability/effect IDs (bytes 3,4,5,6,7), not a single bitmask. This is a MISMATCH worth flagging against jus_files/exported_combat/chr_b.json's schema, which models offset+4 as one 'flags' integer field.",
+      "addresses": [
+        "0x020777A8"
+      ],
+      "evidence_disasm": "0x020777A8: ldr r4, [pc, #0x184] | 0x020777AC: ldrb r1, [r6, #0x41] | 0x020777B0: ldr r2, [r4] | 0x020777B4: mov r0, #0x3c | 0x020777B8: ldr r2, [r2, #0x40] | 0x020777BC: ldr r5, [pc, #0x174] | 0x020777C0: mla r8, r1, r0, r2 | 0x020777C4: add r1, r8, sb | 0x020777C8: ldr r0, [r4] | 0x020777CC: ldrb r1, [r1, #3] | 0x020777D0: ldr r2, [r0, #0x50] | 0x020777D4: ldrb r0, [r2, r1, lsl #2]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "break 0x020777CC (the ldrb that fetches each of the 5 bytes) during a match with several different characters/techniques active, and dump the fetched byte plus the resulting manager+0x50 table lookup to confirm these bytes really do select distinct ability/passive effects rather than being read as a combined bitmask elsewhere at runtime.",
+      "open_questions": []
+    },
+    {
+      "claim": "arm9 function 0x02077C0C (hit 0x02077C10) is a 'cache chr_b fields into the live move/technique struct' routine, called at technique-setup time (0 direct bl callers found in the whole ROM -- reached only via a per-move-type function-pointer/jump-table dispatch, i.e. core simulation code, not ov5- or ov6-exclusive). recordBase = *(0x0214BD80)+0x40 + PassiveIndex*0x3C (PassiveIndex from charStruct+0x41); techIdx = (a per-technique index read from charStruct+0x34's own +8 field) - 3. It copies: FormType(+0)->moveStruct+0x13, Tier(+1)->+0x11, KomaSize(+2)->+0x10, CombatStat(techIdx+1)Value low/high byte (+0x10+4*techIdx / +0x11+4*techIdx)->+0x16(<<6, duplicated to +0x18)/+0x49(with a 'default to 4 if zero' fallback), CombatStat(techIdx+1)Mod low/high byte (+0x12+4*techIdx / +0x13+4*techIdx)->+0x14/+0x15, TextIds[0] (+0x30, fixed)->+0x2E, and TextIds[1+techIdx] (+0x32+2*techIdx)->+0x30. The TextIds[0]-vs-TextIds[1..5] split strongly implies textIds[0]=character-name text id and textIds[1..5]=per-technique(move) name text ids (5 techniques matches the 5-iteration eligibility loop bound seen in claim covering 0x02077178/0x020772E4).",
+      "addresses": [
+        "0x02077C10"
+      ],
+      "evidence_disasm": "0x02077C10: ldr r2, [pc, #0x9c] | 0x02077C1C: ldrb r4, [r1, #0x41] | 0x02077C20: ldr ip, [r2, #0x40] | 0x02077C28: mla r2, r4, r2, ip | 0x02077C34: add r3, r2, ip, lsl #2 | 0x02077C38: ldrb r3, [r3, #0x11] | 0x02077C50: ldrb lr, [r4, #0x10] | 0x02077C5C: strh lr, [r1, #0x16] | 0x02077C68: ldrsb lr, [r2, #2] | 0x02077C6C: strb lr, [r1, #0x10] | 0x02077C78: ldrb lr, [r2] | 0x02077C7C: strb lr, [r1, #0x13] | 0x02077C80: ldrb lr, [r4, #0x12] | 0x02077C84: strb lr, [r1, #0x14] | 0x02077C90: ldrh r2, [r2, #0x30] | 0x02077C94: strh r2, [r1, #0x2e] | 0x02077C98: ldrh r2, [ip, #0x32] | 0x02077C9C: strh r2, [r1, #0x30]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Confirm the exact triggering event for 0x02077C0C (which per-move-type jump table slot points here) via GDB watchpoint on the write to move-struct+0x16, to establish whether this runs at technique SELECTION time (menu-adjacent) or technique EXECUTION time (pure battle)."
+      ]
+    },
+    {
+      "claim": "Two small leaf getters sit back-to-back in arm9 ROM, both reading chr_b's BattleParams region (record offset 0x24-0x2F, 12 bytes, C# field BattleCharacterEntry.BattleParams): (1) address 0x02078514 (hit) computes recordBase = *(0x0214BD80)+0x40 + PassiveIndex*0x3C and reads offset 0x24+2*idx as a ushort (treating all 12 BattleParams bytes as ushort[6]); (2) address 0x0207853C (hit) uses the identical recordBase/stride setup but reads offset 0x2C+idx as a raw byte (treating BattleParams' last 4 bytes as byte[]). The SAME 12-byte blob is thus read with two DIFFERENT element sizes by two different getters -- consistent with the C# converter's own uncertainty comment that BattleParams' true structure/meaning is unclear.",
+      "addresses": [
+        "0x02078514",
+        "0x0207853C"
+      ],
+      "evidence_disasm": "0x02078514: ldr r2, [pc, #0x1c] | 0x02078518: ldrb r3, [r0, #0x41] | 0x0207851C: ldr r2, [r2] | 0x02078520: mov r0, #0x3c | 0x02078524: ldr r2, [r2, #0x40] | 0x02078528: mla r0, r3, r0, r2 | 0x0207852C: add r0, r0, r1, lsl #1 | 0x02078530: ldrh r0, [r0, #0x24] | 0x0207853C: ldr r2, [pc, #0x1c] | 0x02078540: ldrb r3, [r0, #0x41] | 0x02078544: ldr r2, [r2] | 0x02078548: mov r0, #0x3c | 0x0207854C: ldr r2, [r2, #0x40] | 0x02078550: mla r0, r3, r0, r2 | 0x02078554: add r0, r0, r1 | 0x02078558: ldrb r0, [r0, #0x2c]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "ANSWERS Q3 (positive half). The two chr_b BattleParams getters (0x02078514, 0x0207853C -- see prior claim) have exactly ONE caller each in the entire ROM (confirmed via `xrefs-to 0x02078514` / `xrefs-to 0x0207853C`, each returning a single branch reference), and both callers are inside the SAME ov11 function 0x02174330, which `query.py strings ov11` identifies as part of the Battle-AI subsystem (debug strings 'BattleAI_Create', 'BattleAIObj_CreateBranchNode', 'BattleAI_JobAtkBrh.cpp' etc. found in ov11, no menu/UI strings). At 0x021746E0, ov11 calls 0x02078514 (chr_b BattleParams as ushort[6]) and loops 14 times building a per-technique 'availability' bitmask; at 0x02174724 it calls 0x0207853C (BattleParams tail as byte[]) and stores the result into a per-slot AI range/facing table used by later range-threshold comparisons (0x50/0xA0) in the same function. This is a genuine BATTLE-TIME (CPU decision-tree) chr_b consumer -- distinct from, and additional to, ov5's menu-side FormType selectors and the arm9 core-simulation cache-copy functions.",
+      "addresses": [
+        "0x021746E0",
+        "0x02174724"
+      ],
+      "provenance": "ov11",
+      "evidence_disasm": "0x021746E0: bl #0x2078514 | 0x02174724: bl #0x207853c",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "A family of near-identical ov5 (menu) 'special form' dispatch getters reads chr_b record offset +0 (FormType) whenever a selector struct's byte+0xB high nibble == 3: 0x0214D944 (hit 0x0214D95C, inside a koma-hand render/sort-key builder that ALSO reads chr_s at manager+0x48 for other nibble values), 0x0214DC18 (hit 0x0214DC28, sibling render/sort-key builder used for a returned selection count), and 0x0214E480 (hits 0x0214E4A0/0x0214E4D0, the KNOWN ground-truth 'special form' selector, called twice due to the compiler re-loading the same pool constant). All four compute recordBase = *(0x0214BD80)+0x40 + koma-byte-derived-index*0x3C and read a bare byte at offset 0 (FormType). This corroborates FormType=offset 0 (matches chr_b.json 'formType') via 3 independent call sites beyond the one already known.",
+      "addresses": [
+        "0x0214D95C",
+        "0x0214DC28",
+        "0x0214E4A0",
+        "0x0214E4D0"
+      ],
+      "provenance": "ov5",
+      "evidence_disasm": "0x0214D95C: ldr r4, [pc, #0xd4] | 0x0214D9B8: ldrb r0, [r7, #7] | 0x0214D9BC: ldr r2, [r4] | 0x0214D9C0: ldrh r3, [r7] | 0x0214D9C4: mul r1, r0, sl | 0x0214D9C8: ldr r0, [r2, #0x40] | 0x0214D9CC: ldrb r0, [r0, r1] | 0x0214DC28: ldr r4, [pc, #0xd0] | 0x0214DC70: ldrb r5, [r8, #7] | 0x0214DC74: ldr r7, [r4] | 0x0214DC78: ldrh r8, [r8] | 0x0214DC7C: mul r6, r5, lr | 0x0214DC80: ldr r5, [r7, #0x40] | 0x0214DC84: ldrb r5, [r5, r6] | 0x0214E4A0: ldr r1, [pc, #0x50] | 0x0214E4AC: mov r0, #0x3c | 0x0214E4B0: smulbb r0, r2, r0 | 0x0214E4B4: ldr r1, [r1, #0x40] | 0x0214E4B8: ldrb r1, [r1, r0] | 0x0214E4D0: ldr r1, [pc, #0x20]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "Two more ov5 getters (0x0214E238 hit 0x0214E258, and 0x0214E284 hit 0x0214E2A8) appear to belong to the SAME 'special form nibble==3 -> chr_b FormType' family as claim C7a: both cleanly establish recordBase = *(0x0214BD80)+0x40 + koma-byte*0x3C via a mov #0x3c + smulbb sequence identical to 0x0214E480's. However, in the pre-built disasm database, the bytes immediately after each smulbb (where the final 'ldrb r?,[r?,r0]' offset-0 read would be) decode as short Thumb-looking instructions/branches rather than the expected ARM tail -- almost certainly a shared-tail-veneer artifact in the listing rather than genuine Thumb code (ov5 is otherwise pure ARM). Because the query.py `disasm` output for those exact addresses does not show a clean 'ldrb' instruction, record offset 0 is PLAUSIBLE for these two sites by strong structural analogy, not CONFIRMED_STATIC by direct quote.",
+      "addresses": [
+        "0x0214E258",
+        "0x0214E2A8"
+      ],
+      "provenance": "ov5",
+      "evidence_disasm": "0x0214E258: ldr r2, [pc, #0x20] | 0x0214E25C: ldrb r3, [r0, #7] | 0x0214E260: ldr r2, [r2] | 0x0214E264: mov r0, #0x3c | 0x0214E268: ldr r2, [r2, #0x40] | 0x0214E2A8: ldr r1, [pc, #0x1c] | 0x0214E2AC: ldrb r2, [r0, #7] | 0x0214E2B0: ldr r1, [r1] | 0x0214E2B4: mov r0, #0x3c | 0x0214E2B8: smulbb r0, r2, r0",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x0214E268 and 0x0214E2B8 (the mla/smulbb instructions) during a menu session that hits a 'special form' character (selector+0xB high nibble==3), single-step 2-3 instructions past the breakpoint, and confirm the CPU actually executes an ldrb-with-register-offset (reading chr_b record+0) rather than diverging into some other path -- this would resolve whether the Thumb-looking bytes are a disasm-listing artifact or a genuine (surprising) mode switch.",
+      "open_questions": [
+        "Is the apparent Thumb-mode decode at 0x0214E26C/0x0214E2BC a pre-built listing/database defect, or does the ROM genuinely BX into Thumb code here? Neither this campaign nor the prior one has GDB-verified it."
+      ]
+    },
+    {
+      "claim": "ANSWERS Q3 (negative half, direct hits). The ONLY literal_load reference to 0x0214BD80 inside ov6 in the entire ROM is 0x0215FAEC, inside a per-frame entity/listener dispatch function (0x0215FAC4). It reads manager+0x50 (the SAME ability/passive-effect lookup table consumed by arm9 0x020775BC/0x020777A8/0x0207783C/0x02078040/0x020781BC) to select a per-entity handler via an ov6-local jump table (pool constant 0x02172210) -- it does NOT dereference manager+0x40 (chr_b's own array). So: every DIRECT chr_b-singleton access inside ov6 itself touches a SIBLING resource, never chr_b's own record.",
+      "addresses": [
+        "0x0215FAEC"
+      ],
+      "provenance": "ov6",
+      "evidence_disasm": "0x0215FAE8: ldr sb, [pc, #0x44] | 0x0215FAEC: ldr r8, [pc, #0x44] | 0x0215FAF8: ldr r2, [r8] | 0x0215FB00: ldr r3, [r2, #0x50] | 0x0215FB08: ldrb r2, [r3, r1, lsl #2] | 0x0215FB0C: add r1, r3, r1, lsl #2 | 0x0215FB10: ldr r2, [sb, r2, lsl #2] | 0x0215FB14: blx r2",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "ov6's hit-resolution function 0x02158B20 (876 bytes) calls arm9 0x020784E4 directly at call site 0x02158D8C ('bl #0x20784e4'). 0x020784E4 reads the active-move/technique struct's +0x16 and +0x18 fields (via charStruct+0x56C) and returns a clamp/threshold comparison result -- the SAME +0x16/+0x18 fields that arm9 0x020772E4 (see earlier claim) writes from chr_b's CombatStatNValue field at technique-setup time. This is the concrete ov6-side half of the cache-at-setup chain: ov6's actual battle hit-resolution code consumes a chr_b-derived value, but only via this pre-computed cache, never via a fresh literal_load of 0x0214BD80 inside ov6 itself.",
+      "addresses": [
+        "0x02158D8C"
+      ],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158D8C: bl #0x20784e4 | 0x02158D90: cmp r0, #0",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "The one literal_load hit to 0x0214BD80 that appears directly inside ov11 (0x021752B8, inside AI branch/command-node function 0x021751CC) reads chr_s (manager+0x48, stride 0x14=20 bytes, indexed by PassiveIndex from *(sl)->+0x41) for a range/facing evaluation -- NOT chr_b's own +0x40 array. chr_b IS consumed elsewhere in ov11 (see claim about 0x021746E0/0x02174724 in function 0x02174330), but that consumption is via `bl` into arm9 helper getters, not a direct literal_load of the manager singleton inside ov11.",
+      "addresses": [
+        "0x021752B8"
+      ],
+      "provenance": "ov11",
+      "evidence_disasm": "0x021752B8: ldr r0, [pc, #0x354] | 0x021752BC: ldr r1, [sl] | 0x021752C0: ldr r0, [r0] | 0x021752C4: ldrb r1, [r1, #0x41] | 0x021752C8: ldr r2, [r0, #0x48] | 0x021752CC: mov r0, #0x14 | 0x021752D0: mla r3, r1, r0, r2",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "COMPLETENESS: the remaining 43 arm9 literal_load hits to 0x0214BD80 (out of 51 total arm9 hits; 8 are chr_b-touching, covered by earlier claims) all resolve to OTHER fields of the SAME 'battle resource manager' singleton, never to chr_b's own +0x40 array. Grouped by function: 0x02075FBC (the loader, 25 remaining hits) touches the manager's own allocation/mode-object slot (+0), the koma sub-object and its handle (+0x30/+4/+0x34), kshape's handle+data (+8/+0x38), chr_s's handle (+0x10, data covered elsewhere), the next resource's handle+data (+0x18/+0x50, an ability/passive-effect lookup table reused battle-wide), several more resource handles/data slots (+0x1C/+0x20/+0x24/+0x2C/+0x44[212B table]/+0x4C[36B table]/+0x54[12B table]/+0x60), two allocated koma-filter-list buffers (+0x58/+0x5C), and a large +0x64.. sub-object zero-init region plus the +0x18E4/+0x1911/+0x1912 'match config' sub-struct fields also touched by 0x02076510 (combo/chain-limit thresholds, 4 hits), 0x02078038/0x020790F0(x3)/0x02078CD4 (mode-config gates), and 0x020781BC (a standalone flag getter). 0x0207698C, 0x02076C98, 0x02076D00, 0x02077584, 0x02077768's second hit, 0x02077CB8, and 0x02078110 touch koma(+0x34)/kshape(+0x38)/koma(+0x30)/ability-table(+0x50 x2)/chr_s(+0x48 x2) respectively. The full per-hit table is in this claim's evidence_data appendix.",
+      "addresses": [
+        "0x0207602C",
+        "0x02076040",
+        "0x02076078",
+        "0x020760A8",
+        "0x020760BC",
+        "0x020760E4",
+        "0x02076134",
+        "0x0207615C",
+        "0x02076170",
+        "0x0207619C",
+        "0x020761C4",
+        "0x020761F4",
+        "0x0207620C",
+        "0x02076240",
+        "0x02076260",
+        "0x02076270",
+        "0x0207628C",
+        "0x020762B4",
+        "0x020762D0",
+        "0x020762F8",
+        "0x02076314",
+        "0x0207633C",
+        "0x02076368",
+        "0x02076394",
+        "0x020763A0",
+        "0x02076590",
+        "0x02076604",
+        "0x0207663C",
+        "0x020768A4",
+        "0x02076990",
+        "0x020769AC",
+        "0x02076CB4",
+        "0x02076D00",
+        "0x020775BC",
+        "0x0207783C",
+        "0x02077CBC",
+        "0x02078040",
+        "0x02078148",
+        "0x02078D88",
+        "0x02079270",
+        "0x02079478",
+        "0x0207952C",
+        "0x020781BC"
+      ],
+      "evidence_disasm": "0x0207602C: ldr r3, [pc, #0x388] | 0x02076040: ldr r7, [pc, #0x374] | 0x02076078: ldr r1, [pc, #0x33c] | 0x020760A8: ldr r1, [pc, #0x30c] | 0x020760BC: ldr r2, [pc, #0x2f8] | 0x020760E4: ldr r1, [pc, #0x2d0] | 0x02076134: ldr r2, [pc, #0x280] | 0x0207615C: ldr r1, [pc, #0x258] | 0x02076170: ldr r2, [pc, #0x244] | 0x0207619C: ldr r1, [pc, #0x218] | 0x020761C4: ldr r2, [pc, #0x1f0] | 0x020761F4: ldr r0, [pc, #0x1c0] | 0x0207620C: ldr r0, [pc, #0x1a8] | 0x02076240: ldr r3, [pc, #0x174] | 0x02076260: ldr r0, [pc, #0x154] | 0x02076270: ldr r2, [pc, #0x144] | 0x0207628C: ldr r2, [pc, #0x128] | 0x020762B4: ldr r2, [pc, #0x100] | 0x020762D0: ldr r2, [pc, #0xe4] | 0x020762F8: ldr r2, [pc, #0xbc] | 0x02076314: ldr r2, [pc, #0xa0] | 0x0207633C: ldr r3, [pc, #0x78] | 0x02076368: ldr r2, [pc, #0x4c] | 0x02076394: ldr r1, [pc, #0x20] | 0x020763A0: ldr r0, [pc, #0x14] | 0x02076590: ldr r0, [pc, #0x364] | 0x02076604: ldr r1, [pc, #0x2f0] | 0x0207663C: ldr r0, [pc, #0x2b8] | 0x020768A4: ldr r0, [pc, #0x50] | 0x02076990: ldr r1, [pc, #0x30] | 0x020769AC: ldr r0, [pc, #0x14] | 0x02076CB4: ldr r0, [pc, #0x20] | 0x02076D00: ldr r1, [pc, #0x24] | 0x020775BC: ldr r0, [pc, #0x48] | 0x0207783C: ldr r4, [pc, #0xf0] | 0x02077CBC: ldr r2, [pc, #0x70] | 0x02078040: ldr r2, [pc, #0xc4] | 0x02078148: ldr r0, [pc, #0x68] | 0x02078D88: ldr r0, [pc, #0x1b4] | 0x02079270: ldr r0, [pc, #0x3f8] | 0x02079478: ldr r0, [pc, #0x1f0] | 0x0207952C: ldr r0, [pc, #0x13c] | 0x020781BC: ldr r0, [pc, #0x14]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [],
+      "evidence_data": {
+        "rows": [
+          {
+            "address": "0x0207602C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "alloc",
+            "classification": "load/init: allocate manager singleton, store into *0x0214BD80"
+          },
+          {
+            "address": "0x02076040",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x64..",
+            "classification": "load/init: zero-init manager sub-object range (+0x64, 4x0x61C units)"
+          },
+          {
+            "address": "0x02076078",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4/+0x1911/+0x30",
+            "classification": "load/init: cache top-level match params (+0x18E4,+0x1911), init koma sub-object at manager+0x30"
+          },
+          {
+            "address": "0x020760A8",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4",
+            "classification": "load/init: store koma init result -> manager+4"
+          },
+          {
+            "address": "0x020760BC",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8",
+            "classification": "load/init: kshape.bin file handle -> manager+8"
+          },
+          {
+            "address": "0x020760E4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "load/init: kshape.bin data ptr -> manager+0x38 (sibling table, not chr_b)"
+          },
+          {
+            "address": "0x02076134",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x10",
+            "classification": "load/init: chr_s.bin file handle -> manager+0x10"
+          },
+          {
+            "address": "0x0207615C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "load/init: chr_s.bin data ptr -> manager+0x48 (sibling table, not chr_b)"
+          },
+          {
+            "address": "0x02076170",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18",
+            "classification": "load/init: next resource (ability.bin) file handle -> manager+0x18"
+          },
+          {
+            "address": "0x0207619C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "load/init: ability.bin(?) data ptr -> manager+0x50 (sibling table; consumed elsewhere as passive/ability-effect dispatch)"
+          },
+          {
+            "address": "0x020761C4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: mode-specific object ptr -> manager+0 (branch on top-level mode arg ==1)"
+          },
+          {
+            "address": "0x020761F4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: read back manager+0 (mode object) for further init call"
+          },
+          {
+            "address": "0x0207620C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: virtual call via manager+0 mode object (vtable+0x24)"
+          },
+          {
+            "address": "0x02076240",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x60",
+            "classification": "load/init: allocate+store buffer -> manager+0x60 (sibling, not chr_b)"
+          },
+          {
+            "address": "0x02076260",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "load/init: init call on manager+0x34 sub-object"
+          },
+          {
+            "address": "0x02076270",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1C",
+            "classification": "load/init: store init-call result -> manager+0x1C"
+          },
+          {
+            "address": "0x0207628C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x20",
+            "classification": "load/init: resource file handle -> manager+0x20"
+          },
+          {
+            "address": "0x020762B4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "load/init: 212-byte-record table data ptr -> manager+0x44 (sibling, not chr_b; stride confirmed via ov5 0x0214E0A4/0x0214E11C/0x0214E190/0x0214E1E0/0x0214E318)"
+          },
+          {
+            "address": "0x020762D0",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x24",
+            "classification": "load/init: resource file handle -> manager+0x24"
+          },
+          {
+            "address": "0x020762F8",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4C",
+            "classification": "load/init: 36-byte-record table data ptr -> manager+0x4C (sibling, not chr_b; stride confirmed via ov5 0x0214E3D4)"
+          },
+          {
+            "address": "0x02076314",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x2C",
+            "classification": "load/init: resource file handle -> manager+0x2C"
+          },
+          {
+            "address": "0x0207633C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "load/init: 12-byte-record table data ptr -> manager+0x54 (sibling, not chr_b; stride confirmed via ov5 0x0214E518/0x0214E554)"
+          },
+          {
+            "address": "0x02076368",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58",
+            "classification": "load/init: allocate koma-filter-list buffer -> manager+0x58 (consumed by ov5 koma-list-builder family)"
+          },
+          {
+            "address": "0x02076394",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x5C",
+            "classification": "load/init: allocate parallel koma-filter-list buffer -> manager+0x5C"
+          },
+          {
+            "address": "0x020763A0",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "n/a",
+            "classification": "load/init: read manager ptr to return it from the loader"
+          },
+          {
+            "address": "0x02076590",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 combo/chain-limit threshold byte (config, not chr_b)"
+          },
+          {
+            "address": "0x02076604",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 threshold again (scale a computed value)"
+          },
+          {
+            "address": "0x0207663C",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 threshold a third time (compare accumulated counter)"
+          },
+          {
+            "address": "0x020768A4",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/physics: read manager+0x1912 flag byte, gates a per-entity listener-list walk"
+          },
+          {
+            "address": "0x02076990",
+            "region": "arm9",
+            "function": "0x0207698C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0xD4",
+            "classification": "load/init: pass manager+0xD4 sub-object to init call"
+          },
+          {
+            "address": "0x020769AC",
+            "region": "arm9",
+            "function": "0x0207698C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0xDC",
+            "classification": "load/init: pass manager+0xDC sub-object to init call"
+          },
+          {
+            "address": "0x02076CB4",
+            "region": "arm9",
+            "function": "0x02076C98",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x30",
+            "classification": "load/lookup: koma table record getter (manager+0x30, stride 0xC=12 bytes; not chr_b)"
+          },
+          {
+            "address": "0x02076D00",
+            "region": "arm9",
+            "function": "0x02076D00",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "load/lookup: kshape table record getter (manager+0x38; not chr_b)"
+          },
+          {
+            "address": "0x020775BC",
+            "region": "arm9",
+            "function": "0x02077584",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "battle/gameplay: reads manager+0x50 ability/passive-effect table (indexed by PassiveIndex) to classify an ability type (2/3/5/6); gates a boolean return; NOT a chr_b record access"
+          },
+          {
+            "address": "0x0207783C",
+            "region": "arm9",
+            "function": "0x02077768",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "battle/gameplay: second half of the same function reads char_struct's OWN cached +0x40/+0x41 fields (not chr_b) and manager+0x50 (ability table) again for a different per-technique dispatch; does not touch chr_b's +0x40 array"
+          },
+          {
+            "address": "0x02077CBC",
+            "region": "arm9",
+            "function": "0x02077CB8",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "battle/technique-init: structurally identical caching routine to 0x02077C0C but reads chr_s's table (manager+0x48, stride 0x14=20 bytes) instead of chr_b -- a parallel per-table cache function, NOT a chr_b consumer"
+          },
+          {
+            "address": "0x02078040",
+            "region": "arm9",
+            "function": "0x02078038",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/gameplay: reads manager+0x1912 flag (same byte as 0x020768A4) as part of a multi-condition eligibility gate for a technique-activation callback; NOT a chr_b record access"
+          },
+          {
+            "address": "0x02078148",
+            "region": "arm9",
+            "function": "0x02078110",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "battle/technique-init: reads chr_s's table (manager+0x48, stride 0x14) for a technique setup call; sibling of the CombatStat-caching pattern but chr_s, not chr_b"
+          },
+          {
+            "address": "0x02078D88",
+            "region": "arm9",
+            "function": "0x02078CD4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "load/init: battle/match-setup routine reads manager+0x18E4 mode-config flag to decide whether to run extra per-match setup calls; NOT a chr_b access"
+          },
+          {
+            "address": "0x02079270",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag (gate for a match-result/analysis branch); NOT a chr_b access"
+          },
+          {
+            "address": "0x02079478",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag again (second gate in the same function)"
+          },
+          {
+            "address": "0x0207952C",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag a third time (third gate in the same function)"
+          },
+          {
+            "address": "0x020781BC",
+            "region": "arm9",
+            "function": "0x020781BC (leaf, not in functions.json)",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/gameplay: tiny leaf getter, reads manager+0x1912 flag byte and returns it as bool; same flag as 0x020768A4/0x02078040; NOT a chr_b access"
+          }
+        ]
+      }
+    },
+    {
+      "claim": "COMPLETENESS: the remaining 38 ov5 (menu) literal_load hits to 0x0214BD80 (out of 44 total ov5 hits; 6 are chr_b-touching, covered by earlier claims) all resolve to sibling manager fields, never chr_b's own +0x40 array: a large family of 'koma-filter-list builder' functions (0x0214D738/0x0214D7B8/0x0214D85C/0x0214D8D0/0x0214DA3C/0x0214DAFC/0x0214DE14) that call the manager+0x8E8 predicate callback over the manager+0x58/+0x5C koma-list buffers; the battle-config reset routine 0x0214D5E4 (5 hits) that clears manager+0x8F8/+0x8FC/+0x910/+0x1900-array; several small getters for the koma sub-table at manager+0x34 (0x0214DEE4, 0x0214E030, 0x0214E05C, 0x0214E084, 0x0214E5F0); the 212-byte 'unidentified' table at manager+0x44 (0x0214E0A4, 0x0214E11C, 0x0214E190, 0x0214E1E0, 0x0214E318); the 36-byte table at manager+0x4C (0x0214E3D4); the 12-byte table at manager+0x54 (0x0214E518, 0x0214E554); chr_s at manager+0x48 (0x0214E43C, sibling of chr_b's own getters); kshape at manager+0x38 (0x0214E4FC); trivial config getters (0x0214D560->+0x60, 0x0214E000->+0x8F0, 0x0214E018->+0x58, 0x0214E598->+0x8E4, 0x0214E690->+0x8EC, 0x021516B4->+0x8E4, 0x02151888->+0x1000-range fixed-point encode, 0x021533B0 x3 ->+0x8F8/+0x910/+0x1900-array bit tests). The full per-hit table is in the master catalog claim's evidence_data appendix.",
+      "addresses": [
+        "0x0214D594",
+        "0x0214D5E8",
+        "0x0214D610",
+        "0x0214D654",
+        "0x0214D678",
+        "0x0214D69C",
+        "0x0214D754",
+        "0x0214D7D0",
+        "0x0214D874",
+        "0x0214D8E8",
+        "0x0214DA54",
+        "0x0214DB0C",
+        "0x0214DE18",
+        "0x0214DE94",
+        "0x0214DEE8",
+        "0x0214E000",
+        "0x0214E018",
+        "0x0214E038",
+        "0x0214E060",
+        "0x0214E084",
+        "0x0214E0A4",
+        "0x0214E120",
+        "0x0214E190",
+        "0x0214E1E0",
+        "0x0214E328",
+        "0x0214E3D4",
+        "0x0214E45C",
+        "0x0214E4FC",
+        "0x0214E528",
+        "0x0214E564",
+        "0x0214E59C",
+        "0x0214E5F0",
+        "0x0214E694",
+        "0x02151760",
+        "0x02151954",
+        "0x0215342C",
+        "0x02153604",
+        "0x021536EC"
+      ],
+      "provenance": "ov5",
+      "evidence_disasm": "0x0214D594: ldr r1, [pc, #0x20] | 0x0214D5E8: ldr r0, [pc, #0x138] | 0x0214D610: ldr r2, [pc, #0x110] | 0x0214D654: ldr r0, [pc, #0xcc] | 0x0214D678: ldr r2, [pc, #0xa8] | 0x0214D69C: ldr lr, [pc, #0x84] | 0x0214D754: ldr sb, [pc, #0x58] | 0x0214D7D0: ldr r6, [pc, #0x7c] | 0x0214D874: ldr r8, [pc, #0x50] | 0x0214D8E8: ldr r8, [pc, #0x50] | 0x0214DA54: ldr r8, [pc, #0x44] | 0x0214DB0C: ldr r6, [pc, #0x64] | 0x0214DE18: ldr r0, [pc, #0xa4] | 0x0214DE94: ldr r1, [pc, #0x28] | 0x0214DEE8: ldr r2, [pc, #0x34] | 0x0214E000: ldr r0, [pc, #0xc] | 0x0214E018: ldr r0, [pc, #0xc] | 0x0214E038: ldr r1, [pc, #0x18] | 0x0214E060: ldr r2, [pc, #0x18] | 0x0214E084: ldr r2, [pc, #0x14] | 0x0214E0A4: ldr r2, [pc, #0x5c] | 0x0214E120: ldr r3, [pc, #0x64] | 0x0214E190: ldr r2, [pc, #0x44] | 0x0214E1E0: ldr r3, [pc, #0x4c] | 0x0214E328: ldr r2, [pc, #0x1c] | 0x0214E3D4: ldr r2, [pc, #0x5c] | 0x0214E45C: ldr r1, [pc, #0x18] | 0x0214E4FC: ldr r1, [pc, #0x10] | 0x0214E528: ldr r1, [pc, #0x20] | 0x0214E564: ldr r2, [pc, #0x28] | 0x0214E59C: ldr r2, [pc, #0x48] | 0x0214E5F0: ldr r3, [pc, #0x58] | 0x0214E694: ldr r0, [pc, #0x3c] | 0x02151760: ldr r0, [pc, #0x80] | 0x02151954: ldr r2, [pc, #0x358] | 0x0215342C: ldr r0, [pc, #0x5a4] | 0x02153604: ldr r0, [pc, #0x3cc] | 0x021536EC: ldr r1, [pc, #0x2e4]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [],
+      "evidence_data": {
+        "rows": [
+          {
+            "address": "0x0214D594",
+            "region": "ov5",
+            "function": "0x0214D560",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x60",
+            "classification": "menu/UI: reads manager+0x60 buffer as a bitmask table (unrelated sibling allocation from loader hit 0x02076240); NOT chr_b"
+          },
+          {
+            "address": "0x0214D5E8",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4/+0x8E8",
+            "classification": "menu/UI: battle-config reset routine sets manager+0x8E8 callback pointer based on +0x8E4 mode value"
+          },
+          {
+            "address": "0x0214D610",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F8/+0x8FC/+0x910/+0x1900+2i",
+            "classification": "menu/UI: same routine clears manager+0x8F8,+0x8FC,+0x910 and an 8-slot +0x1900 array"
+          },
+          {
+            "address": "0x0214D654",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58/+0x8EC",
+            "classification": "menu/UI: iterates manager+0x58 koma-filter list, calling a per-entry handler (manager+0x8EC vtable)"
+          },
+          {
+            "address": "0x0214D678",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58",
+            "classification": "menu/UI: stores loop result into manager+0x8F0; re-reads manager+0x58"
+          },
+          {
+            "address": "0x0214D69C",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x910/+0x1900+2i",
+            "classification": "menu/UI: second pass over manager+0x58 list, sets bits in +0x8F8/+0x910/+0x1900+idx*2 config arrays per entry properties"
+          },
+          {
+            "address": "0x0214D754",
+            "region": "ov5",
+            "function": "0x0214D738",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: koma-filter-list builder; calls manager+0x8E8 predicate callback per koma entry (builds a filtered selectable-koma array); NOT chr_b"
+          },
+          {
+            "address": "0x0214D7D0",
+            "region": "ov5",
+            "function": "0x0214D7B8",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34/+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (reads manager+0x34 koma sub-table, stride 0xC); NOT chr_b"
+          },
+          {
+            "address": "0x0214D874",
+            "region": "ov5",
+            "function": "0x0214D85C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (appends koma's own byte+6 to output); NOT chr_b"
+          },
+          {
+            "address": "0x0214D8E8",
+            "region": "ov5",
+            "function": "0x0214D8D0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (appends koma's own signed byte+8 to output); NOT chr_b"
+          },
+          {
+            "address": "0x0214DA54",
+            "region": "ov5",
+            "function": "0x0214DA3C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (simplest form, no extra field); NOT chr_b"
+          },
+          {
+            "address": "0x0214DB0C",
+            "region": "ov5",
+            "function": "0x0214DAFC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma-list builder reading manager+0x34 koma sub-table directly (stride 0xC) to compute a sort value; NOT chr_b"
+          },
+          {
+            "address": "0x0214DE18",
+            "region": "ov5",
+            "function": "0x0214DE14",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x5C",
+            "classification": "menu/UI: filters a koma-list via manager+0x8F0-sized loop over +0x58/+0x5C parallel arrays and a per-entry predicate"
+          },
+          {
+            "address": "0x0214DE94",
+            "region": "ov5",
+            "function": "0x0214DE14",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x5C",
+            "classification": "menu/UI: same function, writes back filtered count into manager+0x8F0"
+          },
+          {
+            "address": "0x0214DEE8",
+            "region": "ov5",
+            "function": "0x0214DEE4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: reads manager+0x34 koma sub-table (stride 0xC) to fetch one byte, feeds a random-range call; NOT chr_b"
+          },
+          {
+            "address": "0x0214E000",
+            "region": "ov5",
+            "function": "0x0214E000",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0",
+            "classification": "menu/UI: trivial getter, returns manager+0x8F0 config value; NOT chr_b"
+          },
+          {
+            "address": "0x0214E018",
+            "region": "ov5",
+            "function": "0x0214E018",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58",
+            "classification": "menu/UI: trivial getter, indexes manager+0x58 koma-filter-list array by param; NOT chr_b"
+          },
+          {
+            "address": "0x0214E038",
+            "region": "ov5",
+            "function": "0x0214E030",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma sub-table (manager+0x34, stride 0xC) record-pointer arithmetic getter; NOT chr_b"
+          },
+          {
+            "address": "0x0214E060",
+            "region": "ov5",
+            "function": "0x0214E05C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: sibling of the above (arg order swapped); NOT chr_b"
+          },
+          {
+            "address": "0x0214E084",
+            "region": "ov5",
+            "function": "0x0214E084",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma sub-table getter reading a fixed +8 field via mla addressing; NOT chr_b"
+          },
+          {
+            "address": "0x0214E0A4",
+            "region": "ov5",
+            "function": "0x0214E0A4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: reads the 212-byte 'unidentified' table at manager+0x44 (stride 0xD4, confirms loader hit 0x020762B4's slot identity); NOT chr_b"
+          },
+          {
+            "address": "0x0214E120",
+            "region": "ov5",
+            "function": "0x0214E11C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor with an extra +0x64 sub-offset; NOT chr_b"
+          },
+          {
+            "address": "0x0214E190",
+            "region": "ov5",
+            "function": "0x0214E190",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor reading its own +0x54 sub-field; NOT chr_b"
+          },
+          {
+            "address": "0x0214E1E0",
+            "region": "ov5",
+            "function": "0x0214E1E0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor variant (decode continues past a branch as apparent Thumb bytes -- likely a shared-tail veneer artifact in the pre-built disasm database; base+stride setup is clean ARM and fully confirms the +0x44 slot); NOT chr_b"
+          },
+          {
+            "address": "0x0214E328",
+            "region": "ov5",
+            "function": "0x0214E318",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: 212-byte-table (manager+0x44) accessor reading its own +0xCC sub-field as ushort; NOT chr_b"
+          },
+          {
+            "address": "0x0214E3D4",
+            "region": "ov5",
+            "function": "0x0214E3D4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4C",
+            "classification": "menu/UI: 36-byte-table (manager+0x4C, stride 0x24) accessor, confirms loader hit 0x020762F8's slot identity; NOT chr_b"
+          },
+          {
+            "address": "0x0214E45C",
+            "region": "ov5",
+            "function": "0x0214E43C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "menu/UI: chr_s table (manager+0x48, stride 0x14) byte accessor; sibling of chr_b's own getters, NOT chr_b"
+          },
+          {
+            "address": "0x0214E4FC",
+            "region": "ov5",
+            "function": "0x0214E4FC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "menu/UI: kshape table (manager+0x38) pointer-array getter indexed by param*4; NOT chr_b"
+          },
+          {
+            "address": "0x0214E528",
+            "region": "ov5",
+            "function": "0x0214E518",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "menu/UI: 12-byte-table (manager+0x54) accessor, confirms loader hit 0x0207633C's slot identity; NOT chr_b"
+          },
+          {
+            "address": "0x0214E564",
+            "region": "ov5",
+            "function": "0x0214E554",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "menu/UI: sibling 12-byte-table (manager+0x54) accessor with an extra +4 sub-field; NOT chr_b"
+          },
+          {
+            "address": "0x0214E59C",
+            "region": "ov5",
+            "function": "0x0214E598",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4",
+            "classification": "menu/UI: reads manager+0x8E4 mode-config value (gate check); NOT chr_b"
+          },
+          {
+            "address": "0x0214E5F0",
+            "region": "ov5",
+            "function": "0x0214E5F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: walks a manager+0x34-rooted koma sub-table linked list collecting u16 fields; NOT chr_b"
+          },
+          {
+            "address": "0x0214E694",
+            "region": "ov5",
+            "function": "0x0214E690",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8EC",
+            "classification": "menu/UI: reads manager+0x8EC (koma-list-builder predicate/vtable slot) directly; NOT chr_b"
+          },
+          {
+            "address": "0x02151760",
+            "region": "ov5",
+            "function": "0x021516B4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4",
+            "classification": "menu/UI: reads manager+0x8E4 mode-config value (branch gate in a larger UI update routine); NOT chr_b"
+          },
+          {
+            "address": "0x02151954",
+            "region": "ov5",
+            "function": "0x02151888",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1000..",
+            "classification": "menu/UI: reads the manager+0x1000-range config sub-struct as part of an angle/ID fixed-point encoding written to an external small buffer; NOT chr_b"
+          },
+          {
+            "address": "0x0215342C",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F8",
+            "classification": "menu/UI: reads manager+0x8F8 config bitmask (tst against a per-slot bit)"
+          },
+          {
+            "address": "0x02153604",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x910",
+            "classification": "menu/UI: reads manager+0x910 config bitmask (tst against a per-slot bit)"
+          },
+          {
+            "address": "0x021536EC",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1900+2i",
+            "classification": "menu/UI: reads manager+0x1900+idx*2 config halfword (tst against a per-slot bit)"
+          }
+        ]
+      }
+    },
+    {
+      "claim": "ANSWERS Q1+Q2 (complete offset->accessor->use table for the 60-byte chr_b record, base=*(0x0214BD80)+0x40, stride 0x3C, cross-checked against jus_files/exported_combat/chr_b.json). All 97 literal_load xref hits to 0x0214BD80 (arm9=51, ov5=44, ov6=1, ov11=1) were processed; exactly 13 hit-sites (12 distinct code locations) dereference the chr_b array itself (manager+0x40) -- every other hit touches a SIBLING field of the same 'battle resource manager' singleton (koma +0x30/+0x34, kshape +0x38, chr_s +0x48, an unidentified 212-byte table +0x44, a 36-byte table +0x4C, a 12-byte table +0x54, an ability/passive-effect lookup table +0x50, assorted resource handles, and a large +0x1000/+0x1900 'match config' sub-struct read by ~15 hits across half a dozen combo-counter/match-flow functions). Two record-field families show a schema MISMATCH against chr_b.json: CharId(+3)/Flags(+4-7) are consumed as 5 independent byte-sized ability/effect table indices, never as a combined 32-bit bitmask; ClassId(+0xE) has NO observed direct consumer among these 97 hits. TextIds(+0x30) and BattleParams(+0x24) both match their exported names but gain refined semantics (textIds[0]=name, textIds[1..5]=per-technique names; battleParams is read with two different element sizes by two different AI getters). The full per-hit catalog (all 97 rows) is in this claim's evidence_data appendix.",
+      "addresses": [
+        "0x020771A0",
+        "0x02077310",
+        "0x02077C10"
+      ],
+      "provenance": "arm9",
+      "evidence_disasm": "0x020771A0: ldr r3, [pc, #0x134] | 0x020771BC: ldrh r6, [r3, #8] | 0x020771C0: ldrh r5, [r3, #0xa] | 0x020771C4: ldrh r3, [r3, #0xc] | 0x02077310: ldr r5, [pc, #0x90] | 0x02077348: ldr ip, [r1, #0x40] | 0x02077C10: ldr r2, [pc, #0x9c] | 0x02077C20: ldr ip, [r2, #0x40]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Where/how is ClassId (+0xE) actually consumed, if at all, in this ROM build? None of the 97 direct xrefs to 0x0214BD80 read it.",
+        "Confirm at runtime (GDB) that the CharId/Flags-as-ability-index reinterpretation (offsets +3..+7) is intentional game design and not a coincidental byte-reuse; the exported chr_b.json schema should probably be revised from a single 'flags' u32 to 5 named byte fields if confirmed."
+      ],
+      "evidence_data": {
+        "record_size_bytes": 60,
+        "record_stride_bytes": 60,
+        "base_expr": "*(0x0214BD80)+0x40 + index*0x3C",
+        "offset_table": [
+          {
+            "offset": "0x00",
+            "size": 1,
+            "field": "FormType",
+            "chr_b_json_name": "formType",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077C0C (cache->move_struct+0x13)",
+              "ov5 0x0214D944",
+              "ov5 0x0214DC18",
+              "ov5 0x0214E238 (PLAUSIBLE)",
+              "ov5 0x0214E284 (PLAUSIBLE)",
+              "ov5 0x0214E480 (ground truth)"
+            ],
+            "observed_use": "menu 'special form' (selector+0xB nibble==3) dispatch selector; also cached into a move struct at technique-setup time"
+          },
+          {
+            "offset": "0x01",
+            "size": 1,
+            "field": "Tier",
+            "chr_b_json_name": "tier",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077C0C (cache->move_struct+0x11)"
+            ],
+            "observed_use": "cached into move/technique struct at technique-setup time; single confirmed consumer"
+          },
+          {
+            "offset": "0x02",
+            "size": 1,
+            "field": "KomaSize",
+            "chr_b_json_name": "komaSize",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077C0C (cache->move_struct+0x10)"
+            ],
+            "observed_use": "cached into move/technique struct at technique-setup time; single confirmed consumer"
+          },
+          {
+            "offset": "0x03",
+            "size": 1,
+            "field": "CharId",
+            "chr_b_json_name": "charId",
+            "match": "MISMATCH (candidate)",
+            "accessors": [
+              "arm9 0x02077768 (byte 0 of a 3..7 loop)"
+            ],
+            "observed_use": "read alongside the 4 Flags bytes and used identically as an ability/passive-effect table INDEX, not as a 'character id within series' -- code does not distinguish it from the Flags bytes"
+          },
+          {
+            "offset": "0x04-0x07",
+            "size": 4,
+            "field": "Flags (u32 per converter)",
+            "chr_b_json_name": "flags",
+            "match": "MISMATCH (confirmed)",
+            "accessors": [
+              "arm9 0x02077768 (bytes 4,5,6,7, each independently)"
+            ],
+            "observed_use": "consumed as 4 INDEPENDENT byte-sized ability/passive-effect IDs dispatched through the manager+0x50 lookup table -- no instruction anywhere in the 97 xref hits reads this offset as a single 32-bit bitmask"
+          },
+          {
+            "offset": "0x08",
+            "size": 2,
+            "field": "StatA",
+            "chr_b_json_name": "statA",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077178"
+            ],
+            "observed_use": "technique/koma stat-requirement eligibility matcher (equality compare, not a tier threshold)"
+          },
+          {
+            "offset": "0x0A",
+            "size": 2,
+            "field": "StatB",
+            "chr_b_json_name": "statB",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077178"
+            ],
+            "observed_use": "same eligibility matcher as StatA"
+          },
+          {
+            "offset": "0x0C",
+            "size": 2,
+            "field": "StatC",
+            "chr_b_json_name": "statC",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077178"
+            ],
+            "observed_use": "same eligibility matcher as StatA/StatB (prior-campaign ground truth confirmed, not a movement-speed selector)"
+          },
+          {
+            "offset": "0x0E",
+            "size": 2,
+            "field": "ClassId",
+            "chr_b_json_name": "classId",
+            "match": "UNOBSERVED",
+            "accessors": [],
+            "observed_use": "no instruction among the 97 xref hits to 0x0214BD80 reads this offset directly; either consumed via a mechanism outside this literal's direct references, or unused by this ROM build's battle logic"
+          },
+          {
+            "offset": "0x10/0x14/0x18/0x1C/0x20",
+            "size": 2,
+            "field": "CombatStat(1-5)Value (low byte only observed)",
+            "chr_b_json_name": "combatStatNValue",
+            "match": "MATCH (partial: only low byte read)",
+            "accessors": [
+              "arm9 0x020772E4 (cache->move_struct+0x16/+0x18, feeds ov6 hit-resolution via 0x020784E4)",
+              "arm9 0x02077C0C (parallel cache->move_struct+0x16/+0x18)"
+            ],
+            "observed_use": "attack-property/knockback-adjacent scaling value, CACHED into a move/technique struct at setup time rather than read live during hit resolution"
+          },
+          {
+            "offset": "0x11/0x15/0x19/0x1D/0x21",
+            "size": 1,
+            "field": "CombatStat(1-5)Value high byte",
+            "chr_b_json_name": "combatStatNValue (high byte)",
+            "match": "MATCH (byte-level)",
+            "accessors": [
+              "arm9 0x02077C0C (cache->move_struct+0x49, 'default to 4 if zero')"
+            ],
+            "observed_use": "fallback-default check for the attack-property value"
+          },
+          {
+            "offset": "0x12/0x16/0x1A/0x1E/0x22",
+            "size": 2,
+            "field": "CombatStat(1-5)Mod",
+            "chr_b_json_name": "combatStatNMod",
+            "match": "MATCH",
+            "accessors": [
+              "arm9 0x02077C0C (cache->move_struct+0x14/+0x15)"
+            ],
+            "observed_use": "cached into move/technique struct alongside CombatStatNValue"
+          },
+          {
+            "offset": "0x24-0x2F",
+            "size": 12,
+            "field": "BattleParams[12]",
+            "chr_b_json_name": "battleParams",
+            "match": "MATCH (name); refined structure",
+            "accessors": [
+              "arm9 0x02078514 (as ushort[6], called only from ov11 Battle-AI 0x02174330)",
+              "arm9 0x0207853C (as byte[] on the tail, same caller)"
+            ],
+            "observed_use": "read LIVE (not cached) during Battle-AI (ov11) decision-making to build a per-technique availability bitmask and an AI range/facing table; the SAME 12 bytes are interpreted with two different element sizes by the two getters"
+          },
+          {
+            "offset": "0x30-0x3B",
+            "size": 12,
+            "field": "TextIds[6]",
+            "chr_b_json_name": "textIds",
+            "match": "MATCH (name); refined semantics",
+            "accessors": [
+              "arm9 0x02077C0C (textIds[0]->move_struct+0x2E; textIds[1+techIdx]->move_struct+0x30)"
+            ],
+            "observed_use": "textIds[0] = character-name text id (cached once); textIds[1..5] = per-technique(move) name text ids, selected by the currently-setup technique's index (5 techniques matches the eligibility-loop bound in 0x02077178/0x020772E4)"
+          }
+        ],
+        "full_hit_catalog_97_rows": [
+          {
+            "address": "0x0207602C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "alloc",
+            "classification": "load/init: allocate manager singleton, store into *0x0214BD80"
+          },
+          {
+            "address": "0x02076040",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x64..",
+            "classification": "load/init: zero-init manager sub-object range (+0x64, 4x0x61C units)"
+          },
+          {
+            "address": "0x02076078",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4/+0x1911/+0x30",
+            "classification": "load/init: cache top-level match params (+0x18E4,+0x1911), init koma sub-object at manager+0x30"
+          },
+          {
+            "address": "0x020760A8",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4",
+            "classification": "load/init: store koma init result -> manager+4"
+          },
+          {
+            "address": "0x020760BC",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8",
+            "classification": "load/init: kshape.bin file handle -> manager+8"
+          },
+          {
+            "address": "0x020760E4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "load/init: kshape.bin data ptr -> manager+0x38 (sibling table, not chr_b)"
+          },
+          {
+            "address": "0x020760F8",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0xC",
+            "classification": "load/init: chr_b.bin file handle -> manager+0xC (chr_b-specific, but handle not record data)"
+          },
+          {
+            "address": "0x02076120",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "load/init: chr_b.bin GetData result (record array base) -> manager+0x40 -- THIS is the chr_b array pointer establishment"
+          },
+          {
+            "address": "0x02076134",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x10",
+            "classification": "load/init: chr_s.bin file handle -> manager+0x10"
+          },
+          {
+            "address": "0x0207615C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "load/init: chr_s.bin data ptr -> manager+0x48 (sibling table, not chr_b)"
+          },
+          {
+            "address": "0x02076170",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18",
+            "classification": "load/init: next resource (ability.bin) file handle -> manager+0x18"
+          },
+          {
+            "address": "0x0207619C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "load/init: ability.bin(?) data ptr -> manager+0x50 (sibling table; consumed elsewhere as passive/ability-effect dispatch)"
+          },
+          {
+            "address": "0x020761C4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: mode-specific object ptr -> manager+0 (branch on top-level mode arg ==1)"
+          },
+          {
+            "address": "0x020761F4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: read back manager+0 (mode object) for further init call"
+          },
+          {
+            "address": "0x0207620C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x0",
+            "classification": "load/init: virtual call via manager+0 mode object (vtable+0x24)"
+          },
+          {
+            "address": "0x02076240",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x60",
+            "classification": "load/init: allocate+store buffer -> manager+0x60 (sibling, not chr_b)"
+          },
+          {
+            "address": "0x02076260",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "load/init: init call on manager+0x34 sub-object"
+          },
+          {
+            "address": "0x02076270",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1C",
+            "classification": "load/init: store init-call result -> manager+0x1C"
+          },
+          {
+            "address": "0x0207628C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x20",
+            "classification": "load/init: resource file handle -> manager+0x20"
+          },
+          {
+            "address": "0x020762B4",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "load/init: 212-byte-record table data ptr -> manager+0x44 (sibling, not chr_b; stride confirmed via ov5 0x0214E0A4/0x0214E11C/0x0214E190/0x0214E1E0/0x0214E318)"
+          },
+          {
+            "address": "0x020762D0",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x24",
+            "classification": "load/init: resource file handle -> manager+0x24"
+          },
+          {
+            "address": "0x020762F8",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4C",
+            "classification": "load/init: 36-byte-record table data ptr -> manager+0x4C (sibling, not chr_b; stride confirmed via ov5 0x0214E3D4)"
+          },
+          {
+            "address": "0x02076314",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x2C",
+            "classification": "load/init: resource file handle -> manager+0x2C"
+          },
+          {
+            "address": "0x0207633C",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "load/init: 12-byte-record table data ptr -> manager+0x54 (sibling, not chr_b; stride confirmed via ov5 0x0214E518/0x0214E554)"
+          },
+          {
+            "address": "0x02076368",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58",
+            "classification": "load/init: allocate koma-filter-list buffer -> manager+0x58 (consumed by ov5 koma-list-builder family)"
+          },
+          {
+            "address": "0x02076394",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x5C",
+            "classification": "load/init: allocate parallel koma-filter-list buffer -> manager+0x5C"
+          },
+          {
+            "address": "0x020763A0",
+            "region": "arm9",
+            "function": "0x02075FBC",
+            "chr_b_record_offset": null,
+            "manager_slot": "n/a",
+            "classification": "load/init: read manager ptr to return it from the loader"
+          },
+          {
+            "address": "0x02076590",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 combo/chain-limit threshold byte (config, not chr_b)"
+          },
+          {
+            "address": "0x02076604",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 threshold again (scale a computed value)"
+          },
+          {
+            "address": "0x0207663C",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1911",
+            "classification": "battle/physics: read manager+0x1911 threshold a third time (compare accumulated counter)"
+          },
+          {
+            "address": "0x020768A4",
+            "region": "arm9",
+            "function": "0x02076510",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/physics: read manager+0x1912 flag byte, gates a per-entity listener-list walk"
+          },
+          {
+            "address": "0x02076990",
+            "region": "arm9",
+            "function": "0x0207698C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0xD4",
+            "classification": "load/init: pass manager+0xD4 sub-object to init call"
+          },
+          {
+            "address": "0x020769AC",
+            "region": "arm9",
+            "function": "0x0207698C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0xDC",
+            "classification": "load/init: pass manager+0xDC sub-object to init call"
+          },
+          {
+            "address": "0x02076CB4",
+            "region": "arm9",
+            "function": "0x02076C98",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x30",
+            "classification": "load/lookup: koma table record getter (manager+0x30, stride 0xC=12 bytes; not chr_b)"
+          },
+          {
+            "address": "0x02076D00",
+            "region": "arm9",
+            "function": "0x02076D00",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "load/lookup: kshape table record getter (manager+0x38; not chr_b)"
+          },
+          {
+            "address": "0x020771A0",
+            "region": "arm9",
+            "function": "0x02077178",
+            "chr_b_record_offset": "8,0xA,0xC",
+            "manager_slot": null,
+            "classification": "battle/technique: reads statA(+8)/statB(+0xA)/statC(+0xC) triple for a per-technique stat-requirement eligibility matcher (equality-compare against a move/koma-technique table); called from ov5 (menu, 0x0215A31C) and from arm9 0x020772E4's dispatch chain"
+          },
+          {
+            "address": "0x02077310",
+            "region": "arm9",
+            "function": "0x020772E4",
+            "chr_b_record_offset": "0x10+4*i (CombatStat1-5 Value, low byte)",
+            "manager_slot": null,
+            "classification": "battle/physics: reads CombatStat(i+1)Value low byte, scales it (<<... ) and caches an 'attack property' clamp value into the active move/technique struct at +0x16 (duplicated to +0x18); that cached field is later read by arm9 0x020784E4, a callee of ov6's hit-resolution function 0x02158B20"
+          },
+          {
+            "address": "0x020775BC",
+            "region": "arm9",
+            "function": "0x02077584",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "battle/gameplay: reads manager+0x50 ability/passive-effect table (indexed by PassiveIndex) to classify an ability type (2/3/5/6); gates a boolean return; NOT a chr_b record access"
+          },
+          {
+            "address": "0x020777A8",
+            "region": "arm9",
+            "function": "0x02077768",
+            "chr_b_record_offset": "3,4,5,6,7 (CharId + all 4 Flags bytes)",
+            "manager_slot": null,
+            "classification": "battle/gameplay: loops offsets +3..+7 of the chr_b record ONE BYTE AT A TIME (never as a combined 32-bit 'Flags' load anywhere in the ROM); each byte value indexes into the manager+0x50 ability/passive-effect table to select a per-byte handler (direct call, jump-table call, or no-op) -- i.e. CharId/Flags bytes are consumed as up to 5 independent ability/passive-effect IDs, not a single bitmask"
+          },
+          {
+            "address": "0x0207783C",
+            "region": "arm9",
+            "function": "0x02077768",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "battle/gameplay: second half of the same function reads char_struct's OWN cached +0x40/+0x41 fields (not chr_b) and manager+0x50 (ability table) again for a different per-technique dispatch; does not touch chr_b's +0x40 array"
+          },
+          {
+            "address": "0x02077C10",
+            "region": "arm9",
+            "function": "0x02077C0C",
+            "chr_b_record_offset": "0,1,2,0x10,0x11,0x12,0x13,0x30,0x32+2*i",
+            "manager_slot": null,
+            "classification": "battle/technique-init: caches FormType(+0)->move_struct+0x13, Tier(+1)->+0x11, KomaSize(+2)->+0x10, CombatStat(i+1)Value low/high(+0x10+4i/+0x11+4i)->+0x16/+0x49(default-4 fallback), CombatStat(i+1)Mod low/high(+0x12+4i/+0x13+4i)->+0x14/+0x15, TextIds[0](+0x30)->+0x2E (character-name text id), TextIds[1+i](+0x32+2i)->+0x30 (per-technique name text id); 0 direct callers found -- reached via a per-move-type function-pointer/jump-table dispatch (core arm9 simulation code)"
+          },
+          {
+            "address": "0x02077CBC",
+            "region": "arm9",
+            "function": "0x02077CB8",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "battle/technique-init: structurally identical caching routine to 0x02077C0C but reads chr_s's table (manager+0x48, stride 0x14=20 bytes) instead of chr_b -- a parallel per-table cache function, NOT a chr_b consumer"
+          },
+          {
+            "address": "0x02078040",
+            "region": "arm9",
+            "function": "0x02078038",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/gameplay: reads manager+0x1912 flag (same byte as 0x020768A4) as part of a multi-condition eligibility gate for a technique-activation callback; NOT a chr_b record access"
+          },
+          {
+            "address": "0x02078148",
+            "region": "arm9",
+            "function": "0x02078110",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "battle/technique-init: reads chr_s's table (manager+0x48, stride 0x14) for a technique setup call; sibling of the CombatStat-caching pattern but chr_s, not chr_b"
+          },
+          {
+            "address": "0x02078514",
+            "region": "arm9",
+            "function": "0x02078514 (leaf getter immediately following 0x020784E4)",
+            "chr_b_record_offset": "0x24+2*i (BattleParams as ushort[6])",
+            "manager_slot": null,
+            "classification": "battle-AI: chr_b getter reading BattleParams (+0x24) as a ushort array; its ONLY caller in the whole ROM is ov11 (Battle AI) function 0x02174330 @0x021746E0, used to build a per-technique 'availability' bitmask for CPU decision-making"
+          },
+          {
+            "address": "0x0207853C",
+            "region": "arm9",
+            "function": "0x0207853C (leaf getter immediately following 0x02078514)",
+            "chr_b_record_offset": "0x2C+i (BattleParams tail as byte[])",
+            "manager_slot": null,
+            "classification": "battle-AI: chr_b getter reading BattleParams (+0x2C) as a raw byte array; its ONLY caller in the whole ROM is ov11 (Battle AI) function 0x02174330 @0x02174724, used to populate a per-slot AI range/facing table"
+          },
+          {
+            "address": "0x02078D88",
+            "region": "arm9",
+            "function": "0x02078CD4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "load/init: battle/match-setup routine reads manager+0x18E4 mode-config flag to decide whether to run extra per-match setup calls; NOT a chr_b access"
+          },
+          {
+            "address": "0x02079270",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag (gate for a match-result/analysis branch); NOT a chr_b access"
+          },
+          {
+            "address": "0x02079478",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag again (second gate in the same function)"
+          },
+          {
+            "address": "0x0207952C",
+            "region": "arm9",
+            "function": "0x020790F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x18E4",
+            "classification": "battle/match-flow: reads manager+0x18E4 mode-config flag a third time (third gate in the same function)"
+          },
+          {
+            "address": "0x020781BC",
+            "region": "arm9",
+            "function": "0x020781BC (leaf, not in functions.json)",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1912",
+            "classification": "battle/gameplay: tiny leaf getter, reads manager+0x1912 flag byte and returns it as bool; same flag as 0x020768A4/0x02078040; NOT a chr_b access"
+          },
+          {
+            "address": "0x0214D594",
+            "region": "ov5",
+            "function": "0x0214D560",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x60",
+            "classification": "menu/UI: reads manager+0x60 buffer as a bitmask table (unrelated sibling allocation from loader hit 0x02076240); NOT chr_b"
+          },
+          {
+            "address": "0x0214D5E8",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4/+0x8E8",
+            "classification": "menu/UI: battle-config reset routine sets manager+0x8E8 callback pointer based on +0x8E4 mode value"
+          },
+          {
+            "address": "0x0214D610",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F8/+0x8FC/+0x910/+0x1900+2i",
+            "classification": "menu/UI: same routine clears manager+0x8F8,+0x8FC,+0x910 and an 8-slot +0x1900 array"
+          },
+          {
+            "address": "0x0214D654",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58/+0x8EC",
+            "classification": "menu/UI: iterates manager+0x58 koma-filter list, calling a per-entry handler (manager+0x8EC vtable)"
+          },
+          {
+            "address": "0x0214D678",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58",
+            "classification": "menu/UI: stores loop result into manager+0x8F0; re-reads manager+0x58"
+          },
+          {
+            "address": "0x0214D69C",
+            "region": "ov5",
+            "function": "0x0214D5E4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x910/+0x1900+2i",
+            "classification": "menu/UI: second pass over manager+0x58 list, sets bits in +0x8F8/+0x910/+0x1900+idx*2 config arrays per entry properties"
+          },
+          {
+            "address": "0x0214D754",
+            "region": "ov5",
+            "function": "0x0214D738",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: koma-filter-list builder; calls manager+0x8E8 predicate callback per koma entry (builds a filtered selectable-koma array); NOT chr_b"
+          },
+          {
+            "address": "0x0214D7D0",
+            "region": "ov5",
+            "function": "0x0214D7B8",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34/+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (reads manager+0x34 koma sub-table, stride 0xC); NOT chr_b"
+          },
+          {
+            "address": "0x0214D874",
+            "region": "ov5",
+            "function": "0x0214D85C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (appends koma's own byte+6 to output); NOT chr_b"
+          },
+          {
+            "address": "0x0214D8E8",
+            "region": "ov5",
+            "function": "0x0214D8D0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (appends koma's own signed byte+8 to output); NOT chr_b"
+          },
+          {
+            "address": "0x0214D95C",
+            "region": "ov5",
+            "function": "0x0214D944",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: 'build sort/render key' loop for koma-hand display; when a selector nibble (byte+0xB high nibble) == 3 ('special form'), looks up chr_b FormType (record+0, base=manager+0x40, stride 0x3C, index = koma byte+7) and folds it into a 16-bit key; the nibble!=3 branches instead read chr_s (manager+0x48, not chr_b)"
+          },
+          {
+            "address": "0x0214DA54",
+            "region": "ov5",
+            "function": "0x0214DA3C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E8",
+            "classification": "menu/UI: sibling koma-filter-list builder variant (simplest form, no extra field); NOT chr_b"
+          },
+          {
+            "address": "0x0214DB0C",
+            "region": "ov5",
+            "function": "0x0214DAFC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma-list builder reading manager+0x34 koma sub-table directly (stride 0xC) to compute a sort value; NOT chr_b"
+          },
+          {
+            "address": "0x0214DC28",
+            "region": "ov5",
+            "function": "0x0214DC18",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: 'build sort/render key' loop (variant of 0x0214D944) for deck/panel list; when selector byte+0xB high-nibble==3 ('special form'), reads chr_b FormType (record+0, manager+0x40, stride 0x3C, index=koma byte+7); the ==1 branch instead reads chr_s (manager+0x48)"
+          },
+          {
+            "address": "0x0214DE18",
+            "region": "ov5",
+            "function": "0x0214DE14",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x5C",
+            "classification": "menu/UI: filters a koma-list via manager+0x8F0-sized loop over +0x58/+0x5C parallel arrays and a per-entry predicate"
+          },
+          {
+            "address": "0x0214DE94",
+            "region": "ov5",
+            "function": "0x0214DE14",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0/+0x58/+0x5C",
+            "classification": "menu/UI: same function, writes back filtered count into manager+0x8F0"
+          },
+          {
+            "address": "0x0214DEE8",
+            "region": "ov5",
+            "function": "0x0214DEE4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: reads manager+0x34 koma sub-table (stride 0xC) to fetch one byte, feeds a random-range call; NOT chr_b"
+          },
+          {
+            "address": "0x0214E000",
+            "region": "ov5",
+            "function": "0x0214E000",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F0",
+            "classification": "menu/UI: trivial getter, returns manager+0x8F0 config value; NOT chr_b"
+          },
+          {
+            "address": "0x0214E018",
+            "region": "ov5",
+            "function": "0x0214E018",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x58",
+            "classification": "menu/UI: trivial getter, indexes manager+0x58 koma-filter-list array by param; NOT chr_b"
+          },
+          {
+            "address": "0x0214E038",
+            "region": "ov5",
+            "function": "0x0214E030",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma sub-table (manager+0x34, stride 0xC) record-pointer arithmetic getter; NOT chr_b"
+          },
+          {
+            "address": "0x0214E060",
+            "region": "ov5",
+            "function": "0x0214E05C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: sibling of the above (arg order swapped); NOT chr_b"
+          },
+          {
+            "address": "0x0214E084",
+            "region": "ov5",
+            "function": "0x0214E084",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: koma sub-table getter reading a fixed +8 field via mla addressing; NOT chr_b"
+          },
+          {
+            "address": "0x0214E0A4",
+            "region": "ov5",
+            "function": "0x0214E0A4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: reads the 212-byte 'unidentified' table at manager+0x44 (stride 0xD4, confirms loader hit 0x020762B4's slot identity); NOT chr_b"
+          },
+          {
+            "address": "0x0214E120",
+            "region": "ov5",
+            "function": "0x0214E11C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor with an extra +0x64 sub-offset; NOT chr_b"
+          },
+          {
+            "address": "0x0214E190",
+            "region": "ov5",
+            "function": "0x0214E190",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor reading its own +0x54 sub-field; NOT chr_b"
+          },
+          {
+            "address": "0x0214E1E0",
+            "region": "ov5",
+            "function": "0x0214E1E0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: sibling 212-byte-table (manager+0x44) accessor variant (decode continues past a branch as apparent Thumb bytes -- likely a shared-tail veneer artifact in the pre-built disasm database; base+stride setup is clean ARM and fully confirms the +0x44 slot); NOT chr_b"
+          },
+          {
+            "address": "0x0214E258",
+            "region": "ov5",
+            "function": "0x0214E238",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: same 'special form' (nibble==3) dispatch family as 0x0214D944/0x0214DC18/0x0214E480; establishes chr_b array base (manager+0x40) and record index (stride 0x3C) cleanly, but the final single-byte field read is past a disasm-decode anomaly (bytes past 0x0214E268 render as Thumb-looking text in the pre-built listing) -- record offset 0 (FormType) is PLAUSIBLE by structural analogy to the other 3 members of this family, not independently confirmed via a clean verbatim read here"
+          },
+          {
+            "address": "0x0214E2A8",
+            "region": "ov5",
+            "function": "0x0214E284",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: same 'special form' (nibble==3) dispatch family; identical decode-anomaly caveat as 0x0214E238 -- base+stride (manager+0x40, 0x3C) cleanly confirmed, final ldrb obscured; offset 0 (FormType) PLAUSIBLE by analogy"
+          },
+          {
+            "address": "0x0214E328",
+            "region": "ov5",
+            "function": "0x0214E318",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x44",
+            "classification": "menu/UI: 212-byte-table (manager+0x44) accessor reading its own +0xCC sub-field as ushort; NOT chr_b"
+          },
+          {
+            "address": "0x0214E3D4",
+            "region": "ov5",
+            "function": "0x0214E3D4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x4C",
+            "classification": "menu/UI: 36-byte-table (manager+0x4C, stride 0x24) accessor, confirms loader hit 0x020762F8's slot identity; NOT chr_b"
+          },
+          {
+            "address": "0x0214E45C",
+            "region": "ov5",
+            "function": "0x0214E43C",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "menu/UI: chr_s table (manager+0x48, stride 0x14) byte accessor; sibling of chr_b's own getters, NOT chr_b"
+          },
+          {
+            "address": "0x0214E4A0",
+            "region": "ov5",
+            "function": "0x0214E480",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: KNOWN GROUND-TRUTH getter -- special-form (selector+0xB high nibble==3) dispatch reads chr_b FormType (record+0, manager+0x40, stride 0x3C, smulbb index)"
+          },
+          {
+            "address": "0x0214E4D0",
+            "region": "ov5",
+            "function": "0x0214E480",
+            "chr_b_record_offset": 0,
+            "manager_slot": null,
+            "classification": "menu/UI: second literal_load of the same constant within the same getter function 0x0214E480 (compiler re-loaded the pool value rather than reusing a register)"
+          },
+          {
+            "address": "0x0214E4FC",
+            "region": "ov5",
+            "function": "0x0214E4FC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x38",
+            "classification": "menu/UI: kshape table (manager+0x38) pointer-array getter indexed by param*4; NOT chr_b"
+          },
+          {
+            "address": "0x0214E528",
+            "region": "ov5",
+            "function": "0x0214E518",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "menu/UI: 12-byte-table (manager+0x54) accessor, confirms loader hit 0x0207633C's slot identity; NOT chr_b"
+          },
+          {
+            "address": "0x0214E564",
+            "region": "ov5",
+            "function": "0x0214E554",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x54",
+            "classification": "menu/UI: sibling 12-byte-table (manager+0x54) accessor with an extra +4 sub-field; NOT chr_b"
+          },
+          {
+            "address": "0x0214E59C",
+            "region": "ov5",
+            "function": "0x0214E598",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4",
+            "classification": "menu/UI: reads manager+0x8E4 mode-config value (gate check); NOT chr_b"
+          },
+          {
+            "address": "0x0214E5F0",
+            "region": "ov5",
+            "function": "0x0214E5F0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x34",
+            "classification": "menu/UI: walks a manager+0x34-rooted koma sub-table linked list collecting u16 fields; NOT chr_b"
+          },
+          {
+            "address": "0x0214E694",
+            "region": "ov5",
+            "function": "0x0214E690",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8EC",
+            "classification": "menu/UI: reads manager+0x8EC (koma-list-builder predicate/vtable slot) directly; NOT chr_b"
+          },
+          {
+            "address": "0x02151760",
+            "region": "ov5",
+            "function": "0x021516B4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8E4",
+            "classification": "menu/UI: reads manager+0x8E4 mode-config value (branch gate in a larger UI update routine); NOT chr_b"
+          },
+          {
+            "address": "0x02151954",
+            "region": "ov5",
+            "function": "0x02151888",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1000..",
+            "classification": "menu/UI: reads the manager+0x1000-range config sub-struct as part of an angle/ID fixed-point encoding written to an external small buffer; NOT chr_b"
+          },
+          {
+            "address": "0x0215342C",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x8F8",
+            "classification": "menu/UI: reads manager+0x8F8 config bitmask (tst against a per-slot bit)"
+          },
+          {
+            "address": "0x02153604",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x910",
+            "classification": "menu/UI: reads manager+0x910 config bitmask (tst against a per-slot bit)"
+          },
+          {
+            "address": "0x021536EC",
+            "region": "ov5",
+            "function": "0x021533B0",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x1900+2i",
+            "classification": "menu/UI: reads manager+0x1900+idx*2 config halfword (tst against a per-slot bit)"
+          },
+          {
+            "address": "0x0215FAEC",
+            "region": "ov6",
+            "function": "0x0215FAC4",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x50",
+            "classification": "battle: per-frame listener/entity dispatch reads manager+0x50 (the ability/passive-effect lookup table, same slot consumed by arm9 0x020775BC/0x020777A8/0x0207783C/0x02078040/0x020781BC) to select a per-entity handler via an ov6-local jump table; this is the ONLY direct ov6 literal_load hit to 0x0214BD80 in the whole ROM, and it does NOT touch chr_b's own +0x40 array"
+          },
+          {
+            "address": "0x021752B8",
+            "region": "ov11",
+            "function": "0x021751CC",
+            "chr_b_record_offset": null,
+            "manager_slot": "+0x48",
+            "classification": "battle-AI: AI branch/command-node range-and-facing evaluator reads chr_s (manager+0x48, stride 0x14, index=PassiveIndex) -- NOT chr_b's own array; chr_b IS consumed elsewhere in the SAME overlay (function 0x02174330, calling the two arm9 getters at 0x02078514/0x0207853C) but that consumption is via bl to arm9, not a direct literal_load of 0x0214BD80 inside ov11 itself"
+          }
+        ]
+      }
+    },
+    {
+      "claim": "ANSWERS Q3 (synthesis). Is any chr_b getter reachable from ov6 battle code (e.g. 0x02158B20)? NUANCED YES, via two distinct mechanisms, plus one clear negative: (1) NEGATIVE for direct access: the sole ov6 literal_load hit to 0x0214BD80 (0x0215FAEC) never touches chr_b's own +0x40 array (it reads a sibling ability-table slot, manager+0x50); no ov6 code anywhere loads the chr_b array pointer itself. (2) POSITIVE via caching: ov6's actual hit-resolution function 0x02158B20 calls arm9 0x020784E4 (call site 0x02158D8C), which reads an attack-property value that arm9 0x020772E4/0x02077C0C previously CACHED from chr_b's CombatStatNValue field (+0x10+4*i) into a move/technique struct at technique-setup time -- i.e. the value ov6 consumes during hit resolution is pre-computed from chr_b, not read live from it, exactly matching the prompt's cache-at-load hypothesis (generalized from weight/knockback to attack-property scaling). (3) POSITIVE via live battle-time read (a DIFFERENT overlay than ov6): chr_b's BattleParams field (+0x24, +0x2C) IS read LIVE, every time it's needed, by the Battle-AI overlay ov11 (function 0x02174330, calling arm9 getters 0x02078514/0x0207853C) to build technique-availability/range data for CPU opponent decision-making -- this runs during actual battles (it is not menu code; ov11's only strings are Battle-AI debug labels) even though it is architecturally a separate overlay from ov6's hit-resolution code. Overall: chr_b's per-frame/per-hit-critical fields (CombatStatNValue) are cached rather than live-read by the time ov6 needs them, but chr_b is NOT universally cache-only -- the AI subsystem reads it live. If the question is narrowed to 'only ov5 vs ov6', the answer is that every OTHER confirmed chr_b consumer besides the AI (statA/B/C eligibility matcher, FormType selectors, record-cache function, flags-as-ability dispatcher) is core arm9 simulation code or ov5 menu code, never ov6 directly.",
+      "addresses": [
+        "0x02077310",
+        "0x02078514"
+      ],
+      "provenance": "arm9",
+      "evidence_disasm": "0x02077310: ldr r5, [pc, #0x90] | 0x0207734C: ldr r2, [r8, #0x34] | 0x02078514: ldr r2, [pc, #0x1c] | 0x02078524: ldr r2, [r2, #0x40]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Whether the move/technique struct written by 0x02077C0C/0x020772E4 (via charStruct+0x558 list nodes) and read by 0x020784E4 (via charStruct+0x56C) are proven the same object at runtime is the one remaining structural gap in the ov6 cache-chain argument (see the open_questions on the 0x020772E4 claim)."
+      ]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "ClassId (+0xE) has zero observed direct consumers among the 97 xref hits to 0x0214BD80 -- either trace it via a different access mechanism (e.g. a value cached at parse time into a separate table never touching the raw literal), or confirm via GDB that it is genuinely dead data in this ROM build.",
+    "The CharId(+3)/Flags(+4-7)-as-ability-index reinterpretation (claim on 0x02077768) should be GDB-verified against known character/technique combinations to turn 'MISMATCH (candidate)'/'MISMATCH (confirmed)' into a concrete field-rename recommendation for jus_files/exported_combat/chr_b.json and src/JUS.Tool/Combat/Formats/BattleCharacterEntry.cs.",
+    "The apparent Thumb-mode decode artifact immediately after the smulbb/mla record-index computation in ov5 functions 0x0214E238 and 0x0214E284 (and briefly in 0x0214DEE4/0x0214E1E0) recurred across at least 4 independent functions -- worth a targeted look at the disasm database build (disasm_db.py) for a systematic shared-tail-veneer misalignment bug in this address range, rather than treating each occurrence as an isolated anomaly.",
+    "The open structural gap in the Q3 cache-chain argument (does charStruct+0x558's list-node object equal the charStruct+0x56C pointer target?) is answerable with a single GDB session: break on the write side (0x02077368/0x02077C9C region) and the read side (0x020784E8) during one attack and compare pointers.",
+    "ov11's Battle-AI subsystem (function 0x02174330 and its 19 callees) is a promising, previously-uncatalogued reachability path into chr_b for a future tracer unit -- this campaign only followed the two BattleParams getters found via caller-tracing; a dedicated pass over 0x02174330's other callees might find additional live chr_b reads (e.g. of statA/B/C or CombatStatN) that were missed because they don't literal_load 0x0214BD80 directly inside ov11."
+  ]
+}

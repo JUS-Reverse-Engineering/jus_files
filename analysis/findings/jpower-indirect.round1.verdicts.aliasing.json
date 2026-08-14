@@ -1,0 +1,32 @@
+{
+  "subsystem": "jpower-indirect",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: ov5 could be a shared/battle-resident overlay, collapsing the pivot. Refuted: 0x021652E8 lies in the 0x0214CD20 window that query.py's own overlay map documents as mutually exclusive across ov0-ov9 (ov6 included), and ov5's strings independently corroborate a pure menu identity (DeckMake.cpp, jgalaxy.bin, Database_MenuCreate, JPowerKomaList_Add) while ov6 has zero jpower/jgalaxy/deckmake strings. xrefs-to 0x021713FC reconfirms exactly one 'bin/jpower.bin' reference ROM-wide, and the returned wrapper pointer is stored into [screen_obj+0x94] on a freshly heap-allocated, screen-local JGalaxy object (constructed at 0x02162410), not any persistent global -- reinforcing a menu-scoped lifetime rather than a battle-shared one. Disasm re-verified line-for-line."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: the 304-byte stride could index a coincidental menu-only per-character aggregate unrelated to real per-attack jpower entries. Refuted: JPowerEntry.cs (src/JUS.Tool/Combat/Formats/JPowerEntry.cs) fixes BlockSize=304 for a struct whose fields (Damage1-3, Hitstun, LinkCategory, ExtendedData) are unmistakably per-attack, and jus_files/exported_combat/jpower.json's 311 entries match that schema; docs/research/Research-Status.md documents a gameplay-verified formula (damage1/5 + tier-2) reproducing real observed battle damage for a dozen characters, so the indexed structure is the genuine per-attack table, not an unrelated aggregate. Independently reconfirmed via xrefs-to: 0x02165398 has 3 branch call sites and 0x021653AC has 9, all exclusively in ov5, none in ov6/arm9."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: this lone arm9 divide-by-5 site could secretly be damage-adjacent despite its label. Independently disassembled the surrounding ~0x500 bytes (0x02079174-0x020795F8): a 20-iteration (0x14) loop over a vtable-driven object array with decimal-digit ASCII formatting (div-by-10, +0x30) immediately before it, and the div-by-5 result is tripled/shifted into a fixed-point (x,y) pair passed to a position-setter -- consistent with icon-grid layout math. No char+0x56c/0x1a8/0x1b4 reference found anywhere in the inspected span."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: same as claim 2, applied to the five ov5 sites. Spot-checked 0x02153590-0x0215362C: quotient/remainder from two divide-by-5 calls feed an mla against a row-stride constant plus a loop bound of 10, a textbook grid-index computation; no character-struct offsets appear nearby. Consistent with menu/list layout, not damage math."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UNSURE",
+      "reason": "Alternative tested: the sub-object's +0xe8/+0x130 deltas could be populated from a cached pointer into (or a build-time copy of) jpower.bin rather than from an entirely separate live computation. Static evidence is genuinely ambiguous both ways: the two deltas ARE consumed by two distinct apply-functions (0x20783cc, 0x20781e4), matching the damage1/damage2 dual-track split documented in Research-Status.md (supports a jpower-derived value), but 0x02156A38 (the MoveInfo constructor) has zero static callers -- it's reached only via indirect/vtable dispatch, so the actual writer of +0xe8/+0x130 could not be located by search-imm or xrefs-to, exactly as round1 reported. The numeric match between the sub-object's +0x130 offset and the jpower stride is very likely coincidental: search-imm 0x130 returns 70 hits spread across nearly every overlay, showing 0x130 is an unremarkable common struct offset in this codebase, not a jpower-specific signature. Discriminating test: a hardware watchpoint on [r1+0xe8]/[r1+0x130] (or on the heap buffer returned by the ov5 file-open) during a live battle hit, as the tracer's own gdb_check already proposes."
+    }
+  ]
+}

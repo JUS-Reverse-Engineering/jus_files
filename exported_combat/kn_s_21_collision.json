@@ -1,0 +1,31 @@
+{
+  "characterId": "kn_s_21",
+  "entries": [
+    {
+      "collisionType": 5,
+      "subType": 2,
+      "extFlags": 0,
+      "projectileId": 0,
+      "frameStart": 36,
+      "durationMult": 0,
+      "reserved0": 0,
+      "hitModifier": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "positionFlags": 0,
+      "reserved1": 0,
+      "width": 12,
+      "height": 2,
+      "damageFlags": 1,
+      "knockback": 0,
+      "hitTier": 3,
+      "hitProperties": 2,
+      "reserved2": 0,
+      "reserved3": 0,
+      "isTerminator": false,
+      "damageFlagsLow": 1,
+      "hasSpecialFlag": false
+    }
+  ],
+  "count": 1
+}

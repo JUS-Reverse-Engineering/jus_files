@@ -1,0 +1,79 @@
+{
+  "subsystem": "weight-hunt",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "ov6 function 0x02158ED0 (the status-effect-slot manager) recomputes the active slot's hitstun-duration field (slot+0xe) by: reloading the current duration, calling the generic division routine at 0x0200d12c (divide by the constant 10 -- r1 was set to 0xa earlier), then multiplying that quotient by a per-index table value (the value at [table+0x4c], doubled via lsl #1) and adding the pre-division duration back in via a single MLA, storing the result back into slot+0xe. This is the exact hitstun-duration-scaling arithmetic referenced by the fresh lead.",
+      "addresses": ["0x02158F58", "0x02158F5C", "0x02158F78", "0x02158F80", "0x02158F84", "0x02158F88"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158F58: be00d6e1  ldrh r0, [r6, #0xe] | 0x02158F5C: 72d0faeb  bl #0x200d12c | 0x02158F78: 4c2091e5  ldr r2, [r1, #0x4c] | 0x02158F80: 8220a0e1  lsl r2, r2, #1 | 0x02158F84: 903222e0  mla r2, r0, r2, r3 | 0x02158F88: be20c6e1  strh r2, [r6, #0xe]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Does the 0xa (10) divisor ever vary per-character, or is it always the literal constant seen here? Static reading shows a fixed mov r1,#0xa immediately before the call, so it appears to be a fixed unit-conversion divisor, not a weight divisor."
+      ]
+    },
+    {
+      "claim": "arm9 function 0x0200D12C is a generic signed-integer long-division routine (sign normalization via eor/rsb, shift-count computed via a leading-zero-count-style ladder of cmp/sub/lsr, then a jump into an unrolled table of 32 conditional adcs/sublo subtract-and-shift steps). It is a general-purpose division primitive with no character-specific data baked in, confirming that any weight-like effect at its call sites must come from its *arguments*, not from this function itself.",
+      "addresses": ["0x0200D12C", "0x0200D188", "0x0200D198", "0x0200D1A0", "0x0200D1A4"],
+      "evidence_disasm": "0x0200D12C: 01c020e0  eor ip, r0, r1 | 0x0200D188: 1002a0e1  lsl r0, r0, r2 | 0x0200D198: 02f18fe0  add pc, pc, r2, lsl #2 | 0x0200D1A0: 8330b1e0  adcs r3, r1, r3, lsl #1 | 0x0200D1A4: 01304330  sublo r3, r3, r1",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "Inside 0x02158ED0, the table index used for the [table+0x4c]-style per-entry lookup that feeds the hitstun-duration MLA (claim 1) is NOT the r8 attack-type parameter passed into the function -- it is a signed byte read from the acting object's own extended state, at sb+0x100+0xe0 (i.e. object offset +0x1e0), via a double-indirected table pointer ([[literal]] then +index*4). This means the scaling multiplier depends on a persistent per-object field rather than directly on the incoming hit's attack-type id, making that +0x1e0 field (not r8) the actual candidate whose provenance (per-character vs per-hit-instance) determines whether this is a weight-like mechanism.",
+      "addresses": ["0x02158F60", "0x02158F64", "0x02158F68", "0x02158F6C", "0x02158F74"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158F60: 011c89e2  add r1, sb, #0x100 | 0x02158F64: 80219fe5  ldr r2, [pc, #0x180] | 0x02158F68: d01ed1e1  ldrsb r1, [r1, #0xe0] | 0x02158F6C: 002092e5  ldr r2, [r2] | 0x02158F74: 011182e0  add r1, r2, r1, lsl #2",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "What writes sb+0x1e0? Not resolved this round -- it is also read/compared elsewhere in 0x02158ED0 against a value cached at [[sb+0x1a8]+0x10]+0x182, consistent with a 'current hit-type/element' tracker rather than an obviously per-character static field, but the write site (and thus whether it is ever initialized from the chr_b record) is unconfirmed.",
+        "Is sb+0x1e0 set once at character-load time from chr_b (which would make it a real per-character constant, i.e. a weight-class candidate) or does it change every hit (which would make it a per-attack/element classifier unrelated to weight)? Needs a dynamic (gdb) write-breakpoint on sb+0x1e0 to resolve."
+      ]
+    },
+    {
+      "claim": "A previously-unexamined chr_b 60-byte-record field -- the byte at record offset +0x0 (distinct from the known statA/B/C halfwords at +8/+0xA/+0xC) -- is read by a getter, ov5 0x0214E480, using the same singleton-deref + record-base(+0x40) + charIndex*0x3C addressing scheme as the known statA/B/C getter (arm9 0x020771A0 / ov5 0x0214E480's neighbor), but gated behind two 'work'-object condition checks (work+6==0, and the high nibble of work+0xb ==3) with the charIndex sourced from work+7. This is a genuinely new getter reading an offset (+0x0) that was previously in the ground truth's UNEXAMINED range (0x0-0x7).",
+      "addresses": ["0x0214E480", "0x0214E4A0", "0x0214E4A4", "0x0214E4A8", "0x0214E4AC", "0x0214E4B0", "0x0214E4B4", "0x0214E4B8"],
+      "provenance": "ov5",
+      "evidence_disasm": "0x0214E480: 0610d0e5  ldrb r1, [r0, #6] | 0x0214E4A0: 50109fe5  ldr r1, [pc, #0x50] | 0x0214E4A4: 0720d0e5  ldrb r2, [r0, #7] | 0x0214E4A8: 001091e5  ldr r1, [r1] | 0x0214E4AC: 3c00a0e3  mov r0, #0x3c | 0x0214E4B0: 820060e1  smulbb r0, r2, r0 | 0x0214E4B4: 401091e5  ldr r1, [r1, #0x40] | 0x0214E4B8: 0010d1e7  ldrb r1, [r1, r0]",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break *0x0214E4B8; when work+6==0 and (work[0xb]>>4)==3, confirm r1 (post-load) equals the byte at chr_b_record_base + charIndex*0x3C + 0x0 for that charIndex, by cross-checking against jus_files/exported_combat/chr_b.json's per-entry first field for the same roster slot.",
+      "open_questions": [
+        "Does chr_b record offset +0x0 correspond to the exported chr_b.json field labeled 'formType'? Not independently confirmed this round -- only the byte-offset-0 read itself is confirmed, not its semantic label.",
+        "Is this offset-0 byte weight-related, or (as claim 5's caller context suggests) a UI/series-classification value?"
+      ]
+    },
+    {
+      "claim": "The only located caller of the offset+0 getter (claim 4), ov5 code at 0x02151B58-0x02151B84, uses its return value to fill byte field +6 of a small per-roster-entry record (fields being written at +2,+3,+4,+5,+6,+7 of pointer r7) that is otherwise populated from small per-charIndex byte lookups. This record-building pattern looks like assembly of a character-select/roster-display info block rather than a battle-time physics input, which argues against chr_b offset +0 being the knockback/weight value (it reads more like a discrete UI/category attribute, e.g. series or form classification).",
+      "addresses": ["0x02151B58", "0x02151B5C", "0x02151B60", "0x02151B74", "0x02151B84"],
+      "provenance": "ov5",
+      "evidence_disasm": "0x02151B58: 0610d4e5  ldrb r1, [r4, #6] | 0x02151B5C: 8110d2e7  ldrb r1, [r2, r1, lsl #1] | 0x02151B60: 0410c7e5  strb r1, [r7, #4] | 0x02151B74: 41f2ffeb  bl #0x214e480 | 0x02151B84: 0610c7e5  strb r1, [r7, #6]",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break *0x2151b88; inspect the memory pointed to by r7 (fields r7+2..r7+7 having just been filled) and the call stack/context to confirm this record is destined for a menu/select-screen display rather than an in-battle physics object.",
+      "open_questions": [
+        "What consumes this filled r7 record further up the call chain? Not traced this round."
+      ]
+    },
+    {
+      "claim": "A generic per-index bitfield-flag test helper (part of the ov5 function spanning 0x0214D560-0x0214D5BC) reads a 32-bit word from the same battle-resource singleton used for chr_b records, at singleton+0x60, indexed by (idx>>5), and tests bit (idx&0x1f) -- i.e. GetFlag(idx) hanging off the identical singleton object that owns the chr_b array (+0x40). This is architecturally the right shape for a per-character (or per-ability) boolean-flag table the ticket's Q2 asks about, but the one located call site (ov5 0x0215CE78) passes an index synthesized from move-record bytes at [obj+0xe],[obj+0x43],[obj+0x44] (a move/attack id composite), not a charIndex -- so this specific call site tests per-move flags, not confirmed per-character passives.",
+      "addresses": ["0x0214D594", "0x0214D598", "0x0214D5A4", "0x0214D5AC", "0x0214D5B0", "0x0215CE50", "0x0215CE54", "0x0215CE58", "0x0215CE78"],
+      "provenance": "ov5",
+      "evidence_disasm": "0x0214D594: 20109fe5  ldr r1, [pc, #0x20] | 0x0214D598: a022a0e1  lsr r2, r0, #5 | 0x0214D5A4: 601091e5  ldr r1, [r1, #0x60] | 0x0214D5AC: 021191e7  ldr r1, [r1, r2, lsl #2] | 0x0214D5B0: 100311e1  tst r1, r0, lsl r3 | 0x0215CE50: 0e30d8e5  ldrb r3, [r8, #0xe] | 0x0215CE54: 4310d8e5  ldrb r1, [r8, #0x43] | 0x0215CE58: 4420d8e5  ldrb r2, [r8, #0x44] | 0x0215CE78: b8c1ffeb  bl #0x214d560",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break *0x214d5a4; log the r0 argument (flag index) across an entire match, across all overlays that share this shared-window code (ov0,ov2,ov3,ov4,ov5,ov7 per query.py's ambiguity listing for this address), to see whether ANY call site ever passes a charIndex-derived (0-73) value rather than a move-id composite -- would confirm/deny this as the innate-passive/ability dispatch table.",
+      "open_questions": [
+        "Are there other callers of this same helper (in the other overlay copies ov0/ov2/ov3/ov4/ov7 that duplicate this code at the same shared address) that pass a charIndex rather than a move-id? Not checked this round -- query.py's own function-boundary bookkeeping for this shared address was inconsistent across overlays (ov5 reported as containing it, others did not), which limited how far this could be chased statically in the time available."
+      ]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "Weight/knockback-resistance was NOT located this round. The strongest lead (ov6 0x02158ED0's [table+0x4c] scaling, claim 1/3) scales hitstun by a per-object field at +0x1e0 that looks more like a transient 'current hit type/element' tracker than a static per-character constant; resolving whether +0x1e0 is ever initialized from chr_b at character-load time (a dynamic write-breakpoint, since no write site was found statically this round) would settle whether this avenue is a dead end or the actual mechanism.",
+    "Systematically catalog the remaining ~85 references to the chr_b singleton pointer 0x0214BD80 (arm9 clusters 0x02076028-0x0207952C and ov5 clusters 0x0214D580-0x0214E6D8, ov5 0x02151760/0x02151954/0x0215342C-0x021536EC, ov6 0x0215FAEC, ov11 0x021752B8) found via `query.py xrefs-to 0x0214BD80` -- only 2 of these (the statA/B/C getter and the new offset+0 getter in claim 4) were disassembled this round. Building a complete offset map of every getter's accessed byte/halfword offset within the 0x3C-byte record is the most direct way to enumerate every examined vs. still-unexamined chr_b field.",
+    "The arm9_tables.json pattern-scan artifact's 'near 74 entries' index_table candidates (file offsets 0x08DFE9, 0x08E149, 0x08E7C7, 0x08E92B, 0x092306, 0x09439E, 0x09FB6D, scan_range 0x070000-0x0A9000) were inspected and look like scanner false-positives -- their sample_values include what appear to be embedded ASCII bytes (e.g. 56,53,49,52,80,65,76 decode to '8','5','1','4','P','A','L') and coordinate-like runs, not a clean 74-entry small-int stat array. The 70-78-entry *pointer* tables in the same artifact (e.g. 0x09B880, 0x09BAD8, 0x09C30C -- ending in a repeated function-pointer sentinel 0x020102D1) look more structurally real but are code-pointer vtables (likely per-character special-move dispatch), not raw data; worth `xrefs-to`-ing their RAM addresses (after translating ROM file offset -> RAM load address, not done this round) if the passive/ability dispatch (Q2) is pursued further.",
+    "Q2 (passive/ability dispatch) has only a speculative lead (claim 6): a generic per-index bitfield accessor off the same battle-resource singleton as chr_b. Its only located call site indexes by a move-id composite, not charIndex. Finding a call site that indexes this same singleton+0x60 (or the separate fixed global bit array at arm9 0x020B0BAC seen immediately adjacent in the same function family) with a charIndex-range value (0-73) would be strong confirmation of a per-character passive-flag table; this needs either exhaustively walking `query.py callers` on every overlay copy of that shared-address function, or a dynamic trace.",
+    "Edajima's specific roster/charIndex value was not available in this round's read-only reference set (chr_b.json has no name-to-index mapping, and the name-list binaries pname.bin/infoname.bin were out of scope for this static-only investigation) -- if a name mapping becomes available, targeted `search-imm`/disasm around any code comparing charIndex to that specific constant would be a much faster route to the passive-dispatch site than the generic scan attempted this round."
+  ]
+}

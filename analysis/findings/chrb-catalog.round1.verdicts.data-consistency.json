@@ -1,0 +1,87 @@
+{
+    "subsystem": "chrb-catalog",
+    "round": 1,
+    "lens": "data-consistency",
+    "verdicts": [
+        {
+            "claim_idx": 0,
+            "verdict": "UPHELD",
+            "reason": "The raw chr_b.bin (jus_files/ripped_jus_files/bin/chr_b.bin and src/JUS.Tests/Resources/.../chr_b.bin) is exactly 4440 bytes = 74 x 60 with zero remainder, and chr_b.json reports count=74 -- confirming the 60-byte stride and, critically, that the file itself has NO header (a +0x40 file header would break the clean division: (4440-0x40)/60=72.93, non-integer). This proves 'manager+0x40' is a RAM battle-resource-manager struct field caching GetData()'s return pointer, not a chr_b.bin on-disk header, resolving the only structural ambiguity in the claim. An independent from-scratch reparse of the raw binary using recordBase=index*0x3C (no header) reproduced chr_b.json's 74 entries with 0 mismatches."
+        },
+        {
+            "claim_idx": 1,
+            "verdict": "UPHELD",
+            "reason": "Resolved CHARACTER_MAP indices and cross-checked chr_b.json's statC(+0xC) against Research-Status.md's named speed examples: Zoro(idx14)=33, Luffy(idx12)=82, Ichigo(idx39)=225, Lenalee(idx46)=153, Killua(idx31)=300 -- all 5 EXACT matches, strongly confirming +0xC=statC. Note a confidence-label inconsistency worth flagging: Battle-Engine-Map.md's movement-subsystem claim 6 (the origin of 'eligibility matcher, not speed-tier check') is itself labeled only PLAUSIBLE there, while this claim upgrades it to CONFIRMED_STATIC -- not a data contradiction (statC-as-speed-value and statC-as-eligibility-input coexist fine), but a calibration drift across docs."
+        },
+        {
+            "claim_idx": 2,
+            "verdict": "UPHELD",
+            "reason": "combatStat1-5Value across all 74 chr_b records ranges 320-5784, only ~35% of the claimed 0x4000(16384) clamp ceiling -- the clamp exists as headroom but is never actually engaged by the current 74-character roster (max observed 5784 vs clamp 16384). jpower.json's damage fields (damage1/2/3, totalDamage: all 0-600) are an order of magnitude smaller than chr_b's combatStat range, confirming these are separate cached quantities, not the same value reused -- consistent with, not contradicting, the cache-at-setup story. The +0x558-vs-+0x56C same-object identity question has no chr_b.json/jpower.json data signature to test and remains open per the claim's own gdb_check."
+        },
+        {
+            "claim_idx": 3,
+            "verdict": "UPHELD",
+            "reason": "Byte-decomposing the exported 'flags' u32 (little-endian, offset+4..+7) across all 74 records: byte0(+4) spans 0-55, byte1(+5) spans 0-48 (max EXACTLY equals docs/research/Cheat-Code-Analysis.md's documented ability-ID ceiling 0x30=48), byte2(+6) is 0 in ALL 74 records, byte3(+7) spans 0-56 -- small ID-shaped, non-power-of-two value sets consistent with independent effect-ID bytes rather than a combined bitmask. CharId(+3, range 0-55) groups non-randomly by franchise for several values (all 9 Dragon Ball characters share charId=7 identically; all 3 Shaman King share charId=6; all 4 Debug share charId=0) yet Naruto's own roster splits across charId=2 and charId=13 and several buckets mix unrelated franchises -- not a clean unique 'character ID', consistent with it being consumed the same mechanical way as the Flags bytes rather than a distinguished identity field."
+        },
+        {
+            "claim_idx": 4,
+            "verdict": "UPHELD",
+            "reason": "Independent reparse confirms FormType/Tier/KomaSize at offsets 0/1/2 exactly (0 mismatches, 74 records). combatStatNValue's high byte (value>>8) is >=1 for ALL 5 stat slots across ALL 74 records (0 instances of a zero high byte) -- so the claimed 'default to 4 if zero' fallback is real code but structurally unreachable/dead for the entire current character roster, a concrete number worth recording for future GDB verification. TextIds is a 6xu16 (12-byte) block matching the claimed [0]=name/[1+techIdx]=move-name split, and jpower.json's much smaller damage-field range (0-600) confirms CombatStatValue is a separate cached quantity, not jpower's damage."
+        },
+        {
+            "claim_idx": 5,
+            "verdict": "UPHELD",
+            "reason": "The identical 12-byte BattleParams region (offset 0x24-0x2F) decodes very differently depending on element size: as ushort[6] the 6 values span 3-12337 (large, bitmask/range-shaped); as byte[] the tail (0x2C-0x2F) gives small round-number sets {25,30,35,40,50,60,100} / {0,20,25,30,35,40} / {0,10,15,20,25,30} / {0,1} -- genuinely different-shaped data from the same bytes under the two interpretations, matching the converter's own documented uncertainty about BattleParams' true structure. 61 of 74 records have distinct BattleParams blobs (13 shared), consistent with a per-character (not per-record) parameter block."
+        },
+        {
+            "claim_idx": 6,
+            "verdict": "UPHELD",
+            "reason": "BattleParams tail bytes (offset 0x2C-0x2F, read by 0x0207853C) are round multiples of 5 (0x2C max=100) plus a binary flag at 0x2F (values only 0/1) -- a shape consistent with AI range/weight/facing parameters rather than raw damage/bitflag data. The specific 0x50(80)/0xA0(160) comparison thresholds cited in the claim aren't independently checkable from chr_b.json/jpower.json alone (no ov11 internal-comparison disasm was quoted, only the two bl call sites), so this is plausibility support, not a numeric proof."
+        },
+        {
+            "claim_idx": 7,
+            "verdict": "UPHELD",
+            "reason": "formType (offset+0) takes only 3 distinct values (0, 1, 2) across all 74 exported records, comfortably fitting a single-byte selector field with enormous headroom (0-255 range available) -- no data contradiction for FormType-as-dispatch-selector."
+        },
+        {
+            "claim_idx": 8,
+            "verdict": "UNSURE",
+            "reason": "No data implication: whether the bytes after the smulbb sequence are a genuine Thumb-mode branch or a disasm-listing artifact is a pure code-decode question that chr_b.json/jpower.json cannot corroborate or refute. If the offset-0 read does occur as claimed, formType's trivial 0-2 range (see claim 7) poses no overflow/plausibility issue -- consistent with, but not proof of, the PLAUSIBLE confidence already assigned."
+        },
+        {
+            "claim_idx": 9,
+            "verdict": "UPHELD",
+            "reason": "No data implication for the negative claim itself (that ov6's one direct chr_b-singleton hit reads manager+0x50, not chr_b's +0x40 array) -- chr_b.json cannot confirm or deny access to a sibling table with no exported corpus. Consistent with claim 3/14's independent finding that manager+0x50 is the shared ability/passive-effect lookup table also consumed by the Flags/CharId bytes."
+        },
+        {
+            "claim_idx": 10,
+            "verdict": "UPHELD",
+            "reason": "Reuses the same +0x16/+0x18 cached-field mechanism validated under claims 2 and 4: combatStat-derived cache magnitudes (320-5784 across 74 records) sit well under the 0x4000(16384) clamp that 0x020784E4 is described as thresholding against, so the data magnitudes are consistent with a clamp/comparison read rather than requiring a fresh chr_b dereference at hit-check time."
+        },
+        {
+            "claim_idx": 11,
+            "verdict": "UPHELD",
+            "reason": "No data implication: this claim describes ov11 reading chr_s (manager+0x48, stride 0x14=20 bytes), a sibling table with no exported JSON anywhere in jus_files/exported_combat/ to test field ranges or confirm the 20-byte stride against. chr_b.json cannot corroborate or contradict this negative-for-chr_b claim."
+        },
+        {
+            "claim_idx": 12,
+            "verdict": "UPHELD",
+            "reason": "No data implication: this is a pure address/offset completeness catalog of accesses to sibling manager fields (koma +0x30/+0x34, kshape +0x38, chr_s +0x48, an unidentified 212-byte table +0x44, 36-byte table +0x4C, 12-byte table +0x54, ability table +0x50, match-config sub-struct). None of these sibling tables have exported JSON in this worktree (only chr_b.json, jpower.json, and per-file collision jsons exist under jus_files/exported_combat/), so there is no corpus to test claimed sizes/strides against. Structurally consistent with claim 0's manager-layout finding."
+        },
+        {
+            "claim_idx": 13,
+            "verdict": "UPHELD",
+            "reason": "No data implication, same reasoning as claim 12: this is the ov5-side completeness catalog of sibling-field accesses (koma/kshape/chr_s/ability-table/match-config), none of which have exported corpora to cross-check. Structurally consistent with the rest of the catalog."
+        },
+        {
+            "claim_idx": 14,
+            "verdict": "UPHELD",
+            "reason": "Strongest confirmation in this set. An independent from-scratch parse of the raw chr_b.bin (4440 bytes, 74 x 60-byte records, zero header) using exactly this claim's offset table (0x00/01/02/03 bytes, 0x04 u32, 0x08/0x0A/0x0C/0x0E u16s, 0x10.. five Value/Mod u16 pairs, 0x24-0x2F 12 raw bytes, 0x30-0x3B six u16s) reproduced chr_b.json's 74 entries with 0 mismatches across 15 checked fields. ClassId(+0xE) is confirmed consistent with 'UNOBSERVED': its exported range (256-684, with classId>>8 restricted to only {1,2}) is a well-formed but currently-unconsumed u16 -- present and structured, matching the claim's own characterization exactly rather than contradicting it."
+        },
+        {
+            "claim_idx": 15,
+            "verdict": "UPHELD",
+            "reason": "This synthesis claim rests entirely on claims 9, 10, and 11, all independently assessed above as UPHELD (no chr_b.json data contradicts the ov6-negative / cache-mediated / ov11-chr_s findings); no additional numeric evidence beyond what's already reported under those three claim indices."
+        }
+    ]
+}

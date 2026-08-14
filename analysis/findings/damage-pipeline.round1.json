@@ -1,0 +1,94 @@
+{
+  "subsystem": "damage-pipeline",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "The GDB-proven address 0x020784FC lives inside function 0x020784E4, which is NOT itself the per-hit damage-total formula. It computes a boolean: given a jpower-struct pointer r4=[charPtr+0x56c], it takes field16=[r4+0x16] ('max'), multiplies by caller-supplied r1, divides by literal 100, then compares field18=[r4+0x18] ('current', read at the GDB-proven address) against that result via a lsl#16/asr#16 sign round-trip, returning 1 if current<=result else 0 (i.e. 'is current <= pct% of max').",
+      "addresses": ["0x020784E4", "0x020784E8", "0x020784EC", "0x020784F0", "0x020784F4", "0x020784F8", "0x020784FC", "0x02078500", "0x02078504", "0x02078508", "0x0207850C", "0x02078510"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x020784E4: 10402de9  push {r4, lr} | 0x020784E8: 6c4590e5  ldr r4, [r0, #0x56c] | 0x020784EC: f621d4e1  ldrsh r2, [r4, #0x16] | 0x020784F0: 920100e0  mul r0, r2, r1 | 0x020784F4: 6410a0e3  mov r1, #0x64 | 0x020784F8: 0b53feeb  bl #0x200d12c | 0x020784FC: f811d4e1  ldrsh r1, [r4, #0x18] | 0x02078500: 0008a0e1  lsl r0, r0, #0x10 | 0x02078504: 400851e1  cmp r1, r0, asr #16 | 0x0207850C: 0000a0c3  movgt r0, #0 | 0x02078508: 0100a0d3  movle r0, #1 | 0x02078510: 1080bde8  pop {r4, pc}",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "Both known static callers of 0x020784E4 pass the literal percentage 25 (0x19) as r1, so the check performed at the GDB-proven address is specifically 'is current <= 25% of max', not a variable/tunable threshold and not the raw per-hit damage arithmetic.",
+      "addresses": ["0x02158D84", "0x02158D88", "0x02158D8C", "0x021608F8", "0x02160914", "0x02160918"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158D84: b4019ae5  ldr r0, [sl, #0x1b4] | 0x02158D88: 1910a0e3  mov r1, #0x19 | 0x02158D8C: d47dfceb  bl #0x20784e4 | 0x021608F8: 1910a0e3  mov r1, #0x19 | 0x02160914: b40198e5  ldr r0, [r8, #0x1b4] | 0x02160918: f15efceb  bl #0x20784e4",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "The divide-by-100 inside 0x020784E4 is implemented by calling a generic signed-division library routine (0x0200D12C, a classic normalize/shift long-division: eor/and to save the sign, cmp+rsblt to take absolute values, cmp/blo early-out, then a shift-count computation) with r1 holding the literal divisor 100 (mov r1,#0x64 at 0x020784F4) -- confirming the ground truth's 'ARM has no integer divide' note is realized here via subroutine call, not an inlined magic-multiply, for this particular divisor.",
+      "addresses": ["0x0200D12C", "0x0200D130", "0x0200D134", "0x0200D138", "0x0200D13C", "0x0200D140", "0x0200D144", "0x0200D148", "0x020784F4", "0x020784F8"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x0200D12C: 01c020e0  eor ip, r0, r1 | 0x0200D130: 02c10ce2  and ip, ip, #0x80000000 | 0x0200D134: 000050e3  cmp r0, #0 | 0x0200D138: 000060b2  rsblt r0, r0, #0 | 0x0200D13C: 01c08cb2  addlt ip, ip, #1 | 0x0200D140: 000051e3  cmp r1, #0 | 0x0200D144: 001061b2  rsblt r1, r1, #0 | 0x0200D148: 7500000a  beq #0x200d324 | 0x020784F4: 6410a0e3  mov r1, #0x64 | 0x020784F8: 0b53feeb  bl #0x200d12c",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "No inlined magic-multiply implementation of a divide-by-5 exists anywhere near the damage code: an arm9-wide pool-values scan for the two canonical /5 magic constants (signed 0x66666667, unsigned 0xCCCCCCCD) found only 4 total occurrences, and all 4 are inside unrelated routines that never touch the char+0x56c gauge structure -- a Gregorian/day-count date routine (0x02056394, evidenced by 'add lr,r2,#0x7d0' i.e. +2000 and 'sub r3,r1,#2'), two calendar/checksum routines dividing by 13 and by 7 (0x020586AC 'mov r1,#0xd'=13, 0x02058750 'mov r1,#7'), and a sprintf-style format parser doing base-10 digit extraction (0x0205237C, evidenced by the unsigned magic multiply followed by 'mov r1,#0xa'=10, and by explicit ASCII-flag comparisons against '+' (0x2b), '-' (0x2d) and '0' (0x30)). This rules out an inlined ÷5 magic-multiply in this immediate neighborhood; if the ground-truth ÷5 is literal, it is more likely done via a further call to the generic division subroutine 0x0200D12C with divisor 5, whose exact call site was not identified in this pass.",
+      "addresses": ["0x02056398", "0x020563A0", "0x020563A8", "0x020563CC", "0x020586EC", "0x020586F4", "0x02058790", "0x02058798", "0x02052A38", "0x02052A3C", "0x02052A44", "0x020524A4", "0x020524AC", "0x020524B4"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x02056398: 041090e5  ldr r1, [r0, #4] | 0x020563A0: 023041e2  sub r3, r1, #2 | 0x020563A8: 7dee82e2  add lr, r2, #0x7d0 | 0x020563CC: 88509fe5  ldr r5, [pc, #0x88] | 0x020586EC: 0d10a0e3  mov r1, #0xd | 0x020586F4: 4c209fe5  ldr r2, [pc, #0x4c] | 0x02058790: 0710a0e3  mov r1, #7 | 0x02058798: 4c209fe5  ldr r2, [pc, #0x4c] | 0x02052A38: 00029fe5  ldr r0, [pc, #0x200] | 0x02052A3C: 941080e0  umull r1, r0, r4, r0 | 0x02052A44: 0a10a0e3  mov r1, #0xa | 0x020524A4: 2b0054e3  cmp r4, #0x2b | 0x020524AC: 2d0054e3  cmp r4, #0x2d | 0x020524B4: 300054e3  cmp r4, #0x30",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": ["exact call site (out of 358 total, ~60+ within the ov6 battle overlay) where 0x0200D12C is invoked with a literal divisor of 5 for the ground-truth damage/5 term"]
+    },
+    {
+      "claim": "The struct reached via char+0x56c ('jpower' in the ground truth) has +0x16 behaving as a clamp/maximum bound and +0x18 as the current value of the same gauge, not '+0x16 = jpower.damage1' as tentatively hypothesized. Evidence: function 0x02078488 adds a signed delta r1 to [r0+0x18], clamps the result to [0, [r0+0x16]], writes it back to [r0+0x18], and returns an alive/nonzero flag; the immediately adjacent function 0x020784B8 instead grows [r2+0x16] itself by a delta, clamped to a hard cap of 0x4000, and early-outs if [r2+0x16] is already >= 0x4000. Together these read as 'ApplyDeltaToCurrent(clamped to Max)' and 'GrowMax(capped at 0x4000)' accessors for the same two-field gauge.",
+      "addresses": ["0x02078488", "0x0207848C", "0x02078490", "0x02078494", "0x02078498", "0x0207849C", "0x020784A0", "0x020784A4", "0x020784A8", "0x020784AC", "0x020784B0", "0x020784B4", "0x020784B8", "0x020784BC", "0x020784C0", "0x020784C4", "0x020784C8", "0x020784CC", "0x020784D0", "0x020784D4", "0x020784D8", "0x020784DC", "0x020784E0"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x02078488: f821d0e1  ldrsh r2, [r0, #0x18] | 0x0207848C: 021091e0  adds r1, r1, r2 | 0x02078490: f621d0e1  ldrsh r2, [r0, #0x16] | 0x02078494: 0010a043  movmi r1, #0 | 0x02078498: 020051e1  cmp r1, r2 | 0x0207849C: 0210a0c1  movgt r1, r2 | 0x020784A0: b811c0e1  strh r1, [r0, #0x18] | 0x020784A4: f801d0e1  ldrsh r0, [r0, #0x18] | 0x020784A8: 000050e3  cmp r0, #0 | 0x020784AC: 0100a013  movne r0, #1 | 0x020784B0: 0000a003  moveq r0, #0 | 0x020784B4: 1eff2fe1  bx lr | 0x020784B8: 6c2590e5  ldr r2, [r0, #0x56c] | 0x020784BC: f601d2e1  ldrsh r0, [r2, #0x16] | 0x020784C0: 010950e3  cmp r0, #0x4000 | 0x020784C4: 0000a0a3  movge r0, #0 | 0x020784C8: 1eff2fa1  bxge lr | 0x020784CC: 010080e0  add r0, r0, r1 | 0x020784D0: 010950e3  cmp r0, #0x4000 | 0x020784D4: 0109a0c3  movgt r0, #0x4000 | 0x020784D8: b601c2e1  strh r0, [r2, #0x16] | 0x020784DC: 0100a0e3  mov r0, #1 | 0x020784E0: 1eff2fe1  bx lr",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x02078488; watch [r0+0x16] and [r0+0x18] while landing hits that visibly change on-screen HP; confirm [r0+0x16] tracks max HP-like stat and [r0+0x18] decreases by the delta in r1, to confirm this pair is HP rather than a different gauge (e.g. super/guard meter).",
+      "open_questions": []
+    },
+    {
+      "claim": "0x020783CC is a trampoline: it loads a character pointer's +0x56c field (the jpower/gauge pointer) into r0 and tail-jumps (bx ip, ip pool-loaded as the raw bytes 88 84 07 02 = little-endian 0x02078488) into the ApplyDeltaToCurrent function from claim 5. This trampoline is called from 8 sites inside the ov6 battle overlay (see next claim for one such call site).",
+      "addresses": ["0x020783CC", "0x020783D0", "0x020783D4"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x020783CC: 04c09fe5  ldr ip, [pc, #4] | 0x020783D0: 6c0590e5  ldr r0, [r0, #0x56c] | 0x020783D4: 1cff2fe1  bx ip",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x020783CC on a real hit; confirm r0 resolves to the defending character's jpower pointer and r1 (the delta) is negative and matches -(final_damage) as reported by the known-good formula floor(damage1/5)+(tier-2); step into 0x02078488 and confirm [r0+0x18] (current) drops by that amount.",
+      "open_questions": []
+    },
+    {
+      "claim": "Inside the same function 0x02158B20 that performs the GDB-verified call at 0x02158D8C, the call site at 0x02158BC0 invokes the 0x020783CC trampoline (previous claim) with r0=[charPtr+0x1b4] and r1=a negated scratch value (r4 = -[some_ptr+0xe8]) -- this is the code path that actually decrements the current-gauge value, the most direct static candidate found for 'where computed damage gets written' (Q5).",
+      "addresses": ["0x02158BB0", "0x02158BB4", "0x02158BB8", "0x02158BC0"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158BB0: 004060e2  rsb r4, r0, #0 | 0x02158BB4: b4019ae5  ldr r0, [sl, #0x1b4] | 0x02158BB8: 0410a0e1  mov r1, r4 | 0x02158BC0: 017efceb  bl #0x20783cc",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x02158BC0; confirm r0 resolves to the defending character's jpower pointer and r1 (the delta) is negative and matches -(final_damage) as reported by the known-good formula floor(damage1/5)+(tier-2).",
+      "open_questions": []
+    },
+    {
+      "claim": "Immediately before the GDB-verified call at 0x02158D8C, the same enclosing function (0x02158B20) reads two signed 32-bit fields at offsets +0xe8 and +0x130 from a per-character 'scratch' workspace (base = [[charPtr+0x1a8]+0x10]), negates both, and feeds -field_0xe8 into the ApplyDeltaToCurrent trampoline (0x020783CC, claim 6) and -field_0x130 into a different function (0x020781E4) acting on [charPtr+0x5c8]. field_0xe8 is the strongest static candidate for 'the already-computed per-hit damage magnitude' (the output of the ground-truth ÷5/tier/nature formula), but the code that writes into scratch+0xe8 was not located in this pass -- a broad search-imm 0xe8 scan returned 134 hits dominated by unrelated structs (UI widgets, input-event objects) in other overlays, none of which were confirmed to share this specific [[X+0x1a8]+0x10] base chain.",
+      "addresses": ["0x02158BA8", "0x02158BAC", "0x02158BB0", "0x02158BBC", "0x02158BC4", "0x02158BC8", "0x02158BCC"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158BA8: e80091e5  ldr r0, [r1, #0xe8] | 0x02158BAC: 302191e5  ldr r2, [r1, #0x130] | 0x02158BB0: 004060e2  rsb r4, r0, #0 | 0x02158BBC: 005062e2  rsb r5, r2, #0 | 0x02158BC4: b4019ae5  ldr r0, [sl, #0x1b4] | 0x02158BC8: 0510a0e1  mov r1, r5 | 0x02158BCC: 847dfceb  bl #0x20781e4",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break 0x02158BA8; read [r1+0xe8] and compare it to the expected floor(jpower.damage1/5)+(tier-2) value for the hit that just landed (cross-check against the emulator-derived formula from prior experiments); trace backward from that address to find the store instruction that last wrote scratch+0xe8 this frame.",
+      "open_questions": ["who writes [[charPtr+0x1a8]+0x10]+0xe8, and does the ÷5/tier/nature arithmetic happen there?"]
+    },
+    {
+      "claim": "A distinct x1.20 scale (not x1.5) is applied conditionally within the same function that calls the GDB-verified check: at 0x02158DC4-0x02158DD0, r4 is multiplied by 0x78 (120) and divided by 100 via the same generic division routine (0x0200D12C), gated by a one-shot byte flag at [sl+0xf8] that is only set the first time this branch is taken (guarded block also calls 0x215f6e4 and a sound/event-queue function 0x0207342c). This does not match the ground truth's x1.5 nature-advantage multiplier and is more likely an unrelated one-time bonus (e.g. first-hit/combo-starter scaling); no code selecting a x1.5 nature multiplier, nor code reading a Power/Knowledge/Laughter type triple, was found in this pass.",
+      "addresses": ["0x02158DC4", "0x02158DC8", "0x02158DCC", "0x02158DD0"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158DC4: 7800a0e3  mov r0, #0x78 | 0x02158DC8: 940000e0  mul r0, r4, r0 | 0x02158DCC: 6410a0e3  mov r1, #0x64 | 0x02158DD0: d5d0faeb  bl #0x200d12c",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break 0x02158DC4; log r4 before/after and the byte at [sl+0xf8]; correlate against whether the current hit is the character's first hit in a combo vs. a Power/Knowledge/Laughter type-advantage hit, to determine which mechanic (if either) this x1.20 scale implements.",
+      "open_questions": ["is there a separate, unfound x1.5 nature-advantage multiplier elsewhere, or does the engine implement 'nature advantage' as a different mechanic entirely (e.g. baked into per-koma damage tables rather than a runtime multiply)?"]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "Within ov6, enumerate all ~60+ call sites to the generic division subroutine 0x0200D12C and grep the instruction immediately preceding each 'bl' for 'mov r1, #5' (0x0500a0e3) to directly locate the ground-truth /5 division.",
+    "Trace the writer of the per-character scratch field at [[charPtr+0x1a8]+0x10]+0xe8 (see claim 7) -- this is the most promising single next hop, since it is fed directly and exclusively into the HP-current-delta trampoline (0x020783CC).",
+    "Locate the indirect function-pointer table that dispatches handlers like 0x02159260/0x021592A0/0x02159500 (all functions.json callers=0, invoked via blx from a data table not captured by xrefs.json's literal_load scanner) -- one variant multiplies a hit-descriptor field by 64 before applying it as a gauge delta, and may be part of the raw-damage-to-gauge-units conversion.",
+    "GDB: break at 0x020784FC across several real hits at different HP percentages and log r0 (return value) plus [r4+0x16]/[r4+0x18] against the visible HP bar, to settle whether this pair is HP or a different gauge (super/guard meter), and whether crossing 25% triggers a distinct visual/audio state."
+  ]
+}

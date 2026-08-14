@@ -1,0 +1,77 @@
+{
+  "subsystem": "hitstun-timers",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "The character-struct constructor arm9:0x02053528 zero-initializes offsets +0x98, +0x9c, +0xa0, +0xa4..+0xac (as a 12-byte memset block via helper 0x0205174c), +0xb0, and +0xb4 on the SAME base pointer (r8) in the SAME function, alongside the GDB-verified ground-truth fields +0x78 (ground/air/launched state byte) and +0x88 (positive-status byte, also zeroed here). This directly confirms the whole +0x98-0xb4 span belongs to the same object as the known +0x78/+0x88 fields (i.e. it is inside the character struct, not a coincidentally-offset unrelated object) -- but this is the construction-time ZERO-init only, not the nonzero on-hit/on-land hitstun-timer init that Q1 is actually asking about; that nonzero writer was not located this round (see open_questions).",
+      "addresses": ["0x02053584", "0x020535A4", "0x020535AC", "0x02052DC0", "0x0205174C", "0x02053614", "0x020535F0", "0x020535DC"],
+      "evidence_disasm": "0x02053574: 00c0a0e3  mov ip, #0 | 0x02053584: 98c088e5  str ip, [r8, #0x98] | 0x020535A4: a0c088e5  str ip, [r8, #0xa0] | 0x020535A8: a03098e5  ldr r3, [r8, #0xa0] | 0x020535AC: 9c3088e5  str r3, [r8, #0x9c] | 0x020535D4: 0010a0e3  mov r1, #0 | 0x020535DC: 881088e5  str r1, [r8, #0x88] | 0x020535E4: 0800a0e1  mov r0, r8 | 0x020535E8: f4fdffeb  bl #0x2052dc0 | 0x02052DC0: b41080e5  str r1, [r0, #0xb4] | 0x020535EC: 0000a0e3  mov r0, #0 | 0x020535F0: 780088e5  str r0, [r8, #0x78] | 0x020535FC: a41088e2  add r1, r8, #0xa4 | 0x02053604: 0c20a0e3  mov r2, #0xc | 0x02053608: 4ff8ffeb  bl #0x205174c | 0x0205174C: 02c081e0  add ip, r1, r2 | 0x02053610: 0010a0e3  mov r1, #0 | 0x02053614: b01088e5  str r1, [r8, #0xb0]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Where is the NONZERO write to +0x98/+0xa0/+0xa8/+0xb0/+0xb8 that actually starts a hitstun/recovery countdown on a live hit or landing? Not found this round; see the two SPECULATIVE candidates below.",
+        "Are +0xa4/+0xa8/+0xac three independent 32-bit fields or one 12-byte structure? Only proven zeroed as a block via memset; no non-construction writer to any of the three was confirmed this round.",
+        "This constructor is called from ov8:0x02150392 (9x, once per per-character overlay slot's ctor trampoline) and arm9:0x0205372C -- confirms this runs at character-object creation time, consistent with per-battle-entry setup, not per-hit."
+      ]
+    },
+    {
+      "claim": "RULED OUT false lead: ov0:0x02157138 allocates an unrelated, much smaller (0xAC = 172-byte) object -- 'mov r0, #0xac' immediately precedes the 'bl 0x201a21c' allocator call whose result is kept in 'sl' -- and later writes independent boolean/config-copy byte flags to sl+0x98, sl+0x99, sl+0x9a (and mirrors them to sl+0x9d..0xa1). This object is NOT the character struct; it merely reuses offsets 0x98-0xa1 for unrelated settings flags. Recorded so future +0x98-0xba cross-referencing excludes this cluster (it was the single largest same-function offset-overlap cluster found by naive search-imm grouping, and is a pure coincidence).",
+      "addresses": ["0x02157148", "0x02157150", "0x02157154", "0x02157470", "0x0215747C", "0x0215748C"],
+      "provenance": "ov0",
+      "evidence_disasm": "0x02157148: ac00a0e3  mov r0, #0xac | 0x02157150: 310cfbeb  bl #0x201a21c | 0x02157154: 00a0a0e1  mov sl, r0 | 0x02157470: 9800cae5  strb r0, [sl, #0x98] | 0x0215747C: 9900cae5  strb r0, [sl, #0x99] | 0x0215748C: 9a00cae5  strb r0, [sl, #0x9a]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "RULED OUT false lead: arm9:0x02080F14 (a large collision/combo-tracking function) sets r8 = r0+0xa4 (r0 being an unrelated per-entity pointer, [r5+0xc]), then reads/writes [r8+0xa8], [r8+0xaa], [r8+0xb0] etc. Because r8 already carries a +0xa4 offset, these accesses actually land at entity+0x14c / entity+0x14e / entity+0x154 (a combo/juggle-tracking sub-record), NOT at the character struct's +0x98-0xba region. This is exactly the base-register-already-has-a-constant-folded-in aliasing failure mode flagged by the physics-writers.round1.json tracer for the neighboring +0x6a-0x7c region -- recorded here so future search-imm sweeps on +0xa8/+0xaa/+0xb0 exclude this function.",
+      "addresses": ["0x02081148", "0x02081160", "0x0208162C", "0x02081630", "0x02081584"],
+      "evidence_disasm": "0x02081148: 0c0095e5  ldr r0, [r5, #0xc] | 0x02081160: a48080e2  add r8, r0, #0xa4 | 0x0208162C: b81ac881  strhhi r1, [r8, #0xa8] | 0x02081630: ba2ac881  strhhi r2, [r8, #0xaa] | 0x02081584: b00088e5  str r0, [r8, #0xb0]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    },
+    {
+      "claim": "The codebase's canonical single-frame conditional countdown-decrement idiom is confirmed as: `ldrsb/ldrsh <v>,[base,#N]; cmp <v>,#0; subne <v>,<v>,#1; strbne/strhne <v>,[base,#N]` (decrement-with-floor-at-zero, all in 4 instructions). Concrete example: ov6:0x02158E78-0x02158E84, decrementing byte field +0xe0 of the 'sl' object inside the same hit-resolution function (0x02158B20) that damage-pipeline.round1.json and physics-writers.round1.json both analyze. Use this exact 4-instruction shape as the search fingerprint for the still-unfound +0x98-0xba decrement loop (Q2) -- no confirmed occurrence of this idiom was found AT the +0x98-0xba offsets this round.",
+      "addresses": ["0x02158E78", "0x02158E7C", "0x02158E80", "0x02158E84"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158E78: d00edae1  ldrsb r0, [sl, #0xe0] | 0x02158E7C: 000050e3  cmp r0, #0 | 0x02158E80: 01004012  subne r0, r0, #1 | 0x02158E84: e000ca15  strbne r0, [sl, #0xe0]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "This +0xe0 field is on 'sl', the same object physics-writers.round1.json (claim 4) explicitly flags as NOT confirmed to be the GDB base-chain (0x023D2A74) character struct ('wrapper/player pointer... not the deeper character object' -- open question there). So even this confirmed decrement idiom's host object identity is still unresolved project-wide, independent of this round's work.",
+        "search-imm cross-referencing at the +0x98-0xba offsets themselves was dominated by false positives from unrelated structs coincidentally sharing the same immediate offsets (see the two RULED-OUT claims above) -- a register-provenance-aware search (not just immediate-offset matching) is needed to find the real decrement loop for this region."
+      ]
+    },
+    {
+      "claim": "SPECULATIVE hitstun-init candidate: arm9 leaf function 0x0207D16C atomically (a) writes a caller-supplied 16-bit value (r1) into [r0+0xa0], and (b) ORs flag bit 0x800000 into the 32-bit word at [r0+0x78] -- the SAME 4-byte-aligned word whose low byte is the GDB-verified 0x00(air)/0x22(ground)/0xc0(launched) state byte. This is structurally exactly the hypothesized 'set launched-state flag + init a countdown value in the same call' shape for Q3/Q4. It is invoked (via arm9:0x02085704, itself called from per-character overlay attack/hitbox-spawn code in ov6 and ov12) with r0=[r6+0x10], where r6 is a hitbox/collision record freshly built earlier in 0x02085704's per-entry loop. Heavy register reuse inside 0x02085704 (r6/r7/r8/sl/sb are each rebound to different meanings between the function's prologue and this call site) made it impossible to statically prove that [r6+0x10] here resolves to the same struct reachable from the GDB base chain 0x023D2A74 -- so this is NOT proven to be THE character struct's hitstun timer, only a strong structural match worth a live check.",
+      "addresses": ["0x0207D16C", "0x0207D170", "0x0207D174", "0x0207D178", "0x020858F4"],
+      "evidence_disasm": "0x0207D16C: b01ac0e1  strh r1, [r0, #0xa0] | 0x0207D170: 781090e5  ldr r1, [r0, #0x78] | 0x0207D174: 021581e3  orr r1, r1, #0x800000 | 0x0207D178: 781080e5  str r1, [r0, #0x78] | 0x020858EC: fa11d8e1  ldrsh r1, [r8, #0x1a] | 0x020858F0: 100096e5  ldr r0, [r6, #0x10] | 0x020858F4: 1cdeffeb  bl #0x207d16c",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break 0x0207D16C; on a live hit-landing, dump r0 and diff it against the known character-struct pointer chained from 0x023D2A74 (or the local-mode fixed player addresses in Cheat-Code-Analysis.md); dump r1 and compare it against the jpower hitstun value for the move that just connected; step forward and confirm [r0+0x78]&0xFF becomes 0xC0-family while [r0+0xa0] holds r1 and then decrements to 0 over the expected number of frames.",
+      "open_questions": [
+        "Is [r6+0x10] at the 0x020858F4 call site provably the GDB-verified character struct, or a different nested object (e.g. the hitbox/attacker record itself)?",
+        "What is r1's ultimate value source (r8+0x1a, itself set a few instructions earlier as 'base value from [sl+0x10]->+0x30, plus loop index r5') -- is that chain jpower-derived (a hitstun frame count) or an unrelated per-hitbox array index?"
+      ]
+    },
+    {
+      "claim": "SPECULATIVE competing hypothesis for +0xa0/+0xa2: in ov4 (function ov4:0x02151E04), the object reached via r4=[r5+4] (r5 = the function's first argument) has 16-bit fields at +0xa0 and +0xa2 that are read, left-shifted by 0xc (scaled into a 12-bit fixed-point representation), and passed as a pointer-pair of arguments into ov4:0x0214E1B8, which stores them into a target's +0xc and +0x10 fields -- the shape of 'spawn/place something at (x, y)', not a countdown timer. This directly contradicts (or at least complicates) the Q3 hitstun-timer hypothesis for +0xa0/+0xa2 specifically, and lines up with docs/research/Character-State-Struct.md's own already-flagged, unresolved conflict at +0xA0 ('Negative Status Flags' vs 'Countdown Timer Region').",
+      "addresses": ["0x02151E14", "0x02151E7C", "0x02151E90", "0x0214E1CC", "0x0214E1D0"],
+      "provenance": "ov4",
+      "evidence_disasm": "0x02151E14: 044095e5  ldr r4, [r5, #4] | 0x02151E7C: f20ad4e1  ldrsh r0, [r4, #0xa2] | 0x02151E90: f03ad4e1  ldrsh r3, [r4, #0xa0] | 0x0214E1CC: 0c0084e5  str r0, [r4, #0xc] | 0x0214E1D0: 102084e5  str r2, [r4, #0x10]",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break at the equivalent of ov4:0x02151E7C in whichever overlay is resident for the character under test; dump r4 (=[r5+4]) and compare against the live GDB-verified character-struct pointer; log [r4+0xa0]/[r4+0xa2] across several frames of a knockback/fall to see whether the pair tracks large, motion-consistent X/Y position deltas (supporting 'position') versus a small value that only ever counts down to 0 (supporting 'timer') -- these are not mutually exclusive if the field is reused/unioned across states.",
+      "open_questions": [
+        "Is r4=[r5+4] here the same struct as the GDB base-chain character struct, or a distinct 'actor wrapper' object (same open question as the physics-writers/damage-pipeline tracers raised for their own 'sl' object)?",
+        "If +0xa0/+0xa2 really is position in at least this code path, does the +0x98-0xba region mix timers and physics fields (matching the doc's already-noted +0x6a-0xba physics-region overlap), meaning the 'countdown timer region' label may only apply to a subset of 0x98-0xba (e.g. +0x98/+0xb8 but not +0xa0)?"
+      ]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "GDB breakpoint at arm9:0x0207D16C during an actual hit-landing to settle whether it is the hitstun-timer init call (dump r0/r1 and the pre/post state of [r0+0x78] and [r0+0xa0] per the gdb_check above).",
+    "GDB breakpoint at ov4:0x02151E7C (or the analogous site in whichever overlay is resident) to resolve the +0xa0/+0xa2 position-vs-timer conflict directly, which would also resolve docs/research/Character-State-Struct.md's own noted +0xA0 'Negative Status Flags vs Countdown Timer' overlap.",
+    "Naive search-imm-by-offset cross-referencing across the whole ROM has a very high false-positive rate at these offsets (two large, unrelated clusters ruled out this round: a 172-byte settings object in ov0, and a combo/juggle sub-record at entity+0xa4 in arm9) because 0x98-0xba are common, unremarkable offsets reused by many small unrelated structs. A register-provenance-aware pass (only considering base registers proven, via the call graph, to descend from the 0x023D2A74 pointer chain or from the confirmed character-struct constructor arm9:0x02053528) would cut this noise dramatically but requires tooling beyond plain search-imm.",
+    "Both prior rounds (damage-pipeline.round1.json, physics-writers.round1.json) independently flagged the identity of the 'sl'/'charPtr' object used throughout ov6:0x02158B20 as unresolved (is it the GDB base-chain character struct itself, or one indirection away via +0x1b4/+0x1a8?). This round's decrement-idiom example (+0xe0 on that same object) and the 0x0207D16C candidate both inherit that same unresolved identity question -- a single GDB session that dumps the 0x023D2A74 chain's pointer value and compares it live against 'sl' during a real battle would unblock multiple subsystems at once, not just hitstun-timers."
+  ]
+}

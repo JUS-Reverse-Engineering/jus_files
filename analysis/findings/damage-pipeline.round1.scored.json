@@ -1,0 +1,114 @@
+{
+  "subsystem": "damage-pipeline",
+  "round": 1,
+  "scoring": [
+    {
+      "claim_idx": 0,
+      "claim": "The GDB-proven address 0x020784FC lives inside function 0x020784E4, which is NOT itself the per-hit damage-total formula. It computes a boolean: given a jpower-struct pointer r4=[charPtr+0x56c], it takes field16=[r4+0x16] ('max'), multiplies by caller-supplied r1, divides by literal 100, then compares field18=[r4+0x18] ('current', read at the GDB-proven address) against that result via a lsl#16/asr#16 sign round-trip, returning 1 if current<=result else 0 (i.e. 'is current <= pct% of max').",
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 1,
+      "claim": "Both known static callers of 0x020784E4 pass the literal percentage 25 (0x19) as r1, so the check performed at the GDB-proven address is specifically 'is current <= 25% of max', not a variable/tunable threshold and not the raw per-hit damage arithmetic.",
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 2,
+      "claim": "The divide-by-100 inside 0x020784E4 is implemented by calling a generic signed-division library routine (0x0200D12C, a classic normalize/shift long-division: eor/and to save the sign, cmp+rsblt to take absolute values, cmp/blo early-out, then a shift-count computation) with r1 holding the literal divisor 100 (mov r1,#0x64 at 0x020784F4) -- confirming the ground truth's 'ARM has no integer divide' note is realized here via subroutine call, not an inlined magic-multiply, for this particular divisor.",
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 3,
+      "claim": "No inlined magic-multiply implementation of a divide-by-5 exists anywhere near the damage code: an arm9-wide pool-values scan for the two canonical /5 magic constants (signed 0x66666667, unsigned 0xCCCCCCCD) found only 4 total occurrences, and all 4 are inside unrelated routines that never touch the char+0x56c gauge structure -- a Gregorian/day-count date routine (0x02056394, evidenced by 'add lr,r2,#0x7d0' i.e. +2000 and 'sub r3,r1,#2'), two calendar/checksum routines dividing by 13 and by 7 (0x020586AC 'mov r1,#0xd'=13, 0x02058750 'mov r1,#7'), and a sprintf-style format parser doing base-10 digit extraction (0x0205237C, evidenced by the unsigned magic multiply followed by 'mov r1,#0xa'=10, and by explicit ASCII-flag comparisons against '+' (0x2b), '-' (0x2d) and '0' (0x30)). This rules out an inlined \u00f75 magic-multiply in this immediate neighborhood; if the ground-truth \u00f75 is literal, it is more likely done via a further call to the generic division subroutine 0x0200D12C with divisor 5, whose exact call site was not identified in this pass.",
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 4,
+      "claim": "The struct reached via char+0x56c ('jpower' in the ground truth) has +0x16 behaving as a clamp/maximum bound and +0x18 as the current value of the same gauge, not '+0x16 = jpower.damage1' as tentatively hypothesized. Evidence: function 0x02078488 adds a signed delta r1 to [r0+0x18], clamps the result to [0, [r0+0x16]], writes it back to [r0+0x18], and returns an alive/nonzero flag; the immediately adjacent function 0x020784B8 instead grows [r2+0x16] itself by a delta, clamped to a hard cap of 0x4000, and early-outs if [r2+0x16] is already >= 0x4000. Together these read as 'ApplyDeltaToCurrent(clamped to Max)' and 'GrowMax(capped at 0x4000)' accessors for the same two-field gauge.",
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 5,
+      "claim": "0x020783CC is a trampoline: it loads a character pointer's +0x56c field (the jpower/gauge pointer) into r0 and tail-jumps (bx ip, ip pool-loaded as the raw bytes 88 84 07 02 = little-endian 0x02078488) into the ApplyDeltaToCurrent function from claim 5. This trampoline is called from 8 sites inside the ov6 battle overlay (see next claim for one such call site).",
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 6,
+      "claim": "Inside the same function 0x02158B20 that performs the GDB-verified call at 0x02158D8C, the call site at 0x02158BC0 invokes the 0x020783CC trampoline (previous claim) with r0=[charPtr+0x1b4] and r1=a negated scratch value (r4 = -[some_ptr+0xe8]) -- this is the code path that actually decrements the current-gauge value, the most direct static candidate found for 'where computed damage gets written' (Q5).",
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 7,
+      "claim": "Immediately before the GDB-verified call at 0x02158D8C, the same enclosing function (0x02158B20) reads two signed 32-bit fields at offsets +0xe8 and +0x130 from a per-character 'scratch' workspace (base = [[charPtr+0x1a8]+0x10]), negates both, and feeds -field_0xe8 into the ApplyDeltaToCurrent trampoline (0x020783CC, claim 6) and -field_0x130 into a different function (0x020781E4) acting on [charPtr+0x5c8]. field_0xe8 is the strongest static candidate for 'the already-computed per-hit damage magnitude' (the output of the ground-truth \u00f75/tier/nature formula), but the code that writes into scratch+0xe8 was not located in this pass -- a broad search-imm 0xe8 scan returned 134 hits dominated by unrelated structs (UI widgets, input-event objects) in other overlays, none of which were confirmed to share this specific [[X+0x1a8]+0x10] base chain.",
+      "original": "SPECULATIVE",
+      "final": "SPECULATIVE",
+      "rule": "capped at PLAUSIBLE: mixed verdicts",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UNSURE",
+        "data-consistency": "UNSURE"
+      }
+    },
+    {
+      "claim_idx": 8,
+      "claim": "A distinct x1.20 scale (not x1.5) is applied conditionally within the same function that calls the GDB-verified check: at 0x02158DC4-0x02158DD0, r4 is multiplied by 0x78 (120) and divided by 100 via the same generic division routine (0x0200D12C), gated by a one-shot byte flag at [sl+0xf8] that is only set the first time this branch is taken (guarded block also calls 0x215f6e4 and a sound/event-queue function 0x0207342c). This does not match the ground truth's x1.5 nature-advantage multiplier and is more likely an unrelated one-time bonus (e.g. first-hit/combo-starter scaling); no code selecting a x1.5 nature multiplier, nor code reading a Power/Knowledge/Laughter type triple, was found in this pass.",
+      "original": "SPECULATIVE",
+      "final": "SPECULATIVE",
+      "rule": "demoted: >=2 REFUTED (gdb card required)",
+      "verdicts": {
+        "disasm-correctness": "REFUTED",
+        "aliasing": "REFUTED",
+        "data-consistency": "UPHELD"
+      }
+    }
+  ]
+}

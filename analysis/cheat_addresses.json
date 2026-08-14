@@ -1,0 +1,691 @@
+{
+  "codes": [
+    {
+      "name": "Unlimited Time",
+      "description": "Write 0x99 to [0x021DEA71]",
+      "lines": [
+        {
+          "raw": "221DEA71 00000099",
+          "code_type": 2,
+          "address": 35514993,
+          "value": 153,
+          "meaning": "Write 0x99 to [0x021DEA71]"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x021DEA71",
+          "decimal": 35514993,
+          "code_type": 2,
+          "arm9_offset": "0x1DEA71"
+        }
+      ]
+    },
+    {
+      "name": "Unlimited Health",
+      "description": "Patch 16 bytes at [0x02000000]; Patch 3787723192 bytes at [0x03D411F6]; Patch 3925991739 bytes at [0x03A00000]",
+      "lines": [
+        {
+          "raw": "E2000000 00000010",
+          "code_type": 14,
+          "address": 33554432,
+          "value": 16,
+          "meaning": "Patch 16 bytes at [0x02000000]"
+        },
+        {
+          "raw": "E1D411F6 E1C411B8",
+          "code_type": 14,
+          "address": 64229878,
+          "value": 3787723192,
+          "meaning": "Patch 3787723192 bytes at [0x03D411F6]"
+        },
+        {
+          "raw": "E1A00000 EA01E13B",
+          "code_type": 14,
+          "address": 60817408,
+          "value": 3925991739,
+          "meaning": "Patch 3925991739 bytes at [0x03A00000]"
+        },
+        {
+          "raw": "520784FC E1D411F8",
+          "code_type": 5,
+          "address": 34047228,
+          "value": 3788771832,
+          "meaning": "If [0x020784FC] == 0xE1D411F8"
+        },
+        {
+          "raw": "020784FC EAFE1EBF",
+          "code_type": 0,
+          "address": 34047228,
+          "value": 3942522559,
+          "meaning": "Write 0xEAFE1EBF to [0x020784FC]"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x02000000",
+          "decimal": 33554432,
+          "code_type": 14,
+          "arm9_offset": "0x000000"
+        },
+        {
+          "address": "0x03D411F6",
+          "decimal": 64229878,
+          "code_type": 14,
+          "arm9_offset": "0x1D411F6"
+        },
+        {
+          "address": "0x03A00000",
+          "decimal": 60817408,
+          "code_type": 14,
+          "arm9_offset": "0x1A00000"
+        },
+        {
+          "address": "0x020784FC",
+          "decimal": 34047228,
+          "code_type": 5,
+          "arm9_offset": "0x0784FC"
+        }
+      ]
+    },
+    {
+      "name": "Unlimited Special (Press X)",
+      "description": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y; Write 0x09 to [0x021DF731]; Write 0x09 to [0x021DF8B1]",
+      "lines": [
+        {
+          "raw": "94000136 FFFE0000",
+          "code_type": 9,
+          "address": null,
+          "value": 4294836224,
+          "meaning": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "221DF731 00000009",
+          "code_type": 2,
+          "address": 35518257,
+          "value": 9,
+          "meaning": "Write 0x09 to [0x021DF731]"
+        },
+        {
+          "raw": "221DF8B1 00000009",
+          "code_type": 2,
+          "address": 35518641,
+          "value": 9,
+          "meaning": "Write 0x09 to [0x021DF8B1]"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x021DF731",
+          "decimal": 35518257,
+          "code_type": 2,
+          "arm9_offset": "0x1DF731"
+        },
+        {
+          "address": "0x021DF8B1",
+          "decimal": 35518641,
+          "code_type": 2,
+          "arm9_offset": "0x1DF8B1"
+        }
+      ]
+    },
+    {
+      "name": "Leader Refill Health (Select+Down)",
+      "description": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y; Write 0x50 to [0x021DF1D5]",
+      "lines": [
+        {
+          "raw": "94000130 FF7B0000",
+          "code_type": 9,
+          "address": null,
+          "value": 4286251008,
+          "meaning": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "221DF1D5 00000050",
+          "code_type": 2,
+          "address": 35516885,
+          "value": 80,
+          "meaning": "Write 0x50 to [0x021DF1D5]"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x021DF1D5",
+          "decimal": 35516885,
+          "code_type": 2,
+          "arm9_offset": "0x1DF1D5"
+        }
+      ]
+    },
+    {
+      "name": "Non-leader Refill Health (Select+Up)",
+      "description": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y; Write 0x50 to [0x021DF225]",
+      "lines": [
+        {
+          "raw": "94000130 FFBB0000",
+          "code_type": 9,
+          "address": null,
+          "value": 4290445312,
+          "meaning": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "221df225 00000050",
+          "code_type": 2,
+          "address": 35516965,
+          "value": 80,
+          "meaning": "Write 0x50 to [0x021DF225]"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x021DF225",
+          "decimal": 35516965,
+          "code_type": 2,
+          "arm9_offset": "0x1DF225"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Gems",
+      "description": "Write 0x0001869F to [0x020B7718]; Write 0x0001869F to [0x020B771C]; Write 0x0001869F to [0x020B7720]",
+      "lines": [
+        {
+          "raw": "020b7718 0001869F",
+          "code_type": 0,
+          "address": 34305816,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7718]"
+        },
+        {
+          "raw": "020b771c 0001869F",
+          "code_type": 0,
+          "address": 34305820,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B771C]"
+        },
+        {
+          "raw": "020b7720 0001869F",
+          "code_type": 0,
+          "address": 34305824,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7720]"
+        },
+        {
+          "raw": "020b7724 0001869F",
+          "code_type": 0,
+          "address": 34305828,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7724]"
+        },
+        {
+          "raw": "020b7728 0001869F",
+          "code_type": 0,
+          "address": 34305832,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7728]"
+        },
+        {
+          "raw": "020b772c 0001869F",
+          "code_type": 0,
+          "address": 34305836,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B772C]"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x020B7718",
+          "decimal": 34305816,
+          "code_type": 0,
+          "arm9_offset": "0x0B7718"
+        },
+        {
+          "address": "0x020B771C",
+          "decimal": 34305820,
+          "code_type": 0,
+          "arm9_offset": "0x0B771C"
+        },
+        {
+          "address": "0x020B7720",
+          "decimal": 34305824,
+          "code_type": 0,
+          "arm9_offset": "0x0B7720"
+        },
+        {
+          "address": "0x020B7724",
+          "decimal": 34305828,
+          "code_type": 0,
+          "arm9_offset": "0x0B7724"
+        },
+        {
+          "address": "0x020B7728",
+          "decimal": 34305832,
+          "code_type": 0,
+          "arm9_offset": "0x0B7728"
+        },
+        {
+          "address": "0x020B772C",
+          "decimal": 34305836,
+          "code_type": 0,
+          "arm9_offset": "0x0B772C"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Koma Points (Press Select)",
+      "description": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y; If pressed: A+Left+Up+Down+R+L+X+Y; Write 0x0001869F to [0x020B76C8]",
+      "lines": [
+        {
+          "raw": "94000130 FFFB0000",
+          "code_type": 9,
+          "address": null,
+          "value": 4294639616,
+          "meaning": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "920AFE3C 0000001E",
+          "code_type": 9,
+          "address": null,
+          "value": 30,
+          "meaning": "If pressed: A+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "020B76C8 0001869F",
+          "code_type": 0,
+          "address": 34305736,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B76C8]"
+        },
+        {
+          "raw": "020B76F0 0001869F",
+          "code_type": 0,
+          "address": 34305776,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B76F0]"
+        },
+        {
+          "raw": "020B7718 0001869F",
+          "code_type": 0,
+          "address": 34305816,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7718]"
+        },
+        {
+          "raw": "020B7768 0001869F",
+          "code_type": 0,
+          "address": 34305896,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7768]"
+        },
+        {
+          "raw": "020B7790 0001869F",
+          "code_type": 0,
+          "address": 34305936,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B7790]"
+        },
+        {
+          "raw": "020B77B8 0001869F",
+          "code_type": 0,
+          "address": 34305976,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B77B8]"
+        },
+        {
+          "raw": "020B77E0 0001869F",
+          "code_type": 0,
+          "address": 34306016,
+          "value": 99999,
+          "meaning": "Write 0x0001869F to [0x020B77E0]"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": [
+        {
+          "address": "0x020B76C8",
+          "decimal": 34305736,
+          "code_type": 0,
+          "arm9_offset": "0x0B76C8"
+        },
+        {
+          "address": "0x020B76F0",
+          "decimal": 34305776,
+          "code_type": 0,
+          "arm9_offset": "0x0B76F0"
+        },
+        {
+          "address": "0x020B7718",
+          "decimal": 34305816,
+          "code_type": 0,
+          "arm9_offset": "0x0B7718"
+        },
+        {
+          "address": "0x020B7768",
+          "decimal": 34305896,
+          "code_type": 0,
+          "arm9_offset": "0x0B7768"
+        },
+        {
+          "address": "0x020B7790",
+          "decimal": 34305936,
+          "code_type": 0,
+          "arm9_offset": "0x0B7790"
+        },
+        {
+          "address": "0x020B77B8",
+          "decimal": 34305976,
+          "code_type": 0,
+          "arm9_offset": "0x0B77B8"
+        },
+        {
+          "address": "0x020B77E0",
+          "decimal": 34306016,
+          "code_type": 0,
+          "arm9_offset": "0x0B77E0"
+        }
+      ]
+    },
+    {
+      "name": "Hold L to Unlock All Komas (on menu)",
+      "description": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y; Set offset register to 0xFFFFFFFF; Loop 0 times",
+      "lines": [
+        {
+          "raw": "94000130 FDFF0000",
+          "code_type": 9,
+          "address": null,
+          "value": 4261347328,
+          "meaning": "If pressed: A+B+Select+Start+Right+Left+Up+Down+R+L+X+Y"
+        },
+        {
+          "raw": "D5000000 FFFFFFFF",
+          "code_type": 13,
+          "address": null,
+          "value": 4294967295,
+          "meaning": "Set offset register to 0xFFFFFFFF"
+        },
+        {
+          "raw": "C0000000 0000001C",
+          "code_type": 12,
+          "address": null,
+          "value": 0,
+          "meaning": "Loop 0 times"
+        },
+        {
+          "raw": "D6000000 020B0BAC",
+          "code_type": 13,
+          "address": 0,
+          "value": 34278316,
+          "meaning": "D-type conditional (subtype 6)"
+        },
+        {
+          "raw": "D2000000 00000000",
+          "code_type": 13,
+          "address": null,
+          "value": 0,
+          "meaning": "End code block"
+        }
+      ],
+      "addresses": []
+    }
+  ],
+  "address_summary": [
+    {
+      "address": "0x021DEA71",
+      "arm9_offset": "0x1DEA71",
+      "category": "Battle State / RAM",
+      "used_by": [
+        "Unlimited Time"
+      ]
+    },
+    {
+      "address": "0x02000000",
+      "arm9_offset": "0x000000",
+      "category": "Unknown",
+      "used_by": [
+        "Unlimited Health"
+      ]
+    },
+    {
+      "address": "0x03D411F6",
+      "arm9_offset": "0x1D411F6",
+      "category": "Unknown",
+      "used_by": [
+        "Unlimited Health"
+      ]
+    },
+    {
+      "address": "0x03A00000",
+      "arm9_offset": "0x1A00000",
+      "category": "Unknown",
+      "used_by": [
+        "Unlimited Health"
+      ]
+    },
+    {
+      "address": "0x020784FC",
+      "arm9_offset": "0x0784FC",
+      "category": "Game Code (ARM9)",
+      "used_by": [
+        "Unlimited Health"
+      ]
+    },
+    {
+      "address": "0x021DF731",
+      "arm9_offset": "0x1DF731",
+      "category": "Battle State / RAM",
+      "used_by": [
+        "Unlimited Special (Press X)"
+      ]
+    },
+    {
+      "address": "0x021DF8B1",
+      "arm9_offset": "0x1DF8B1",
+      "category": "Battle State / RAM",
+      "used_by": [
+        "Unlimited Special (Press X)"
+      ]
+    },
+    {
+      "address": "0x021DF1D5",
+      "arm9_offset": "0x1DF1D5",
+      "category": "Battle State / RAM",
+      "used_by": [
+        "Leader Refill Health (Select+Down)"
+      ]
+    },
+    {
+      "address": "0x021DF225",
+      "arm9_offset": "0x1DF225",
+      "category": "Battle State / RAM",
+      "used_by": [
+        "Non-leader Refill Health (Select+Up)"
+      ]
+    },
+    {
+      "address": "0x020B7718",
+      "arm9_offset": "0x0B7718",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems",
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B771C",
+      "arm9_offset": "0x0B771C",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems"
+      ]
+    },
+    {
+      "address": "0x020B7720",
+      "arm9_offset": "0x0B7720",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems"
+      ]
+    },
+    {
+      "address": "0x020B7724",
+      "arm9_offset": "0x0B7724",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems"
+      ]
+    },
+    {
+      "address": "0x020B7728",
+      "arm9_offset": "0x0B7728",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems"
+      ]
+    },
+    {
+      "address": "0x020B772C",
+      "arm9_offset": "0x0B772C",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Gems"
+      ]
+    },
+    {
+      "address": "0x020B76C8",
+      "arm9_offset": "0x0B76C8",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B76F0",
+      "arm9_offset": "0x0B76F0",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B7768",
+      "arm9_offset": "0x0B7768",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B7790",
+      "arm9_offset": "0x0B7790",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B77B8",
+      "arm9_offset": "0x0B77B8",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    },
+    {
+      "address": "0x020B77E0",
+      "arm9_offset": "0x0B77E0",
+      "category": "Save Data / Progress",
+      "used_by": [
+        "Infinite Koma Points (Press Select)"
+      ]
+    }
+  ],
+  "categories": {
+    "game_code": [
+      {
+        "address": "0x020784FC",
+        "arm9_offset": "0x0784FC",
+        "category": "Game Code (ARM9)",
+        "used_by": [
+          "Unlimited Health"
+        ]
+      }
+    ],
+    "battle_state": [
+      {
+        "address": "0x021DEA71",
+        "arm9_offset": "0x1DEA71",
+        "category": "Battle State / RAM",
+        "used_by": [
+          "Unlimited Time"
+        ]
+      },
+      {
+        "address": "0x021DF731",
+        "arm9_offset": "0x1DF731",
+        "category": "Battle State / RAM",
+        "used_by": [
+          "Unlimited Special (Press X)"
+        ]
+      },
+      {
+        "address": "0x021DF8B1",
+        "arm9_offset": "0x1DF8B1",
+        "category": "Battle State / RAM",
+        "used_by": [
+          "Unlimited Special (Press X)"
+        ]
+      },
+      {
+        "address": "0x021DF1D5",
+        "arm9_offset": "0x1DF1D5",
+        "category": "Battle State / RAM",
+        "used_by": [
+          "Leader Refill Health (Select+Down)"
+        ]
+      },
+      {
+        "address": "0x021DF225",
+        "arm9_offset": "0x1DF225",
+        "category": "Battle State / RAM",
+        "used_by": [
+          "Non-leader Refill Health (Select+Up)"
+        ]
+      }
+    ],
+    "inventory": []
+  }
+}

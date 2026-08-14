@@ -1,0 +1,32 @@
+{
+  "subsystem": "physics-writers",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "REFUTED",
+      "reason": "Both downstream sinks are confirmed non-velocity meters -- 0x020781E4's +0x5C8 wrap-capped percent/juggle counter (claim 1) and 0x020783CC's generic clamped 'Meter' linked-list utility at 0x02078488/+0x558, independently corroborated by the parallel damage-pipeline verification's [obj+0x56c]->{+0x16 max,+0x18 current} gauge struct -- so a damage-application-delta reading (two damage/hitstun sub-values broadcast to the percent meter and the generic Meter list) fits strictly better than 'knockback-impulse consumer,' since canonical fighting-game engines derive knockback magnitude FROM percent/damage rather than feeding raw knockback INTO the percent accumulator. Decisive static discriminator: compare +0xE8/+0x130 against the r1=0x19 argument passed to the confirmed damage function 0x020784E4 later in the same body (0x02158D8C) -- if the same collision-entry substructure supplies both, 'damage delta' wins outright."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Full disassembly through 0x02078308 (both the negative- and mirrored positive-delta branches, plus helpers 0x207830c/0x2078328/0x20782f4) shows +0x5C8 is a wrap-capped meter gated by a companion budget/cap byte pair at +0x5CC (max) and +0x5CD (count) that resets the whole accumulator to 0 once the byte counter reaches its cap -- a game-specific hit-budget/percent mechanic, not the per-frame decay-and-integrate shape expected of velocity. This also cross-links to claim 3: the exact same +0x5CD byte is what gets read and passed as r1 into the min-tracking comparator 0x21607C0, tying claims 1 and 3 into one coherent non-physics hit-tally subsystem."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Independently corroborated by the parallel damage-pipeline verification, which established [obj+0x56C] as a gauge struct with {+0x16 max, +0x18 current} and 0x02078488 as a generic clamped-add 'Meter' utility walked via the +0x558 linked list -- an exact match to this claim's own static read of node+0x16/+0x18 and the 0x020783CC trampoline's list-walk. 0x02078488 has only one call site (0x02078414, inside 0x020783DC's own loop), consistent with a shared generic accumulator entry point rather than a dedicated velocity writer."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "callers/xrefs-to confirm 0x021607C0 has exactly one caller, at 0x02158E48 in the hit-resolution routine, where r0 = [sl+0x1A4] -- a third, hit-tally object (its +0x36 and +0x68 fields are separately confirmed 16-bit saturating hit counters in the same parent function) -- not the wrapper 'sl' itself as the claim assumed; the min-tracking read/write mechanics are correct but the object attribution needs correction. The value written (r1) is [sl+0x1B4]->+0x5CD, the same hit-budget byte from claim 1's percent-wrap mechanism, so once correctly attributed this is even more decisively a hit-tally/lowest-value tracker than a character-struct physics field."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "The fold is mechanically forced (ldrh/strh encode only an 8-bit immediate, 0-0xFF, so any halfword field >=0x100 needs a pre-add), and I reproduced it twice more independently: inside this very hit-resolution routine, the same collision-entry pointer is read directly at +0xE8/+0x130/+0x40 but written via an identical +0x100 fold at +0x84/+0x86 (abs +0x184/+0x186); and in ov7 at 0x02161A4C the pattern recurs on an unrelated table/asset-record object (fold +0x100 then ldrh +0x6A = abs +0x16A). This confirms the aliasing risk is systemic rather than incidental, and it occurs even within the physics-writers hunt's own target object, not just unrelated struct classes."
+    }
+  ]
+}

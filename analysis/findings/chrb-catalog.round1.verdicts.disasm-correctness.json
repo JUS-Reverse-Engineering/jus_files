@@ -1,0 +1,87 @@
+{
+  "subsystem": "chrb-catalog",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembly of 0x020760F0-0x02076128 confirms the exact quoted sequence, and both pool constants (0x020760F8's and 0x02076120's, both 'ldr Rx,[pc,#N]') resolve to the SAME literal-pool word at 0x020763BC = 0x0214BD80 -- xrefs-to 0x0214BD80 independently returns exactly 97 total references, matching the file's own framing. 0x020760F8: r3=[r2]=*(0x0214BD80) (manager ptr), str r0,[r3,#0xc] stores the chr_b.bin file handle into manager+0xC. 0x02076120: r1=[r1]=*(0x0214BD80) again, str r0,[r1,#0x40] stores the blx-returned GetData() result into manager+0x40 -- exactly the claimed array-pointer establishment. The string table independently confirms 'bin/chr_b.bin' sits at exactly 0x0209F5D4, immediately preceded by koma.bin/komatxt.bin/kshape.bin and followed by chr_s.bin/ability.bin, matching the claimed load order verbatim."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of 0x02077178 confirms recordBase = *(0x0214BD80)+0x40 + (PassiveIndex from [r1+0x41])*0x3C via the mla at 0x020771B8, then three ldrh reads at +8/+0xA/+0xC (statA/B/C) packed onto the stack (strh at 0x020771CC/D0/D4) and later compared with a bare 'cmp r3,sl' (0x02077288) -- addeq/lsleq/streq/lsreq on an equality match, not a threshold/tier compare, matching the claim's 'bare equality, not tier check' characterization and the prior-campaign movement.round1 cross-reference. Function is at 0x02077178 as claimed, immediately preceding 0x020772E4 in ROM."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "REFUTED",
+      "reason": "The chr_b-caching half is real: 0x02077310-0x02077388 genuinely computes recordBase via mla, reads offset 0x10+4*idx as a byte (CombatStat low byte), clamps against 0x4000, and writes the result into BOTH r8+0x16 and r8+0x18 where r8 is a node walked from [charStruct+0x558] (confirmed by full disasm). But the claim that arm9 0x020784E4 (called from ov6 at 0x02158D8C) reads 'that SAME move-struct's +0x16/+0x18' is contradicted by independently-verified, exhaustively-traced cross-campaign evidence: damage-pipeline.round1 (GDB-proven) and guard-sp-gauges.round1 (exhaustive 8-site caller enumeration) establish that 0x020784E4's r4=[r0+0x56c] is a FIXED, single 'jpower' gauge pointer with its own dedicated, fully-enumerated call graph that never includes 0x020772E4/0x02077C0C; guard-sp-gauges further found the +0x558 list head is written ONLY by the one zero-init site ROM-wide (no store ever populates it with a live node), and its own walker (0x020783DC) is reached by only 2 call sites, disjoint from the 8 sites feeding +0x56c. +0x558 (dynamic list) and +0x56c (fixed pointer) are structurally and causally distinct objects; the claim's central 'cache-at-load feeds ov6 hit-resolution' linkage does not hold."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of 0x02077768 confirms: r6=[sl+0x558] node, recordBase=*(0x0214BD80)+0x40+(node's own [r6+0x41])*0x3C, then a 5-iteration loop (sb=0..4, cmp sb,#5) reading record[3+sb] one byte at a time (0x020777CC: ldrb r1,[r1,#3] with r1=recordBase+sb) and using that raw byte value to index manager+0x50 (ldrb r0,[r2,r1,lsl#2]) to select among no-op(0)/direct-call-to-0x2077a74(1)/jump-table-via-r5(2+), exactly matching the claimed 3-way per-byte dispatch over offsets +3..+7 with no combined 32-bit load anywhere in this routine."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of 0x02077C0C confirms every field mapping claimed: recordBase=*(0x0214BD80)+0x40+[r1+0x41]*0x3C; techIdx=[[r1+0x34]+8]-3; ldrb[r3+0x11] (high byte of CombatStat(techIdx+1)) -> cmp/moveq r3,#4 fallback -> strb[r1+0x49]; ldrb[r4+0x10] (low byte) -> lsl#6 -> strh[r1+0x16] -> reload+strh[r1+0x18] (duplicate); ldrsb[r2,#2]->strb[r1,#0x10] (KomaSize); ldrsb[r2,#1]->strb[r1,#0x11] (Tier); ldrb[r2]->strb[r1,#0x13] (FormType); ldrb[r4,#0x12]/[r4,#0x13]->strb[r1,#0x14]/[r1,#0x15] (CombatStatMod low/high); ldrh[r2,#0x30]->strh[r1,#0x2e] (TextIds[0]); ldrh[ip,#0x32]->strh[r1,#0x30] (TextIds[1+techIdx]). Every offset in the claim's dense field list is verified byte-for-byte against the disasm; the 'r1' move-struct target here is an independent function parameter (not the +0x558 list node from claim 2), so this claim does not depend on, and is not undermined by, the +0x558/+0x56c mismatch found in claim 2."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02078514 confirms recordBase=*(0x0214BD80)+0x40+PassiveIndex*0x3C, then 'add r0,r0,r1,lsl#1; ldrh r0,[r0,#0x24]' -- BattleParams read as ushort[6] (stride 2) starting at +0x24, exactly as claimed. Disasm of 0x0207853C (immediately adjacent) confirms the identical recordBase/stride setup but 'add r0,r0,r1' (no shift) + 'ldrb r0,[r0,#0x2c]' -- BattleParams tail read as byte[] (stride 1) starting at +0x2C. The two different element sizes over the same 12-byte blob are exactly as claimed."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "xrefs-to 0x02078514 and xrefs-to 0x0207853C each return exactly one branch reference, both 'bl' from inside ov11 function 0x02174330, at call sites 0x021746E0 and 0x02174724 respectively -- matching the claim's 'exactly ONE caller each, both in the SAME ov11 function' exactly. Disasm at both call sites shows the return value immediately folded into a per-technique bitmask (tst against r8<<ip) and stored into a range/facing table (strh [r1+0xb4]) respectively, consistent with Battle-AI decision building. query.py strings ov11 --all (161 total strings) contains only BattleAI_*/'.cpp' debug labels and zero menu/UI-type strings, corroborating the 'Battle-AI subsystem, not menu' framing."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of all three cited sites (0x0214D944, 0x0214DC18, 0x0214E480) confirms the identical pattern: a byte at koma+0xB is shifted right 4 and masked to isolate the high nibble, compared against 3, and on match computes recordBase=*(0x0214BD80)+0x40+(koma byte+7)*0x3C (via mla or smulbb) followed by a clean 'ldrb r0,[baseReg,idxReg]' reading record offset 0 (FormType), folded into a 16-bit sort/render key. The nibble!=3 branches in 0x0214D944/0x0214DC18 instead read chr_s at manager+0x48, matching the claim's contrast. All three FormType=offset-0 reads are directly, cleanly confirmed (not by analogy)."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Disasm of both 0x0214E238 and 0x0214E284 confirms the base+stride setup (manager+0x40, mov/smulbb #0x3c) decodes cleanly as ARM, exactly as in claim 7's confirmed family. Immediately after the smulbb (0x0214E26C / 0x0214E2BC), the pre-built listing genuinely switches to 2-byte Thumb-style decode for several instructions before resyncing -- re-running query.py disasm fresh at the aligned address 0x0214E26C reproduces the identical anomalous decode, and the underlying bytes plainly contain the expected literal-pool word 0x0214BD80 misdecoded as Thumb 'pop {r7,pc}'/'80bd', confirming this is a disasm-listing artifact rather than genuine Thumb code (consistent with the SAME anomaly independently occurring at 0x0214E1E0 in claim 13's family). The claim correctly downgrades its own confidence to PLAUSIBLE rather than overclaiming CONFIRMED_STATIC, which is the right call given the evidence."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UPHELD",
+      "reason": "xrefs-to 0x0214BD80 filtered to ov6 returns exactly one literal_load, at 0x0215FAEC, inside function 0x0215FAC4. Disasm confirms it reads manager+0x50 (ldr r3,[r2,#0x50]) -- the ability/passive-effect table, indexed by a byte from the entity/listener's own data to select a handler via jump table (pool 0x02172210) -- and never touches manager+0x40 (chr_b). Matches the claim exactly."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "REFUTED",
+      "reason": "The call-site mechanics are correctly quoted: 0x02158D8C ('bl #0x20784e4') is confirmed inside function 0x02158B20, with r0=[sl,#0x1b4] and r1=#0x19(25) set immediately before. But the claim's core assertion -- that 0x020784E4 reads 'the SAME +0x16/+0x18 fields that arm9 0x020772E4 writes' -- inherits the same flaw identified in claim 2: 0x020784E4's target is a fixed jpower-gauge pointer at [x+0x56c] with an exhaustively-traced, disjoint call graph (per damage-pipeline/guard-sp-gauges), not the dynamically-walked +0x558 list-node object that 0x020772E4 populates. Tracing r0=[sl+0x1b4] forward, nothing in this function's own disasm establishes that the +0x1b4-derived object's +0x56c field is fed by the +0x558 technique-node cache; that identity is asserted, not computed, and is contradicted by independent evidence."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "xrefs-to 0x0214BD80 filtered to ov11 confirms 0x021752B8 is the sole literal_load hit. Disasm confirms r0=*(0x0214BD80) (manager ptr), r1=[sl] (a separate pointer), PassiveIndex=[r1+0x41], recordBase=manager+0x48+PassiveIndex*0x14 (mla with mov r0,#0x14) -- this is chr_s (stride 20), not chr_b's own +0x40 array, exactly as claimed. The claim's contrast with the SAME overlay's indirect chr_b consumption (via bl to 0x02078514/0x0207853C in function 0x02174330) is independently confirmed under claim 6."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UNSURE",
+      "reason": "Most of the 43 rows check out: e.g. 0x020760A8 (str r0,[r1,#4], manager+4), 0x0207619C (str r0,[r1,#0x50]), 0x020761F4/0x0207620C (manager+0 mode-object read then vtable+0x24 virtual call), 0x02076270 (str r0,[r3,#0x1c]), 0x02076604 (manager+0x1900+0x11=manager+0x1911), 0x02076CB4 (manager+0x30 koma getter), 0x02076D00 (manager+0x38 kshape getter) all verified against fresh disasm exactly as labeled. But function 0x0207698C's two hits are confirmed WRONG: 0x02076990 is labeled manager_slot '+0xD4' but the actual code computes r0=manager+0xd4 THEN add r0,r0,#0x1800 -> true offset is manager+0x18D4; likewise 0x020769AC is labeled '+0xDC' but the true offset is manager+0x18DC (same missing +0x1800 term). The claim's own prose additionally mis-describes 0x0207698C as touching 'koma(+0x34)', which matches neither the row label nor the actual disasm (it calls 0x2037c24/0x2037b98 with a match-config pointer, unrelated to the koma sub-table at +0x30/+0x34). The chr_b_record_offset=null conclusion (not-a-chr_b-access) remains correct for these rows; only the specific manager-slot numeric labels and one prose sentence are wrong."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Spot-checked rows against fresh disasm: 0x0214D654 (manager+0x58 list iterate + manager+0x1000+0x8ec predicate call), 0x0214E018 (manager+0x58 indexed getter), 0x0214E190 (manager+0x44 212-byte table, +0x54 sub-field), 0x0214E45C (manager+0x48 chr_s, stride 0x14), 0x0214E564 (manager+0x54 12-byte table, +4 sub-field), 0x021536EC (manager+0x1900+idx*2 halfword) all match their row labels and classifications exactly, with none touching chr_b's own +0x40 array. The '+0x8Ex' family labels are relative to an implicit manager+0x1000 sub-base that this claim's own table never states explicitly but applies consistently throughout (unlike claim 12, which mixes fully-resolved absolute offsets with unresolved ones for the same kind of field), so no row here was found to directly contradict its own disasm."
+    },
+    {
+      "claim_idx": 14,
+      "verdict": "UNSURE",
+      "reason": "The offset_table (chr_b record field map, 0x00-0x3B) is well-corroborated by claims 1/3/4/5/7 independently: FormType@0, Tier@1, KomaSize@2, CharId@3/Flags@4-7 (byte-dispatch mismatch confirmed), StatA/B/C@8/0xA/0xC, CombatStatNValue@0x10.., BattleParams@0x24, TextIds@0x30 all check out against fresh disasm. Spot-checked 14 randomly-sampled rows plus 6 targeted rows from the full_hit_catalog_97_rows appendix (20 total): 18 matched their address/offset/classification exactly. 2 did not -- the SAME 0x02076990/0x020769AC rows flagged as wrong under claim 12 (labeled +0xD4/+0xDC, actually +0x18D4/+0x18DC) are duplicated verbatim in this claim's 97-row appendix. Core deliverable (Q1+Q2 field semantics) is solid; the appendix inherits a confirmed, if narrow (2/97 rows), numeric defect."
+    },
+    {
+      "claim_idx": 15,
+      "verdict": "REFUTED",
+      "reason": "Part (1) NEGATIVE is confirmed correct (claim 9: ov6's sole direct hit touches manager+0x50, not chr_b). Part (3) POSITIVE-via-AI is confirmed correct (claims 5/6/11: ov11 reads BattleParams live through arm9 getters). But part (2) POSITIVE-via-caching -- 'ov6's actual hit-resolution function 0x02158B20 ... consumes a chr_b-derived value ... via this pre-computed cache' -- rests on the same +0x558-list-node vs +0x56c-fixed-pointer conflation refuted under claims 2 and 10: independently-traced evidence (damage-pipeline GDB-proven jpower gauge identity, guard-sp-gauges' exhaustive disjoint call-graph enumeration for +0x56c vs +0x558) contradicts the claim that these are the same object. The synthesis's headline 'NUANCED YES, via two distinct mechanisms' therefore overstates the case: only one mechanism (ov11 AI, architecturally not ov6) is actually confirmed positive; the ov6-specific caching link remains unproven and is more likely false than true."
+    }
+  ]
+}

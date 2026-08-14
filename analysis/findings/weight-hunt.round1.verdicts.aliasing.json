@@ -1,0 +1,37 @@
+{
+  "subsystem": "weight-hunt",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the [table+0x4c]/lsl#1/MLA sequence could instead be a saturating-add or a percentage-style scale unrelated to the described 'divide-by-10 then rescale' shape. Re-disassembled 0x02158ED0 in full (133 instrs) and the quoted instructions at 0x02158F58-0x02158F88 match exactly in address, encoding and operand order (ldrh dur; bl divide-by-10; ldr [tableidx+0x4c]; lsl #1; mla quotient,scale,dur_pre-division; strh back) with nothing upstream/downstream changing that reading -- the mechanical arithmetic claim is fully corroborated by the surrounding code."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: 0x0200D12C could be a division routine specialized for this subsystem (e.g. baking in a weight-related rounding mode) rather than a truly generic primitive. `callers 0x0200D12C` returns 358 call sites spanning arm9 addresses as early as 0x0200CF14/0x02014294/0x02022E30 -- completely unrelated to combat (far outside any overlay, present before any battle code would even be relevant) -- which is decisive: no subsystem-specific division routine would be called from that breadth of unrelated arm9 code, so this is confirmed as a shared libc-style division primitive."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered (the round's highest-value discrimination): sb+0x1e0 could be a value set once per-character at load time (making [table+0x4c] the actual weight table) rather than a transient per-hit tracker. Exhaustively enumerated every strb-with-imm-0xe0 instruction ROM-wide via search-imm (only 2 exist: 0x021578A8 and 0x02158E84) and confirmed via disasm that BOTH write a *different*, directly-addressed field at object+0xE0 (no preceding '+0x100' pre-add -- required for +0x1e0 since ldrsb's 8-bit immediate can't encode 0x1e0 directly), one setting it to a hit-type-keyed duration (0x10) and the other decrementing it every call -- i.e. that neighboring field is a confirmed transient countdown timer, and no write site to +0x1e0 itself exists anywhere in the static database. Additionally, the enclosing 70+-case hit/reaction-type switch at 0x0215807C reads sb+0x1e0 at two more independent case handlers (0x02158230, 0x02158248) and forwards it as an argument to sibling functions (0x2157fb0/0x2157fd8) in the same role as other per-call 'attack-type' parameters, and the comparison value fetched via [[sb+0x1a8]+0x10]+0x182 is itself zeroed out alongside other session/transient fields in an object-reset routine (0x0207CA88) rather than being populated from a per-character load step. All discoverable evidence points to 'current hit-type/element tracker' and none supports 'static per-character weight field'; the alternative does not fit better, so the fresh lead is very likely a dead end for weight, as the tracer itself suspected."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: chr_b+0x0 could be an ID consumed during a select-screen-to-battle handoff (battle-time struct init) rather than pure roster/UI display data. The getter's mechanical description (work+6==0 / high-nibble(work+0xb)==3 gating, charIndex from work+7, singleton+0x40+idx*0x3C+0x0 addressing) matches the quoted disasm exactly. Tracing its one located caller's enclosing loop (see claim 4) shows the loop bound is populated from a dedicated roster-count getter (0x0214E000, itself dereferencing the same chr_b singleton +0x1000+0x8f0) rather than any small fixed battle-participant count, which favors the roster/UI reading over the battle-init alternative."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the record being built at r7+2..+7 could feed a battle-time actor-init struct rather than a menu/select display block. Traced the enclosing function (0x02151888): the loop containing the claim-4 getter call runs r8 from 0 up to `fp`, where fp = return value of 0x0214E000 -- a getter that dereferences the SAME chr_b singleton (0x0214BD80) at offset +0x1000+0x8f0, i.e. the total roster count (~74), not a battle-active-fighter count (2-6). After the loop, the code issues vtable 'notify/update' calls through [sl+0x68]->[+4]->{+0x1a0,+0x198} and calls into ov12 (0x21ace90/0x21ad38c), consistent with refreshing a list-widget over the full roster. A per-battle actor-init path would only ever initialize a handful of active combatants, not iterate the whole roster count -- this decisively favors the tracer's roster/select-screen reading over the battle-init alternative."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "REFUTED",
+      "reason": "Alternative fits strictly better: the call site cited (0x0215CE78, passing the move-id composite in r1/r2 plus r0=[sb+4]) does NOT actually reach the bit-test/flag-check code the claim quotes (0x0214D594-0x0214D5B0). `xrefs-to 0x0214D560` shows its only real caller is 0x0215CE78, but disassembling 0x0214D560-0x0214D590 shows a structurally distinct 2-slot cache-lookup routine (computes a hash-like index from the 3 args, compares against cached tags at [r0+0xc0]/[r0+0xc4], returns a cached value from [r0+0xb8]/[r0+0xbc], and `bx lr`s -- never falling through or branching to 0x0214D594). `xrefs-to 0x0214D594` (the real GetFlag helper) shows it has ZERO direct branch/call references anywhere in the ROM; its only reference is a literal_load in ov1 (0x0214CF8C) that registers it as an indirect callback/handler (passed as a function pointer alongside a numeric handler-id into another object), invoked later through that indirection rather than via any traced move-id-derived call. The tool's function-boundary database merges both routines into one 92-byte 'function' at 0x0214D560, which is the aliasing artifact that caused the misattribution -- the claim's central evidentiary chain (this specific call site proves per-move, not per-character, indexing) is built on the wrong function, so it provides no real evidence either way about the actual GetFlag helper's indexing convention; Q2 (per-character passive dispatch) remains fully open."
+    }
+  ]
+}

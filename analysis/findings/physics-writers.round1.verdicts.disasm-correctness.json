@@ -1,0 +1,32 @@
+{
+  "subsystem": "physics-writers",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x02158B90-0x02158BCC in ov6: bytes match the claim exactly. r0=[r1+0xe8] and r2=[r1+0x130] are both loaded from the collision-entry pointer in r1, negated via 'rsb r4,r0,#0' / 'rsb r5,r2,#0', and r0=[sl+0x1b4] is reloaded before each of the two bl's (0x20783cc with r1=r4, then 0x20781e4 with r1=r5). Dataflow is exactly as described."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "0x020781E4-0x02078290 disassembles identically to the quoted evidence. 'add r0,r4,#0x500; ldrsb r0,[r0,#0xcf]' resolves to object+0x5CF exactly as claimed, and gates the negative-delta path (popne skips the accumulate). The +0x5C8 accumulator loop does add on entry then repeatedly calls 0x207830c/0x2078328 adding/subtracting #0x6400 while the running value is <0 (negative branch) or >=0x6400 (mirrored r1>=0 branch at 0x207824c), matching the wraparound description. Minor caveat: the supporting claim that 0x0200D12C is 'the damage function's percent calc' divisor is unsupported -- that address is a generic signed-division helper with 358 callers/0 callees, not a percent-specific routine -- but this address is outside claim 1's cited address list and does not affect the verdict on 0x020781E4 itself."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "REFUTED",
+      "reason": "Byte-confirmed per the cross-check: the literal word at 0x020783D8 is 88 84 07 02 = 0x02078488, and 'ldr ip,[pc,#4]' at 0x020783CC (pc=0x020783D4+4=0x020783D8) loads ip=0x02078488, so 'bx ip' jumps DIRECTLY to 0x02078488, not to 0x020783DC as claimed. xrefs-to/callers confirm 0x020783DC is a wholly separate function (its own 2 callers: 0x02157E0C, 0x021592B4; distinct from the trampoline's 8 callers including the hit-resolution call at 0x02158BC0) that itself calls 0x02078488 via its own bl at 0x02078414 -- the trampoline's control flow never touches the linked-list walk, node-flag gating (+0x40/+0x3C), or stats+0x558 traversal at all on the path invoked from hit-resolution; it unconditionally jumps straight into the clamp-and-store at 0x02078488 on the single re-derived object. The clamp function's own internals (ldrsh +0x18/+0x16, clamp-add, store to +0x18) are correctly described, but the claim's central dispatch mechanism is inverted/wrong."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "REFUTED",
+      "reason": "The claim misreads its own quoted evidence: at 0x021607D0 'bhs #0x21607f0' is taken when r2(current)>=r1(incoming), but the branch target 0x021607F0 is 'strbhi r1,[r0,#0x6a]; bx lr' -- a conditional STORE (fires when current is strictly GREATER than incoming), followed by an immediate return that skips the +0x38 counter entirely. The fallthrough path taken when r2<r1 (incoming HIGHER than current) is the unconditional 'strb r1,[r0,#0x6a]' that then falls into the +0x38 saturating-counter increment. Net effect: +0x6a is kept in sync with the latest r1 in BOTH directions (no store only on exact equality), and the +0x38 counter increments specifically on increase events (r1>current), the opposite of a 'track-the-minimum, bhs skips the store' pattern -- the direction gating is inverted from what's claimed."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x021619B0-0x021619F8 in ov7: 'add r0,r4,#0x100' at 0x021619D8 precedes strh's at [r0,#0x68] and [r0,#0x6a], landing at r4+0x168/r4+0x16a exactly as claimed. The +0x6c store (0x021619F4) executes inside a small 2-iteration loop where the address register is recomputed each pass ('add r1,r4,ip,lsl#1; add r1,r1,#0x100'), so it lands at r4+0x16c on the first iteration (and r4+0x16e on the second) -- a slightly more nuanced picture than the flat 'lands at +0x16C' phrasing, but the decisive syntactic point (a folded #0x100 base defeats naive immediate-offset-only scanning at exactly +0x68/+0x6a/+0x6c) is confirmed true in the actual bytes."
+    }
+  ]
+}

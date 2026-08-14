@@ -1,0 +1,24 @@
+{
+ "rom": "/Users/djdjo/Documents/mine/rom/jus.nds",
+ "title": "JUS",
+ "gamecode": "AJUJ",
+ "rom_bytes": 67108864,
+ "binaries": {
+  "arm9": {
+   "file": "arm9.bin",
+   "rom_offset": 16384,
+   "size": 692568,
+   "ram_address": 33554432,
+   "entry_point": 33556480,
+   "note": "file offset = runtime_addr - ram_address (if uncompressed)"
+  },
+  "arm7": {
+   "file": "arm7.bin",
+   "rom_offset": 2162688,
+   "size": 165552,
+   "ram_address": 37224448,
+   "entry_point": 37224448,
+   "note": "file offset = runtime_addr - ram_address (if uncompressed)"
+  }
+ }
+}

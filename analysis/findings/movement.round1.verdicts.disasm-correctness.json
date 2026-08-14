@@ -1,0 +1,37 @@
+{
+  "subsystem": "movement",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembled 0x02075FBC-0x02076130: r0<-pool[0x020763C4]=0x0209F5D4 (confirmed via `strings arm9 --all` to be the ASCII string \"bin/chr_b.bin\"), bl 0x206da64 (file open) returns handle, str r0,[r3,#0xc] stores it into *(0x0214BD80)+0xc, then handle is reloaded, its +4 field's [0]->[0x2c] vtable slot is called (blx r2), and the returned pointer is stored via str r0,[r1,#0x40] into the SAME *(0x0214BD80) manager, confirming +0x40 is specifically chr_b's slot (the literal for its own filename immediately precedes this exact load/store sequence)."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x020771A0-0x020771C4 exactly matches: ldr r3,[pc,#0x134]->pool value 0x0214BD80; ldrb r6,[r1,#0x41] (unsigned, zero-extended charIndex); ldr r5,[r5,#0x40] (manager->+0x40 base); `mla r3,r6,r3,r5` with r3=#0x3c computes r3 = charIndex*60+base per ARM MLA semantics (Rd=Rm*Rs+Rn); the three subsequent ldrh (zero-extend, not ldrsh) reads are at +8/+0xa/+0xc off that pointer. No signedness or offset discrepancy found."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Disasm of ov5 0x0214E480-0x0214E4B8 confirms: selector+0xb high-nibble==3 gate, then ldr r1,[pc,#0x50]->pool 0x0214BD80 (same manager literal), ldrb r2,[r0,#7] (index), `smulbb r0,r2,r0` with r0=#0x3c computes index*60 (SMULBB signed-16x16, harmless for 0-255 range), ldr r1,[r1,#0x40] (same chr_b base field), then bare `ldrb r1,[r1,r0]` = base+index*60+0, i.e. record offset 0 with no added field displacement -- matches the claim precisely."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02076F48-0x02076F88 matches verbatim: ldrb r2,[r5,#6]/strb r2,[r4,#0x40] and ldrb sb,[r5,#7]/strb sb,[r4,#0x41] copy koma-entry+6/+7 into the new struct's +0x40/+0x41; immediately after, ldrb sb,[r4,#0x40]; ldr r3,[r3,sb,lsl#2]; str r3,[r4,#8] performs one table-indexed dispatch, and ldrb r3,[r4,#0x40]; ldr r2,[r2,r3,lsl#2]; blx r2; strb r0,[r4,#0x42] performs the second, exactly as quoted."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Raw bytes at 0x0208D4A0-0x0208D51F re-read directly: identity ramp 0x00..0x60, then table[0x61..0x7A]=0x41..0x5A (lowercase->uppercase, e.g. table[0x78..0x7A]=0x58,0x59,0x5A = 'X','Y','Z') and table[0x7B] reverts to identity (0x7B) -- a textbook ASCII case-fold table, not a chr_b map. `xrefs-to 0x0208D4A0` confirms exactly 2 literal_load refs, both at 0x02005B06/0x02005B24 (thumb), inside a routine that normalizes a char (ldrb via this table) then does `subs r0,#0x37` -- consistent with case-insensitive hex-digit parsing, unrelated to chr_b/statC/movement."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02077278-0x0207729C confirms `ldrh r3,[r3,#2]` (move's required stat) vs `ldrh sl,[sl,fp]` (stack-cached statA/B/C by loop index) is compared with plain `cmp r3,sl; addeq r3,r4,#1` -- true EQUALITY (addeq only fires on Z flag), not an inequality/threshold chain (no bge/blt/bhi against statC anywhere in this block). Spot-checked several other offset+0xc ldrh/ldrsh sites ROM-wide (e.g. 0x02079FB0/0x02079FB4, which compare two struct fields directly with no preceding #0x3c/mla stride setup) and found no second stride-60-indexed +0xc read, supporting the claim's uniqueness assertion for this specific access pattern."
+    }
+  ]
+}

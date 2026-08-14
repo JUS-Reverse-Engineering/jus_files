@@ -1,0 +1,77 @@
+{
+  "subsystem": "guard-sp-gauges",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: some of the 8 sites could be conditional or indirect (table-dispatched) branches rather than genuine unconditional direct calls, or 'the arm9 HP-meter trampoline' framing could overstate uniqueness. Re-ran xrefs-to 0x020783CC live and got the identical 8 addresses; decoded each instruction's top byte (all 0xEB, i.e. condition=AL, opcode=BL) confirming all 8 are unconditional direct 'bl', all in ov6, exactly as claimed. However, disassembling the 20 bytes immediately preceding 0x020783CC (see idx 6/7) revealed a second, previously undocumented trampoline at 0x020783B8 that also reaches Grow via the same +0x56c offset -- this does not change the literal '8 call sites to address 0x020783CC' count (still true), but it shows 0x020783CC is not the only entry point into the HP meter, undermining the definite-article framing without falsifying the counted fact."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered (per prompt): 0x02157A44 could be read as gauge-specific handler logic rather than a generic script/animation-style opcode dispatcher, which would strengthen an HP-only reading of the call site. Independently disassembled the full jump table at 0x02157A44 (cmp r2,#0x48 -> addls pc,pc,r2,lsl#2, 73 raw table entries 0x02157A64-0x02157B00+) and found dozens of distinct handler-block targets plus several duplicate 'default/no-op' targets (0x2157f90 recurring) -- exactly the shape of a generic, densely-packed opcode/event interpreter, not something purpose-built for HP. This independently reproduces and strengthens the claim's own stated alternative reading rather than contradicting it."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: 0x0215807C could be a distinct, gauge-specific handler rather than a peer opcode dispatcher. Independently disassembled 0x0215807C's head: cmp r3,#0x43 with staged range checks (bgt/bge splitting off 0x40-0x43 and 0x41+ before falling to a 0-0x1f jump table) -- structurally analogous to but distinct in shape from 0x02157A44's flat 0-0x48 table, and its sole caller (0x02158034) pulls its opcode/params from a different struct chain ([r1+0x1a0]->+0x178) than dispatcher 1's callers use. This is consistent with 'sibling/peer dispatcher using a different opcode space,' as the claim concludes, not evidence of gauge-specificity."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the two wrappers could hide a sign-fixup (e.g. rsb) not visible in the quoted excerpt, or the x64/unscaled pairing could be coincidental rather than a genuine unit-conversion pair. Independently disassembled 0x02159260-0x0215929C and confirmed no rsb/negate instruction in either wrapper, matching the claim. Also found an undocumented third sibling wrapper at 0x02159280-0x0215929C, byte-identical in shape but scaling by x256 (lsl r1,r1,#8) instead of x64 and targeting 0x020781E4 (the char+0x5c8 accumulator) instead of the HP trampoline -- this reinforces (rather than undermines) the claim's core point that this is a reused generic small-wrapper template with a data-driven, non-hardcoded sign, applied uniformly across several distinct accumulators."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: predicate 0x2158eb0 could itself be gauge-selection logic (e.g. choosing which Meter to target) rather than a generic type/eligibility check. Independently disassembled 0x2158EB0-0x2158ECC and found it is a textbook generic bitmask test: lsr r2,r1,#5 / ldr r2,[r0+r2*4+8] / and r1,r1,#0x1f / tst r2, #1<<r1 -- i.e. 'is bit (code&0x1f) of word[code>>5] at (structBase+0x120+8) set', a shape with no gauge-specific structure at all, fully consistent with the claim's 'type/eligibility code gating a battle effect, not a different gauge offset' reading. Also independently re-disassembled 0x0215986C and confirmed the tail calls to 0x0215f6e4 and two calls to 0x0207342c(0x7a, imm) exactly match the evidence string."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: field +0x140 could still be a one-shot hit-damage write rather than a passive/DoT tick, despite lacking negation. Independently disassembled 0x02159EF8's preamble and confirmed the 'run once' sticky-flag check on [r6+0x14] bit0 exactly as claimed, and re-disassembled 0x0215A2D0-0x0215A318 confirming no rsb/negate is applied to the loaded delta anywhere in this path (contrast with the explicit rsb-based negation the tracer's own damage-pipeline round1 claim 6 found feeding the SAME trampoline for a confirmed one-shot hit). The absence of negation in an otherwise structurally similar call, immediately after a sticky per-character init-once gate and inside a function that also does capped-increment bookkeeping elsewhere, favors the claim's passive-fill/DoT reading over a one-shot-hit reading; nothing in the disassembled window fits a one-shot-hit shape better."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "REFUTED",
+      "reason": "Alternative fits strictly better and is directly demonstrated: disassembling the 20 bytes immediately preceding the known trampoline (0x020783B8-0x020783D8) revealed a SECOND, previously undocumented trampoline at 0x020783B8: 'ldr ip,[pc,#8] / ldr r0,[r0,#0x56c] / rsb r1,r1,#0 / bx ip', which also jumps into Grow (0x02078488) -- confirmed via xrefs-to 0x020783B8 to have exactly 1 real static caller (0x0215AC70, a 'bl' in ov6). This is a static caller of Grow that is neither the walker (0x020783DC) nor 0x020783CC, directly falsifying 'the ONLY static caller of Grow OTHER than the already-known trampoline is the +0x558 walker.' (It still targets the same +0x56c offset as the known trampoline -- it does not surface a new gauge -- but it is a distinct, real, negating 'apply-delta' path into Grow that this claim's enumeration missed entirely.)"
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "REFUTED",
+      "reason": "The claim's blind-spot mechanism is validated (re-ran xrefs-to and pool-values against 0x02078488/0x020784B8 and confirmed 0 literal_load hits despite the pool word demonstrably existing), but its practical negative result does not survive: performing exactly the manual disasm-sweep test the claim itself proposed as 'the definitive way to rule sibling trampolines in or out' (extending the disasm window ~20 bytes before 0x020783CC) immediately surfaced a real sibling at 0x020783B8 -- 'ldr ip,[pc,#8]/ldr r0,[r0,#0x56c]/rsb r1,r1,#0/bx ip', reached by a genuine 'bl' from 0x0215AC70 -- and pool-values 0x02078480-0x02078490 confirms this sibling's own pool word is equally invisible to that query, exactly as predicted. So 'no such sibling was found by any method available through query.py in this pass' undersold an easily-discoverable, load-bearing sibling that a two-line extension of the same disasm call would have caught; the hedge ('not a proof of absence') was appropriately cautious, but the operative finding is overturned by direct counter-evidence found via the very method the claim named."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: GrowMax could have additional hidden (bx-ip-style) callers analogous to the idx 6/7 discovery, or its internal offset could be caller-supplied rather than hardcoded. Independently confirmed via xrefs-to 0x020784B8: exactly 1 static reference, a direct 'bl' from 0x0215C73C -- and direct 'bl' call sites are NOT subject to the demonstrated xrefs-to/pool-values blind spot (that blind spot only hides pool-word-driven 'bx ip' targets, which is a different reference class; the 8 confirmed 'bl' sites to 0x020783CC in idx 0 prove 'bl' xrefs are reliably captured). Directly disassembled the full Grow/GrowMax function body (0x02078488-0x020784E0) and confirmed GrowMax's very first instruction is 'ldr r2,[r0,#0x56c]' -- a hardcoded offset applied to whatever raw pointer it receives -- exactly matching the claim. (Noted in passing: functions.json merges Grow and GrowMax into one function record since GrowMax has no push prologue -- a tooling/boundary artifact, not something that affects this claim's caller count, which rests on address-level xrefs-to, not functions.json's boundaries.)"
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UNSURE",
+      "reason": "Alternative considered: given idx 6/7's demonstrated real (not merely hypothetical) blind spot -- a genuine, previously unenumerated call path into Grow (0x0215AC70 -> 0x020783B8 -> Grow) exists and was missed by this round -- the claim's 'across every statically-reachable call path enumerated in this round... no fixed offset other than +0x56c was found' is provably not exhaustive as an enumeration (a real path was missed). That said, the newly found path is ALSO +0x56c, not a new offset, so the substantive conclusion (no OTHER fixed offset found; guard/SP most plausibly reached via the +0x558 dynamic list) is not contradicted by this specific finding and is arguably reinforced by one more confirmed HP-only consumer. Since the completeness framing is now known to be false in a case that happens not to matter for the offset conclusion, but a full ROM-wide sweep for a same-blind-spot sibling with a genuinely DIFFERENT offset was not performed (out of scope of this verification pass), the offset conclusion itself cannot be certified fully exhaustive -- hence UNSURE rather than a clean UPHELD."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the walker's body could differ from the quoted excerpt in a way that changes its semantics (e.g. an extra branch to a second accumulator). Independently re-disassembled 0x020783DC-0x02078424 in full; every instruction, operand, and branch target matches the claim's evidence_disasm byte-for-byte (list head at [r0+0x558], per-node skip checks at +0x40/+0x3c, single call to Grow at 0x0207840C-0x02078414, next-pointer read at node+0, loop via bne). No alternative structure survives against direct re-disassembly."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: node+0x3c/+0x40 could be a type discriminator that routes to a different accumulator elsewhere in the ROM (e.g. a second, undiscovered walker branching on these same flags), which would make them gauge-kind selectors after all. Re-confirmed via the same full disasm (idx 10) that both the flag-set (skip) and flag-clear (apply) paths converge on the single identical call to 0x02078488, with `callers 0x020783DC` confirming only 2 total static call sites into this one walker body (no alternate walker function exists in the database to house a type-dispatch variant). Residual caveat carried from idx 6/7: since a real bx-ip-based hidden caller into Grow was found sitting undetected right next to a known trampoline, a hypothetical indirect/trampoline-based alternate accumulator gated by these same flags elsewhere in the ROM cannot be fully excluded by xrefs-to/pool-values alone -- but none was found, and the walker's own body plainly treats both flags as generic enable/pause gates, not a type selector, so the claim stands as the best static reading."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: additional (possibly indirect/bx-ip) callers into the walker could exist beyond the 2 found via direct 'bl', given the idx 6/7 discovery that such hidden callers are real and not merely theoretical elsewhere in this same code region. Independently re-ran `callers 0x020783DC` and got exactly the same 2 references (0x02157E0C, 0x021592B4); independently disassembled wrapper 0x021592A0-0x021592B4 and it matches the evidence exactly (same r0=[r0+0x1b4]/r1=ldrsh[[r1+4]+4]<<6 shape as the HP wrapper, targeting 0x020783DC instead of 0x020783CC). Checked the bytes immediately surrounding 0x020783DC's own start (0x020783D8, the preceding trampoline's pool word) and found no room there for a hidden bx-ip entry point analogous to idx 6/7's find; no such sibling caller was located for the walker specifically. The claim's own SPECULATIVE confidence rating already reflects this residual uncertainty appropriately, so it stands as written."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Alternative considered: the search-imm scan could have missed store instructions using a split add+register-offset addressing mode (already flagged by the claim itself), or the hit count/breakdown could be misreported. Independently re-ran search-imm 0x558 and got exactly 37 hits, of which exactly 1 (0x02075FF8) is a 'str' and all 36 others are 'ldr' -- matching the claim precisely. Independently re-disassembled 0x02075FE0-0x02076008 and confirmed +0x558/+0x55c/+0x560/+0x564 are zeroed together in the same loop body. The claim's own hedge (a split add+store insertion path would be invisible to this scan) remains the correct caveat; no alternative reading of the *found* evidence beats the claim's."
+    }
+  ]
+}

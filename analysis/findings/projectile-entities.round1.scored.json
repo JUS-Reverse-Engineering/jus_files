@@ -1,0 +1,61 @@
+{
+  "subsystem": "projectile-entities",
+  "round": 1,
+  "scoring": [
+    {
+      "claim_idx": 0,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 1,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 2,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 3,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: 3x UPHELD",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UPHELD",
+        "data-consistency": "UPHELD"
+      }
+    },
+    {
+      "claim_idx": 4,
+      "original": "CONFIRMED_STATIC",
+      "final": "PLAUSIBLE",
+      "rule": "capped at PLAUSIBLE: mixed",
+      "verdicts": {
+        "disasm-correctness": "UPHELD",
+        "aliasing": "UNSURE",
+        "data-consistency": "UPHELD"
+      }
+    }
+  ]
+}

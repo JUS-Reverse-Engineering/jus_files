@@ -1,0 +1,163 @@
+{
+  "subsystem": "critic",
+  "round": 1,
+  "coverage_gaps": [
+    {
+      "area": "guard/block",
+      "status": "never traced",
+      "why_it_matters": "Combat-Mechanics-Reference.md documents a separate 'Guard Health' pool that depletes on block and regenerates when not blocking, with unknown values/regen rate. No B1-B9 tracer touched this. It is architecturally very likely a second instance of the already-CONFIRMED generic clamp-accumulator gauge (damage-pipeline claim4/idx4, 0x02078488/0x020784B8) that currently only has HP (char+0x56c) resolved.",
+      "entry_angle": "See spec B12-trampoline-sibling-sweep: only 1 of 8 known call sites to trampoline 0x020783CC has been disassembled (damage-pipeline claim5); the other 7, plus any sibling trampoline targeting 0x02078488/0x020784B8 with an offset other than 0x56c, are unexamined and are the most direct route to a guard-health gauge pointer."
+    },
+    {
+      "area": "SP gauge & specials",
+      "status": "never traced",
+      "why_it_matters": "Combat-Mechanics-Reference.md documents SP spent on specials/Dream Combos/auto-guard, filled by unknown conditions (attacking, blocking, low health, KOs). Zero disassembly evidence exists for where SP is stored or how it fills/drains.",
+      "entry_angle": "Same B12 sweep as guard/block: a POSITIVE-delta call into the same clamp-accumulator family, or a distinct node type in the +0x558 linked list that damage-pipeline's own verify lens flagged as a 'generic Meter util' walker (0x020783DC), is the most likely SP-gauge candidate."
+    },
+    {
+      "area": "throws/grabs",
+      "status": "never traced",
+      "why_it_matters": "No tracer has looked for a distinct hitbox/response category that bypasses guard and applies a scripted outcome instead of physics knockback -- the shape throws typically take. collision-data-miner (B9) already found two candidate bit-fields (hasSpecialFlag = damageFlags bit 0x40, rare 2/92; hitProperties bits 0x1/0x2, near-perfectly per-character-constant) but never found their disassembly consumer.",
+      "entry_angle": "See spec B13-hasSpecialFlag-hitProperties-consumer, sequenced after B11 locates the runtime field offsets of these bytes inside the MoveInfo/scratch object at [[char+0x1a8]+0x10]."
+    },
+    {
+      "area": "support koma attacks",
+      "status": "never traced",
+      "why_it_matters": "JUS's deck system layers a main fighter with helper/support komas activated via panels; none of B1-B9 examined whether support-koma attacks share the main character's damage/hitstun/physics pipeline or use a parallel lighter-weight path.",
+      "entry_angle": "See spec B15-support-koma-lifecycle: the character constructor arm9 0x02053528 (CONFIRMED zero-init of +0x78/+0x88/+0x98-0xb4, hitstun-timers claim0) is reportedly invoked 9x from one per-slot ctor trampoline -- disassembling those 9 call sites for a role-distinguishing argument is unexplored."
+    },
+    {
+      "area": "character switch mechanics",
+      "status": "never traced",
+      "why_it_matters": "JUS lets a player swap their active main fighter mid-match; no tracer checked whether this re-runs part of character-init (movement claim4's chr_b dispatch-cache setup at char_struct+8/+0x42) or swaps which of several pre-built slot objects is 'active'.",
+      "entry_angle": "Same B15 spec's 9-slot ctor fan-out, cross-checked against callers of the char-init routine arm9 0x02076E38 occurring mid-match rather than only at battle start."
+    },
+    {
+      "area": "combo scaling",
+      "status": "never traced as such",
+      "why_it_matters": "No damage-reduction-per-hit-in-a-string mechanism has been located. The closest candidate (damage-pipeline claim8's x1.20 scale at 0x02158DC4, gated by one-shot flag [sl+0xf8]) had its 'nature x1.5' label REFUTED by 2/3 verify lenses, but the disassembled arithmetic itself was UPHELD by all three -- the code is real, only its purpose is unresolved, and the question of what RESETS the gating flag (which would settle combo-scaling vs one-time-bonus) was never asked.",
+      "entry_angle": "See spec B16-combo-scale-flag-lifecycle: search for writers of [sl+0xf8] other than the already-found set site, and for an adjacent hit-count field (a pure boolean cannot express per-hit-number scaling)."
+    },
+    {
+      "area": "ring-out/stage boundaries",
+      "status": "never traced; existence as a mechanic is itself unconfirmed",
+      "why_it_matters": "Grepping docs/research/Combat-Mechanics-Reference.md, Combat-Mechanics.md, and Human-Testing-Queue.md for ring-out/stage-boundary/off-stage/edge/arena/camera-bound terms returned zero hits -- unlike every other completeness target, this one has no behavioral documentation at all backing its inclusion. It may not exist as a distinct JUS mechanic (panel-based stages rather than Smash-style ring-outs).",
+      "entry_angle": "Deprioritized and NOT given a dedicated tracer spec this round. It is structurally downstream of physics-writers' still-open X/Y position-field question (see B10/gdb_first_recommendations #4) -- position fields must be found before any boundary-cmp code could be searched for. Recommend a cheap human/gameplay sanity check (does any match ever end by falling off a stage?) before spending a tracer round on this."
+    }
+  ],
+  "next_tracer_specs": [
+    {
+      "id": "B10-register-provenance-callgraph",
+      "subsystem": "cross-cutting object-identity (blocks damage-pipeline, physics-writers, hitstun-timers, weight-hunt)",
+      "priority": 1,
+      "entry_point": "arm9 0x02158B20 (ov6 hit-resolution fn, GDB-anchored via its call to 0x02158D8C -> 0x020784E4); arm9 0x02156A38/0x02156A58 (MoveInfo 0x1f0-byte alloc, char+0x1a8 setter 0x021570EC); arm9 0x02053528 (char-struct constructor, CONFIRMED zero-init of +0x78/+0x88/+0x98-0xb4)",
+      "question_set": [
+        "Using query.py callees recursively from 0x02158B20 (bounded to ov6+arm9), list every function that receives r0/r1 derived from 'sl', [sl+0x1b4], or [char+0x1a8] WITHOUT a folded offset added to the base register first (explicitly rule out the ov7 0x021619D8 +0x100-folded-base aliasing pattern already caught this campaign at each candidate).",
+        "For each such function, is it also reachable from the CONFIRMED constructor 0x02053528's own call graph -- i.e. can you prove 'sl' is ever the exact object that ctor built, or does every path go through one extra pointer hop (+0x1b4 / +0x1a8) first?",
+        "Produce one ranked shortlist (<=10 addresses) of the single best breakpoint(s) where a live GDB session dumping r0/r1 alongside the pointer chain rooted at 0x023D2A74 would settle 'sl' vs 'char struct' identity for ALL of damage-pipeline claim6/7, physics-writers claim0/3, hitstun-timers, and weight-hunt at once, instead of four separate future GDB guesses."
+      ],
+      "new_angle_rationale": "Damage-pipeline, physics-writers, hitstun-timers, and weight-hunt each independently hit and separately logged the SAME unresolved question this round without ever pooling it. Static xrefs-to/pool-values on the literal 0x023D2A74 already returned 0 hits (movement claim5) -- re-running that exact search would fail again. The new angle is building a forward call-graph provenance MAP from already-CONFIRMED anchors so a single future GDB session resolves every stuck subsystem at once, rather than each subsystem re-discovering the ambiguity independently.",
+      "estimated_value": "Highest cross-subsystem leverage remaining in the campaign -- one identity answer unblocks 4 PARTIAL/TRACING subsystems simultaneously.",
+      "feasibility": "static (call-graph prep this round) feeding a single gdb-first confirmation (see gdb_first_recommendations #1)"
+    },
+    {
+      "id": "B11-moveinfo-populate-trace",
+      "subsystem": "damage-pipeline / hitbox-priority",
+      "priority": 1,
+      "entry_point": "arm9 0x02156A38/0x02156A58 (MoveInfo alloc, size #0x1f0, CONFIRMED -- listed as a known-good campaign anchor) -> 0x021570EC (char+0x1a8 setter) -> reader 0x02158B94-0x02158BAC (reads [[char+0x1a8]+0x10]+0x40 flags bit 0x800, +0xE8, +0x130), all inside CONFIRMED fn 0x02158B20",
+      "question_set": [
+        "Between the alloc at 0x02156A58 and the read at 0x02158BA8/0x02158BAC, which function(s) write into the sub-object at [[char+0x1a8]+0x10] at offsets +0x40 (flags), +0xE8, and +0x130? Search callees of 0x02156A38 and any move-start/attack-init dispatcher that calls it.",
+        "Does that writer perform the still-unlocated ÷5 + (tier-2) + nature-advantage arithmetic (the actual damage-formula site, unfound across 3 rounds), or does it just copy an already-resolved delta from elsewhere?",
+        "Does the same sub-object also carry collisionType/hitTier/hitProperties-shaped byte fields at other offsets (per docs/formats/Combat-Formats.md's on-disk layout) alongside +0xE8/+0x130 -- i.e. is [[char+0x1a8]+0x10] the actual in-RAM parsed CollisionEntry that hitbox-priority's Q1 never located?",
+        "Cross-check whether ov6 0x02159EF8's state dispatcher (hitbox-priority claim4, SPECULATIVE; it touches r6+0x130/r6+0x1A4/r6+0x1A8) operates on this SAME object, or a coincidentally offset-matching but unrelated one -- verify r6's identity before assuming equivalence with char+0x1a8."
+      ],
+      "new_angle_rationale": "hitbox-priority round1's own proposed next angle (trace forward from resource-loader thunks 0x0201A228/0x02010254, reached backward from 0x020924B0) is now a DEAD END: that whole backward chain's own claim2 was demoted by the aliasing lens from 'collision-key builder' to 'sprite-archive-key builder feeding the ending/credits subsystem' (hitbox-priority.round1.scored.json claim_idx1). This spec instead forward-traces from a different, still-solid, explicitly campaign-listed anchor (the MoveInfo allocator) that three independent rounds converged on without finding its writer -- genuinely unexplored, not a repeat of the refuted backward search.",
+      "estimated_value": "Single highest-value open item in damage-pipeline (the formula site itself) with a plausible simultaneous close of hitbox-priority Q1, since both point at the same unwritten sub-object.",
+      "feasibility": "static"
+    },
+    {
+      "id": "B12-trampoline-sibling-sweep",
+      "subsystem": "guard/block, SP gauge & specials",
+      "priority": 1,
+      "entry_point": "arm9 0x020783CC (2-insn trampoline into the generic clamp-accumulator; PLAUSIBLE, damage-pipeline claim5, hardcodes char+0x56c) and its target 0x02078488 / GrowMax sibling 0x020784B8 (both CONFIRMED, damage-pipeline claim4/idx4)",
+      "question_set": [
+        "Run `query.py xrefs-to 0x020783CC` to enumerate its call sites (damage-pipeline claim5 asserted 8 exist inside ov6 but only disassembled 1, at 0x02158BC0). For each remaining site, what is r0's base object and is r1's delta sign positive (fill) or negative (drain)?",
+        "Run `query.py xrefs-to 0x02078488` and `xrefs-to 0x020784B8` directly: is there any caller/trampoline that offsets the base pointer by something other than +0x56c before reaching this same generic accumulator? Each distinct offset is a candidate second/third gauge (guard, SP).",
+        "Follow the +0x558 linked list (0x020783DC, called from the trampoline; flagged by the C1 verify lens as a reused 'generic Meter util') to see how many distinct gauge-node types it walks per character, and whether node+0x3C/+0x40 flag bits distinguish an HP-node from a guard- or SP-node."
+      ],
+      "new_angle_rationale": "Damage-pipeline round1 counted 8 call sites to this trampoline but disassembled only 1; guard and SP were never in scope for any B1-B9 tracer at all. Pure follow-through on an existing CONFIRMED/PLAUSIBLE claim, not a repeat of any prior search.",
+      "estimated_value": "Cheapest available unlock of two never-traced completeness targets (guard/block AND SP gauge) at once.",
+      "feasibility": "static"
+    },
+    {
+      "id": "B13-hasSpecialFlag-hitProperties-consumer",
+      "subsystem": "throws/grabs",
+      "priority": 2,
+      "entry_point": "collision-data-miner CONFIRMED/PLAUSIBLE facts (collision-data.round1.scored.json idx 7-9): hitProperties uses only bits 0x1/0x2 and is near-perfectly file-constant per character; hasSpecialFlag = bool(damageFlags & 0x40), rare (2/92 non-terminator entries). Sequenced after B11 locates the runtime field offsets of damageFlags/hitProperties inside [[char+0x1a8]+0x10].",
+      "question_set": [
+        "Once B11 pins down where these bytes live in RAM, use `query.py disasm <addr> N` around every load of that offset to manually find nearby tst/and/cmp against #0x40 and #0x1/#0x2 -- NOTE: `search-imm` cannot find these directly, it only indexes load/store immediate *offsets*, not data-processing immediate *operands* (confirmed tool limitation, see tooling_gaps); this requires reading disasm windows by hand.",
+        "Does any branch gated on hasSpecialFlag or a hitProperties bit combination skip the normal knockback-application path (0x020783CC/0x020781E4) in favor of a different handler -- the shape expected for a grab/throw?",
+        "Does hitProperties' file-constant-per-character pattern (bb_b_01/ds_b_03 ~96% value=3 vs bl_b_01/db_b_01 100% value=0) reflect a per-CHARACTER throw/grab capability flag rather than a per-hitbox gate?"
+      ],
+      "new_angle_rationale": "No prior round attempted to find the disassembly consumer of these bit-fields at all -- B9 was a data-only miner explicitly scoped to distribution stats, not disassembly. Genuinely new target, deliberately sequenced after B11 rather than guessed at blind.",
+      "estimated_value": "First static evidence for throws/grabs (100% untraced target); may also resolve what hasSpecialFlag gates, a standing damage-pipeline side-question.",
+      "feasibility": "static (sequenced after B11)"
+    },
+    {
+      "id": "B14-chr_b-full-record-map",
+      "subsystem": "weight-hunt (completion)",
+      "priority": 2,
+      "entry_point": "chr_b singleton *(0x0214BD80)+0x40, stride 0x3C (CONFIRMED, movement claim1/2/3). Known fields so far: +0x0 FormType (PLAUSIBLE, weight-hunt claim4), +0x8 statA, +0xA statB, +0xC statC (CONFIRMED, movement claim2).",
+      "question_set": [
+        "`query.py xrefs-to 0x0214BD80` returns ~87 sites total per weight-hunt round1's own count; only 2 (statA/B/C getter arm9 0x02077178, offset+0 getter ov5 0x0214E480) have been disassembled for their record-offset access. Systematically disassemble the remaining ~85 to build a complete {record_offset -> accessing_function -> observed_use} table for the full 60-byte record.",
+        "Cross-check every newly found offset against jus_files/exported_combat/chr_b.json's field names to assign semantic labels, flagging any offset whose CONSUMER context is physics/knockback/hitstun code rather than menu/UI code.",
+        "Specifically check whether any chr_b getter is called from the ov6 hit-resolution path (0x02158B20 or its callees) rather than exclusively from ov5 menu code -- every getter found so far is ov5-only, which is suspicious for a value that should matter during live combat physics (i.e. weight/knockback-resistance may be cached into the character struct at load time rather than read from chr_b directly during a hit -- see B10's identity-resolution output for where such a cache would live)."
+      ],
+      "new_angle_rationale": "Weight-hunt round1 proposed exactly this systematic catalog in its own suggested_next_angles but executed only 2/87 sites. Legitimate unexplored surface area anchored on the CONFIRMED base+stride mechanism, distinct from round1's dead-end chase of the +0x1e0/[table+0x4c] hitstun-scaling lead.",
+      "estimated_value": "Completes weight-hunt (currently PARTIAL, 1 of 3 tracer attempts used) and produces a reusable byte-level chr_b map for every future subsystem.",
+      "feasibility": "static"
+    },
+    {
+      "id": "B15-support-koma-lifecycle",
+      "subsystem": "support koma attacks / character switch mechanics",
+      "priority": 2,
+      "entry_point": "arm9 0x02053528 (char-struct constructor, CONFIRMED zero-init of +0x78/+0x88/+0x98-0xb4, hitstun-timers claim0). That claim's open_questions prose reports it is called 9x from ov8:0x02150392 and 1x from arm9:0x0205372C -- these two addresses appear only in the claim's prose, not its cited evidence_disasm, so the FIRST step is confirming them via `query.py callers 0x02053528` before relying on them.",
+      "question_set": [
+        "Confirm the constructor's actual caller set via `query.py callers 0x02053528`. Do the callers differ by a slot-index argument or literal that plausibly separates '2 main fighters' from 'up to N support/helper komas' (matching JUS's deck structure of a main fighter plus panel-activated support komas)?",
+        "Is there a distinct call path (or an internal branch) specifically triggered when a player SWITCHES their active main character mid-match, versus one-time battle-start setup for all slots?",
+        "Do support-koma slots reuse the SAME +0x78 state-byte semantics (0x00 air/0x22 ground/0xC0 launched) as main-fighter slots, or a reduced state machine (e.g. no launch state, since supports are not directly hit in most JUS gameplay)?"
+      ],
+      "new_angle_rationale": "This call-site fan-out was a side-observation in hitstun-timers round1, never followed up by any tracer. Completely fresh territory for two never-traced completeness targets, cheap because the constructor is already fully located.",
+      "estimated_value": "First static evidence for both support-koma attacks and character-switch mechanics.",
+      "feasibility": "static"
+    },
+    {
+      "id": "B16-combo-scale-flag-lifecycle",
+      "subsystem": "combo scaling",
+      "priority": 3,
+      "entry_point": "arm9/ov6 0x02158DC4-0x02158DD0 (x1.20 scale via 0x0200D12C; disasm CONFIRMED, semantic label 'nature x1.5' REFUTED by 2/3 lenses -- damage-pipeline claim8/idx8), gated by one-shot flag [sl+0xf8] whose SET site (inside 0x02158B20) is the only part examined so far",
+      "question_set": [
+        "Where is [sl+0xf8] WRITTEN to clear/reset it (search-imm 0xf8 on the same base-register family, ov6 first)? Round1 found only the set-once path; the reset site was never searched and is needed to know whether this is per-combo, per-stun-window, or per-match scope.",
+        "Is [sl+0xf8] cleared on landing (new combo string starts) vs on knockdown/neutral-reset (combo ends)? Compare its clear trigger's location against the CONFIRMED +0x78 air/ground/launched state transitions.",
+        "Does the same flag or an adjacent byte on 'sl' also track a hit COUNT (not just a boolean) nearby -- a pure one-shot flag cannot express per-hit-number scaling; if no counter exists, this is probably NOT combo scaling and the label should stay unresolved rather than be force-fit."
+      ],
+      "new_angle_rationale": "Round1 only found the SET site (inside the already-fully-explored 0x02158B20 body); it never searched for the RESET site, which is the only way to distinguish the REFUTED 'nature bonus' hypothesis from the never-tested 'combo scaling' hypothesis. Not a repeat -- the refutation was about the label at the set site, this targets an entirely different, unexamined site.",
+      "estimated_value": "Resolves damage-pipeline's one remaining refuted-but-real-arithmetic claim while providing first evidence for a never-traced completeness target.",
+      "feasibility": "static"
+    }
+  ],
+  "gdb_first_recommendations": [
+    "Identity check (unblocks B10 + 4 subsystems at once): break ov6 0x02158BA8 (inside CONFIRMED hit-resolution fn 0x02158B20, right after 'ldr r0,[r1,#0xe8]'); dump r1 (the [[char+0x1a8]+0x10] scratch base) and separately the live pointer chain rooted at 0x023D2A74; compare equality. If equal, every open 'is this object the documented character struct or a wrapper' question from damage-pipeline/physics-writers/hitstun-timers/weight-hunt collapses at once.",
+    "Hitstun-timer init: break arm9 0x0207D16C (strh r1,[r0,#0xa0]; orr [r0+0x78],#0x800000 -- SPECULATIVE, hitstun-timers claim4); on a real hit-landing dump r0 (compare to the identity check above) and r1 (compare to the jpower move's hitstun value); confirm [r0+0x78]&0xFF transitions to a 0xC0-family value while [r0+0xa0] decrements to 0 over the expected frame count.",
+    "Position-vs-timer conflict at +0xa0/+0xa2: break ov4 0x02151E7C (ldrsh r0,[r4,#0xa2]) during a real knockback/fall; dump r4 (compare to the identity chain) and log [r4+0xa0]/[r4+0xa2] across several frames -- large motion-consistent deltas mean position, small monotonic countdown means timer. Directly resolves the pre-existing +0xA0 conflict flagged in docs/research/Character-State-Struct.md.",
+    "Velocity/position fields (physics-writers Q1, static search exhausted -- that round's own note is that search-imm cannot find register-offset or jump-table addressing): break ov6 0x02158BB4 and 0x02158BC4 (r0=[sl+0x1b4], the two knockback-writer call sites); dump the full +0x6A..+0xBA byte window of that exact pointer before and after a real hit with visible on-screen knockback.",
+    "Combo-scale flag scope: break arm9/ov6 0x02158DC4 (mul r4,#0x78 -- the x1.20 scale); log [sl+0xf8] continuously across an entire multi-hit combo and across a match reset to see when/if it clears -- can be done in the same session as the identity check (same function body, same breakpoint region), settling B16 without a dedicated static round if it lands first."
+  ],
+  "tooling_gaps": [
+    "ExportAllCollisions batch command (src/JUS.CLI/JUS/CombatCommands.cs) has never been run against the full character .bin directory -- closes the 4/74 -> 74/74 collision-data coverage gap flagged by both B9's miner and its verify lens; would let collision-data's PLAUSIBLE distributional claims (collisionType->hitTier skew, projectileId sentinel value) be re-tested at full-roster scale and likely promoted toward CONFIRMED_STATIC.",
+    "query.py search-imm only indexes load/store immediate *offsets*; it cannot find data-processing immediate *operands* (mov/cmp/tst/and #imm). Independently flagged by movement round1 (no way to search for 'cmp r,#0x22' walk-speed thresholds) and physics-writers round1 (no way to find the 0xC0 launched-state writer). Blocks B13's hasSpecialFlag/hitProperties bit-consumer search and any future flag-gated completeness target from being ROM-wide-searchable without manual disasm reading.",
+    "No register-provenance-aware search exists (only immediate-offset text matching) -- independently flagged as the single biggest false-positive source by hitstun-timers (a 172-byte settings object and an entity+0xa4 combo-record both coincidentally overlap +0x98-0xba), physics-writers (ov7's folded +0x100 base aliasing +0x68/+0x6a/+0x6c), and weight-hunt. A tool that tags a register as 'provably descended from anchor X' via forward call-graph walk, rather than matching a bare immediate byte, would directly serve B10 and eliminate most of this campaign's aliasing false-positives.",
+    "jpower-indirect's div-by-5 callsite sweep (xrefs-to 0x0200D12C, 324 sites) used a fixed ARM-only -8-byte lookback for the divisor-setting instruction and explicitly could not check Thumb-mode call sites. A lookback that walks backward through the actual instruction stream respecting ARM/Thumb mode (rather than a fixed byte offset) would let that sweep be re-run with confidence it isn't missing the real formula's ÷5 call site.",
+    "weight-hunt's arm9_tables.json scanner artifact found ~7 candidate ~74-entry data tables and several 70-78-entry code-pointer vtables by ROM FILE OFFSET, but round1 never translated those file offsets to RAM addresses, so none could be run through xrefs-to/callers. A small offset-translation helper reusing rom_loader.py's already-built region map would unlock that whole candidate list for a cheap follow-up pass."
+  ]
+}

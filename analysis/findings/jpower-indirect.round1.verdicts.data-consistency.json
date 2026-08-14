@@ -1,0 +1,32 @@
+{
+  "subsystem": "jpower-indirect",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "311 entries x 304 bytes = 94544 bytes, which EXACTLY matches the real on-disk size of both jus_files/ripped_jus_files/bin/jpower.bin and src/JUS.Tests/Resources/Combat/JPower/jpower.bin (wc -c = 94544 for both), and jpower.json's top-level 'count' field is 311 -- a perfect three-way match (claim text, parser constant, and actual file bytes). The claim's 'ov6 may never touch this blob' framing is posed as an open question, not asserted as fact, so it does not overreach the static evidence shown (single xref to the path string 0x021713FC)."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "0x130 = 304 decimal, exactly equal to JPowerEntry.BlockSize in src/JUS.Tool/Combat/Formats/JPowerEntry.cs (public const int BlockSize = 304), and Binary2JPower.cs computes blockCount = stream.Length/BlockSize, confirming the toolkit's own authoritative parser uses the identical per-entry stride the tracer found in the ov5 accessor's mul r2,r1,r2 (r2=0x130). Bonus corroboration: the sibling accessor's other two strides also resolve to real toolkit constants -- r2*0x3c (60) = BattleCharacterEntry.EntrySize (60, in BattleCharacterEntry.cs) and r3*0x14 (20) = CollisionEntry.EntrySize (20, in CollisionEntry.cs) -- so all three numeric strides the tracer flagged as unexplained are independently confirmed as genuine toolkit-format sizes, not arbitrary numbers. 'All 9 call sites are in ov5' is a narrowly-scoped xrefs-to fact about two specific ov5 addresses (0x02165398/0x021653AC); it does not itself claim ov6 never consumes jpower data by other means (e.g. a separately-compiled duplicate routine in ov6, or pre-cached data), so it is not contradicted by the gameplay-verified damageFlags>=2 direct-index mechanism -- it is simply narrower in scope than that mechanism requires, exactly as the claim's own open_questions concede."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Recomputed from jpower.json: of 222 attack (isAttack=true) entries, 147 have nonzero damage1, and ALL 147 (100%) are exact multiples of 5 -- zero counterexamples requiring a genuine truncating remainder. Since the confirmed formula floor(damage1/5)+(tier-2) never actually needs to discard a nonzero remainder in the real data, there is no game-data pressure for a canonical divide-with-remainder subroutine call to exist near damage code; an unrelated icon-grid UI computation (0x020795E4-EC, scaled by x3 for pixel layout, no char+0x56c/0x1a8/0x1b4 references) being the ROM's only arm9 div-by-5 site is fully consistent with, not contradictory to, the verified formula."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Same empirical basis as claim 2 (147/147 nonzero damage1 values in jpower.json are exact multiples of 5, computed via jus_files/exported_combat/jpower.json), so ruling out both canonical division idioms (generic subroutine w/ literal divisor-5, and magic-multiply 0x66666667/0xCCCCCCCD) near damage code is consistent with the confirmed floor(damage1/5) formula rather than contradicting it: an always-exact division is easy to implement via a reciprocal-multiply approximation, a precomputed table, or a Thumb-mode call site -- all explicitly flagged as unexplored by the claim's own caveats -- rather than the two idioms this sweep searched for. The claim is a narrow negative result (idiom X and Y absent here) and does not assert the /5 term doesn't exist at all, so it does not contradict Research-Status.md's emulator-verified formula."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UNSURE",
+      "reason": "No contradiction found in available data (offsets +0xe8=232 and +0x130=304 both fit inside the 0x1f0=496-byte MoveInfo allocation with room to spare, and the object/field-chain addresses are internally consistent with the round1 claims 7-8 they extend), but nothing in jpower.json/jpower.aar/the C# parsers can confirm or refute whether the +0xe8/+0x130 deltas are actually copies of a resolved jpower lookup versus independently computed values -- this is exactly the gap the claim's own open_questions and PLAUSIBLE (not CONFIRMED_STATIC) confidence label already acknowledge, and the reference data available to this lens cannot settle it either way."
+    }
+  ]
+}

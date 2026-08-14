@@ -1,0 +1,37 @@
+{
+  "subsystem": "movement",
+  "round": 1,
+  "lens": "aliasing",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: 0x0214BD80 could be a koma-specific (not general) manager, and the 0x3C-stride slot at +0x40 could actually be koma data. Refuted directly: koma.bin is loaded by a separate helper (0x02075F08, called from 0x020760A4) that stores its handle/data at manager+0x30 using a 0xC-byte (12-byte) stride divisor (`mov r1,#0xc; bl 0x200d338`), matching koma.bin's documented 12-byte record size and completely distinct from chr_b's own +0x40 slot (0x3C-byte stride) fed by the adjacent, independently-confirmed 'bin/chr_b.bin' filename literal (0x0209F5D4, verified via `strings arm9 --all`) feeding the handle stored at manager+0xc and the GetData result stored at manager+0x40 in the same block."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: the three u16 fields at +8/+0xA/+0xC could be arbitrary (HP/cost) or koma-piece stats rather than chr_b's own statA/B/C. Refuted on the table-identity axis: manager+0x40 is chr_b's own slot (see claim 0), and the offsets exactly match Binary2BattleCharacter.cs's StatA(8)/StatB(10)/StatC(12) layout -- not koma.bin's. However, a new discriminating check (chr_b.json's on-disk CharId column vs its own array position) shows CharId equals array-position in only 1 of 74 entries, and CharId is drawn from a 0-55 range with only 29 unique values (heavy duplication, e.g. charId=7 x9) -- meaning the +0x41 index used here selects a record by raw position (=koma PassiveIndex), not by matching this character's own CharId field. The bytes read are genuinely chr_b's statA/B/C fields, but of whichever record sits at slot=PassiveIndex, not necessarily a CharId-verified 'this exact roster entry' record."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: the ov5 getter's shared '+0x40, stride 0x3c' addressing could coincidentally alias a different table. Refuted: re-disassembly of ov5 0x0214E480-0x0214E4B8 confirms the literal pool at 0x0214E4F8 is 0x0214BD80 (same global as claim 0/1) feeding the identical base=[manager+0x40] with `mov r0,#0x3c; smulbb` stride math -- an exact structural match, not a shared-stride coincidence. The same overlay's neighboring getter (0x0214E518-0x0214E54C) independently reads a *different* manager slot (+0x54) with a *different* stride (0xC), showing the code base does reuse this pattern across genuinely distinct tables, which makes the +0x40/0x3c pairing's specific match to chr_b (not a coincidence-prone generic stride) more convincing rather than less."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Alternative implicit in the claim's own open question: are koma PassiveIndex and chr_b CharId really the same index space? Direct disasm of the koma-record helper (0x02076C98: base=[0x0214BD80]->+0x30, `mov r0,#0xc; mla r0,r1,r0,r2`) proves r5 in the init routine is unambiguously a koma.bin record (12-byte stride, manager+0x30 -- the same koma slot established in claim 0), confirming byte+6/+7 are genuinely KomaType/PassiveIndex, not chr_b fields. chr_b.json's own CharId column (range 0-55, 29 unique values, no positional correlation, per claim 1's finding) matches PassiveIndex's documented 0-55/47-value 'per-form' range far better than a 74-unique-character space, supporting that the two ARE the same shared archetype-index field rather than merely overlapping ranges."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Alternative tested: could the case-fold table serve a dual purpose (e.g. also functioning as a chr_b map at a different offset), or could there be a second, hidden consumer? Independently re-verified the full byte range 0x0208D4A0-0x0208D51F: identity 0-0x60, exact -0x20 fold for 0x61-0x7A (lowercase->uppercase), identity resumes at 0x7B -- a complete, self-contained 128-byte ASCII case-fold table with no discontinuity that would suggest a second embedded table. `xrefs-to 0x0208D4A0` returns exactly 2 references, both inside the same small routine (0x02005AE0-ish, bounds-checked 0..0x7F, `subs r0,#0x37`), which is a character/glob-pattern comparison helper unrelated to chr_b, statC, or the combat manager -- no dual-purpose use found anywhere in the ROM."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Alternatives tested: character-unlock check, deck validation, support-compatibility check. Refuted by caller context: the sole same-region caller (0x020772E4) walks a live combatant struct's +0x558 linked list of *placed koma* entries, calling 0x02077178(combatant, koma, statMatchArray) once per node, then uses the match count to gate a bonus computation capped against 0x4000 and written into the combatant's +0x16/+0x18 fields (SP/gauge-shaped). This is a live in-battle deck-adjacency/link-bonus recompute over currently placed panels -- none of the alternatives touch a live combatant's koma linked-list or an SP-like gauge, so 'koma/technique stat-requirement matcher feeding a combo/link bonus' fits strictly better than a menu-time unlock/validation/compatibility gate."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "subsystem": "collision-data",
+  "round": 1,
+  "scoring": [
+    {
+      "claim_idx": 0,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 1,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 2,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 3,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "capped: UNSURE",
+      "verdict": "UNSURE"
+    },
+    {
+      "claim_idx": 4,
+      "original": "PLAUSIBLE",
+      "final": "SPECULATIVE",
+      "rule": "demoted: REFUTED (single-lens)",
+      "verdict": "REFUTED"
+    },
+    {
+      "claim_idx": 5,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 6,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 7,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 8,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 9,
+      "original": "PLAUSIBLE",
+      "final": "PLAUSIBLE",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 10,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 11,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 12,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 13,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    },
+    {
+      "claim_idx": 14,
+      "original": "CONFIRMED_STATIC",
+      "final": "CONFIRMED_STATIC",
+      "rule": "kept: UPHELD",
+      "verdict": "UPHELD"
+    }
+  ]
+}

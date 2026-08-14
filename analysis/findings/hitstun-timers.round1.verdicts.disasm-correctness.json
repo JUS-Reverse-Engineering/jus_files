@@ -1,0 +1,37 @@
+{
+  "subsystem": "hitstun-timers",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Full 63-instruction re-disasm of 0x02053528 confirms r8=r0 is fixed for the entire function (never reassigned). ip=0 (set 0x02053574) is live and untouched through both str ip,[r8,#0x98] (0x02053584) and str ip,[r8,#0xa0] (0x020535A4); the very next instruction ldr r3,[r8,#0xa0]/str r3,[r8,#0x9c] (0x020535A8/AC) round-trips that same zero into +0x9c. r0=0 (set 0x020535EC) is live through bl 0x205174c at 0x02053608 with r1=r8+0xa4 (0x020535FC), r2=0xc (0x02053604); callee 0205174C is add ip,r1,r2/cmp/stmlt r1!,{r0}/blt -- a genuine memset(0,dest,12) that zeros three consecutive words at +0xa4/+0xa8/+0xac. r1=0 (set 0x020535D4) is live through str r1,[r8,#0x88] (0x020535DC), str r1,[r8,#0xb0] (0x02053614), and through bl 0x2052dc0 (r0=r8 at 0x020535E4, r1 still 0), whose leaf body is literally str r1,[r0,#0xb4]. +0x78 is zeroed at 0x020535F0, all on r8. Every hex encoding in the claim's evidence_disasm string matches my independent re-disassembly byte-for-byte."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Confirmed mov r0,#0xac (0x02157148) / bl 0x201a21c (0x02157150) / mov sl,r0 (0x02157154): a fresh, independent 172-byte heap allocation with no relationship to r8 or the 0x02053528 constructor. Confirmed strb writes to sl+0x98/0x99/0x9a at 0x02157470/0215747C/0215748C, and traced the mirror copies (ldrb from 0x98/0x99/0x9a,0x9b,0x9c -> strb to 0x9d/0x9e/0x9f/0xa0/0xa1 at 0x021574B0-0x021574D0) exactly as described. This is a genuinely distinct object; the offset overlap with the character struct's +0x98-0xa1 is coincidental as claimed."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Confirmed ldr r0,[r5,#0xc] (0x02081148) then add r8,r0,#0xa4 (0x02081160); scanned all r8-touching instructions across the full 2868-byte function body and r8 is never reassigned again before the flagged accesses. strhhi r1,[r8,#0xa8] / strhhi r2,[r8,#0xaa] (0x0208162C/0x02081630) and str r0,[r8,#0xb0] (0x02081584) therefore land at entity+0x14c/+0x14e/+0x154 (0xa4+0xa8, 0xa4+0xaa, 0xa4+0xb0), not the character struct's own +0xa8/+0xaa/+0xb0. This is a correctly-identified base-provenance aliasing false lead."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "0x02158E78-0x02158E84 disassembles to exactly ldrsb r0,[sl,#0xe0]; cmp r0,#0; subne r0,r0,#1; strbne r0,[sl,#0xe0] -- the NE-predicated pair only fires when the loaded byte is nonzero, so the value stays at 0 once it hits the floor and otherwise decrements by 1: a textbook decrement-with-floor-at-zero in 4 instructions, byte-identical to the quoted evidence."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "0x0207D16C is confirmed a true leaf (callees=0): strh r1,[r0,#0xa0] (16-bit store) followed by ldr r1,[r0,#0x78]/orr r1,r1,#0x800000/str r1,[r0,#0x78] (32-bit read-modify-write). Note 0x800000 is bit23 (byte 2 of the word), not the low byte holding the 0x00/0x22/0xc0 enum -- but the claim is careful to say only 'the SAME 4-byte-aligned word', not the same byte, so this is accurately described, not overstated. Call site 0x020858EC-F4 confirmed as r1=ldrsh[r8,#0x1a], r0=ldr[r6,#0x10], bl 0x207d16c; r6 is confirmed reloaded from an array via an r5-indexed load (ldr r6,[r0,r5,lsl#2] at 0x02085878) inside caller 0x02085704, consistent with the claimed per-entry-loop rebinding. The claim is correctly flagged SPECULATIVE and the code matches its own hedged description; identity of [r6+0x10] is genuinely unresolved statically, as stated."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Confirmed r4=[r5+4] (0x02151E14, r5=mov r5,r0 the function's own first arg). ldrsh r0,[r4,#0xa2] and ldrsh r3,[r4,#0xa0] (0x02151E7C/0x02151E90) are each followed by lsl #0xc (0x02151E88/0x02151E98, a 12-bit fixed-point scale), stored to stack slots whose addresses (sp+0, sp+4) are passed as r2/r1 into bl 0x214e1b8 at 0x02151EA0. Callee body (0214E1C0-0214E1D0) dereferences r1/r2 and stores them to [r4,#0xc]/[r4,#0x10] of a different target object reached via r0's own +4/+0x50 chain -- exactly the 'read two 16-bit fields, scale, write into another object's position pair' shape claimed. Correctly flagged SPECULATIVE regarding whether r4 is the GDB base-chain struct."
+    }
+  ]
+}

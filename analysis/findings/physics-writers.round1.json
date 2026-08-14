@@ -1,0 +1,67 @@
+{
+  "subsystem": "physics-writers",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "The hit-resolution routine (ov6 0x02158B20, which calls the GDB-verified damage function 0x020784E4 later in the same body) reads the collision entry's +0xE8 and +0x130 fields, negates each, and feeds them as the delta argument (r1) into two arm9 helper calls with r0 = the deeply-nested character/stats pointer [sl+0x1b4] -- i.e. the collision-derived 'knockback' data is read here and dispatched to writer functions on the victim object, matching the expected shape of a knockback-impulse consumer.",
+      "addresses": ["0x02158BA8", "0x02158BAC", "0x02158BB0", "0x02158BB4", "0x02158BB8", "0x02158BBC", "0x02158BC0", "0x02158BC4", "0x02158BC8", "0x02158BCC"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02158BA8: ldr r0, [r1, #0xe8] | 0x02158BAC: ldr r2, [r1, #0x130] | 0x02158BB0: rsb r4, r0, #0 | 0x02158BB4: ldr r0, [sl, #0x1b4] | 0x02158BB8: mov r1, r4 | 0x02158BBC: rsb r5, r2, #0 | 0x02158BC0: bl #0x20783cc | 0x02158BC4: ldr r0, [sl, #0x1b4] | 0x02158BC8: mov r1, r5 | 0x02158BCC: bl #0x20781e4",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x02158BC0 and 0x02158BCC; confirm r1 at each call equals -(collision_entry->+0xE8) / -(collision_entry->+0x130), and dump *(r0) (the [sl+0x1b4] object) at +0x5C8 and +0x56C before/after each call to see which one the game's 'knockback' cheat/debug value actually maps to.",
+      "open_questions": [
+        "Is [sl+0x1b4] the same runtime object GDB found at the 0x023D2A74 pointer-chain (the documented character struct), or one more indirection away from it?",
+        "Which of +0xE8/+0x130 is the X-knockback vs Y-knockback component of the collision entry (the ground-truth 'knockback' field description doesn't specify sub-fields)?"
+      ]
+    },
+    {
+      "claim": "arm9 0x020781E4 (the second writer called above) does NOT write a classical velocity-add-to-position pair. It reads a signed delta (r1), gates negative deltas behind a flag byte at object+0x5CF, then accumulates into a 32-bit field at object+0x5C8 with modulo-0x6400 wraparound (adds 0x6400 when the running total goes negative, subtracts 0x6400 when it overflows past a positive bound in the mirrored r1>=0 branch) via a small loop calling 0x207830c/0x2078328. 0x6400 = 0x64 (=100, the same divisor used by the damage function's percent calc at 0x200d12c) x 0x100, i.e. a 0-100.0 range in Q8 fixed point -- this reads much more like a percentage/hitstun-style wrapping counter than an X or Y velocity, and +0x5C8 is far outside the documented +0x6A-0xBA physics region, so this offset is a poor fit for 'velocity' despite consuming a knockback-derived delta.",
+      "addresses": ["0x020781E4", "0x020781E8", "0x020781EC", "0x020781F0", "0x020781F4", "0x020781F8", "0x020781FC", "0x02078200", "0x02078204", "0x02078208", "0x0207820C", "0x02078210", "0x02078214", "0x02078218", "0x0207821C", "0x02078220", "0x02078224", "0x02078228", "0x0207822C", "0x02078230", "0x02078234", "0x02078238", "0x0207823C", "0x02078240", "0x02078244"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x020781E4: push {r4, r5, r6, lr} | 0x020781E8: mov r4, r0 | 0x020781EC: cmp r1, #0 | 0x020781F0: bge #0x207824c | 0x020781F4: add r0, r4, #0x500 | 0x020781F8: ldrsb r0, [r0, #0xcf] | 0x020781FC: cmp r0, #0 | 0x02078200: popne {r4, r5, r6, pc} | 0x02078204: ldr r0, [r4, #0x5c8] | 0x02078208: mov r6, #1 | 0x0207820C: add r0, r0, r1 | 0x02078210: str r0, [r4, #0x5c8] | 0x02078214: mov r5, #0 | 0x02078218: b #0x207823c | 0x0207821C: mov r0, r4 | 0x02078220: mov r1, r6 | 0x02078224: bl #0x207830c | 0x02078228: cmp r0, #0 | 0x0207822C: ldrne r0, [r4, #0x5c8] | 0x02078230: addne r0, r0, #0x6400 | 0x02078234: strne r0, [r4, #0x5c8] | 0x02078238: streq r5, [r4, #0x5c8] | 0x0207823C: ldr r0, [r4, #0x5c8] | 0x02078240: cmp r0, #0 | 0x02078244: blt #0x207821c",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x02078204; watch object+0x5C8 across a single knockback hit; confirm whether it behaves like a percentage/hitstun meter (monotonic-ish, wraps at 0x6400=25600) rather than a velocity that decays every frame.",
+      "open_questions": [
+        "What consumes object+0x5C8 afterward -- does it ever feed into a real position update, or is it purely a display/threshold counter (e.g. an in-game damage-percent meter)?"
+      ]
+    },
+    {
+      "claim": "arm9 0x020783CC (the first writer called from the hit-resolution routine) is a 2-instruction trampoline that re-derives the SAME stats sub-object the GDB-verified damage function uses (char_struct+0x56C, identical field to 0x020784E4's own prologue) and tail-jumps into 0x020783DC, which walks a linked list at stats+0x558 (each node gated by flags at node+0x40/node+0x3C) and calls 0x02078488 on every qualifying node with the same delta. 0x02078488 is a genuine 'value = clamp(value + delta, 0, max)' accumulator: it loads node+0x18 (current) and node+0x16 (max), adds the delta, clamps to [0, max], and stores back to node+0x18 -- exactly the ADD-then-store-back shape the physics-writers brief describes for velocity, but node+0x16/+0x18 are the identical fields the confirmed damage function reads as (max, current) stat values, so this is far more likely an HP/stat-clamp accumulator (damage delta broadcast to linked sub-parts) than X/Y velocity. Recorded because it is the clearest static example of the requested add-and-store-back pattern found this round, useful for calibrating what a real velocity writer should look like.",
+      "addresses": ["0x020783CC", "0x020783D0", "0x020783D4", "0x020783DC", "0x020783E0", "0x020783E4", "0x020783E8", "0x020783EC", "0x020783F0", "0x02078488", "0x0207848C", "0x02078490", "0x02078494", "0x02078498", "0x0207849C", "0x020784A0", "0x020784E4", "0x020784E8", "0x020784EC"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x020783CC: ldr ip, [pc, #4] | 0x020783D0: ldr r0, [r0, #0x56c] | 0x020783D4: bx ip | 0x020783DC: push {r3, r4, r5, lr} | 0x020783E0: ldr r4, [r0, #0x558] | 0x020783E4: mov r5, r1 | 0x020783E8: cmp r4, #0 | 0x020783EC: popeq {r3, r4, r5, pc} | 0x020783F0: b #0x207841c | 0x02078488: ldrsh r2, [r0, #0x18] | 0x0207848C: adds r1, r1, r2 | 0x02078490: ldrsh r2, [r0, #0x16] | 0x02078494: movmi r1, #0 | 0x02078498: cmp r1, r2 | 0x0207849C: movgt r1, r2 | 0x020784A0: strh r1, [r0, #0x18] | 0x020784E4: push {r4, lr} | 0x020784E8: ldr r4, [r0, #0x56c] | 0x020784EC: ldrsh r2, [r4, #0x16]",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x02078488; dump *r0 at +0x16/+0x18 before and after; if these track current/max HP (matching whatever debug HP readout exists), this rules the offset pair out as velocity entirely.",
+      "open_questions": [
+        "Does node+0x16/+0x18 correspond to a known HP field from Cheat-Code-Analysis.md? If so this closes the question definitively without a fresh breakpoint."
+      ]
+    },
+    {
+      "claim": "Within the ov6 wrapper/player struct ('sl' in the hit-resolution routine), offset +0x6A is written by a small standalone comparator (ov6 0x021607C0) that reads current value at +0x6A, and only overwrites it with the incoming byte (r1) when the incoming value is strictly lower (unsigned) than the current one (bhs skips the store), plus increments a saturating counter at +0x38 capped by a literal-pool max -- a 'track-the-minimum-seen plus a hit counter' pattern, not a per-frame velocity accumulator (no addition to any position field occurs anywhere in this 56-byte function). This is direct evidence AGAINST +0x6A being an X/Y velocity field in the wrapper struct that the confirmed hit-resolution code operates on -- though it does not rule out +0x6A being velocity in the deeper, GDB-identified character struct if that struct is a *different* object than this wrapper (open question in claim 1).",
+      "addresses": ["0x021607C0", "0x021607C4", "0x021607C8", "0x021607CC", "0x021607D0", "0x021607D4", "0x021607D8", "0x021607DC", "0x021607E0", "0x021607E4", "0x021607E8", "0x021607EC", "0x021607F0"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x021607C0: cmp r0, #0 | 0x021607C4: bxeq lr | 0x021607C8: ldrb r2, [r0, #0x6a] | 0x021607CC: cmp r2, r1 | 0x021607D0: bhs #0x21607f0 | 0x021607D4: strb r1, [r0, #0x6a] | 0x021607D8: ldr r2, [r0, #0x38] | 0x021607DC: ldr r1, [pc, #0x14] | 0x021607E0: cmp r2, r1 | 0x021607E4: addlo r1, r2, #1 | 0x021607E8: strlo r1, [r0, #0x38] | 0x021607EC: bx lr | 0x021607F0: strbhi r1, [r0, #0x6a]",
+      "confidence": "PLAUSIBLE",
+      "gdb_check": "break 0x021607C0; confirm r0 == the wrapper/player pointer (not the deeper character object), and watch +0x6a/+0x38 across several hits to confirm it behaves like a hit-priority/lockout tracker rather than a velocity component.",
+      "open_questions": [
+        "Which caller(s) invoke 0x021607C0, and with what r1 value (is r1 itself derived from hitTier/hitProperties, tying this to the B3 hitbox-priority subsystem instead)?"
+      ]
+    },
+    {
+      "claim": "Concrete, syntactic proof that immediate-offset search-imm hits on +0x6A/+0x6C/+0x68 cannot be assumed to address the documented character-struct region without checking whether the base register already has a constant folded in: in ov7 0x021619D8-0x021619F4, 'add r0, r4, #0x100' is executed BEFORE the strh instructions at +0x68/+0x6a/+0x6c, so those stores actually land at absolute offsets +0x168/+0x16A/+0x16C of the object in r4, not +0x68/+0x6A/+0x6C. This is the same aliasing failure mode the brief's HISTORICAL PITFALL warns about (timer mistaken for velocity), demonstrated here at exactly the offsets this subsystem is investigating, and explains why blind search-imm sweeps over +0x6A-0x7C produced heavy false-positive noise across unrelated small-object classes throughout the ROM.",
+      "addresses": ["0x021619D8", "0x021619DC", "0x021619E0", "0x021619E4", "0x021619F4"],
+      "provenance": "ov7",
+      "evidence_disasm": "0x021619D8: add r0, r4, #0x100 | 0x021619DC: strh r3, [r0, #0x68] | 0x021619E0: strh r1, [r0, #0x6a] | 0x021619E4: mov r0, ip | 0x021619F4: strh r0, [r1, #0x6c]",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": []
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "Q1 (exact X/Y velocity offsets in +0x6A-0x7C) and their paired position fields remain UNRESOLVED: search-imm on every candidate offset in that window returns dozens to hundreds of hits scattered across many small, generic object classes (constructors zeroing +0x44-0x70 style fields, ring-buffer/array bases like the +0x7c 0x18-byte-slot array on the ov6 wrapper, and the +0x100-relative aliasing shown in claim 5) with no reliable static way to tell which base register is the GDB-confirmed character struct. The tool cannot search for data-processing immediates (mov/cmp #imm), only load/store immediate offsets, so we also could not search for 'cmp/mov #0x22' or 'cmp/mov #0xC0' directly -- only for ldrb/strb *offset*-0x78 sites, all 13 of which (enumerated exhaustively via search-imm --all) were manually inspected and none had an adjacent immediate matching the documented state values, so the ground-air-launch writer (Q5) is likely reached via a non-immediate addressing mode (register offset, jump table, or a value loaded from a data table) that search-imm structurally cannot find.",
+    "The most promising un-chased lead is [sl+0x1b4] itself (r0 passed into both 0x020783CC and 0x020781E4, and into the damage function 0x020784E4): a GDB session that breaks at 0x02158BB4/0x02158BC4 and dumps the +0x6A-0xBA window of THAT exact pointer (not the ov6 wrapper 'sl') before and after a real hit would directly settle whether the documented physics region belongs to this object, and would let a follow-up static pass anchor search-imm results to functions reachable from this specific pointer instead of sweeping the whole ROM.",
+    "Q3 (gravity constant) and Q4 (decay/friction) had zero static leads this round -- the hit-resolution function traced here is an on-hit handler, not the per-frame physics tick; the per-frame tick function (likely one of the ov0-ov8-shared callees not yet explored: 0x02159B8C, 0x021590FC, 0x02158ED0, or a sibling of 0x0215911C) should be traced next, specifically looking for a function called unconditionally every frame (not gated by a hit event) that does ldrsh+add-small-negative-constant+strh on a 16-bit field, gated by the confirmed +0x78 airborne check (+0x78 == 0).",
+    "Q5 (launch state = 0xC0 writer): none of the 13 global strb/ldrb accesses to +0x78 (exhaustively enumerated) write or compare against 0xC0 or 0x22 within their own function bodies; the two ov6 hits found in the confirmed hit-resolution call graph (0x0215918C, resetting +0x78=0 on the wrapper 'sl') only ever write 0. Recommend a GDB watchpoint on the wrapper's +0x78 byte during an actual launch to capture the PC of the real 0xC0 writer, since it evidently isn't reachable via the literal-immediate-offset search this tool supports."
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "subsystem": "guard-sp-gauges",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py xrefs-to 0x020783cc`: returns exactly 8 branch refs at the exact 8 addresses quoted (0x02157DC0, 0x021582C4, 0x02158BC0, 0x02159274, 0x021592D0, 0x0215952C, 0x02159668, 0x0215A318), 0 literal_load/table hits. Also cross-consistent with damage-pipeline.round1 claim 5's independently-stated '8 sites' and its own example site 0x02158BC0, which appears verbatim in both files' address lists."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural (opcode dispatch on r2, no jpower/collision/chr_b field exposes this internal opcode table so there is no external data set to falsify it against). The r0=[r5+0x1b4] character-pointer convention it documents is internally consistent with every other claim in this file and with damage-pipeline.round1 (e.g. its 0x02158B20 caller also uses [sl+0x1b4], and this file's own claim 8's 0x0215C728 uses [r4+0x1b4]) -- no contradiction found. UPHELD on structural/cross-doc-consistency grounds only."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural (opcode dispatch on r3; no exported data table exists for this selector). Internally self-consistent: reproduces the identical r0=[r5+0x1b4]/r1=r4 convention and the identical 'next case calls 0x020781E4' ordering seen in claim 1's sibling table, with no numeric or structural contradiction against any corpus file. UPHELD on structural grounds only."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UNSURE",
+      "reason": "The x64-scaled wrapper (0x02159260) and unscaled sibling (0x021592C0) both feed the HP-current field (+0x18, clamped to +0x16 max). chr_b.json's documented combat-stat 'max'-like fields range 320-5784 (combatStat3/4/5Value: 352-4248/376-5784/384-5784), and GrowMax's own hard cap is 0x4000=16384. If the raw halfword at [[r1+4]+4] is small (<=~90, comparable to jpower's hitstun field which ranges 0-50), x64 lands at 0-5760, fitting the 320-5784 window neatly -- but if it is jpower-damage-magnitude-scale (damage1/modifierDamage1 range 0-400 across 311 entries), x64 would reach up to 25600, exceeding both the observed chr_b max-field ceiling (5784) and the hard GrowMax cap (16384). Cannot resolve which regime applies without knowing the koma/move-descriptor object's actual field semantics (the claim's own listed open question), so this is a genuine open numeric tension, not a clean pass or fail."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Strong numeric match found: docs/research/Cheat-Code-Analysis.md's Ability ID table lists 0x1B='Immunity to Burn' and 0x1D='Immunity to Poison', part of a contiguous 10-entry status-ailment block (0x19 Shock .. 0x22 Seal) -- exactly the two codes (27, 29) this claim documents being passed as r2 to 0x0215986C. Re-disassembled the predicate 0x02158EB0 directly (not quoted in the original claim): it is a generic bitfield test -- `lsr r2,r1,#5` (word=code/32), `add r0,r0,r2,lsl#2`, `ldr r2,[r0,#8]`, `and r1,r1,#0x1f` (bit=code%32), `tst r2,1<<bit` -- i.e. HasFlag(charPtr+0x120, code). docs/research/Passives-Reference.md independently documents PER-CHARACTER 'Immune to Burn effect' (Roronoa Zoro, Toushiro Hitsugaya) and 'Immune to Poison effect' (Killua Zoaldyck) passives, confirming a per-character Burn/Poison status-type bit genuinely exists in this game's design at exactly this granularity. This does not contradict the claim (which correctly leaves exact semantics as an open question) and substantially corroborates it."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural; no jpower/collision field exposes the scratch base [[charPtr+0x1a8]+0x10]+0x140 to cross-check numerically. Consistent with the framing in Battle-Engine-Map.md's cross-cutting-structures section (same scratch base already implicated for +0xE8 in damage-pipeline) and with real documented per-frame HP-affecting passives that would need exactly this kind of gated tick (e.g. Cheat-Code-Analysis.md ability 0x07 'Max Health increases when respawning from KO', and Passives-Reference.md's several 'Gradually regains health' entries for Eve/Majin Buu/Piccolo/Kazuki). No contradicting data found. UPHELD on structural + plausibility grounds."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py xrefs-to 0x02078488`: returns exactly 2 references -- branch 0x02078414 (arm9) and caller_function 0x020783DC (arm9) -- matching the claim exactly (the trampoline itself does not show up here because it reaches Grow via 'bx ip', not 'bl', consistent with claim 7's tooling-blind-spot finding)."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py pool-values 0x02078480 0x02078490`: returns '0 literal_load(s) with value in range', confirming the claim's stated zero-hit result exactly, despite the pool word at 0x020783D8 (88 84 07 02 = 0x02078488) demonstrably existing on disk (re-confirmed by direct disasm) and being independently corroborated as the trampoline's bx target by damage-pipeline.round1 claim 5. This is a real, reproducible tooling blind spot, not a mis-claim."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py xrefs-to 0x020784b8`: returns exactly 1 reference (branch 0x0215C73C, ov6), matching 'exactly one static caller' precisely. The fixed delta of 0x400=1024, gated behind a status-flag bit and capped by GrowMax's own hard ceiling of 0x4000=16384 (permitting at most 16 stacks), is strongly corroborated by a documented, repeatable, respawn-triggered mechanic: Cheat-Code-Analysis.md ability 0x07 'Max Health increases when respawning from KO', matched verbatim in Passives-Reference.md for Son Goku/Super Saiyan Gohan/Vegeta ('When KOed and return, [char]'s max Health ... increases') -- a bit-gated, presumably-repeatable-per-KO buff is exactly what this call site's shape implies."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UNSURE",
+      "reason": "The call-graph reasoning is independently confirmed (see claims 6/12: exactly +0x56c fixed-offset via the trampoline's 8 sites vs. the walker's dynamic node pointer via its 2 sites -- no third pattern exists in the xrefs-to results). However, docs/research/Combat-Mechanics-Reference.md section 7 explicitly documents SP as 'Shared across deck (not per-character)' with '3 base + helper bonuses' discrete bars -- in tension with this synthesis's framing that guard/SP gauges are reached via a PER-CHARACTER char+0x558 list (charPtr-relative). This is plausible for Guard Health (documented as a per-character pool that depletes when blocking) but sits awkwardly for SP specifically, which the synthesis does not address."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural (already CONFIRMED_STATIC in the source file); re-disassembly of 0x020783DC-0x02078424 matches the quoted evidence exactly, and its call count/target (2 static callers per claim 12, both reaching this exact function, which itself makes exactly 1 call into Grow per claim 6) forms a fully self-consistent, independently-verified 3-way call graph (8 trampoline callers -> Grow; 2 walker callers -> walker -> 1 Grow call). No data field exists to test node-flag semantics further. UPHELD on structural + cross-claim graph-consistency grounds."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "Purely code-structural; no exported JSON field represents individual +0x558 list-node contents (node+0x3c/+0x40), so there is nothing in jpower.json/chr_b.json/collision data to test the flag-semantics claim against directly. The claim's negative finding ('no branch to an alternate accumulator based on either flag') is consistent with the re-disassembled function body in claim 10, which shows both flag-check paths converging on the same single 0x2078488 call. UPHELD on structural grounds only."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py xrefs-to 0x020783dc`: returns exactly 2 references (0x02157E0C, 0x021592B4), matching the claim's count and addresses exactly. Re-disassembly of the twin wrapper at 0x02159260 (whose HP-trampoline-calling counterpart 0x021592A0 is claimed byte-identical) confirms the quoted push/ldr/ldrsh/lsl#6 sequence verbatim. The same x64-magnitude caveat as claim 3 applies to this wrapper's scaled delta (open regarding source-field magnitude), so this is UPHELD on the call-site-count/structural claims with that one numeric caveat carried over, not a contradiction."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Independently re-ran `query.py search-imm 0x558 --all`: returns exactly 37 hits total, with the ONLY store being `str r3,[r4,#0x558]` at 0x02075FF8 -- matching the claim's '37 total... only ONE is a store' precisely. Direct disasm of 0x02075FF0-0x02076014 also confirms all 4 quoted str instructions (0x02075FF8/FFC/0x02076000/0x02076008) sit inside a single stride-0x400 loop (`add r4,r1,#0x400; cmp r4,r2; blo`), consistent with a per-character-slot zero-init pass."
+    }
+  ]
+}

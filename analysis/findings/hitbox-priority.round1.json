@@ -1,0 +1,58 @@
+{
+  "subsystem": "hitbox-priority",
+  "round": 1,
+  "claims": [
+    {
+      "claim": "0x020924B0 is NOT an array of raw collision-blob pointers; it is an 8-byte-stride array indexed by lsl#3 (index*8). The arm9 character-load routine at 0x02074728 reads word0 of an entry from base 0x020924B0 (pool constant loaded at 0x02074780) and, separately, word1 of the SAME entry from base+4 == 0x020924B4 (pool constant loaded at 0x02074730), both using the identical index register r8 with an lsl #3 scale -- proving a homogeneous 8-byte record layout {word0 @ +0, word1 @ +4} rather than a bare pointer table.",
+      "addresses": ["0x02074730", "0x02074740", "0x02074780", "0x02074788", "0x02074C1C", "0x02074C2C"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x02074730: e4449fe5  ldr r4, [pc, #0x4e4] | 0x02074740: 886194e7  ldr r6, [r4, r8, lsl #3] | 0x02074780: a4149fe5  ldr r1, [pc, #0x4a4] | 0x02074788: 881191e7  ldr r1, [r1, r8, lsl #3] | 0x02074C1C: b4240902  .word 0x020924B4 | 0x02074C2C: b0240902  .word 0x020924B0",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Confirms table SHAPE (8-byte stride, two words per entry) but not yet which downstream consumer treats word0 as a pointer to the actual parsed 20-byte CollisionEntry array used at hit-test time; see claim 2 for what word0 actually is at load time."
+      ]
+    },
+    {
+      "claim": "word0 of an 0x020924B0 entry is consumed as a NUL-terminated ASCII C-string, not a collision-entry-array pointer: the very next instructions after loading it (0x0207478C stores it to sp+8, 0x02074790 passes it as r1 into 0x020741BC) feed it to a byte-copy-until-zero loop (see the identical idiom in the sibling routine 0x02074000: ldrsb-then-strb per byte, looped until a zero byte, then a NUL terminator is written) -- the classic strcpy/strcat pattern. For table index 0, the raw bytes at that pointer target (0x0209E92C) are literally the ASCII characters 'd','b','_','b' (hex bytes 64 62 5f 62, confirmed by the disassembler decoding them as data even though it prints them as a bogus ARM opcode), continuing into 'db_b_01\\0' -- a battle-character ID string exactly matching the JUS toolkit's chr/col/{characterId}.bin naming convention (e.g. 'bb_b_01_collision.json' in the exported reference JSONs). So this table is a character-ID string lookup used to build the collision (and sibling: sound/ai) resource path at load time, not the in-memory collision-entry array itself.",
+      "addresses": ["0x0207478C", "0x02074790", "0x02074004", "0x02074008", "0x0207400C", "0x0209E92C"],
+      "provenance": "arm9",
+      "evidence_disasm": "0x0207478C: 08108de5  str r1, [sp, #8] | 0x02074790: 89feffeb  bl #0x20741bc | 0x02074004: d120d1e0  ldrsb r2, [r1], #1 | 0x02074008: 0120c0e4  strb r2, [r0], #1 | 0x0207400C: d020d1e1  ldrsb r2, [r1] | 0x0209E92C: 64625f62  subsvs r6, pc, #100, #4",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "Q1 (which code parses collision entries) is therefore only PARTIALLY answered: we found the load-time lookup/path-build path from a character ID to a resource key, but not the code that walks the resulting 20-byte-stride CollisionEntry array field-by-field once the file is actually loaded into RAM. That parser/consumer was not located in this pass -- see suggested_next_angles."
+      ]
+    },
+    {
+      "claim": "The 0x020924B0 table has exactly 74 entries (0x4A), matching the known 74 battle characters. ov0 function 0x0214EFAC linearly scans all 74 entries looking for a match: for each entry it extracts bits 14-19 (a 6-bit id, computed as word1>>0xE & 0x3F) and compares that id against a caller-supplied parameter (r7); the loop bound is an explicit cmp against 0x4A.",
+      "addresses": ["0x0214EFD8", "0x0214EFE0", "0x0214EFE4", "0x0214EFEC", "0x0214EFF0", "0x0214F034"],
+      "provenance": "ov0",
+      "evidence_disasm": "0x0214EFD8: d8139fe5  ldr r1, [pc, #0x3d8] | 0x0214EFE0: 820181e0  add r0, r1, r2, lsl #3 | 0x0214EFE4: 040090e5  ldr r0, [r0, #4] | 0x0214EFEC: 3f0000e2  and r0, r0, #0x3f | 0x0214EFF0: 000057e1  cmp r7, r0 | 0x0214F034: 4a0052e3  cmp r2, #0x4a",
+      "confidence": "CONFIRMED_STATIC",
+      "gdb_check": "",
+      "open_questions": [
+        "The 6-bit id extracted here increments by exactly 1 between consecutive table entries in the raw data (e.g. entry0/entry1 word1 = 0x0005C100/0x0005C200 -> ids 0x16/0x17), consistent with a dense per-character class-id space, but its relationship (if any) to hitTier/hitProperties/projectileId used in clash resolution is unconfirmed."
+      ]
+    },
+    {
+      "claim": "Candidate next hop for the actual per-frame hit/priority logic: ov6 function 0x02159EF8 (called every frame per active character instance, r6 = character struct) is a large state-update dispatcher that repeatedly calls a shared sub-state-flag setter at 0x0215FC78 with a fixed struct pointer (r6+0x130) and small integer state-ids (observed: 4, 6, 8, 0xA, 0xE...), gated on fields at r6+0xCB/+0xD2/+0xD3 and r6+0x1A4/+0x1A8 (an opponent/battle-context pointer). This is architecturally the right neighborhood (per-character combat state machine) to eventually contain the two-entity hitTier/hitProperties comparison the task is looking for, but no direct two-base-register ldrb+cmp pair against matching offsets was found inside it in this pass -- it was not confirmed to BE the clash-resolution code, only a plausible place to keep tracing from.",
+      "addresses": ["0x02159EF8", "0x0215A03C", "0x0215A040", "0x0215A048", "0x0215A04C", "0x0215A050", "0x0215A054"],
+      "provenance": "ov6",
+      "evidence_disasm": "0x02159EF8: 70402de9  push {r4, r5, r6, lr} | 0x0215A03C: 130e86e2  add r0, r6, #0x130 | 0x0215A040: 0610a0e3  mov r1, #6 | 0x0215A048: 0a1700eb  bl #0x215fc78 | 0x0215A04C: 130e86e2  add r0, r6, #0x130 | 0x0215A050: 0a10a0e3  mov r1, #0xa | 0x0215A054: 071700eb  bl #0x215fc78",
+      "confidence": "SPECULATIVE",
+      "gdb_check": "break *0x02159EF8 during a two-character clash (both attacks active same frame); dump r0 (character struct) each hit and inter-frame-diff r0+0xCB/+0xD2/+0xD3/+0x1A4/+0x1A8 plus the callee-visible fields inside 0x0215FC78's target struct to see whether any of them ever holds an opponent's collision-entry pointer or hitTier value at the moment both hitboxes overlap.",
+      "open_questions": [
+        "Q2-Q5 (is hitTier the priority value; move-vs-move tie behavior; projectile-vs-projectile/move-vs-projectile path selection; what hitModifier/damageFlags gate in hit resolution) remain UNANSWERED -- no two-entity field comparison (two ldrb/ldrh from matching offsets on two different base registers feeding one cmp) was located anywhere in the overlays explored this round (ov0, ov3, ov4, ov5, ov6)."
+      ]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "Q1 is unresolved for the actual runtime CollisionEntry struct: after the character-ID string from 0x020924B0 is used to build a resource key (claim 2), the load continues through a generic resource-loader thunk (arm9 0x020101F4, thumb) which calls 0x0201A228 (lookup-by-key) then falls back to 0x02010190, finalizing via 0x02010254 -- none of these were disassembled deep enough this round to find where they hand back a pointer that is subsequently walked with ldrb #0x00/#0x10/#0x11 (collisionType/hitTier/hitProperties per the file-format doc docs/formats/Combat-Formats.md, NOT yet verified against ARM disassembly). Next round should trace 0x0201A228/0x02010254's return value forward instead of trying to search backward from 0x020924B0.",
+    "search-imm on offsets 0x00/0x10/0x11/0x14 (collisionType/hitTier/hitProperties/stride) was tried and is too noisy globally (100+ unrelated hits across arm9 and every overlay, since small byte offsets collide with countless unrelated structs); the two candidate clusters investigated in depth this round (arm9 0x020225E0/0x02022A74/0x02022E30, ov4 0x0215EB80-0x0215F010) both turned out to be unrelated (a virtual-filesystem wildcard-pattern matcher, and a generic min-search/topological-sort container respectively) -- rule these out for round 2.",
+    "The giant per-round-setup function traced this round (ov3 0x02159D5C, 3712 bytes) is battle-STAGE/actor bring-up code (spawns HUD/sound/graphics objects, assigns collision-file handles into slot array sl+0x58/0x5c/0x80), not per-frame hit resolution; do not re-enter it looking for clash logic.",
+    "Better anchor for round 2: trace forward from the already-confirmed damage-threshold function 0x020784E4's caller context (ov6 0x021607FC, which reads a per-character state byte at charPtr+0x56C+0x13 with values 0/1/2) and from the character-struct offsets +0xC8/+0xC9/+0xCA/+0xCB/+0xD2/+0xD3 seen repeatedly in ov6 0x02159EF8 -- these look like hit-reaction/combo-state counters and are much closer to the character's live combat state than anything reachable from the 0x020924B0 load-time table.",
+    "Behavioral ground truth already established via in-game testing (docs/research/Combat-Mechanics-Reference.md: 'Same priority = both lose (clash)') was NOT used as evidence here (per the rules) but should guide round 2's search: look for a 3-way branch (greater/equal/less) after a hitTier-vs-hitTier cmp where the equal path invalidates BOTH sides' active collision entries rather than either landing a hit."
+  ]
+}

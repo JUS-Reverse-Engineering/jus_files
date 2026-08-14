@@ -1,0 +1,52 @@
+{
+  "subsystem": "damage-pipeline",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembly of 0x020784E4-0x02078510 matches exactly: r4=[r0+0x56c]; r2=ldrsh[r4+0x16] ('max'); r0=r2*r1; bl 0x200d12c (r0/100); r1=ldrsh[r4+0x18] ('current') at 0x020784FC; lsl r0,#16 then 'cmp r1,r0,asr#16' is a genuine sign round-trip (sign-extends the low 16 bits back out); movle r0,#1 / movgt r0,#0 correctly implement 'return 1 if current<=result else 0'."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "callers 0x020784E4 returns exactly the two cited sites (0x02158D8C, 0x02160918). At both, 'mov r1,#0x19' (25) is the last write to r1 before the bl -- at the second site the intervening ldreq/addeq/lsreq/streq instructions only touch r0/r7, never r1, so r1=25 is confirmed live into the call at 0x02160918."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Full disassembly of 0x0200D12C through ~0x0200D334 shows the exact cited prologue (eor/and to stash sign bits, cmp+rsblt to abs both operands, cmp/blo early-out) followed by a genuine normalize-shift-count computation and a 32-iteration adcs/sublo restoring-division loop, then sign fixup via the ip bits and bx lr -- this is unambiguously a generic signed 32-bit division/remainder subroutine, called with r1=0x64 (100) immediately beforehand, not an inlined magic-multiply."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Independently reproduced pool-values scans for 0x66666667 and 0xCCCCCCCD across the whole literal-load table (which includes overlays, not just arm9) return exactly 4 hits total at the same 4 addresses the claim cites (0x020563CC, 0x020586F4, 0x02058798, 0x02052A38). Disasm at each confirms the claim's characterization: a Gregorian-style date routine (+0x7d0/2000, sub r3,r1,#2), two structurally-identical checksum/date helper routines (mov r1,#0xd / mov r1,#7 feeding a *13 or *7 term into the magic-multiply), and the sprintf formatter at 0x0205237C (unsigned /10 digit-extraction magic-multiply plus '+'/'-'/'0'/'*' ASCII flag comparisons, all confirmed inside the same 2244-byte function). None reference offset 0x56c or the jpower struct."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "0x02078488: ldrsh current, adds delta, ldrsh max, 'movmi r1,#0' (floors on the N flag from the earlier adds), 'cmp r1,r2'+'movgt r1,r2' (ceils to max), strh back to +0x18, returns nonzero flag -- exactly 'ApplyDeltaToCurrent clamped to [0,max]'. 0x020784B8: ldrsh [r2+0x16], 'cmp #0x4000'+'movge/bxge' early-out, add delta, 'cmp #0x4000'+'movgt' hard-cap, strh back to +0x16 -- exactly 'GrowMax capped at 0x4000'. xrefs-to 0x020784B8 confirms it is an independent bl target from ov6 despite not being a functions.json-recognized start, matching the claim's 'immediately adjacent function' framing."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Disasm confirms 'ldr ip,[pc,#4]' at 0x020783CC loads the literal word at 0x020783D8, which is 0x02078488 (raw bytes 88 84 07 02), i.e. the ApplyDeltaToCurrent function from claim 4; r0 is reloaded from [r0+0x56c] before 'bx ip'. xrefs-to 0x020783CC returns exactly 8 branch references, all bl sites inside ov6, matching the claim's '8 sites' count exactly."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of function 0x02158B20 confirms 0x02158D8C (claim-0's call) and 0x02158BC0 are in the same function, and at 0x02158BC0 the operands are exactly as claimed: r0=[sl+0x1b4] (loaded at 0x02158BB4), r1=r4 where r4=rsb(r0,#0) i.e. -[r1_base+0xe8] (computed at 0x02158BB0 from the load at 0x02158BA8), immediately before 'bl 0x20783cc'."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Disasm confirms the base chain exactly: r0=[sl+0x1a8] (0x02158B94), r1=[r0+0x10] (0x02158B98) = [[charPtr+0x1a8]+0x10]; r0=[r1+0xe8] and r2=[r1+0x130] (0x02158BA8/AC) are negated into r4/r5 and r4 feeds the 0x020783CC trampoline (claim 6) while r5 feeds 0x020781E4 with r0=[sl+0x1b4]. Disasm of 0x020781E4 confirms it operates on a 32-bit field at [r4_param+0x5c8] (ldr/str, not ldrsh/strh), a distinct wider field from the jpower gauge at +0x56c -- matching the claim precisely. Independently reproduced search-imm 0xe8 also returns exactly 134 hits, corroborating the claim's stated evidence for its (explicitly flagged) open question."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "REFUTED",
+      "reason": "Wider context (0x02158D90-0x02158DE8) shows the x1.20 scale block at 0x02158DC4 is NOT gated by the one-shot flag at [sl+0xf8]: both control paths converge on it -- 'bne #0x2158dc4' jumps straight there when the flag is already set, AND the flag==0 path (which sets the flag and calls 0x215f6e4/0x207342c) simply falls through into the same 0x2158DC4 block with no branch. The flag only one-shot-gates the warning sound/event calls; the *120/100 scale itself re-executes on every hit while the outer 25%-health check (from claims 0-1, tested at 0x02158D90/94) is true. This contradicts the claim's characterization of the scale as 'gated by a one-shot byte flag...only set the first time this branch is taken' and its speculation that it is a 'one-time bonus (e.g. first-hit/combo-starter scaling)' -- the decisive control flow instead shows a persistent low-HP (<=25% max) per-hit damage multiplier, reapplied on every qualifying hit, not a one-shot bonus."
+    }
+  ]
+}

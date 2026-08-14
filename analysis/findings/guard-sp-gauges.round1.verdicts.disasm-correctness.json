@@ -1,0 +1,77 @@
+{
+  "subsystem": "guard-sp-gauges",
+  "round": 1,
+  "lens": "disasm-correctness",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "Re-running xrefs-to 0x020783CC returns exactly 8 hits: 0 literal_load, 8 branch, 0 functions.json-caller, at exactly the 8 cited addresses (0x02157DC0, 0x021582C4, 0x02158BC0, 0x02159274, 0x021592D0, 0x0215952C, 0x02159668, 0x0215A318), every one tagged 'bl' and provenance ov6 -- count, address set, call kind (direct bl, no indirect dispatch), and provenance all match exactly."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02157A44-0x02157A60 confirms 'mov r4,r3' (r4=4th param) and 'mov r5,r1' (r5=2nd param, resolving the claim's untraced r5 assertion) immediately before 'cmp r2,#0x48; addls pc,pc,r2,lsl#2' (a genuine 73-slot branch table, 0..0x48 inclusive, each slot a real 'b' instruction -- the classic ARM computed-branch-table idiom). Walking the table: slot 24 (0x02157AC4) -> 0x2157db8 (the cited HP case) and slot 25 (0x02157AC8) -> 0x2157dc8 (the 0x020781E4 case) are independently confirmed by direct disasm; slot 33 (0x02157AE8) -> 0x2157e04 (the 0x020783DC case) likewise. All three case blocks use the identical r0=[r5,#0x1b4]/r1=r4 pattern before their respective bl targets, exactly as claimed. Minor looseness: slots 25 and 33 are 8 apart, not literally adjacent to each other, so 'two neighboring cases' overstates their mutual proximity (only the HP-case/0x781E4-case pair at 24/25 are true immediate neighbors) -- a cosmetic wording issue, not a computational error."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x0215807C confirms push{r3,r4,r5,r6,lr}, mov r5,r1 (same 2nd-param convention), and selector r3 (not r2). However dispatch is a genuine 3-tier range check, not a single cmp+addls pair: 'cmp r3,#0x43'/bgt/'cmp r3,#0x43'/bge/'cmp r3,#0x40'/bgt/bge precede the final 'cmp r3,#0x1f; addls pc,pc,r3,lsl#2' that actually gates the low-range table -- the claim's own prose flags this as 'a mix of compare-then-jump-table for the low range' (accurate) even though its bracketed evidence quote juxtaposes the outer cmp #0x43 directly against the addls, which could misleadingly imply a direct 2-instruction gate. Both cited instructions are individually real (verify_evidence passes), just not adjacent. Walking the low-range table independently confirms slot 24 (0x02158118)->0x21582bc (HP case) and slot 25 (0x0215811C)->0x21582cc (0x020781E4 case), same slot indices as dispatcher 1, strongly corroborating the 'mirrors case ordering' / sibling-dispatcher claim. Core computational assertions (selector register, case addresses, register pattern, targets, index mirroring) all verified."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Full body disasm of 0x02159260 (8 insns: push{r3,lr}; ldr r1,[r1,#4]; ldr r0,[r0,#0x1b4]; ldrsh r1,[r1,#4]; lsl r1,r1,#6; bl 0x20783cc; mov r0,#0; pop{r3,pc}) and 0x021592C0 (7 insns, identical minus the lsl) confirm '7-8 instruction' size, the double-pointer-hop ldrsh source, and that the lsl r1,r1,#6 scaling is the ONLY structural difference between them. No rsb/neg instruction appears in either body, supporting 'sign is entirely data-driven'."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02159500 and 0x02159624 confirms the gate pattern exactly (mov r2,#0x1d / #0x1b; bl 0x215986c; cmp r0,#0; movne r0,#0; popne{...}) followed by identical delta application (ldr r1,[r4,#4]; ldr r0,[r5,#0x1b4]; ldrsh r1,[r1,#4]; bl 0x20783cc) for both codes -- no code path routes either code to a different offset/accumulator, supporting 'eligibility code, not a different gauge offset'. 0x02159624's extra conditional block (ldrh r0,[r4,#0xe]; tst r0,#0xf; bne skip; bl 0x215b348) is confirmed present exactly as cited. 0x0215986C itself confirmed calling 0x2158eb0(r0=r5+0x120, r1=r2); 'cmp r0,#0; moveq r0,#0; popeq' correctly implements 'only proceeds (clears +0xe, fires 0x215f6e4/0x207342c) if predicate is nonzero' -- the eq/skip branch is taken exactly when the predicate returns 0, matching the claim precisely."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x02159EF8 confirms the run-once sticky flag exactly: 'ldrh r0,[r6,#0x14]; tst r0,#1; movne r0,#0; orreq...; strheq...; moveq r0,#1; cmp r0,#0; beq 0x215a148' -- first call sets bit0 and proceeds, subsequent calls find bit0 set and skip to 0x215a148, a genuine run-once gate. search-imm on 0x48/0x4c filtered to this function's ov6 range independently found the capped-increment triplet at node+0x48/+0x4a/+0x4c (ldrh; ldr cap from pool; cmp; addlo; strhlo), confirming the 'e.g. [r2+0x48..0x4c]' characterization. Crucially, disasm of 0x0215A2A0-0x0215A334 confirms the control-flow claim precisely: the preceding block falls through via unconditional 'b #0x215a300' at 0x0215A2CC, AND the [r6+0xcc]-gated path (0x0215A2D0: ldrsh r1,[r6,#0xcc]; cmp r1,#0; beq 0x215a300) also converges on 0x215a300 whether the gate is zero or nonzero (the nonzero path's nested checks all eventually fall through to 0x215a300 too) -- so the r1=[[[r6+0x1a8]+0x10]+0x140] load at 0x0215A308 and the 'beq 0x215a31c' skip really are reached unconditionally regardless of the 0xcc gate's outcome, exactly as claimed. No rsb/neg instruction appears anywhere in this window."
+    },
+    {
+      "claim_idx": 6,
+      "verdict": "UPHELD",
+      "reason": "query.py callers 0x02078488 returns exactly 2 entries: the walker function 0x020783DC and its call site 0x02078414 -- the same single call site, i.e. exactly one caller besides the (indirectly-reached, hence not listed here) trampoline. Disasm of 0x0207840C-0x02078414 confirms 'mov r0,r4; mov r1,r5; bl 0x2078488' exactly as cited, with r4 being the current list-node pointer per the walker's own body (claim idx 10)."
+    },
+    {
+      "claim_idx": 7,
+      "verdict": "UPHELD",
+      "reason": "Disasm of 0x020783CC confirms 'ldr ip,[pc,#4]; ldr r0,[r0,#0x56c]; bx ip' followed by the raw pool word 0x02078488 (bytes 88 84 07 02 LE) at 0x020783D8, disassembled nonsensically as data ('andeq r8,r7,#136,#8') rather than real code, exactly as claimed. Independently re-running xrefs-to 0x02078488 returns '0 literal_load, 1 branch, 1 functions.json-caller' (the branch/caller being the walker's direct bl, NOT the trampoline's inline pool word), and pool-values 0x02078488 0x02078488 returns '0 literal_load(s)' -- both commands genuinely fail to see the trampoline's own proven pool reference. This is a real, independently-confirmed tooling blind spot, not a fabricated claim."
+    },
+    {
+      "claim_idx": 8,
+      "verdict": "UPHELD",
+      "reason": "Note: 'callers 0x020784B8' resolves to the containing function 0x02078488 (since GrowMax is not a functions.json-recognized function start) and is the wrong tool here; xrefs-to 0x020784B8 is correct and returns exactly 1 hit: 'branch 0x0215C73C (ov6) bl -> 0x020784B8', confirming exactly one static caller as claimed. Disasm of 0x0215C728-0x0215C73C confirms 'ldr r0,[r4,#0x128]; tst r0,#0x80; beq 0x215c748' (skip if bit clear) then 'ldr r0,[r4,#0x1b4]; mov r1,#0x400; bl 0x20784b8' exactly as cited, with the beq genuinely gating the call on bit 0x80 only."
+    },
+    {
+      "claim_idx": 9,
+      "verdict": "UPHELD",
+      "reason": "This synthesis claim accurately summarizes the independently-verified results of claims 0/1/2/3/4/5 (all 8 trampoline sites use the fixed [charPtr+0x1b4]->+0x56c-via-trampoline convention or reach it through wrappers/dispatchers using the same pointer, never an alternate fixed offset), claim 6 (Grow's only other caller is the walker, which passes a node pointer at offset 0, not a struct-relative offset), and claim 8 (GrowMax's only caller also uses the same [charPtr+0x1b4] convention feeding a hardcoded internal +0x56c). The cited instruction quotes '0x020783D0: ldr r0,[r0,#0x56c]' and '0x0207840C: mov r0,r4' both match exactly what was independently disassembled for claims 6/7. No third pattern (alternate fixed offset) was found in any of the disasm performed across this verification pass, supporting the 'no fixed base offset other than +0x56c' conclusion."
+    },
+    {
+      "claim_idx": 10,
+      "verdict": "UPHELD",
+      "reason": "Full disasm of 0x020783DC-0x02078424 (the complete function, ending exactly at the pop before the next function at 0x02078428) matches every cited instruction. Control-flow trace confirms: r4=[r0+0x558] list head; 'cmp r4,#0; popeq' returns early on empty list; unconditional 'b #0x207841c' jumps into a check-at-bottom loop idiom (do-while rotation) so the loop body always executes at least once for a non-empty list; inside the body, 'bne 0x2078418' on either flag test jumps to the SAME advance-to-next-node instruction (ldr r4,[r4]), correctly skipping only the Grow call and its second flag check, never the advance itself; the single Grow call site uses mov r0,r4/mov r1,r5 (node, delta) with bl 0x2078488; the loop-back 'cmp r4,#0; bne 0x20783f4' and final 'pop' terminate correctly on a null next-pointer. This is a fully genuine, correctly-implemented version of the claimed algorithm."
+    },
+    {
+      "claim_idx": 11,
+      "verdict": "UPHELD",
+      "reason": "Re-confirmed via the same full-body disasm used for claim 10: there is exactly ONE bl/call instruction in the entire 0x020783DC function (to 0x2078488), and both flag-test 'bne' branches (at 0x020783FC and 0x02078408) target the identical address 0x2078418 -- there is no branch in this function to any alternate accumulator or code path based on either flag. The claim is carefully scoped to what happens INSIDE this walker function ('not a discriminator that would let this walker treat different gauge kinds differently'), which is exactly and only what the single-function disassembly can support; it does not overreach into claims about the flags' meaning elsewhere in the codebase."
+    },
+    {
+      "claim_idx": 12,
+      "verdict": "UPHELD",
+      "reason": "query.py callers 0x020783DC (cross-checked with xrefs-to, since it is a genuine function start) returns exactly 2 hits: 0x02157E0C and 0x021592B4, matching the claim exactly. Full-body disasm of wrapper 0x021592A0 (8 instructions: push{r3,lr}; ldr r1,[r1,#4]; ldr r0,[r0,#0x1b4]; ldrsh r1,[r1,#4]; lsl r1,r1,#6; bl 0x20783dc; mov r0,#0; pop{r3,pc}) is instruction-for-instruction identical to wrapper 0x02159260 from claim idx 3, differing ONLY in the bl target (0x20783dc vs 0x20783cc) -- confirming the 'byte-for-byte identical except target' assertion exactly."
+    },
+    {
+      "claim_idx": 13,
+      "verdict": "UPHELD",
+      "reason": "Wider disasm (0x02075FD0-0x02076028) confirms this is a genuine loop, not merely 4 sequential stores: r1/r4 are set up as struct-relative pointers, r2 is computed as a fixed end bound (r1+0x1800), the 4 stores to +0x558/+0x55c/+0x560/+0x564 execute, then r4 advances by a per-record stride via 'add r1,r4,#0x21c; add r4,r1,#0x400' before 'cmp r4,r2; blo 0x2075ff8' branches back -- an authentic single startup loop zero-initializing the field across multiple struct instances, exactly as claimed (and even more literally a 'loop' than the claim's phrasing implied). Independently re-running search-imm 0x558 --all returns exactly 37 hits, of which exactly 1 is a store (str r3,[r4,#0x558] at 0x02075FF8) and the remaining 36 are all loads (ldr) -- the claim's '37 total hits, only 1 store' count is numerically exact."
+    }
+  ]
+}

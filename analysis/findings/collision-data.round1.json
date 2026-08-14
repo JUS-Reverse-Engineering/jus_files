@@ -1,0 +1,124 @@
+{
+  "subsystem": "collision-data",
+  "round": 1,
+  "data_only": true,
+  "coverage": {
+    "files_analyzed": ["bb_b_01_collision.json", "bl_b_01_collision.json", "db_b_01_collision.json", "ds_b_03_collision.json"],
+    "files_expected": "~74 per-character collision files (chr_b.json lists 74 battle-character identity rows)",
+    "gap": "Only 4/74 (5.41%) of per-character collision files have been exported to jus_files/exported_combat/. 70 characters (94.6%) have zero collision data available for this analysis. The exported set is not a random sample: it happens to include one 'base form' Bo-bobo (bb_b_01), one buffable Ichigo (bl_b_01), one base-form Goku (db_b_01), and one alt-kit Caramelman J (ds_b_03) -- i.e. 4 characters out of a much larger cast with many alt-forms/movesets per docs/research/Character-Mapping.md, so pooled statistics below describe these 4 files only and should not be generalized to the full 74-character roster."
+  },
+  "claims": [
+    {
+      "claim": "Only 4 of the expected ~74 per-character collision JSON files exist on disk; the other ~70 characters have no exported collision data at all.",
+      "evidence_data": "Section 0 (COVERAGE): 'collision files found: 4 -> [bb_b_01, bl_b_01, db_b_01, ds_b_03]'; 'expected total characters: 74'; 'coverage = 4/74 = 5.41%'; chr_b.json entries count = 74.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["Which of the remaining 70 characters' .bin collision files exist in the game ROM but were simply never run through the exporter, vs. genuinely absent/shared?"]
+    },
+    {
+      "claim": "Collision entries (22-field hitbox schema: collisionType..hitProperties plus reserved/derived fields) and jpower entries (20-field attack schema: id..isAttack) share zero field names -- there is no explicit numeric key (e.g. an attack id, index, or jpower reference) inside a collision entry that identifies which jpower row it corresponds to. A per-move join between a specific collision hitTier and a specific jpower damage value is therefore not derivable from these files alone; only population-level (distributional) comparison is possible.",
+      "evidence_data": "Section 1: 'shared key names between collision entries and jpower entries: [] (count=0)'. Also: jpower.json has 311 total entries / 74 expected characters = 4.20 average entries-per-character-block, versus the 4 collision files' own entry counts of 20, 23, 24, 25 -- an order of magnitude larger than the jpower per-character average, so entry-count/position cannot be used as an implicit join either. This absence of a join key is corroborated by docs/research/jpower-Mapping.md, which independently states the collision-to-jpower entry-selection mechanism is 'unknown' (not consulted for numbers, only cited as converging prior evidence).",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["Is move-to-jpower-entry selection done via a hardcoded per-character table elsewhere in the ROM rather than via any field inside the collision or jpower structs themselves?"]
+    },
+    {
+      "claim": "hitTier occupies a small, closed discrete range {0,1,2,3} (4 distinct integer values across 91 non-terminator entries), in contrast to jpower's damage-related fields which span far wider, more granular ranges (totalDamage: 13 distinct values across 0-600; damage1: 16 distinct values across 0-400). This distributional shape is consistent with hitTier behaving like a small priority/tier enum rather than a damage magnitude, though no per-move join (see prior claim) confirms this for matched attacks -- it is a shape comparison across two unlinked populations, not a proof.",
+      "evidence_data": "Section 2: 'hitTier non-terminator: min=0 max=3 distinct_count=4'; POOLED hitTier (non-terminator): {0: 1, 1: 43, 2: 19, 3: 28}. Contrast: 'jpower totalDamage: min=0 max=600 distinct_count=13'; 'jpower damage1: min=0 max=400 distinct_count=16'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "hitTier-is-priority",
+      "open_questions": ["Does hitTier ever exceed 3 for the un-exported 70 characters (e.g. do meteor/super attacks reach a tier 4+ not seen in this 4-character sample)?"]
+    },
+    {
+      "claim": "Within the 4 available files, collisionType acts as a strong categorical predictor of hitTier: collisionType=5 entries are heavily concentrated at hitTier=3 (14/16 = 87.5%), while collisionType=3 entries are concentrated at hitTier=1 (28/43 = 65.1%). If collisionType=5 corresponds to a higher-intensity attack category (unconfirmed from this data alone -- collisionType semantics are not documented in the exported schema), this is indirect, within-file evidence that hitTier scales with something like move strength/category, complementing (but not replacing) a true per-move jpower join.",
+      "evidence_data": "Section 2, collisionType -> hitTier crosstab: 'collisionType=5 (n=16): {2: 2, 3: 14}' -> 'tier-3 fraction: 14/16 = 0.8750'; 'collisionType=3 (n=43): {1: 28, 2: 12, 3: 3}' -> 'tier-1 fraction: 28/43 = 0.6512'. Full crosstab also shown for collisionType 0, 2, 4.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "hitTier-is-priority",
+      "open_questions": ["What does collisionType actually encode (attack category, hit-vs-hurt-box, button strength)? No field in the export documents this; would need disassembly or a larger character sample with known move names to confirm."]
+    },
+    {
+      "claim": "knockback (a continuous physics value) does not increase monotonically with hitTier: average knockback is 14.49 at hitTier=1, drops to 12.11 at hitTier=2, then rises to 15.00 at hitTier=3, with heavily overlapping min/max ranges (0-34, 0-28, 0-34 respectively) at every tier. This non-monotonic, low-separation pattern is more consistent with hitTier being an independent categorical/priority field than a direct proxy or rescaling of knockback magnitude.",
+      "evidence_data": "Section 6: 'hitTier=1: n=43 avg=14.4884 min=0 max=34'; 'hitTier=2: n=19 avg=12.1053 min=0 max=28'; 'hitTier=3: n=28 avg=15.0000 min=0 max=34'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "hitTier-is-priority",
+      "open_questions": ["Would a larger character sample reveal a cleaner monotonic trend, or confirm hitTier and knockback are genuinely orthogonal design axes?"]
+    },
+    {
+      "claim": "hitModifier is constant at 0 across all 92 collision entries in all 4 files (both terminator and non-terminator rows), so it cannot be correlated with hitTier, knockback, or anything else in this sample -- the field is either unused for melee/base-kit moves specifically, or its nonzero values only appear on characters/moves not present in this 4-file export.",
+      "evidence_data": "Section 6: 'hitModifier distinct values (non-terminator, all 4 files): [0]'; 'hitModifier distinct values (pooled incl. terminator): [0]'.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["Does hitModifier ever take a nonzero value on other characters/forms not yet exported?"]
+    },
+    {
+      "claim": "projectileId takes only two values across all 92 pooled entries: 0 (90 occurrences, i.e. all entries in bl_b_01 and ds_b_03, plus most of bb_b_01 and db_b_01) and -32 (exactly 2 occurrences, one in bb_b_01 and one in db_b_01 -- two different characters). The nonzero value is identical in both occurrences rather than unique per instance, which contradicts a strict 'unique nonzero id per projectile move' reading of the hypothesis; it is more consistent with -32 functioning as a shared type-tag/sentinel value marking 'this hitbox spawns/uses a projectile-class entity' than as a per-instance identifier. Both occurrences also share collisionType=4, so the marking is at least consistent with a specific collisionType category.",
+      "evidence_data": "Section 3: 'POOLED projectileId: {-32: 2, 0: 90}'; 'nonzero-projectileId entries: 2 / 92' with printed detail showing bb_b_01 (frameStart=4, offsetX=96, hitTier=2, hitProperties=3) and db_b_01 (frameStart=0, durationMult=100, offsetX=0, hitTier=3, hitProperties=0); 'distinct nonzero projectileId values: {-32} (count=1 distinct value(s) across 2 nonzero occurrence(s))'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "projectileId-marks-projectiles",
+      "open_questions": ["With only n=2 nonzero instances, is -32 truly a fixed sentinel, or would a larger sample reveal other distinct nonzero values (e.g. -1, -2, ... per projectile type) that this 4-file sample simply didn't capture?"]
+    },
+    {
+      "claim": "collisionType=4 is a necessary but not sufficient condition for a nonzero projectileId in this sample: both nonzero-projectileId entries have collisionType=4 (0 nonzero-projectileId entries exist outside collisionType=4), but only 2 of the 12 collisionType=4 entries (16.7%) actually carry a nonzero projectileId -- the other 10 collisionType=4 entries have projectileId=0. This suggests collisionType=4 is a broader category (e.g. 'ranged/extended-reach') of which true projectile-spawning hitboxes (marked by projectileId!=0) are only a subset.",
+      "evidence_data": "Section 3: 'collisionType==4 entries (non-terminator): 12; of those with projectileId!=0: 2'; 'nonzero-projectileId entries with collisionType != 4: 0'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "projectileId-marks-projectiles",
+      "open_questions": ["What distinguishes the 10 projectileId==0 collisionType=4 entries from the 2 projectileId!=0 ones -- is it a different field (e.g. offsetX magnitude, which is 96 and 0 vs. more modest values elsewhere) or purely per-move authoring choice?"]
+    },
+    {
+      "claim": "hitProperties uses only two bits in this sample (bit0=0x1 and bit1=0x2), observed exclusively as the combined value 3 (both bits) or 0 (neither); bit1 never occurs alone (0 occurrences of value 2 across all 92 entries). Critically, hitProperties is near-perfectly file-constant rather than varying per hitbox within a character: bl_b_01 (20/20 entries) and db_b_01 (25/25 entries) are 100% hitProperties=0, while bb_b_01 (23/24 non-terminator entries) and ds_b_03 (22/23 entries) are ~96% hitProperties=3. This pattern looks more like a per-character/per-file toggle than a fine-grained per-hitbox gate, at least in this 4-character sample.",
+      "evidence_data": "Section 4: per-file counters 'bb_b_01 (n=24): {1: 1, 3: 23}', 'bl_b_01 (n=20): {0: 20}', 'db_b_01 (n=25): {0: 25}', 'ds_b_03 (n=23): {0: 1, 3: 22}'; 'distinct hitProperties values observed: [0, 1, 3]'; 'bit1-set-without-bit0 count: 0'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "hitProperties-gates",
+      "open_questions": ["Is hitProperties truly a per-character config flag (e.g. a moveset-family trait) rather than a per-hitbox gate? A larger, more varied character sample is needed to see if any single character's own entries mix hitProperties=0 and =3."]
+    },
+    {
+      "claim": "The two nonzero-projectileId entries (the only direct evidence available for testing hitProperties-vs-projectile co-occurrence) have opposite hitProperties values: bb_b_01's projectile entry has hitProperties=3 (both bits set) while db_b_01's projectile entry has hitProperties=0 (no bits set). This directly contradicts a clean, universal 'hitProperties bit gates/marks projectile behavior' reading, at least for these two instances.",
+      "evidence_data": "Section 4: 'hitProperties values on the two nonzero-projectileId entries specifically: bb_b_01 hitProperties= 3 projectileId= -32; db_b_01 hitProperties= 0 projectileId= -32'.",
+      "confidence": "PLAUSIBLE",
+      "supports_hypothesis": "hitProperties-gates",
+      "open_questions": ["Since db_b_01's hitProperties is uniformly 0 for all 25 of its entries (see prior claim), is the divergence here just an artifact of the per-file constancy rather than a meaningful per-hit gating difference?"]
+    },
+    {
+      "claim": "damageFlags==0 is the majority case among non-terminator entries across the 4 files: 52/91 = 57.14%. This matches the prompt's stated expectation that damageFlags=0 rows resolve damage indirectly (e.g. via jpower) rather than encoding it in the collision entry itself, though this data cannot independently verify the 'resolves via jpower' mechanism (no join key -- see earlier claim), only the raw frequency of the zero value.",
+      "evidence_data": "Section 5: 'fraction damageFlags==0 (non-terminator): 52/91 = 0.5714'. Per-file breakdown: bb_b_01 {0: 12,...} of 24, bl_b_01 {0: 1,...} of 20 (notably low), db_b_01 {0: 23,...} of 25, ds_b_03 {0: 16,...} of 23.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["bl_b_01 (Ichigo) has damageFlags==0 in only 1/20 entries, far below the 57% pooled average and the other 3 characters (50-96% each) -- is this character-specific (a different damage-resolution path for this particular character/kit), and would it change the pooled 'majority zero' conclusion if more characters like it were exported?"]
+    },
+    {
+      "claim": "damageFlagsLow and hasSpecialFlag are exact bitfield decompositions of damageFlags (damageFlagsLow = damageFlags & 0x3F; hasSpecialFlag = bool(damageFlags & 0x40)) with zero mismatches across all 92 entries -- these are derived/redundant fields added by the exporter, not independent data.",
+      "evidence_data": "Section 5: 'bitfield-decomposition check (damageFlagsLow==damageFlags&0x3F AND hasSpecialFlag==bool(damageFlags&0x40)): mismatches=0 / 92'; 'hasSpecialFlag distribution (pooled): {False: 90, True: 2}'.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": []
+    },
+    {
+      "claim": "Only 1 of the 92 pooled entries (in bb_b_01, the last entry) is flagged isTerminator=True; the other 3 files (bl_b_01, db_b_01, ds_b_03) contain zero entries with isTerminator=True despite each presumably needing some list-terminator convention. The one confirmed terminator entry has sentinel-looking values (damageFlags=255, knockback=255, hasSpecialFlag=True, collisionType=0) that are clearly outliers relative to the rest of the file.",
+      "evidence_data": "Section 1: 'isTerminator distribution (pooled): {False: 91, True: 1}'; per-file: 'bb_b_01: isTerminator=True count = 1 / 24', 'bl_b_01: ... = 0 / 20', 'db_b_01: ... = 0 / 25', 'ds_b_03: ... = 0 / 23'.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["Is the isTerminator flag computed by the exporter using a heuristic that only matches bb_b_01's specific sentinel pattern (damageFlags==255 and knockback==255), and does the same pattern simply not appear at the end of the other 3 files' underlying .bin data -- or is there a real inconsistency/bug in how terminators are marked or exported?"]
+    },
+    {
+      "claim": "reserved0-reserved3 are uniformly 0 across all 92 entries in all 4 files (only one distinct 4-tuple observed: (0,0,0,0)) -- in this sample these fields carry no hidden data.",
+      "evidence_data": "Section 1: 'distinct (reserved0,reserved1,reserved2,reserved3) tuples across all 92 entries: {(0, 0, 0, 0)}'.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": []
+    },
+    {
+      "claim": "Structural/timing fields: frameStart ranges 0-80 across the pooled non-terminator entries; durationMult takes only 3 distinct values {0, 10, 100} and is nonzero in just 2/91 entries (10 on one ds_b_03 entry, 100 on db_b_01's projectile entry); width ranges -8..30 and height ranges -13..30, with 11/91 (12.1%) non-terminator entries showing a negative width or height. Negative width/height values are unexpected for a pure 'size' field and may encode a directional offset or a signed axis convention rather than an unsigned magnitude; this export alone cannot disambiguate the semantics.",
+      "evidence_data": "Section 1: 'frameStart range (non-terminator): 0 .. 80'; 'durationMult distinct values (non-terminator): [0, 10, 100]' with the two nonzero rows printed in full; 'width range (non-terminator): -8 .. 30'; 'height range (non-terminator): -13 .. 30'; 'entries with negative width or height (non-terminator): 11 / 91' with all 11 printed.",
+      "confidence": "CONFIRMED_STATIC",
+      "supports_hypothesis": "none",
+      "open_questions": ["Do negative width/height values correspond to a mirrored/flipped hitbox (e.g. facing-direction-dependent authoring) rather than an actual negative size?"]
+    }
+  ],
+  "no_progress_reason": null,
+  "suggested_next_angles": [
+    "Close the coverage gap: the repo's own CLI already has batch-export support (src/JUS.CLI/JUS/CombatCommands.cs defines ExportAllCollisions(directory, output), which converts every .bin in a given collision directory such as ChrBin.aar/chr/col/ via Binary2Collision) plus an ExportCombat command that chains collision+character+jpower export in one call -- running that batch export (not done in this pass, per task constraints) against the full character .bin directory would raise coverage from 4/74 to potentially 74/74 collision files and unlock the same script's per-character stats at full scale.",
+    "Once more files exist, re-run collision_data_miner.py to check whether the collisionType=5-to-hitTier=3 skew (14/16=87.5%) and the collisionType=3-to-hitTier=1 skew (28/43=65.1%) generalize across the roster, and whether hitProperties ever varies *within* a single character's own moveset (it did not for any of the 4 sampled characters) -- both are needed to move the corresponding claims above from PLAUSIBLE to CONFIRMED_STATIC-eligible territory.",
+    "Independently pursue the still-unknown collision<->jpower entry-selection mechanism (documented as an open question in docs/research/jpower-Mapping.md, 'Selection mechanism unknown' with candidate hypotheses including collision.subType selecting a jpower entry within a character's block) -- if a disassembly tracer can locate the runtime code that walks from a per-character jpower block to a specific attack using something derived from a collision entry (subType, or an as-yet-unexported field), that would supply the missing join key this round's Q1 correlation lacked, and let a future round directly test whether hitTier and jpower damage move together for the same real attack.",
+    "With only 2 total nonzero-projectileId observations (both value -32), targeted export of characters known/documented to have clearly projectile-based movesets (e.g. ranged-attack characters, per docs/research/Character-Mapping.md's per-character notes) would be higher-yield for testing projectileId uniqueness than exporting the roster in file order."
+  ]
+}

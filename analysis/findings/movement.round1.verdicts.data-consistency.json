@@ -1,0 +1,37 @@
+{
+  "subsystem": "movement",
+  "round": 1,
+  "lens": "data-consistency",
+  "verdicts": [
+    {
+      "claim_idx": 0,
+      "verdict": "UPHELD",
+      "reason": "`query.py strings arm9 --all` confirms 0x0209F5D4 literally holds the ASCII string \"bin/chr_b.bin\" (and 0x0209F604 holds \"bin/chr_b_t.bin\"), and re-disassembly of 0x020760F0-0x02076128 reproduces the exact load/store chain (handle stored at *(0x0214BD80)+0xc, vtable+0x2c GetData result stored at *(0x0214BD80)+0x40) verbatim. The manager+0x40 slot is confirmed as chr_b's specifically."
+    },
+    {
+      "claim_idx": 1,
+      "verdict": "UPHELD",
+      "reason": "src/JUS.Tool/Combat/Formats/BattleCharacterEntry.cs (EntrySize=60) and Binary2BattleCharacter.cs's field-read order sum exactly to 60 bytes (4 id bytes + 4 Flags + StatA@8 + StatB@10(0xA) + StatC@12(0xC) + ClassId@14 + 5x(u16 value+u16 mod)=20 + 12 BattleParams + 12 TextIds = 60 = 0x3C), matching the disasm's #0x3c stride and +8/+0xa/+0xc reads exactly. chr_b.json contains the doc-cited walk-speed statC values verbatim: 33 (1 entry), 82 (2 entries), 153 (1), 225 (1), 300 (3) -- all valid u16, confirming the offset/type identification against real exported data."
+    },
+    {
+      "claim_idx": 2,
+      "verdict": "UPHELD",
+      "reason": "Binary2BattleCharacter.cs's ReadEntry() reads FormType as the very first field (offset 0), matching the sibling getter's bare `ldrb r1,[r1,r0]` (base+index*0x3c+0, no field displacement). Re-disassembly of ov5 0x0214E480-0x0214E4B8 reproduces the cited instructions exactly, including the shared 0x0214BD80 literal at 0x0214E4F8."
+    },
+    {
+      "claim_idx": 3,
+      "verdict": "UPHELD",
+      "reason": "Re-disassembly of 0x02076F48-0x02076F88 reproduces the cited copy (koma+6/+7 -> struct+0x40/+0x41) and both dispatch-table lookups exactly. chr_b.json's actual charId column ranges 0-55 across 29 unique values, consistent with the claim's note that PassiveIndex (0-55 per docs) and CharId occupy the same numeric range -- though, as the tracer itself flags, literal equality of the two index spaces for a shared roster character was not independently proven here either."
+    },
+    {
+      "claim_idx": 4,
+      "verdict": "UPHELD",
+      "reason": "docs/research/ARM9-Research-Guide.md defines the anchor as a FILE offset, not RAM: its own verification code reads `arm9[0x8D4A0:0x8D4A0+74]` directly from the raw ARM9.bin FILE bytes (lines ~104-150), so RAM 0x0208D4A0 (file_offset 0x08D4A0 + load base 0x02000000) is exactly the address the seed anchor implies -- the tracer targeted the correct location, not a strawman. Independent byte dump via `query.py disasm 0x0208D4A0 40` reproduces identity 0x00-0x60 then a fold to 0x41-0x5A for indices 0x61-0x7A (e.g. word at 0x0208D500 = 0x43424160, i.e. bytes 0x60,0x41,0x42,0x43) and reversion to identity at 0x7B -- a textbook ASCII toupper() table. Because the guide's own check only sampled the first 74 bytes (which lie entirely inside the table's identity region 0-96), it produced a false-positive \"[0,1,2,...,73] = chr_b identity map\" reading; `xrefs-to 0x0208D4A0` independently confirms only 2 references, both inside one small function (0x02005960) whose re-disassembled body ranges input 0..0x7F and does `subs r0,#0x37` -- a char-classification routine unrelated to chr_b/manager+0x40."
+    },
+    {
+      "claim_idx": 5,
+      "verdict": "UNSURE",
+      "reason": "The equality mechanism itself reproduces exactly on re-disassembly (0x02077278-0x0207729C: `cmp r3,sl; addeq r3,r4,#1`, no bge/blt/threshold chain against statC), so the 'koma-technique matcher, not speed selector' reading is well-supported. But two data points weaken the claim's supporting evidence: (1) Research-Status.md documents no 'koma techniques require exact statA/B/C match' mechanic -- the closest documented analog is the coarser per-character-pair 'Buff Group A/B compatibility' (lines 204-215), which is not shown to be this same stat-equality check; (2) the claimed '124 total sites via search-imm' for imm==0xC load ops is not reproducible -- `search-imm 0xc --all` filtered to ldr/ldrb/ldrh/ldrsb/ldrsh alone returns ~2751 hits ROM-wide (1319 in arm9 alone across 12 overlays), ~22x the cited figure, casting doubt on whether the 'exhaustive... no second occurrence' sweep actually covered the full result set. Per Q4, where (or whether) walk-speed selection consumes statC elsewhere (load-time cache vs array-index lookup) remains genuinely unresolved by any data checked in this pass -- correctly flagged as the discriminating open question rather than a resolvable contradiction."
+    }
+  ]
+}
