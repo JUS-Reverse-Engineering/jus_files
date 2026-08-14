@@ -20,5 +20,197 @@
    "entry_point": 37224448,
    "note": "file offset = runtime_addr - ram_address (if uncompressed)"
   }
+ },
+ "overlays_arm9": [
+  {
+   "id": 0,
+   "file": "arm9_ov00.bin",
+   "ram_address": 34917664,
+   "ram_size": 85760,
+   "file_id": 0,
+   "rom_start": 709632,
+   "rom_end": 795392,
+   "bytes": 85760,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 1,
+   "file": "arm9_ov01.bin",
+   "ram_address": 34917664,
+   "ram_size": 135456,
+   "file_id": 1,
+   "rom_start": 795648,
+   "rom_end": 931104,
+   "bytes": 135456,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 2,
+   "file": "arm9_ov02.bin",
+   "ram_address": 34917664,
+   "ram_size": 65152,
+   "file_id": 2,
+   "rom_start": 931328,
+   "rom_end": 996480,
+   "bytes": 65152,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 3,
+   "file": "arm9_ov03.bin",
+   "ram_address": 34917664,
+   "ram_size": 73472,
+   "file_id": 3,
+   "rom_start": 996864,
+   "rom_end": 1070336,
+   "bytes": 73472,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 4,
+   "file": "arm9_ov04.bin",
+   "ram_address": 34917664,
+   "ram_size": 86208,
+   "file_id": 4,
+   "rom_start": 1070592,
+   "rom_end": 1156800,
+   "bytes": 86208,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 5,
+   "file": "arm9_ov05.bin",
+   "ram_address": 34917664,
+   "ram_size": 152928,
+   "file_id": 5,
+   "rom_start": 1157120,
+   "rom_end": 1310048,
+   "bytes": 152928,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 6,
+   "file": "arm9_ov06.bin",
+   "ram_address": 34917664,
+   "ram_size": 154688,
+   "file_id": 6,
+   "rom_start": 1310208,
+   "rom_end": 1464896,
+   "bytes": 154688,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 7,
+   "file": "arm9_ov07.bin",
+   "ram_address": 34917664,
+   "ram_size": 122816,
+   "file_id": 7,
+   "rom_start": 1465344,
+   "rom_end": 1588160,
+   "bytes": 122816,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 8,
+   "file": "arm9_ov08.bin",
+   "ram_address": 34917664,
+   "ram_size": 128160,
+   "file_id": 8,
+   "rom_start": 1588224,
+   "rom_end": 1716384,
+   "bytes": 128160,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 9,
+   "file": "arm9_ov09.bin",
+   "ram_address": 34917664,
+   "ram_size": 32,
+   "file_id": 9,
+   "rom_start": 1716736,
+   "rom_end": 1716768,
+   "bytes": 32,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 10,
+   "file": "arm9_ov10.bin",
+   "ram_address": 35072608,
+   "ram_size": 215264,
+   "file_id": 10,
+   "rom_start": 1717248,
+   "rom_end": 1932512,
+   "bytes": 215264,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 11,
+   "file": "arm9_ov11.bin",
+   "ram_address": 35072608,
+   "ram_size": 61440,
+   "file_id": 11,
+   "rom_start": 1932800,
+   "rom_end": 1994240,
+   "bytes": 61440,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 12,
+   "file": "arm9_ov12.bin",
+   "ram_address": 35307968,
+   "ram_size": 167776,
+   "file_id": 12,
+   "rom_start": 1994240,
+   "rom_end": 2162016,
+   "bytes": 167776,
+   "compressed": false,
+   "compressed_size": 0
+  },
+  {
+   "id": 13,
+   "file": "arm9_ov13.bin",
+   "ram_address": 35307968,
+   "ram_size": 32,
+   "file_id": 13,
+   "rom_start": 2162176,
+   "rom_end": 2162208,
+   "bytes": 32,
+   "compressed": false,
+   "compressed_size": 0
+  }
+ ],
+ "overlay_shared_addresses_arm9": {
+  "0x0214CD20": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "0x02172A60": [
+   10,
+   11
+  ],
+  "0x021AC1C0": [
+   12,
+   13
+  ]
  }
 }
