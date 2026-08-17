@@ -1,0 +1,1743 @@
+{
+ "arm9": [
+  {
+   "addr": 33557592,
+   "name": "elemSize",
+   "cpp": null
+  },
+  {
+   "addr": 33564112,
+   "name": "INFINITY",
+   "cpp": null
+  },
+  {
+   "addr": 33615432,
+   "name": "bad_exception",
+   "cpp": null
+  },
+  {
+   "addr": 33626976,
+   "name": "TypeID",
+   "cpp": null
+  },
+  {
+   "addr": 33632232,
+   "name": "TargetPropName",
+   "cpp": null
+  },
+  {
+   "addr": 33643496,
+   "name": "GenerateID",
+   "cpp": null
+  },
+  {
+   "addr": 33680224,
+   "name": "NoteTrack",
+   "cpp": null
+  },
+  {
+   "addr": 33689468,
+   "name": "LifeType",
+   "cpp": null
+  },
+  {
+   "addr": 33749044,
+   "name": "PropBindInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33749156,
+   "name": "PropBindInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33752452,
+   "name": "PropBindInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33757452,
+   "name": "ScreenInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33761928,
+   "name": "PatternNo",
+   "cpp": null
+  },
+  {
+   "addr": 33770704,
+   "name": "TextureInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33770768,
+   "name": "TextureInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33773400,
+   "name": "TextureImpInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33773520,
+   "name": "TextureImpInstance",
+   "cpp": null
+  },
+  {
+   "addr": 33777864,
+   "name": "MapName",
+   "cpp": null
+  },
+  {
+   "addr": 33792848,
+   "name": "NCG1NCG2NG18NG28NFC4FFL4LCP4",
+   "cpp": null
+  },
+  {
+   "addr": 33829060,
+   "name": "RomFSTable",
+   "cpp": null
+  },
+  {
+   "addr": 33852432,
+   "name": "VertexBuffer",
+   "cpp": null
+  },
+  {
+   "addr": 33853408,
+   "name": "VertexBuffer",
+   "cpp": null
+  },
+  {
+   "addr": 33860780,
+   "name": "MotionController",
+   "cpp": null
+  },
+  {
+   "addr": 33864592,
+   "name": "DelayStart",
+   "cpp": null
+  },
+  {
+   "addr": 33864716,
+   "name": "DelaySet",
+   "cpp": null
+  },
+  {
+   "addr": 33864800,
+   "name": "IPMove",
+   "cpp": null
+  },
+  {
+   "addr": 33972812,
+   "name": "NWCUSBAP",
+   "cpp": null
+  },
+  {
+   "addr": 33992080,
+   "name": "CommonPaletteAnime_Create",
+   "cpp": "CommonPaletteAnime.cpp"
+  },
+  {
+   "addr": 33992656,
+   "name": "CommonPaletteAnime_Load",
+   "cpp": "CommonPaletteAnime.cpp"
+  },
+  {
+   "addr": 33994928,
+   "name": "CommonTutorial_Create",
+   "cpp": "CommonTutorial.cpp"
+  },
+  {
+   "addr": 33997380,
+   "name": "CommonEffect_Init",
+   "cpp": "CommonEffect.cpp"
+  },
+  {
+   "addr": 33998204,
+   "name": "CreateImpFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34000832,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 34000980,
+   "name": "CommonHSV_Create",
+   "cpp": "CommonHSV.cpp"
+  },
+  {
+   "addr": 34016496,
+   "name": "Record_Deck_DataLocalChange",
+   "cpp": "Record.cpp"
+  },
+  {
+   "addr": 34024116,
+   "name": "RecordSave",
+   "cpp": "Record.cpp"
+  },
+  {
+   "addr": 34030716,
+   "name": "TitleData_Create",
+   "cpp": "TitleData.cpp"
+  },
+  {
+   "addr": 34030976,
+   "name": "CharaData_Create",
+   "cpp": "CharaData.cpp"
+  },
+  {
+   "addr": 34033888,
+   "name": "StageData_Create",
+   "cpp": "StageData.cpp"
+  },
+  {
+   "addr": 34034132,
+   "name": "ClearlstData_Create",
+   "cpp": "ClearlstData.cpp"
+  },
+  {
+   "addr": 34034328,
+   "name": "MissionData_Create",
+   "cpp": "MissionData.cpp"
+  },
+  {
+   "addr": 34035100,
+   "name": "LocationData_Create",
+   "cpp": "LocationData.cpp"
+  },
+  {
+   "addr": 34035372,
+   "name": "PopularNameData_Create",
+   "cpp": "PopularNameData.cpp"
+  },
+  {
+   "addr": 34035612,
+   "name": "BgmData_Create",
+   "cpp": "BgmData.cpp"
+  },
+  {
+   "addr": 34035956,
+   "name": "Secret_Create",
+   "cpp": "Secret.cpp"
+  },
+  {
+   "addr": 34036356,
+   "name": "AutoSave_Add",
+   "cpp": "AutoSaveLoad.cpp"
+  },
+  {
+   "addr": 34037692,
+   "name": "ComicDeckCreate",
+   "cpp": "ComicDeck.cpp"
+  },
+  {
+   "addr": 34049236,
+   "name": "ComicDeck_DispCreate",
+   "cpp": "ComicDeckDisp.cpp"
+  },
+  {
+   "addr": 34056004,
+   "name": "Battle_CharaPropChrInit",
+   "cpp": "BattleProp.cpp"
+  },
+  {
+   "addr": 34056828,
+   "name": "Battle_CharaPropInit",
+   "cpp": "BattleProp.cpp"
+  },
+  {
+   "addr": 34057532,
+   "name": "Battle_ColManCreate",
+   "cpp": "BattleCol.cpp"
+  },
+  {
+   "addr": 34057948,
+   "name": "Battle_ColObjCreate",
+   "cpp": "BattleCol.cpp"
+  },
+  {
+   "addr": 34058524,
+   "name": "Battle_ColObjAddColWork",
+   "cpp": "BattleCol.cpp"
+  },
+  {
+   "addr": 34061632,
+   "name": "Battle_ColJointManCreate",
+   "cpp": "BattleColJoint.cpp"
+  },
+  {
+   "addr": 34063552,
+   "name": "Battle_ColPrmManCreate",
+   "cpp": "BattleColPrm.cpp"
+  },
+  {
+   "addr": 34089528,
+   "name": "Battle_MoveManCreate",
+   "cpp": "BattleMove.cpp"
+  },
+  {
+   "addr": 34091524,
+   "name": "Battle_ObjManCreate",
+   "cpp": "BattleObj.cpp"
+  },
+  {
+   "addr": 34095052,
+   "name": "BattleMapBG_Create",
+   "cpp": "BattleMapBG.cpp"
+  },
+  {
+   "addr": 34100996,
+   "name": "BattleMapMoveFloorCreate",
+   "cpp": "BattleMapObj.cpp"
+  },
+  {
+   "addr": 34102644,
+   "name": "BattleMapMoveFloorInit",
+   "cpp": "BattleMapObj.cpp"
+  },
+  {
+   "addr": 34103004,
+   "name": "BattleMapMoveFloorInitNormal",
+   "cpp": "BattleMapObj.cpp"
+  },
+  {
+   "addr": 34104828,
+   "name": "CommWrapDisconnect_Create",
+   "cpp": "CommWrapDisconnect.cpp"
+  },
+  {
+   "addr": 34109340,
+   "name": "CommWrapAntenna_Create",
+   "cpp": "CommWrap.cpp"
+  },
+  {
+   "addr": 34110596,
+   "name": "CommWrap_Loading_Create",
+   "cpp": "CommWrap.cpp"
+  },
+  {
+   "addr": 34113688,
+   "name": "ParentParamFunc",
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34115032,
+   "name": "ParentFunc",
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34115244,
+   "name": "CommLibInit",
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34116496,
+   "name": "PostSyncMessage",
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34118484,
+   "name": null,
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34119456,
+   "name": null,
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34119776,
+   "name": null,
+   "cpp": "CommLib.cpp"
+  },
+  {
+   "addr": 34121632,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 34122568,
+   "name": "MessageFunc",
+   "cpp": "CommGame.cpp"
+  },
+  {
+   "addr": 34125160,
+   "name": "CommInit",
+   "cpp": "CommGame.cpp"
+  },
+  {
+   "addr": 34129380,
+   "name": "TileMap",
+   "cpp": null
+  },
+  {
+   "addr": 34132492,
+   "name": "CommLib",
+   "cpp": null
+  }
+ ],
+ "ov0": [
+  {
+   "addr": 34917664,
+   "name": "Copyright_Add",
+   "cpp": "Copyright.cpp"
+  },
+  {
+   "addr": 34919368,
+   "name": "Opening_Add",
+   "cpp": "Opening.cpp"
+  },
+  {
+   "addr": 34924640,
+   "name": "Ending_Add",
+   "cpp": "Ending.cpp"
+  },
+  {
+   "addr": 34929516,
+   "name": "Title_Add",
+   "cpp": "Title.cpp"
+  },
+  {
+   "addr": 34934972,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34936176,
+   "name": "PassMark_Create",
+   "cpp": "PassMark.cpp"
+  },
+  {
+   "addr": 34937888,
+   "name": "Movie_Create",
+   "cpp": "Movie.cpp"
+  },
+  {
+   "addr": 34946300,
+   "name": "TopMenu_Add",
+   "cpp": "TopMenu.cpp"
+  },
+  {
+   "addr": 34954420,
+   "name": "TopMenu_CharaCreate",
+   "cpp": "TopMenuChara.cpp"
+  },
+  {
+   "addr": 34959672,
+   "name": "Option_Add",
+   "cpp": "Option.cpp"
+  },
+  {
+   "addr": 34967156,
+   "name": "OptionInfoChara_Create",
+   "cpp": "OptionInfoChara.cpp"
+  },
+  {
+   "addr": 34969376,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34971876,
+   "name": "OptionSaveDelete_Create",
+   "cpp": "OptionSaveDelete.cpp"
+  },
+  {
+   "addr": 34975876,
+   "name": "EndingPiece_Create",
+   "cpp": "EndingPiece.cpp"
+  },
+  {
+   "addr": 34988476,
+   "name": "EndingStaffRoll_Create",
+   "cpp": "EndingStaffRoll.cpp"
+  },
+  {
+   "addr": 34993740,
+   "name": "EndingCopyright_Create",
+   "cpp": "EndingCopyright.cpp"
+  }
+ ],
+ "ov1": [
+  {
+   "addr": 34917664,
+   "name": "JGalaxyStageInfo_Add",
+   "cpp": "JGalaxyStageInfo.cpp"
+  },
+  {
+   "addr": 34921088,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34921648,
+   "name": "JGalaxyResult_Add",
+   "cpp": "JGalaxyResult.cpp"
+  },
+  {
+   "addr": 34924264,
+   "name": "JGalaxyClearList_Create",
+   "cpp": "JGalaxyClearList.cpp"
+  },
+  {
+   "addr": 34930172,
+   "name": "JAMissionTry_Add",
+   "cpp": "JArenaMissionTry.cpp"
+  },
+  {
+   "addr": 34935280,
+   "name": "JAMissionTry_InitPanelWidgetItem",
+   "cpp": "JArenaMissionTry.cpp"
+  },
+  {
+   "addr": 34936728,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34940796,
+   "name": "JAMisnResult_Add",
+   "cpp": "JArenaMissionResult.cpp"
+  },
+  {
+   "addr": 34947244,
+   "name": "JARankLst_Add",
+   "cpp": "JArenaRankingList.cpp"
+  },
+  {
+   "addr": 34955396,
+   "name": "DeckSelect_Add",
+   "cpp": "DeckSelect.cpp"
+  },
+  {
+   "addr": 34966136,
+   "name": "DeckSelect_InitDeckData",
+   "cpp": "DeckSelect.cpp"
+  },
+  {
+   "addr": 34985200,
+   "name": "DeckSelectPassword_Create",
+   "cpp": "DeckSelectPassword.cpp"
+  },
+  {
+   "addr": 34988812,
+   "name": "DeckSelect_PersonalCreate",
+   "cpp": "DeckSelectPersonal.cpp"
+  },
+  {
+   "addr": 34993984,
+   "name": "StageSelect_Add",
+   "cpp": "StageSelect.cpp"
+  },
+  {
+   "addr": 35004124,
+   "name": "RuleSelect_Add",
+   "cpp": "RuleSelect.cpp"
+  },
+  {
+   "addr": 35013540,
+   "name": "RuleData_Create",
+   "cpp": "RuleData.cpp"
+  },
+  {
+   "addr": 35013756,
+   "name": "SelectStandby_Create",
+   "cpp": "SelectStandby.cpp"
+  },
+  {
+   "addr": 35017164,
+   "name": "SelectStandbyBar_Create",
+   "cpp": "SelectStandbyBar.cpp"
+  },
+  {
+   "addr": 35019980,
+   "name": "Result_Add",
+   "cpp": "Result.cpp"
+  },
+  {
+   "addr": 35021744,
+   "name": "ResultMission_Create",
+   "cpp": "ResultMission.cpp"
+  }
+ ],
+ "ov2": [
+  {
+   "addr": 34917664,
+   "name": "JGalaxy_Add",
+   "cpp": "JGalaxy.cpp"
+  },
+  {
+   "addr": 34920616,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34923452,
+   "name": "JGalaxyBattle_Create",
+   "cpp": "JGalaxyBattle.cpp"
+  },
+  {
+   "addr": 34933580,
+   "name": "JGalaxyMap_Create",
+   "cpp": "JGalaxyMap.cpp"
+  },
+  {
+   "addr": 34936132,
+   "name": "JGalaxyPlanet_Create",
+   "cpp": "JGalaxyPlanet.cpp"
+  },
+  {
+   "addr": 34951820,
+   "name": "JGalaxyWarp_Create",
+   "cpp": "JGalaxyWarp.cpp"
+  },
+  {
+   "addr": 34952200,
+   "name": "JGalaxyWarp_CreatePlanetIn",
+   "cpp": "JGalaxyWarp.cpp"
+  },
+  {
+   "addr": 34953536,
+   "name": "JGalaxyMenu_Create",
+   "cpp": "JGalaxyMenu.cpp"
+  },
+  {
+   "addr": 34956744,
+   "name": "JGalaxyDemo_Create",
+   "cpp": "JGalaxyDemo.cpp"
+  },
+  {
+   "addr": 34957024,
+   "name": "JGalaxyBack_Create",
+   "cpp": "JGalaxyBackground.cpp"
+  },
+  {
+   "addr": 34959904,
+   "name": "Demo_Add",
+   "cpp": "Demo.cpp"
+  },
+  {
+   "addr": 34971704,
+   "name": "DeckCheck_Add",
+   "cpp": "DeckCheck.cpp"
+  },
+  {
+   "addr": 34975904,
+   "name": "JGalaxy",
+   "cpp": null
+  }
+ ],
+ "ov3": [
+  {
+   "addr": 34917724,
+   "name": "JArena_AddJob",
+   "cpp": "JArena.cpp"
+  },
+  {
+   "addr": 34920028,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34920792,
+   "name": "JATopMenu_Add",
+   "cpp": "JArenaTopMenu.cpp"
+  },
+  {
+   "addr": 34926164,
+   "name": "JARankMenu_Add",
+   "cpp": "JArenaRankingMenu.cpp"
+  },
+  {
+   "addr": 34931680,
+   "name": "JARankBtlBef_Add",
+   "cpp": "JArenaRankBtlBefore.cpp"
+  },
+  {
+   "addr": 34936780,
+   "name": "JARankBtlAft_Add",
+   "cpp": "JArenaRankBtlAfter.cpp"
+  },
+  {
+   "addr": 34940444,
+   "name": "JARBAftLstAll_Add",
+   "cpp": "JArenaRankBtlAfterLstAll.cpp"
+  },
+  {
+   "addr": 34953536,
+   "name": "JARBAftLstSel_Add",
+   "cpp": "JArenaRankBtlAfterLstSel.cpp"
+  },
+  {
+   "addr": 34962596,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34966204,
+   "name": "JARBAftSel_AddSub",
+   "cpp": "JArenaRankBtlAfterSelect.cpp"
+  },
+  {
+   "addr": 34970972,
+   "name": "JACongrats_Add",
+   "cpp": "JArenaCongrats.cpp"
+  },
+  {
+   "addr": 34976844,
+   "name": "JAGetJPower_Add",
+   "cpp": "JArenaGetJPower.cpp"
+  },
+  {
+   "addr": 34977748,
+   "name": "VsCall_Add",
+   "cpp": "VsCall.cpp"
+  }
+ ],
+ "ov4": [
+  {
+   "addr": 34917692,
+   "name": "JQuiz_Add_Core",
+   "cpp": "JQuiz.cpp"
+  },
+  {
+   "addr": 34923012,
+   "name": "JQuizCmn_BaseBG_Create",
+   "cpp": "JQuizCommon.cpp"
+  },
+  {
+   "addr": 34923540,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34926512,
+   "name": "JQuizCommonWork_Create",
+   "cpp": "JQuizCommonWork.cpp"
+  },
+  {
+   "addr": 34927488,
+   "name": "JQuizCommonWork_Quiz_Shuffle_Core",
+   "cpp": "JQuizCommonWork.cpp"
+  },
+  {
+   "addr": 34930020,
+   "name": "JQuizCommonScoreClass_Create",
+   "cpp": "JQuizCommonScore.cpp"
+  },
+  {
+   "addr": 34933652,
+   "name": "JQuizCommonTimeClass_Create",
+   "cpp": "JQuizCommonTime.cpp"
+  },
+  {
+   "addr": 34934768,
+   "name": "JQuizTop_Add",
+   "cpp": "JQuizTop.cpp"
+  },
+  {
+   "addr": 34939364,
+   "name": "JQuizStartBackPlateClass_Create",
+   "cpp": "JQuizStartBackPlate.cpp"
+  },
+  {
+   "addr": 34940632,
+   "name": "JQuizStartCore_Add",
+   "cpp": "JQuizStartSinglePlay.cpp"
+  },
+  {
+   "addr": 34943440,
+   "name": "JQuizMainCommon_ListRandomMix",
+   "cpp": "JQuizMainCommon.cpp"
+  },
+  {
+   "addr": 34943656,
+   "name": "JQuizMainCommonAnswerMixClass_Create",
+   "cpp": "JQuizMainCommon.cpp"
+  },
+  {
+   "addr": 34943904,
+   "name": "JQuizMainTextQDispClass_Create",
+   "cpp": "JQuizMainTextQDisp.cpp"
+  },
+  {
+   "addr": 34946044,
+   "name": "JQuizMainSubScreenPlateClass_Create",
+   "cpp": "JQuizMainSubScreenPlate.cpp"
+  },
+  {
+   "addr": 34949860,
+   "name": "JQuizMainTimeGaugeClass_Create",
+   "cpp": "JQuizMainTimeGauge.cpp"
+  },
+  {
+   "addr": 34950740,
+   "name": "JQuizMainTimeGaugeBGClass_Create",
+   "cpp": "JQuizMainTimeGaugeBG.cpp"
+  },
+  {
+   "addr": 34951204,
+   "name": "JQuizMainTimePlateClass_Create",
+   "cpp": "JQuizMainTimePlate.cpp"
+  },
+  {
+   "addr": 34952208,
+   "name": "JQuizMainQuestionMaskClass_Create",
+   "cpp": "JQuizMainQuestionMask.cpp"
+  },
+  {
+   "addr": 34952732,
+   "name": "JQuizMainAnswerMaskClass_Create",
+   "cpp": "JQuizMainQuestionMask.cpp"
+  },
+  {
+   "addr": 34953156,
+   "name": "JQuizMainBlackBeltClass_Create",
+   "cpp": "JQuizMainBlackBelt.cpp"
+  },
+  {
+   "addr": 34954012,
+   "name": "JQuizMainQuizNoSmallClass_Create",
+   "cpp": "JQuizMainQuizNoSmall.cpp"
+  },
+  {
+   "addr": 34955892,
+   "name": "JQuizMainQuizNoDispClass_Create",
+   "cpp": "JQuizMainQuizNoDisp.cpp"
+  },
+  {
+   "addr": 34959120,
+   "name": "JQuizMainResultDispClass_Create",
+   "cpp": "JQuizMainResultDisp.cpp"
+  },
+  {
+   "addr": 34961312,
+   "name": "JQuizMainSingleScoreClass_Create",
+   "cpp": "JQuizMainSingleScore.cpp"
+  },
+  {
+   "addr": 34962292,
+   "name": "JQuizMainMultiScoreOneClass_Create",
+   "cpp": "JQuizMainMultiScore.cpp"
+  },
+  {
+   "addr": 34964024,
+   "name": "JQuizMainMultiScoreClass_Create",
+   "cpp": "JQuizMainMultiScore.cpp"
+  },
+  {
+   "addr": 34964688,
+   "name": "JQuizMainMultiRankFukiClass_Create",
+   "cpp": "JQuizMainMultiRankFuki.cpp"
+  },
+  {
+   "addr": 34965700,
+   "name": "JQuizMainSinglePauseClass_Create",
+   "cpp": "JQuizMainSinglePause.cpp"
+  },
+  {
+   "addr": 34968240,
+   "name": "JQuizMainSinglePlay_Add",
+   "cpp": "JQuizMainSinglePlay.cpp"
+  },
+  {
+   "addr": 34971944,
+   "name": "JQuizJGalaxyMode_Add",
+   "cpp": "JQuizJGalaxyMode.cpp"
+  },
+  {
+   "addr": 34972672,
+   "name": "JQuizResultWinLosePlateClass_Create",
+   "cpp": "JQuizResultWinLosePlate.cpp"
+  },
+  {
+   "addr": 34973748,
+   "name": "JQuizResultScoreDispClass_Create",
+   "cpp": "JQuizResultScoreDisp.cpp"
+  },
+  {
+   "addr": 34974304,
+   "name": "JQuizResultJPowerGraphClass_Create",
+   "cpp": "JQuizResultJPowerGraph.cpp"
+  },
+  {
+   "addr": 34974632,
+   "name": "JQuizResultSinglePlay_Add_Core",
+   "cpp": "JQuizResultSinglePlay.cpp"
+  },
+  {
+   "addr": 34979780,
+   "name": "ResultRank_Create",
+   "cpp": "ResultRank.cpp"
+  },
+  {
+   "addr": 34983716,
+   "name": "JQuizResultMultiPlay_Add",
+   "cpp": "JQuizResultMultiPlay.cpp"
+  },
+  {
+   "addr": 34986552,
+   "name": "JQuizBattleRuleDisp_Add",
+   "cpp": "JQuizBattleRuleDisp.cpp"
+  },
+  {
+   "addr": 34989664,
+   "name": "JQuizMainAnswerDispClass_Create",
+   "cpp": "JQuizMainAnswerDisp.cpp"
+  },
+  {
+   "addr": 34990784,
+   "name": "JQuizMainSubPlayerMarkClass_Create",
+   "cpp": "JQuizMainSubPlayerMark.cpp"
+  },
+  {
+   "addr": 34991560,
+   "name": "JQuizMainSubWaitPlayerClass_Create",
+   "cpp": "JQuizMainSubWaitPlayer.cpp"
+  },
+  {
+   "addr": 34991816,
+   "name": "JQuizMainBattleInfoClass_Create",
+   "cpp": "JQuizMainBattleInfo.cpp"
+  },
+  {
+   "addr": 34992532,
+   "name": "JQuizBattleMainPlay_Add",
+   "cpp": "JQuizBattleMainPlay.cpp"
+  }
+ ],
+ "ov5": [
+  {
+   "addr": 34917664,
+   "name": "ComicDeck_DispKomaCreate",
+   "cpp": "ComicDeckMakeDisp.cpp"
+  },
+  {
+   "addr": 34924252,
+   "name": "DeckMake_Add",
+   "cpp": "DeckMake.cpp"
+  },
+  {
+   "addr": 34928024,
+   "name": "KomaList_Create",
+   "cpp": "KomaList.cpp"
+  },
+  {
+   "addr": 34935952,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34938072,
+   "name": "PatternNo",
+   "cpp": null
+  },
+  {
+   "addr": 34948808,
+   "name": "KomaState_Create",
+   "cpp": "KomaState.cpp"
+  },
+  {
+   "addr": 34962436,
+   "name": "KomaEdit_Create",
+   "cpp": "KomaEdit.cpp"
+  },
+  {
+   "addr": 34984260,
+   "name": "KomaHelp_Create",
+   "cpp": "KomaHelp.cpp"
+  },
+  {
+   "addr": 34990564,
+   "name": "PatternNo",
+   "cpp": null
+  },
+  {
+   "addr": 34992032,
+   "name": "KomaBook_Add",
+   "cpp": "KomaIBook.cpp"
+  },
+  {
+   "addr": 34992880,
+   "name": "KomaExplanationData_Create",
+   "cpp": "KomaExplanationData.cpp"
+  },
+  {
+   "addr": 34993112,
+   "name": "Input_Add",
+   "cpp": "Input.cpp"
+  },
+  {
+   "addr": 35000708,
+   "name": "DeckMakeTutorial_Add",
+   "cpp": "DeckMakeTutorial.cpp"
+  },
+  {
+   "addr": 35005456,
+   "name": "JPower_Add",
+   "cpp": "JPower.cpp"
+  },
+  {
+   "addr": 35017448,
+   "name": "JPowerData_Create",
+   "cpp": "JPowerData.cpp"
+  },
+  {
+   "addr": 35017680,
+   "name": "JPowerInfo_Create",
+   "cpp": "JPowerInfo.cpp"
+  },
+  {
+   "addr": 35023252,
+   "name": "JPowerKomaList_Add",
+   "cpp": "JPowerKomaList.cpp"
+  },
+  {
+   "addr": 35024112,
+   "name": "Database_Add",
+   "cpp": "Database.cpp"
+  },
+  {
+   "addr": 35026764,
+   "name": "Database_MenuCreate",
+   "cpp": "DatabaseMenu.cpp"
+  },
+  {
+   "addr": 35030516,
+   "name": "Database_ListCreate",
+   "cpp": "DatabaseList.cpp"
+  },
+  {
+   "addr": 35037824,
+   "name": "Database_PieceCreate",
+   "cpp": "DatabasePiece.cpp"
+  },
+  {
+   "addr": 35040868,
+   "name": "Database_PersonalCreate",
+   "cpp": "DatabasePersonal.cpp"
+  },
+  {
+   "addr": 35045432,
+   "name": "Database_LocationCreate",
+   "cpp": "DatabaseLocation.cpp"
+  },
+  {
+   "addr": 35050116,
+   "name": "PieceData_Create",
+   "cpp": "PieceData.cpp"
+  },
+  {
+   "addr": 35050440,
+   "name": "DemoData_Create",
+   "cpp": "DemoData.cpp"
+  }
+ ],
+ "ov6": [
+  {
+   "addr": 34923400,
+   "name": "Battle_PauseCreate",
+   "cpp": "BattlePause.cpp"
+  },
+  {
+   "addr": 34927908,
+   "name": "Battle_PauseWiFiCreate",
+   "cpp": "BattlePauseWiFi.cpp"
+  },
+  {
+   "addr": 34928556,
+   "name": "Battle_TutorialCreate",
+   "cpp": "BattleTutorial.cpp"
+  },
+  {
+   "addr": 34937832,
+   "name": "Battle_CameraCreate",
+   "cpp": "BattleCamera.cpp"
+  },
+  {
+   "addr": 34939152,
+   "name": "Battle_ComicDeckCreate",
+   "cpp": "BattleComicDeck.cpp"
+  },
+  {
+   "addr": 34944992,
+   "name": "Battle_DemoKoCreate",
+   "cpp": "BattleDemo.cpp"
+  },
+  {
+   "addr": 34946784,
+   "name": "Battle_WindowCreate",
+   "cpp": "BattleWindow.cpp"
+  },
+  {
+   "addr": 34952160,
+   "name": "Battle_NoteTrackCreate",
+   "cpp": "BattleNoteTrack.cpp"
+  },
+  {
+   "addr": 34957880,
+   "name": "Battle_CharaCreate",
+   "cpp": "BattleChara.cpp"
+  },
+  {
+   "addr": 34992208,
+   "name": "Battle_CharaDataInit",
+   "cpp": "BattleCharaDataLoad.cpp"
+  },
+  {
+   "addr": 34996192,
+   "name": "Battle_CharaInfoCreate",
+   "cpp": "BattleCharaInfo.cpp"
+  },
+  {
+   "addr": 34996268,
+   "name": "Battle_CharaInfoPopularSet",
+   "cpp": "BattleCharaInfo.cpp"
+  },
+  {
+   "addr": 35001520,
+   "name": "Battle_CharaParamCreate",
+   "cpp": "BattleCharaParam.cpp"
+  },
+  {
+   "addr": 35001864,
+   "name": "Battle_PursuerCreate",
+   "cpp": "BattleCharaPursuer.cpp"
+  },
+  {
+   "addr": 35003572,
+   "name": "BattleMapInit",
+   "cpp": "BattleMap.cpp"
+  },
+  {
+   "addr": 35008904,
+   "name": "BattleMapGimmick_Create",
+   "cpp": "BattleMapGimmick.cpp"
+  },
+  {
+   "addr": 35013828,
+   "name": "BattleMapLoadItem",
+   "cpp": "BattleMapItem.cpp"
+  },
+  {
+   "addr": 35017432,
+   "name": "BattleMapItemInit",
+   "cpp": "BattleMapItem.cpp"
+  },
+  {
+   "addr": 35023688,
+   "name": "BattleMapGripLoad",
+   "cpp": "BattleMapItem.cpp"
+  },
+  {
+   "addr": 35024584,
+   "name": "BattleMapGripInit",
+   "cpp": "BattleMapItem.cpp"
+  },
+  {
+   "addr": 35025384,
+   "name": "BattleMapInitWall",
+   "cpp": "BattleMapWall.cpp"
+  },
+  {
+   "addr": 35028768,
+   "name": "Battle_MarkerCreate",
+   "cpp": "BattleMarker.cpp"
+  },
+  {
+   "addr": 35031944,
+   "name": "Battle_ObjCtrlManCreate",
+   "cpp": "BattleObjCtrl.cpp"
+  },
+  {
+   "addr": 35039164,
+   "name": "Battle_ObjShotManCreate",
+   "cpp": "BattleObjShot.cpp"
+  },
+  {
+   "addr": 35062460,
+   "name": "Battle_PrmDataInit",
+   "cpp": "BattlePrmData.cpp"
+  }
+ ],
+ "ov7": [
+  {
+   "addr": 34920228,
+   "name": null,
+   "cpp": "CommMBLib.cpp"
+  },
+  {
+   "addr": 34921112,
+   "name": "CommuMenu_Add_Core",
+   "cpp": "CommuMenu.cpp"
+  },
+  {
+   "addr": 34922156,
+   "name": "CommuMenuTop_Add",
+   "cpp": "CommuMenuTop.cpp"
+  },
+  {
+   "addr": 34927464,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34933164,
+   "name": "CMMenuCmn_BaseBG_Create",
+   "cpp": "CommuMenuCommon.cpp"
+  },
+  {
+   "addr": 34934084,
+   "name": "CMMenuCmn_PackArc_InitLoad",
+   "cpp": "CommuMenuCommon.cpp"
+  },
+  {
+   "addr": 34936968,
+   "name": "CommuMenuFrndList_Add",
+   "cpp": "CommuMenuFrndList.cpp"
+  },
+  {
+   "addr": 34939912,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 34940332,
+   "name": "CommuMenuFrndCode_Add",
+   "cpp": "CommuMenuFrndCode.cpp"
+  },
+  {
+   "addr": 34944004,
+   "name": "CommuMenuFrndTop_Add",
+   "cpp": "CommuMenuFrndTop.cpp"
+  },
+  {
+   "addr": 34948480,
+   "name": "CommuMenuWiFiAbMatch_Add",
+   "cpp": "CommuMenuWiFiAbMatch.cpp"
+  },
+  {
+   "addr": 34953116,
+   "name": "CommuMenuWiFiFrMatch_Add",
+   "cpp": "CommuMenuWiFiFrMatch.cpp"
+  },
+  {
+   "addr": 34954272,
+   "name": "CommuMenuWiFiMemberEnt_Add",
+   "cpp": "CommuMenuWiFiMemberEnt.cpp"
+  },
+  {
+   "addr": 34956652,
+   "name": "CommuMenuCmnLeaderSel_Add",
+   "cpp": "CommuMenuCmnLeaderSel.cpp"
+  },
+  {
+   "addr": 34962300,
+   "name": "CommuMenuCmnMemberEnt_Add",
+   "cpp": "CommuMenuCmnMemberEnt.cpp"
+  },
+  {
+   "addr": 34966632,
+   "name": "CommuMenuWrlsEntryObj_Init",
+   "cpp": "CommuMenuWrlsEntryObj.cpp"
+  },
+  {
+   "addr": 34968908,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 34970088,
+   "name": "CommuMenuWLLeaderState_Create",
+   "cpp": "CommuMenuWLLeaderState.cpp"
+  },
+  {
+   "addr": 34970516,
+   "name": "CommuMenuWLCmnMemEnt_Add",
+   "cpp": "CommuMenuWLCmnMemEnt.cpp"
+  },
+  {
+   "addr": 34972348,
+   "name": "CommuMenuWrlsLeaderSel_Add",
+   "cpp": "CommuMenuWrlsLeaderSel.cpp"
+  },
+  {
+   "addr": 34980448,
+   "name": "CommuMenuWiFiMatchSel_Add",
+   "cpp": "CommuMenuWiFiMatchSel.cpp"
+  },
+  {
+   "addr": 34983512,
+   "name": "CommuMenuSuretigai_Add",
+   "cpp": "CommuMenuSuretigai.cpp"
+  },
+  {
+   "addr": 35003820,
+   "name": "COMMON",
+   "cpp": null
+  },
+  {
+   "addr": 35004140,
+   "name": "CommuMenuDwldMemberEnt_Add",
+   "cpp": "CommuMenuDwldMemberEnt.cpp"
+  },
+  {
+   "addr": 35005672,
+   "name": "CommuMenuDataLeaderSel_Add",
+   "cpp": "CommuMenuDataLeaderSel.cpp"
+  },
+  {
+   "addr": 35006436,
+   "name": "CommuMenuDataMemberEnt_Add_Core",
+   "cpp": "CommuMenuDataMemberEnt.cpp"
+  },
+  {
+   "addr": 35009052,
+   "name": "CommuMenuQuizLeaderSel_Add",
+   "cpp": "CommuMenuQuizLeaderSel.cpp"
+  },
+  {
+   "addr": 35010020,
+   "name": "SelectStandby_Create",
+   "cpp": "SelectStandby.cpp"
+  },
+  {
+   "addr": 35012588,
+   "name": "CommuMenuWrlsWatchWait_Add",
+   "cpp": "CommuMenuWrlsWatchWait.cpp"
+  },
+  {
+   "addr": 35016424,
+   "name": "CommuMenuWiFiError_Add",
+   "cpp": "CommuMenuWiFiError.cpp"
+  },
+  {
+   "addr": 35017048,
+   "name": "CommuMenuError_WiFi_Add",
+   "cpp": "CommuMenuError.cpp"
+  },
+  {
+   "addr": 35017724,
+   "name": "CommuMenuEntryDataEnt_Add_Core",
+   "cpp": "CommuMenuEntryDataEnt.cpp"
+  },
+  {
+   "addr": 35021548,
+   "name": "VXkOdX",
+   "cpp": null
+  },
+  {
+   "addr": 35028940,
+   "name": "Main_CommunicationAdd",
+   "cpp": "CommunicationWait.cpp"
+  },
+  {
+   "addr": 35032572,
+   "name": "MB_COMM_PSTATE_NONE",
+   "cpp": null
+  }
+ ],
+ "ov8": [
+  {
+   "addr": 35027296,
+   "name": "WiFi_ConnectionAdd",
+   "cpp": "WiFiConnection.cpp"
+  }
+ ],
+ "ov10": [
+  {
+   "addr": 35132896,
+   "name": "buddyStatus",
+   "cpp": null
+  },
+  {
+   "addr": 35186632,
+   "name": "NintendoDS",
+   "cpp": null
+  },
+  {
+   "addr": 35233512,
+   "name": "WiFi_Init_MemoryManager",
+   "cpp": "WiFi.cpp"
+  },
+  {
+   "addr": 35233888,
+   "name": "WiFi_AllocFunc",
+   "cpp": "WiFi.cpp"
+  },
+  {
+   "addr": 35250384,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35250532,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35250732,
+   "name": "PostMessage",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35255336,
+   "name": "PostSyncMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35255468,
+   "name": "PostSyncMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35255636,
+   "name": "PostSyncMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35255768,
+   "name": "PostSyncMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35255892,
+   "name": "WiFiGame_SendMess_ONEWAY",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35256372,
+   "name": "WiFiGame_Static_SendCOMM",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35256560,
+   "name": "PostSyncMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35257336,
+   "name": "WiFiGame_Static_SendCOMMUnreliable",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35258328,
+   "name": "WiFi_SendPersonalData",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35258640,
+   "name": "WiFiGame_Static_SendCUSTOM",
+   "cpp": "WiFiGame.cpp"
+  },
+  {
+   "addr": 35265628,
+   "name": "JUpiJUdMJUpsJU1wJUReJUPn",
+   "cpp": null
+  },
+  {
+   "addr": 35266308,
+   "name": "JUpiJUdMJUpsJU1wJUReJUPn",
+   "cpp": null
+  },
+  {
+   "addr": 35270840,
+   "name": "WiFiDataSendRecv_DataSendONEWAYUnreliable",
+   "cpp": "WiFiDataSendRecv.cpp"
+  },
+  {
+   "addr": 35271888,
+   "name": "player_",
+   "cpp": null
+  }
+ ],
+ "ov11": [
+  {
+   "addr": 35072608,
+   "name": "BattleAI_Create",
+   "cpp": "BattleAI.cpp"
+  },
+  {
+   "addr": 35078960,
+   "name": "BattleAIDeck_Create",
+   "cpp": "BattleAI_Deck.cpp"
+  },
+  {
+   "addr": 35087104,
+   "name": "BattleAIDeck_CallBackCobjWorkCreate",
+   "cpp": "BattleAI_Deck.cpp"
+  },
+  {
+   "addr": 35088700,
+   "name": "BattleAIMove_Create",
+   "cpp": "BattleAI_Move.cpp"
+  },
+  {
+   "addr": 35098616,
+   "name": "BattleAIState_Create",
+   "cpp": "BattleAI_State.cpp"
+  },
+  {
+   "addr": 35114704,
+   "name": "BattleAIObj_CreateBranchNode",
+   "cpp": "BattleAI_JobAtkBrh.cpp"
+  },
+  {
+   "addr": 35116952,
+   "name": "BattleAIObj_CreateCommandNode",
+   "cpp": "BattleAI_JobAtkCmd.cpp"
+  }
+ ],
+ "ov12": [
+  {
+   "addr": 35309548,
+   "name": "MakeFitCollision",
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35310328,
+   "name": "CreateIntf",
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35316844,
+   "name": "CreateDrawFunc",
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35320152,
+   "name": null,
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35320276,
+   "name": null,
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35320396,
+   "name": null,
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35320632,
+   "name": null,
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35320948,
+   "name": null,
+   "cpp": "ALWidget.cpp"
+  },
+  {
+   "addr": 35321912,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35322176,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35322668,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35325408,
+   "name": "ShapeID",
+   "cpp": "ALCollision.cpp"
+  },
+  {
+   "addr": 35326216,
+   "name": "RegistCollision",
+   "cpp": "ALCollision.cpp"
+  },
+  {
+   "addr": 35326792,
+   "name": null,
+   "cpp": "ALCollision.cpp"
+  },
+  {
+   "addr": 35327372,
+   "name": "CreateIntf",
+   "cpp": "ALCollision.cpp"
+  },
+  {
+   "addr": 35327968,
+   "name": "CreateIntf",
+   "cpp": "ALCollision.cpp"
+  },
+  {
+   "addr": 35330984,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35331052,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35332348,
+   "name": "NewMotion",
+   "cpp": "ALMotionDynamic.cpp"
+  },
+  {
+   "addr": 35334936,
+   "name": "CreateImp",
+   "cpp": "ALMotionDynamic.cpp"
+  },
+  {
+   "addr": 35337404,
+   "name": "MotionController",
+   "cpp": null
+  },
+  {
+   "addr": 35339928,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35341032,
+   "name": null,
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35341400,
+   "name": "CreateImpFunc",
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35345308,
+   "name": "CreateIntf",
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35352368,
+   "name": "CreateIntf",
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35357596,
+   "name": "CreateDrawFunc",
+   "cpp": null
+  },
+  {
+   "addr": 35358688,
+   "name": null,
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35359712,
+   "name": "PostMessage",
+   "cpp": null
+  },
+  {
+   "addr": 35361212,
+   "name": "DoInit",
+   "cpp": "ALWidgetBase.cpp"
+  },
+  {
+   "addr": 35363384,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35366044,
+   "name": "CommonWindow_Create",
+   "cpp": "CommonWindow.cpp"
+  },
+  {
+   "addr": 35376168,
+   "name": "CommonInfo_Create",
+   "cpp": "CommonInfo.cpp"
+  },
+  {
+   "addr": 35385796,
+   "name": "StageView_Create",
+   "cpp": "StageView.cpp"
+  },
+  {
+   "addr": 35404048,
+   "name": "JArena_ParamInit",
+   "cpp": "JArenaParam.cpp"
+  },
+  {
+   "addr": 35414364,
+   "name": "SetItemSize",
+   "cpp": null
+  },
+  {
+   "addr": 35419940,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35420396,
+   "name": "CreateDrawFunc",
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35420592,
+   "name": "CreateIntf",
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35422132,
+   "name": null,
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35423344,
+   "name": "SetFontPaletteIndex",
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35430656,
+   "name": "SetFont",
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35431136,
+   "name": null,
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35431332,
+   "name": null,
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35431428,
+   "name": null,
+   "cpp": "ALTextDS.cpp"
+  },
+  {
+   "addr": 35432424,
+   "name": "CloneMain",
+   "cpp": null
+  },
+  {
+   "addr": 35432932,
+   "name": "MakeFixBounds",
+   "cpp": "ALFont.cpp"
+  },
+  {
+   "addr": 35438324,
+   "name": "WiFiVoiceChat_Initialize",
+   "cpp": "WiFiVoiceChat.cpp"
+  },
+  {
+   "addr": 35456340,
+   "name": "HpGDYNA",
+   "cpp": null
+  }
+ ]
+}

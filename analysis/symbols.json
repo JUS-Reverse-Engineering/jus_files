@@ -1,0 +1,1972 @@
+{
+ "arm9": [
+  {
+   "name": "AutoSave_Add",
+   "func": 34036356,
+   "literal": 34036652,
+   "string": 34206956
+  },
+  {
+   "name": "BattleMapMoveFloorCreate",
+   "func": 34100996,
+   "literal": 34101728,
+   "string": 34210008
+  },
+  {
+   "name": "BattleMapMoveFloorInit",
+   "func": 34102644,
+   "literal": 34102980,
+   "string": 34209936
+  },
+  {
+   "name": "BattleMapMoveFloorInitNormal",
+   "func": 34103004,
+   "literal": 34103388,
+   "string": 34210036
+  },
+  {
+   "name": "Battle_CharaPropChrInit",
+   "func": 34056004,
+   "literal": 34056148,
+   "string": 34207824
+  },
+  {
+   "name": "Battle_CharaPropInit",
+   "func": 34056828,
+   "literal": 34057112,
+   "string": 34207800
+  },
+  {
+   "name": "Battle_ColJointManCreate",
+   "func": 34061632,
+   "literal": 34061960,
+   "string": 34208540
+  },
+  {
+   "name": "Battle_ColManCreate",
+   "func": 34057532,
+   "literal": 34057872,
+   "string": 34208460
+  },
+  {
+   "name": "Battle_ColObjAddColWork",
+   "func": 34058524,
+   "literal": 34058680,
+   "string": 34208500
+  },
+  {
+   "name": "Battle_ColObjCreate",
+   "func": 34057948,
+   "literal": 34058184,
+   "string": 34208480
+  },
+  {
+   "name": "Battle_ColPrmManCreate",
+   "func": 34063552,
+   "literal": 34064472,
+   "string": 34208588
+  },
+  {
+   "name": "Battle_MoveManCreate",
+   "func": 34089528,
+   "literal": 34089944,
+   "string": 34209624
+  },
+  {
+   "name": "Battle_ObjManCreate",
+   "func": 34091524,
+   "literal": 34092112,
+   "string": 34209760
+  },
+  {
+   "name": "BgmData_Create",
+   "func": 34035612,
+   "literal": 34035776,
+   "string": 34206872
+  },
+  {
+   "name": "BlendMode",
+   "func": 33689468,
+   "literal": 33691288,
+   "string": 34199196
+  },
+  {
+   "name": "BoundsIndex",
+   "func": 33761928,
+   "literal": 33762332,
+   "string": 34199280
+  },
+  {
+   "name": "CharaData_Create",
+   "func": 34030976,
+   "literal": 34031104,
+   "string": 34206084
+  },
+  {
+   "name": "ClearlstData_Create",
+   "func": 34034132,
+   "literal": 34034260,
+   "string": 34206616
+  },
+  {
+   "name": "CloneMain",
+   "func": 34000832,
+   "literal": 34000904,
+   "string": 34201540
+  },
+  {
+   "name": "ComicDeckCreate",
+   "func": 34037692,
+   "literal": 34038712,
+   "string": 34207108
+  },
+  {
+   "name": "ComicDeck_DispCreate",
+   "func": 34049236,
+   "literal": 34049852,
+   "string": 34207288
+  },
+  {
+   "name": "CommInit",
+   "func": 34125160,
+   "literal": 34125672,
+   "string": 34211128
+  },
+  {
+   "name": "CommLib",
+   "func": 34132492,
+   "literal": 34133008,
+   "string": 34211120
+  },
+  {
+   "name": "CommLibInit",
+   "func": 34115244,
+   "literal": 34115588,
+   "string": 34210368
+  },
+  {
+   "name": "CommWrapAntenna_Create",
+   "func": 34109340,
+   "literal": 34109780,
+   "string": 34210164
+  },
+  {
+   "name": "CommWrapDisconnect_Create",
+   "func": 34104828,
+   "literal": 34105384,
+   "string": 34210108
+  },
+  {
+   "name": "CommWrap_Loading_Create",
+   "func": 34110596,
+   "literal": 34111164,
+   "string": 34210188
+  },
+  {
+   "name": "CommonEffect_Init",
+   "func": 33997380,
+   "literal": 33997956,
+   "string": 34202180
+  },
+  {
+   "name": "CommonHSV_Create",
+   "func": 34000980,
+   "literal": 34001884,
+   "string": 34202292
+  },
+  {
+   "name": "CommonPaletteAnime_Create",
+   "func": 33992080,
+   "literal": 33992308,
+   "string": 34201136
+  },
+  {
+   "name": "CommonPaletteAnime_Load",
+   "func": 33992656,
+   "literal": 33993012,
+   "string": 34201112
+  },
+  {
+   "name": "CommonTutorial_Create",
+   "func": 33994928,
+   "literal": 33995436,
+   "string": 34201268
+  },
+  {
+   "name": "CreateImpFunc",
+   "func": 33998204,
+   "literal": 33998252,
+   "string": 34201552
+  },
+  {
+   "name": "DelaySet",
+   "func": 33864716,
+   "literal": 33864796,
+   "string": 34199052
+  },
+  {
+   "name": "DelayStart",
+   "func": 33864592,
+   "literal": 33864712,
+   "string": 34199220
+  },
+  {
+   "name": "DrawPrio",
+   "func": 33689468,
+   "literal": 33691228,
+   "string": 34199004
+  },
+  {
+   "name": "EffectFlags",
+   "func": 33997380,
+   "literal": 33997964,
+   "string": 34202240
+  },
+  {
+   "name": "GenerateID",
+   "func": 33643496,
+   "literal": 33643756,
+   "string": 34199256
+  },
+  {
+   "name": "IPMove",
+   "func": 33864800,
+   "literal": 33864876,
+   "string": 34198964
+  },
+  {
+   "name": "JSSGXu",
+   "func": 34024116,
+   "literal": 34025720,
+   "string": 34153548
+  },
+  {
+   "name": "LifeType",
+   "func": 33689468,
+   "literal": 33691176,
+   "string": 34199064
+  },
+  {
+   "name": "LocationData_Create",
+   "func": 34035100,
+   "literal": 34035264,
+   "string": 34206752
+  },
+  {
+   "name": "MapName",
+   "func": 33777864,
+   "literal": 33778280,
+   "string": 34198996
+  },
+  {
+   "name": "MessageFunc",
+   "func": 34122568,
+   "literal": 34122732,
+   "string": 34211140
+  },
+  {
+   "name": "MessageFunc",
+   "func": 34122568,
+   "literal": 34124596,
+   "string": 34211140
+  },
+  {
+   "name": "MissionData_Create",
+   "func": 34034328,
+   "literal": 34034512,
+   "string": 34206676
+  },
+  {
+   "name": "MotionController",
+   "func": 33860780,
+   "literal": 33860872,
+   "string": 34199540
+  },
+  {
+   "name": "NCG1NCG2NG18NG28NFC4FFL4LCP4",
+   "func": 33792848,
+   "literal": 33792928,
+   "string": 34161484
+  },
+  {
+   "name": "NoteTrack",
+   "func": 33680224,
+   "literal": 33681036,
+   "string": 34199884
+  },
+  {
+   "name": "ParentCalcType",
+   "func": 33689468,
+   "literal": 33691324,
+   "string": 34199492
+  },
+  {
+   "name": "ParentFunc",
+   "func": 34115032,
+   "literal": 34115200,
+   "string": 34210356
+  },
+  {
+   "name": "ParentLink",
+   "func": 33643496,
+   "literal": 33643772,
+   "string": 34199244
+  },
+  {
+   "name": "ParentNodeID",
+   "func": 33689468,
+   "literal": 33691212,
+   "string": 34199332
+  },
+  {
+   "name": "ParentParamFunc",
+   "func": 34113688,
+   "literal": 34113960,
+   "string": 34210428
+  },
+  {
+   "name": "PatternNo",
+   "func": 33761928,
+   "literal": 33762316,
+   "string": 34199172
+  },
+  {
+   "name": "PopularNameData_Create",
+   "func": 34035372,
+   "literal": 34035536,
+   "string": 34206812
+  },
+  {
+   "name": "PostMessage",
+   "func": 34121632,
+   "literal": 34121764,
+   "string": 34211152
+  },
+  {
+   "name": "PostSyncDelayMessage",
+   "func": 34115032,
+   "literal": 34115208,
+   "string": 34210508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 34113688,
+   "literal": 34114612,
+   "string": 34210412
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 34115032,
+   "literal": 34115220,
+   "string": 34210412
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 34116496,
+   "literal": 34117628,
+   "string": 34210412
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 34116496,
+   "literal": 34118336,
+   "string": 34210412
+  },
+  {
+   "name": "PropBindInstance",
+   "func": 33749044,
+   "literal": 33749152,
+   "string": 34200012
+  },
+  {
+   "name": "PropBindInstance",
+   "func": 33749156,
+   "literal": 33749264,
+   "string": 34200012
+  },
+  {
+   "name": "PropBindInstance",
+   "func": 33752452,
+   "literal": 33752520,
+   "string": 34200012
+  },
+  {
+   "name": "RecordSave",
+   "func": 34024116,
+   "literal": 34025692,
+   "string": 34203124
+  },
+  {
+   "name": "RomFSTable",
+   "func": 33829060,
+   "literal": 33829384,
+   "string": 34200156
+  },
+  {
+   "name": "ScanFunc",
+   "func": 34116496,
+   "literal": 34118324,
+   "string": 34210344
+  },
+  {
+   "name": "ScreenInstance",
+   "func": 33757452,
+   "literal": 33757528,
+   "string": 34200032
+  },
+  {
+   "name": "Secret_Create",
+   "func": 34035956,
+   "literal": 34036084,
+   "string": 34206912
+  },
+  {
+   "name": "StageData_Create",
+   "func": 34033888,
+   "literal": 34034016,
+   "string": 34206564
+  },
+  {
+   "name": "TargetPropName",
+   "func": 33632232,
+   "literal": 33632268,
+   "string": 34199460
+  },
+  {
+   "name": "TextureID",
+   "func": 33689468,
+   "literal": 33691188,
+   "string": 34199184
+  },
+  {
+   "name": "TextureImpInstance",
+   "func": 33773400,
+   "literal": 33773516,
+   "string": 34200100
+  },
+  {
+   "name": "TextureImpInstance",
+   "func": 33773520,
+   "literal": 33773636,
+   "string": 34200100
+  },
+  {
+   "name": "TextureInstance",
+   "func": 33770704,
+   "literal": 33770764,
+   "string": 34200084
+  },
+  {
+   "name": "TextureInstance",
+   "func": 33770768,
+   "literal": 33770828,
+   "string": 34200084
+  },
+  {
+   "name": "TextureName",
+   "func": 33689468,
+   "literal": 33691200,
+   "string": 34199292
+  },
+  {
+   "name": "TitleData_Create",
+   "func": 34030716,
+   "literal": 34030844,
+   "string": 34203692
+  },
+  {
+   "name": "TypeID",
+   "func": 33626976,
+   "literal": 33627660,
+   "string": 34198932
+  },
+  {
+   "name": "VertexBuffer",
+   "func": 33852432,
+   "literal": 33852548,
+   "string": 34200180
+  },
+  {
+   "name": "VertexBuffer",
+   "func": 33853408,
+   "literal": 33853500,
+   "string": 34200180
+  },
+  {
+   "name": "WH_StateInEndChildMP",
+   "func": 34115244,
+   "literal": 34115916,
+   "string": 34210484
+  },
+  {
+   "name": "WH_StateInEndParent",
+   "func": 34115244,
+   "literal": 34116080,
+   "string": 34210464
+  },
+  {
+   "name": "WH_StateInEndParentMP",
+   "func": 34115244,
+   "literal": 34116164,
+   "string": 34210532
+  },
+  {
+   "name": "WH_StateOutStartChild",
+   "func": 34116496,
+   "literal": 34117636,
+   "string": 34210556
+  },
+  {
+   "name": "ZTestEnable",
+   "func": 33689468,
+   "literal": 33691276,
+   "string": 34199304
+  },
+  {
+   "name": "ZWriteEnable",
+   "func": 33689468,
+   "literal": 33691264,
+   "string": 34199396
+  },
+  {
+   "name": "bad_exception",
+   "func": 33615432,
+   "literal": 33615460,
+   "string": 34158880
+  },
+  {
+   "name": "elemSize",
+   "func": 33557592,
+   "literal": 33559520,
+   "string": 34156396
+  },
+  {
+   "name": "port_receive_func",
+   "func": 34113688,
+   "literal": 34114600,
+   "string": 34210444
+  }
+ ],
+ "ov0": [
+  {
+   "name": "Copyright_Add",
+   "func": 34917664,
+   "literal": 34918548,
+   "string": 34999104
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34934972,
+   "literal": 34935048,
+   "string": 34999628
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34969376,
+   "literal": 34969460,
+   "string": 35001880
+  },
+  {
+   "name": "EndingCopyright_Create",
+   "func": 34993740,
+   "literal": 34993800,
+   "string": 35003032
+  },
+  {
+   "name": "EndingPiece_Create",
+   "func": 34975876,
+   "literal": 34977552,
+   "string": 35002180
+  },
+  {
+   "name": "EndingStaffRoll_Create",
+   "func": 34988476,
+   "literal": 34988536,
+   "string": 35002628
+  },
+  {
+   "name": "Ending_Add",
+   "func": 34924640,
+   "literal": 34924940,
+   "string": 34999484
+  },
+  {
+   "name": "Movie_Create",
+   "func": 34937888,
+   "literal": 34939716,
+   "string": 35000280
+  },
+  {
+   "name": "Opening_Add",
+   "func": 34919368,
+   "literal": 34920660,
+   "string": 34999232
+  },
+  {
+   "name": "OptionInfoChara_Create",
+   "func": 34967156,
+   "literal": 34968808,
+   "string": 35001896
+  },
+  {
+   "name": "OptionSaveDelete_Create",
+   "func": 34971876,
+   "literal": 34973692,
+   "string": 35002096
+  },
+  {
+   "name": "PassMark_Create",
+   "func": 34936176,
+   "literal": 34936696,
+   "string": 35000196
+  },
+  {
+   "name": "TopMenu_CharaCreate",
+   "func": 34954420,
+   "literal": 34955292,
+   "string": 35001036
+  }
+ ],
+ "ov1": [
+  {
+   "name": "CreateDrawFunc",
+   "func": 34921088,
+   "literal": 34921164,
+   "string": 35043752
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34936728,
+   "literal": 34936808,
+   "string": 35044772
+  },
+  {
+   "name": "DeckSelectPassword_Create",
+   "func": 34985200,
+   "literal": 34986692,
+   "string": 35047788
+  },
+  {
+   "name": "JAMissionTry_Add",
+   "func": 34930172,
+   "literal": 34930516,
+   "string": 35045028
+  },
+  {
+   "name": "JAMissionTry_InitPanelWidgetItem",
+   "func": 34935280,
+   "literal": 34936292,
+   "string": 35045304
+  },
+  {
+   "name": "JARankLst_Add",
+   "func": 34947244,
+   "literal": 34947668,
+   "string": 35046100
+  },
+  {
+   "name": "JGalaxyResult_Add",
+   "func": 34921648,
+   "literal": 34922784,
+   "string": 35044192
+  },
+  {
+   "name": "JGalaxyStageInfo_Add",
+   "func": 34917664,
+   "literal": 34918716,
+   "string": 35043824
+  },
+  {
+   "name": "Result_Add",
+   "func": 35019980,
+   "literal": 35020828,
+   "string": 35051244
+  },
+  {
+   "name": "RuleData_Create",
+   "func": 35013540,
+   "literal": 35013668,
+   "string": 35050304
+  },
+  {
+   "name": "RuleSelect_Add",
+   "func": 35004124,
+   "literal": 35005164,
+   "string": 35049060
+  },
+  {
+   "name": "SelectStandbyBar_Create",
+   "func": 35017164,
+   "literal": 35018216,
+   "string": 35050960
+  },
+  {
+   "name": "SelectStandby_Create",
+   "func": 35013756,
+   "literal": 35015544,
+   "string": 35050372
+  },
+  {
+   "name": "StageSelect_Add",
+   "func": 34993984,
+   "literal": 34994484,
+   "string": 35048628
+  }
+ ],
+ "ov2": [
+  {
+   "name": "CreateDrawFunc",
+   "func": 34920616,
+   "literal": 34920692,
+   "string": 34978828
+  },
+  {
+   "name": "Demo_Add",
+   "func": 34959904,
+   "literal": 34961624,
+   "string": 34981752
+  },
+  {
+   "name": "Demo_InitTexture",
+   "func": 34959904,
+   "literal": 34961664,
+   "string": 34982300
+  },
+  {
+   "name": "JGalaxy",
+   "func": 34975904,
+   "literal": 34976420,
+   "string": 34979456
+  },
+  {
+   "name": "JGalaxyBack_Create",
+   "func": 34957024,
+   "literal": 34957980,
+   "string": 34981192
+  },
+  {
+   "name": "JGalaxyBattle_Create",
+   "func": 34923452,
+   "literal": 34925340,
+   "string": 34979868
+  },
+  {
+   "name": "JGalaxyDemo_Create",
+   "func": 34956744,
+   "literal": 34956892,
+   "string": 34981004
+  },
+  {
+   "name": "JGalaxyMap_Create",
+   "func": 34933580,
+   "literal": 34935268,
+   "string": 34980084
+  },
+  {
+   "name": "JGalaxyMenu_Create",
+   "func": 34953536,
+   "literal": 34955256,
+   "string": 34980940
+  },
+  {
+   "name": "JGalaxyPlanet_Create",
+   "func": 34936132,
+   "literal": 34936716,
+   "string": 34980584
+  },
+  {
+   "name": "JGalaxyWarp_Create",
+   "func": 34951820,
+   "literal": 34952164,
+   "string": 34980672
+  },
+  {
+   "name": "JGalaxyWarp_CreatePlanetIn",
+   "func": 34952200,
+   "literal": 34952468,
+   "string": 34980792
+  },
+  {
+   "name": "JGalaxy_Add",
+   "func": 34917664,
+   "literal": 34918372,
+   "string": 34978800
+  }
+ ],
+ "ov3": [
+  {
+   "name": "CreateDrawFunc",
+   "func": 34920028,
+   "literal": 34920104,
+   "string": 34986672
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34962596,
+   "literal": 34962676,
+   "string": 34989440
+  },
+  {
+   "name": "JAGetJPower_Add",
+   "func": 34976844,
+   "literal": 34977092,
+   "string": 34990868
+  },
+  {
+   "name": "JARBAftLstAll_Add",
+   "func": 34940444,
+   "literal": 34940680,
+   "string": 34988620
+  },
+  {
+   "name": "JARBAftLstSel_Add",
+   "func": 34953536,
+   "literal": 34953908,
+   "string": 34989476
+  },
+  {
+   "name": "JArena_AddJob",
+   "func": 34917724,
+   "literal": 34918204,
+   "string": 34986656
+  }
+ ],
+ "ov4": [
+  {
+   "name": "CreateDrawFunc",
+   "func": 34923540,
+   "literal": 34923616,
+   "string": 34998500
+  },
+  {
+   "name": "JQuizBattleMainPlay_Add",
+   "func": 34992532,
+   "literal": 34993836,
+   "string": 35003620
+  },
+  {
+   "name": "JQuizBattleRuleDisp_Add",
+   "func": 34986552,
+   "literal": 34988420,
+   "string": 35002692
+  },
+  {
+   "name": "JQuizCmn_BaseBG_Create",
+   "func": 34923012,
+   "literal": 34923396,
+   "string": 34998572
+  },
+  {
+   "name": "JQuizCommonScoreClass_Create",
+   "func": 34930020,
+   "literal": 34930908,
+   "string": 34999040
+  },
+  {
+   "name": "JQuizCommonTimeClass_Create",
+   "func": 34933652,
+   "literal": 34934108,
+   "string": 34999096
+  },
+  {
+   "name": "JQuizCommonWork_Create",
+   "func": 34926512,
+   "literal": 34926840,
+   "string": 34998876
+  },
+  {
+   "name": "JQuizCommonWork_Quiz_Shuffle_Core",
+   "func": 34927488,
+   "literal": 34927876,
+   "string": 34998900
+  },
+  {
+   "name": "JQuizJGalaxyMode_Add",
+   "func": 34971944,
+   "literal": 34972664,
+   "string": 35001276
+  },
+  {
+   "name": "JQuizMainAnswerDispClass_Create",
+   "func": 34989664,
+   "literal": 34990348,
+   "string": 35003352
+  },
+  {
+   "name": "JQuizMainAnswerMaskClass_Create",
+   "func": 34952732,
+   "literal": 34952888,
+   "string": 35000196
+  },
+  {
+   "name": "JQuizMainBattleInfoClass_Create",
+   "func": 34991816,
+   "literal": 34991884,
+   "string": 35003556
+  },
+  {
+   "name": "JQuizMainBlackBeltClass_Create",
+   "func": 34953156,
+   "literal": 34953424,
+   "string": 35000292
+  },
+  {
+   "name": "JQuizMainCommonAnswerMixClass_Create",
+   "func": 34943656,
+   "literal": 34943708,
+   "string": 34999744
+  },
+  {
+   "name": "JQuizMainCommon_ListRandomMix",
+   "func": 34943440,
+   "literal": 34943648,
+   "string": 34999712
+  },
+  {
+   "name": "JQuizMainMultiRankFukiClass_Create",
+   "func": 34964688,
+   "literal": 34965136,
+   "string": 35000764
+  },
+  {
+   "name": "JQuizMainMultiScoreClass_Create",
+   "func": 34964024,
+   "literal": 34964164,
+   "string": 35000664
+  },
+  {
+   "name": "JQuizMainMultiScoreOneClass_Create",
+   "func": 34962292,
+   "literal": 34962996,
+   "string": 35000696
+  },
+  {
+   "name": "JQuizMainQuestionMaskClass_Create",
+   "func": 34952208,
+   "literal": 34952420,
+   "string": 35000228
+  },
+  {
+   "name": "JQuizMainQuizNoDispClass_Create",
+   "func": 34955892,
+   "literal": 34957320,
+   "string": 35000448
+  },
+  {
+   "name": "JQuizMainQuizNoSmallClass_Create",
+   "func": 34954012,
+   "literal": 34955044,
+   "string": 35000356
+  },
+  {
+   "name": "JQuizMainResultDispClass_Create",
+   "func": 34959120,
+   "literal": 34960356,
+   "string": 35000524
+  },
+  {
+   "name": "JQuizMainSinglePauseClass_Create",
+   "func": 34965700,
+   "literal": 34967232,
+   "string": 35000976
+  },
+  {
+   "name": "JQuizMainSinglePlay_Add",
+   "func": 34968240,
+   "literal": 34969460,
+   "string": 35001056
+  },
+  {
+   "name": "JQuizMainSingleScoreClass_Create",
+   "func": 34961312,
+   "literal": 34961908,
+   "string": 35000600
+  },
+  {
+   "name": "JQuizMainSubPlayerMarkClass_Create",
+   "func": 34990784,
+   "literal": 34991020,
+   "string": 35003428
+  },
+  {
+   "name": "JQuizMainSubScreenPlateClass_Create",
+   "func": 34946044,
+   "literal": 34947608,
+   "string": 34999936
+  },
+  {
+   "name": "JQuizMainSubWaitPlayerClass_Create",
+   "func": 34991560,
+   "literal": 34991712,
+   "string": 35003492
+  },
+  {
+   "name": "JQuizMainTextQDispClass_Create",
+   "func": 34943904,
+   "literal": 34944880,
+   "string": 34999812
+  },
+  {
+   "name": "JQuizMainTimeGaugeBGClass_Create",
+   "func": 34950740,
+   "literal": 34950968,
+   "string": 35000076
+  },
+  {
+   "name": "JQuizMainTimeGaugeClass_Create",
+   "func": 34949860,
+   "literal": 34950360,
+   "string": 35000020
+  },
+  {
+   "name": "JQuizMainTimePlateClass_Create",
+   "func": 34951204,
+   "literal": 34951724,
+   "string": 35000140
+  },
+  {
+   "name": "JQuizResultJPowerGraphClass_Create",
+   "func": 34974304,
+   "literal": 34974356,
+   "string": 35001596
+  },
+  {
+   "name": "JQuizResultMultiPlay_Add",
+   "func": 34983716,
+   "literal": 34985700,
+   "string": 35002356
+  },
+  {
+   "name": "JQuizResultScoreDispClass_Create",
+   "func": 34973748,
+   "literal": 34973816,
+   "string": 35001524
+  },
+  {
+   "name": "JQuizResultWinLosePlateClass_Create",
+   "func": 34972672,
+   "literal": 34972992,
+   "string": 35001332
+  },
+  {
+   "name": "JQuizStartBackPlateClass_Create",
+   "func": 34939364,
+   "literal": 34940436,
+   "string": 34999444
+  },
+  {
+   "name": "JQuizStartCore_Add",
+   "func": 34940632,
+   "literal": 34942068,
+   "string": 34999600
+  },
+  {
+   "name": "JQuiz_Add_Core",
+   "func": 34917692,
+   "literal": 34917884,
+   "string": 34998432
+  },
+  {
+   "name": "ResultRank_Create",
+   "func": 34979780,
+   "literal": 34980932,
+   "string": 35001932
+  }
+ ],
+ "ov5": [
+  {
+   "name": "ComicDeck_DispKomaCreate",
+   "func": 34917664,
+   "literal": 34917828,
+   "string": 35058496
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34935952,
+   "literal": 34936028,
+   "string": 35058868
+  },
+  {
+   "name": "Database_Add",
+   "func": 35024112,
+   "literal": 35024612,
+   "string": 35067196
+  },
+  {
+   "name": "DeckMakeTutorial_Add",
+   "func": 35000708,
+   "literal": 35001724,
+   "string": 35066160
+  },
+  {
+   "name": "DeckMake_Add",
+   "func": 34924252,
+   "literal": 34924736,
+   "string": 35058652
+  },
+  {
+   "name": "DemoData_Create",
+   "func": 35050440,
+   "literal": 35050604,
+   "string": 35070532
+  },
+  {
+   "name": "Input_Add",
+   "func": 34993112,
+   "literal": 34994028,
+   "string": 35065244
+  },
+  {
+   "name": "JPowerData_Create",
+   "func": 35017448,
+   "literal": 35017576,
+   "string": 35066840
+  },
+  {
+   "name": "JPowerKomaList_Add",
+   "func": 35023252,
+   "literal": 35023604,
+   "string": 35067156
+  },
+  {
+   "name": "KomaBook_Add",
+   "func": 34992032,
+   "literal": 34992352,
+   "string": 35063592
+  },
+  {
+   "name": "KomaExplanationData_Create",
+   "func": 34992880,
+   "literal": 34993092,
+   "string": 35063624
+  },
+  {
+   "name": "KomaList_Create",
+   "func": 34928024,
+   "literal": 34929164,
+   "string": 35058900
+  },
+  {
+   "name": "KomaState_Create",
+   "func": 34948808,
+   "literal": 34950256,
+   "string": 35060348
+  },
+  {
+   "name": "PatternNo",
+   "func": 34938072,
+   "literal": 34938820,
+   "string": 35060204
+  },
+  {
+   "name": "PatternNo",
+   "func": 34990564,
+   "literal": 34991304,
+   "string": 35063580
+  },
+  {
+   "name": "PieceData_Create",
+   "func": 35050116,
+   "literal": 35050280,
+   "string": 35070480
+  }
+ ],
+ "ov6": [
+  {
+   "name": "BattleMapGimmick_Create",
+   "func": 35008904,
+   "literal": 35009556,
+   "string": 35071008
+  },
+  {
+   "name": "BattleMapGripInit",
+   "func": 35024584,
+   "literal": 35024836,
+   "string": 35071448
+  },
+  {
+   "name": "BattleMapGripLoad",
+   "func": 35023688,
+   "literal": 35024028,
+   "string": 35071388
+  },
+  {
+   "name": "BattleMapInit",
+   "func": 35003572,
+   "literal": 35004560,
+   "string": 35070912
+  },
+  {
+   "name": "BattleMapInitConveyor",
+   "func": 35003572,
+   "literal": 35004600,
+   "string": 35070928
+  },
+  {
+   "name": "BattleMapInitWall",
+   "func": 35025384,
+   "literal": 35026572,
+   "string": 35071564
+  },
+  {
+   "name": "BattleMapItemInit",
+   "func": 35017432,
+   "literal": 35017704,
+   "string": 35071428
+  },
+  {
+   "name": "BattleMapLoadItem",
+   "func": 35013828,
+   "literal": 35015788,
+   "string": 35071408
+  },
+  {
+   "name": "Battle_CameraCreate",
+   "func": 34937832,
+   "literal": 34938268,
+   "string": 35069120
+  },
+  {
+   "name": "Battle_CharaCreate",
+   "func": 34957880,
+   "literal": 34958688,
+   "string": 35070248
+  },
+  {
+   "name": "Battle_CharaDataInit",
+   "func": 34992208,
+   "literal": 34992268,
+   "string": 35070432
+  },
+  {
+   "name": "Battle_CharaInfoCreate",
+   "func": 34996192,
+   "literal": 34996252,
+   "string": 35070556
+  },
+  {
+   "name": "Battle_CharaInfoPopularSet",
+   "func": 34996268,
+   "literal": 34998192,
+   "string": 35070580
+  },
+  {
+   "name": "Battle_CharaParamCreate",
+   "func": 35001520,
+   "literal": 35001712,
+   "string": 35070772
+  },
+  {
+   "name": "Battle_ComicDeckCreate",
+   "func": 34939152,
+   "literal": 34940416,
+   "string": 35069268
+  },
+  {
+   "name": "Battle_DemoKoCreate",
+   "func": 34944992,
+   "literal": 34945448,
+   "string": 35069400
+  },
+  {
+   "name": "Battle_MarkerCreate",
+   "func": 35028768,
+   "literal": 35029836,
+   "string": 35071604
+  },
+  {
+   "name": "Battle_NoteTrackCreate",
+   "func": 34952160,
+   "literal": 34952356,
+   "string": 35070204
+  },
+  {
+   "name": "Battle_ObjCtrlManCreate",
+   "func": 35031944,
+   "literal": 35032196,
+   "string": 35071816
+  },
+  {
+   "name": "Battle_ObjShotManCreate",
+   "func": 35039164,
+   "literal": 35039420,
+   "string": 35071860
+  },
+  {
+   "name": "Battle_PauseCreate",
+   "func": 34923400,
+   "literal": 34924528,
+   "string": 35068636
+  },
+  {
+   "name": "Battle_PauseWiFiCreate",
+   "func": 34927908,
+   "literal": 34928176,
+   "string": 35068748
+  },
+  {
+   "name": "Battle_PrmDataInit",
+   "func": 35062460,
+   "literal": 35062904,
+   "string": 35072228
+  },
+  {
+   "name": "Battle_PursuerCreate",
+   "func": 35001864,
+   "literal": 35002168,
+   "string": 35070852
+  },
+  {
+   "name": "Battle_WindowCreate",
+   "func": 34946784,
+   "literal": 34947820,
+   "string": 35069800
+  }
+ ],
+ "ov7": [
+  {
+   "name": "CMMenuCmn_BaseBG_Create",
+   "func": 34933164,
+   "literal": 34933548,
+   "string": 35034984
+  },
+  {
+   "name": "CMMenuCmn_PackArc_InitLoad",
+   "func": 34934084,
+   "literal": 34934196,
+   "string": 35035008
+  },
+  {
+   "name": "COMMON",
+   "func": 35003820,
+   "literal": 35003972,
+   "string": 35038968
+  },
+  {
+   "name": "CommuMenuDataLeaderSel_Add",
+   "func": 35005672,
+   "literal": 35006020,
+   "string": 35039032
+  },
+  {
+   "name": "CommuMenuDataMemberEnt_Add_Core",
+   "func": 35006436,
+   "literal": 35006872,
+   "string": 35039088
+  },
+  {
+   "name": "CommuMenuDwldMemberEnt_Add",
+   "func": 35004140,
+   "literal": 35004376,
+   "string": 35038976
+  },
+  {
+   "name": "CommuMenuEntryDataEnt_Add_Core",
+   "func": 35017724,
+   "literal": 35019304,
+   "string": 35040136
+  },
+  {
+   "name": "CommuMenuError_WiFi_Add",
+   "func": 35017048,
+   "literal": 35017352,
+   "string": 35040092
+  },
+  {
+   "name": "CommuMenuError_Wrls_Add",
+   "func": 35017048,
+   "literal": 35017360,
+   "string": 35040068
+  },
+  {
+   "name": "CommuMenuFrndList_Add",
+   "func": 34936968,
+   "literal": 34938140,
+   "string": 35035672
+  },
+  {
+   "name": "CommuMenuFrndTop_Add",
+   "func": 34944004,
+   "literal": 34945432,
+   "string": 35036204
+  },
+  {
+   "name": "CommuMenuQuizLeaderSel_Add",
+   "func": 35009052,
+   "literal": 35009396,
+   "string": 35039148
+  },
+  {
+   "name": "CommuMenuSuretigai_Add",
+   "func": 34983512,
+   "literal": 34985228,
+   "string": 35038652
+  },
+  {
+   "name": "CommuMenuTop_Add",
+   "func": 34922156,
+   "literal": 34923684,
+   "string": 35034756
+  },
+  {
+   "name": "CommuMenuWLCmnMemEnt_Add",
+   "func": 34970516,
+   "literal": 34970948,
+   "string": 35037620
+  },
+  {
+   "name": "CommuMenuWLLeaderState_Create",
+   "func": 34970088,
+   "literal": 34970296,
+   "string": 35037560
+  },
+  {
+   "name": "CommuMenuWiFiAbMatch_Add",
+   "func": 34948480,
+   "literal": 34949168,
+   "string": 35036464
+  },
+  {
+   "name": "CommuMenuWiFiError_Add",
+   "func": 35016424,
+   "literal": 35016708,
+   "string": 35040020
+  },
+  {
+   "name": "CommuMenuWiFiFrMatch_Add",
+   "func": 34953116,
+   "literal": 34953540,
+   "string": 35036540
+  },
+  {
+   "name": "CommuMenuWiFiMatchSel_Add",
+   "func": 34980448,
+   "literal": 34981368,
+   "string": 35038316
+  },
+  {
+   "name": "CommuMenuWiFiMemberEnt_Add",
+   "func": 34954272,
+   "literal": 34954960,
+   "string": 35036596
+  },
+  {
+   "name": "CommuMenuWrlsEntryObj_Init",
+   "func": 34966632,
+   "literal": 34966808,
+   "string": 35037432
+  },
+  {
+   "name": "CommuMenuWrlsWatchWait_Add",
+   "func": 35012588,
+   "literal": 35014408,
+   "string": 35039656
+  },
+  {
+   "name": "CommuMenu_Add_Core",
+   "func": 34921112,
+   "literal": 34921308,
+   "string": 35034348
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34927464,
+   "literal": 34927540,
+   "string": 35034724
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 34939912,
+   "literal": 34939992,
+   "string": 35035636
+  },
+  {
+   "name": "MB_COMM_PSTATE_BOOT_REQUEST",
+   "func": 35032572,
+   "literal": 35033808,
+   "string": 35034032
+  },
+  {
+   "name": "MB_COMM_PSTATE_BOOT_STARTABLE",
+   "func": 35032572,
+   "literal": 35033812,
+   "string": 35034124
+  },
+  {
+   "name": "MB_COMM_PSTATE_CONNECTED",
+   "func": 35032572,
+   "literal": 35033784,
+   "string": 35033864
+  },
+  {
+   "name": "MB_COMM_PSTATE_DISCONNECTED",
+   "func": 35032572,
+   "literal": 35033788,
+   "string": 35033920
+  },
+  {
+   "name": "MB_COMM_PSTATE_END",
+   "func": 35032572,
+   "literal": 35033824,
+   "string": 35033664
+  },
+  {
+   "name": "MB_COMM_PSTATE_ERROR",
+   "func": 35032572,
+   "literal": 35033828,
+   "string": 35033704
+  },
+  {
+   "name": "MB_COMM_PSTATE_INIT_COMPLETE",
+   "func": 35032572,
+   "literal": 35033780,
+   "string": 35034092
+  },
+  {
+   "name": "MB_COMM_PSTATE_KICKED",
+   "func": 35032572,
+   "literal": 35033792,
+   "string": 35033728
+  },
+  {
+   "name": "MB_COMM_PSTATE_MEMBER_FULL",
+   "func": 35032572,
+   "literal": 35033820,
+   "string": 35033892
+  },
+  {
+   "name": "MB_COMM_PSTATE_NONE",
+   "func": 35032572,
+   "literal": 35033776,
+   "string": 35033684
+  },
+  {
+   "name": "MB_COMM_PSTATE_REQUESTED",
+   "func": 35032572,
+   "literal": 35033816,
+   "string": 35033836
+  },
+  {
+   "name": "MB_COMM_PSTATE_REQ_ACCEPTED",
+   "func": 35032572,
+   "literal": 35033796,
+   "string": 35033948
+  },
+  {
+   "name": "MB_COMM_PSTATE_SEND_COMPLETE",
+   "func": 35032572,
+   "literal": 35033804,
+   "string": 35034060
+  },
+  {
+   "name": "MB_COMM_PSTATE_SEND_PROCEED",
+   "func": 35032572,
+   "literal": 35033800,
+   "string": 35034004
+  },
+  {
+   "name": "MB_COMM_PSTATE_WAIT_TO_SEND",
+   "func": 35032572,
+   "literal": 35033832,
+   "string": 35033976
+  },
+  {
+   "name": "Main_CommunicationAdd",
+   "func": 35028940,
+   "literal": 35029780,
+   "string": 35040404
+  },
+  {
+   "name": "PostMessage",
+   "func": 34968908,
+   "literal": 34969040,
+   "string": 35037404
+  },
+  {
+   "name": "SelectStandby_Create",
+   "func": 35010020,
+   "literal": 35011764,
+   "string": 35039584
+  },
+  {
+   "name": "VXkOdX",
+   "func": 35021548,
+   "literal": 35022588,
+   "string": 35040344
+  }
+ ],
+ "ov8": [
+  {
+   "name": "WiFi_ConnectionAdd",
+   "func": 35027296,
+   "literal": 35027540,
+   "string": 35045776
+  }
+ ],
+ "ov10": [
+  {
+   "name": "JUpiJUdMJUpsJU1wJUReJUPn",
+   "func": 35265628,
+   "literal": 35265784,
+   "string": 35272432
+  },
+  {
+   "name": "JUpiJUdMJUpsJU1wJUReJUPn",
+   "func": 35266308,
+   "literal": 35266352,
+   "string": 35272432
+  },
+  {
+   "name": "NintendoDS",
+   "func": 35186632,
+   "literal": 35186940,
+   "string": 35286692
+  },
+  {
+   "name": "PostMessage",
+   "func": 35250384,
+   "literal": 35250528,
+   "string": 35287464
+  },
+  {
+   "name": "PostMessage",
+   "func": 35250532,
+   "literal": 35250644,
+   "string": 35287464
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35255336,
+   "literal": 35255464,
+   "string": 35287508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35255468,
+   "literal": 35255632,
+   "string": 35287508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35255636,
+   "literal": 35255764,
+   "string": 35287508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35255768,
+   "literal": 35255888,
+   "string": 35287508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35255892,
+   "literal": 35256332,
+   "string": 35287508
+  },
+  {
+   "name": "PostSyncMessage",
+   "func": 35256560,
+   "literal": 35256712,
+   "string": 35287508
+  },
+  {
+   "name": "WiFiDataSendRecv_DataSendONEWAYUnreliable",
+   "func": 35270840,
+   "literal": 35270976,
+   "string": 35287788
+  },
+  {
+   "name": "WiFiGame_SendMess_ONEWAY",
+   "func": 35255892,
+   "literal": 35256320,
+   "string": 35287548
+  },
+  {
+   "name": "WiFiGame_Static_SendCOMM",
+   "func": 35256372,
+   "literal": 35256552,
+   "string": 35287576
+  },
+  {
+   "name": "WiFiGame_Static_SendCOMMUnreliable",
+   "func": 35257336,
+   "literal": 35257548,
+   "string": 35287736
+  },
+  {
+   "name": "WiFiGame_Static_SendCUSTOM",
+   "func": 35258640,
+   "literal": 35258852,
+   "string": 35287604
+  },
+  {
+   "name": "WiFi_AllocFunc",
+   "func": 35233888,
+   "literal": 35233924,
+   "string": 35287364
+  },
+  {
+   "name": "WiFi_Init_MemoryManager",
+   "func": 35233512,
+   "literal": 35233664,
+   "string": 35287380
+  },
+  {
+   "name": "WiFi_SendPersonalData",
+   "func": 35258328,
+   "literal": 35258576,
+   "string": 35287524
+  }
+ ],
+ "ov11": [
+  {
+   "name": "BattleAIDeck_CallBackCobjWorkCreate",
+   "func": 35087104,
+   "literal": 35087352,
+   "string": 35133436
+  },
+  {
+   "name": "BattleAIMove_Create",
+   "func": 35088700,
+   "literal": 35089392,
+   "string": 35133576
+  },
+  {
+   "name": "BattleAIObj_CreateBranchNode",
+   "func": 35114704,
+   "literal": 35114936,
+   "string": 35133888
+  },
+  {
+   "name": "BattleAIObj_CreateCommandNode",
+   "func": 35116952,
+   "literal": 35117184,
+   "string": 35133944
+  },
+  {
+   "name": "BattleAIState_Create",
+   "func": 35098616,
+   "literal": 35098864,
+   "string": 35133684
+  },
+  {
+   "name": "BattleAI_Create",
+   "func": 35072608,
+   "literal": 35073540,
+   "string": 35133340
+  }
+ ],
+ "ov12": [
+  {
+   "name": "CloneMain",
+   "func": 35321912,
+   "literal": 35321964,
+   "string": 35460800
+  },
+  {
+   "name": "CloneMain",
+   "func": 35322176,
+   "literal": 35322228,
+   "string": 35460812
+  },
+  {
+   "name": "CloneMain",
+   "func": 35322668,
+   "literal": 35322720,
+   "string": 35460824
+  },
+  {
+   "name": "CloneMain",
+   "func": 35330984,
+   "literal": 35331036,
+   "string": 35461284
+  },
+  {
+   "name": "CloneMain",
+   "func": 35331052,
+   "literal": 35331136,
+   "string": 35461296
+  },
+  {
+   "name": "CloneMain",
+   "func": 35363384,
+   "literal": 35363436,
+   "string": 35470224
+  },
+  {
+   "name": "CloneMain",
+   "func": 35419940,
+   "literal": 35420004,
+   "string": 35472924
+  },
+  {
+   "name": "CloneMain",
+   "func": 35432424,
+   "literal": 35432488,
+   "string": 35473660
+  },
+  {
+   "name": "CommonInfo_Create",
+   "func": 35376168,
+   "literal": 35377772,
+   "string": 35471288
+  },
+  {
+   "name": "CommonWindow_Create",
+   "func": 35366044,
+   "literal": 35367720,
+   "string": 35470956
+  },
+  {
+   "name": "CreateChecker",
+   "func": 35327968,
+   "literal": 35329564,
+   "string": 35461356
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 35316844,
+   "literal": 35316920,
+   "string": 35460920
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 35357596,
+   "literal": 35357664,
+   "string": 35470368
+  },
+  {
+   "name": "CreateDrawFunc",
+   "func": 35420396,
+   "literal": 35420588,
+   "string": 35473700
+  },
+  {
+   "name": "CreateImp",
+   "func": 35334936,
+   "literal": 35336792,
+   "string": 35465220
+  },
+  {
+   "name": "CreateImpCopy",
+   "func": 35334936,
+   "literal": 35336836,
+   "string": 35465232
+  },
+  {
+   "name": "CreateImpFunc",
+   "func": 35341400,
+   "literal": 35341456,
+   "string": 35470336
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35310328,
+   "literal": 35310836,
+   "string": 35460848
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35327372,
+   "literal": 35327860,
+   "string": 35461320
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35327968,
+   "literal": 35328908,
+   "string": 35461332
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35327968,
+   "literal": 35329388,
+   "string": 35461344
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35345308,
+   "literal": 35346804,
+   "string": 35470260
+  },
+  {
+   "name": "CreateIntf",
+   "func": 35420592,
+   "literal": 35420648,
+   "string": 35473672
+  },
+  {
+   "name": "DoInit",
+   "func": 35361212,
+   "literal": 35362144,
+   "string": 35470160
+  },
+  {
+   "name": "MakeFitCollision",
+   "func": 35309548,
+   "literal": 35309984,
+   "string": 35460968
+  },
+  {
+   "name": "MotionController",
+   "func": 35337404,
+   "literal": 35337608,
+   "string": 35465280
+  },
+  {
+   "name": "PostMessage",
+   "func": 35339928,
+   "literal": 35341028,
+   "string": 35470308
+  },
+  {
+   "name": "PostMessage",
+   "func": 35359712,
+   "literal": 35361200,
+   "string": 35470308
+  },
+  {
+   "name": "RegistCollision",
+   "func": 35326216,
+   "literal": 35326580,
+   "string": 35461404
+  },
+  {
+   "name": "SetFont",
+   "func": 35430656,
+   "literal": 35430980,
+   "string": 35473652
+  },
+  {
+   "name": "SetFontPaletteIndex",
+   "func": 35423344,
+   "literal": 35423496,
+   "string": 35473716
+  },
+  {
+   "name": "SetItemSize",
+   "func": 35414364,
+   "literal": 35414444,
+   "string": 35472960
+  },
+  {
+   "name": "ShapeID",
+   "func": 35325408,
+   "literal": 35325956,
+   "string": 35461264
+  },
+  {
+   "name": "WiFiVC_Proc_Init",
+   "func": 35438324,
+   "literal": 35439324,
+   "string": 35475572
+  },
+  {
+   "name": "WiFiVoiceChat_Initialize",
+   "func": 35438324,
+   "literal": 35438388,
+   "string": 35475592
+  }
+ ]
+}

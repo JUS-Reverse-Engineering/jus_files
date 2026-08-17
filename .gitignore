@@ -8,3 +8,6 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# Regenerable analysis caches (not artifacts -- rebuild instead of tracking)
+analysis/strings_cache/
