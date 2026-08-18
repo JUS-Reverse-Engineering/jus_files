@@ -1,5 +1,12 @@
 # Extractions are tracked here; raw cartridge images are not.
 # Anyone with the cart can regenerate these, and git handles a 64MB blob badly.
+#
+# Savestates follow the same rule, applied by cost rather than by extension. Only the
+# ones that took real manual work and that no script recreates are tracked, gzipped, in
+# save_states/ -- currently three. Anything boot_verified.py can regenerate in a couple
+# of minutes is deliberately absent, and save_states/INDEX.md lists what was left out
+# and how to remake it. A raw .mln is 18.4MB and gzips to ~1.9MB, so tracking the whole
+# set would have cost 184MB to store states a script rebuilds on demand.
 *.nds
 *.sav
 *.dsv
