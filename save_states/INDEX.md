@@ -38,6 +38,9 @@ The `.meta.json` files carry the framecount and session id from when each state 
 | `pc-kenshin-npc-nami-dark-tournament` | Same, victim **Nami `15`, max 136** (LIGHT). P1 x 658.7, victim x 576.0. |
 | `pc-kenshin-npc-franky-dark-tournament` | Same, victim **Franky `17`, max 176** (HEAVY); Raoh `62` (192) and a damaged Nami benched. P1 x 728.0, victim x 649.6. |
 | `pc-kenshin-npc-raoh-dark-tournament` | Same, victim **Raoh `62`, max 192** (HEAVY). P1 x 739.8, victim x 681.4. |
+| `pc-kenshin-luffy-guard` | **Guard-break sweep state (2026-09-02).** `pc-kenshin-npc-luffy-dark-tournament` with the in-match pause menu's COM設定 set to **ガード** (START, DOWN, A, A, START), then re-saved through the bridge. The CPU guards after the first hit lands and holds guard until 122 frames pass with no blocked hit. Same live addresses as the parent state. Built for `jus-hitstun-types-0nxs` / `jus-guard-gauge-discovery-7mr8`; the menu dance is scripted but a fresh state costs a launch, so it is kept. |
+| `pc-kenshin-nami-guard` | Same, from the Nami parent (LIGHT victim). |
+| `pc-kenshin-franky-guard` | Same, from the Franky parent (HEAVY victim). |
 | `pc-momotaro-npc-nami-dark-tournament` | MOMO deck with **Momotaro `67` active** (184) vs Nami `15` (136). Owner: Momotaro's X is a **beam**. P1 x 645.4, victim x 576.0. |
 | `pc-yusuke-npc-nami-dark-tournament` | MOMO deck with **Yusuke `32` active** (184) vs Nami `15` (136). Owner: Yusuke's X is a **giant high-priority projectile that eats other projectiles**. P1 x 645.4, victim x 576.0. |
 
