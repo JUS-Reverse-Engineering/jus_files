@@ -18,7 +18,7 @@ Raw cartridge images (`*.nds`, `*.sav`) are deliberately **not** tracked — see
 
 ## arm9/ — the important one for reverse engineering
 
-Regenerate with, from the JUSToolkit checkout:
+Regenerate with, from the jus_re checkout:
 
 ```bash
 python3 scripts/extract_arm9.py /path/to/jus.nds jus_files/arm9
