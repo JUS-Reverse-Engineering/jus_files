@@ -43,16 +43,17 @@ The `.meta.json` files carry the framecount and session id from when each state 
 | `pc-kenshin-franky-guard` | Same, from the Franky parent (HEAVY victim). |
 | `pc-momotaro-npc-nami-dark-tournament` | MOMO deck with **Momotaro `67` active** (184) vs Nami `15` (136). Owner: Momotaro's X is a **beam**. P1 x 645.4, victim x 576.0. |
 | `pc-yusuke-npc-nami-dark-tournament` | MOMO deck with **Yusuke `32` active** (184) vs Nami `15` (136). Owner: Yusuke's X is a **giant high-priority projectile that eats other projectiles**. P1 x 645.4, victim x 576.0. |
-| `pc-raoh-npc-naruto-dark-tournament` | **UNLOADABLE until re-saved: melonDS savestate major 13 (stock melonDS 1.1); our fork needs major 14, and loading one hard-crashed melonDS (`jus-e2w4` run 3). Same for the nine states below.** Owner-built 2026-09-03 (menu-saved, no bridge sidecar). Deck Raoh `62` (leader, active), Kakashi `23`, Muhyo `59` vs CPU Naruto `20`. Owner: **L switches to Kakashi, R to Muhyo** from this state — the character-switch positive control that touch injection never gave us (`jus-3aw`). Also the Raoh up+Y pop state (`jus-knockback-pop-spot-check-m4uy`). Roster and live addresses to verify at first load. |
-| `pc-kakashi-npc-naruto-dark-tournament` | Same deck, **Kakashi `23` active.** First port character; `jus-kakashi-moveset-map-33lu`. |
-| `pc-muhyo-npc-naruto-dark-tournament` | Same deck, **Muhyo `59` active** (summoner type). Muhyo fwd+Y / up+Y pop state (`m4uy`). |
-| `pc-sasuke-npc-naruto-dark-tournament` | **Sasuke `21` active** vs Naruto `20`. Up+Y pop (`m4uy`) and 8-koma X launcher (`jus-launcher-move-spot-check-hiyh`). Deck roster unverified. |
-| `pc-eve-npc-naruto-dark-tournament` | **Eve `37` active** (LIGHT) vs Naruto `20`. 4-koma X launcher (`hiyh`). Deck roster unverified. |
-| `pc-yohswan-npc-naruto-dark-tournament` | **Yoh (White Swan) `26` active** vs Naruto `20`. Owner: the 6-koma X special inflicts **launcher state plus blind** (`hiyh`). Deck roster unverified. |
-| `pc-taikoubou-npc-naruto-dark-tournament` | **Taikoubou `68` active** (summoner type) vs Naruto `20`. Second port character after Kakashi. Deck roster unverified. |
-| `pc-yugi-npc-naruto-dark-tournament` | **Yugi `35` active** (summoner type) vs Naruto `20`. Deck roster unverified. |
-| `pc-mashirito-npc-naruto-dark-tournament` | **Mashirito `57` active** vs Naruto `20`. Owner: creates items rather than summoning — Ultimate Action leaves items on the field, Y makes chests (look like item chests, explode on contact), fwd+Y sends a walking object that explodes at path end. Deck roster unverified. |
-| `pc-rukia-npc-naruto-dark-tournament` | **Rukia `41` active** (LIGHT) vs Naruto `20`. Her 4-koma up+X is believed to inflict status and damage together (`jus-law` A2). Deck roster unverified. |
+| `pc-taikoubou-npc-jotaro-dark-tournament` | **Owner-built 2026-09-03 (second batch, savestate major 14, menu-saved in the fork, no bridge framecount).** **Taikoubou `68` active** (summoner type; second port character, `jus-4ocm`) vs CPU **Jotaro `28`**. **The only state whose deck has L/R switch hotkeys assigned** in the deck builder (owner: L/R only switch when the hotkey sticker is on a battle koma) — the switch positive control for `jus-e2w4`. Deck roster to verify at first load. |
+| `pc-kakashi-npc-jotaro-dark-tournament` | Same batch. **Kakashi `23` active** vs Jotaro `28`. First port character (`jus-kakashi-moveset-map-33lu`). Roster unverified. |
+| `pc-muhyo-npc-jotaro-dark-tournament` | Same batch. **Muhyo `59` active** (summoner) vs Jotaro `28`. Fwd+Y / up+Y pop state (`jus-knockback-pop-spot-check-m4uy`). Roster unverified. |
+| `pc-sasuke-npc-jotaro-dark-tournament` | Same batch. **Sasuke `21` active** vs Jotaro `28`. Up+Y pop (`m4uy`), 8-koma X launcher (`jus-launcher-move-spot-check-hiyh`). Roster unverified. |
+| `pc-eve-npc-jotaro-dark-tournament` | Same batch. **Eve `37` active** (LIGHT) vs Jotaro `28`. 4-koma X launcher (`hiyh`). Roster unverified. |
+| `pc-yohswan-npc-jotaro-dark-tournament` | Same batch. **Yoh (White Swan) `26` active** vs Jotaro `28`. 6-koma X = launcher + blind (`hiyh`). Roster unverified. |
+| `pc-yugi-npc-jotaro-dark-tournament` | Same batch. **Yugi `35` active** (summoner) vs Jotaro `28`. Roster unverified. |
+| `pc-mashirito-npc-jotaro-dark-tournament` | Same batch. **Mashirito `57` active** (item-creator) vs Jotaro `28`. Roster unverified. |
+| `pc-rukia-npc-jotaro-dark-tournament` | Same batch. **Rukia `41` active** (LIGHT) vs Jotaro `28`. Roster unverified. |
+| `pc-kurama-npc-jotaro-dark-tournament` | Same batch. **Kurama `33` active** vs Jotaro `28`. Roster unverified. |
+| `pc-yusuke-npc-jotaro-dark-tournament` | Same batch. **Yusuke `32` active** vs Jotaro `28`. Second Yusuke state (the MOMO-deck one is `pc-yusuke-npc-nami-dark-tournament`). Roster unverified. |
 
 ## Not kept, and why
 
