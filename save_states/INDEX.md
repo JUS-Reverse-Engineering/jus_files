@@ -77,6 +77,12 @@ All are savestate major 14 (same fork as the 2026-09-10 projectile batch).
 **Roster, form (Ichigo 4/5/6 vs 7/8), and charge-source identity are NOT yet
 verified in any of these -- resolve them at first load before measuring.**
 
+**The pause status is also mixed and unrecorded** (owner, 2026-09-11): some
+states are saved paused, others are not. Determine it per state at first load.
+A paused state does not advance on a plain free run and needs a START /
+no-input / START plan; an unpaused state may already be moving when the load
+settles. Do not reuse one run plan across the batch.
+
 Owner testimony: a charge sets an *empowered* state that transfers across a
 character switch. The per-character charge inputs and the full transfer matrix
 are recorded in `docs/research/moveset-notes/OWNER-NOTES.md` section
