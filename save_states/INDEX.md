@@ -68,6 +68,45 @@ The `.meta.json` files carry the framecount and session id from when each state 
 | `pc-mashirito-fy-momotaro-x` | **Owner-built 2026-09-10, pause-menu save, dummy sidecar.** Owner testimony: Mashirito fwd Y walking poop (traveling left) hit by Momotaro X. The poop persists, is never canceled, and explodes at the end of its travel. For `jus-2s9k`. Roster/addresses unverified at first load. |
 | `pc-mashirito-fy-npc-momotaro-b` | **Owner-built 2026-09-10, pause-menu save, dummy sidecar.** Owner testimony: Momotaro B melee hitting the walking poop. Melee attacks also have priority-like outcomes (one side loses and takes damage, or hitboxes cancel and nobody is hurt). For `jus-2s9k`. Roster/addresses unverified at first load. |
 
+### Charge-transfer empowerment states (22, owner-built 2026-09-11)
+
+Owner pause-menu saves for `jus-charge-transfer-empowerment-pb64`, supplied in
+`/Users/djdjo/Desktop/savestates/charge-state-research`. One state per
+(observer, charge source) pair; slot names are the owner's, kept verbatim.
+All are savestate major 14 (same fork as the 2026-09-10 projectile batch).
+**Roster, form (Ichigo 4/5/6 vs 7/8), and charge-source identity are NOT yet
+verified in any of these -- resolve them at first load before measuring.**
+
+Owner testimony: a charge sets an *empowered* state that transfers across a
+character switch. The per-character charge inputs and the full transfer matrix
+are recorded in `docs/research/moveset-notes/OWNER-NOTES.md` section
+"Charge / empowerment (2026-09-11)" and on the bead.
+
+| slot | observer | charge source |
+|---|---|---|
+| `yusuke-uncharged` | Yusuke | none (negative control) |
+| `yusuke-fully-charged` | Yusuke | own full charge |
+| `yusuke-after-franky-chargelvl1` | Yusuke | Franky charge lvl 1 |
+| `yusuke-after-franky-chargelvl2` | Yusuke | Franky charge lvl 2 |
+| `ichigo-after-yusuke-fully-charged` | Ichigo | Yusuke full charge |
+| `ichigo-after-yusuke-tapped-charge` | Ichigo | Yusuke tap charge |
+| `ichigo-after-fuusuke-charge` | Ichigo | Fuusuke charge |
+| `franky-selfcharge-lvl1` | Franky | own charge once |
+| `franky-selfcharge-lvl2` | Franky | own charge twice |
+| `franky-after-yusuke-fully-charged` | Franky | Yusuke full charge |
+| `franky-after-yusuke-tapped-charge` | Franky | Yusuke tap charge |
+| `franky-after-fuusuke-charge` | Franky | Fuusuke charge |
+| `fuusuke-after-yusuke-fullcharge` | Fuusuke | Yusuke full charge |
+| `fuusuke-after-yusuke-tapcharge` | Fuusuke | Yusuke tap charge ("strange" augmentation) |
+| `fuusuke-after-ichigo-charge` | Fuusuke | Ichigo charge ("strange" augmentation) |
+| `fuusuke-after-g2luffy-charge` | Fuusuke | G2 Luffy charge |
+| `fuusuke-after-raoh-charge` | Fuusuke | Raoh charge |
+| `fuusuke-after-franky-chargelvl2` | Fuusuke | Franky charge lvl 2 |
+| `raoh-after-g2luffy-charge` | Raoh | G2 Luffy charge |
+| `raoh-after-fuusuke-charge` | Raoh | Fuusuke charge |
+| `g2-luffy-after-charge` | G2 Luffy | own charge |
+| `g2-luffy-nocharge` | G2 Luffy | none (negative control) |
+
 ## Not kept, and why
 
 - `verified_training_0/1/2` — regenerate with `cd scripts/emu && python3 boot_verified.py --runs 3`, about two minutes for all three. Training battles reached by the pixel-verified route with items and gimmicks switched OFF.
