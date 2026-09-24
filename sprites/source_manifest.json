@@ -1,0 +1,572 @@
+[
+  {
+    "guide_character": "EVE",
+    "database_name": "Eve",
+    "series": "Black Cat",
+    "file_id": 911,
+    "page_url": "https://spritedatabase.net/file/911",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/EveJUS.png",
+    "path": "characters/Black Cat/Eve.png",
+    "bytes": 274872
+  },
+  {
+    "guide_character": "TRAIN HEARTNET",
+    "database_name": "Train Heartnet",
+    "series": "Black Cat",
+    "file_id": 912,
+    "page_url": "https://spritedatabase.net/file/912",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/TrainHeartnet.png",
+    "path": "characters/Black Cat/Train_Heartnet.png",
+    "bytes": 306671
+  },
+  {
+    "guide_character": "ICHIGO KUROSAKI",
+    "database_name": "Ichigo Kurosaki",
+    "series": "Bleach",
+    "file_id": 915,
+    "page_url": "https://spritedatabase.net/file/915",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Ichigo.png",
+    "path": "characters/Bleach/Ichigo_Kurosaki.png",
+    "bytes": 886903
+  },
+  {
+    "guide_character": "RENJI ABARAI",
+    "database_name": "Renji Abarai",
+    "series": "Bleach",
+    "file_id": 917,
+    "page_url": "https://spritedatabase.net/file/917",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Renji.png",
+    "path": "characters/Bleach/Renji_Abarai.png",
+    "bytes": 477153
+  },
+  {
+    "guide_character": "RUKIA KUCHIKI",
+    "database_name": "Rukia Kuchiki",
+    "series": "Bleach",
+    "file_id": 918,
+    "page_url": "https://spritedatabase.net/file/918",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/RukiaKuchiki.png",
+    "path": "characters/Bleach/Rukia_Kuchiki.png",
+    "bytes": 264593
+  },
+  {
+    "guide_character": "TOUSHIRO HITSUGAYA",
+    "database_name": "Toshirō Hitsugaya",
+    "series": "Bleach",
+    "file_id": 916,
+    "page_url": "https://spritedatabase.net/file/916",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Hitsugaya.png",
+    "path": "characters/Bleach/Toshiro_Hitsugaya.png",
+    "bytes": 428252
+  },
+  {
+    "guide_character": "BOBOBO-BO BO-BOBO",
+    "database_name": "Bobobo-bo Bo-bobo",
+    "series": "Bobobo-bo Bo-bobo",
+    "file_id": 926,
+    "page_url": "https://spritedatabase.net/file/926",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Bobobo.png",
+    "path": "characters/Bobobo-bo Bo-bobo/Bobobo_bo_Bo_bobo.png",
+    "bytes": 688347
+  },
+  {
+    "guide_character": "DON PATCH",
+    "database_name": "Don Patch",
+    "series": "Bobobo-bo Bo-bobo",
+    "file_id": 927,
+    "page_url": "https://spritedatabase.net/file/927",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DonPatch.png",
+    "path": "characters/Bobobo-bo Bo-bobo/Don_Patch.png",
+    "bytes": 497807
+  },
+  {
+    "guide_character": "KAZUKI MUTOU",
+    "database_name": "Kazuki",
+    "series": "Buso Renkin",
+    "file_id": 932,
+    "page_url": "https://spritedatabase.net/file/932",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kazuki.png",
+    "path": "characters/Buso Renkin/Kazuki.png",
+    "bytes": 461927
+  },
+  {
+    "guide_character": "ALLEN WALKER",
+    "database_name": "Allen Walker",
+    "series": "D.Gray-man",
+    "file_id": 11839,
+    "page_url": "https://spritedatabase.net/file/11839",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JUS_Allen.png",
+    "path": "characters/D.Gray-man/Allen_Walker.png",
+    "bytes": 569346
+  },
+  {
+    "guide_character": "LINALI LEE",
+    "database_name": "Lenalee Lee",
+    "series": "D.Gray-man",
+    "file_id": 938,
+    "page_url": "https://spritedatabase.net/file/938",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/LenaleeLee.png",
+    "path": "characters/D.Gray-man/Lenalee_Lee.png",
+    "bytes": 337065
+  },
+  {
+    "guide_character": "ARALE NORIMAKI",
+    "database_name": "Arale",
+    "series": "Dr. Slump",
+    "file_id": 956,
+    "page_url": "https://spritedatabase.net/file/956",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Arale.png",
+    "path": "characters/Dr. Slump/Arale.png",
+    "bytes": 352392
+  },
+  {
+    "guide_character": "DR. MASHIRITO",
+    "database_name": "Dr. Mashirito",
+    "series": "Dr. Slump",
+    "file_id": 957,
+    "page_url": "https://spritedatabase.net/file/957",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DrMashirito.png",
+    "path": "characters/Dr. Slump/Dr_Mashirito.png",
+    "bytes": 482089
+  },
+  {
+    "guide_character": "FRIEZA",
+    "database_name": "Frieza",
+    "series": "Dragon Ball",
+    "file_id": 953,
+    "page_url": "https://spritedatabase.net/file/953",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Frieza.png",
+    "path": "characters/Dragon Ball/Frieza.png",
+    "bytes": 235663
+  },
+  {
+    "guide_character": "GOTENKS",
+    "database_name": "Gotenks",
+    "series": "Dragon Ball",
+    "file_id": 951,
+    "page_url": "https://spritedatabase.net/file/951",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gotenks.png",
+    "path": "characters/Dragon Ball/Gotenks.png",
+    "bytes": 540992
+  },
+  {
+    "guide_character": "MAJIN BUU",
+    "database_name": "Majin Buu",
+    "series": "Dragon Ball",
+    "file_id": 954,
+    "page_url": "https://spritedatabase.net/file/954",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Buu.png",
+    "path": "characters/Dragon Ball/Majin_Buu.png",
+    "bytes": 218901
+  },
+  {
+    "guide_character": "PICCOLO",
+    "database_name": "Piccolo",
+    "series": "Dragon Ball",
+    "file_id": 952,
+    "page_url": "https://spritedatabase.net/file/952",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Piccolo.gif",
+    "path": "characters/Dragon Ball/Piccolo.gif",
+    "bytes": 182276
+  },
+  {
+    "guide_character": "SON GOKU",
+    "database_name": "Goku",
+    "series": "Dragon Ball",
+    "file_id": 947,
+    "page_url": "https://spritedatabase.net/file/947",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Goku.png",
+    "path": "characters/Dragon Ball/Goku.png",
+    "bytes": 742487
+  },
+  {
+    "guide_character": "SUPER SAIYJIN SON GOHAN",
+    "database_name": "Gohan",
+    "series": "Dragon Ball",
+    "file_id": 949,
+    "page_url": "https://spritedatabase.net/file/949",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gohan.png",
+    "path": "characters/Dragon Ball/Gohan.png",
+    "bytes": 438694
+  },
+  {
+    "guide_character": "VEGETA",
+    "database_name": "Vegeta",
+    "series": "Dragon Ball",
+    "file_id": 950,
+    "page_url": "https://spritedatabase.net/file/950",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Vegeta.png",
+    "path": "characters/Dragon Ball/Vegeta.png",
+    "bytes": 472302
+  },
+  {
+    "guide_character": "GINTOKI SAKATA",
+    "database_name": "Gintoki",
+    "series": "Gintama",
+    "file_id": 968,
+    "page_url": "https://spritedatabase.net/file/968",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gintoki.png",
+    "path": "characters/Gintama/Gintoki.png",
+    "bytes": 495998
+  },
+  {
+    "guide_character": "KAGURA",
+    "database_name": "Kagura",
+    "series": "Gintama",
+    "file_id": 969,
+    "page_url": "https://spritedatabase.net/file/969",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kagura.png",
+    "path": "characters/Gintama/Kagura.png",
+    "bytes": 195403
+  },
+  {
+    "guide_character": "KENSHIRO",
+    "database_name": "Kenshiro",
+    "series": "Hokuto no Ken",
+    "file_id": 906,
+    "page_url": "https://spritedatabase.net/file/906",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/KenshiroJUS.png",
+    "path": "characters/Hokuto no Ken/Kenshiro.png",
+    "bytes": 418957
+  },
+  {
+    "guide_character": "RAOH",
+    "database_name": "Raoh",
+    "series": "Hokuto no Ken",
+    "file_id": 907,
+    "page_url": "https://spritedatabase.net/file/907",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Raoh.png",
+    "path": "characters/Hokuto no Ken/Raoh.png",
+    "bytes": 675698
+  },
+  {
+    "guide_character": "TAIKOUBOU",
+    "database_name": "Taikobo",
+    "series": "Houshin Engi",
+    "file_id": 1056,
+    "page_url": "https://spritedatabase.net/file/1056",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Taikoubou.png",
+    "path": "characters/Houshin Engi/Taikobo.png",
+    "bytes": 453054
+  },
+  {
+    "guide_character": "GON FREECS",
+    "database_name": "Gon Freecss",
+    "series": "Hunter x Hunter",
+    "file_id": 909,
+    "page_url": "https://spritedatabase.net/file/909",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gon.png",
+    "path": "characters/Hunter x Hunter/Gon_Freecss.png",
+    "bytes": 783927
+  },
+  {
+    "guide_character": "KILLUA ZOALDYCK",
+    "database_name": "Killua Zoldyck",
+    "series": "Hunter x Hunter",
+    "file_id": 910,
+    "page_url": "https://spritedatabase.net/file/910",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Killua.png",
+    "path": "characters/Hunter x Hunter/Killua_Zoldyck.png",
+    "bytes": 241974
+  },
+  {
+    "guide_character": "DIO BRANDO",
+    "database_name": "Dio Brando",
+    "series": "JoJos Bizarre Adventure",
+    "file_id": 984,
+    "page_url": "https://spritedatabase.net/file/984",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DioBrando.png",
+    "path": "characters/JoJos Bizarre Adventure/Dio_Brando.png",
+    "bytes": 341916
+  },
+  {
+    "guide_character": "JOTARO KUJO",
+    "database_name": "Jotaro Kujo",
+    "series": "JoJos Bizarre Adventure",
+    "file_id": 11693,
+    "page_url": "https://spritedatabase.net/file/11693",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JotaroKujo.png",
+    "path": "characters/JoJos Bizarre Adventure/Jotaro_Kujo.png",
+    "bytes": 347852
+  },
+  {
+    "guide_character": "TSUNAYOSHI \"TSUNA\" SAWADA & REBORN",
+    "database_name": "Tsuna",
+    "series": "Katekyo Hitman Reborn",
+    "file_id": 1029,
+    "page_url": "https://spritedatabase.net/file/1029",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/TsunaJUS.png",
+    "path": "characters/Katekyo Hitman Reborn/Tsuna.png",
+    "bytes": 502862
+  },
+  {
+    "guide_character": "KINNIKUMAN",
+    "database_name": "Kinnikuman",
+    "series": "Kinnikuman",
+    "file_id": 991,
+    "page_url": "https://spritedatabase.net/file/991",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kinnikuman.png",
+    "path": "characters/Kinnikuman/Kinnikuman.png",
+    "bytes": 602239
+  },
+  {
+    "guide_character": "RYOTSU KANKICHI",
+    "database_name": "Ryotsu",
+    "series": "Kochikame",
+    "file_id": 999,
+    "page_url": "https://spritedatabase.net/file/999",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Ryotsu.png",
+    "path": "characters/Kochikame/Ryotsu.png",
+    "bytes": 352995
+  },
+  {
+    "guide_character": "NEURO NOGAMI & YAKO KATSUGRA",
+    "database_name": "Neuro Nōgami",
+    "series": "Majin Tantei Nogami Neuro",
+    "file_id": 1002,
+    "page_url": "https://spritedatabase.net/file/1002",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Neuro.png",
+    "path": "characters/Majin Tantei Nogami Neuro/Neuro_Nogami.png",
+    "bytes": 426626
+  },
+  {
+    "guide_character": "MUHYO TORU",
+    "database_name": "Toru Muhyo",
+    "series": "Muhyo to Rouji",
+    "file_id": 1005,
+    "page_url": "https://spritedatabase.net/file/1005",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Muhyo.png",
+    "path": "characters/Muhyo to Rouji/Toru_Muhyo.png",
+    "bytes": 358905
+  },
+  {
+    "guide_character": "KAKASHI HATAKE",
+    "database_name": "Kakashi",
+    "series": "Naruto",
+    "file_id": 1011,
+    "page_url": "https://spritedatabase.net/file/1011",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kakashi.png",
+    "path": "characters/Naruto/Kakashi.png",
+    "bytes": 879873
+  },
+  {
+    "guide_character": "NARUTO UZUMAKI",
+    "database_name": "Naruto",
+    "series": "Naruto",
+    "file_id": 1008,
+    "page_url": "https://spritedatabase.net/file/1008",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Naruto.png",
+    "path": "characters/Naruto/Naruto.png",
+    "bytes": 1058305
+  },
+  {
+    "guide_character": "SAKURA HARUNO",
+    "database_name": "Sakura",
+    "series": "Naruto",
+    "file_id": 1010,
+    "page_url": "https://spritedatabase.net/file/1010",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sakura.png",
+    "path": "characters/Naruto/Sakura.png",
+    "bytes": 352389
+  },
+  {
+    "guide_character": "SASUKE UCHIHA",
+    "database_name": "Sasuke",
+    "series": "Naruto",
+    "file_id": 1009,
+    "page_url": "https://spritedatabase.net/file/1009",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sasuke.png",
+    "path": "characters/Naruto/Sasuke.png",
+    "bytes": 525314
+  },
+  {
+    "guide_character": "FUUSUKE",
+    "database_name": "Fuusuke",
+    "series": "Ninku",
+    "file_id": 1013,
+    "page_url": "https://spritedatabase.net/file/1013",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Fuusuke.png",
+    "path": "characters/Ninku/Fuusuke.png",
+    "bytes": 241069
+  },
+  {
+    "guide_character": "FRANKY",
+    "database_name": "Franky",
+    "series": "One Piece",
+    "file_id": 1020,
+    "page_url": "https://spritedatabase.net/file/1020",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Franky.png",
+    "path": "characters/One Piece/Franky.png",
+    "bytes": 416419
+  },
+  {
+    "guide_character": "MONKEY D. LUFFY",
+    "database_name": "Monkey D. Luffy",
+    "series": "One Piece",
+    "file_id": 5,
+    "page_url": "https://spritedatabase.net/file/5",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Luffy.png",
+    "path": "characters/One Piece/Monkey_D_Luffy.png",
+    "bytes": 679178
+  },
+  {
+    "guide_character": "NAMI",
+    "database_name": "Nami",
+    "series": "One Piece",
+    "file_id": 1017,
+    "page_url": "https://spritedatabase.net/file/1017",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Nami.png",
+    "path": "characters/One Piece/Nami.png",
+    "bytes": 512069
+  },
+  {
+    "guide_character": "NICO ROBIN",
+    "database_name": "Nico Robin",
+    "series": "One Piece",
+    "file_id": 1019,
+    "page_url": "https://spritedatabase.net/file/1019",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/NicoRobin.png",
+    "path": "characters/One Piece/Nico_Robin.png",
+    "bytes": 259838
+  },
+  {
+    "guide_character": "RORONOA ZORO",
+    "database_name": "Roronoa Zoro",
+    "series": "One Piece",
+    "file_id": 1016,
+    "page_url": "https://spritedatabase.net/file/1016",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Zoro.png",
+    "path": "characters/One Piece/Roronoa_Zoro.png",
+    "bytes": 316191
+  },
+  {
+    "guide_character": "SANJI",
+    "database_name": "Sanji",
+    "series": "One Piece",
+    "file_id": 1018,
+    "page_url": "https://spritedatabase.net/file/1018",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sanji.png",
+    "path": "characters/One Piece/Sanji.png",
+    "bytes": 565016
+  },
+  {
+    "guide_character": "JAGUAR JUNICHI",
+    "database_name": "Jaguar",
+    "series": "Pyu to Fuku Jaguar",
+    "file_id": 12079,
+    "page_url": "https://spritedatabase.net/file/12079",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JUS_Jaguar.png",
+    "path": "characters/Pyu to Fuku Jaguar/Jaguar.png",
+    "bytes": 354289
+  },
+  {
+    "guide_character": "KENSHIN HIMURA",
+    "database_name": "Kenshin Himura",
+    "series": "Rurouni Kenshin",
+    "file_id": 1036,
+    "page_url": "https://spritedatabase.net/file/1036",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/KenshinJUS.png",
+    "path": "characters/Rurouni Kenshin/Kenshin_Himura.png",
+    "bytes": 479864
+  },
+  {
+    "guide_character": "SEIYA",
+    "database_name": "Pegasus Seiya 1-7 koma",
+    "series": "Saint Seiya",
+    "file_id": 1041,
+    "page_url": "https://spritedatabase.net/file/1041",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/PegasusSeiya.png",
+    "path": "characters/Saint Seiya/Pegasus_Seiya_1_7_koma.png",
+    "bytes": 525195
+  },
+  {
+    "guide_character": "SEIYA",
+    "database_name": "Pegasus Seiya 8 koma",
+    "series": "Saint Seiya",
+    "file_id": 1042,
+    "page_url": "https://spritedatabase.net/file/1042",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/PegasusSeiya8.png",
+    "path": "characters/Saint Seiya/Pegasus_Seiya_8_koma.png",
+    "bytes": 366325
+  },
+  {
+    "guide_character": "EDAJIMA HEIHACHI",
+    "database_name": "Heihachi Edajima",
+    "series": "Sakigake Otokojuku",
+    "file_id": 1047,
+    "page_url": "https://spritedatabase.net/file/1047",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Edajima.png",
+    "path": "characters/Sakigake Otokojuku/Heihachi_Edajima.png",
+    "bytes": 269487
+  },
+  {
+    "guide_character": "MOMOTARO TSURUGI",
+    "database_name": "Momotaro",
+    "series": "Sakigake Otokojuku",
+    "file_id": 11897,
+    "page_url": "https://spritedatabase.net/file/11897",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Momotaro.png",
+    "path": "characters/Sakigake Otokojuku/Momotaro.png",
+    "bytes": 480195
+  },
+  {
+    "guide_character": "ANNA KYOYAMA",
+    "database_name": "Anna",
+    "series": "Shaman King",
+    "file_id": 1051,
+    "page_url": "https://spritedatabase.net/file/1051",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Anna.png",
+    "path": "characters/Shaman King/Anna.png",
+    "bytes": 260870
+  },
+  {
+    "guide_character": "YOH ASAKURA",
+    "database_name": "Yoh Asakura",
+    "series": "Shaman King",
+    "file_id": 1050,
+    "page_url": "https://spritedatabase.net/file/1050",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yoh.png",
+    "path": "characters/Shaman King/Yoh_Asakura.png",
+    "bytes": 456799
+  },
+  {
+    "guide_character": "YUGI MUTOU",
+    "database_name": "Yugi",
+    "series": "Yu-Gi-Oh!",
+    "file_id": 1062,
+    "page_url": "https://spritedatabase.net/file/1062",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yugi.png",
+    "path": "characters/Yu-Gi-Oh!/Yugi.png",
+    "bytes": 1323101
+  },
+  {
+    "guide_character": "HIEI",
+    "database_name": "Hiei",
+    "series": "YuYu Hakusho",
+    "file_id": 1065,
+    "page_url": "https://spritedatabase.net/file/1065",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Hiei.png",
+    "path": "characters/YuYu Hakusho/Hiei.png",
+    "bytes": 300114
+  },
+  {
+    "guide_character": "KURAMA aka SHUICHI MINAMINO",
+    "database_name": "Kurama",
+    "series": "YuYu Hakusho",
+    "file_id": 1067,
+    "page_url": "https://spritedatabase.net/file/1067",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kurama.png",
+    "path": "characters/YuYu Hakusho/Kurama.png",
+    "bytes": 315727
+  },
+  {
+    "guide_character": "YUSUKE URAMESHI",
+    "database_name": "Yusuke Urameshi",
+    "series": "YuYu Hakusho",
+    "file_id": 1064,
+    "page_url": "https://spritedatabase.net/file/1064",
+    "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yusuke.png",
+    "path": "characters/YuYu Hakusho/Yusuke_Urameshi.png",
+    "bytes": 339938
+  }
+]
