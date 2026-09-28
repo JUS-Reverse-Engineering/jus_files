@@ -1,0 +1,137 @@
+{
+ "specs": [
+  {
+   "name": "objA",
+   "addr": 36047744,
+   "len": 208
+  },
+  {
+   "name": "objB",
+   "addr": 36040928,
+   "len": 208
+  },
+  {
+   "name": "ai_nt",
+   "addr": 35134512,
+   "len": 12
+  },
+  {
+   "name": "ai_act",
+   "addr": 35134540,
+   "len": 4
+  },
+  {
+   "name": "ai_a",
+   "addr": 35134644,
+   "len": 14
+  },
+  {
+   "name": "ai_d4",
+   "addr": 35134692,
+   "len": 8
+  },
+  {
+   "name": "st1",
+   "addr": 35819160,
+   "len": 1
+  },
+  {
+   "name": "st2",
+   "addr": 35974936,
+   "len": 1
+  },
+  {
+   "name": "w1",
+   "addr": 35713924,
+   "len": 4
+  },
+  {
+   "name": "w2",
+   "addr": 35714316,
+   "len": 4
+  },
+  {
+   "name": "p1x",
+   "addr": 35700852,
+   "len": 4
+  },
+  {
+   "name": "p2x",
+   "addr": 35700916,
+   "len": 4
+  },
+  {
+   "name": "ai_3e",
+   "addr": 35134546,
+   "len": 1
+  },
+  {
+   "name": "ai_40",
+   "addr": 35134548,
+   "len": 1
+  },
+  {
+   "name": "ai_105",
+   "addr": 35134745,
+   "len": 1
+  },
+  {
+   "name": "ai_24",
+   "addr": 35134520,
+   "len": 4
+  },
+  {
+   "name": "ai_20",
+   "addr": 35134516,
+   "len": 4
+  },
+  {
+   "name": "ai_2c",
+   "addr": 35134528,
+   "len": 4
+  },
+  {
+   "name": "mov_ptr",
+   "addr": 37372424,
+   "len": 4
+  },
+  {
+   "name": "mov_180",
+   "addr": 36046880,
+   "len": 4
+  },
+  {
+   "name": "opp18",
+   "addr": 35974936,
+   "len": 1
+  },
+  {
+   "name": "react_roll",
+   "addr": 37350728,
+   "len": 1
+  },
+  {
+   "name": "react_w",
+   "addr": 37350695,
+   "len": 13
+  }
+ ],
+ "resolved": {
+  "AI+0x24": {
+   "value": 37372416,
+   "error": null
+  },
+  "AI+0x20": {
+   "value": 35974912,
+   "error": null
+  },
+  "AI+0x2C": {
+   "value": 37350672,
+   "error": null
+  },
+  "[AI+0x24]+8": {
+   "value": 36046496,
+   "error": null
+  }
+ }
+}

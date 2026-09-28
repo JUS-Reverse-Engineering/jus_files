@@ -1,0 +1,224 @@
+{
+ "control": {
+  "arm": "control",
+  "rows": 3420,
+  "fc_first": 32575,
+  "fc_last": 35994,
+  "post_frames": 2486,
+  "a39_hist_post": {
+   "1": 2486
+  },
+  "a39_first_non1_after_latch": null,
+  "a39_distinct_post": [
+   1
+  ],
+  "a3e_max_post": 255,
+  "a3e_saturated_post": true,
+  "a3e_hist_post_top": [
+   [
+    "255",
+    2231
+   ],
+   [
+    "0",
+    1
+   ],
+   [
+    "1",
+    1
+   ],
+   [
+    "10",
+    1
+   ]
+  ],
+  "opp18_hist_post": {
+   "0": 2486
+  },
+  "opp18_attack_frames_post": 0,
+  "opp18_first_attack_after_latch": null,
+  "st2_hist_post": {
+   "0": 2486
+  },
+  "p2x_distinct_pre": 222,
+  "p2x_distinct_post": 1,
+  "p2x_changes_pre": 222,
+  "p2x_changes_post": 0,
+  "p2x_last_change_post": null,
+  "a40_hist_post": {
+   "0": 2486
+  },
+  "a105_hist_post": {
+   "2": 2486
+  },
+  "st1_hist_post": {
+   "0": 2486
+  },
+  "verdict": "UNCHANGED (phase still parked, +0x3E still climbing)",
+  "advanced": false,
+  "resumed": false,
+  "moved": false,
+  "base_fc": 32528
+ },
+ "data": {
+  "arm": "data",
+  "rows": 3420,
+  "fc_first": 32615,
+  "fc_last": 36034,
+  "post_frames": 2526,
+  "a39_hist_post": {
+   "1": 345,
+   "0": 582,
+   "2": 17,
+   "3": 79,
+   "5": 87,
+   "4": 1334,
+   "6": 38,
+   "7": 9,
+   "8": 35
+  },
+  "a39_first_non1_after_latch": 33513,
+  "a39_distinct_post": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "a3e_max_post": 103,
+  "a3e_saturated_post": false,
+  "a3e_hist_post_top": [
+   [
+    "0",
+    2022
+   ],
+   [
+    "1",
+    143
+   ],
+   [
+    "103",
+    53
+   ],
+   [
+    "2",
+    45
+   ]
+  ],
+  "opp18_hist_post": {
+   "0": 1545,
+   "1": 117,
+   "10": 129,
+   "11": 303,
+   "3": 30,
+   "9": 402
+  },
+  "opp18_attack_frames_post": 834,
+  "opp18_first_attack_after_latch": 33520,
+  "st2_hist_post": {
+   "0": 1545,
+   "1": 117,
+   "10": 129,
+   "11": 303,
+   "3": 30,
+   "9": 402
+  },
+  "p2x_distinct_pre": 230,
+  "p2x_distinct_post": 479,
+  "p2x_changes_pre": 229,
+  "p2x_changes_post": 478,
+  "p2x_last_change_post": 35967,
+  "a40_hist_post": {
+   "0": 2512,
+   "17": 2,
+   "2": 3,
+   "3": 3,
+   "4": 3,
+   "5": 3
+  },
+  "a105_hist_post": {
+   "0": 539,
+   "1": 45,
+   "2": 1717,
+   "4": 193,
+   "8": 32
+  },
+  "st1_hist_post": {
+   "0": 1872,
+   "23": 34,
+   "24": 1,
+   "25": 42,
+   "8": 577
+  },
+  "verdict": "FIXED (action followed the advance)",
+  "advanced": true,
+  "resumed": true,
+  "moved": true,
+  "base_fc": 32528
+ },
+ "code": {
+  "arm": "code",
+  "rows": 3420,
+  "fc_first": 32595,
+  "fc_last": 36014,
+  "post_frames": 2506,
+  "a39_hist_post": {
+   "1": 2506
+  },
+  "a39_first_non1_after_latch": null,
+  "a39_distinct_post": [
+   1
+  ],
+  "a3e_max_post": 255,
+  "a3e_saturated_post": true,
+  "a3e_hist_post_top": [
+   [
+    "255",
+    2251
+   ],
+   [
+    "0",
+    1
+   ],
+   [
+    "1",
+    1
+   ],
+   [
+    "10",
+    1
+   ]
+  ],
+  "opp18_hist_post": {
+   "0": 2506
+  },
+  "opp18_attack_frames_post": 0,
+  "opp18_first_attack_after_latch": null,
+  "st2_hist_post": {
+   "0": 2506
+  },
+  "p2x_distinct_pre": 204,
+  "p2x_distinct_post": 1,
+  "p2x_changes_pre": 204,
+  "p2x_changes_post": 0,
+  "p2x_last_change_post": null,
+  "a40_hist_post": {
+   "0": 2506
+  },
+  "a105_hist_post": {
+   "2": 2506
+  },
+  "st1_hist_post": {
+   "0": 2506
+  },
+  "verdict": "UNCHANGED (phase still parked, +0x3E still climbing)",
+  "advanced": false,
+  "resumed": false,
+  "moved": false,
+  "base_fc": 32528
+ }
+}
