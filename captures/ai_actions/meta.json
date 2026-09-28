@@ -1,0 +1,242 @@
+{
+ "state": "pc-kakashi-npc-jotaro-fightcpu",
+ "holder": "ai-probe-31035",
+ "rows": 1208,
+ "gap_rows": 2,
+ "gap_frames": [
+  33066,
+  33373
+ ],
+ "seconds": 20.0,
+ "root": "0x21dea60",
+ "ai_manager": "0x2181a60",
+ "slots": [
+  {
+   "index": 0,
+   "base": "0x2181b08",
+   "d4": "0x92"
+  },
+  {
+   "index": 1,
+   "base": "0x2181c14",
+   "d4": "0x10000013"
+  }
+ ],
+ "player_battle_obj": "0x2228e80",
+ "opponent_battle_obj": "0x224ef00",
+ "ov11_residency": "overlay residency on screen 'battle'\novl    load         size      match   note\nov00   0x0214CD20   85760       14.8%  \nov01   0x0214CD20   135456      11.5%  \nov02   0x0214CD20   65152       13.6%  \nov03   0x0214CD20   73472       13.7%  \nov04   0x0214CD20   86208       13.1%  \nov05   0x0214CD20   152928      15.5%  \nov06   0x0214CD20   154688      15.1%  \nov07   0x0214CD20   122816      12.4%  \nov08   0x0214CD20   128160       9.0%  \nov09   0x0214CD20   32         100.0%  TOO SMALL to be meaningful\nov10   0x02172A60   215264     100.0%  <-- RESIDENT\nov11   0x02172A60   61440        1.8%  \nov12   0x021AC1C0   167776     100.0%  <-- RESIDENT\nov13   0x021AC1C0   32           6.2%  TOO SMALL to be meaningful\n\nresident (>99%, excluding tiny overlays): ov10 100.0%, ov12 100.0%\n",
+ "watches": [
+  {
+   "name": "ai0.a0",
+   "addr": 35134376,
+   "len": 1
+  },
+  {
+   "name": "ai0.a1",
+   "addr": 35134377,
+   "len": 1
+  },
+  {
+   "name": "ai0.a2",
+   "addr": 35134378,
+   "len": 1
+  },
+  {
+   "name": "ai0.ac",
+   "addr": 35134388,
+   "len": 1
+  },
+  {
+   "name": "ai0.ad",
+   "addr": 35134389,
+   "len": 1
+  },
+  {
+   "name": "ai0.f104",
+   "addr": 35134476,
+   "len": 1
+  },
+  {
+   "name": "ai0.f105",
+   "addr": 35134477,
+   "len": 1
+  },
+  {
+   "name": "ai0.b39",
+   "addr": 35134273,
+   "len": 1
+  },
+  {
+   "name": "ai0.b3a",
+   "addr": 35134274,
+   "len": 1
+  },
+  {
+   "name": "ai0.b3b",
+   "addr": 35134275,
+   "len": 1
+  },
+  {
+   "name": "ai0.st18",
+   "addr": 35819160,
+   "len": 1
+  },
+  {
+   "name": "ai1.a0",
+   "addr": 35134644,
+   "len": 1
+  },
+  {
+   "name": "ai1.a1",
+   "addr": 35134645,
+   "len": 1
+  },
+  {
+   "name": "ai1.a2",
+   "addr": 35134646,
+   "len": 1
+  },
+  {
+   "name": "ai1.ac",
+   "addr": 35134656,
+   "len": 1
+  },
+  {
+   "name": "ai1.ad",
+   "addr": 35134657,
+   "len": 1
+  },
+  {
+   "name": "ai1.f104",
+   "addr": 35134744,
+   "len": 1
+  },
+  {
+   "name": "ai1.f105",
+   "addr": 35134745,
+   "len": 1
+  },
+  {
+   "name": "ai1.b39",
+   "addr": 35134541,
+   "len": 1
+  },
+  {
+   "name": "ai1.b3a",
+   "addr": 35134542,
+   "len": 1
+  },
+  {
+   "name": "ai1.b3b",
+   "addr": 35134543,
+   "len": 1
+  },
+  {
+   "name": "ai1.st18",
+   "addr": 35974936,
+   "len": 1
+  }
+ ],
+ "histograms": {
+  "ai0.a0": {
+   "0": 1208
+  },
+  "ai0.a1": {
+   "0": 1208
+  },
+  "ai0.a2": {
+   "0": 1208
+  },
+  "ai0.ac": {
+   "0": 1208
+  },
+  "ai0.ad": {
+   "0": 1208
+  },
+  "ai0.f104": {
+   "5": 1208
+  },
+  "ai0.f105": {
+   "1": 1208
+  },
+  "ai0.b39": {
+   "0": 1208
+  },
+  "ai0.b3a": {
+   "0": 1208
+  },
+  "ai0.b3b": {
+   "0": 1208
+  },
+  "ai0.st18": {
+   "0": 941,
+   "8": 223,
+   "6": 44
+  },
+  "ai1.a0": {
+   "0": 1208
+  },
+  "ai1.a1": {
+   "0": 1208
+  },
+  "ai1.a2": {
+   "0": 1208
+  },
+  "ai1.ac": {
+   "0": 1208
+  },
+  "ai1.ad": {
+   "0": 1208
+  },
+  "ai1.f104": {
+   "5": 1208
+  },
+  "ai1.f105": {
+   "2": 753,
+   "1": 20,
+   "8": 16,
+   "0": 419
+  },
+  "ai1.b39": {
+   "1": 539,
+   "2": 6,
+   "3": 69,
+   "4": 163,
+   "0": 374,
+   "8": 4,
+   "5": 53
+  },
+  "ai1.b3a": {
+   "0": 434,
+   "6": 54,
+   "12": 64,
+   "5": 84,
+   "11": 5,
+   "4": 5,
+   "1": 38,
+   "2": 524
+  },
+  "ai1.b3b": {
+   "0": 1208
+  },
+  "ai1.st18": {
+   "0": 921,
+   "1": 46,
+   "9": 178,
+   "6": 28,
+   "11": 35
+  }
+ },
+ "answers": {
+  "action8_frames": 0,
+  "action_ids_seen": [
+   0
+  ],
+  "f105_nine_frames": 0,
+  "b3a_0x0c_frames": 64,
+  "st18_0x0c_frames": 0,
+  "difficulty_seen": [
+   5
+  ]
+ }
+}
