@@ -27,6 +27,14 @@ The `.meta.json` files carry the framecount and session id from when each state 
 
 **Loading these repeatedly can hang melonDS.** It happened twice in one session, both times right after "Resetting JIT block cache". The process stays alive and keeps drawing its last frame, so it looks healthy — only the bridge framecount gives it away. Check with `scripts/emu/emu_health.py`.
 
+## Full character-mapping source archive
+
+[character-mappings/README.md](character-mappings/README.md) describes the
+170 source states across 56 characters, owner notes, guide kits, and hash
+manifest. These compressed source states have no bridge sidecars. Preserve
+the existing top-level `cm-*` bridge variants when using the source archive.
+The glob above loads only top-level states, not this nested corpus.
+
 ## The states
 
 | slot | what it is |

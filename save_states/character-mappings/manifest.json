@@ -1,0 +1,1825 @@
+{
+  "schema_version": 1,
+  "source_directory": "/Users/djdjo/Desktop/savestates/character-mappings",
+  "import_date": "2026-09-29",
+  "state_count": 170,
+  "character_count": 56,
+  "files": [
+    {
+      "source_path": "ALLEN WALKER/4.mln",
+      "archive_path": "ALLEN WALKER/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "354abfbf7a07344a55941d1b00f27ce23da0821af4c86826dc9d2390a79924f8",
+      "archive_bytes": 2092707,
+      "archive_sha256": "ab4a589e8f37adb38f36460b8194835b03ee5b96a9870efb64e30e4f982f1ede"
+    },
+    {
+      "source_path": "ALLEN WALKER/5.mln",
+      "archive_path": "ALLEN WALKER/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "71aae8111701292dcf221f4d2ce5a16aaf042409ddb389fc4d33f4b59af008bd",
+      "archive_bytes": 2082116,
+      "archive_sha256": "fcec28824d41b54871600a04bb0fa3d44699c9588cb31a49efa741a728fc93e8"
+    },
+    {
+      "source_path": "ALLEN WALKER/6.mln",
+      "archive_path": "ALLEN WALKER/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "3e01a86b5720bd379c41b473fccb8d258818fe72a4f38bc39e7a4eb27aceb482",
+      "archive_bytes": 2067096,
+      "archive_sha256": "3c736280e5461a84c5e3891a9c501b5aa48a0319c621114e91fbd32aa64e82c1"
+    },
+    {
+      "source_path": "ALLEN WALKER/kit.md",
+      "archive_path": "ALLEN WALKER/kit.md",
+      "source_bytes": 7781,
+      "source_sha256": "e4ae964b47052e4748baf83a6bf7140ea8f5eecb738faf81385cb1e0109b12f3",
+      "archive_bytes": 7781,
+      "archive_sha256": "e4ae964b47052e4748baf83a6bf7140ea8f5eecb738faf81385cb1e0109b12f3"
+    },
+    {
+      "source_path": "ANNA KYOYAMA/4.mln",
+      "archive_path": "ANNA KYOYAMA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b3fd5543d1ba04b7e7bdc640ec02f6f765737042ba78c543ad1220d2031d433a",
+      "archive_bytes": 2075365,
+      "archive_sha256": "ad2fec8285401bbe2ce39e2ed0a8bbfc356bf2a89452fb344eaf3401c22ed595"
+    },
+    {
+      "source_path": "ANNA KYOYAMA/5.mln",
+      "archive_path": "ANNA KYOYAMA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "feab4b743e70e6f04c78203f145f1ba7cdea83dcd20809e13b16056980fa4011",
+      "archive_bytes": 2080657,
+      "archive_sha256": "025881371c4652e8ca473262766c45236494d0d909911f94477fb1840aaa7fc6"
+    },
+    {
+      "source_path": "ANNA KYOYAMA/kit.md",
+      "archive_path": "ANNA KYOYAMA/kit.md",
+      "source_bytes": 1593,
+      "source_sha256": "3d83740098baebfecf390aa3025293b7785644ae1c025d09593f17e6324cef43",
+      "archive_bytes": 1593,
+      "archive_sha256": "3d83740098baebfecf390aa3025293b7785644ae1c025d09593f17e6324cef43"
+    },
+    {
+      "source_path": "ARALE NORIMAKI/4.mln",
+      "archive_path": "ARALE NORIMAKI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b1b38877480a9d7fbd087e84f934410355322e960d1ee3aa5a8a850ad39acc72",
+      "archive_bytes": 1992447,
+      "archive_sha256": "9f01d5a778229ed8b8d09cfd51bb3190e70881939e4d2e9958fbfb095acfc198"
+    },
+    {
+      "source_path": "ARALE NORIMAKI/5.mln",
+      "archive_path": "ARALE NORIMAKI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4d1dc9b093811b460da15b79cedbcb42fff514179b6eb500e0a68ba61fd6e6d5",
+      "archive_bytes": 2031627,
+      "archive_sha256": "8f0774a7ca9f410d1992e534fb85a0ef62163002015bbaa7598b0811fab1cd8b"
+    },
+    {
+      "source_path": "ARALE NORIMAKI/6.mln",
+      "archive_path": "ARALE NORIMAKI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "41403d240b38fc6ea521cdd373a96eb067f871de8f3669ec162adb1b88b8f393",
+      "archive_bytes": 1977423,
+      "archive_sha256": "0e092073b3a24519db7eea808101940c78f05c624c1badc7addc913b588f20cc"
+    },
+    {
+      "source_path": "ARALE NORIMAKI/7.mln",
+      "archive_path": "ARALE NORIMAKI/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "785d6badc6f13b538a03b94854e73c8fa94b5a82cad143ea17634890f88f0ab2",
+      "archive_bytes": 2016444,
+      "archive_sha256": "12a80cfd517eb99421a338be63395b0e088d00c548f2ddfb6025bc89b2632563"
+    },
+    {
+      "source_path": "ARALE NORIMAKI/kit.md",
+      "archive_path": "ARALE NORIMAKI/kit.md",
+      "source_bytes": 12097,
+      "source_sha256": "ccc186240b5296a907c033850d981400be621d2da72bcb80256e24c3862ef509",
+      "archive_bytes": 12097,
+      "archive_sha256": "ccc186240b5296a907c033850d981400be621d2da72bcb80256e24c3862ef509"
+    },
+    {
+      "source_path": "BOBOBO-BO BO-BOBO/4.mln",
+      "archive_path": "BOBOBO-BO BO-BOBO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "1f247bee696443f7489957663618121819621d1071f736f6ca3b45e2f21ab2ba",
+      "archive_bytes": 2095223,
+      "archive_sha256": "31ae9845a541f4fc70325ceb872b4b09cd9fc6a51dbe1a6f3e5fff21b4b9bbc3"
+    },
+    {
+      "source_path": "BOBOBO-BO BO-BOBO/5.mln",
+      "archive_path": "BOBOBO-BO BO-BOBO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0d8ed6238248953c814ca5d144657f240e6004e50dd27d86f1b6c7684937bbef",
+      "archive_bytes": 1986208,
+      "archive_sha256": "faa7ec116b6e1e21c9665e01518e66397cd26d56909bfaeadabba676d66532d0"
+    },
+    {
+      "source_path": "BOBOBO-BO BO-BOBO/6.mln",
+      "archive_path": "BOBOBO-BO BO-BOBO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9526b8a4f7c31ebd695327d08f28d6f89c1fc59dd5fb328942d300d31b907534",
+      "archive_bytes": 1997530,
+      "archive_sha256": "b2e740fdd58faf8d430449c0d0e2135d404402c2c60a14d9d02b83b496e8fb0f"
+    },
+    {
+      "source_path": "BOBOBO-BO BO-BOBO/7-SPRITECHANGE.mln",
+      "archive_path": "BOBOBO-BO BO-BOBO/7-SPRITECHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4538071b2d38360d593d61b2ab5aff2af133d13ef6fe84b2f52be876409253fe",
+      "archive_bytes": 2093662,
+      "archive_sha256": "312cd0a553e3012d7b3355d8d1abe0feba9f5c28c36ff32227b91b4a5e0eeb41"
+    },
+    {
+      "source_path": "BOBOBO-BO BO-BOBO/kit.md",
+      "archive_path": "BOBOBO-BO BO-BOBO/kit.md",
+      "source_bytes": 2351,
+      "source_sha256": "6f84f2713a5cb53d2c895c5c4c72245584e62d9ec2a985e60cc088e998bf4340",
+      "archive_bytes": 2351,
+      "archive_sha256": "6f84f2713a5cb53d2c895c5c4c72245584e62d9ec2a985e60cc088e998bf4340"
+    },
+    {
+      "source_path": "DIO BRANDO/4.mln",
+      "archive_path": "DIO BRANDO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e4fddbad3b1daba59b9072ac1d786e1569359ca9f1eaa0ceffda83d5ac5bee7e",
+      "archive_bytes": 2084572,
+      "archive_sha256": "c9462e31d50573b985ab4be747b96086987ba8421bfc6220c34e225aaa18d4c2"
+    },
+    {
+      "source_path": "DIO BRANDO/5.mln",
+      "archive_path": "DIO BRANDO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "10d7049feb373d1e98b60b672e4285748c36f9e0d5df688a52b9b99ceb3aa5df",
+      "archive_bytes": 2089803,
+      "archive_sha256": "48881bc9c005080f020921d12a35cf3ecaea0e12db9c0bb695cf42af2149d5a4"
+    },
+    {
+      "source_path": "DIO BRANDO/6.mln",
+      "archive_path": "DIO BRANDO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "cebe90536780fb38cac58a128c66502b0dc70396e76cfbc79e0e75146c7d461e",
+      "archive_bytes": 2080339,
+      "archive_sha256": "591e1c4b9679f772db1650c04e6936690c39d7fc1fa25b8908a56ce348ac8de2"
+    },
+    {
+      "source_path": "DIO BRANDO/kit.md",
+      "archive_path": "DIO BRANDO/kit.md",
+      "source_bytes": 8350,
+      "source_sha256": "8c565b005daf816a790c28e283905f3d255a6736e7205d238e5f377eddb901f9",
+      "archive_bytes": 8350,
+      "archive_sha256": "8c565b005daf816a790c28e283905f3d255a6736e7205d238e5f377eddb901f9"
+    },
+    {
+      "source_path": "DON PATCH/4.mln",
+      "archive_path": "DON PATCH/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "17c580d9e5fb01dfcd4da12baf919b5ef22b9accb47a8e1adc26994bbe61de54",
+      "archive_bytes": 2094488,
+      "archive_sha256": "9fc4fac0bb934a468544d7691d76e4152a5f20798508258f5af18c11f88d0c90"
+    },
+    {
+      "source_path": "DON PATCH/5.mln",
+      "archive_path": "DON PATCH/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b208e5d55d67cae243215c3a30ab76a9f660f0c410a7725b0e42c4f6c2e7fcd5",
+      "archive_bytes": 2101141,
+      "archive_sha256": "f28222b4c6efe487f48cdb5e808e891feafa29e56969aa212b9d5144ee1562b8"
+    },
+    {
+      "source_path": "DON PATCH/6.mln",
+      "archive_path": "DON PATCH/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "1398f1a270f9d57ab46aab92a16168bb96170fb87d97f0c7cb10e497022e707b",
+      "archive_bytes": 1992130,
+      "archive_sha256": "f8dcf58bb3bb6c8bbc24a39e2b140d2bd7b17e56f55d307295cc51c2a9fd21a4"
+    },
+    {
+      "source_path": "DON PATCH/7-SPRITECHANGE.mln",
+      "archive_path": "DON PATCH/7-SPRITECHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "12a0c226a373fca89c8e176e589aa0309d0df78476ff85f4bd5c086cf8725ec2",
+      "archive_bytes": 1994933,
+      "archive_sha256": "a7fcd53d1a571f1bb60e219ad3c07b08c6aae278f7724426d8d2419af9277c77"
+    },
+    {
+      "source_path": "DON PATCH/kit.md",
+      "archive_path": "DON PATCH/kit.md",
+      "source_bytes": 13960,
+      "source_sha256": "c6332284459f554bf8267dfc7416e0104631e893aaceb098027c93c5be4d49fd",
+      "archive_bytes": 13960,
+      "archive_sha256": "c6332284459f554bf8267dfc7416e0104631e893aaceb098027c93c5be4d49fd"
+    },
+    {
+      "source_path": "DR. MASHIRITO/4.mln",
+      "archive_path": "DR. MASHIRITO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "cb00cc8a8b72b353f993842f04e2497d44fe62b50978216e2579ccb919bd47c9",
+      "archive_bytes": 2032752,
+      "archive_sha256": "113c98a0e500d52a3286e6cdb88325c2b0f01f992b4967a3a51db4b0e0988799"
+    },
+    {
+      "source_path": "DR. MASHIRITO/5.mln",
+      "archive_path": "DR. MASHIRITO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6f8ee0994acc88e602dc3580a882e6cd75ae4663a37a0d9672d35c35063192b7",
+      "archive_bytes": 1973330,
+      "archive_sha256": "6af6fde8659f864a0ffee5f3e119baba222f273427d5e3364f50009f66bde9a4"
+    },
+    {
+      "source_path": "DR. MASHIRITO/6.mln",
+      "archive_path": "DR. MASHIRITO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d7c98f881d5ea7ac2999b2b327d3e98bb05eb112af701f5f8d69b779042c6509",
+      "archive_bytes": 2014614,
+      "archive_sha256": "3616212be338a04357ac6350a7e384e4fcfa95f14e1a2d985e122fd847514575"
+    },
+    {
+      "source_path": "DR. MASHIRITO/7.mln",
+      "archive_path": "DR. MASHIRITO/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "088e6c33fd23c1e4d5412abb042db42019ddcb54f358bf7eafae1615d0e280bf",
+      "archive_bytes": 2033269,
+      "archive_sha256": "23ae83de3fdb7ed6ff620792f499a36eb10b211d502cc1dfc808405b93bf0423"
+    },
+    {
+      "source_path": "DR. MASHIRITO/8-FORMCHANGE.mln",
+      "archive_path": "DR. MASHIRITO/8-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "5e67bfd7d10973a66e7d9e4a3ee318a3c611f02d1df6ec95cf46667dab61fd84",
+      "archive_bytes": 2104850,
+      "archive_sha256": "85d9a23401cfd37eb5eb478feeeb3d23e9248df3dea0913ca1ea3771aa374903"
+    },
+    {
+      "source_path": "DR. MASHIRITO/kit.md",
+      "archive_path": "DR. MASHIRITO/kit.md",
+      "source_bytes": 9504,
+      "source_sha256": "7e89c1883a2ffa7f64abb66438e10f1244ad34970d28e0632b32f76b94dc5225",
+      "archive_bytes": 9504,
+      "archive_sha256": "7e89c1883a2ffa7f64abb66438e10f1244ad34970d28e0632b32f76b94dc5225"
+    },
+    {
+      "source_path": "EDAJIMA HEIHACHI/8.mln",
+      "archive_path": "EDAJIMA HEIHACHI/8.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "3c8f842063a61e5948d96bb8d3e885f503a4a8ea383cdf21a4744f0fae65e5cb",
+      "archive_bytes": 2088437,
+      "archive_sha256": "ffbffb2bb586861c3c02fc9ca07c97b7751c595c38b9962b111b3a9cf3542a40"
+    },
+    {
+      "source_path": "EDAJIMA HEIHACHI/kit.md",
+      "archive_path": "EDAJIMA HEIHACHI/kit.md",
+      "source_bytes": 4862,
+      "source_sha256": "570177ec402a7b1625c49ed53ddd5b55ce2ba00cda21a4ddba25229fea4cbdb2",
+      "archive_bytes": 4862,
+      "archive_sha256": "570177ec402a7b1625c49ed53ddd5b55ce2ba00cda21a4ddba25229fea4cbdb2"
+    },
+    {
+      "source_path": "EVE/4.mln",
+      "archive_path": "EVE/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d6b50211bc7dcbbec66e198f127dc591ea850b3437abd1ba296f5bd14b09473c",
+      "archive_bytes": 2056680,
+      "archive_sha256": "d58d121a9aa56e0b85121256edb570b765590f430fea7bb0638cfd234f3ee7cc"
+    },
+    {
+      "source_path": "EVE/5.mln",
+      "archive_path": "EVE/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7b1fafe98da7e3cd758757a10c9549bfff8dfabbf53b09a2f8cae7365e1d0fd9",
+      "archive_bytes": 2054397,
+      "archive_sha256": "e1da5476ef7afd98974a889eaf8058d2818795a94083fd2dc4a02f0f9e9942a9"
+    },
+    {
+      "source_path": "EVE/kit.md",
+      "archive_path": "EVE/kit.md",
+      "source_bytes": 8444,
+      "source_sha256": "2e78dc557b56356c58fc2c209497b5a6ebe3d401a9436f0999cae10f6f6db718",
+      "archive_bytes": 8444,
+      "archive_sha256": "2e78dc557b56356c58fc2c209497b5a6ebe3d401a9436f0999cae10f6f6db718"
+    },
+    {
+      "source_path": "FRANKY/4.mln",
+      "archive_path": "FRANKY/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "a069a1ef976e8279cb4429dbb08042234ebfc261265523463791ed163e9a29e8",
+      "archive_bytes": 2078103,
+      "archive_sha256": "3467b9e101fc56bc61b5eed5a8e9ec0449d1207df3493e053b8bebdc6598a5ad"
+    },
+    {
+      "source_path": "FRANKY/5.mln",
+      "archive_path": "FRANKY/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "8150f9d55889c383922e16c65dc18eeb68f1902d1227022503187bbd10f7317b",
+      "archive_bytes": 2081362,
+      "archive_sha256": "561cfd617ec9afb0060217ba5f1ab1e0f4d25e27bb3a1dd683a0c403fb9e812f"
+    },
+    {
+      "source_path": "FRANKY/kit.md",
+      "archive_path": "FRANKY/kit.md",
+      "source_bytes": 7433,
+      "source_sha256": "f11b5ff6b4bfba8c12e8b48e29c213db8f586cc49bcda02ce6f81b18df8efb73",
+      "archive_bytes": 7433,
+      "archive_sha256": "f11b5ff6b4bfba8c12e8b48e29c213db8f586cc49bcda02ce6f81b18df8efb73"
+    },
+    {
+      "source_path": "FRIEZA/6.mln",
+      "archive_path": "FRIEZA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f52564bd59797694711b1ac2cfcc8e2e3ea67d7c1b6b91f2956c8a795614ffbc",
+      "archive_bytes": 1995778,
+      "archive_sha256": "301c93d9e136f4689e85031cfeaa8a48cfb2af3a59b2857cd79e777b22c7cadb"
+    },
+    {
+      "source_path": "FRIEZA/kit.md",
+      "archive_path": "FRIEZA/kit.md",
+      "source_bytes": 7082,
+      "source_sha256": "5352d5b54b972b93eed7142e65cbb26995526a0f80c4813ad15cd936f0dc5ead",
+      "archive_bytes": 7082,
+      "archive_sha256": "5352d5b54b972b93eed7142e65cbb26995526a0f80c4813ad15cd936f0dc5ead"
+    },
+    {
+      "source_path": "FUUSUKE/4.mln",
+      "archive_path": "FUUSUKE/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "26436f6a0a006b01a6dc744d29a882950abb7a03b758fd6fd0f8e3cb418769eb",
+      "archive_bytes": 2034962,
+      "archive_sha256": "86bd71e158db3d714b892b1ba25b8d09c513471a00b595bb3e6953c40a2368cd"
+    },
+    {
+      "source_path": "FUUSUKE/5.mln",
+      "archive_path": "FUUSUKE/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "34de469988711941463c1bfe9ec024f3b55ba2271f31d650b34e861536219938",
+      "archive_bytes": 2079915,
+      "archive_sha256": "0f76d1c63721957bf61dfe55f28333078c478ee8c318c3e21a6b31e66d03719b"
+    },
+    {
+      "source_path": "FUUSUKE/kit.md",
+      "archive_path": "FUUSUKE/kit.md",
+      "source_bytes": 1622,
+      "source_sha256": "38be0cc0c00bc05a43a405b8359c0f98f035367eeb2cbcade83269b100694f73",
+      "archive_bytes": 1622,
+      "archive_sha256": "38be0cc0c00bc05a43a405b8359c0f98f035367eeb2cbcade83269b100694f73"
+    },
+    {
+      "source_path": "GINTOKI SAKATA/4.mln",
+      "archive_path": "GINTOKI SAKATA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6bf1f1adcd696ea774d677f4db12fd341057b6693dbe63ab82fa596593c60b6d",
+      "archive_bytes": 2081532,
+      "archive_sha256": "8fa9d64e2d1be433e7655fdae77c0d45bc51b82b77cde524107c38ed508003a6"
+    },
+    {
+      "source_path": "GINTOKI SAKATA/5.mln",
+      "archive_path": "GINTOKI SAKATA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "1866d5b952e0b87d1fbf40c1b22c10c86f28946723fb11befb986bf2b400f525",
+      "archive_bytes": 2076611,
+      "archive_sha256": "d486d86bb4c142e605f7f269ddc4ba9ce706cd1da4376eb4d5911f7f767ff651"
+    },
+    {
+      "source_path": "GINTOKI SAKATA/6.mln",
+      "archive_path": "GINTOKI SAKATA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "eeaa811f3e6b3343fec6172dc5605d7afb3deb0747e6cdd0adfe5fcd4556d1e8",
+      "archive_bytes": 2064905,
+      "archive_sha256": "4aa23e05a9a4f380292894a5c34134862e1450efbed5dd5854d9a54d245a0c62"
+    },
+    {
+      "source_path": "GINTOKI SAKATA/7.mln",
+      "archive_path": "GINTOKI SAKATA/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e5534482fd72f29eb02d9d499e8b00b70cf0df3f48e6683fb359bdd4da469583",
+      "archive_bytes": 2061885,
+      "archive_sha256": "5740b2da4af830ef0388a0f4377c58970e54fdc169e254378670714c1df8ac11"
+    },
+    {
+      "source_path": "GINTOKI SAKATA/kit.md",
+      "archive_path": "GINTOKI SAKATA/kit.md",
+      "source_bytes": 8521,
+      "source_sha256": "b0550d245f718e9f6b91b742e3529e6ac36f2d1ec7d948bee016d0581bfc0694",
+      "archive_bytes": 8521,
+      "archive_sha256": "b0550d245f718e9f6b91b742e3529e6ac36f2d1ec7d948bee016d0581bfc0694"
+    },
+    {
+      "source_path": "GON FREECS/4.mln",
+      "archive_path": "GON FREECS/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e4a15f0fae3d4c95f7980e6f3df3ae62a4a9a47caf034885b4ba7667f243a698",
+      "archive_bytes": 2100339,
+      "archive_sha256": "7fa3722ca549e25d77787e3c489a9bba39ca80f20928c037d1ea38d8731d67c3"
+    },
+    {
+      "source_path": "GON FREECS/5.mln",
+      "archive_path": "GON FREECS/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6eded0f1e27c9f171f9440b7ba7c0bb2ac717a4e1b48d558702d54ba90e80f61",
+      "archive_bytes": 2032417,
+      "archive_sha256": "79bb03e0a1e2c4e5c0d9c34f915ead60baa2f536740bccd212f072a2e92c6346"
+    },
+    {
+      "source_path": "GON FREECS/6.mln",
+      "archive_path": "GON FREECS/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f145bd72c481a0d420ef859f84c9565d9a67e79e291381acec7de2f4a4fec001",
+      "archive_bytes": 2071684,
+      "archive_sha256": "624cbd76233e64091664be17ef13be1d625fdead76e123c6b840a42e99edc24e"
+    },
+    {
+      "source_path": "GON FREECS/kit.md",
+      "archive_path": "GON FREECS/kit.md",
+      "source_bytes": 7167,
+      "source_sha256": "67b1cc086bfbde6dfbb9050a85b578da7af878f3189e91782b8949a4f27a1f09",
+      "archive_bytes": 7167,
+      "archive_sha256": "67b1cc086bfbde6dfbb9050a85b578da7af878f3189e91782b8949a4f27a1f09"
+    },
+    {
+      "source_path": "GOTENKS/4.mln",
+      "archive_path": "GOTENKS/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b708e47a8246df4df72fb78424c9c4b20cfa5ad0bf560214ab7919831915eb1a",
+      "archive_bytes": 2075558,
+      "archive_sha256": "984792a241f5fac2d94f937389410c53be9067cea9df4b8e00e6e3761d71be17"
+    },
+    {
+      "source_path": "GOTENKS/5.mln",
+      "archive_path": "GOTENKS/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "86d020a15d80e0253b70933983a5acde24f037f58ef30a7a30f80f049984e14f",
+      "archive_bytes": 2003160,
+      "archive_sha256": "2bada0e6296c1f3b3aad10291fc55c6fac04e8c4fab8e1f677613e04162f6729"
+    },
+    {
+      "source_path": "GOTENKS/kit.md",
+      "archive_path": "GOTENKS/kit.md",
+      "source_bytes": 8955,
+      "source_sha256": "a2ac20d09143342e579e26bbea4694b896a8db451ab75093e81adf6773fc68eb",
+      "archive_bytes": 8955,
+      "archive_sha256": "a2ac20d09143342e579e26bbea4694b896a8db451ab75093e81adf6773fc68eb"
+    },
+    {
+      "source_path": "HIEI/4.mln",
+      "archive_path": "HIEI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "896eb34f607685e22ee39b5051589ea4eacaeb272d6fd2da04068b9b723afdf8",
+      "archive_bytes": 2064861,
+      "archive_sha256": "869e528a9ed09bb0db3465a50a6bc4d0b4810301c3809d01fc2a4ee42bfc2f87"
+    },
+    {
+      "source_path": "HIEI/5.mln",
+      "archive_path": "HIEI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "09e62aec8907b2cfcb2a515ffd9eea88b780d705cf319185448ac866b02b164d",
+      "archive_bytes": 2072401,
+      "archive_sha256": "f21145d3aa1009da51ba8a41ebd88fa760e691d71f0cfd35463d7ee7d7bdca31"
+    },
+    {
+      "source_path": "HIEI/kit.md",
+      "archive_path": "HIEI/kit.md",
+      "source_bytes": 5298,
+      "source_sha256": "0810a78d69e79980d2bdfea0c0f8deefcbccaf4a69568e6638cb6638a94eab1f",
+      "archive_bytes": 5298,
+      "archive_sha256": "0810a78d69e79980d2bdfea0c0f8deefcbccaf4a69568e6638cb6638a94eab1f"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/4.mln",
+      "archive_path": "ICHIGO KUROSAKI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "08168b0e302ce43e759f6e3a3050367e1fd1889dfd1a1702e3f86148b1907a4d",
+      "archive_bytes": 2064998,
+      "archive_sha256": "9c058c5daad6300e974e5647f06109a22a6534267fea09504f94dfc5e3cd0cc9"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/5.mln",
+      "archive_path": "ICHIGO KUROSAKI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6262370c5f079ce6a6d1764939c2ea8b7b21d728d88c04f09fc9d7246124da21",
+      "archive_bytes": 1994783,
+      "archive_sha256": "05b3cc318dfdb5a39926172fbb80764b726c89069d7ad8d64c4fa1220e582d5b"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/6.mln",
+      "archive_path": "ICHIGO KUROSAKI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "bf18b3b4bac8511cceee517772b5b351cdbf6899ea71ac6b386550c9786a1d4b",
+      "archive_bytes": 2039820,
+      "archive_sha256": "5e172224baadb2ebc1376c1cbed93f1c931f839f7ef839d941322872df2e0395"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/7-FORMCHANGE.mln",
+      "archive_path": "ICHIGO KUROSAKI/7-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c11cb9a26980a7f2ae3a68a7af9f5786d0be1c21574aaa8583e08e7097d85a54",
+      "archive_bytes": 1988737,
+      "archive_sha256": "4d6406c1cba4dce27119d873ffb6e783d889fea1abf8beaecd64f0691356d35a"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/8-FORMCHANGE.mln",
+      "archive_path": "ICHIGO KUROSAKI/8-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d8e076944b51863623224b556f48fdacc1f70756de8dcf6e9a1649fa31b886f7",
+      "archive_bytes": 2067150,
+      "archive_sha256": "9729b57920ac50d9bc36a02916a601319b9e3e85927483687cf021a8514a090b"
+    },
+    {
+      "source_path": "ICHIGO KUROSAKI/kit.md",
+      "archive_path": "ICHIGO KUROSAKI/kit.md",
+      "source_bytes": 18777,
+      "source_sha256": "ad2e395c4ce6416f56f6486a24d6b99e22c7b096461768b89f5465b21255c130",
+      "archive_bytes": 18777,
+      "archive_sha256": "ad2e395c4ce6416f56f6486a24d6b99e22c7b096461768b89f5465b21255c130"
+    },
+    {
+      "source_path": "JAGUAR JUNICHI/4.mln",
+      "archive_path": "JAGUAR JUNICHI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6ee841b267a981cdd3b0d9bea43f97463281024af8a8b20a7a9daa488f9a3812",
+      "archive_bytes": 2038561,
+      "archive_sha256": "93af83746cd857bba708adc71eaed7609ef90224495b5b80316d2d41ae7d7f02"
+    },
+    {
+      "source_path": "JAGUAR JUNICHI/5.mln",
+      "archive_path": "JAGUAR JUNICHI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "40e1767512a6366e8846c5867f2767624054cad82987486ed6d68fbb650917e0",
+      "archive_bytes": 2080104,
+      "archive_sha256": "5d3ec5eb022562f7539ed6cbd5a434cb7b2882efe26c801d36072134d028e0f8"
+    },
+    {
+      "source_path": "JAGUAR JUNICHI/6.mln",
+      "archive_path": "JAGUAR JUNICHI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ab87c4a2cf37271781433d09497ede1fa9c0464bdb53a4b6af80b74bfd05eff1",
+      "archive_bytes": 2059097,
+      "archive_sha256": "4c3988b9367e6a452deea4d3c23e7757ddd3f685282e094df1858b7513d77707"
+    },
+    {
+      "source_path": "JAGUAR JUNICHI/kit.md",
+      "archive_path": "JAGUAR JUNICHI/kit.md",
+      "source_bytes": 6059,
+      "source_sha256": "9ab61a9c411f60ffd671250bdb083e5b00cb791038f41048cb028ae760d29161",
+      "archive_bytes": 6059,
+      "archive_sha256": "9ab61a9c411f60ffd671250bdb083e5b00cb791038f41048cb028ae760d29161"
+    },
+    {
+      "source_path": "JOTARO KUJO/4.mln",
+      "archive_path": "JOTARO KUJO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f01ac4546bfdded25d2042c0b931235698bc4cf1d15046402ae5d6eacab7b48e",
+      "archive_bytes": 2088543,
+      "archive_sha256": "941d3da6c66d239472c490c2633728815626f514993681f489c0bd1b08f9a6db"
+    },
+    {
+      "source_path": "JOTARO KUJO/5.mln",
+      "archive_path": "JOTARO KUJO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d63594bfef8d4a748314200e8c9e30afbb3620b8a83e8bf481e3b56e99fd82f0",
+      "archive_bytes": 2080933,
+      "archive_sha256": "9f35af662fc6b2ca58ee8865094d8942247c6c447a97d07efdbdda7625563b38"
+    },
+    {
+      "source_path": "JOTARO KUJO/6.mln",
+      "archive_path": "JOTARO KUJO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "58da61be78e9ba5de8f1ffc449bd80b05d1cb19b3bbb49ed9aa673eff9666aba",
+      "archive_bytes": 2077153,
+      "archive_sha256": "668327e8836629836cd0487902a944dccfab22069738edaa2c73bb24c9466c1e"
+    },
+    {
+      "source_path": "JOTARO KUJO/kit.md",
+      "archive_path": "JOTARO KUJO/kit.md",
+      "source_bytes": 8432,
+      "source_sha256": "40062fef8aef80d0858065359531482aa8b556b91a2616ec865443c697f0e72e",
+      "archive_bytes": 8432,
+      "archive_sha256": "40062fef8aef80d0858065359531482aa8b556b91a2616ec865443c697f0e72e"
+    },
+    {
+      "source_path": "KAGURA/4.mln",
+      "archive_path": "KAGURA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7a0c0a8f990480488e939a8658a33fd639dc54e9b07e202b2e0620ff22cddd92",
+      "archive_bytes": 2075858,
+      "archive_sha256": "16fe394a5406d3949d2a18c46a637858e894d6343a925a8acbf2bcb37f96609d"
+    },
+    {
+      "source_path": "KAGURA/5.mln",
+      "archive_path": "KAGURA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "234676ef1d5701d6db77f71c384a1de042fc76b14e5487ad41abdf43d20486fb",
+      "archive_bytes": 2065755,
+      "archive_sha256": "a005923992e289b5fccad90b513ccb3362417f9672bb1524ac585060df14f134"
+    },
+    {
+      "source_path": "KAGURA/6.mln",
+      "archive_path": "KAGURA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f3cd424f1f88a95f3de8914ae57b7c8d0c3d9a6805389fd1640913a9e433ea52",
+      "archive_bytes": 2068507,
+      "archive_sha256": "22b6e6b15744ab092d73d735bbe4502450ac0519f0695ef5700d6e1e2a3b7c4b"
+    },
+    {
+      "source_path": "KAGURA/kit.md",
+      "archive_path": "KAGURA/kit.md",
+      "source_bytes": 9414,
+      "source_sha256": "d0f64a2e2970c36f58eae1b0b7cf487a85ebea351f27fb26d235913139110d32",
+      "archive_bytes": 9414,
+      "archive_sha256": "d0f64a2e2970c36f58eae1b0b7cf487a85ebea351f27fb26d235913139110d32"
+    },
+    {
+      "source_path": "KAKASHI HATAKE/4.mln",
+      "archive_path": "KAKASHI HATAKE/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "95c3125e4025ff48ba98ba83e095fcf4c2f026aeb4f4f08a865419efedcc5227",
+      "archive_bytes": 2103249,
+      "archive_sha256": "f98dd5bc8e3d85eeae7fa74227c28e6524721c79d71e47662a7fa7e917f5fa02"
+    },
+    {
+      "source_path": "KAKASHI HATAKE/5.mln",
+      "archive_path": "KAKASHI HATAKE/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "11283fb5f1b05232cdb4f986979c4addbf29388912c809022899919d5690e0bb",
+      "archive_bytes": 2100059,
+      "archive_sha256": "9d14c036ff49980fd40bec19ef7970980d2b96b29b3f9de14d2474363fb5f1f8"
+    },
+    {
+      "source_path": "KAKASHI HATAKE/6.mln",
+      "archive_path": "KAKASHI HATAKE/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "1dbec897f6ad2f7f118029ad1d43e3d5437df2eb027d455f68584e9a238f4759",
+      "archive_bytes": 2099732,
+      "archive_sha256": "c0aad5c247255c4e31f670b0a2e7ac1b0d396336ca6497e47211758a4c2ca826"
+    },
+    {
+      "source_path": "KAKASHI HATAKE/kit.md",
+      "archive_path": "KAKASHI HATAKE/kit.md",
+      "source_bytes": 8253,
+      "source_sha256": "8dbd4f7377a153f94970303a78f4191ba6a8754fa82c61cd00b8d2a3dfeebe2b",
+      "archive_bytes": 8253,
+      "archive_sha256": "8dbd4f7377a153f94970303a78f4191ba6a8754fa82c61cd00b8d2a3dfeebe2b"
+    },
+    {
+      "source_path": "KAZUKI MUTOU/4.mln",
+      "archive_path": "KAZUKI MUTOU/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "cbfbf0d2b7749b1acab31939ba4037cb6fbab98cffeb0073d7920310d4591729",
+      "archive_bytes": 2068739,
+      "archive_sha256": "180eab25a049ca90f2b02feba76aa2b174b809a0cf33de5543302995b8232ccd"
+    },
+    {
+      "source_path": "KAZUKI MUTOU/5.mln",
+      "archive_path": "KAZUKI MUTOU/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7e4694a606ac70b7c06e5e673e0aa45a51a7d18813a0283dd43887f0bd9415a5",
+      "archive_bytes": 2059181,
+      "archive_sha256": "15b1c24a93ae059ed07f227b0ce7d703aec30006bbd62aa111f5d53ac4efda33"
+    },
+    {
+      "source_path": "KAZUKI MUTOU/6.mln",
+      "archive_path": "KAZUKI MUTOU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "67b7f8ed48fb03fe965e1a74d63da67bab55e7b00c23170678623e813bb639ba",
+      "archive_bytes": 2056713,
+      "archive_sha256": "4dbcb6a65986d5aa289006f843ee49e09f5becc7e2ae6c11a761145aac67f803"
+    },
+    {
+      "source_path": "KAZUKI MUTOU/kit.md",
+      "archive_path": "KAZUKI MUTOU/kit.md",
+      "source_bytes": 8742,
+      "source_sha256": "91b973f74db6312ea81d710aa5d4d4c7ceda5c430a4bc66dc81cb7a8bc9b20d2",
+      "archive_bytes": 8742,
+      "archive_sha256": "91b973f74db6312ea81d710aa5d4d4c7ceda5c430a4bc66dc81cb7a8bc9b20d2"
+    },
+    {
+      "source_path": "KENSHIN HIMURA/4.mln",
+      "archive_path": "KENSHIN HIMURA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0a5bdf3e8f92d928659f39862c85557fb26f0041c3c924c945bdff0ccd8ec2a7",
+      "archive_bytes": 2097446,
+      "archive_sha256": "66fd456c14b4fedc878c4c70b6f7a001f4a58f17643bbc105795d63382a4cfc4"
+    },
+    {
+      "source_path": "KENSHIN HIMURA/5.mln",
+      "archive_path": "KENSHIN HIMURA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b1acb7a462f41fa4ee37f37ca6651a0b5a41631f61a834dba228f534c792609e",
+      "archive_bytes": 2097743,
+      "archive_sha256": "65e4cf47e9ede59c6ee50fd3f24e70f1a73dc19ecb314f9b67c0ea1e261ba0cb"
+    },
+    {
+      "source_path": "KENSHIN HIMURA/6.mln",
+      "archive_path": "KENSHIN HIMURA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9646e3e5d378c3fac3c6704c6ebdcb1236fee741da18d9a5139732c9902112e7",
+      "archive_bytes": 2097512,
+      "archive_sha256": "608baa143a0f81d1a32d91f885984c8d22e1359660e20f084bb985e123e02740"
+    },
+    {
+      "source_path": "KENSHIN HIMURA/kit.md",
+      "archive_path": "KENSHIN HIMURA/kit.md",
+      "source_bytes": 1883,
+      "source_sha256": "51971ae0dff388fa730549cdedf69b79dbb1550caed41133f68483ac41959a42",
+      "archive_bytes": 1883,
+      "archive_sha256": "51971ae0dff388fa730549cdedf69b79dbb1550caed41133f68483ac41959a42"
+    },
+    {
+      "source_path": "KENSHIRO/4.mln",
+      "archive_path": "KENSHIRO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0cb84200f55fabe2f3f441f1c37bd738e4f0f3c248ab77050c7fe64dd16265ee",
+      "archive_bytes": 2069587,
+      "archive_sha256": "aa9b6a4ac30c78af77969f1ade041cb5e1120957796906403229a299329ce639"
+    },
+    {
+      "source_path": "KENSHIRO/5.mln",
+      "archive_path": "KENSHIRO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "df8572988db60797665f59b87f12309f77b7387fd0d0b756ce767a2f9f5aa0ac",
+      "archive_bytes": 2085778,
+      "archive_sha256": "2ad8c3f382989fc3f441ca7469de2dcddc2b91aab64e8aa629bbc1aaf7de9874"
+    },
+    {
+      "source_path": "KENSHIRO/6.mln",
+      "archive_path": "KENSHIRO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "8f601e5d51963b904a024f16839218593dd3a28ec21c77a86e47dad8f6592338",
+      "archive_bytes": 2064130,
+      "archive_sha256": "9d7f071314a9d96d87f0b0e874ed991d1981647686c9ed77b8b5a3053a4d3cf6"
+    },
+    {
+      "source_path": "KENSHIRO/7.mln",
+      "archive_path": "KENSHIRO/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "66627ce7b2b9911cd25c32161876560f5b4510ae2bd501d6b23bdf23b182ad88",
+      "archive_bytes": 2097234,
+      "archive_sha256": "afe2903302407c6d9e430aa78508872f0fe54387535661b35f48d50cb4ee1a52"
+    },
+    {
+      "source_path": "KENSHIRO/8.mln",
+      "archive_path": "KENSHIRO/8.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "5fcd5c7b63f8bfa020a130731d1b519dabca5d72d347b34a8f68bb758771d6c0",
+      "archive_bytes": 2074489,
+      "archive_sha256": "5ab8f3497caa59a1c1979bdf91555934ac84d5b597a3cb62c57cbb24e1b27794"
+    },
+    {
+      "source_path": "KENSHIRO/kit.md",
+      "archive_path": "KENSHIRO/kit.md",
+      "source_bytes": 10317,
+      "source_sha256": "f7ae0edf0b43a865eb3bd4e7a4981067beeb804a8398e4cb5b0b604ad5c053b6",
+      "archive_bytes": 10317,
+      "archive_sha256": "f7ae0edf0b43a865eb3bd4e7a4981067beeb804a8398e4cb5b0b604ad5c053b6"
+    },
+    {
+      "source_path": "KILLUA ZOALDYCK/4.mln",
+      "archive_path": "KILLUA ZOALDYCK/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ebdf693ff876578c1aa26d7071eef1f7a3d28366249b302ac884fb91279fb774",
+      "archive_bytes": 2082019,
+      "archive_sha256": "2d20553d64e7a936f93212a8669483afece7ae7fb89d0b1ba3009fcab57335b9"
+    },
+    {
+      "source_path": "KILLUA ZOALDYCK/5.mln",
+      "archive_path": "KILLUA ZOALDYCK/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f58587213cc7dbd3548d5832d7ccf623201804b104c0e67db03bc6aa8e4a4f6d",
+      "archive_bytes": 2037294,
+      "archive_sha256": "fc049a29f6d9a6fd80ee1929dd415b6f0a1624fb2823fff98b71e4bf593bddfc"
+    },
+    {
+      "source_path": "KILLUA ZOALDYCK/kit.md",
+      "archive_path": "KILLUA ZOALDYCK/kit.md",
+      "source_bytes": 4854,
+      "source_sha256": "5ccb9edacc49612cbb3e36aa0a8ca34fcfdaf01b91bc14cd0e03393b07a819f0",
+      "archive_bytes": 4854,
+      "archive_sha256": "5ccb9edacc49612cbb3e36aa0a8ca34fcfdaf01b91bc14cd0e03393b07a819f0"
+    },
+    {
+      "source_path": "KINNIKUMAN/4.mln",
+      "archive_path": "KINNIKUMAN/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "20652a2adf0856518050dca8f6c5d740530e657b3f45aaf51a294a99c22bf61e",
+      "archive_bytes": 2063562,
+      "archive_sha256": "8b387037144a7120433e3e3078111f70f691714e4e4436c7a66236c2ee7fbaf1"
+    },
+    {
+      "source_path": "KINNIKUMAN/5.mln",
+      "archive_path": "KINNIKUMAN/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b4665913792b24dd87dc05caf40a45c31c7b9eaf03a8ef7ab38c2ff58ce10b03",
+      "archive_bytes": 2071678,
+      "archive_sha256": "5bfc2a799fad245d8cf8a94c401f73cf52e3cbed5668cbb8c4a74a7253e29558"
+    },
+    {
+      "source_path": "KINNIKUMAN/6.mln",
+      "archive_path": "KINNIKUMAN/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "da1406e76aa608804a203b66720f86f6d62fc91af91432b63b73f88bbbd1f76e",
+      "archive_bytes": 2055792,
+      "archive_sha256": "a227dab7dab0daaa5feea7d1ea4ff0b9d5f764b1edc0b8fb3cf992d0380b4352"
+    },
+    {
+      "source_path": "KINNIKUMAN/7.mln",
+      "archive_path": "KINNIKUMAN/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b7a6e384ff1db3dde19d8a5c3a86579b13b428249a793a48234c17e35ee74798",
+      "archive_bytes": 2062482,
+      "archive_sha256": "3db8e1bd7ac777830ab4aaf4970d58e95cc8b954896399ce59d3e502eba48244"
+    },
+    {
+      "source_path": "KINNIKUMAN/8.mln",
+      "archive_path": "KINNIKUMAN/8.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d476bfbcfa5f496636a6eaa00b43da205fb201726a052d7e1e019b9b7224b704",
+      "archive_bytes": 2068125,
+      "archive_sha256": "453a551a57d9f4010a97237a39b6caa4ae9542834815328a955ac6d34f95f1ff"
+    },
+    {
+      "source_path": "KINNIKUMAN/kit.md",
+      "archive_path": "KINNIKUMAN/kit.md",
+      "source_bytes": 2408,
+      "source_sha256": "37a250c21fa3ec8dc1fe2c9c410e24bbd05a0187c1b9fdbe737ba2c628284dab",
+      "archive_bytes": 2408,
+      "archive_sha256": "37a250c21fa3ec8dc1fe2c9c410e24bbd05a0187c1b9fdbe737ba2c628284dab"
+    },
+    {
+      "source_path": "KURAMA/4.mln",
+      "archive_path": "KURAMA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9a0a85c637c933b6634781d6fdea9954f76720107ee499b878db516d6a1eb69b",
+      "archive_bytes": 2061257,
+      "archive_sha256": "07d112f045189600a6f72a028a98834d55a5c528cd3441e1470143b09559b657"
+    },
+    {
+      "source_path": "KURAMA/5.mln",
+      "archive_path": "KURAMA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "fd1213f3ca1626a30e368c0cfa77bf44fce0b5704c3c71b9066258992462b184",
+      "archive_bytes": 2075086,
+      "archive_sha256": "9c3e3864f0803cdb0ebaaf4e1522aad25a71a2aa738ee0b2b61710647699ba55"
+    },
+    {
+      "source_path": "KURAMA/kit.md",
+      "archive_path": "KURAMA/kit.md",
+      "source_bytes": 6289,
+      "source_sha256": "308b301e58208bb3488f8244e85b1adf286c293f6abbd70e80750f06129989c3",
+      "archive_bytes": 6289,
+      "archive_sha256": "308b301e58208bb3488f8244e85b1adf286c293f6abbd70e80750f06129989c3"
+    },
+    {
+      "source_path": "LINALI LEE/4.mln",
+      "archive_path": "LINALI LEE/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "8590709c22ea26dd295f9592ae96d4c2bb1fa683cbe49f0fdb36ba0d8eb5c8ea",
+      "archive_bytes": 2092338,
+      "archive_sha256": "3cbcfc0724c368e2188c9ba367cca7ee19d2fd2b8ed300943075a5eae51f7e59"
+    },
+    {
+      "source_path": "LINALI LEE/5.mln",
+      "archive_path": "LINALI LEE/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e22b66c954ab888db253bf28a369e630c9cf9996b040090d2b7c53dd9cb6b712",
+      "archive_bytes": 2033227,
+      "archive_sha256": "aa2072dd55717a10543d6bf2913735d6b0f14ca64c65de5189949db405516ff5"
+    },
+    {
+      "source_path": "LINALI LEE/kit.md",
+      "archive_path": "LINALI LEE/kit.md",
+      "source_bytes": 16638,
+      "source_sha256": "f07ccc04c46c870ec5e6463a7c2466813d5da4e60c0231635234904368455f72",
+      "archive_bytes": 16638,
+      "archive_sha256": "f07ccc04c46c870ec5e6463a7c2466813d5da4e60c0231635234904368455f72"
+    },
+    {
+      "source_path": "MAJIN BUU/6.mln",
+      "archive_path": "MAJIN BUU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e0ac208636628fbae01f9c6e1f6029b6252c5fc6057d754254eb52bf0fcf8ebb",
+      "archive_bytes": 1992563,
+      "archive_sha256": "1c71bc82df2508d1ed580060e2d684c14334df04671b701cb0927b7fd3270918"
+    },
+    {
+      "source_path": "MAJIN BUU/kit.md",
+      "archive_path": "MAJIN BUU/kit.md",
+      "source_bytes": 6238,
+      "source_sha256": "d048f11e57063f2a557232c879b48ba80b0dde3368e8ce67024eb91ab49c3682",
+      "archive_bytes": 6238,
+      "archive_sha256": "d048f11e57063f2a557232c879b48ba80b0dde3368e8ce67024eb91ab49c3682"
+    },
+    {
+      "source_path": "MOMOTARO TSURUGI/4.mln",
+      "archive_path": "MOMOTARO TSURUGI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f8918539ec530b25de4a18ecabe5ab1696c713dec63ca5e7902f02a2f63de8a9",
+      "archive_bytes": 2089315,
+      "archive_sha256": "80802448d502e0c58e04c96d68133acb262febd1ec434a2715a5457ef346a00f"
+    },
+    {
+      "source_path": "MOMOTARO TSURUGI/5.mln",
+      "archive_path": "MOMOTARO TSURUGI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "2669518d5b482f2e1fa6ca2f723bdbdb324a4965bbfa811696daf7ddbe6a61ab",
+      "archive_bytes": 2084913,
+      "archive_sha256": "8b566676a58ff6229c42d02a316520ce62994915688a5d73f619354dc9208c09"
+    },
+    {
+      "source_path": "MOMOTARO TSURUGI/6.mln",
+      "archive_path": "MOMOTARO TSURUGI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "522ec21e9304c40e4b2a8a91d9668731599128e8f21d87318c0d13313f9cd562",
+      "archive_bytes": 2079913,
+      "archive_sha256": "0c14967cabf8101e46a9aa31449709f8b078a509c011e45bb77d77ab706502d8"
+    },
+    {
+      "source_path": "MOMOTARO TSURUGI/kit.md",
+      "archive_path": "MOMOTARO TSURUGI/kit.md",
+      "source_bytes": 7916,
+      "source_sha256": "77d9b01894337d2a3adca0c505ad1c2caddc6a21a98604edfa6091ecf6a4439c",
+      "archive_bytes": 7916,
+      "archive_sha256": "77d9b01894337d2a3adca0c505ad1c2caddc6a21a98604edfa6091ecf6a4439c"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/4.mln",
+      "archive_path": "MONKEY D. LUFFY/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c30c9ac1d2a63d9005700bde69d2a34a2d65a69baf79c11b19a781ed721d8610",
+      "archive_bytes": 2043436,
+      "archive_sha256": "ff716409c71440b6c1db932e00f80ad1b36e4d71c833b7aec60cda881bbba226"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/5.mln",
+      "archive_path": "MONKEY D. LUFFY/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4e398ffff93338c19d4e34bb9759f7c798ef797d1abd98859c6452674ae0cb64",
+      "archive_bytes": 2009084,
+      "archive_sha256": "4ea8f3722ef57dc0ea2fc381170bfc45c38ab66784efed27e37a81c0d89cc3a7"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/6.mln",
+      "archive_path": "MONKEY D. LUFFY/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ed2d9473b440e4f9efa6284a1f12a62e2ae458043acc2d36d5824fdf6823fd4a",
+      "archive_bytes": 2016348,
+      "archive_sha256": "d5d3fe01109f9efe00e6dc92d4c39f815ef8b418cfcb4ccbaff950cbd060a5a0"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/7-FORMCHANGE.mln",
+      "archive_path": "MONKEY D. LUFFY/7-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c9502c7d0d90bbcf052effc5dce3481379c424f109ddb03014ae41f92f63025e",
+      "archive_bytes": 2047734,
+      "archive_sha256": "1e41d17dcfae9470c574a1a332d68be87fdc7c5d6c71ea8b9cac1ea40e9fee9a"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/8-FORMCHANGE.mln",
+      "archive_path": "MONKEY D. LUFFY/8-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6806bc0426765f81d59fde1c658a9eb1f96f5bdb2f07060d4daaf5d7cd1deba8",
+      "archive_bytes": 2077456,
+      "archive_sha256": "abe0541085e910fa53c8e313238c77e853829a5466fe53fef5c5fe029d85ae08"
+    },
+    {
+      "source_path": "MONKEY D. LUFFY/kit.md",
+      "archive_path": "MONKEY D. LUFFY/kit.md",
+      "source_bytes": 10817,
+      "source_sha256": "8b594f7eef244d77b46f1b9ae3fdad66eda8d189814f35c77d9fade4f3bfdbdc",
+      "archive_bytes": 10817,
+      "archive_sha256": "8b594f7eef244d77b46f1b9ae3fdad66eda8d189814f35c77d9fade4f3bfdbdc"
+    },
+    {
+      "source_path": "MUHYO TORU/4.mln",
+      "archive_path": "MUHYO TORU/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f4789830ca3c095228b26013dcf235f34402d63c196604398bb0506e40e14abf",
+      "archive_bytes": 2093288,
+      "archive_sha256": "d6ed710411682f4194df53609834bc52b00a46590169f04b7a92fd5a610f458f"
+    },
+    {
+      "source_path": "MUHYO TORU/5.mln",
+      "archive_path": "MUHYO TORU/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4914f968522937faaeb2014895785e34f72a4879499c0c1d49cdc0011143b255",
+      "archive_bytes": 2063970,
+      "archive_sha256": "3a8e9c8e4ffc1be4406a49d8c677388d9ebacde1d7a2e6797f5334f25e5a2adc"
+    },
+    {
+      "source_path": "MUHYO TORU/6.mln",
+      "archive_path": "MUHYO TORU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f9562f62e2aa15b6cb61fc8cbee5486e2aaa718ebbd4d7c17f8a005a5ae05873",
+      "archive_bytes": 2067415,
+      "archive_sha256": "30f24d64b47272df646814ab1867f79549ac02877d2525d77ff21231a3c82974"
+    },
+    {
+      "source_path": "MUHYO TORU/7.mln",
+      "archive_path": "MUHYO TORU/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "90a83788fa3a9ea5b3efc491b8ec0bc1295e6c2f98be1731d62d2dfaeb48b1bf",
+      "archive_bytes": 2045776,
+      "archive_sha256": "6720b0ceb5bde2eb314e8ac5c35773b4ca0e5b6fb14a2ec73776fce9eec064b7"
+    },
+    {
+      "source_path": "MUHYO TORU/kit.md",
+      "archive_path": "MUHYO TORU/kit.md",
+      "source_bytes": 17469,
+      "source_sha256": "100d41fa9e9f4ebe5454c38e63920f4ba8ca3b32af07834aa152737c17bcd8f9",
+      "archive_bytes": 17469,
+      "archive_sha256": "100d41fa9e9f4ebe5454c38e63920f4ba8ca3b32af07834aa152737c17bcd8f9"
+    },
+    {
+      "source_path": "NAMI/4.mln",
+      "archive_path": "NAMI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "abb8f4ba20c243af0045326a4dec69fc306196bb523a242010542da8ea931b42",
+      "archive_bytes": 2008140,
+      "archive_sha256": "0b64d4d355beff1d502db10a158ef04c42731c8acce4d83655f925af20e726d3"
+    },
+    {
+      "source_path": "NAMI/5.mln",
+      "archive_path": "NAMI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ed8f9a469c7b94f5ba81d07651c3d3e4f8f1583d4e145079b07718e901438a0b",
+      "archive_bytes": 2016517,
+      "archive_sha256": "23ef2167371dfcea4e20068094bcd426fd9165f48ac33d89bf8999fa5f36f3aa"
+    },
+    {
+      "source_path": "NAMI/6-FORMCHANGE.mln",
+      "archive_path": "NAMI/6-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4d5d7bb27bf3fa5b33beff80ccd305318e7c03dfa611cd7339db7498d0df509d",
+      "archive_bytes": 2044329,
+      "archive_sha256": "bcf1649d5dbdc8d8ac06107095e33c8d98d31587d0f633a92f146e15662b8ca6"
+    },
+    {
+      "source_path": "NAMI/kit.md",
+      "archive_path": "NAMI/kit.md",
+      "source_bytes": 11162,
+      "source_sha256": "1e3f90dceb8169106f0a67f65ed35671df61e7ee5aaaa895a85747eddc94823a",
+      "archive_bytes": 11162,
+      "archive_sha256": "1e3f90dceb8169106f0a67f65ed35671df61e7ee5aaaa895a85747eddc94823a"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/4.mln",
+      "archive_path": "NARUTO UZUMAKI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "804e2a495c740d0bf13915c90897966c86f7b153c2c066836c8d786937426d6f",
+      "archive_bytes": 2034001,
+      "archive_sha256": "4d91b4e8c848f370be692493a22145853674b0de59a0c88da21e7ad62d62002c"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/5.mln",
+      "archive_path": "NARUTO UZUMAKI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4e28e747c8836247f1750084cdfe7085e756863ce9a8545b0c58bcff62ed83d2",
+      "archive_bytes": 2099398,
+      "archive_sha256": "4c74eb9ca1bc5c1d73684c08af3a1d73317e4bd4f35dec41272a52cc5e9ed58a"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/6.mln",
+      "archive_path": "NARUTO UZUMAKI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "52994239b6a128323d331ae56422009b24b181232b8c0f7a44f8730959cdce89",
+      "archive_bytes": 2035601,
+      "archive_sha256": "881458da0110cc8c056db11abe262f66d85e9d424b91ec26b07c7343c29d4c7a"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/7-FORMCHANGE.mln",
+      "archive_path": "NARUTO UZUMAKI/7-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "11720a3b6a04af010b2f8149f306d7e1c1316a7eb148a674080226085817343e",
+      "archive_bytes": 2098088,
+      "archive_sha256": "a5c76bb13880fd02053a94a39a6a7b14130264bb8efc776098b107c040f74eeb"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/8-FORMCHANGE.mln",
+      "archive_path": "NARUTO UZUMAKI/8-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e0300889d23c039c2c72c1357bdc9e4448c6c99802cc2ae90ef8ae467e3ecb04",
+      "archive_bytes": 2081966,
+      "archive_sha256": "86a1d7cf1515f0e3704f35e67f4f011b620705e243f2b296e07c9d4fdf2919e8"
+    },
+    {
+      "source_path": "NARUTO UZUMAKI/kit.md",
+      "archive_path": "NARUTO UZUMAKI/kit.md",
+      "source_bytes": 7457,
+      "source_sha256": "a2c34d1a3a9d95c947d3044da232d81820c84f731d5343a6d0aa904a1bb09365",
+      "archive_bytes": 7457,
+      "archive_sha256": "a2c34d1a3a9d95c947d3044da232d81820c84f731d5343a6d0aa904a1bb09365"
+    },
+    {
+      "source_path": "NEURO /4.mln",
+      "archive_path": "NEURO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ba4a8149034bfb12938c51f61d82ccb3883360e6418ee4e759208be8f62c04c5",
+      "archive_bytes": 2090392,
+      "archive_sha256": "cd2508e5098ae129a4f383c65c4a3d20f55c19feea1f14822a7aa3a6d09fdd4d"
+    },
+    {
+      "source_path": "NEURO /5.mln",
+      "archive_path": "NEURO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9b633f49032441e76fd5b217b91399fa2031842cb711bc8044c9fe12f595f18c",
+      "archive_bytes": 2094879,
+      "archive_sha256": "152a7c8d842fcd68cfc3324324c3bdf5c218a617205673f4a732a171c12a9b9f"
+    },
+    {
+      "source_path": "NEURO /kit.md",
+      "archive_path": "NEURO/kit.md",
+      "source_bytes": 9656,
+      "source_sha256": "aeceacee75fe39d703a676320a3b9f73d568f93d83f0e792492d35fcd31b6a8c",
+      "archive_bytes": 9656,
+      "archive_sha256": "aeceacee75fe39d703a676320a3b9f73d568f93d83f0e792492d35fcd31b6a8c"
+    },
+    {
+      "source_path": "NICO ROBIN/4.mln",
+      "archive_path": "NICO ROBIN/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9f2871cf981ea72544cd0a65bd4c871152bc605289542471b183d584114fc7d9",
+      "archive_bytes": 2083934,
+      "archive_sha256": "40b749c5c17b5b69e0b039b1352b8a428b73dbfe86de3ebfcd352b742b5c01bc"
+    },
+    {
+      "source_path": "NICO ROBIN/5.mln",
+      "archive_path": "NICO ROBIN/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0f0fd3fd08f00d0de3082352a21e1944bfb28d637dde752d301c4a9dcc88da52",
+      "archive_bytes": 2062066,
+      "archive_sha256": "4c094553804a0bdf51fb0523f3847dd9ee2d900985bf248e2dce733ceece2e7c"
+    },
+    {
+      "source_path": "NICO ROBIN/6.mln",
+      "archive_path": "NICO ROBIN/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "93b25cccab2ef7aa19daab82746051be8196e17d074440850b213815975773dd",
+      "archive_bytes": 2072228,
+      "archive_sha256": "b858e94d8a39bee9b83a31bd9068c2074fcb79aa51898c9e37433e1392a545fc"
+    },
+    {
+      "source_path": "NICO ROBIN/kit.md",
+      "archive_path": "NICO ROBIN/kit.md",
+      "source_bytes": 10952,
+      "source_sha256": "59dc701f50c91412e76a7a2ae545fb5de77c45e4532edc2e632f3b4cf0d0f7a5",
+      "archive_bytes": 10952,
+      "archive_sha256": "59dc701f50c91412e76a7a2ae545fb5de77c45e4532edc2e632f3b4cf0d0f7a5"
+    },
+    {
+      "source_path": "NOTES.md",
+      "archive_path": "NOTES.md",
+      "source_bytes": 3987,
+      "source_sha256": "fdf31057733ef380574984ae392d7815aa568ec487e85d7e063e9a5a17eee6b2",
+      "archive_bytes": 3987,
+      "archive_sha256": "fdf31057733ef380574984ae392d7815aa568ec487e85d7e063e9a5a17eee6b2"
+    },
+    {
+      "source_path": "PICCOLO/4.mln",
+      "archive_path": "PICCOLO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "567bca7a0f5bcad2a2920ce59ae053b35eef2e06e92a1beefa65490efb123dcf",
+      "archive_bytes": 2080401,
+      "archive_sha256": "f39e9fb3dacba4dee7a52ea1d4e6c77df5388015fa300b15b1f1304be855d5d9"
+    },
+    {
+      "source_path": "PICCOLO/5.mln",
+      "archive_path": "PICCOLO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "87874637e5575bb2d9688b898c8fc9c1b3dcb4ce72012600f7866ccc3aa09fd9",
+      "archive_bytes": 2002703,
+      "archive_sha256": "be1b754cc03e0268cee9e0ca2b4f437fdd603384792c64cfdbac44310542520c"
+    },
+    {
+      "source_path": "PICCOLO/kit.md",
+      "archive_path": "PICCOLO/kit.md",
+      "source_bytes": 6587,
+      "source_sha256": "a04ef1b6865c76ba063b9a59eea54805dbad12e5ba9617ab591426be9cbbf33d",
+      "archive_bytes": 6587,
+      "archive_sha256": "a04ef1b6865c76ba063b9a59eea54805dbad12e5ba9617ab591426be9cbbf33d"
+    },
+    {
+      "source_path": "RAOH/6.mln",
+      "archive_path": "RAOH/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "28d62c7809e0e5ed0dd7eb87ff3253c715ad49d7a59fb7a191e38edec0ad46c5",
+      "archive_bytes": 2097549,
+      "archive_sha256": "51072a678311b6b4f29186a621d0d42363e3817c376c3daa4fc8ab30de8b2000"
+    },
+    {
+      "source_path": "RAOH/7.mln",
+      "archive_path": "RAOH/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "79d6ec11117913b7ff03b1da859491c2bfbf1f8f9add1c75a5448ede0a2e5d7e",
+      "archive_bytes": 2093369,
+      "archive_sha256": "553895ef5f1f986b3288c7640191d468910dac6837364e3b189a83b8474f31ca"
+    },
+    {
+      "source_path": "RAOH/8.mln",
+      "archive_path": "RAOH/8.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f91f67a9d68cb6655c658e098d267a4d19f6299a6e55998ced437e0b1ebe5169",
+      "archive_bytes": 2070556,
+      "archive_sha256": "de9d63799d4c1c1de80a41d0a9e5d92d0f75204bb7913c4dffc28a02883565fb"
+    },
+    {
+      "source_path": "RAOH/kit.md",
+      "archive_path": "RAOH/kit.md",
+      "source_bytes": 7930,
+      "source_sha256": "5b1ee84a50aa792dd4fd90788ad0ee6117b734b45bb07ddd249710bb6ac4e101",
+      "archive_bytes": 7930,
+      "archive_sha256": "5b1ee84a50aa792dd4fd90788ad0ee6117b734b45bb07ddd249710bb6ac4e101"
+    },
+    {
+      "source_path": "RENJI ABARAI/4.mln",
+      "archive_path": "RENJI ABARAI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "79b9ac0d32d7bd756629cefae9b7e6f06a5048877939c5f3d9b99650c122fed2",
+      "archive_bytes": 2046977,
+      "archive_sha256": "c8ef6e269d694af6eb76d0f18a118dc0e278f6a64d5cc3571d4a670e97454c57"
+    },
+    {
+      "source_path": "RENJI ABARAI/5.mln",
+      "archive_path": "RENJI ABARAI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "3d4953f116f46acced28550fdef2010b8a02d5178869fc14f55c76072b504ac3",
+      "archive_bytes": 2067179,
+      "archive_sha256": "650e36762059a8d141c9be140cfa856efd6da719478e270b2ffd6b082b90e322"
+    },
+    {
+      "source_path": "RENJI ABARAI/6.mln",
+      "archive_path": "RENJI ABARAI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "201bb32aaa7a84c9f30830320527aa562f66c570007669d94e59a9b025c3cae8",
+      "archive_bytes": 2065469,
+      "archive_sha256": "097ec27a140d5b0b3e4c664a6752ce941c039dac21530ecb308732cd9913a39b"
+    },
+    {
+      "source_path": "RENJI ABARAI/kit.md",
+      "archive_path": "RENJI ABARAI/kit.md",
+      "source_bytes": 10346,
+      "source_sha256": "26d294064b6211ffadb9a85932afbe1f79e02ea1a28449e98c0d885d71d4f4e0",
+      "archive_bytes": 10346,
+      "archive_sha256": "26d294064b6211ffadb9a85932afbe1f79e02ea1a28449e98c0d885d71d4f4e0"
+    },
+    {
+      "source_path": "RORONOA ZORO/4.mln",
+      "archive_path": "RORONOA ZORO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b2a382bbbec29c6a9a5d9532304981b080fff797dfca20b1588da67c2cfacfb2",
+      "archive_bytes": 2046785,
+      "archive_sha256": "0802976e2a71310d738a61cdf6ba9f6c8460ebf455790a6363572c5e77abe4f2"
+    },
+    {
+      "source_path": "RORONOA ZORO/5.mln",
+      "archive_path": "RORONOA ZORO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d2716af49194e13358a926fc794613ee93434d6920372dc77cc421c1b67d714e",
+      "archive_bytes": 2016908,
+      "archive_sha256": "e4a23bc2662fc731ec4cc01bdb10f4ef892b6b2f5665687876da117acc4835ae"
+    },
+    {
+      "source_path": "RORONOA ZORO/6.mln",
+      "archive_path": "RORONOA ZORO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "859b1fb7b0bde933bbbea58d1bbc7c23b660d5623b29f805b4b0406eb12190e9",
+      "archive_bytes": 2007683,
+      "archive_sha256": "9668f95daae8201a90f01337755f41944f371776f6d0aa0aca49aff134e523ae"
+    },
+    {
+      "source_path": "RORONOA ZORO/kit.md",
+      "archive_path": "RORONOA ZORO/kit.md",
+      "source_bytes": 1901,
+      "source_sha256": "a248d9660e99d9e6e2c598494fdc81701ebbe2eca3b02f81959e13f0a5cb467c",
+      "archive_bytes": 1901,
+      "archive_sha256": "a248d9660e99d9e6e2c598494fdc81701ebbe2eca3b02f81959e13f0a5cb467c"
+    },
+    {
+      "source_path": "RUKIA KUCHIKI/4.mln",
+      "archive_path": "RUKIA KUCHIKI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7ae72ba59fb5c738e871a0cca78e5d1f446c8b66b7e18250503e4b6e0ec91006",
+      "archive_bytes": 1998296,
+      "archive_sha256": "13c834ca2d26bce0cb96895d8162e48c38fee126d783a813cb8c06dcbbcfe150"
+    },
+    {
+      "source_path": "RUKIA KUCHIKI/5.mln",
+      "archive_path": "RUKIA KUCHIKI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "a3974bf1549ccdcc150d33edb6802fd5d70f8b81c465070fa7c1d7c06c182368",
+      "archive_bytes": 2048052,
+      "archive_sha256": "8cf4f59b5a1c521d59141bef2e867ea444a363d615f5a2eb9652a1998ff07f7f"
+    },
+    {
+      "source_path": "RUKIA KUCHIKI/6.mln",
+      "archive_path": "RUKIA KUCHIKI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "e87f0b623125122b6e85192c1a63785b392bc7a37066e2442bcb98a1c2d342d6",
+      "archive_bytes": 1985289,
+      "archive_sha256": "0f899cb49d93b3fecaa1b0de0561de4a57195c8df476866fd67fd15ff7fd0d14"
+    },
+    {
+      "source_path": "RUKIA KUCHIKI/kit.md",
+      "archive_path": "RUKIA KUCHIKI/kit.md",
+      "source_bytes": 8190,
+      "source_sha256": "ff27a08ae06e84c22107eda2bd448821029fa007dc22f550f47d722a9ff78d3d",
+      "archive_bytes": 8190,
+      "archive_sha256": "ff27a08ae06e84c22107eda2bd448821029fa007dc22f550f47d722a9ff78d3d"
+    },
+    {
+      "source_path": "RYOTSU KANKICHI/4.mln",
+      "archive_path": "RYOTSU KANKICHI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "a106144acf2e547dacd46d885f9f17ae0f17ffce014a525b340c2bf871c4ec9b",
+      "archive_bytes": 2068910,
+      "archive_sha256": "d1516b2942dda3efe44c5134fe7201351773cd7a22047d969bf5d7b23f569b21"
+    },
+    {
+      "source_path": "RYOTSU KANKICHI/5.mln",
+      "archive_path": "RYOTSU KANKICHI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0cdd2d9933b4640a489ca802e8399d1a628ff9af26dd5f253d20aa449ff5464b",
+      "archive_bytes": 2054603,
+      "archive_sha256": "54e6f2448a7458c4577f97f1ef67c5009ab74348266c495de68cceb5431ebf18"
+    },
+    {
+      "source_path": "RYOTSU KANKICHI/6.mln",
+      "archive_path": "RYOTSU KANKICHI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c7120a7388b17f6ba51e15ae86ff219ac24ffe7c539f00161110fd1e1f50b766",
+      "archive_bytes": 2064941,
+      "archive_sha256": "950075e3350213f3954c08cbb6bddd693ec79d67356f09ad7fd354c96f9705de"
+    },
+    {
+      "source_path": "RYOTSU KANKICHI/7.mln",
+      "archive_path": "RYOTSU KANKICHI/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "73ef888e618ba3d7ba6e66523c0917129286c0be8c59ce76ff79dd9ac4e87173",
+      "archive_bytes": 2068540,
+      "archive_sha256": "a35ca90baadd2697569e7f1e27da6aea10b86210816ba290bd6a4b6d26d9163a"
+    },
+    {
+      "source_path": "RYOTSU KANKICHI/kit.md",
+      "archive_path": "RYOTSU KANKICHI/kit.md",
+      "source_bytes": 2168,
+      "source_sha256": "e766ef2c4ed1f5f73916738fcca5aecbc8a76e4240a80a5a1d47ac8730d6081a",
+      "archive_bytes": 2168,
+      "archive_sha256": "e766ef2c4ed1f5f73916738fcca5aecbc8a76e4240a80a5a1d47ac8730d6081a"
+    },
+    {
+      "source_path": "SAKURA HARUNO/4.mln",
+      "archive_path": "SAKURA HARUNO/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c372a3efcab43da06a8daee0a94d04f435f990d419c853c256c582c2c15ad68b",
+      "archive_bytes": 2033034,
+      "archive_sha256": "b11d87b9b6e75aed1b0df38546dff700481550a58d41c962f59e83b7d7aa85e9"
+    },
+    {
+      "source_path": "SAKURA HARUNO/5.mln",
+      "archive_path": "SAKURA HARUNO/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "68d5d31cd46f01ef2b73dbd4306d99b3ff8ad57d61532592f9ce6b9f011643d5",
+      "archive_bytes": 2096352,
+      "archive_sha256": "75d774832572be265756a535c1a20d50a8059d55c5d4aef72107f296e60f94de"
+    },
+    {
+      "source_path": "SAKURA HARUNO/6.mln",
+      "archive_path": "SAKURA HARUNO/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "018c2c081aa53792e0e67e21d66f33030ee8982bddb48bf0a0364194e98e89b0",
+      "archive_bytes": 2036136,
+      "archive_sha256": "2e437b5b724036abe639ecfa5a591d195df77e95d1f02f4968defc964bf70f7e"
+    },
+    {
+      "source_path": "SAKURA HARUNO/kit.md",
+      "archive_path": "SAKURA HARUNO/kit.md",
+      "source_bytes": 8011,
+      "source_sha256": "4f204365d608eb66a0a21b9e34d77fd4d1e5a95390cc3e8b84310ad9c573b612",
+      "archive_bytes": 8011,
+      "archive_sha256": "4f204365d608eb66a0a21b9e34d77fd4d1e5a95390cc3e8b84310ad9c573b612"
+    },
+    {
+      "source_path": "SANJI/4.mln",
+      "archive_path": "SANJI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "00c926e29a113ac0db54c3978ae318c5125f3b63856729bf328963c7a75b9787",
+      "archive_bytes": 2079052,
+      "archive_sha256": "bb6d60158d7bdae0042041dcdc85b0e24b6a46da0283ffcef321cc58c62d0fb5"
+    },
+    {
+      "source_path": "SANJI/5.mln",
+      "archive_path": "SANJI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "fbe99268ee9282f3506be0b8da59c9a29cddd84c1387dec08b6b33797fee7658",
+      "archive_bytes": 2082011,
+      "archive_sha256": "bf4995064275a428f599bf93ffe3c280b279d6e6d5aa9b2418887709f877a5bb"
+    },
+    {
+      "source_path": "SANJI/6.mln",
+      "archive_path": "SANJI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b6d39bc7a8e8640696355123ccdd73437d248f2e92d1fee997d9c1df22e126cd",
+      "archive_bytes": 2072641,
+      "archive_sha256": "dd8d977c2c556356a05fe2f5e6b9ad205908535ba23bd9647aa744e07986dfb2"
+    },
+    {
+      "source_path": "SANJI/kit.md",
+      "archive_path": "SANJI/kit.md",
+      "source_bytes": 11484,
+      "source_sha256": "539a2c3e8bde9932105bdd2dfef302d7b515af8ac0d981e7803379909190dcc4",
+      "archive_bytes": 11484,
+      "archive_sha256": "539a2c3e8bde9932105bdd2dfef302d7b515af8ac0d981e7803379909190dcc4"
+    },
+    {
+      "source_path": "SASUKE UCHIHA/7.mln",
+      "archive_path": "SASUKE UCHIHA/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "fb6ce99eba7858b17155dbd8d4aad6b0e690527daea824f19196b7b6a26a2b79",
+      "archive_bytes": 2034334,
+      "archive_sha256": "256d93b603d66c485cedd71f6fefca6ff7bc4ed3eff597a4a94eb2cf102b969f"
+    },
+    {
+      "source_path": "SASUKE UCHIHA/8.mln",
+      "archive_path": "SASUKE UCHIHA/8.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "00a7578c3d1331be6dfabc9c8e92a7a88c8aa79e48ddbdbadcf12658a9713506",
+      "archive_bytes": 2103645,
+      "archive_sha256": "da71a51b59922429fb2379c4a0ad1480a29cedce48356564af4ebfed9a930cf2"
+    },
+    {
+      "source_path": "SASUKE UCHIHA/kit.md",
+      "archive_path": "SASUKE UCHIHA/kit.md",
+      "source_bytes": 8614,
+      "source_sha256": "64b9228b81876ef8f8a75c59cbc3cb85e0b5c4ff5864e8842524dff9f5900aa8",
+      "archive_bytes": 8614,
+      "archive_sha256": "64b9228b81876ef8f8a75c59cbc3cb85e0b5c4ff5864e8842524dff9f5900aa8"
+    },
+    {
+      "source_path": "SEIYA/4.mln",
+      "archive_path": "SEIYA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "fb74e48e39b9bb7179c2b35becfa61d0512a8c27a377ae7802af4f191b4a8194",
+      "archive_bytes": 2091553,
+      "archive_sha256": "a6cd93fbdac616e320114e87d8dc7983c9d7980b8655a29c4b2262998bf73614"
+    },
+    {
+      "source_path": "SEIYA/5.mln",
+      "archive_path": "SEIYA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c490cc9bc128c4f33084995b2b1259809c30f37eec32e501d73d34db3be545dc",
+      "archive_bytes": 2069065,
+      "archive_sha256": "e3494eba8d45917e9d0e5b95a107808f91024b0f0bbae9e84e04562b5a599dd3"
+    },
+    {
+      "source_path": "SEIYA/6.mln",
+      "archive_path": "SEIYA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "786f89aaa213a02cec81a1b658c367532873f720f3fe2f7334bf9d5a689c9785",
+      "archive_bytes": 2072841,
+      "archive_sha256": "b1cbd6073509278dd376376bff0d415955bff52f43dd38271a4f4add4d6ae711"
+    },
+    {
+      "source_path": "SEIYA/7.mln",
+      "archive_path": "SEIYA/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "a6070bf811511401ff69d741b15d0ff48b941925d674ce450eb3b0bec8ea53a5",
+      "archive_bytes": 2032760,
+      "archive_sha256": "d9cab81dfa1f0165c41a13ebefc1866c364dbcc3631eba45b562956805676c93"
+    },
+    {
+      "source_path": "SEIYA/8-FORMCHANGE.mln",
+      "archive_path": "SEIYA/8-FORMCHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "a74dac249ec17afb1fd0f85f49ce848710fa27889f1d079938c7b954aafa78fe",
+      "archive_bytes": 1993583,
+      "archive_sha256": "cd9e05c0eff25500f5508827b38a38ee94d29cba1113b067de55ef7e58fab73d"
+    },
+    {
+      "source_path": "SEIYA/kit.md",
+      "archive_path": "SEIYA/kit.md",
+      "source_bytes": 7918,
+      "source_sha256": "9f9651bf1a968c56bb0bfcaab91c0893760ccd4835d6f88289e9acf802263176",
+      "archive_bytes": 7918,
+      "archive_sha256": "9f9651bf1a968c56bb0bfcaab91c0893760ccd4835d6f88289e9acf802263176"
+    },
+    {
+      "source_path": "SON GOHAN/4.mln",
+      "archive_path": "SON GOHAN/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "bee0327d633ef15b5b92642caa211bf3cb4552ba2efbb11840727a66d2929ef4",
+      "archive_bytes": 1997897,
+      "archive_sha256": "b263d55a0d3752871c3bb6f5eca5f8ac5c7310e80ba5b6e7f7a458dd0bfb9257"
+    },
+    {
+      "source_path": "SON GOHAN/5-SPRITECHANGE.mln",
+      "archive_path": "SON GOHAN/5-SPRITECHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "00676c997edbb595610cf90f2844b63837416b1c517e9ec0432e13197fa51212",
+      "archive_bytes": 2001990,
+      "archive_sha256": "5950d1bbec5361faf9baf2222c78d86d5845226308e175301712a213e72929e9"
+    },
+    {
+      "source_path": "SON GOHAN/kit.md",
+      "archive_path": "SON GOHAN/kit.md",
+      "source_bytes": 7011,
+      "source_sha256": "f2ffb42efe5aaaeedb5709164e9153f574277de88c768d06b72450ee0fb49dc3",
+      "archive_bytes": 7011,
+      "archive_sha256": "f2ffb42efe5aaaeedb5709164e9153f574277de88c768d06b72450ee0fb49dc3"
+    },
+    {
+      "source_path": "SON GOKU/4.mln",
+      "archive_path": "SON GOKU/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0006249a173755eb32c2ac9e607a3c8cbc7e53b0abe7999c7922b1fff36a676c",
+      "archive_bytes": 1994422,
+      "archive_sha256": "f5d9e46d464d3a257e7a9467b94969d37ebfbb5416e3d2070fe3a1f2a7b3725f"
+    },
+    {
+      "source_path": "SON GOKU/5.mln",
+      "archive_path": "SON GOKU/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "3b35db17c3b2f63b49e672aeb87b74e615043d7dfc539ca93424bc728e87e695",
+      "archive_bytes": 1996952,
+      "archive_sha256": "09bd969385488a6891c26a4e9940d2e7ad0b5b4db9236a225d20c0ac0e01abe6"
+    },
+    {
+      "source_path": "SON GOKU/6.mln",
+      "archive_path": "SON GOKU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ff104b98c87038ace993bc01356f717c8d5204991ef69d6435bff7985a5bc921",
+      "archive_bytes": 2080940,
+      "archive_sha256": "c0116f9461602636573de58f1b0e3c920d55f3ac72e5e370d49d79e32e09de8b"
+    },
+    {
+      "source_path": "SON GOKU/7.mln",
+      "archive_path": "SON GOKU/7.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ffa07590ebe66c312248e3f8e441c33f5c5fd1887fc67b2f8fa0cbb3ed9bcdf4",
+      "archive_bytes": 2000131,
+      "archive_sha256": "d01f80351ba633c72e27113c5f7969988d825e0d2f6602d6e1c9072a3c748814"
+    },
+    {
+      "source_path": "SON GOKU/8-SPRITECHANGE.mln",
+      "archive_path": "SON GOKU/8-SPRITECHANGE.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ec2003b98b464b9837ae1bdf1435ef8c950621e01ae4e38e5185e7a1d3edeedc",
+      "archive_bytes": 2005624,
+      "archive_sha256": "8690e3598ba9042cbbd2c9fc741fde44c7c21ba3a9d0d7416b5d3ea2fff0f39b"
+    },
+    {
+      "source_path": "SON GOKU/kit.md",
+      "archive_path": "SON GOKU/kit.md",
+      "source_bytes": 11537,
+      "source_sha256": "d9c4943ca8b657f8ba850bdff769a9847d39512f2c00a072b3f9b3ed43f0f247",
+      "archive_bytes": 11537,
+      "archive_sha256": "d9c4943ca8b657f8ba850bdff769a9847d39512f2c00a072b3f9b3ed43f0f247"
+    },
+    {
+      "source_path": "TAIKOUBOU/4.mln",
+      "archive_path": "TAIKOUBOU/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "10b246ea97662b570a4779c767c2854a4e418dbfd970fe38c2a7bcbee65bdec2",
+      "archive_bytes": 2067824,
+      "archive_sha256": "6e03c7d38a0d52ec3b9ad1eca80ad0c3d19997a43ff460fd8d4354d4c306e662"
+    },
+    {
+      "source_path": "TAIKOUBOU/5.mln",
+      "archive_path": "TAIKOUBOU/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "4873bcaaad6a5ca16fb87d12bc638fdad3ab5287f222242f5d2beb342dfdf236",
+      "archive_bytes": 2069520,
+      "archive_sha256": "c144754d8d1bbde09c8e86eebcd862125cf08fe3d26f492a5b858b9338577baa"
+    },
+    {
+      "source_path": "TAIKOUBOU/6.mln",
+      "archive_path": "TAIKOUBOU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "c58b76651eb6281570c02c88d07cc6cb78c2375604a77d8ad29cf16b0f92ca5f",
+      "archive_bytes": 2063106,
+      "archive_sha256": "96bd86d35efbb218bc20712d964b50ba9c0acf84ceadb9de7d6427a80a7d94aa"
+    },
+    {
+      "source_path": "TAIKOUBOU/kit.md",
+      "archive_path": "TAIKOUBOU/kit.md",
+      "source_bytes": 13960,
+      "source_sha256": "1846eb2dc9be569dbedb9c2aec94c2d452b9a355a1538056c9588726d3f97e09",
+      "archive_bytes": 13960,
+      "archive_sha256": "1846eb2dc9be569dbedb9c2aec94c2d452b9a355a1538056c9588726d3f97e09"
+    },
+    {
+      "source_path": "TOUSHIRO HITSUGAYA/4.mln",
+      "archive_path": "TOUSHIRO HITSUGAYA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9c2d7ca23c86a3bf9c5f62c189f827f4cb5f487fdc3af7812bae6697b1fdd74f",
+      "archive_bytes": 2071883,
+      "archive_sha256": "023e8573d57060ba5d976e3ebbbca3d9373b5a64280e45d62045cc7a25087ae5"
+    },
+    {
+      "source_path": "TOUSHIRO HITSUGAYA/5.mln",
+      "archive_path": "TOUSHIRO HITSUGAYA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "23908037bbe036bd74fcfe4a3b8619f59ef1ca1ff2fb30b8426b0dfe5e8b922c",
+      "archive_bytes": 2067546,
+      "archive_sha256": "c3d840f71fa5e8e058e06ca4d4b7c8bf817fdd29300ff77583af19579e373ed5"
+    },
+    {
+      "source_path": "TOUSHIRO HITSUGAYA/6.mln",
+      "archive_path": "TOUSHIRO HITSUGAYA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b9beae99dfa29b5c5aea5510cee430426a4fdb97ce1f5c8a9de8072b5b784202",
+      "archive_bytes": 2068744,
+      "archive_sha256": "4153e6d29625aa766e2a7e6beb2b2f0e57f471a4a250f512302925ba75b58ba3"
+    },
+    {
+      "source_path": "TOUSHIRO HITSUGAYA/kit.md",
+      "archive_path": "TOUSHIRO HITSUGAYA/kit.md",
+      "source_bytes": 8805,
+      "source_sha256": "94e0b2592d5ff621a994aefd0997a39c7f9a9537a098b564bd3011ea8ea1c2e7",
+      "archive_bytes": 8805,
+      "archive_sha256": "94e0b2592d5ff621a994aefd0997a39c7f9a9537a098b564bd3011ea8ea1c2e7"
+    },
+    {
+      "source_path": "TRAIN HEARTNET/4.mln",
+      "archive_path": "TRAIN HEARTNET/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "6edb2f883d7b77721e562c4246f63e4a3047c2ca7b63041c09391cc90ddf57b5",
+      "archive_bytes": 2054303,
+      "archive_sha256": "16d50a7b5a78febd035d23e2bd5508182d703214266c16ac43d98a68a3f7f980"
+    },
+    {
+      "source_path": "TRAIN HEARTNET/5.mln",
+      "archive_path": "TRAIN HEARTNET/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "9d6e7b945e3a3f1aba0e6eefa50e5d13dbbb6cf436e9938beca1a36f561497aa",
+      "archive_bytes": 1995370,
+      "archive_sha256": "c02f3db26ef7cd197d05378cc10ecab4d22ed36184e322c4e26172d6ea12e24d"
+    },
+    {
+      "source_path": "TRAIN HEARTNET/kit.md",
+      "archive_path": "TRAIN HEARTNET/kit.md",
+      "source_bytes": 9199,
+      "source_sha256": "dac03db06db02d5c1ff6c18d1a135f700e057ee65f4b554a3143293ff8006288",
+      "archive_bytes": 9199,
+      "archive_sha256": "dac03db06db02d5c1ff6c18d1a135f700e057ee65f4b554a3143293ff8006288"
+    },
+    {
+      "source_path": "TSUNA SAWADA/4.mln",
+      "archive_path": "TSUNA SAWADA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0a07417c8e7a28acffb0704a687f6c7ccba68fc0e29848a394d264010136b7d0",
+      "archive_bytes": 2072645,
+      "archive_sha256": "16c81bf5f1c3753b499510bbd89217c62c281e7a4315f1707e7aa14efce6e232"
+    },
+    {
+      "source_path": "TSUNA SAWADA/5.mln",
+      "archive_path": "TSUNA SAWADA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ad793d7fb32d1af83694dc0402e765320d75bc6da0a322b166e00dcce5583ff8",
+      "archive_bytes": 2083001,
+      "archive_sha256": "b7e1a9e50d295536ff89e16545abb483a37d79473b3f048a2665c91252269b1a"
+    },
+    {
+      "source_path": "TSUNA SAWADA/6.mln",
+      "archive_path": "TSUNA SAWADA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "103c1cbf2b3fc3e8f4e10ff41ccc58fbe160d2e2edcdac4c395aaacaee399f63",
+      "archive_bytes": 2057844,
+      "archive_sha256": "4af3b829b1c129c2b6e8cf4873c8e37f05b770d10d97eb23d5a5dbcb010582fd"
+    },
+    {
+      "source_path": "TSUNA SAWADA/kit.md",
+      "archive_path": "TSUNA SAWADA/kit.md",
+      "source_bytes": 8857,
+      "source_sha256": "f02f3031b2644e9c9f87d752275411e12ede6f59700fbb2abdc6d03b7578024f",
+      "archive_bytes": 8857,
+      "archive_sha256": "f02f3031b2644e9c9f87d752275411e12ede6f59700fbb2abdc6d03b7578024f"
+    },
+    {
+      "source_path": "VEGETA/4.mln",
+      "archive_path": "VEGETA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "547438e1a354a1c90502e8c21455b6c88d44d372c2ee72cd15aa83f9bdf61646",
+      "archive_bytes": 1987470,
+      "archive_sha256": "3ebeb4e13b19113e4a3e7db279152852b94300bfef4ae4219116ae499771dbb6"
+    },
+    {
+      "source_path": "VEGETA/5.mln",
+      "archive_path": "VEGETA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0d6dbc19a9039dd5b4242d21012ccca606fa751e4b575859b84064fc87a84497",
+      "archive_bytes": 1996482,
+      "archive_sha256": "d3d3e1dc4134553769b0c1e24f173605d26e3d751ac2ef8f0b2a303e07adfd7d"
+    },
+    {
+      "source_path": "VEGETA/6.mln",
+      "archive_path": "VEGETA/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "ee648298af5a97199bda42f25e6ff86bb09d760f22458434e5e88f8b56976218",
+      "archive_bytes": 1997673,
+      "archive_sha256": "e422fb51fdf7c5cf6206ae4aa292f512a60f3bc57e5e50753c6249c9b3bbb21a"
+    },
+    {
+      "source_path": "VEGETA/kit.md",
+      "archive_path": "VEGETA/kit.md",
+      "source_bytes": 9961,
+      "source_sha256": "4e67a3754b39893ee1ca7cd6491f278c8ce4a0999f438d386da6ccda724b293f",
+      "archive_bytes": 9961,
+      "archive_sha256": "4e67a3754b39893ee1ca7cd6491f278c8ce4a0999f438d386da6ccda724b293f"
+    },
+    {
+      "source_path": "YOH ASAKURA/4.mln",
+      "archive_path": "YOH ASAKURA/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7ef2156bba3dabefc83493f9c7903893e921a0b0750039704a1f9c7894670433",
+      "archive_bytes": 1999589,
+      "archive_sha256": "e95087d345561fc2486cb82f36cd840611b8428885a04e511c7da92095d130e7"
+    },
+    {
+      "source_path": "YOH ASAKURA/5.mln",
+      "archive_path": "YOH ASAKURA/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "b2a8213daa134e040db08ac963002f6669bf985d991f6c2b3d1a670f115b56b1",
+      "archive_bytes": 1995815,
+      "archive_sha256": "a631a3ecd936e03d6fd931809040e39a0482dd93f5013dc1a60c74def48db140"
+    },
+    {
+      "source_path": "YOH ASAKURA/6-FORMCHANGED.mln",
+      "archive_path": "YOH ASAKURA/6-FORMCHANGED.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "94b9f98c9d1315ac6305e32111f1b2b11a56873c442d4fe34eae2cba7384f0bc",
+      "archive_bytes": 1998818,
+      "archive_sha256": "1342bb624fb1dee03136d9411e9887133a3aee272886905afacfd8876bd5b490"
+    },
+    {
+      "source_path": "YOH ASAKURA/kit.md",
+      "archive_path": "YOH ASAKURA/kit.md",
+      "source_bytes": 8142,
+      "source_sha256": "7f59e9d4b0497b09531bb2798290834ca3b4893f909215a8d9afecd0d516556d",
+      "archive_bytes": 8142,
+      "archive_sha256": "7f59e9d4b0497b09531bb2798290834ca3b4893f909215a8d9afecd0d516556d"
+    },
+    {
+      "source_path": "YUGI MUTOU/4.mln",
+      "archive_path": "YUGI MUTOU/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "f7d826aadb2c1a8d94edb45d5f3668b12f70c9fc25f7e7bd6df5ad14f0c722b9",
+      "archive_bytes": 2034040,
+      "archive_sha256": "0b96da5abd9956be457af8188365924ce6b41599517b32827fdda6718e538f80"
+    },
+    {
+      "source_path": "YUGI MUTOU/5.mln",
+      "archive_path": "YUGI MUTOU/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d96f4c5dfbd3680a2f4c1f090a4812e199111af1737b70cf65fe1a742695ecf9",
+      "archive_bytes": 2027862,
+      "archive_sha256": "5605a240f4753800c8e2ded460fc96884b1047e9eaca54c5b96fb7fbd3907074"
+    },
+    {
+      "source_path": "YUGI MUTOU/6.mln",
+      "archive_path": "YUGI MUTOU/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "0c44b1def2862e9a1b9fa18ff1521350821666dc2c305852c898cabbb09c2236",
+      "archive_bytes": 2032030,
+      "archive_sha256": "79b624547f6f19aaf2377ea871435187e9cc35c4438a9535a781b6f370bf4460"
+    },
+    {
+      "source_path": "YUGI MUTOU/kit.md",
+      "archive_path": "YUGI MUTOU/kit.md",
+      "source_bytes": 8957,
+      "source_sha256": "f7dc9e073bedc0de70d9f4aca7f4922ddc641e94e18eec515ce399324040477f",
+      "archive_bytes": 8957,
+      "archive_sha256": "f7dc9e073bedc0de70d9f4aca7f4922ddc641e94e18eec515ce399324040477f"
+    },
+    {
+      "source_path": "YUSUKE URAMESHI/4.mln",
+      "archive_path": "YUSUKE URAMESHI/4.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "d6ae8a8e56463f0f67f6d3b2fbdeae0a4f19d803af1fe9e2d44725230a542c66",
+      "archive_bytes": 2003498,
+      "archive_sha256": "859a244e6ef64f5e385931e5d8048da277b56f711e366ea0aa8cee6c86ae3d7d"
+    },
+    {
+      "source_path": "YUSUKE URAMESHI/5.mln",
+      "archive_path": "YUSUKE URAMESHI/5.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "7a8ba32272a3d77da228bdbec4e347400eefde3cb7dc18077d2284274de17c8a",
+      "archive_bytes": 1993432,
+      "archive_sha256": "9b8884c1b46171fba5b46b1dfb568e31c6ec7b773138b9206dc5a337b17ea301"
+    },
+    {
+      "source_path": "YUSUKE URAMESHI/6.mln",
+      "archive_path": "YUSUKE URAMESHI/6.mln.gz",
+      "source_bytes": 19285389,
+      "source_sha256": "77beb9ad3b8361246cd40d4289f9fa6b1bd7934305fae835e2e0964ffcf53994",
+      "archive_bytes": 2143347,
+      "archive_sha256": "c8e15a0dc7aadec6af7ed3f3a12c7f1530e4726f84da7bcd83eaa741698c0115"
+    },
+    {
+      "source_path": "YUSUKE URAMESHI/kit.md",
+      "archive_path": "YUSUKE URAMESHI/kit.md",
+      "source_bytes": 8028,
+      "source_sha256": "50433aedb2263c27979ba706f4cd5996499d8da5b6351f53503df9884ac7ffaa",
+      "archive_bytes": 8028,
+      "archive_sha256": "50433aedb2263c27979ba706f4cd5996499d8da5b6351f53503df9884ac7ffaa"
+    }
+  ]
+}

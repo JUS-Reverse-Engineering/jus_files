@@ -31,7 +31,7 @@ in jus_re. A parent commit alone does not publish submodule content.
 | `extracted/` | Derived assets, including VFX/SFX payloads and rendered previews |
 | `sprites/` | Source sheets and generated character split outputs |
 | `captures/` | Raw measurements, watch specs, and capture summaries |
-| `save_states/` | Gzipped melonDS states and metadata |
+| `save_states/` | Gzipped melonDS states and metadata, including the full owner character-mapping source archive |
 
 Read [the savestate index](save_states/INDEX.md) before loading a state.
 Read [the sprite guide](sprites/README.md) before refreshing sprite sources.
