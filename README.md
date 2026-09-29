@@ -1,13 +1,13 @@
 # jus_files
 
-Private reference data for Jump Ultimate Stars research. [jus_re](https://github.com/drj613/jus_re)
+Private reference data for Jump Ultimate Stars research. [jus_re](https://github.com/bound-fullbleed/jus_re)
 uses this repository as its `jus_files/` submodule. JUSToolkit also consumes it.
-The separate [bound-fullbleed](https://github.com/drj613/bound-fullbleed) game repository
+The separate [bound-fullbleed](https://github.com/bound-fullbleed/bound-fullbleed) game repository
 copies selected proof-of-concept assets into `game/assets/poc_jus/`.
 
 ## Get the reference files
 
-Clone jus_re with `git clone --recurse-submodules git@github.com:drj613/jus_re.git`.
+Clone jus_re with `git clone --recurse-submodules git@github.com:bound-fullbleed/jus_re.git`.
 You need access to both private repositories. From an existing jus_re checkout,
 run `git submodule update --init --recursive` to get its pinned data revision.
 
