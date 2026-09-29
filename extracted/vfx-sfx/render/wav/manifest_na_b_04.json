@@ -1,0 +1,79 @@
+[
+ {
+  "seqarc": 378,
+  "seqarc_name": "SEQ_NA_B_04",
+  "index": 0,
+  "name": "SE_CHR_KAKASHI_IN",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 70,
+  "notes": [
+   {
+    "key": 57,
+    "velocity": 127,
+    "length": 3,
+    "program": 5,
+    "type": 1,
+    "swar": 0,
+    "swav": 17
+   },
+   {
+    "key": 84,
+    "velocity": 100,
+    "length": 16,
+    "program": 23,
+    "type": 1,
+    "swar": 0,
+    "swav": 48
+   },
+   {
+    "key": 84,
+    "velocity": 50,
+    "length": 12,
+    "program": 23,
+    "type": 1,
+    "swar": 0,
+    "swav": 48
+   },
+   {
+    "key": 84,
+    "velocity": 30,
+    "length": 12,
+    "program": 23,
+    "type": 1,
+    "swar": 0,
+    "swav": 48
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 16046,
+  "seconds": 0.49,
+  "audible_seconds": 0.474,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -19.2,
+  "rms_dbfs": -33.2,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_NA_B_04_00_SE_CHR_KAKASHI_IN.wav"
+ },
+ {
+  "seqarc": 378,
+  "seqarc_name": "SEQ_NA_B_04",
+  "index": 1,
+  "name": "SE_CHR_KAKASHI_WATER",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 110,
+  "notes": [],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 341,
+  "seconds": 0.01,
+  "audible_seconds": 0.0,
+  "starts_at_s": null,
+  "peak_dbfs": null,
+  "rms_dbfs": null,
+  "silent": true,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_NA_B_04_01_SE_CHR_KAKASHI_WATER.wav"
+ }
+]

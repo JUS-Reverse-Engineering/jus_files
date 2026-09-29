@@ -6,7 +6,7 @@ The run behind `cpu-ai-levels.md` §3.24. One bridge-only capture of
 - **3420 rows, fc 32595–36014, 0 gaps, 0 dropped**, latch confirmed at **fc 33509**.
 - Watch spec: **23 watches / 510 bytes** of the bridge's 512-byte budget.
 - Driver: `/private/tmp/jus-phase-capture/run_capture.py` (full raw log
-  `/private/tmp/jus-phase-capture/cap1.jsonl`, 4.7 MB — **not committed**, see below).
+  originally `/private/tmp/jus-phase-capture/cap1.jsonl`; now tracked here as `cap1.jsonl`).
 
 ## Files
 
@@ -59,9 +59,9 @@ therefore **not** unreachable for lack of weight or roll range — see
 
 ## Durability
 
-`jus_files/captures/` is **untracked inside the `jus_files` submodule**, so nothing under it is
-committed anywhere — including the earlier `ai_actions` probe and the freezehold dump. The full
-4.7 MB raw log for this run lives only at `/private/tmp/jus-phase-capture/cap1.jsonl`, which is
-ephemeral. This directory is the committed, parent-owned record: the decisive columns and the
-spec, enough to re-check every claim in §3.24 offline, but not the full frame-by-frame watch
-set.
+This directory belongs to the jus_files submodule. `cap1.jsonl`, `decisive.tsv`,
+`specs.json`, and `analysis.json` are tracked here. The parent jus_re repository
+also stores the decisive-column summary under
+`docs/research/side-quests/ai-phase-capture-2026-09-28/`.
+Use the tracked raw log for the full watch set. The original temporary driver path
+records where the capture ran, rather than a file provided by a fresh clone.

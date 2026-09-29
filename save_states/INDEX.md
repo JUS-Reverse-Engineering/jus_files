@@ -2,7 +2,10 @@
 
 Battle states for the agent harness — start an experiment from a known position instead of navigating there every time. These used to live only in `/tmp/jus_emu/states/`, which disappears on reboot.
 
-**Only the expensive ones are tracked.** A savestate is a derived artifact, and this repo would rather rebuild derived things than store them. The ones here either cost real manual effort no script can recreate, or gate an interactive session where a slow rebuild would waste the owner's time. Anything a script regenerates in a couple of minutes is left out on purpose — see "Not kept" below.
+All states present in this checkout are tracked, including the imported character-mapping
+states. This is the owner's publication policy from 2026-09-29. The table below
+records historical state descriptions; verify identity and instrument conditions before
+using one for a new measurement.
 
 **Stored gzipped.** Each raw `.mln` is 18.4 MB and compresses to about 1.9 MB.
 
@@ -129,7 +132,7 @@ are recorded in `docs/research/moveset-notes/OWNER-NOTES.md` section
 | `g2-luffy-after-charge` | G2 Luffy | own charge |
 | `g2-luffy-nocharge` | G2 Luffy | none (negative control) |
 
-## Not kept, and why
+## Historical states absent from this checkout
 
 - `verified_training_0/1/2` — regenerate with `cd scripts/emu && python3 boot_verified.py --runs 3`, about two minutes for all three. Training battles reached by the pixel-verified route with items and gimmicks switched OFF.
 - `deck2_base` — a battle using deck 2, reachable through the same verified route.

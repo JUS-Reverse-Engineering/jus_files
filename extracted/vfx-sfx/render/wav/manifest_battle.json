@@ -1,0 +1,1175 @@
+[
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 14,
+  "name": "SE_HIT",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 57,
+    "velocity": 105,
+    "length": 24,
+    "program": 6,
+    "type": 1,
+    "swar": 0,
+    "swav": 18
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 8535,
+  "seconds": 0.26,
+  "audible_seconds": 0.245,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -11.5,
+  "rms_dbfs": -18.1,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_0e_SE_HIT.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 15,
+  "name": "SE_HVYHIT",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 102,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 6,
+    "type": 1,
+    "swar": 0,
+    "swav": 18
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9730,
+  "seconds": 0.297,
+  "audible_seconds": 0.288,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.8,
+  "rms_dbfs": -17.3,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_0f_SE_HVYHIT.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 16,
+  "name": "SE_SLASH",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 120,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 7,
+    "type": 1,
+    "swar": 0,
+    "swav": 44
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 7511,
+  "seconds": 0.229,
+  "audible_seconds": 0.222,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -7.2,
+  "rms_dbfs": -18.6,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_10_SE_SLASH.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 17,
+  "name": "SE_HVYSLASH",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 120,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 8,
+    "type": 1,
+    "swar": 0,
+    "swav": 19
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9218,
+  "seconds": 0.281,
+  "audible_seconds": 0.275,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -7.2,
+  "rms_dbfs": -18.0,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_11_SE_HVYSLASH.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 58,
+  "name": "SE_KABOOM",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 9,
+    "type": 1,
+    "swar": 0,
+    "swav": 29
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 25435,
+  "seconds": 0.776,
+  "audible_seconds": 0.753,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -7.7,
+  "rms_dbfs": -20.7,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_3a_SE_KABOOM.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 43,
+  "name": "SE_GUARD",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 3,
+    "type": 1,
+    "swar": 0,
+    "swav": 16
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 7340,
+  "seconds": 0.224,
+  "audible_seconds": 0.213,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.5,
+  "rms_dbfs": -23.6,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_2b_SE_GUARD.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 42,
+  "name": "SE_SOUSAI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 100,
+  "notes": [
+   {
+    "key": 53,
+    "velocity": 127,
+    "length": 16,
+    "program": 4,
+    "type": 1,
+    "swar": 0,
+    "swav": 45
+   },
+   {
+    "key": 54,
+    "velocity": 80,
+    "length": 8,
+    "program": 3,
+    "type": 1,
+    "swar": 0,
+    "swav": 16
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 8535,
+  "seconds": 0.26,
+  "audible_seconds": 0.245,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -10.7,
+  "rms_dbfs": -22.2,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_2a_SE_SOUSAI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 52,
+  "name": "SE_DASH",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 75,
+  "notes": [
+   {
+    "key": 61,
+    "velocity": 127,
+    "length": 0,
+    "program": 2,
+    "type": 1,
+    "swar": 0,
+    "swav": 6
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 12120,
+  "seconds": 0.37,
+  "audible_seconds": 0.363,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -15.2,
+  "rms_dbfs": -28.0,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_34_SE_DASH.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 67,
+  "name": "SE_DRON",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 122,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 20,
+    "type": 1,
+    "swar": 0,
+    "swav": 8
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 14851,
+  "seconds": 0.453,
+  "audible_seconds": 0.442,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -7.2,
+  "rms_dbfs": -18.3,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_43_SE_DRON.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 20,
+  "name": "SE_FURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 1,
+    "type": 1,
+    "swar": 0,
+    "swav": 39
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 7169,
+  "seconds": 0.219,
+  "audible_seconds": 0.213,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.2,
+  "rms_dbfs": -23.5,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_14_SE_FURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 21,
+  "name": "SE_HVYFURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 102,
+  "notes": [
+   {
+    "key": 57,
+    "velocity": 127,
+    "length": 0,
+    "program": 1,
+    "type": 1,
+    "swar": 0,
+    "swav": 39
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 8535,
+  "seconds": 0.26,
+  "audible_seconds": 0.253,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -10.6,
+  "rms_dbfs": -25.1,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_15_SE_HVYFURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 1,
+  "name": "SE_KO",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 120,
+  "notes": [
+   {
+    "key": 51,
+    "velocity": 127,
+    "length": 14,
+    "program": 10,
+    "type": 1,
+    "swar": 0,
+    "swav": 13
+   },
+   {
+    "key": 54,
+    "velocity": 127,
+    "length": 24,
+    "program": 10,
+    "type": 1,
+    "swar": 0,
+    "swav": 13
+   },
+   {
+    "key": 96,
+    "velocity": 80,
+    "length": 8,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 96,
+    "program": 34,
+    "type": 1,
+    "swar": 0,
+    "swav": 11
+   },
+   {
+    "key": 102,
+    "velocity": 80,
+    "length": 8,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 54,
+    "velocity": 127,
+    "length": 0,
+    "program": 10,
+    "type": 1,
+    "swar": 0,
+    "swav": 13
+   },
+   {
+    "key": 99,
+    "velocity": 80,
+    "length": 8,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 106,
+    "velocity": 80,
+    "length": 8,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 108,
+    "velocity": 60,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 102,
+    "velocity": 60,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 98,
+    "velocity": 60,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 106,
+    "velocity": 60,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 96,
+    "velocity": 40,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 98,
+    "velocity": 40,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 60,
+    "velocity": 80,
+    "length": 48,
+    "program": 34,
+    "type": 1,
+    "swar": 0,
+    "swav": 11
+   },
+   {
+    "key": 102,
+    "velocity": 40,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 106,
+    "velocity": 40,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 96,
+    "velocity": 20,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 98,
+    "velocity": 20,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 60,
+    "velocity": 50,
+    "length": 48,
+    "program": 34,
+    "type": 1,
+    "swar": 0,
+    "swav": 11
+   },
+   {
+    "key": 102,
+    "velocity": 20,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 106,
+    "velocity": 20,
+    "length": 12,
+    "program": 120,
+    "type": 2,
+    "swar": 0,
+    "swav": 0
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 88425,
+  "seconds": 2.699,
+  "audible_seconds": 1.959,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -4.6,
+  "rms_dbfs": -17.7,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_01_SE_KO.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 54,
+  "name": "SE_CHRCHNG",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 13,
+    "type": 1,
+    "swar": 0,
+    "swav": 5
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9730,
+  "seconds": 0.297,
+  "audible_seconds": 0.289,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.6,
+  "rms_dbfs": -22.2,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_36_SE_CHRCHNG.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 13,
+  "name": "SE_PLUSFEEL",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 80,
+  "notes": [
+   {
+    "key": 69,
+    "velocity": 127,
+    "length": 4,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 90,
+    "velocity": 60,
+    "length": 14,
+    "program": 123,
+    "type": 2,
+    "swar": 0,
+    "swav": 3
+   },
+   {
+    "key": 61,
+    "velocity": 127,
+    "length": 4,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 64,
+    "velocity": 127,
+    "length": 4,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 91,
+    "velocity": 60,
+    "length": 14,
+    "program": 123,
+    "type": 2,
+    "swar": 0,
+    "swav": 3
+   },
+   {
+    "key": 68,
+    "velocity": 127,
+    "length": 4,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 69,
+    "velocity": 127,
+    "length": 12,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 93,
+    "velocity": 60,
+    "length": 14,
+    "program": 123,
+    "type": 2,
+    "swar": 0,
+    "swav": 3
+   },
+   {
+    "key": 73,
+    "velocity": 127,
+    "length": 12,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   },
+   {
+    "key": 95,
+    "velocity": 60,
+    "length": 16,
+    "program": 123,
+    "type": 2,
+    "swar": 0,
+    "swav": 3
+   },
+   {
+    "key": 76,
+    "velocity": 127,
+    "length": 48,
+    "program": 12,
+    "type": 1,
+    "swar": 3,
+    "swav": 33
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 24069,
+  "seconds": 0.735,
+  "audible_seconds": 0.617,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.9,
+  "rms_dbfs": -26.1,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_0d_SE_PLUSFEEL.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 24,
+  "name": "SE_SWDFURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 107,
+  "notes": [
+   {
+    "key": 48,
+    "velocity": 127,
+    "length": 0,
+    "program": 37,
+    "type": 1,
+    "swar": 0,
+    "swav": 50
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 5121,
+  "seconds": 0.156,
+  "audible_seconds": 0.146,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -9.3,
+  "rms_dbfs": -22.6,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_18_SE_SWDFURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 30,
+  "name": "SE_ELECFURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 1,
+    "type": 1,
+    "swar": 0,
+    "swav": 39
+   },
+   {
+    "key": 55,
+    "velocity": 70,
+    "length": 12,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 67,
+    "velocity": 80,
+    "length": 9,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 64,
+    "velocity": 70,
+    "length": 9,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 58,
+    "velocity": 70,
+    "length": 6,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 53,
+    "velocity": 70,
+    "length": 6,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 31,
+    "velocity": 70,
+    "length": 6,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   },
+   {
+    "key": 55,
+    "velocity": 80,
+    "length": 8,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 12290,
+  "seconds": 0.375,
+  "audible_seconds": 0.359,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.7,
+  "rms_dbfs": -24.7,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_1e_SE_ELECFURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 33,
+  "name": "SE_KUNAI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 80,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 6657,
+  "seconds": 0.203,
+  "audible_seconds": 0.194,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -14.6,
+  "rms_dbfs": -23.0,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_21_SE_KUNAI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 34,
+  "name": "SE_HVYKUNAI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 80,
+  "notes": [
+   {
+    "key": 57,
+    "velocity": 127,
+    "length": 6,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   },
+   {
+    "key": 62,
+    "velocity": 127,
+    "length": 0,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 8023,
+  "seconds": 0.245,
+  "audible_seconds": 0.235,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -14.4,
+  "rms_dbfs": -22.8,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_22_SE_HVYKUNAI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 38,
+  "name": "SE_ELECSHOCK",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 60,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 40,
+    "program": 21,
+    "type": 1,
+    "swar": 0,
+    "swav": 7
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 13997,
+  "seconds": 0.427,
+  "audible_seconds": 0.412,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -20.0,
+  "rms_dbfs": -33.0,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_26_SE_ELECSHOCK.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 53,
+  "name": "SE_HVYDASH",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 75,
+  "notes": [
+   {
+    "key": 55,
+    "velocity": 127,
+    "length": 0,
+    "program": 2,
+    "type": 1,
+    "swar": 0,
+    "swav": 6
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 17070,
+  "seconds": 0.521,
+  "audible_seconds": 0.513,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -15.2,
+  "rms_dbfs": -28.0,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_35_SE_HVYDASH.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 22,
+  "name": "SE_OMOFURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 107,
+  "notes": [
+   {
+    "key": 54,
+    "velocity": 127,
+    "length": 0,
+    "program": 1,
+    "type": 1,
+    "swar": 0,
+    "swav": 39
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 10583,
+  "seconds": 0.323,
+  "audible_seconds": 0.315,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.9,
+  "rms_dbfs": -24.2,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_16_SE_OMOFURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 31,
+  "name": "SE_KOUDAN",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 110,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 17,
+    "type": 1,
+    "swar": 0,
+    "swav": 32
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 14851,
+  "seconds": 0.453,
+  "audible_seconds": 0.443,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -8.7,
+  "rms_dbfs": -20.4,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_1f_SE_KOUDAN.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 32,
+  "name": "SE_HVYKOUDAN",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 85,
+  "notes": [
+   {
+    "key": 55,
+    "velocity": 127,
+    "length": 10,
+    "program": 19,
+    "type": 1,
+    "swar": 0,
+    "swav": 31
+   },
+   {
+    "key": 77,
+    "velocity": 60,
+    "length": 20,
+    "program": 125,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 62,
+    "velocity": 127,
+    "length": 54,
+    "program": 19,
+    "type": 1,
+    "swar": 0,
+    "swav": 31
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 22191,
+  "seconds": 0.677,
+  "audible_seconds": 0.661,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -12.1,
+  "rms_dbfs": -21.5,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_20_SE_HVYKOUDAN.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 35,
+  "name": "SE_BEAM",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 105,
+  "notes": [
+   {
+    "key": 59,
+    "velocity": 127,
+    "length": 48,
+    "program": 19,
+    "type": 1,
+    "swar": 0,
+    "swav": 31
+   },
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 60,
+    "program": 34,
+    "type": 1,
+    "swar": 0,
+    "swav": 11
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 53772,
+  "seconds": 1.641,
+  "audible_seconds": 1.247,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -4.2,
+  "rms_dbfs": -20.5,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_23_SE_BEAM.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 70,
+  "name": "SE_AURA_TAME",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 50,
+  "notes": [
+   {
+    "key": 42,
+    "velocity": 80,
+    "length": 8,
+    "program": 11,
+    "type": 1,
+    "swar": 3,
+    "swav": 32
+   },
+   {
+    "key": 52,
+    "velocity": 100,
+    "length": 10,
+    "program": 11,
+    "type": 1,
+    "swar": 3,
+    "swav": 32
+   },
+   {
+    "key": 52,
+    "velocity": 60,
+    "length": 10,
+    "program": 11,
+    "type": 1,
+    "swar": 3,
+    "swav": 32
+   },
+   {
+    "key": 56,
+    "velocity": 100,
+    "length": 0,
+    "program": 11,
+    "type": 1,
+    "swar": 3,
+    "swav": 32
+   },
+   {
+    "key": 56,
+    "velocity": 80,
+    "length": 10,
+    "program": 11,
+    "type": 1,
+    "swar": 3,
+    "swav": 32
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 11095,
+  "seconds": 0.339,
+  "audible_seconds": 0.327,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -24.3,
+  "rms_dbfs": -41.8,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_46_SE_AURA_TAME.wav"
+ }
+]
