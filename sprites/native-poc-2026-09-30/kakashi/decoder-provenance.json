@@ -1,0 +1,212 @@
+{
+  "effect_id": "0x0604a9",
+  "archive": "chr/na_b_04_6.aar",
+  "animation_member": "na_b_04_e6.amt",
+  "animation_id": "0xa9",
+  "animation_frames": 32,
+  "loop": true,
+  "cell_timeline": [
+    {
+      "cell": 0,
+      "start": 0,
+      "len": 8
+    },
+    {
+      "cell": 1,
+      "start": 8,
+      "len": 8
+    },
+    {
+      "cell": 2,
+      "start": 16,
+      "len": 8
+    },
+    {
+      "cell": 3,
+      "start": 24,
+      "len": 8
+    }
+  ],
+  "effect_texture": "0x0604a1",
+  "texture_member": "na_b_04_e61_.dtx",
+  "palette_count": 6,
+  "palette_sha256": "24c6d2315203ffac6d4da3465f40367ad052c798c357ac53a2663a97319f0b32",
+  "member_sha256": "807278dec123391449812a2860aff718803fc53721f54d3781176ba95a49a9d2",
+  "texture_member_sha256": "3050fdc5bf403a138a196fe07dc415da6ed8313ac66109e04f3a8e23de3edc48",
+  "special_strips_sha256": "023bf8504183ed5e881aedde2201f5fbc1b09b6b1fba9a9f7f8d9b6b189779a9",
+  "decoder_sha256": {
+    "anim_timing.py": "4186cea9c5df1badbf70ddd9091f352ad95bb716168feca9bb191896b814ba57",
+    "effect_render.py": "ebfea653df25f545df32420cbe7e9abfd2e8848ff9f21f2c33f6ea0cce2fe09f",
+    "special_strips.py": "0925863ab60538fe2995176f2be04b413fc67be2be0c467b55803e25d1dab3de"
+  },
+  "manual_fallback": {
+    "path": "game/assets/poc_jus/kakashi/projectiles/shot_mangekyou_eye_k6.png",
+    "sha256": "8bc2a20fa89261a657490df04d0945de4f6d3143f78822df3c591f44d3e9be91",
+    "size": [
+      320,
+      80
+    ]
+  },
+  "cells": [
+    {
+      "cell": 0,
+      "effect_frame": 0,
+      "hold_frames": 8,
+      "native_size": [
+        76,
+        78
+      ],
+      "effect_space_bbox": [
+        -39,
+        -40,
+        37,
+        38
+      ],
+      "anchor_from_effect_origin": [
+        39,
+        40
+      ],
+      "png_sha256": "6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b",
+      "rgba_sha256": "f8b05167a726388f3c053ce88d2c8787d03cfbe928e63e7fac845e302574eb72",
+      "transparent_bbox_in_decoder_canvas": [
+        1,
+        0,
+        77,
+        78
+      ],
+      "decoder_canvas_box": [
+        -40,
+        -40,
+        40,
+        40
+      ]
+    },
+    {
+      "cell": 1,
+      "effect_frame": 8,
+      "hold_frames": 8,
+      "native_size": [
+        80,
+        79
+      ],
+      "effect_space_bbox": [
+        -40,
+        -39,
+        40,
+        40
+      ],
+      "anchor_from_effect_origin": [
+        40,
+        39
+      ],
+      "png_sha256": "e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801",
+      "rgba_sha256": "2371a99ec2af55edca6df5a03ff94fc59dd4e1f7fd805a57b97bc5e1a4834c37",
+      "transparent_bbox_in_decoder_canvas": [
+        0,
+        1,
+        80,
+        80
+      ],
+      "decoder_canvas_box": [
+        -40,
+        -40,
+        40,
+        40
+      ]
+    },
+    {
+      "cell": 2,
+      "effect_frame": 16,
+      "hold_frames": 8,
+      "native_size": [
+        77,
+        78
+      ],
+      "effect_space_bbox": [
+        -38,
+        -38,
+        39,
+        40
+      ],
+      "anchor_from_effect_origin": [
+        38,
+        38
+      ],
+      "png_sha256": "1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f",
+      "rgba_sha256": "349fcdf28c6fe457ce64d7eb2ff106413924986f5949d31c12f24465fa5aa358",
+      "transparent_bbox_in_decoder_canvas": [
+        2,
+        2,
+        79,
+        80
+      ],
+      "decoder_canvas_box": [
+        -40,
+        -40,
+        40,
+        40
+      ]
+    },
+    {
+      "cell": 3,
+      "effect_frame": 24,
+      "hold_frames": 8,
+      "native_size": [
+        76,
+        79
+      ],
+      "effect_space_bbox": [
+        -39,
+        -40,
+        37,
+        39
+      ],
+      "anchor_from_effect_origin": [
+        39,
+        40
+      ],
+      "png_sha256": "dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f",
+      "rgba_sha256": "e515030e9e79716f66e542b7aefcb4c94559c6a127bf242e10962449a3aa8cbc",
+      "transparent_bbox_in_decoder_canvas": [
+        1,
+        0,
+        77,
+        79
+      ],
+      "decoder_canvas_box": [
+        -40,
+        -40,
+        40,
+        40
+      ]
+    }
+  ],
+  "contact_sheet": {
+    "path": "eye-fallback-vs-native-contact.png",
+    "sha256": "e3693e9bd31a256cbdeb7832fe6e2df2974c348fec15f2a3b095068af3e8ee5c",
+    "native_scale": 1
+  },
+  "outer_archive": {
+    "path": "jus_files/ripped_jus_files/chr/ChrArc.aar",
+    "sha256": "242b0f92861c053524c370dd74248142f55d247fe6c7b124da93b9684a4f16fb"
+  },
+  "glyph_effect": {
+    "effect_id": "0x0604a7",
+    "archive": "chr/na_b_04_6.aar",
+    "animation_member": "na_b_04_e6.amt",
+    "animation_id": "0xa7",
+    "frames": 8,
+    "loop": false,
+    "timeline": [
+      {
+        "cell": 0,
+        "start": 0,
+        "len": 8
+      }
+    ],
+    "texture": "0x060444",
+    "texture_member": "na_b_04_e04_.dtx",
+    "texture_member_sha256": "888f8430aaeff0d472834604d421f563c1efa37c1b69fa9e9150cfae2ae37389",
+    "glyph_in_eye_cells": false
+  }
+}

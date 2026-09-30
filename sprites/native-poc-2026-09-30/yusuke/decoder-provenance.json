@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "purpose": "private POC proposal for parent corpus publication",
+  "canonical_corpus_written": false,
+  "frames": [
+    {
+      "cell": 13,
+      "texture": 622851,
+      "file": "cell-13.png",
+      "native_size": [
+        59,
+        41
+      ],
+      "anchor": [
+        35,
+        41
+      ],
+      "anchor_basis": "authored sprite origin relative to alpha crop",
+      "facing": "authored orientation; not independently certified",
+      "png_sha256": "0f1daa1071699139eafd62cd8268a874e57d2e26dda4f8315ead56f1bf4e6745",
+      "rgba_sha256": "3f8f42755f694e4e8347a1c9ef94452c0ca236af0a18c60745a3fae4dace6115",
+      "role": null,
+      "status": "native decoded art; live upX cell identity verified; semantic role and facing uncertified",
+      "live_evidence": {
+        "case": "yusuke-k6-upX-near-hit-recovery-cells",
+        "raw_sha256": "239bf3d535787d46881c131d68f004814aabb7ac45a9cc365e416f901a6e3059",
+        "plans": [
+          53,
+          54,
+          55
+        ],
+        "table_indices": [
+          43
+        ]
+      }
+    },
+    {
+      "cell": 20,
+      "texture": 622851,
+      "file": "cell-20.png",
+      "native_size": [
+        48,
+        65
+      ],
+      "anchor": [
+        32,
+        64
+      ],
+      "anchor_basis": "authored sprite origin relative to alpha crop",
+      "facing": "authored orientation; not independently certified",
+      "png_sha256": "cc8fb66fdc70bcc05c03d202e36ddbb6056efe23cfa479362e318be55635e72f",
+      "rgba_sha256": "f70db0d36724536dfcaafd4606d4a07578da5d2e5fb77df23746e7a50ec5bfa3",
+      "role": null,
+      "status": "native decoded art; live upX cell identity verified; semantic role and facing uncertified",
+      "live_evidence": {
+        "case": "yusuke-k6-upX-near-hit-recovery-cells",
+        "raw_sha256": "239bf3d535787d46881c131d68f004814aabb7ac45a9cc365e416f901a6e3059",
+        "plans": [
+          77,
+          78,
+          79
+        ],
+        "table_indices": [
+          43
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "archive": "chr/yh_b_01_6.aar",
+      "member": "yh_b_01_6_.dtx",
+      "decoded_member_sha256": "4736eeecacc0ac7eed273632e101d5a141564f80754eefc5471a1b4fdb42d9b0"
+    },
+    {
+      "path": "ripped_jus_files/CHR/yh_b_01_6c.aar",
+      "sha256": "91514678f8807c6f9a6c5a63cd0d853779cfd726fb7027a0661cfc7d08b71f20"
+    }
+  ],
+  "decoder": {
+    "path": "scripts/analysis/anim_timing.py",
+    "sha256": "4186cea9c5df1badbf70ddd9091f352ad95bb716168feca9bb191896b814ba57",
+    "pillow": "12.3.0",
+    "palette": "original 15-bit values scaled per pinned decoder",
+    "scale": 1,
+    "canvas": 256,
+    "crop": "alpha bbox, origin preserved"
+  },
+  "baseline": {
+    "commit": "491b656",
+    "credits_sha256": "558fe540ac752e3293478a0db430ad7c77937adc2c94ed35008dd4b88cbf8a08"
+  },
+  "credits": "Jump Ultimate Stars ROM, copyright Nintendo, Shueisha and respective series owners. The existing comparison sheet credits Grim. These cells are decoded from ROM archives, not extracted from that sheet. Private POC only; not for release."
+}

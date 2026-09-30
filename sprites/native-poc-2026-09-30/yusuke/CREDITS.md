@@ -1,0 +1,1 @@
+Jump! Ultimate Stars ROM art, copyright Nintendo, Shueisha and the respective series owners. Native cells decoded from the pinned ROM archives; they are not drawn by the research authors. Private research / proof of concept only. Never ship or export in a public game. Existing comparison sheets credit Grim; these native cells are decoded from ROM, not cut from those sheets.

@@ -1,0 +1,26 @@
+[
+  {
+    "cell": 13,
+    "size": [
+      59,
+      41
+    ],
+    "anchor": [
+      35,
+      41
+    ],
+    "rgba_matches_native_decoder": true
+  },
+  {
+    "cell": 20,
+    "size": [
+      48,
+      65
+    ],
+    "anchor": [
+      32,
+      64
+    ],
+    "rgba_matches_native_decoder": true
+  }
+]

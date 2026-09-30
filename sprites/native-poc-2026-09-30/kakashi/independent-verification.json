@@ -1,0 +1,27 @@
+{
+  "four_native_RGBA_and_anchors_verified": true,
+  "loop_frames": 32,
+  "keys": [
+    [
+      0,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      32,
+      3
+    ]
+  ],
+  "member_sha256": "807278dec123391449812a2860aff718803fc53721f54d3781176ba95a49a9d2"
+}

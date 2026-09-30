@@ -1,0 +1,85 @@
+{
+  "yusuke": {
+    "facing": "right",
+    "basis": "Same texture0x098103 decoded cell10 has exact unmirrored alpha geometry against existing authored right-facing source frame; mirrored alpha geometry differs. Palette RGB differences are not relabeled as exact pixel identity.",
+    "reference_path": "sprites/normalized/yusuke/6upx/002.png",
+    "reference_png_sha256": "f4fcb2b8444705ff724df3ebb24a34a3305501e5156a9c40ecb0b18ef2b98805",
+    "reference_cell": 10,
+    "reference_texture": 622851,
+    "native_alpha_sha256": "06e0f97f2199975ef1c641703424c422450a8977f15e0d8ecf37cdc2ee190e9d",
+    "decoder_origin": [
+      128,
+      128
+    ]
+  },
+  "kakashi": {
+    "facing": "right",
+    "basis": "Inherit authored reference orientation after unflipped native eye pixels exactly match every retained opaque pixel of each right-facing fallback at the decoder-origin alignment. This is source orientation metadata, not a claim that the effect turns toward an opponent.",
+    "frames": [
+      {
+        "cell": 0,
+        "reference_path": "sprites/normalized/kakashi/shot_mangekyou_eye_k6/001.png",
+        "reference_png_sha256": "5e315780e3719bc3bb23cf76773b33ace2fc1578129ef4698ba6642435b22069",
+        "native_png_sha256": "6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b",
+        "unflipped_opaque_pixel_matches": 1397,
+        "mirrored_opaque_pixel_matches": 452,
+        "reference_anchor": [
+          40,
+          40
+        ],
+        "native_anchor": [
+          39,
+          40
+        ]
+      },
+      {
+        "cell": 1,
+        "reference_path": "sprites/normalized/kakashi/shot_mangekyou_eye_k6/002.png",
+        "reference_png_sha256": "a12e674341d6273ec24b24054a2f59146ef3977f6dfa7ada0a9593ddcce5550f",
+        "native_png_sha256": "e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801",
+        "unflipped_opaque_pixel_matches": 1161,
+        "mirrored_opaque_pixel_matches": 604,
+        "reference_anchor": [
+          40,
+          40
+        ],
+        "native_anchor": [
+          40,
+          39
+        ]
+      },
+      {
+        "cell": 2,
+        "reference_path": "sprites/normalized/kakashi/shot_mangekyou_eye_k6/003.png",
+        "reference_png_sha256": "aec7e882f276113a8a60c8679257211a12459df3401ad2ec6f065db2d1dfb9aa",
+        "native_png_sha256": "1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f",
+        "unflipped_opaque_pixel_matches": 1225,
+        "mirrored_opaque_pixel_matches": 381,
+        "reference_anchor": [
+          40,
+          40
+        ],
+        "native_anchor": [
+          38,
+          38
+        ]
+      },
+      {
+        "cell": 3,
+        "reference_path": "sprites/normalized/kakashi/shot_mangekyou_eye_k6/004.png",
+        "reference_png_sha256": "08a44ba52673c6bcd739bad359546f36cf56596f04e466b2bf265061af06947b",
+        "native_png_sha256": "dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f",
+        "unflipped_opaque_pixel_matches": 1815,
+        "mirrored_opaque_pixel_matches": 600,
+        "reference_anchor": [
+          40,
+          40
+        ],
+        "native_anchor": [
+          39,
+          40
+        ]
+      }
+    ]
+  }
+}
