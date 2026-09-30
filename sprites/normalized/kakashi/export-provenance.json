@@ -1,5 +1,5 @@
 {
-  "bindings_sha256": "41da8b4ce86078e0c6032742d2d13d1e81f008fd48d1243e1baff3211cd6d87c",
+  "bindings_sha256": "1cb4da31e002ccce31b9003b8898272fe5399e8462970e46e5e4cdf1c0688b70",
   "frames": {
     "sha256:03b2bd692e56f4b8f783b6f4d8109191baaed1c27e5517f5502fb12da74e9952:rect:100,5036,131,5083": {
       "anchor": {
@@ -21591,243 +21591,335 @@
       },
       "status": "verified"
     },
-    "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:0,0,80,80": {
+    "sha256:1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f:rect:0,0,77,78": {
       "anchor": {
         "cite": [
           {
-            "claim": "Current loaded metadata and compatibility identity.",
-            "locator": "/projectiles/mangekyou_eye@k6",
-            "path": "game/assets/poc_jus/kakashi/sprites.json",
-            "root": "bfb",
-            "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
+            "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "locator": "/cells/2",
+            "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+            "root": "corpus",
+            "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
           },
           {
-            "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-            "locator": "PocSpriteSheet._strip",
-            "path": "game/characters/poc_sprite_sheet.gd",
-            "root": "bfb",
-            "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
+            "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "locator": "/kakashi",
+            "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+            "root": "corpus",
+            "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+          },
+          {
+            "claim": "ROM art attribution and private non-release restriction.",
+            "locator": "private POC",
+            "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+            "root": "corpus",
+            "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
           }
         ],
-        "grade": "baseline_alignment",
-        "status": "proposed",
+        "grade": "decoder_origin",
+        "status": "verified",
         "value": [
-          40,
+          38,
+          38
+        ]
+      },
+      "baked_effects": [],
+      "cell_candidates": [
+        {
+          "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+          "cell": 2,
+          "texture": 394401
+        }
+      ],
+      "cell_status": "verified",
+      "cite": [
+        {
+          "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "locator": "/cells/2",
+          "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+          "root": "corpus",
+          "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+        },
+        {
+          "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "locator": "/kakashi",
+          "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+          "root": "corpus",
+          "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+        },
+        {
+          "claim": "ROM art attribution and private non-release restriction.",
+          "locator": "private POC",
+          "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+          "root": "corpus",
+          "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+        }
+      ],
+      "facing": "right",
+      "grade": "native_decoder_pixels",
+      "pixel_sha256": "349fcdf28c6fe457ce64d7eb2ff106413924986f5949d31c12f24465fa5aa358",
+      "rect": [
+        0,
+        0,
+        77,
+        78
+      ],
+      "selected_cell": {
+        "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+        "cell": 2,
+        "texture": 394401
+      },
+      "source": "native_eye_2",
+      "status": "verified"
+    },
+    "sha256:6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b:rect:0,0,76,78": {
+      "anchor": {
+        "cite": [
+          {
+            "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "locator": "/cells/0",
+            "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+            "root": "corpus",
+            "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+          },
+          {
+            "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "locator": "/kakashi",
+            "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+            "root": "corpus",
+            "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+          },
+          {
+            "claim": "ROM art attribution and private non-release restriction.",
+            "locator": "private POC",
+            "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+            "root": "corpus",
+            "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+          }
+        ],
+        "grade": "decoder_origin",
+        "status": "verified",
+        "value": [
+          39,
           40
         ]
       },
       "baked_effects": [],
-      "cell_candidates": [],
-      "cell_status": "unresolved",
-      "cite": [
+      "cell_candidates": [
         {
-          "claim": "Current loaded metadata and compatibility identity.",
-          "locator": "/projectiles/mangekyou_eye@k6",
-          "path": "game/assets/poc_jus/kakashi/sprites.json",
-          "root": "bfb",
-          "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-        },
-        {
-          "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-          "locator": "PocSpriteSheet._strip",
-          "path": "game/characters/poc_sprite_sheet.gd",
-          "root": "bfb",
-          "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
+          "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+          "cell": 0,
+          "texture": 394401
         }
       ],
-      "cut_locator": "mangekyou_eye@k6[0]",
+      "cell_status": "verified",
+      "cite": [
+        {
+          "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "locator": "/cells/0",
+          "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+          "root": "corpus",
+          "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+        },
+        {
+          "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "locator": "/kakashi",
+          "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+          "root": "corpus",
+          "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+        },
+        {
+          "claim": "ROM art attribution and private non-release restriction.",
+          "locator": "private POC",
+          "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+          "root": "corpus",
+          "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+        }
+      ],
       "facing": "right",
-      "grade": "exact_current_pixels",
-      "pixel_sha256": "14fb0e0deb72cbb727bf140ae5c99bca00488bf2022ee6d95c63e5b973d074ea",
+      "grade": "native_decoder_pixels",
+      "pixel_sha256": "f8b05167a726388f3c053ce88d2c8787d03cfbe928e63e7fac845e302574eb72",
+      "rect": [
+        0,
+        0,
+        76,
+        78
+      ],
+      "selected_cell": {
+        "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+        "cell": 0,
+        "texture": 394401
+      },
+      "source": "native_eye_0",
+      "status": "verified"
+    },
+    "sha256:dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f:rect:0,0,76,79": {
+      "anchor": {
+        "cite": [
+          {
+            "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "locator": "/cells/3",
+            "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+            "root": "corpus",
+            "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+          },
+          {
+            "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "locator": "/kakashi",
+            "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+            "root": "corpus",
+            "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+          },
+          {
+            "claim": "ROM art attribution and private non-release restriction.",
+            "locator": "private POC",
+            "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+            "root": "corpus",
+            "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+          }
+        ],
+        "grade": "decoder_origin",
+        "status": "verified",
+        "value": [
+          39,
+          40
+        ]
+      },
+      "baked_effects": [],
+      "cell_candidates": [
+        {
+          "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+          "cell": 3,
+          "texture": 394401
+        }
+      ],
+      "cell_status": "verified",
+      "cite": [
+        {
+          "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "locator": "/cells/3",
+          "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+          "root": "corpus",
+          "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+        },
+        {
+          "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "locator": "/kakashi",
+          "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+          "root": "corpus",
+          "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+        },
+        {
+          "claim": "ROM art attribution and private non-release restriction.",
+          "locator": "private POC",
+          "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+          "root": "corpus",
+          "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+        }
+      ],
+      "facing": "right",
+      "grade": "native_decoder_pixels",
+      "pixel_sha256": "e515030e9e79716f66e542b7aefcb4c94559c6a127bf242e10962449a3aa8cbc",
+      "rect": [
+        0,
+        0,
+        76,
+        79
+      ],
+      "selected_cell": {
+        "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+        "cell": 3,
+        "texture": 394401
+      },
+      "source": "native_eye_3",
+      "status": "verified"
+    },
+    "sha256:e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801:rect:0,0,80,79": {
+      "anchor": {
+        "cite": [
+          {
+            "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "locator": "/cells/1",
+            "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+            "root": "corpus",
+            "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+          },
+          {
+            "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "locator": "/kakashi",
+            "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+            "root": "corpus",
+            "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+          },
+          {
+            "claim": "ROM art attribution and private non-release restriction.",
+            "locator": "private POC",
+            "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+            "root": "corpus",
+            "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+          }
+        ],
+        "grade": "decoder_origin",
+        "status": "verified",
+        "value": [
+          40,
+          39
+        ]
+      },
+      "baked_effects": [],
+      "cell_candidates": [
+        {
+          "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+          "cell": 1,
+          "texture": 394401
+        }
+      ],
+      "cell_status": "verified",
+      "cite": [
+        {
+          "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "locator": "/cells/1",
+          "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+          "root": "corpus",
+          "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+        },
+        {
+          "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "locator": "/kakashi",
+          "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+          "root": "corpus",
+          "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+        },
+        {
+          "claim": "ROM art attribution and private non-release restriction.",
+          "locator": "private POC",
+          "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+          "root": "corpus",
+          "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
+        }
+      ],
+      "facing": "right",
+      "grade": "native_decoder_pixels",
+      "pixel_sha256": "2371a99ec2af55edca6df5a03ff94fc59dd4e1f7fd805a57b97bc5e1a4834c37",
       "rect": [
         0,
         0,
         80,
-        80
+        79
       ],
-      "source": "projectiles_eye_k6",
-      "status": "verified",
-      "unresolved_id": "shot_mangekyou_eye_k6_cells"
-    },
-    "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:160,0,240,80": {
-      "anchor": {
-        "cite": [
-          {
-            "claim": "Current loaded metadata and compatibility identity.",
-            "locator": "/projectiles/mangekyou_eye@k6",
-            "path": "game/assets/poc_jus/kakashi/sprites.json",
-            "root": "bfb",
-            "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-          },
-          {
-            "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-            "locator": "PocSpriteSheet._strip",
-            "path": "game/characters/poc_sprite_sheet.gd",
-            "root": "bfb",
-            "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-          }
-        ],
-        "grade": "baseline_alignment",
-        "status": "proposed",
-        "value": [
-          40,
-          40
-        ]
+      "selected_cell": {
+        "archive": "chr/na_b_04_6.aar:na_b_04_e61_.dtx",
+        "cell": 1,
+        "texture": 394401
       },
-      "baked_effects": [],
-      "cell_candidates": [],
-      "cell_status": "unresolved",
-      "cite": [
-        {
-          "claim": "Current loaded metadata and compatibility identity.",
-          "locator": "/projectiles/mangekyou_eye@k6",
-          "path": "game/assets/poc_jus/kakashi/sprites.json",
-          "root": "bfb",
-          "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-        },
-        {
-          "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-          "locator": "PocSpriteSheet._strip",
-          "path": "game/characters/poc_sprite_sheet.gd",
-          "root": "bfb",
-          "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-        }
-      ],
-      "cut_locator": "mangekyou_eye@k6[2]",
-      "facing": "right",
-      "grade": "exact_current_pixels",
-      "pixel_sha256": "4e6046483c70a48df2b30c84c3b5b089383af0051c0d864c71e89a99a38a97fc",
-      "rect": [
-        160,
-        0,
-        240,
-        80
-      ],
-      "source": "projectiles_eye_k6",
-      "status": "verified",
-      "unresolved_id": "shot_mangekyou_eye_k6_cells"
-    },
-    "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:240,0,320,80": {
-      "anchor": {
-        "cite": [
-          {
-            "claim": "Current loaded metadata and compatibility identity.",
-            "locator": "/projectiles/mangekyou_eye@k6",
-            "path": "game/assets/poc_jus/kakashi/sprites.json",
-            "root": "bfb",
-            "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-          },
-          {
-            "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-            "locator": "PocSpriteSheet._strip",
-            "path": "game/characters/poc_sprite_sheet.gd",
-            "root": "bfb",
-            "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-          }
-        ],
-        "grade": "baseline_alignment",
-        "status": "proposed",
-        "value": [
-          40,
-          40
-        ]
-      },
-      "baked_effects": [],
-      "cell_candidates": [],
-      "cell_status": "unresolved",
-      "cite": [
-        {
-          "claim": "Current loaded metadata and compatibility identity.",
-          "locator": "/projectiles/mangekyou_eye@k6",
-          "path": "game/assets/poc_jus/kakashi/sprites.json",
-          "root": "bfb",
-          "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-        },
-        {
-          "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-          "locator": "PocSpriteSheet._strip",
-          "path": "game/characters/poc_sprite_sheet.gd",
-          "root": "bfb",
-          "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-        }
-      ],
-      "cut_locator": "mangekyou_eye@k6[3]",
-      "facing": "right",
-      "grade": "exact_current_pixels",
-      "pixel_sha256": "0e0e59db24bab86a23fd299e5c64e8a3ee94586ae0e057c1603eb8de22162494",
-      "rect": [
-        240,
-        0,
-        320,
-        80
-      ],
-      "source": "projectiles_eye_k6",
-      "status": "verified",
-      "unresolved_id": "shot_mangekyou_eye_k6_cells"
-    },
-    "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:80,0,160,80": {
-      "anchor": {
-        "cite": [
-          {
-            "claim": "Current loaded metadata and compatibility identity.",
-            "locator": "/projectiles/mangekyou_eye@k6",
-            "path": "game/assets/poc_jus/kakashi/sprites.json",
-            "root": "bfb",
-            "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-          },
-          {
-            "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-            "locator": "PocSpriteSheet._strip",
-            "path": "game/characters/poc_sprite_sheet.gd",
-            "root": "bfb",
-            "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-          }
-        ],
-        "grade": "baseline_alignment",
-        "status": "proposed",
-        "value": [
-          40,
-          40
-        ]
-      },
-      "baked_effects": [],
-      "cell_candidates": [],
-      "cell_status": "unresolved",
-      "cite": [
-        {
-          "claim": "Current loaded metadata and compatibility identity.",
-          "locator": "/projectiles/mangekyou_eye@k6",
-          "path": "game/assets/poc_jus/kakashi/sprites.json",
-          "root": "bfb",
-          "sha256": "c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5"
-        },
-        {
-          "claim": "Current anchor convention: body bottom centre, projectiles centred.",
-          "locator": "PocSpriteSheet._strip",
-          "path": "game/characters/poc_sprite_sheet.gd",
-          "root": "bfb",
-          "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
-        }
-      ],
-      "cut_locator": "mangekyou_eye@k6[1]",
-      "facing": "right",
-      "grade": "exact_current_pixels",
-      "pixel_sha256": "a4d3aec759b88545e88d713004dc53aa37c3413011458242e4b6905b4963cf41",
-      "rect": [
-        80,
-        0,
-        160,
-        80
-      ],
-      "source": "projectiles_eye_k6",
-      "status": "verified",
-      "unresolved_id": "shot_mangekyou_eye_k6_cells"
+      "source": "native_eye_1",
+      "status": "verified"
     }
   },
   "pins": {
     "bfb": "491b656c650ce9ef277a5b4be7d8e24f7cbdb48e",
-    "corpus": "62786efff9520439d1e89a4fdbd6edd2319ae95a",
-    "jus_re": "6d071cd694295ec779dcaf51328d44ff5f2f558c"
+    "corpus": "8577f904961ef05d4ecdb0b8f86471ae58dc3086",
+    "jus_re": "07d2f6e981ad01c4d0e2e7fb0928c524b50242f7"
   },
   "policy": "Exact keyed source pixels/native geometry; candidate semantic roles and runtime paths are not certified by pixel matches.",
   "schema_version": 1,
@@ -23492,13 +23584,34 @@
           "path": "game/characters/poc_sprite_sheet.gd",
           "root": "bfb",
           "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
+        },
+        {
+          "claim": "Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "locator": "/cells/0",
+          "path": "sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json",
+          "root": "corpus",
+          "sha256": "6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85"
+        },
+        {
+          "claim": "Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "locator": "/kakashi",
+          "path": "sprites/native-poc-2026-09-30/reference-facing.json",
+          "root": "corpus",
+          "sha256": "768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c"
+        },
+        {
+          "claim": "ROM art attribution and private non-release restriction.",
+          "locator": "private POC",
+          "path": "sprites/native-poc-2026-09-30/kakashi/CREDITS.md",
+          "root": "corpus",
+          "sha256": "248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e"
         }
       ],
       "frames": [
-        "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:0,0,80,80",
-        "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:80,0,160,80",
-        "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:160,0,240,80",
-        "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:240,0,320,80"
+        "sha256:6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b:rect:0,0,76,78",
+        "sha256:e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801:rect:0,0,80,79",
+        "sha256:1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f:rect:0,0,77,78",
+        "sha256:dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f:rect:0,0,76,79"
       ],
       "grade": "legacy_candidate",
       "legacy_reason": "Retain the current loaded pixels, aliases and playback while source meaning/path gaps remain explicit.",
@@ -27469,6 +27582,50 @@
       "path": "game/characters/poc_sprite_sheet.gd",
       "root": "bfb",
       "sha256": "6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392"
+    },
+    "native_eye_0": {
+      "key": {},
+      "kind": "decoder_strip",
+      "path": "sprites/native-poc-2026-09-30/kakashi/eye-cell-0.png",
+      "root": "corpus",
+      "sha256": "6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b",
+      "size": [
+        76,
+        78
+      ]
+    },
+    "native_eye_1": {
+      "key": {},
+      "kind": "decoder_strip",
+      "path": "sprites/native-poc-2026-09-30/kakashi/eye-cell-1.png",
+      "root": "corpus",
+      "sha256": "e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801",
+      "size": [
+        80,
+        79
+      ]
+    },
+    "native_eye_2": {
+      "key": {},
+      "kind": "decoder_strip",
+      "path": "sprites/native-poc-2026-09-30/kakashi/eye-cell-2.png",
+      "root": "corpus",
+      "sha256": "1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f",
+      "size": [
+        77,
+        78
+      ]
+    },
+    "native_eye_3": {
+      "key": {},
+      "kind": "decoder_strip",
+      "path": "sprites/native-poc-2026-09-30/kakashi/eye-cell-3.png",
+      "root": "corpus",
+      "sha256": "dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f",
+      "size": [
+        76,
+        79
+      ]
     },
     "poc_cell_map": {
       "kind": "evidence",

@@ -9650,135 +9650,151 @@
       "frames": {
         "f001": {
           "anchor": [
-            40,
+            39,
             40
           ],
           "baked_effects": [],
           "evidence": [
-            "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-            "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+            "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/0 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
           ],
           "facing": "right",
           "path": "shot_mangekyou_eye_k6/001.png",
           "provenance": {
+            "cell_id": 0,
             "crop": [
               0,
               0,
-              80,
-              80
+              76,
+              78
             ],
             "geometry_evidence": [
-              "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-              "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+              "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/0 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
             ],
-            "sheet": "bfb:game/assets/poc_jus/kakashi/projectiles/eye_k6.png",
-            "sheet_sha256": "de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c"
+            "sheet": "corpus:sprites/native-poc-2026-09-30/kakashi/eye-cell-0.png",
+            "sheet_sha256": "6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b",
+            "texture_id": 394401
           },
-          "sha256": "5e315780e3719bc3bb23cf76773b33ace2fc1578129ef4698ba6642435b22069",
+          "sha256": "8a7ba3cf09a67a3c0dbdc63235904abbbda1d78b8d11149d4e19b2d5749b6662",
           "size": [
-            80,
-            80
+            76,
+            78
           ],
-          "source_frame_id": "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:0,0,80,80"
+          "source_frame_id": "sha256:6d24bc2f119ee7d6e6619dbfcf84b1c7ddb369ff9c6ead6d06a0ae1ced3ba21b:rect:0,0,76,78"
         },
         "f002": {
           "anchor": [
             40,
-            40
+            39
           ],
           "baked_effects": [],
           "evidence": [
-            "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-            "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+            "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/1 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
           ],
           "facing": "right",
           "path": "shot_mangekyou_eye_k6/002.png",
           "provenance": {
+            "cell_id": 1,
             "crop": [
-              80,
+              0,
               0,
               80,
-              80
+              79
             ],
             "geometry_evidence": [
-              "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-              "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+              "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/1 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
             ],
-            "sheet": "bfb:game/assets/poc_jus/kakashi/projectiles/eye_k6.png",
-            "sheet_sha256": "de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c"
+            "sheet": "corpus:sprites/native-poc-2026-09-30/kakashi/eye-cell-1.png",
+            "sheet_sha256": "e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801",
+            "texture_id": 394401
           },
-          "sha256": "a12e674341d6273ec24b24054a2f59146ef3977f6dfa7ada0a9593ddcce5550f",
+          "sha256": "9b0548d5b0f02adcc5253350de02fbc90cea87f10bd381efcd2649fb0ba449c5",
           "size": [
             80,
-            80
+            79
           ],
-          "source_frame_id": "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:80,0,160,80"
+          "source_frame_id": "sha256:e88c7ec3bec39dd4de14a13f2bc33259f566071d3de4864c9daa966a45ab4801:rect:0,0,80,79"
         },
         "f003": {
           "anchor": [
-            40,
-            40
+            38,
+            38
           ],
           "baked_effects": [],
           "evidence": [
-            "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-            "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+            "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/2 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
           ],
           "facing": "right",
           "path": "shot_mangekyou_eye_k6/003.png",
           "provenance": {
+            "cell_id": 2,
             "crop": [
-              160,
               0,
-              80,
-              80
+              0,
+              77,
+              78
             ],
             "geometry_evidence": [
-              "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-              "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+              "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/2 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
             ],
-            "sheet": "bfb:game/assets/poc_jus/kakashi/projectiles/eye_k6.png",
-            "sheet_sha256": "de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c"
+            "sheet": "corpus:sprites/native-poc-2026-09-30/kakashi/eye-cell-2.png",
+            "sheet_sha256": "1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f",
+            "texture_id": 394401
           },
-          "sha256": "aec7e882f276113a8a60c8679257211a12459df3401ad2ec6f065db2d1dfb9aa",
+          "sha256": "6236d7c1b5dadeebeccfdddb46ee4df5854f9c10244df760044227800ee30721",
           "size": [
-            80,
-            80
+            77,
+            78
           ],
-          "source_frame_id": "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:160,0,240,80"
+          "source_frame_id": "sha256:1a6da72bf43b5b84addc5a361869c909f99f235ecdaea23901d75cc4c2cc880f:rect:0,0,77,78"
         },
         "f004": {
           "anchor": [
-            40,
+            39,
             40
           ],
           "baked_effects": [],
           "evidence": [
-            "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-            "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+            "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/3 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
           ],
           "facing": "right",
           "path": "shot_mangekyou_eye_k6/004.png",
           "provenance": {
+            "cell_id": 3,
             "crop": [
-              240,
               0,
-              80,
-              80
+              0,
+              76,
+              79
             ],
             "geometry_evidence": [
-              "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/mangekyou_eye@k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
-              "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+              "corpus:sprites/native-poc-2026-09-30/kakashi/decoder-provenance.json#/cells/3 sha256:6a1e2034175f7a9449e628bc50cefa6867678eca77ca3685d2de23cb60d2ad85 \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/kakashi sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/kakashi/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
             ],
-            "sheet": "bfb:game/assets/poc_jus/kakashi/projectiles/eye_k6.png",
-            "sheet_sha256": "de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c"
+            "sheet": "corpus:sprites/native-poc-2026-09-30/kakashi/eye-cell-3.png",
+            "sheet_sha256": "dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f",
+            "texture_id": 394401
           },
-          "sha256": "08a44ba52673c6bcd739bad359546f36cf56596f04e466b2bf265061af06947b",
+          "sha256": "d2553d287290e1976cf72fa1abf8c17d9ba7d9a87b7db1f7ad0c0aaaf254ba9d",
           "size": [
-            80,
-            80
+            76,
+            79
           ],
-          "source_frame_id": "sha256:de5b128c39624f016eb3dd51b7a24abfd75d8f7b6d9ef1e28f47d78d55076f4c:rect:240,0,320,80"
+          "source_frame_id": "sha256:dc3c9dee3151e1dc6b6740550ae33ef93e7e4798517648af16c233383d9ca04f:rect:0,0,76,79"
         }
       },
       "order": [

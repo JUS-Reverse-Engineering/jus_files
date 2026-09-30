@@ -834,6 +834,18 @@
         "required": true,
         "role": "walk",
         "sequence": "walk"
+      },
+      {
+        "evidence": [
+          "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+          "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:5f93d3dca311cbf65c6dab7eaf531581398eed38877dcaed994db9685a62ea76 \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+          "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+        ],
+        "panel": 6,
+        "required": false,
+        "role": "6upx_additional_native",
+        "sequence": "6upx_additional_native",
+        "unresolved_id": "6upx_additional_native_playback"
       }
     ],
     "unresolved_id": "required_inventory"
@@ -3650,6 +3662,111 @@
       "role": "special_up",
       "status": "candidate",
       "unresolved_id": "6upx_identity"
+    },
+    "6upx_additional_native": {
+      "default_playback": "default",
+      "evidence": [
+        "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+        "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:5f93d3dca311cbf65c6dab7eaf531581398eed38877dcaed994db9685a62ea76 \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+        "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            35,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+          ],
+          "facing": "right",
+          "path": "6upx_additional_native/001.png",
+          "provenance": {
+            "cell_id": 13,
+            "crop": [
+              0,
+              0,
+              59,
+              41
+            ],
+            "geometry_evidence": [
+              "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+            ],
+            "sheet": "corpus:sprites/native-poc-2026-09-30/yusuke/cell-13.png",
+            "sheet_sha256": "0f1daa1071699139eafd62cd8268a874e57d2e26dda4f8315ead56f1bf4e6745",
+            "texture_id": 622851
+          },
+          "sha256": "3fc302d0915fd329d838101f99e7fdadf3f3444b104d3645cf68af089b934858",
+          "size": [
+            59,
+            41
+          ],
+          "source_frame_id": "sha256:0f1daa1071699139eafd62cd8268a874e57d2e26dda4f8315ead56f1bf4e6745:rect:0,0,59,41"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/1 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+          ],
+          "facing": "right",
+          "path": "6upx_additional_native/002.png",
+          "provenance": {
+            "cell_id": 20,
+            "crop": [
+              0,
+              0,
+              48,
+              65
+            ],
+            "geometry_evidence": [
+              "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/1 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+              "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:768de11381824d45afbd5dff2b51ea52b3c6a59aaaa672b0fecac212e206b17c \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+              "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+            ],
+            "sheet": "corpus:sprites/native-poc-2026-09-30/yusuke/cell-20.png",
+            "sheet_sha256": "cc8fb66fdc70bcc05c03d202e36ddbb6056efe23cfa479362e318be55635e72f",
+            "texture_id": 622851
+          },
+          "sha256": "a98b0b64b746b94f6d20bf681f815032cafd697803d3903ad856dd66af62b435",
+          "size": [
+            48,
+            65
+          ],
+          "source_frame_id": "sha256:cc8fb66fdc70bcc05c03d202e36ddbb6056efe23cfa479362e318be55635e72f:rect:0,0,48,65"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 6,
+      "playbacks": {
+        "default": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+            "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:5f93d3dca311cbf65c6dab7eaf531581398eed38877dcaed994db9685a62ea76 \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+            "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+          ],
+          "status": "unresolved",
+          "unresolved_id": "6upx_additional_native_playback"
+        }
+      },
+      "role": "6upx_additional_native",
+      "status": "unresolved",
+      "unresolved_id": "6upx_additional_native_playback"
     },
     "6x": {
       "default_playback": "default",
@@ -12785,6 +12902,17 @@
       "owner": "R7a",
       "reason": "Existing runtime fallback; JUS timing/path remains unresolved.",
       "scope": "playback"
+    },
+    {
+      "evidence": [
+        "corpus:sprites/native-poc-2026-09-30/yusuke/decoder-provenance.json#/frames/0 sha256:c187fa010bb1f6cc807000c3e79b9e6f3f00a52f3f584a9136088faf030529dc \u2014 Pinned decoder/native PNG/RGBA/member hashes and origin-derived crop geometry.",
+        "corpus:sprites/native-poc-2026-09-30/reference-facing.json#/yusuke sha256:5f93d3dca311cbf65c6dab7eaf531581398eed38877dcaed994db9685a62ea76 \u2014 Unmirrored known reference establishes authored source orientation right; no runtime-facing selection claim.",
+        "corpus:sprites/native-poc-2026-09-30/yusuke/CREDITS.md#private POC sha256:248432b94cca7b82ddc5d4a0934a5573344937f236a4d665839e2f93abcde70e \u2014 ROM art attribution and private non-release restriction."
+      ],
+      "id": "6upx_additional_native_playback",
+      "owner": "R7b",
+      "reason": "Native live upX cells13/20 are available; their branch playback/role reconciliation remains R7b work. Existing authored upX playback is unchanged.",
+      "scope": "source_bindings"
     }
   ]
 }
