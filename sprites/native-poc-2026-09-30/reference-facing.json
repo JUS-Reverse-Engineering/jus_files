@@ -10,6 +10,32 @@
     "decoder_origin": [
       128,
       128
+    ],
+    "reference_commit": "12ad6d46129dbcb2c80c5fc05d404739e4f57c04",
+    "reference_decoder_bbox": [
+      109,
+      82,
+      146,
+      129
+    ],
+    "reference_decoder_anchor": [
+      19,
+      46
+    ],
+    "alpha_comparison": {
+      "total_pixels": 1739,
+      "unmirrored_matches": 1739,
+      "mirrored_matches": 1035
+    },
+    "native_cells": [
+      {
+        "cell": 13,
+        "png_sha256": "0f1daa1071699139eafd62cd8268a874e57d2e26dda4f8315ead56f1bf4e6745"
+      },
+      {
+        "cell": 20,
+        "png_sha256": "cc8fb66fdc70bcc05c03d202e36ddbb6056efe23cfa479362e318be55635e72f"
+      }
     ]
   },
   "kakashi": {
@@ -80,6 +106,11 @@
           40
         ]
       }
+    ],
+    "reference_commit": "12ad6d46129dbcb2c80c5fc05d404739e4f57c04",
+    "effect_origin": [
+      0,
+      0
     ]
   }
 }
