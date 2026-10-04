@@ -111,6 +111,18 @@ def get_download(file_id: int) -> tuple[str, str]:
     return url, html.unescape(match.group(2))
 
 
+def source_destination(sprite_root: Path, manifest: list[dict], file_id: int,
+                       series: str, filename: str, extension: str) -> Path:
+    existing = next((row for row in manifest if row["file_id"] == file_id), None)
+    if existing:
+        relative = Path(existing["path"])
+        if relative.is_absolute() or ".." in relative.parts:
+            raise ValueError("Source path must stay within the sprite root")
+    else:
+        relative = Path("characters") / series / Path(filename).stem.lower() / filename
+    return (sprite_root / relative).with_suffix(extension)
+
+
 def main() -> int:
     battle = battle_characters()
     guide_names = {name for _, name in battle}
@@ -128,6 +140,8 @@ def main() -> int:
             jobs.append((guide_name, series_dir, file_id, database_name, filename))
 
     OUT.mkdir(parents=True, exist_ok=True)
+    manifest_path = OUT.parent / "source_manifest.json"
+    previous = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else []
     manifest = []
 
     def download(job: tuple[str, str, int, str, str]) -> dict[str, str | int]:
@@ -145,8 +159,7 @@ def main() -> int:
         extension = Path(source_filename).suffix.lower()
         if extension not in formats or not payload.startswith(formats[extension]):
             raise RuntimeError(f"Entry {file_id} did not return the advertised {extension or 'image'} file")
-        destination = OUT / series_dir / filename
-        destination = destination.with_suffix(extension)
+        destination = source_destination(OUT.parent, previous, file_id, series_dir, filename, extension)
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(payload)
         return {

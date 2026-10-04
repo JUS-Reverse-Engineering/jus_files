@@ -12032,7 +12032,7 @@
         }
       ],
       "graphic_type": "body_or_actor",
-      "name": "forward_heavy_variant_28",
+      "name": "heavy_variant_28",
       "native_animation": {
         "frames": 55,
         "id": 40,
@@ -12275,7 +12275,7 @@
         "stable_id": "op_b_01:op_b_01.amt:anim:0025"
       },
       "native_node_index": 0,
-      "output": "labeled_split/attacks_heavy/forward_heavy_variant_28_op_b_01_anim_0028_node_0_strip.png",
+      "output": "labeled_split/attacks_heavy/heavy_variant_28_op_b_01_anim_0028_node_0_strip.png",
       "ownership": "fighter_body",
       "panel": null,
       "provenance": {
@@ -12304,10 +12304,13 @@
         }
       },
       "relationships": [],
-      "role": "forward_heavy_variant_28",
+      "role": "heavy_variant_28",
       "runtime_candidate": false,
       "sha256": "a2a0b7e66a765047c1317f962ac180df796093a9600e0ee6a5c5d48c60b7114b",
-      "visibility": "visible"
+      "visibility": "visible",
+      "review_notes": [
+        "Additional heavy sequence: direction/selector requires character-specific evidence."
+      ]
     },
     "op_b_01:op_b_01.amt:anim:0026": {
       "anchor": [
@@ -36143,7 +36146,7 @@
         }
       ],
       "graphic_type": "body_or_actor",
-      "name": "forward_heavy_variant_28",
+      "name": "heavy_variant_28",
       "native_animation": {
         "frames": 60,
         "id": 40,
@@ -36370,7 +36373,7 @@
         "stable_id": "op_b_07:op_b_07.amt:anim:0025"
       },
       "native_node_index": 0,
-      "output": "labeled_split/attacks_heavy/forward_heavy_variant_28_op_b_07_anim_0028_node_0_strip.png",
+      "output": "labeled_split/attacks_heavy/heavy_variant_28_op_b_07_anim_0028_node_0_strip.png",
       "ownership": "fighter_body",
       "panel": null,
       "provenance": {
@@ -36399,10 +36402,13 @@
         }
       },
       "relationships": [],
-      "role": "forward_heavy_variant_28",
+      "role": "heavy_variant_28",
       "runtime_candidate": false,
       "sha256": "dbdfa354bf6568dfa0dd8627c48cd74c7c080c2d14d32dfd2e203f7672bd91a8",
-      "visibility": "visible"
+      "visibility": "visible",
+      "review_notes": [
+        "Additional heavy sequence: direction/selector requires character-specific evidence."
+      ]
     },
     "op_b_07:op_b_07.amt:anim:0026": {
       "anchor": [

@@ -6,7 +6,7 @@
     "file_id": 911,
     "page_url": "https://spritedatabase.net/file/911",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/EveJUS.png",
-    "path": "characters/Black Cat/Eve.png",
+    "path": "characters/Black Cat/eve/Eve.png",
     "bytes": 274872
   },
   {
@@ -16,7 +16,7 @@
     "file_id": 912,
     "page_url": "https://spritedatabase.net/file/912",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/TrainHeartnet.png",
-    "path": "characters/Black Cat/Train_Heartnet.png",
+    "path": "characters/Black Cat/train_heartnet/Train_Heartnet.png",
     "bytes": 306671
   },
   {
@@ -26,7 +26,7 @@
     "file_id": 915,
     "page_url": "https://spritedatabase.net/file/915",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Ichigo.png",
-    "path": "characters/Bleach/Ichigo_Kurosaki.png",
+    "path": "characters/Bleach/ichigo_kurosaki/Ichigo_Kurosaki.png",
     "bytes": 886903
   },
   {
@@ -36,7 +36,7 @@
     "file_id": 917,
     "page_url": "https://spritedatabase.net/file/917",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Renji.png",
-    "path": "characters/Bleach/Renji_Abarai.png",
+    "path": "characters/Bleach/renji_abarai/Renji_Abarai.png",
     "bytes": 477153
   },
   {
@@ -46,7 +46,7 @@
     "file_id": 918,
     "page_url": "https://spritedatabase.net/file/918",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/RukiaKuchiki.png",
-    "path": "characters/Bleach/Rukia_Kuchiki.png",
+    "path": "characters/Bleach/rukia_kuchiki/Rukia_Kuchiki.png",
     "bytes": 264593
   },
   {
@@ -56,7 +56,7 @@
     "file_id": 916,
     "page_url": "https://spritedatabase.net/file/916",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Hitsugaya.png",
-    "path": "characters/Bleach/Toshiro_Hitsugaya.png",
+    "path": "characters/Bleach/toshiro_hitsugaya/Toshiro_Hitsugaya.png",
     "bytes": 428252
   },
   {
@@ -66,7 +66,7 @@
     "file_id": 926,
     "page_url": "https://spritedatabase.net/file/926",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Bobobo.png",
-    "path": "characters/Bobobo-bo Bo-bobo/Bobobo_bo_Bo_bobo.png",
+    "path": "characters/Bobobo-bo Bo-bobo/bobobo_bo_bo_bobo/Bobobo_bo_Bo_bobo.png",
     "bytes": 688347
   },
   {
@@ -76,7 +76,7 @@
     "file_id": 927,
     "page_url": "https://spritedatabase.net/file/927",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DonPatch.png",
-    "path": "characters/Bobobo-bo Bo-bobo/Don_Patch.png",
+    "path": "characters/Bobobo-bo Bo-bobo/don_patch/Don_Patch.png",
     "bytes": 497807
   },
   {
@@ -86,7 +86,7 @@
     "file_id": 932,
     "page_url": "https://spritedatabase.net/file/932",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kazuki.png",
-    "path": "characters/Buso Renkin/Kazuki.png",
+    "path": "characters/Buso Renkin/kazuki/Kazuki.png",
     "bytes": 461927
   },
   {
@@ -96,7 +96,7 @@
     "file_id": 11839,
     "page_url": "https://spritedatabase.net/file/11839",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JUS_Allen.png",
-    "path": "characters/D.Gray-man/Allen_Walker.png",
+    "path": "characters/D.Gray-man/allen_walker/Allen_Walker.png",
     "bytes": 569346
   },
   {
@@ -106,7 +106,7 @@
     "file_id": 938,
     "page_url": "https://spritedatabase.net/file/938",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/LenaleeLee.png",
-    "path": "characters/D.Gray-man/Lenalee_Lee.png",
+    "path": "characters/D.Gray-man/lenalee_lee/Lenalee_Lee.png",
     "bytes": 337065
   },
   {
@@ -116,7 +116,7 @@
     "file_id": 956,
     "page_url": "https://spritedatabase.net/file/956",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Arale.png",
-    "path": "characters/Dr. Slump/Arale.png",
+    "path": "characters/Dr. Slump/arale/Arale.png",
     "bytes": 352392
   },
   {
@@ -126,7 +126,7 @@
     "file_id": 957,
     "page_url": "https://spritedatabase.net/file/957",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DrMashirito.png",
-    "path": "characters/Dr. Slump/Dr_Mashirito.png",
+    "path": "characters/Dr. Slump/dr_mashirito/Dr_Mashirito.png",
     "bytes": 482089
   },
   {
@@ -136,7 +136,7 @@
     "file_id": 953,
     "page_url": "https://spritedatabase.net/file/953",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Frieza.png",
-    "path": "characters/Dragon Ball/Frieza.png",
+    "path": "characters/Dragon Ball/frieza/Frieza.png",
     "bytes": 235663
   },
   {
@@ -146,7 +146,7 @@
     "file_id": 951,
     "page_url": "https://spritedatabase.net/file/951",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gotenks.png",
-    "path": "characters/Dragon Ball/Gotenks.png",
+    "path": "characters/Dragon Ball/gotenks/Gotenks.png",
     "bytes": 540992
   },
   {
@@ -156,7 +156,7 @@
     "file_id": 954,
     "page_url": "https://spritedatabase.net/file/954",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Buu.png",
-    "path": "characters/Dragon Ball/Majin_Buu.png",
+    "path": "characters/Dragon Ball/majin_buu/Majin_Buu.png",
     "bytes": 218901
   },
   {
@@ -166,7 +166,7 @@
     "file_id": 952,
     "page_url": "https://spritedatabase.net/file/952",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Piccolo.gif",
-    "path": "characters/Dragon Ball/Piccolo.gif",
+    "path": "characters/Dragon Ball/piccolo/Piccolo.gif",
     "bytes": 182276
   },
   {
@@ -176,7 +176,7 @@
     "file_id": 947,
     "page_url": "https://spritedatabase.net/file/947",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Goku.png",
-    "path": "characters/Dragon Ball/Goku.png",
+    "path": "characters/Dragon Ball/goku/Goku.png",
     "bytes": 742487
   },
   {
@@ -186,7 +186,7 @@
     "file_id": 949,
     "page_url": "https://spritedatabase.net/file/949",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gohan.png",
-    "path": "characters/Dragon Ball/Gohan.png",
+    "path": "characters/Dragon Ball/gohan/Gohan.png",
     "bytes": 438694
   },
   {
@@ -196,7 +196,7 @@
     "file_id": 950,
     "page_url": "https://spritedatabase.net/file/950",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Vegeta.png",
-    "path": "characters/Dragon Ball/Vegeta.png",
+    "path": "characters/Dragon Ball/vegeta/Vegeta.png",
     "bytes": 472302
   },
   {
@@ -206,7 +206,7 @@
     "file_id": 968,
     "page_url": "https://spritedatabase.net/file/968",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gintoki.png",
-    "path": "characters/Gintama/Gintoki.png",
+    "path": "characters/Gintama/gintoki/Gintoki.png",
     "bytes": 495998
   },
   {
@@ -216,7 +216,7 @@
     "file_id": 969,
     "page_url": "https://spritedatabase.net/file/969",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kagura.png",
-    "path": "characters/Gintama/Kagura.png",
+    "path": "characters/Gintama/kagura/Kagura.png",
     "bytes": 195403
   },
   {
@@ -226,7 +226,7 @@
     "file_id": 906,
     "page_url": "https://spritedatabase.net/file/906",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/KenshiroJUS.png",
-    "path": "characters/Hokuto no Ken/Kenshiro.png",
+    "path": "characters/Hokuto no Ken/kenshiro/Kenshiro.png",
     "bytes": 418957
   },
   {
@@ -236,7 +236,7 @@
     "file_id": 907,
     "page_url": "https://spritedatabase.net/file/907",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Raoh.png",
-    "path": "characters/Hokuto no Ken/Raoh.png",
+    "path": "characters/Hokuto no Ken/raoh/Raoh.png",
     "bytes": 675698
   },
   {
@@ -246,7 +246,7 @@
     "file_id": 1056,
     "page_url": "https://spritedatabase.net/file/1056",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Taikoubou.png",
-    "path": "characters/Houshin Engi/Taikobo.png",
+    "path": "characters/Houshin Engi/taikobo/Taikobo.png",
     "bytes": 453054
   },
   {
@@ -256,7 +256,7 @@
     "file_id": 909,
     "page_url": "https://spritedatabase.net/file/909",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Gon.png",
-    "path": "characters/Hunter x Hunter/Gon_Freecss.png",
+    "path": "characters/Hunter x Hunter/gon_freecss/Gon_Freecss.png",
     "bytes": 783927
   },
   {
@@ -266,7 +266,7 @@
     "file_id": 910,
     "page_url": "https://spritedatabase.net/file/910",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Killua.png",
-    "path": "characters/Hunter x Hunter/Killua_Zoldyck.png",
+    "path": "characters/Hunter x Hunter/killua_zoldyck/Killua_Zoldyck.png",
     "bytes": 241974
   },
   {
@@ -276,7 +276,7 @@
     "file_id": 984,
     "page_url": "https://spritedatabase.net/file/984",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/DioBrando.png",
-    "path": "characters/JoJos Bizarre Adventure/Dio_Brando.png",
+    "path": "characters/JoJos Bizarre Adventure/dio_brando/Dio_Brando.png",
     "bytes": 341916
   },
   {
@@ -286,7 +286,7 @@
     "file_id": 11693,
     "page_url": "https://spritedatabase.net/file/11693",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JotaroKujo.png",
-    "path": "characters/JoJos Bizarre Adventure/Jotaro_Kujo.png",
+    "path": "characters/JoJos Bizarre Adventure/jotaro_kujo/Jotaro_Kujo.png",
     "bytes": 347852
   },
   {
@@ -296,7 +296,7 @@
     "file_id": 1029,
     "page_url": "https://spritedatabase.net/file/1029",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/TsunaJUS.png",
-    "path": "characters/Katekyo Hitman Reborn/Tsuna.png",
+    "path": "characters/Katekyo Hitman Reborn/tsuna/Tsuna.png",
     "bytes": 502862
   },
   {
@@ -306,7 +306,7 @@
     "file_id": 991,
     "page_url": "https://spritedatabase.net/file/991",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kinnikuman.png",
-    "path": "characters/Kinnikuman/Kinnikuman.png",
+    "path": "characters/Kinnikuman/kinnikuman/Kinnikuman.png",
     "bytes": 602239
   },
   {
@@ -316,7 +316,7 @@
     "file_id": 999,
     "page_url": "https://spritedatabase.net/file/999",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Ryotsu.png",
-    "path": "characters/Kochikame/Ryotsu.png",
+    "path": "characters/Kochikame/ryotsu/Ryotsu.png",
     "bytes": 352995
   },
   {
@@ -326,7 +326,7 @@
     "file_id": 1002,
     "page_url": "https://spritedatabase.net/file/1002",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Neuro.png",
-    "path": "characters/Majin Tantei Nogami Neuro/Neuro_Nogami.png",
+    "path": "characters/Majin Tantei Nogami Neuro/neuro_nogami/Neuro_Nogami.png",
     "bytes": 426626
   },
   {
@@ -336,7 +336,7 @@
     "file_id": 1005,
     "page_url": "https://spritedatabase.net/file/1005",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Muhyo.png",
-    "path": "characters/Muhyo to Rouji/Toru_Muhyo.png",
+    "path": "characters/Muhyo to Rouji/toru_muhyo/Toru_Muhyo.png",
     "bytes": 358905
   },
   {
@@ -346,7 +346,7 @@
     "file_id": 1011,
     "page_url": "https://spritedatabase.net/file/1011",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kakashi.png",
-    "path": "characters/Naruto/Kakashi.png",
+    "path": "characters/Naruto/kakashi/Kakashi.png",
     "bytes": 879873
   },
   {
@@ -356,7 +356,7 @@
     "file_id": 1008,
     "page_url": "https://spritedatabase.net/file/1008",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Naruto.png",
-    "path": "characters/Naruto/Naruto.png",
+    "path": "characters/Naruto/naruto/Naruto.png",
     "bytes": 1058305
   },
   {
@@ -366,7 +366,7 @@
     "file_id": 1010,
     "page_url": "https://spritedatabase.net/file/1010",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sakura.png",
-    "path": "characters/Naruto/Sakura.png",
+    "path": "characters/Naruto/sakura/Sakura.png",
     "bytes": 352389
   },
   {
@@ -376,7 +376,7 @@
     "file_id": 1009,
     "page_url": "https://spritedatabase.net/file/1009",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sasuke.png",
-    "path": "characters/Naruto/Sasuke.png",
+    "path": "characters/Naruto/sasuke/Sasuke.png",
     "bytes": 525314
   },
   {
@@ -386,7 +386,7 @@
     "file_id": 1013,
     "page_url": "https://spritedatabase.net/file/1013",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Fuusuke.png",
-    "path": "characters/Ninku/Fuusuke.png",
+    "path": "characters/Ninku/fuusuke/Fuusuke.png",
     "bytes": 241069
   },
   {
@@ -396,7 +396,7 @@
     "file_id": 1020,
     "page_url": "https://spritedatabase.net/file/1020",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Franky.png",
-    "path": "characters/One Piece/Franky.png",
+    "path": "characters/One Piece/franky/Franky.png",
     "bytes": 416419
   },
   {
@@ -406,7 +406,7 @@
     "file_id": 5,
     "page_url": "https://spritedatabase.net/file/5",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Luffy.png",
-    "path": "characters/One Piece/Monkey_D_Luffy.png",
+    "path": "characters/One Piece/monkey_d_luffy/Monkey_D_Luffy.png",
     "bytes": 679178
   },
   {
@@ -416,7 +416,7 @@
     "file_id": 1017,
     "page_url": "https://spritedatabase.net/file/1017",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Nami.png",
-    "path": "characters/One Piece/Nami.png",
+    "path": "characters/One Piece/nami/Nami.png",
     "bytes": 512069
   },
   {
@@ -426,7 +426,7 @@
     "file_id": 1019,
     "page_url": "https://spritedatabase.net/file/1019",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/NicoRobin.png",
-    "path": "characters/One Piece/Nico_Robin.png",
+    "path": "characters/One Piece/nico_robin/Nico_Robin.png",
     "bytes": 259838
   },
   {
@@ -436,7 +436,7 @@
     "file_id": 1016,
     "page_url": "https://spritedatabase.net/file/1016",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Zoro.png",
-    "path": "characters/One Piece/Roronoa_Zoro.png",
+    "path": "characters/One Piece/roronoa_zoro/Roronoa_Zoro.png",
     "bytes": 316191
   },
   {
@@ -446,7 +446,7 @@
     "file_id": 1018,
     "page_url": "https://spritedatabase.net/file/1018",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Sanji.png",
-    "path": "characters/One Piece/Sanji.png",
+    "path": "characters/One Piece/sanji/Sanji.png",
     "bytes": 565016
   },
   {
@@ -456,7 +456,7 @@
     "file_id": 12079,
     "page_url": "https://spritedatabase.net/file/12079",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/JUS_Jaguar.png",
-    "path": "characters/Pyu to Fuku Jaguar/Jaguar.png",
+    "path": "characters/Pyu to Fuku Jaguar/jaguar/Jaguar.png",
     "bytes": 354289
   },
   {
@@ -466,7 +466,7 @@
     "file_id": 1036,
     "page_url": "https://spritedatabase.net/file/1036",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/KenshinJUS.png",
-    "path": "characters/Rurouni Kenshin/Kenshin_Himura.png",
+    "path": "characters/Rurouni Kenshin/kenshin_himura/Kenshin_Himura.png",
     "bytes": 479864
   },
   {
@@ -476,7 +476,7 @@
     "file_id": 1041,
     "page_url": "https://spritedatabase.net/file/1041",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/PegasusSeiya.png",
-    "path": "characters/Saint Seiya/Pegasus_Seiya_1_7_koma.png",
+    "path": "characters/Saint Seiya/pegasus_seiya_1_7_koma/Pegasus_Seiya_1_7_koma.png",
     "bytes": 525195
   },
   {
@@ -486,7 +486,7 @@
     "file_id": 1042,
     "page_url": "https://spritedatabase.net/file/1042",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/PegasusSeiya8.png",
-    "path": "characters/Saint Seiya/Pegasus_Seiya_8_koma.png",
+    "path": "characters/Saint Seiya/pegasus_seiya_8_koma/Pegasus_Seiya_8_koma.png",
     "bytes": 366325
   },
   {
@@ -496,7 +496,7 @@
     "file_id": 1047,
     "page_url": "https://spritedatabase.net/file/1047",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Edajima.png",
-    "path": "characters/Sakigake Otokojuku/Heihachi_Edajima.png",
+    "path": "characters/Sakigake Otokojuku/heihachi_edajima/Heihachi_Edajima.png",
     "bytes": 269487
   },
   {
@@ -506,7 +506,7 @@
     "file_id": 11897,
     "page_url": "https://spritedatabase.net/file/11897",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Momotaro.png",
-    "path": "characters/Sakigake Otokojuku/Momotaro.png",
+    "path": "characters/Sakigake Otokojuku/momotaro/Momotaro.png",
     "bytes": 480195
   },
   {
@@ -516,7 +516,7 @@
     "file_id": 1051,
     "page_url": "https://spritedatabase.net/file/1051",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Anna.png",
-    "path": "characters/Shaman King/Anna.png",
+    "path": "characters/Shaman King/anna/Anna.png",
     "bytes": 260870
   },
   {
@@ -526,7 +526,7 @@
     "file_id": 1050,
     "page_url": "https://spritedatabase.net/file/1050",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yoh.png",
-    "path": "characters/Shaman King/Yoh_Asakura.png",
+    "path": "characters/Shaman King/yoh_asakura/Yoh_Asakura.png",
     "bytes": 456799
   },
   {
@@ -536,7 +536,7 @@
     "file_id": 1062,
     "page_url": "https://spritedatabase.net/file/1062",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yugi.png",
-    "path": "characters/Yu-Gi-Oh!/Yugi.png",
+    "path": "characters/Yu-Gi-Oh!/yugi/Yugi.png",
     "bytes": 1323101
   },
   {
@@ -546,7 +546,7 @@
     "file_id": 1065,
     "page_url": "https://spritedatabase.net/file/1065",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Hiei.png",
-    "path": "characters/YuYu Hakusho/Hiei.png",
+    "path": "characters/YuYu Hakusho/hiei/Hiei.png",
     "bytes": 300114
   },
   {
@@ -556,7 +556,7 @@
     "file_id": 1067,
     "page_url": "https://spritedatabase.net/file/1067",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Kurama.png",
-    "path": "characters/YuYu Hakusho/Kurama.png",
+    "path": "characters/YuYu Hakusho/kurama/Kurama.png",
     "bytes": 315727
   },
   {
@@ -566,7 +566,7 @@
     "file_id": 1064,
     "page_url": "https://spritedatabase.net/file/1064",
     "image_url": "https://spritedatabase.net/files/ds/2/Sprite/Yusuke.png",
-    "path": "characters/YuYu Hakusho/Yusuke_Urameshi.png",
+    "path": "characters/YuYu Hakusho/yusuke_urameshi/Yusuke_Urameshi.png",
     "bytes": 339938
   }
 ]

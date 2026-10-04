@@ -265,7 +265,8 @@
       },
       "relationships": [],
       "role": "idle",
-      "sha256": "8c631c76d6694ae888010bcb8e27e91ab052439116d2edb0a51e847d223b2e96"
+      "sha256": "8c631c76d6694ae888010bcb8e27e91ab052439116d2edb0a51e847d223b2e96",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0001": {
       "anchor": [
@@ -527,7 +528,8 @@
       },
       "relationships": [],
       "role": "walk",
-      "sha256": "98768d7ed9213ef5fde9a978a57d00f1448eac7718c664f88420c8b801827ac3"
+      "sha256": "98768d7ed9213ef5fde9a978a57d00f1448eac7718c664f88420c8b801827ac3",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0002": {
       "anchor": [
@@ -773,7 +775,8 @@
       },
       "relationships": [],
       "role": "dash",
-      "sha256": "712cd5537bbeb0c2dd1f8e6dcc194303625b46b6e0f69dc5c782de39cbcf994b"
+      "sha256": "712cd5537bbeb0c2dd1f8e6dcc194303625b46b6e0f69dc5c782de39cbcf994b",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0003": {
       "anchor": [
@@ -1021,7 +1024,8 @@
       },
       "relationships": [],
       "role": "guard",
-      "sha256": "9e135870a710c29305fc4bfa9b11cfd43fa6e9d38bc5e14c5c509138abc8713d"
+      "sha256": "9e135870a710c29305fc4bfa9b11cfd43fa6e9d38bc5e14c5c509138abc8713d",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0004": {
       "anchor": [
@@ -1188,7 +1192,8 @@
       },
       "relationships": [],
       "role": "jump_rise",
-      "sha256": "344e755f3c71b1f59618ff0fb95a6787f542ad481b9d7d2611b3a458925982b6"
+      "sha256": "344e755f3c71b1f59618ff0fb95a6787f542ad481b9d7d2611b3a458925982b6",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0005": {
       "anchor": [
@@ -1369,7 +1374,8 @@
       },
       "relationships": [],
       "role": "jump_air_variant_05",
-      "sha256": "b2d350f053d7c6aacfb7c35a62533ee8db9e75d6f193753ce913bc29ce49a5f6"
+      "sha256": "b2d350f053d7c6aacfb7c35a62533ee8db9e75d6f193753ce913bc29ce49a5f6",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0006": {
       "anchor": [
@@ -1550,7 +1556,8 @@
       },
       "relationships": [],
       "role": "jump_air_variant_06",
-      "sha256": "b2d350f053d7c6aacfb7c35a62533ee8db9e75d6f193753ce913bc29ce49a5f6"
+      "sha256": "b2d350f053d7c6aacfb7c35a62533ee8db9e75d6f193753ce913bc29ce49a5f6",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0007": {
       "anchor": [
@@ -1754,7 +1761,8 @@
       },
       "relationships": [],
       "role": "landed",
-      "sha256": "35feb7f399dca4a92dac094cb465bec9f14b2ade0a6f19a9fe3ee0d052ff950b"
+      "sha256": "35feb7f399dca4a92dac094cb465bec9f14b2ade0a6f19a9fe3ee0d052ff950b",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0008": {
       "anchor": [
@@ -1921,7 +1929,8 @@
       },
       "relationships": [],
       "role": "jump_squat_landend",
-      "sha256": "936c484ed9d91f7a7e8f4dbcf384ba68d72b1e172a5b03460ed56bc5ec344727"
+      "sha256": "936c484ed9d91f7a7e8f4dbcf384ba68d72b1e172a5b03460ed56bc5ec344727",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0009": {
       "anchor": [
@@ -2075,7 +2084,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "f5bb8544f3bbc0949b884e24087ea46a9165a75e6f348a17135f223cde4ff27b"
+      "sha256": "f5bb8544f3bbc0949b884e24087ea46a9165a75e6f348a17135f223cde4ff27b",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000a": {
       "anchor": [
@@ -2242,7 +2252,8 @@
       },
       "relationships": [],
       "role": "hit_type_1",
-      "sha256": "ab36a7007399acd4759efe6e583401c8bdf7ee7eaace1f88b2b0d82506f4846b"
+      "sha256": "ab36a7007399acd4759efe6e583401c8bdf7ee7eaace1f88b2b0d82506f4846b",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000b": {
       "anchor": [
@@ -2409,7 +2420,8 @@
       },
       "relationships": [],
       "role": "hit_type_0",
-      "sha256": "55ff65e588b0cc2858b1dc443ea6e90fcfcab7c0043a738aae562c256ed37d24"
+      "sha256": "55ff65e588b0cc2858b1dc443ea6e90fcfcab7c0043a738aae562c256ed37d24",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000c": {
       "anchor": [
@@ -2576,7 +2588,8 @@
       },
       "relationships": [],
       "role": "hit_type_2",
-      "sha256": "5fa038d3dab4f7b8daec0843ea38a0bd07634ff366ce36ca1f23608a1680b3df"
+      "sha256": "5fa038d3dab4f7b8daec0843ea38a0bd07634ff366ce36ca1f23608a1680b3df",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000d": {
       "anchor": [
@@ -2743,7 +2756,8 @@
       },
       "relationships": [],
       "role": "surprised",
-      "sha256": "a4072381f1aa7c6df06f9e906a05ff56d0bf23e818978e93917a7008554a514d"
+      "sha256": "a4072381f1aa7c6df06f9e906a05ff56d0bf23e818978e93917a7008554a514d",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000e": {
       "anchor": [
@@ -2947,7 +2961,8 @@
       },
       "relationships": [],
       "role": "hit_alternate_outline",
-      "sha256": "f9ca37a94abe594cdab5aa60a7428db04bad9357247cadc14adf6a8116c4d3d7"
+      "sha256": "f9ca37a94abe594cdab5aa60a7428db04bad9357247cadc14adf6a8116c4d3d7",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:000f": {
       "anchor": [
@@ -3188,7 +3203,8 @@
       },
       "relationships": [],
       "role": "knockdown",
-      "sha256": "a60060f8e77b7f8878d020db2b545438a9787de2d25140937f83261978babbee"
+      "sha256": "a60060f8e77b7f8878d020db2b545438a9787de2d25140937f83261978babbee",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0010": {
       "anchor": [
@@ -3370,7 +3386,8 @@
       },
       "relationships": [],
       "role": "pop",
-      "sha256": "964664fd9b60a6cd7acedeb88f8c17650b6e2c46a698688cc30f94af3f40d3d8"
+      "sha256": "964664fd9b60a6cd7acedeb88f8c17650b6e2c46a698688cc30f94af3f40d3d8",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0011": {
       "anchor": [
@@ -3537,7 +3554,8 @@
       },
       "relationships": [],
       "role": "downed",
-      "sha256": "2846e100bfcbe480a28af203ddbcb463be8a67e8c65d8c5195b14d93e5847dc3"
+      "sha256": "2846e100bfcbe480a28af203ddbcb463be8a67e8c65d8c5195b14d93e5847dc3",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0012": {
       "anchor": [
@@ -3746,7 +3764,8 @@
       },
       "relationships": [],
       "role": "pop_alternate_outline",
-      "sha256": "316935570ac62dac2c3d05982e6c53106ffd1bbf7f967d89fa14970192fbba59"
+      "sha256": "316935570ac62dac2c3d05982e6c53106ffd1bbf7f967d89fa14970192fbba59",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0013": {
       "anchor": [
@@ -4023,7 +4042,8 @@
       },
       "relationships": [],
       "role": "launched",
-      "sha256": "b4dd889bab3f36c4aa71c391fb2a526d3eeb460d625804e85377971a59006d81"
+      "sha256": "b4dd889bab3f36c4aa71c391fb2a526d3eeb460d625804e85377971a59006d81",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0014": {
       "anchor": [
@@ -4409,7 +4429,8 @@
       },
       "relationships": [],
       "role": "ledge_hang",
-      "sha256": "7ed971acd09cd806c3041649a4a552a5fc49cfdd8640dfa3ab1ba022bde7fd97"
+      "sha256": "7ed971acd09cd806c3041649a4a552a5fc49cfdd8640dfa3ab1ba022bde7fd97",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0015": {
       "anchor": [
@@ -4982,7 +5003,8 @@
       },
       "relationships": [],
       "role": "ledge_getup_anim_15",
-      "sha256": "10e6b25cde3dfe965c0a448783c9aa472d0c95ef74dd2d553bda7ba731afa527"
+      "sha256": "10e6b25cde3dfe965c0a448783c9aa472d0c95ef74dd2d553bda7ba731afa527",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0016": {
       "anchor": [
@@ -5362,7 +5384,8 @@
       },
       "relationships": [],
       "role": "ledge_getup_phase_2",
-      "sha256": "f7e301945618e6624d1126f7000992c58f0f1f4fc1f5f46cb453449a2f6edfc8"
+      "sha256": "f7e301945618e6624d1126f7000992c58f0f1f4fc1f5f46cb453449a2f6edfc8",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0017": {
       "anchor": [
@@ -5802,7 +5825,8 @@
       },
       "relationships": [],
       "role": "getup",
-      "sha256": "6ca086b1f0d50eb00bcfe0218d6f9bcaee1b00cdbbe16a48985f5d7ec1466dcf"
+      "sha256": "6ca086b1f0d50eb00bcfe0218d6f9bcaee1b00cdbbe16a48985f5d7ec1466dcf",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0018": {
       "anchor": [
@@ -6298,7 +6322,8 @@
       },
       "relationships": [],
       "role": "taunt",
-      "sha256": "3701990891a25e7e3361e14b366a0fa7e378566e826adb501d4d905658c19ffd"
+      "sha256": "3701990891a25e7e3361e14b366a0fa7e378566e826adb501d4d905658c19ffd",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0019": {
       "anchor": [
@@ -6710,7 +6735,8 @@
       },
       "relationships": [],
       "role": "postmatch_victory",
-      "sha256": "b853c6fa2876e1ff1f4b277ec2d39ebe348be8550453f014a8a225cf76f80695"
+      "sha256": "b853c6fa2876e1ff1f4b277ec2d39ebe348be8550453f014a8a225cf76f80695",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001a": {
       "anchor": [
@@ -7247,7 +7273,8 @@
       },
       "relationships": [],
       "role": "postmatch_defeat",
-      "sha256": "971afc141b51a8256f87942e03fdcaf61e4cc97b9bd88e10f2f2e589af7b282a"
+      "sha256": "971afc141b51a8256f87942e03fdcaf61e4cc97b9bd88e10f2f2e589af7b282a",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001b": {
       "anchor": [
@@ -7537,7 +7564,8 @@
       },
       "relationships": [],
       "role": "neutral",
-      "sha256": "c9bae4a5a839ced44bd5956df50f084c85fb4e152ed366ae334ddb816cfd6d95"
+      "sha256": "c9bae4a5a839ced44bd5956df50f084c85fb4e152ed366ae334ddb816cfd6d95",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001c": {
       "anchor": [
@@ -7975,7 +8003,8 @@
       },
       "relationships": [],
       "role": "neutral",
-      "sha256": "ca29e644d7324ef6b1bc37245c587e40622ee012a62122cc4c52f60fe7f6a319"
+      "sha256": "ca29e644d7324ef6b1bc37245c587e40622ee012a62122cc4c52f60fe7f6a319",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001d": {
       "anchor": [
@@ -8331,7 +8360,8 @@
       },
       "relationships": [],
       "role": "forward",
-      "sha256": "75df4ab2943907959d284c9ba2f6d5591b856fe45f506de602b877a11f17de71"
+      "sha256": "75df4ab2943907959d284c9ba2f6d5591b856fe45f506de602b877a11f17de71",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001e": {
       "anchor": [
@@ -8746,7 +8776,8 @@
       },
       "relationships": [],
       "role": "forward",
-      "sha256": "c4b653d24ee7ecf234dda1b642e5d18b777e9f164e7de300af771c8567b8f6c9"
+      "sha256": "c4b653d24ee7ecf234dda1b642e5d18b777e9f164e7de300af771c8567b8f6c9",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:001f": {
       "anchor": [
@@ -9094,7 +9125,8 @@
       },
       "relationships": [],
       "role": "up",
-      "sha256": "d326be9d050c6d40d7431d3af54716e98a8ff1893050fec05e455876a899eab8"
+      "sha256": "d326be9d050c6d40d7431d3af54716e98a8ff1893050fec05e455876a899eab8",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0020": {
       "anchor": [
@@ -9477,7 +9509,8 @@
       },
       "relationships": [],
       "role": "up",
-      "sha256": "c5785322db059a2a42fca0e2d32844610fae45439f7462ef64767442320674f2"
+      "sha256": "c5785322db059a2a42fca0e2d32844610fae45439f7462ef64767442320674f2",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0021": {
       "anchor": [
@@ -9867,7 +9900,8 @@
       },
       "relationships": [],
       "role": "down",
-      "sha256": "057f0f5e1c18ee82db46214b956d0875da2fccdd9b6fecb6291f7372e1eb4100"
+      "sha256": "057f0f5e1c18ee82db46214b956d0875da2fccdd9b6fecb6291f7372e1eb4100",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0022": {
       "anchor": [
@@ -10316,7 +10350,8 @@
       },
       "relationships": [],
       "role": "down",
-      "sha256": "9e5292652643bad58594f0e2ca38ea2dd842585753b2e367d1509e5b6a428978"
+      "sha256": "9e5292652643bad58594f0e2ca38ea2dd842585753b2e367d1509e5b6a428978",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0023": {
       "anchor": [
@@ -10656,7 +10691,8 @@
       },
       "relationships": [],
       "role": "air",
-      "sha256": "8ea76559c0cca885c4a73f0d773be99dac2e36f95ad449a875e8fe54f51b20ce"
+      "sha256": "8ea76559c0cca885c4a73f0d773be99dac2e36f95ad449a875e8fe54f51b20ce",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0024": {
       "anchor": [
@@ -11039,7 +11075,8 @@
       },
       "relationships": [],
       "role": "air",
-      "sha256": "4d9f07a761eb91e0e4d27283d6be8cb557a434a9467377bef00b9a3daf6ea1e9"
+      "sha256": "4d9f07a761eb91e0e4d27283d6be8cb557a434a9467377bef00b9a3daf6ea1e9",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0025": {
       "anchor": [
@@ -11161,7 +11198,7 @@
         }
       ],
       "graphic_type": "fighter_body",
-      "name": "forward_heavy_variant_28",
+      "name": "heavy_variant_28",
       "native_animation": {
         "frames": 30,
         "id": 40,
@@ -11364,7 +11401,7 @@
         "stable_id": "db_b_05:db_b_05.amt:anim:0025"
       },
       "native_node_index": 0,
-      "output": "labeled_split/attacks_heavy/forward_heavy_variant_28_db_b_05_anim_0028_node_0_strip.png",
+      "output": "labeled_split/attacks_heavy/heavy_variant_28_db_b_05_anim_0028_node_0_strip.png",
       "ownership": "fighter_body",
       "panel": null,
       "provenance": {
@@ -11393,8 +11430,12 @@
         }
       },
       "relationships": [],
-      "role": "forward_heavy_variant_28",
-      "sha256": "75df4ab2943907959d284c9ba2f6d5591b856fe45f506de602b877a11f17de71"
+      "role": "heavy_variant_28",
+      "sha256": "75df4ab2943907959d284c9ba2f6d5591b856fe45f506de602b877a11f17de71",
+      "runtime_candidate": false,
+      "review_notes": [
+        "Additional heavy sequence: direction/selector requires character-specific evidence."
+      ]
     },
     "db_b_05:db_b_05.amt:anim:0026": {
       "anchor": [
@@ -11822,7 +11863,8 @@
       },
       "relationships": [],
       "role": "k4_native_anim_29",
-      "sha256": "7d6a731a7b0238f871b397aaf2fdcbb30c82b54d1a706ce4c9f83dff3a56fe1c"
+      "sha256": "7d6a731a7b0238f871b397aaf2fdcbb30c82b54d1a706ce4c9f83dff3a56fe1c",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0027": {
       "anchor": [
@@ -12258,7 +12300,8 @@
       },
       "relationships": [],
       "role": "k4_native_anim_2a",
-      "sha256": "d343c3cf7e7172729eae5d6a12127693d467094750afc6836a1a1a22551ba66c"
+      "sha256": "d343c3cf7e7172729eae5d6a12127693d467094750afc6836a1a1a22551ba66c",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0028": {
       "anchor": [
@@ -12463,7 +12506,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_1",
-      "sha256": "f6cd5322d850b3f1b557730b4530bd6b95e3fae68474c7b7e157d2ad98c23ff3"
+      "sha256": "f6cd5322d850b3f1b557730b4530bd6b95e3fae68474c7b7e157d2ad98c23ff3",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:0029": {
       "anchor": [
@@ -12668,7 +12712,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_2",
-      "sha256": "a9614640b9db562f1beecfc35a92930e0401fcc87ef33be0487396538c0b0e39"
+      "sha256": "a9614640b9db562f1beecfc35a92930e0401fcc87ef33be0487396538c0b0e39",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:002a": {
       "anchor": [
@@ -12873,7 +12918,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_3",
-      "sha256": "e20bdb3c417d11f911658f00661f83f3e34bb4c19071f18c3aee67adcb7e1de2"
+      "sha256": "e20bdb3c417d11f911658f00661f83f3e34bb4c19071f18c3aee67adcb7e1de2",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05.amt:anim:002b": {
       "anchor": [
@@ -13078,7 +13124,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_4",
-      "sha256": "152e222bafd964576f2946b908db9f62786b2681dec10e34f72d4fe9603eb9c5"
+      "sha256": "152e222bafd964576f2946b908db9f62786b2681dec10e34f72d4fe9603eb9c5",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0000": {
       "anchor": [
@@ -13254,7 +13301,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e6e413b9906e5848ee60ab7463abab21cdb6d94d790834569e632ee35dfed0e0"
+      "sha256": "e6e413b9906e5848ee60ab7463abab21cdb6d94d790834569e632ee35dfed0e0",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0001": {
       "anchor": [
@@ -13416,7 +13464,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "66b27381bedc9c176a085b15bdd7a4d29ac5a4f707a28dc8c4019e0648ed5580"
+      "sha256": "66b27381bedc9c176a085b15bdd7a4d29ac5a4f707a28dc8c4019e0648ed5580",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0002": {
       "anchor": [
@@ -13578,7 +13627,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "c65e11fddaa7c2e393b6cd7198b823d5b3a15e648550b2788985cebc2f588e56"
+      "sha256": "c65e11fddaa7c2e393b6cd7198b823d5b3a15e648550b2788985cebc2f588e56",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0003": {
       "anchor": [
@@ -13740,7 +13790,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "2bcd5d55e4c190eb2a22cff75b1bb90f9156bfd9f88ec9d2d67b0af26a6fddfc"
+      "sha256": "2bcd5d55e4c190eb2a22cff75b1bb90f9156bfd9f88ec9d2d67b0af26a6fddfc",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0004": {
       "anchor": [
@@ -13916,7 +13967,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fac652991a8429967b303b34ac190ca23f4bcb5c0c6cc43c2120c3f626d6c612"
+      "sha256": "fac652991a8429967b303b34ac190ca23f4bcb5c0c6cc43c2120c3f626d6c612",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0005": {
       "anchor": [
@@ -14078,7 +14130,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "33ec2029c055f006c2d45ed9ad1e53d07b3e9d9be5e4eba633d81d608994c271"
+      "sha256": "33ec2029c055f006c2d45ed9ad1e53d07b3e9d9be5e4eba633d81d608994c271",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0006": {
       "anchor": [
@@ -14283,7 +14336,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "413fc9e36f25009fe11ab52b331a8e739706a3f8d9860d0a2d2777fe4d654c00"
+      "sha256": "413fc9e36f25009fe11ab52b331a8e739706a3f8d9860d0a2d2777fe4d654c00",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0007": {
       "anchor": [
@@ -14496,7 +14550,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "8cd36f1e7ee0e526cc9adb31511c6458c5c85e8b76d4770059756ff55f43b63a"
+      "sha256": "8cd36f1e7ee0e526cc9adb31511c6458c5c85e8b76d4770059756ff55f43b63a",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0008": {
       "anchor": [
@@ -14672,7 +14727,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "437c50e590d8210cb989b23ed1795be972e7658579716990cede9b10ad9683f1"
+      "sha256": "437c50e590d8210cb989b23ed1795be972e7658579716990cede9b10ad9683f1",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:0009": {
       "anchor": [
@@ -14834,7 +14890,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e92a6bd95d20ea0787a71096297b1869152dcf4bc081cd4a9b5ff058adad3575"
+      "sha256": "e92a6bd95d20ea0787a71096297b1869152dcf4bc081cd4a9b5ff058adad3575",
+      "runtime_candidate": false
     },
     "db_b_05:db_b_05_e0.amt:anim:000a": {
       "anchor": [
@@ -15039,7 +15096,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "64f2e9efc158f26be5673ca6771ccd836b7fb64bddcdfe5e7126f21ee563c418"
+      "sha256": "64f2e9efc158f26be5673ca6771ccd836b7fb64bddcdfe5e7126f21ee563c418",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0000": {
       "anchor": [
@@ -15149,7 +15207,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940"
+      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0001": {
       "anchor": [
@@ -15259,7 +15318,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d"
+      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0002": {
       "anchor": [
@@ -15369,7 +15429,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "f630739f6a913c97a1825fc5e6c2ebb3c4411e6b560f94f8a9c2707527c2ad27"
+      "sha256": "f630739f6a913c97a1825fc5e6c2ebb3c4411e6b560f94f8a9c2707527c2ad27",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0003": {
       "anchor": [
@@ -15479,7 +15540,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fad353df4d39b24622de8ee83d799b53a4a0fc432adab8d0e55734cf1dbf2f77"
+      "sha256": "fad353df4d39b24622de8ee83d799b53a4a0fc432adab8d0e55734cf1dbf2f77",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0004": {
       "anchor": [
@@ -15713,7 +15775,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "b4d90e5d8ae12b2e552bee87d2bb26721396d19afec965a91f3115ea15e27a89"
+      "sha256": "b4d90e5d8ae12b2e552bee87d2bb26721396d19afec965a91f3115ea15e27a89",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0005": {
       "anchor": [
@@ -15823,7 +15886,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "1ed82f7996cd5c3068a324b578c20e830789ffbc0869b55bbcfeea84da28e3a4"
+      "sha256": "1ed82f7996cd5c3068a324b578c20e830789ffbc0869b55bbcfeea84da28e3a4",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0006": {
       "anchor": [
@@ -15985,7 +16049,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "4f31480a25ff718eef6b9e61f683cd1efb32919da8cf532fb9aea5819f23c57c"
+      "sha256": "4f31480a25ff718eef6b9e61f683cd1efb32919da8cf532fb9aea5819f23c57c",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0007": {
       "anchor": [
@@ -16147,7 +16212,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "f5fc4544093c4844a8fdd5fb0b2011cdb75c17d4d14c904ea22397ac60eea8a0"
+      "sha256": "f5fc4544093c4844a8fdd5fb0b2011cdb75c17d4d14c904ea22397ac60eea8a0",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0008": {
       "anchor": [
@@ -16309,7 +16375,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "168ad7b715620e8d781db64f24fd7a7b9f94ab6b7a7d1b16509b0f0f0b091572"
+      "sha256": "168ad7b715620e8d781db64f24fd7a7b9f94ab6b7a7d1b16509b0f0f0b091572",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:0009": {
       "anchor": [
@@ -16419,7 +16486,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "c6a72108e1b57b77be2e62b262510463ae71aeb4e54219fab715e6269d661715"
+      "sha256": "c6a72108e1b57b77be2e62b262510463ae71aeb4e54219fab715e6269d661715",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:000a": {
       "anchor": [
@@ -16529,7 +16597,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "d72000e137d6b05cdf7dadc06ee283e2e6e8748fbed2d53bba10dd04d7ebb868"
+      "sha256": "d72000e137d6b05cdf7dadc06ee283e2e6e8748fbed2d53bba10dd04d7ebb868",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:000b": {
       "anchor": [
@@ -16639,7 +16708,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "7f6af618a302e5b46a7874a103c62df5b385d427a90d5eafc6fa4372fd8f248e"
+      "sha256": "7f6af618a302e5b46a7874a103c62df5b385d427a90d5eafc6fa4372fd8f248e",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:000c": {
       "anchor": [
@@ -16801,7 +16871,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "c26973d51f94c1fb66d1c311842fb2b4db21fed0efe8af374e24b682f5f8171e"
+      "sha256": "c26973d51f94c1fb66d1c311842fb2b4db21fed0efe8af374e24b682f5f8171e",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:000d": {
       "anchor": [
@@ -16963,7 +17034,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e9a904cbcde3d3c58a89441af782f4efb191a22b998a7d099655b57df4a84db3"
+      "sha256": "e9a904cbcde3d3c58a89441af782f4efb191a22b998a7d099655b57df4a84db3",
+      "runtime_candidate": false
     },
     "db_b_05_4:db_b_05_e4.amt:anim:000e": {
       "anchor": [
@@ -17125,7 +17197,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "2a1c8771b79ebc1a7e7681d2e78370768c967e640dfc2a0fa8b32cbfe802fab9"
+      "sha256": "2a1c8771b79ebc1a7e7681d2e78370768c967e640dfc2a0fa8b32cbfe802fab9",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0000": {
       "anchor": [
@@ -17421,7 +17494,8 @@
       },
       "relationships": [],
       "role": "idle",
-      "sha256": "4739a95de3a328f13da681608c0fcff194c300f24b142e5ff947bf75dc68a961"
+      "sha256": "4739a95de3a328f13da681608c0fcff194c300f24b142e5ff947bf75dc68a961",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0001": {
       "anchor": [
@@ -17683,7 +17757,8 @@
       },
       "relationships": [],
       "role": "walk",
-      "sha256": "a4d102deb32ce8aefa9c405626c5c768d9c9ef0f4d59fb3bf45cd021eee46244"
+      "sha256": "a4d102deb32ce8aefa9c405626c5c768d9c9ef0f4d59fb3bf45cd021eee46244",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0002": {
       "anchor": [
@@ -17929,7 +18004,8 @@
       },
       "relationships": [],
       "role": "dash",
-      "sha256": "a95b843f2e256beed61b0be4ddfe6a4e7588da585d7777257cfcd72ebd6d18bf"
+      "sha256": "a95b843f2e256beed61b0be4ddfe6a4e7588da585d7777257cfcd72ebd6d18bf",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0003": {
       "anchor": [
@@ -18177,7 +18253,8 @@
       },
       "relationships": [],
       "role": "guard",
-      "sha256": "0da74ac98fb1173cbee6143036ac6db6e148b12d4077ce96c7c5377a7dbfba71"
+      "sha256": "0da74ac98fb1173cbee6143036ac6db6e148b12d4077ce96c7c5377a7dbfba71",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0004": {
       "anchor": [
@@ -18381,7 +18458,8 @@
       },
       "relationships": [],
       "role": "jump_rise",
-      "sha256": "585322ea8b178d1c7a216dee8d9eca849cb1f75a1ffcda8551520c74241ab3ee"
+      "sha256": "585322ea8b178d1c7a216dee8d9eca849cb1f75a1ffcda8551520c74241ab3ee",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0005": {
       "anchor": [
@@ -18562,7 +18640,8 @@
       },
       "relationships": [],
       "role": "jump_air_variant_05",
-      "sha256": "95f47f1ed9edbf743b9238e142e241ad3e225553e3d9dcbfcb1ffaa7f2327578"
+      "sha256": "95f47f1ed9edbf743b9238e142e241ad3e225553e3d9dcbfcb1ffaa7f2327578",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0006": {
       "anchor": [
@@ -18743,7 +18822,8 @@
       },
       "relationships": [],
       "role": "jump_air_variant_06",
-      "sha256": "95f47f1ed9edbf743b9238e142e241ad3e225553e3d9dcbfcb1ffaa7f2327578"
+      "sha256": "95f47f1ed9edbf743b9238e142e241ad3e225553e3d9dcbfcb1ffaa7f2327578",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0007": {
       "anchor": [
@@ -18947,7 +19027,8 @@
       },
       "relationships": [],
       "role": "landed",
-      "sha256": "82f3fc9edf3f7fa54ac93d9f718df8b3599a050113a95e039aeff297b85b0fd0"
+      "sha256": "82f3fc9edf3f7fa54ac93d9f718df8b3599a050113a95e039aeff297b85b0fd0",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0008": {
       "anchor": [
@@ -19114,7 +19195,8 @@
       },
       "relationships": [],
       "role": "jump_squat_landend",
-      "sha256": "f21345d513e30115044b5b1fdc29d8649d9a3c78cba0ecefbc8d1e8dfcacecf2"
+      "sha256": "f21345d513e30115044b5b1fdc29d8649d9a3c78cba0ecefbc8d1e8dfcacecf2",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0009": {
       "anchor": [
@@ -19268,7 +19350,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "71ce17b512a3126edf39022c8cb84717f87fe5d6b919305aa0db1c9520058dd5"
+      "sha256": "71ce17b512a3126edf39022c8cb84717f87fe5d6b919305aa0db1c9520058dd5",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000a": {
       "anchor": [
@@ -19435,7 +19518,8 @@
       },
       "relationships": [],
       "role": "hit_type_1",
-      "sha256": "28ed98e25e4e4a5455adf71bb7be10c6baf3fdaed3e7d67b60f0872347b3a28b"
+      "sha256": "28ed98e25e4e4a5455adf71bb7be10c6baf3fdaed3e7d67b60f0872347b3a28b",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000b": {
       "anchor": [
@@ -19602,7 +19686,8 @@
       },
       "relationships": [],
       "role": "hit_type_0",
-      "sha256": "7b0bf54a522863a43bb7d31bd40f0c0e0f18d35bca19e32fb4fc14a1cfc5c407"
+      "sha256": "7b0bf54a522863a43bb7d31bd40f0c0e0f18d35bca19e32fb4fc14a1cfc5c407",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000c": {
       "anchor": [
@@ -19769,7 +19854,8 @@
       },
       "relationships": [],
       "role": "hit_type_2",
-      "sha256": "889a61951a8c278a01de92a642c60dae4b51bcbbc47d203e15c235eb6a2d84d0"
+      "sha256": "889a61951a8c278a01de92a642c60dae4b51bcbbc47d203e15c235eb6a2d84d0",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000d": {
       "anchor": [
@@ -19936,7 +20022,8 @@
       },
       "relationships": [],
       "role": "surprised",
-      "sha256": "819aabdb9a57dfe71afb8c0e56cb555980af7a093dd86105cc281961562e375f"
+      "sha256": "819aabdb9a57dfe71afb8c0e56cb555980af7a093dd86105cc281961562e375f",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000e": {
       "anchor": [
@@ -20140,7 +20227,8 @@
       },
       "relationships": [],
       "role": "hit_alternate_outline",
-      "sha256": "2e3392acff74073e373311b29a8ef3b7fd4f598fbcb5fcd33b7dc76f17df3fa7"
+      "sha256": "2e3392acff74073e373311b29a8ef3b7fd4f598fbcb5fcd33b7dc76f17df3fa7",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:000f": {
       "anchor": [
@@ -20381,7 +20469,8 @@
       },
       "relationships": [],
       "role": "knockdown",
-      "sha256": "8e4f120647ce53a7f703d976034329e37ad294de0ef21af37f40fe8c449ee9ff"
+      "sha256": "8e4f120647ce53a7f703d976034329e37ad294de0ef21af37f40fe8c449ee9ff",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0010": {
       "anchor": [
@@ -20563,7 +20652,8 @@
       },
       "relationships": [],
       "role": "pop",
-      "sha256": "2db44e57be0678b891162f1faf49e1d67eb7780c1b865994f85406467b55b58a"
+      "sha256": "2db44e57be0678b891162f1faf49e1d67eb7780c1b865994f85406467b55b58a",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0011": {
       "anchor": [
@@ -20730,7 +20820,8 @@
       },
       "relationships": [],
       "role": "downed",
-      "sha256": "8d53cae69a4bf0f5b7c65cdb20cb0257147564f1473bce1cd02fc212495be8d6"
+      "sha256": "8d53cae69a4bf0f5b7c65cdb20cb0257147564f1473bce1cd02fc212495be8d6",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0012": {
       "anchor": [
@@ -20939,7 +21030,8 @@
       },
       "relationships": [],
       "role": "pop_alternate_outline",
-      "sha256": "e3ff82804208826abffa59d3dfee244b8f1e245321aa2e3506bdb4d62c3ff314"
+      "sha256": "e3ff82804208826abffa59d3dfee244b8f1e245321aa2e3506bdb4d62c3ff314",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0013": {
       "anchor": [
@@ -21216,7 +21308,8 @@
       },
       "relationships": [],
       "role": "launched",
-      "sha256": "310f1bca633ef5151b570b8db6b4b7351c18f237dd4cbcd37c6fc1a05d566b24"
+      "sha256": "310f1bca633ef5151b570b8db6b4b7351c18f237dd4cbcd37c6fc1a05d566b24",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0014": {
       "anchor": [
@@ -21602,7 +21695,8 @@
       },
       "relationships": [],
       "role": "ledge_hang",
-      "sha256": "2da15b51141900a9459b9ffe2c9845e4439bcd624001794461b1eade7e02ccb9"
+      "sha256": "2da15b51141900a9459b9ffe2c9845e4439bcd624001794461b1eade7e02ccb9",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0015": {
       "anchor": [
@@ -22196,7 +22290,8 @@
       },
       "relationships": [],
       "role": "ledge_getup_anim_15",
-      "sha256": "bc658a392cab236f36536316882ed8c5f2f7dbe0edbb80599c756a046476b8dc"
+      "sha256": "bc658a392cab236f36536316882ed8c5f2f7dbe0edbb80599c756a046476b8dc",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0016": {
       "anchor": [
@@ -22576,7 +22671,8 @@
       },
       "relationships": [],
       "role": "ledge_getup_phase_2",
-      "sha256": "34b0a5fc5ea0aea49e06b8c7cff325062b4540655d2b85d55c331c5114c638ff"
+      "sha256": "34b0a5fc5ea0aea49e06b8c7cff325062b4540655d2b85d55c331c5114c638ff",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0017": {
       "anchor": [
@@ -23016,7 +23112,8 @@
       },
       "relationships": [],
       "role": "getup",
-      "sha256": "ed4c27d8a8206e9ca31710955034dcfc5e139684dccc139db1ed90c5c9d535b6"
+      "sha256": "ed4c27d8a8206e9ca31710955034dcfc5e139684dccc139db1ed90c5c9d535b6",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0018": {
       "anchor": [
@@ -23576,7 +23673,8 @@
       },
       "relationships": [],
       "role": "taunt",
-      "sha256": "19d04e90427ae81a949dca263b3f890e080e8d856f5e0a00759b08de6c379a31"
+      "sha256": "19d04e90427ae81a949dca263b3f890e080e8d856f5e0a00759b08de6c379a31",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0019": {
       "anchor": [
@@ -24044,7 +24142,8 @@
       },
       "relationships": [],
       "role": "postmatch_victory",
-      "sha256": "fd87177564849dc29697a4caafc84027300a3bac7ac8dfeaf998fe3c26b5dbc8"
+      "sha256": "fd87177564849dc29697a4caafc84027300a3bac7ac8dfeaf998fe3c26b5dbc8",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001a": {
       "anchor": [
@@ -24697,7 +24796,8 @@
       },
       "relationships": [],
       "role": "postmatch_defeat",
-      "sha256": "1113bfecf2cab4fa7a3cb7039b4ef01e6a109eb8dfaaf1d5602cd2d736419242"
+      "sha256": "1113bfecf2cab4fa7a3cb7039b4ef01e6a109eb8dfaaf1d5602cd2d736419242",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001b": {
       "anchor": [
@@ -24987,7 +25087,8 @@
       },
       "relationships": [],
       "role": "neutral",
-      "sha256": "7420eabcb750750b08963a6f16d30f9cd617091b5cb4ad1b320c9414656cb1a1"
+      "sha256": "7420eabcb750750b08963a6f16d30f9cd617091b5cb4ad1b320c9414656cb1a1",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001c": {
       "anchor": [
@@ -25449,7 +25550,8 @@
       },
       "relationships": [],
       "role": "neutral",
-      "sha256": "8f804ae8a78b2b9961a7b3ac00e3e1bc2bef798925aa2aa90605b8134737d3f0"
+      "sha256": "8f804ae8a78b2b9961a7b3ac00e3e1bc2bef798925aa2aa90605b8134737d3f0",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001d": {
       "anchor": [
@@ -25805,7 +25907,8 @@
       },
       "relationships": [],
       "role": "forward",
-      "sha256": "c9aea9e8b910d21bb13a7d85050d01fc6d5e7afabac398ca7e868a89677de447"
+      "sha256": "c9aea9e8b910d21bb13a7d85050d01fc6d5e7afabac398ca7e868a89677de447",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001e": {
       "anchor": [
@@ -26228,7 +26331,8 @@
       },
       "relationships": [],
       "role": "forward",
-      "sha256": "0b4b3a525ff7a002e9671f002cf9113a7cf5707b5268609a5c8e6590f76b05d5"
+      "sha256": "0b4b3a525ff7a002e9671f002cf9113a7cf5707b5268609a5c8e6590f76b05d5",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:001f": {
       "anchor": [
@@ -26576,7 +26680,8 @@
       },
       "relationships": [],
       "role": "up",
-      "sha256": "93c65646d7117ca967a91a166d9f4b8e6e52f0756786b3aec0da1ba66b67ba7c"
+      "sha256": "93c65646d7117ca967a91a166d9f4b8e6e52f0756786b3aec0da1ba66b67ba7c",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0020": {
       "anchor": [
@@ -26959,7 +27064,8 @@
       },
       "relationships": [],
       "role": "up",
-      "sha256": "837bc32d92b82954a53b7a639b92c163a7b521ac313ae185c03a6baf02848706"
+      "sha256": "837bc32d92b82954a53b7a639b92c163a7b521ac313ae185c03a6baf02848706",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0021": {
       "anchor": [
@@ -27349,7 +27455,8 @@
       },
       "relationships": [],
       "role": "down",
-      "sha256": "e1e522035c81da60b2ce3f443ec76946fa27a921dcee5f81c161c14447a4b0d9"
+      "sha256": "e1e522035c81da60b2ce3f443ec76946fa27a921dcee5f81c161c14447a4b0d9",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0022": {
       "anchor": [
@@ -27798,7 +27905,8 @@
       },
       "relationships": [],
       "role": "down",
-      "sha256": "272447eae0a0e5d838da91582a3234f7d96893d9fad2e245213be76a8ff42d22"
+      "sha256": "272447eae0a0e5d838da91582a3234f7d96893d9fad2e245213be76a8ff42d22",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0023": {
       "anchor": [
@@ -28138,7 +28246,8 @@
       },
       "relationships": [],
       "role": "air",
-      "sha256": "218bcdbb684636e0acd3e1952ca7a60dd152675003e25d7eb4f0ace07e3bfaa6"
+      "sha256": "218bcdbb684636e0acd3e1952ca7a60dd152675003e25d7eb4f0ace07e3bfaa6",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0024": {
       "anchor": [
@@ -28521,7 +28630,8 @@
       },
       "relationships": [],
       "role": "air",
-      "sha256": "a64a906ad297e140da56292ba77bc6d3c4ff0fe0c6dbcf84075bd207940e9eae"
+      "sha256": "a64a906ad297e140da56292ba77bc6d3c4ff0fe0c6dbcf84075bd207940e9eae",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0025": {
       "anchor": [
@@ -28643,7 +28753,7 @@
         }
       ],
       "graphic_type": "fighter_body",
-      "name": "forward_heavy_variant_28",
+      "name": "heavy_variant_28",
       "native_animation": {
         "frames": 30,
         "id": 40,
@@ -28846,7 +28956,7 @@
         "stable_id": "db_b_06:db_b_06.amt:anim:0025"
       },
       "native_node_index": 0,
-      "output": "labeled_split/attacks_heavy/forward_heavy_variant_28_db_b_06_anim_0028_node_0_strip.png",
+      "output": "labeled_split/attacks_heavy/heavy_variant_28_db_b_06_anim_0028_node_0_strip.png",
       "ownership": "fighter_body",
       "panel": null,
       "provenance": {
@@ -28875,8 +28985,12 @@
         }
       },
       "relationships": [],
-      "role": "forward_heavy_variant_28",
-      "sha256": "c9aea9e8b910d21bb13a7d85050d01fc6d5e7afabac398ca7e868a89677de447"
+      "role": "heavy_variant_28",
+      "sha256": "c9aea9e8b910d21bb13a7d85050d01fc6d5e7afabac398ca7e868a89677de447",
+      "runtime_candidate": false,
+      "review_notes": [
+        "Additional heavy sequence: direction/selector requires character-specific evidence."
+      ]
     },
     "db_b_06:db_b_06.amt:anim:0026": {
       "anchor": [
@@ -29363,7 +29477,8 @@
       },
       "relationships": [],
       "role": "k5_native_anim_2b",
-      "sha256": "6b8bef90c319fbad311dd65cc0b934137fdc74385a96c4782936dd31d91fee3d"
+      "sha256": "6b8bef90c319fbad311dd65cc0b934137fdc74385a96c4782936dd31d91fee3d",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0027": {
       "anchor": [
@@ -29812,7 +29927,8 @@
       },
       "relationships": [],
       "role": "k5_native_anim_2c",
-      "sha256": "658c1a8d1c9ebca5a40d013faecb77719a6901f95555c93b04b1115ab8f065f7"
+      "sha256": "658c1a8d1c9ebca5a40d013faecb77719a6901f95555c93b04b1115ab8f065f7",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0028": {
       "anchor": [
@@ -30017,7 +30133,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_1",
-      "sha256": "c77f99deab8eae9c15ccccfae6841d21b9c817ee23173a881baf0d29113d7b49"
+      "sha256": "c77f99deab8eae9c15ccccfae6841d21b9c817ee23173a881baf0d29113d7b49",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:0029": {
       "anchor": [
@@ -30222,7 +30339,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_2",
-      "sha256": "b46a239154184eda73a3e652f1521fff8b1e022b4876ac79ccf29e121047afe2"
+      "sha256": "b46a239154184eda73a3e652f1521fff8b1e022b4876ac79ccf29e121047afe2",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:002a": {
       "anchor": [
@@ -30427,7 +30545,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_3",
-      "sha256": "d185952e6cd56ef61d58867cf4d37be40ed866428f82bcb4aca27c401bb26744"
+      "sha256": "d185952e6cd56ef61d58867cf4d37be40ed866428f82bcb4aca27c401bb26744",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06.amt:anim:002b": {
       "anchor": [
@@ -30632,7 +30751,8 @@
       },
       "relationships": [],
       "role": "grabbed_pose_4",
-      "sha256": "953207f4c20b93ae51fb4f862779b56983c26750926160edfdee0dd752f140da"
+      "sha256": "953207f4c20b93ae51fb4f862779b56983c26750926160edfdee0dd752f140da",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0000": {
       "anchor": [
@@ -30808,7 +30928,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e6e413b9906e5848ee60ab7463abab21cdb6d94d790834569e632ee35dfed0e0"
+      "sha256": "e6e413b9906e5848ee60ab7463abab21cdb6d94d790834569e632ee35dfed0e0",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0001": {
       "anchor": [
@@ -30970,7 +31091,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "66b27381bedc9c176a085b15bdd7a4d29ac5a4f707a28dc8c4019e0648ed5580"
+      "sha256": "66b27381bedc9c176a085b15bdd7a4d29ac5a4f707a28dc8c4019e0648ed5580",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0002": {
       "anchor": [
@@ -31132,7 +31254,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "c65e11fddaa7c2e393b6cd7198b823d5b3a15e648550b2788985cebc2f588e56"
+      "sha256": "c65e11fddaa7c2e393b6cd7198b823d5b3a15e648550b2788985cebc2f588e56",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0003": {
       "anchor": [
@@ -31294,7 +31417,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "2bcd5d55e4c190eb2a22cff75b1bb90f9156bfd9f88ec9d2d67b0af26a6fddfc"
+      "sha256": "2bcd5d55e4c190eb2a22cff75b1bb90f9156bfd9f88ec9d2d67b0af26a6fddfc",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0004": {
       "anchor": [
@@ -31470,7 +31594,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fac652991a8429967b303b34ac190ca23f4bcb5c0c6cc43c2120c3f626d6c612"
+      "sha256": "fac652991a8429967b303b34ac190ca23f4bcb5c0c6cc43c2120c3f626d6c612",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0005": {
       "anchor": [
@@ -31632,7 +31757,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "33ec2029c055f006c2d45ed9ad1e53d07b3e9d9be5e4eba633d81d608994c271"
+      "sha256": "33ec2029c055f006c2d45ed9ad1e53d07b3e9d9be5e4eba633d81d608994c271",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0006": {
       "anchor": [
@@ -31837,7 +31963,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "413fc9e36f25009fe11ab52b331a8e739706a3f8d9860d0a2d2777fe4d654c00"
+      "sha256": "413fc9e36f25009fe11ab52b331a8e739706a3f8d9860d0a2d2777fe4d654c00",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0007": {
       "anchor": [
@@ -32050,7 +32177,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "8cd36f1e7ee0e526cc9adb31511c6458c5c85e8b76d4770059756ff55f43b63a"
+      "sha256": "8cd36f1e7ee0e526cc9adb31511c6458c5c85e8b76d4770059756ff55f43b63a",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0008": {
       "anchor": [
@@ -32226,7 +32354,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "437c50e590d8210cb989b23ed1795be972e7658579716990cede9b10ad9683f1"
+      "sha256": "437c50e590d8210cb989b23ed1795be972e7658579716990cede9b10ad9683f1",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:0009": {
       "anchor": [
@@ -32388,7 +32517,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e92a6bd95d20ea0787a71096297b1869152dcf4bc081cd4a9b5ff058adad3575"
+      "sha256": "e92a6bd95d20ea0787a71096297b1869152dcf4bc081cd4a9b5ff058adad3575",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:000a": {
       "anchor": [
@@ -32593,7 +32723,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "cae9912947caa084ab5db2510c03cf237a1becc93452494a574d026baad3a17e"
+      "sha256": "cae9912947caa084ab5db2510c03cf237a1becc93452494a574d026baad3a17e",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:000b": {
       "anchor": [
@@ -32798,7 +32929,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e5df23c9bc0777efff220b69e4f43bafb102c736b509e0e1866a4e54cf30054c"
+      "sha256": "e5df23c9bc0777efff220b69e4f43bafb102c736b509e0e1866a4e54cf30054c",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:000e": {
       "anchor": [
@@ -32908,7 +33040,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e5518f2673f70e8b30e87774d42a4e682edc06f42553de8759998fe67809aa09"
+      "sha256": "e5518f2673f70e8b30e87774d42a4e682edc06f42553de8759998fe67809aa09",
+      "runtime_candidate": false
     },
     "db_b_06:db_b_06_e0.amt:anim:000f": {
       "anchor": [
@@ -33018,7 +33151,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "ee23c197a7e738cf2b7720a628c21d118cff5201e2713d496b74328fe7c810d9"
+      "sha256": "ee23c197a7e738cf2b7720a628c21d118cff5201e2713d496b74328fe7c810d9",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0000": {
       "anchor": [
@@ -33128,7 +33262,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940"
+      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0001": {
       "anchor": [
@@ -33238,7 +33373,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d"
+      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0002": {
       "anchor": [
@@ -33348,7 +33484,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "9992a50c15bcfd5fbbe12adc04eba5bdf9201ec506281a322e35ad3920195067"
+      "sha256": "9992a50c15bcfd5fbbe12adc04eba5bdf9201ec506281a322e35ad3920195067",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0003": {
       "anchor": [
@@ -33458,7 +33595,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "c7ba4a6a58e282d360cd7188e3fbaecbd9d8562a221e0ce29a3fc0b4f5952c97"
+      "sha256": "c7ba4a6a58e282d360cd7188e3fbaecbd9d8562a221e0ce29a3fc0b4f5952c97",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0004": {
       "anchor": [
@@ -33692,7 +33830,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "6f62998c82f167c7a6651461ace8ba0ec2db9ccdc89cfd7d1942e04011fd1e5f"
+      "sha256": "6f62998c82f167c7a6651461ace8ba0ec2db9ccdc89cfd7d1942e04011fd1e5f",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0005": {
       "anchor": [
@@ -33802,7 +33941,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "cc22f8b95b1578f9233862a78666154a37d780af4a73a58f46fead9c0b0c4fad"
+      "sha256": "cc22f8b95b1578f9233862a78666154a37d780af4a73a58f46fead9c0b0c4fad",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0006": {
       "anchor": [
@@ -33964,7 +34104,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "8a605497aaa0bcc3674795a88eb6e97872b9ffa975f313cd1eabe25dcc8b64fb"
+      "sha256": "8a605497aaa0bcc3674795a88eb6e97872b9ffa975f313cd1eabe25dcc8b64fb",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0007": {
       "anchor": [
@@ -34126,7 +34267,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "af3e29d66501e050ed2dd61960953f7b6732bd02410e9fe696c3e8e928b793e6"
+      "sha256": "af3e29d66501e050ed2dd61960953f7b6732bd02410e9fe696c3e8e928b793e6",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0008": {
       "anchor": [
@@ -34288,7 +34430,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "af9da843e144a9be1ff118c89cae7bbfda35e780ac64256426e883cbf26136f6"
+      "sha256": "af9da843e144a9be1ff118c89cae7bbfda35e780ac64256426e883cbf26136f6",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:0009": {
       "anchor": [
@@ -34501,7 +34644,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "fdbfa31515467993c06e07014b2f5db884293163f0628e6b0dd124f60b6ac43d"
+      "sha256": "fdbfa31515467993c06e07014b2f5db884293163f0628e6b0dd124f60b6ac43d",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:000b": {
       "anchor": [
@@ -34611,7 +34755,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "e0c6f42e8b88dea287e25a84959ce514acbd63b15e780f62a1c917a1ef305aff"
+      "sha256": "e0c6f42e8b88dea287e25a84959ce514acbd63b15e780f62a1c917a1ef305aff",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:000c": {
       "anchor": [
@@ -34721,7 +34866,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "2eb732e408028d988c024dda45c80ca3ec2e82f0cb4cd8045371e748bb4053b1"
+      "sha256": "2eb732e408028d988c024dda45c80ca3ec2e82f0cb4cd8045371e748bb4053b1",
+      "runtime_candidate": false
     },
     "db_b_06_5:db_b_06_e5.amt:anim:000d": {
       "anchor": [
@@ -34926,7 +35072,8 @@
       },
       "relationships": [],
       "role": "unresolved",
-      "sha256": "6c6a6abbc9820b64169389a4ce167ffc7e5577fb25009a4cddda2658cbef2073"
+      "sha256": "6c6a6abbc9820b64169389a4ce167ffc7e5577fb25009a4cddda2658cbef2073",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_2.amt:anim:0000": {
       "anchor": [
@@ -35325,7 +35472,8 @@
       },
       "relationships": [],
       "role": "2k_native_anim_0000",
-      "sha256": "385ec16319d6ad8107087bd1cb66575cb50e72b11041fa8ac45af1619914ea65"
+      "sha256": "385ec16319d6ad8107087bd1cb66575cb50e72b11041fa8ac45af1619914ea65",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0000": {
       "anchor": [
@@ -35435,7 +35583,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940"
+      "sha256": "4fd2c9e2ae2456b0b282b35d0a466fd001527192469d9e3d0985ce61382c7940",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0001": {
       "anchor": [
@@ -35545,7 +35694,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d"
+      "sha256": "fb76c955d48eab1e9674ac6159123716d433d0e8a892fbe6d7194d32cca1084d",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0002": {
       "anchor": [
@@ -35655,7 +35805,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "f630739f6a913c97a1825fc5e6c2ebb3c4411e6b560f94f8a9c2707527c2ad27"
+      "sha256": "f630739f6a913c97a1825fc5e6c2ebb3c4411e6b560f94f8a9c2707527c2ad27",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0003": {
       "anchor": [
@@ -35765,7 +35916,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "fad353df4d39b24622de8ee83d799b53a4a0fc432adab8d0e55734cf1dbf2f77"
+      "sha256": "fad353df4d39b24622de8ee83d799b53a4a0fc432adab8d0e55734cf1dbf2f77",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0004": {
       "anchor": [
@@ -36015,7 +36167,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "b4d90e5d8ae12b2e552bee87d2bb26721396d19afec965a91f3115ea15e27a89"
+      "sha256": "b4d90e5d8ae12b2e552bee87d2bb26721396d19afec965a91f3115ea15e27a89",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0005": {
       "anchor": [
@@ -36125,7 +36278,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "1ed82f7996cd5c3068a324b578c20e830789ffbc0869b55bbcfeea84da28e3a4"
+      "sha256": "1ed82f7996cd5c3068a324b578c20e830789ffbc0869b55bbcfeea84da28e3a4",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0006": {
       "anchor": [
@@ -36287,7 +36441,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "0f3b529c02e6bd7e77ad41d1e97543a08a72a52682b930605ba166105dbdc790"
+      "sha256": "0f3b529c02e6bd7e77ad41d1e97543a08a72a52682b930605ba166105dbdc790",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0007": {
       "anchor": [
@@ -36449,7 +36604,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "3ddd0c31722c9c31553a5979952f273c6f527db3bdb56241059fa2511f67cf3b"
+      "sha256": "3ddd0c31722c9c31553a5979952f273c6f527db3bdb56241059fa2511f67cf3b",
+      "runtime_candidate": false
     },
     "db_s_05_2:db_s_05_e2.amt:anim:0008": {
       "anchor": [
@@ -36611,7 +36767,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "7b8d905c09377f83e1430194ed16f46f469210639688fa52c1ee99d33338cd22"
+      "sha256": "7b8d905c09377f83e1430194ed16f46f469210639688fa52c1ee99d33338cd22",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_3.amt:anim:0000": {
       "anchor": [
@@ -37075,7 +37232,8 @@
       },
       "relationships": [],
       "role": "3k_native_anim_0020",
-      "sha256": "1bf1e8b3520caa5846cf4cc4fb235f9b8790bc766c1e8eb03dc96ca99c26e84d"
+      "sha256": "1bf1e8b3520caa5846cf4cc4fb235f9b8790bc766c1e8eb03dc96ca99c26e84d",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0000": {
       "anchor": [
@@ -37185,7 +37343,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "c6a72108e1b57b77be2e62b262510463ae71aeb4e54219fab715e6269d661715"
+      "sha256": "c6a72108e1b57b77be2e62b262510463ae71aeb4e54219fab715e6269d661715",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0001": {
       "anchor": [
@@ -37295,7 +37454,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "d72000e137d6b05cdf7dadc06ee283e2e6e8748fbed2d53bba10dd04d7ebb868"
+      "sha256": "d72000e137d6b05cdf7dadc06ee283e2e6e8748fbed2d53bba10dd04d7ebb868",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0002": {
       "anchor": [
@@ -37405,7 +37565,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "d9bddec7bc3fadff2a14244009bc9d3b9ff3e15382c25b0d2b5da031c3f0f177"
+      "sha256": "d9bddec7bc3fadff2a14244009bc9d3b9ff3e15382c25b0d2b5da031c3f0f177",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0003": {
       "anchor": [
@@ -37567,7 +37728,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "eca5ca2f5813c1b98798dcfc5f3df86d5c6a5939714d0da19efa0bbcf1950ca4"
+      "sha256": "eca5ca2f5813c1b98798dcfc5f3df86d5c6a5939714d0da19efa0bbcf1950ca4",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0004": {
       "anchor": [
@@ -37729,7 +37891,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "9831243595ba82003691b1ef2f8101ce6a74a7452e1aa1cfc95b2c7cecfae201"
+      "sha256": "9831243595ba82003691b1ef2f8101ce6a74a7452e1aa1cfc95b2c7cecfae201",
+      "runtime_candidate": false
     },
     "db_s_05_3:db_s_05_e3.amt:anim:0005": {
       "anchor": [
@@ -37891,7 +38054,8 @@
       },
       "relationships": [],
       "role": "native_component",
-      "sha256": "392fb08fd57f863c86e873b9b468550db62dc9e0fb16922e96c05abc77cc10dc"
+      "sha256": "392fb08fd57f863c86e873b9b468550db62dc9e0fb16922e96c05abc77cc10dc",
+      "runtime_candidate": false
     },
     "source:gohan_panel_01": {
       "anchor": [

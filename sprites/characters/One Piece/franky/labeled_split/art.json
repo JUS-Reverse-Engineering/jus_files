@@ -14963,7 +14963,7 @@
         }
       ],
       "graphic_type": "body_or_actor",
-      "name": "forward_heavy_variant_28",
+      "name": "heavy_variant_28",
       "native_animation": {
         "frames": 52,
         "id": 40,
@@ -15189,7 +15189,7 @@
         "stable_id": "op_b_06:op_b_06.amt:anim:0025"
       },
       "native_node_index": 0,
-      "output": "labeled_split/attacks_heavy/forward_heavy_variant_28_op_b_06_anim_0028_node_0_strip.png",
+      "output": "labeled_split/attacks_heavy/heavy_variant_28_op_b_06_anim_0028_node_0_strip.png",
       "ownership": "fighter_body",
       "panel": null,
       "provenance": {
@@ -15218,10 +15218,13 @@
         }
       },
       "relationships": [],
-      "role": "forward_heavy_variant_28",
+      "role": "heavy_variant_28",
       "runtime_candidate": false,
       "sha256": "11bf6038705632f98c21f21c61d28fb4484890bbbda12bb1bc1f56b2ef00bf7f",
-      "visibility": "visible"
+      "visibility": "visible",
+      "review_notes": [
+        "Additional heavy sequence: direction/selector requires character-specific evidence."
+      ]
     },
     "op_b_06:op_b_06.amt:anim:0026": {
       "anchor": [

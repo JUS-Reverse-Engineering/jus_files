@@ -6,3 +6,8 @@ Poofs fire when clones are summoned and when they disappear
 Poofs fire when dogs are summoned and when they disappear
 
 Poof has no hitbox
+
+Standardization (2026-10-04): complete native smoke/poof tracks are added here
+and in `supports`. Owner poof strips are retained as originally authored.
+Native cells retain the final dissipating pieces; sheet context and runtime
+placement still require a component-specific composition.
