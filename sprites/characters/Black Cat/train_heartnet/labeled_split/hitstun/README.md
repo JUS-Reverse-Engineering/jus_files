@@ -1,3 +1,9 @@
+See [REACTIONS.md](REACTIONS.md) for verified pose labels and triggers.
+
+## Earlier slicing observations
+
+The notes below retain the filenames used during manual classification. The rename table in REACTIONS.md gives their current names.
+
 grabbed_strip is related to special moves of one other character, which grabs and does a wrestling move. very situational
 
 knockdown_strip has downed in it

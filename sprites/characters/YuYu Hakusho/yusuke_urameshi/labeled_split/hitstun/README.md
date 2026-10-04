@@ -1,3 +1,9 @@
+See [REACTIONS.md](REACTIONS.md) for verified pose labels and triggers.
+
+## Earlier slicing observations
+
+The notes below retain the filenames used during manual classification. The rename table in REACTIONS.md gives their current names.
+
 I believe knockdown should include pop at the beginning of it
 
 Unclear how hitstun sprite behavior works
