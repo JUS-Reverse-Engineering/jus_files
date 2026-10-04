@@ -1,3 +1,5 @@
+I believe knockdown should include pop at the beginning of it
+
 Unclear how hitstun sprite behavior works
 
 MOST light attacks trigger light.png
