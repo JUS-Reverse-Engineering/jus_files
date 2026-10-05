@@ -28989,6 +28989,38 @@
               "ticks": 4
             }
           ]
+        },
+        "held_guard": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "repo:docs/research/feel-captures/16g-fidelity-2026-10-05/captures/guard-cm-yusuke-6-repeat-1/frames.jsonl sha256:6d9077174c0293ba9bfb11dffda71946670f77d9fd08c8499850c151cc03c840 rows plan13..133, independently repeated; numeric cell14 first4ticks then cell15 held. Release remains a separate unverified runtime branch."
+          ],
+          "selector": {
+            "conditions": [
+              {
+                "field": "guarding",
+                "values": [
+                  true
+                ]
+              }
+            ],
+            "evidence": [
+              "repo:docs/research/feel-captures/16g-fidelity-2026-10-05/captures/guard-cm-yusuke-6-repeat-1/frames.jsonl sha256:6d9077174c0293ba9bfb11dffda71946670f77d9fd08c8499850c151cc03c840 rows plan13..133, independently repeated; numeric cell14 first4ticks then cell15 held. Release remains a separate unverified runtime branch."
+            ],
+            "status": "resolved"
+          },
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            }
+          ]
         }
       },
       "role": "guard",

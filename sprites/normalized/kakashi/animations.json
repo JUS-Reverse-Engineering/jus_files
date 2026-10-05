@@ -42236,6 +42236,38 @@
               "ticks": 4
             }
           ]
+        },
+        "held_guard": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "repo:docs/research/feel-captures/16g-fidelity-2026-10-05/retries/attempt-2/captures/guard-cm-kakashi-5-repeat-1/frames.jsonl sha256:c9db8bbda9f34f28bfaae399a411b6751d5db5a232d83d6d6a140ef6851fac8b rows plan13..133, independently repeated; numeric cell14 first4ticks then cell15 held. Release remains a separate unverified runtime branch."
+          ],
+          "selector": {
+            "conditions": [
+              {
+                "field": "guarding",
+                "values": [
+                  true
+                ]
+              }
+            ],
+            "evidence": [
+              "repo:docs/research/feel-captures/16g-fidelity-2026-10-05/retries/attempt-2/captures/guard-cm-kakashi-5-repeat-1/frames.jsonl sha256:c9db8bbda9f34f28bfaae399a411b6751d5db5a232d83d6d6a140ef6851fac8b rows plan13..133, independently repeated; numeric cell14 first4ticks then cell15 held. Release remains a separate unverified runtime branch."
+            ],
+            "status": "resolved"
+          },
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            }
+          ]
         }
       },
       "role": "guard",
