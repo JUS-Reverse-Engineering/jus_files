@@ -1,9 +1,11 @@
 # Yugi art authoring package
 
 <!-- current-art-summary:start -->
-Character package: 158 assets, 150 visible strips/panels and 8 transparent native tracks. 556 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+Character package: 183 categorized assets, including 8 transparent native tracks. 640 canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
 
-Native diagnostics in the current manifest: 138 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+Authored alternate-facing assets: 0. Source-controlled loose-pose references: 0. Move groups retain body, summon, projectile, effect and conditional-phase associations in `art.json`. Shared art records every action use. Alternate-facing assets preserve actual authored pixels and record runtime display mirroring separately.
+
+Unresolved native node records: 138; unsupported texture records: 0. Source references and poses with unknown sequence positions remain explicit; art-track key times do not establish gameplay trigger times.
 <!-- current-art-summary:end -->
 
 `art.json` records category, authored animation ID, archive member, texture owner, node, frame bounds, anchors and hashes. The category directories contain review strips. `misc/native_cells/` contains the original-size decoded cells.

@@ -1,5 +1,80 @@
 {
   "asset_labels": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_a",
+          "authored_id": 0,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "orange_hit_spark_00",
+      "ownership": "shared_effect",
+      "role": "hit_spark"
+    },
+    "comm_a:jyocyu_efe_a.amt:anim:0013": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_a",
+          "authored_id": 19,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "blue_hit_spark_13",
+      "ownership": "shared_effect",
+      "role": "hit_spark"
+    },
+    "comm_c:jyocyu_efe_c.amt:anim:0000": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_c",
+          "authored_id": 0,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "dash_dust",
+      "ownership": "shared_effect",
+      "role": "dust"
+    },
+    "comm_g:jyochu_gion.amt:anim:001b": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_g",
+          "authored_id": 27,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "hit_text_1b",
+      "ownership": "shared_effect",
+      "role": "hit_sound_effect_text"
+    },
+    "comm_g:jyochu_gion.amt:anim:001f": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_g",
+          "authored_id": 31,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "forward_b",
+      "name": "hit_text_1f",
+      "ownership": "shared_effect",
+      "role": "hit_sound_effect_text"
+    },
     "op_s_04:op_s_04_e0.amt:anim:0000": {
       "category": "supports",
       "evidence": [
@@ -20,10 +95,18 @@
           "runtime_dependency": false,
           "status": "visually_reviewed_graphic_identity",
           "trigger": "unknown"
+        },
+        {
+          "actions": [
+            "op_s_04_3:forward_b"
+          ],
+          "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+          "kind": "action_group_membership",
+          "source": "art.json/attack_art"
         }
       ],
-      "group": "unassigned",
-      "name": "unassigned_pink_heart_burst",
+      "group": "forward_b",
+      "name": "forward_b_pink_heart_burst",
       "ownership": "effect",
       "role": "effect"
     },
@@ -107,12 +190,1141 @@
     }
   },
   "assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": {
+      "anchor": [
+        16,
+        16
+      ],
+      "attack_uses": [
+        "op_s_04_2:support_action_00"
+      ],
+      "branch": null,
+      "category": "supports",
+      "cell": [
+        32,
+        32
+      ],
+      "facing": "right",
+      "frames": [
+        {
+          "anchor": [
+            16,
+            16
+          ],
+          "bounds": [
+            -16,
+            -16,
+            16,
+            16
+          ],
+          "native_cell": 1,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0001.png",
+          "prefix": "comm_a",
+          "sha256": "168ce793ac22f9c225599599fb712f3fdfda86e47c8715c32b1ed3b1b35d21b7",
+          "texture": {
+            "local_cell": 1,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            16,
+            16
+          ],
+          "bounds": [
+            -16,
+            -16,
+            16,
+            16
+          ],
+          "native_cell": 2,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0002.png",
+          "prefix": "comm_a",
+          "sha256": "95c0ac13e23bbe6b93602b25396c85aa07a19486f45649d8c588b8f759896ab6",
+          "texture": {
+            "local_cell": 2,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            16,
+            16
+          ],
+          "bounds": [
+            -16,
+            -16,
+            16,
+            16
+          ],
+          "native_cell": 3,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0003.png",
+          "prefix": "comm_a",
+          "sha256": "48691f19f23c75fb69a67ba147259841e6fea9d710443d0697a5e923c508b3e4",
+          "texture": {
+            "local_cell": 3,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            16,
+            16
+          ],
+          "bounds": [
+            -16,
+            -16,
+            16,
+            16
+          ],
+          "native_cell": 4,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0004.png",
+          "prefix": "comm_a",
+          "sha256": "ae721c1729e25412489b3e6f81c4a7fc7d6d5d992f1d71ee83f465d67e21de12",
+          "texture": {
+            "local_cell": 4,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "native_cell": 0,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0000.png",
+          "prefix": "comm_a",
+          "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+          "texture": {
+            "local_cell": 0,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        }
+      ],
+      "name": "orange_hit_spark_00",
+      "native_animation": {
+        "frames": 10,
+        "id": 0,
+        "index": 0,
+        "loop": 0,
+        "member": "jyocyu_efe_a.amt",
+        "nodes": [
+          {
+            "cell_keys": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                10,
+                0
+              ]
+            ],
+            "end": 220,
+            "frames": 10,
+            "id": 0,
+            "name": "SP01",
+            "raw_tracks": [
+              {
+                "kind": "const",
+                "prop": "TextureID",
+                "raw_hex": "00002100"
+              },
+              {
+                "kind": "key",
+                "prop": "BoundsIndex",
+                "raw_hex": "00000100020002000400030006000400080000000a000000ffff"
+              }
+            ],
+            "reason": null,
+            "resolution_reason": null,
+            "resolution_status": "resolved",
+            "start": 182,
+            "status": "decoded",
+            "tracks": {
+              "BoundsIndex": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  8,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ],
+              "TextureID": [
+                [
+                  0,
+                  2162688
+                ]
+              ]
+            }
+          }
+        ],
+        "rate": 60,
+        "stable_id": "comm_a:jyocyu_efe_a.amt:anim:0000"
+      },
+      "native_node_index": 0,
+      "output": "labeled_split/supports/support_action_00/orange_hit_spark_00_jyocyu_efe_a_anim_0000_node_0_strip.png",
+      "ownership": "shared_effect",
+      "panel": null,
+      "provenance": {
+        "confidence": "native_effect_archive",
+        "geometry": "full_bounds_full_palette",
+        "kind": "native_archive_node",
+        "notes": [
+          "Art from exact TextureID ownership and full native bounds/palettes.",
+          "Native keyed cell order is preserved; playback selection is not certified.",
+          "Node transform and sheet extras require separate composition evidence."
+        ],
+        "pixel_review": "candidate",
+        "semantic_evidence": [
+          {
+            "archive": "comm_a",
+            "authored_id": 0,
+            "kind": "shared_effect_visual_review",
+            "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+          }
+        ]
+      },
+      "relationships": [],
+      "role": "hit_spark",
+      "runtime_candidate": false,
+      "sha256": "6d05f6199ef00dd2fbe3b211b5c2c3521560ebd48b409e5ff1d3c2604a668133",
+      "visibility": "visible"
+    },
+    "comm_a:jyocyu_efe_a.amt:anim:0013": {
+      "anchor": [
+        24,
+        24
+      ],
+      "attack_uses": [
+        "op_s_04_2:support_action_00"
+      ],
+      "branch": null,
+      "category": "supports",
+      "cell": [
+        48,
+        48
+      ],
+      "facing": "right",
+      "frames": [
+        {
+          "anchor": [
+            16,
+            16
+          ],
+          "bounds": [
+            -16,
+            -16,
+            16,
+            16
+          ],
+          "native_cell": 80,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0080.png",
+          "prefix": "comm_a",
+          "sha256": "943e79c253ca590841d306a5b41ba55fd387031feaf07186acb17994fad2d35b",
+          "texture": {
+            "local_cell": 80,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            16,
+            24
+          ],
+          "bounds": [
+            -16,
+            -24,
+            16,
+            24
+          ],
+          "native_cell": 81,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0081.png",
+          "prefix": "comm_a",
+          "sha256": "868e810467a11ac4ce4f0c7ab5b24d5cbfb5e6f5763cac76d674ebddf06fa46b",
+          "texture": {
+            "local_cell": 81,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            24,
+            24
+          ],
+          "bounds": [
+            -24,
+            -24,
+            24,
+            24
+          ],
+          "native_cell": 82,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0082.png",
+          "prefix": "comm_a",
+          "sha256": "05beb77809618dd70c9e354686fee38dd3b95a86d86cad2f44f6d88015782fbe",
+          "texture": {
+            "local_cell": 82,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            24,
+            24
+          ],
+          "bounds": [
+            -24,
+            -24,
+            24,
+            24
+          ],
+          "native_cell": 83,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0083.png",
+          "prefix": "comm_a",
+          "sha256": "907a59b6c5c6b9c0b6297f296237221754383a2cbcf8c26158adec392309176f",
+          "texture": {
+            "local_cell": 83,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        },
+        {
+          "anchor": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "native_cell": 0,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0000.png",
+          "prefix": "comm_a",
+          "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+          "texture": {
+            "local_cell": 0,
+            "member": "jyocyu_efe_a.dtx",
+            "texture_id": 2162688
+          }
+        }
+      ],
+      "name": "blue_hit_spark_13",
+      "native_animation": {
+        "frames": 10,
+        "id": 19,
+        "index": 19,
+        "loop": 0,
+        "member": "jyocyu_efe_a.amt",
+        "nodes": [
+          {
+            "cell_keys": [
+              [
+                0,
+                80
+              ],
+              [
+                2,
+                81
+              ],
+              [
+                4,
+                82
+              ],
+              [
+                6,
+                83
+              ],
+              [
+                8,
+                0
+              ],
+              [
+                10,
+                0
+              ]
+            ],
+            "end": 1516,
+            "frames": 10,
+            "id": 19,
+            "name": "SP01",
+            "raw_tracks": [
+              {
+                "kind": "const",
+                "prop": "TextureID",
+                "raw_hex": "00002100"
+              },
+              {
+                "kind": "key",
+                "prop": "BoundsIndex",
+                "raw_hex": "00005000020051000400520006005300080000000a000000ffff"
+              }
+            ],
+            "reason": null,
+            "resolution_reason": null,
+            "resolution_status": "resolved",
+            "start": 1478,
+            "status": "decoded",
+            "tracks": {
+              "BoundsIndex": [
+                [
+                  0,
+                  80
+                ],
+                [
+                  2,
+                  81
+                ],
+                [
+                  4,
+                  82
+                ],
+                [
+                  6,
+                  83
+                ],
+                [
+                  8,
+                  0
+                ],
+                [
+                  10,
+                  0
+                ]
+              ],
+              "TextureID": [
+                [
+                  0,
+                  2162688
+                ]
+              ]
+            }
+          }
+        ],
+        "rate": 60,
+        "stable_id": "comm_a:jyocyu_efe_a.amt:anim:0013"
+      },
+      "native_node_index": 0,
+      "output": "labeled_split/supports/support_action_00/blue_hit_spark_13_jyocyu_efe_a_anim_0013_node_0_strip.png",
+      "ownership": "shared_effect",
+      "panel": null,
+      "provenance": {
+        "confidence": "native_effect_archive",
+        "geometry": "full_bounds_full_palette",
+        "kind": "native_archive_node",
+        "notes": [
+          "Art from exact TextureID ownership and full native bounds/palettes.",
+          "Native keyed cell order is preserved; playback selection is not certified.",
+          "Node transform and sheet extras require separate composition evidence."
+        ],
+        "pixel_review": "candidate",
+        "semantic_evidence": [
+          {
+            "archive": "comm_a",
+            "authored_id": 19,
+            "kind": "shared_effect_visual_review",
+            "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+          }
+        ]
+      },
+      "relationships": [],
+      "role": "hit_spark",
+      "runtime_candidate": false,
+      "sha256": "4590f271766b70d4bfdc4b288be022ce274e1523d250163f57028c71177ddcd4",
+      "visibility": "visible"
+    },
+    "comm_c:jyocyu_efe_c.amt:anim:0000": {
+      "anchor": [
+        57,
+        33
+      ],
+      "attack_uses": [
+        "op_s_04_2:support_action_00"
+      ],
+      "branch": null,
+      "category": "supports",
+      "cell": [
+        58,
+        34
+      ],
+      "facing": "right",
+      "frames": [
+        {
+          "anchor": [
+            24,
+            16
+          ],
+          "bounds": [
+            -24,
+            -16,
+            0,
+            0
+          ],
+          "native_cell": 1,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0001.png",
+          "prefix": "comm_c",
+          "sha256": "6da8084c9fc4d960f8dc957987d64abc1028590b912a290855354e5c2be36ea9",
+          "texture": {
+            "local_cell": 1,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            40,
+            16
+          ],
+          "bounds": [
+            -40,
+            -16,
+            0,
+            0
+          ],
+          "native_cell": 2,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0002.png",
+          "prefix": "comm_c",
+          "sha256": "31ed3bfcbce34394eee9d5fbc7bdf06db72f5128ac1be1b4b7abcd73dd6b2c69",
+          "texture": {
+            "local_cell": 2,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            56,
+            24
+          ],
+          "bounds": [
+            -56,
+            -24,
+            0,
+            0
+          ],
+          "native_cell": 3,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0003.png",
+          "prefix": "comm_c",
+          "sha256": "d05d946962b07ea5b9540945297316aff034631672ce4713e4c328f5bdfa1964",
+          "texture": {
+            "local_cell": 3,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            56,
+            24
+          ],
+          "bounds": [
+            -56,
+            -24,
+            -16,
+            0
+          ],
+          "native_cell": 4,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0004.png",
+          "prefix": "comm_c",
+          "sha256": "606ac4f611e6e0cc23ef5ac22b00e01c2608c70ae0ef6f2ac8901b081fda1146",
+          "texture": {
+            "local_cell": 4,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            56,
+            32
+          ],
+          "bounds": [
+            -56,
+            -32,
+            -24,
+            0
+          ],
+          "native_cell": 5,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0005.png",
+          "prefix": "comm_c",
+          "sha256": "bf16b55d00a9c2e186dd81f3666151456ad1549a3ca4b351aa3baf7ca445a5ed",
+          "texture": {
+            "local_cell": 5,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "native_cell": 6,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0006.png",
+          "prefix": "comm_c",
+          "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+          "texture": {
+            "local_cell": 6,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            56,
+            32
+          ],
+          "bounds": [
+            -56,
+            -32,
+            -24,
+            0
+          ],
+          "native_cell": 7,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0007.png",
+          "prefix": "comm_c",
+          "sha256": "e85bb89aef674deb456dd721a5c277bca74c036f76c4e54e0a21c205edbe4467",
+          "texture": {
+            "local_cell": 7,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "native_cell": 8,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0008.png",
+          "prefix": "comm_c",
+          "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+          "texture": {
+            "local_cell": 8,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            57,
+            33
+          ],
+          "bounds": [
+            -57,
+            -33,
+            -25,
+            -1
+          ],
+          "native_cell": 9,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0009.png",
+          "prefix": "comm_c",
+          "sha256": "e85bb89aef674deb456dd721a5c277bca74c036f76c4e54e0a21c205edbe4467",
+          "texture": {
+            "local_cell": 9,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        },
+        {
+          "anchor": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "native_cell": 0,
+          "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0000.png",
+          "prefix": "comm_c",
+          "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+          "texture": {
+            "local_cell": 0,
+            "member": "jyocyu_efe_c.dtx",
+            "texture_id": 2293760
+          }
+        }
+      ],
+      "name": "dash_dust",
+      "native_animation": {
+        "frames": 24,
+        "id": 0,
+        "index": 0,
+        "loop": 0,
+        "member": "jyocyu_efe_c.amt",
+        "nodes": [
+          {
+            "cell_keys": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                7,
+                4
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                13,
+                6
+              ],
+              [
+                15,
+                7
+              ],
+              [
+                19,
+                8
+              ],
+              [
+                21,
+                9
+              ],
+              [
+                22,
+                0
+              ],
+              [
+                24,
+                0
+              ]
+            ],
+            "end": 212,
+            "frames": 24,
+            "id": 0,
+            "name": "SP01",
+            "raw_tracks": [
+              {
+                "kind": "const",
+                "prop": "TextureID",
+                "raw_hex": "00002300"
+              },
+              {
+                "kind": "key",
+                "prop": "BoundsIndex",
+                "raw_hex": "000001000200020004000300070004000a0005000d0006000f00070013000800150009001600000018000000ffff"
+              }
+            ],
+            "reason": null,
+            "resolution_reason": null,
+            "resolution_status": "resolved",
+            "start": 154,
+            "status": "decoded",
+            "tracks": {
+              "BoundsIndex": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ],
+                [
+                  10,
+                  5
+                ],
+                [
+                  13,
+                  6
+                ],
+                [
+                  15,
+                  7
+                ],
+                [
+                  19,
+                  8
+                ],
+                [
+                  21,
+                  9
+                ],
+                [
+                  22,
+                  0
+                ],
+                [
+                  24,
+                  0
+                ]
+              ],
+              "TextureID": [
+                [
+                  0,
+                  2293760
+                ]
+              ]
+            }
+          }
+        ],
+        "rate": 60,
+        "stable_id": "comm_c:jyocyu_efe_c.amt:anim:0000"
+      },
+      "native_node_index": 0,
+      "output": "labeled_split/supports/support_action_00/dash_dust_jyocyu_efe_c_anim_0000_node_0_strip.png",
+      "ownership": "shared_effect",
+      "panel": null,
+      "provenance": {
+        "confidence": "native_effect_archive",
+        "geometry": "full_bounds_full_palette",
+        "kind": "native_archive_node",
+        "notes": [
+          "Art from exact TextureID ownership and full native bounds/palettes.",
+          "Native keyed cell order is preserved; playback selection is not certified.",
+          "Node transform and sheet extras require separate composition evidence."
+        ],
+        "pixel_review": "candidate",
+        "semantic_evidence": [
+          {
+            "archive": "comm_c",
+            "authored_id": 0,
+            "kind": "shared_effect_visual_review",
+            "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+          }
+        ]
+      },
+      "relationships": [],
+      "role": "dust",
+      "runtime_candidate": false,
+      "sha256": "bf4776b60650e9a9e2b9ac1f81a8d01352512421552157db094a7e79b763767e",
+      "visibility": "visible"
+    },
+    "comm_g:jyochu_gion.amt:anim:001b": {
+      "anchor": [
+        21,
+        29
+      ],
+      "attack_uses": [
+        "op_s_04_2:support_action_00"
+      ],
+      "branch": null,
+      "category": "supports",
+      "cell": [
+        38,
+        45
+      ],
+      "facing": "right",
+      "frames": [
+        {
+          "anchor": [
+            21,
+            29
+          ],
+          "bounds": [
+            -21,
+            -29,
+            17,
+            16
+          ],
+          "native_cell": 27,
+          "path": "labeled_split/misc/native_cells/jyochu_gion/cell_0027.png",
+          "prefix": "comm_g",
+          "sha256": "fdbe595b1505e0e8b94d786119e1d4d33cb8793b066b0f3cbf8e05230e80b0e5",
+          "texture": {
+            "local_cell": 27,
+            "member": "jyochu_gion.dtx",
+            "texture_id": 2359296
+          }
+        }
+      ],
+      "name": "hit_text_1b",
+      "native_animation": {
+        "frames": 4,
+        "id": 27,
+        "index": 27,
+        "loop": 0,
+        "member": "jyochu_gion.amt",
+        "nodes": [
+          {
+            "cell_keys": [
+              [
+                0,
+                27
+              ]
+            ],
+            "end": 860,
+            "frames": 4,
+            "id": 27,
+            "name": "SP01",
+            "raw_tracks": [
+              {
+                "kind": "const",
+                "prop": "TextureID",
+                "raw_hex": "00002400"
+              },
+              {
+                "kind": "const",
+                "prop": "BoundsIndex",
+                "raw_hex": "1b00"
+              }
+            ],
+            "reason": null,
+            "resolution_reason": null,
+            "resolution_status": "resolved",
+            "start": 846,
+            "status": "decoded",
+            "tracks": {
+              "BoundsIndex": [
+                [
+                  0,
+                  27
+                ]
+              ],
+              "TextureID": [
+                [
+                  0,
+                  2359296
+                ]
+              ]
+            }
+          }
+        ],
+        "rate": 60,
+        "stable_id": "comm_g:jyochu_gion.amt:anim:001b"
+      },
+      "native_node_index": 0,
+      "output": "labeled_split/supports/support_action_00/hit_text_1b_jyochu_gion_anim_001b_node_0.png",
+      "ownership": "shared_effect",
+      "panel": null,
+      "provenance": {
+        "confidence": "native_effect_archive",
+        "geometry": "full_bounds_full_palette",
+        "kind": "native_archive_node",
+        "notes": [
+          "Art from exact TextureID ownership and full native bounds/palettes.",
+          "Native keyed cell order is preserved; playback selection is not certified.",
+          "Node transform and sheet extras require separate composition evidence."
+        ],
+        "pixel_review": "candidate",
+        "semantic_evidence": [
+          {
+            "archive": "comm_g",
+            "authored_id": 27,
+            "kind": "shared_effect_visual_review",
+            "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+          }
+        ]
+      },
+      "relationships": [],
+      "role": "hit_sound_effect_text",
+      "runtime_candidate": false,
+      "sha256": "fdbe595b1505e0e8b94d786119e1d4d33cb8793b066b0f3cbf8e05230e80b0e5",
+      "visibility": "visible"
+    },
+    "comm_g:jyochu_gion.amt:anim:001f": {
+      "anchor": [
+        24,
+        33
+      ],
+      "attack_uses": [
+        "op_s_04_3:forward_b"
+      ],
+      "branch": null,
+      "category": "supports",
+      "cell": [
+        53,
+        57
+      ],
+      "facing": "right",
+      "frames": [
+        {
+          "anchor": [
+            24,
+            33
+          ],
+          "bounds": [
+            -24,
+            -33,
+            29,
+            24
+          ],
+          "native_cell": 31,
+          "path": "labeled_split/misc/native_cells/jyochu_gion/cell_0031.png",
+          "prefix": "comm_g",
+          "sha256": "23352fb9d1b3f6484ba264cb137c987258247e3d2502e4bebbf18bf14cb625cf",
+          "texture": {
+            "local_cell": 31,
+            "member": "jyochu_gion.dtx",
+            "texture_id": 2359296
+          }
+        }
+      ],
+      "name": "hit_text_1f",
+      "native_animation": {
+        "frames": 4,
+        "id": 31,
+        "index": 31,
+        "loop": 0,
+        "member": "jyochu_gion.amt",
+        "nodes": [
+          {
+            "cell_keys": [
+              [
+                0,
+                31
+              ]
+            ],
+            "end": 956,
+            "frames": 4,
+            "id": 31,
+            "name": "SP01",
+            "raw_tracks": [
+              {
+                "kind": "const",
+                "prop": "TextureID",
+                "raw_hex": "00002400"
+              },
+              {
+                "kind": "const",
+                "prop": "BoundsIndex",
+                "raw_hex": "1f00"
+              }
+            ],
+            "reason": null,
+            "resolution_reason": null,
+            "resolution_status": "resolved",
+            "start": 942,
+            "status": "decoded",
+            "tracks": {
+              "BoundsIndex": [
+                [
+                  0,
+                  31
+                ]
+              ],
+              "TextureID": [
+                [
+                  0,
+                  2359296
+                ]
+              ]
+            }
+          }
+        ],
+        "rate": 60,
+        "stable_id": "comm_g:jyochu_gion.amt:anim:001f"
+      },
+      "native_node_index": 0,
+      "output": "labeled_split/supports/forward_b/hit_text_1f_jyochu_gion_anim_001f_node_0.png",
+      "ownership": "shared_effect",
+      "panel": null,
+      "provenance": {
+        "confidence": "native_effect_archive",
+        "geometry": "full_bounds_full_palette",
+        "kind": "native_archive_node",
+        "notes": [
+          "Art from exact TextureID ownership and full native bounds/palettes.",
+          "Native keyed cell order is preserved; playback selection is not certified.",
+          "Node transform and sheet extras require separate composition evidence."
+        ],
+        "pixel_review": "candidate",
+        "semantic_evidence": [
+          {
+            "archive": "comm_g",
+            "authored_id": 31,
+            "kind": "shared_effect_visual_review",
+            "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+          }
+        ]
+      },
+      "relationships": [],
+      "role": "hit_sound_effect_text",
+      "runtime_candidate": false,
+      "sha256": "23352fb9d1b3f6484ba264cb137c987258247e3d2502e4bebbf18bf14cb625cf",
+      "visibility": "visible"
+    },
     "op_s_04:op_s_04_e0.amt:anim:0000": {
       "anchor": [
         32,
         24
       ],
-      "attack_uses": [],
+      "attack_uses": [
+        "op_s_04_3:forward_b"
+      ],
       "branch": null,
       "category": "supports",
       "cell": [
@@ -290,7 +1502,7 @@
           }
         }
       ],
-      "name": "unassigned_pink_heart_burst",
+      "name": "forward_b_pink_heart_burst",
       "native_animation": {
         "frames": 16,
         "id": 56,
@@ -410,7 +1622,7 @@
         "stable_id": "op_s_04:op_s_04_e0.amt:anim:0000"
       },
       "native_node_index": 0,
-      "output": "labeled_split/supports/unassigned/unassigned_pink_heart_burst_op_s_04_e0_anim_0038_node_0_strip.png",
+      "output": "labeled_split/supports/forward_b/forward_b_pink_heart_burst_op_s_04_e0_anim_0038_node_0_strip.png",
       "ownership": "effect",
       "panel": null,
       "provenance": {
@@ -441,6 +1653,14 @@
             "runtime_dependency": false,
             "status": "visually_reviewed_graphic_identity",
             "trigger": "unknown"
+          },
+          {
+            "actions": [
+              "op_s_04_3:forward_b"
+            ],
+            "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+            "kind": "action_group_membership",
+            "source": "art.json/attack_art"
           }
         ]
       },
@@ -2841,6 +4061,23 @@
       "category": "supports",
       "components": [
         {
+          "asset": "comm_c:jyocyu_efe_c.amt:anim:0000",
+          "evidence": [
+            {
+              "art_id": "0x230000",
+              "edges": [
+                {
+                  "from": "0x1a4400",
+                  "relation": "GenerateID frame 24",
+                  "to": "0x230000"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
+        },
+        {
           "asset": "op_s_04_2:op_s_04_e2.amt:anim:0000",
           "evidence": [
             {
@@ -2890,6 +4127,57 @@
             }
           ],
           "role": "move_component"
+        },
+        {
+          "asset": "comm_a:jyocyu_efe_a.amt:anim:0000",
+          "evidence": [
+            {
+              "art_id": "0x210000",
+              "edges": [
+                {
+                  "from": "0x1a4400",
+                  "relation": "on-hit hit_effect col record 1 selector 0x0",
+                  "to": "0x210000"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
+        },
+        {
+          "asset": "comm_a:jyocyu_efe_a.amt:anim:0013",
+          "evidence": [
+            {
+              "art_id": "0x210013",
+              "edges": [
+                {
+                  "from": "0x1a4400",
+                  "relation": "on-hit hit_effect col record 1 selector 0x0",
+                  "to": "0x210013"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
+        },
+        {
+          "asset": "comm_g:jyochu_gion.amt:anim:001b",
+          "evidence": [
+            {
+              "art_id": "0x24001b",
+              "edges": [
+                {
+                  "from": "0x1a4400",
+                  "relation": "on-hit onomatopoeia col record 1 selector 0x1b",
+                  "to": "0x24001b"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
         }
       ],
       "evidence": [
@@ -2897,6 +4185,53 @@
           "authored_id": 0,
           "body_art_id": "0x1a4400",
           "category": "supports",
+          "collision_effects": [
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "dispatcher_variants": [
+                0,
+                2
+              ],
+              "effect": 2162688,
+              "field_offset": 14,
+              "frame": 24,
+              "node": "SP01",
+              "record": 1,
+              "role": "hit_effect",
+              "selector": 0,
+              "until_frame": 42
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "dispatcher_variants": [
+                1
+              ],
+              "effect": 2162707,
+              "field_offset": 14,
+              "frame": 24,
+              "node": "SP01",
+              "record": 1,
+              "role": "hit_effect",
+              "selector": 0,
+              "until_frame": 42
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 2359323,
+              "field_offset": 15,
+              "frame": 24,
+              "node": "SP01",
+              "record": 1,
+              "role": "onomatopoeia",
+              "selector": 27,
+              "until_frame": 42
+            }
+          ],
+          "companion_effects": [],
+          "counter_effects": [],
           "edges": [
             {
               "from": "0x1a4400",
@@ -2917,6 +4252,21 @@
               "from": "0x1a4400",
               "relation": "GenerateID frame 103",
               "to": "0x1a4482"
+            },
+            {
+              "from": "0x1a4400",
+              "relation": "on-hit hit_effect col record 1 selector 0x0",
+              "to": "0x210000"
+            },
+            {
+              "from": "0x1a4400",
+              "relation": "on-hit hit_effect col record 1 selector 0x0",
+              "to": "0x210013"
+            },
+            {
+              "from": "0x1a4400",
+              "relation": "on-hit onomatopoeia col record 1 selector 0x1b",
+              "to": "0x24001b"
             }
           ],
           "generate_events": [
@@ -2954,11 +4304,19 @@
           "role": "idle",
           "semantic_uses": [
             {
+              "art_id": "0x230000",
+              "authored_id": 0,
+              "evidence": "native_static_attack_dependency",
+              "member": "jyocyu_efe_c.amt",
+              "name": "support_2k_action_0_component_01",
+              "role": "move_component"
+            },
+            {
               "art_id": "0x1a4480",
               "authored_id": 128,
               "evidence": "native_static_attack_dependency",
               "member": "op_s_04_e2.amt",
-              "name": "support_2k_action_0_component_01",
+              "name": "support_2k_action_0_component_02",
               "role": "move_component"
             },
             {
@@ -2966,7 +4324,7 @@
               "authored_id": 129,
               "evidence": "native_static_attack_dependency",
               "member": "op_s_04_e2.amt",
-              "name": "support_2k_action_0_component_02",
+              "name": "support_2k_action_0_component_03",
               "role": "move_component"
             },
             {
@@ -2974,27 +4332,51 @@
               "authored_id": 130,
               "evidence": "native_static_attack_dependency",
               "member": "op_s_04_e2.amt",
-              "name": "support_2k_action_0_component_03",
+              "name": "support_2k_action_0_component_04",
+              "role": "move_component"
+            },
+            {
+              "art_id": "0x210000",
+              "authored_id": 0,
+              "evidence": "native_static_attack_dependency",
+              "member": "jyocyu_efe_a.amt",
+              "name": "support_2k_action_0_component_05",
+              "role": "move_component"
+            },
+            {
+              "art_id": "0x210013",
+              "authored_id": 19,
+              "evidence": "native_static_attack_dependency",
+              "member": "jyocyu_efe_a.amt",
+              "name": "support_2k_action_0_component_06",
+              "role": "move_component"
+            },
+            {
+              "art_id": "0x24001b",
+              "authored_id": 27,
+              "evidence": "native_static_attack_dependency",
+              "member": "jyochu_gion.amt",
+              "name": "support_2k_action_0_component_07",
               "role": "move_component"
             }
           ],
           "shot_spawns": [],
-          "unresolved_art": [
-            "0x230000"
-          ],
+          "unresolved_art": [],
           "unresolved_shots": [],
           "used_art": [
+            "0x230000",
             "0x1a4480",
             "0x1a4481",
-            "0x1a4482"
+            "0x1a4482",
+            "0x210000",
+            "0x210013",
+            "0x24001b"
           ]
         }
       ],
       "name": "Support op_s_04_2: action 00",
       "prefix": "op_s_04_2",
-      "unresolved_external_art": [
-        "0x230000"
-      ],
+      "unresolved_external_art": [],
       "unresolved_shots": []
     },
     "op_s_04_3:forward_b": {
@@ -3019,6 +4401,60 @@
             }
           ],
           "role": "move_component"
+        },
+        {
+          "asset": "op_s_04:op_s_04_e0.amt:anim:0000",
+          "evidence": [
+            {
+              "art_id": "0x1a4438",
+              "edges": [
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit hit_effect col record 0 selector 0x40",
+                  "to": "0x1a4438"
+                },
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit hit_effect col record 0 selector 0x40",
+                  "to": "0x1a4438"
+                },
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit hit_effect col record 0 selector 0x40",
+                  "to": "0x1a4438"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
+        },
+        {
+          "asset": "comm_g:jyochu_gion.amt:anim:001f",
+          "evidence": [
+            {
+              "art_id": "0x24001f",
+              "edges": [
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+                  "to": "0x24001f"
+                },
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+                  "to": "0x24001f"
+                },
+                {
+                  "from": "0x1a4420",
+                  "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+                  "to": "0x24001f"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
         }
       ],
       "evidence": [
@@ -3026,11 +4462,117 @@
           "authored_id": 32,
           "body_art_id": "0x1a4420",
           "category": "supports",
+          "collision_effects": [
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 1721400,
+              "field_offset": 14,
+              "frame": 28,
+              "node": "SP01",
+              "record": 0,
+              "role": "hit_effect",
+              "selector": 64,
+              "until_frame": 32
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 2359327,
+              "field_offset": 15,
+              "frame": 28,
+              "node": "SP01",
+              "record": 0,
+              "role": "onomatopoeia",
+              "selector": 31,
+              "until_frame": 32
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 1721400,
+              "field_offset": 14,
+              "frame": 32,
+              "node": "SP01",
+              "record": 0,
+              "role": "hit_effect",
+              "selector": 64,
+              "until_frame": 37
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 2359327,
+              "field_offset": 15,
+              "frame": 32,
+              "node": "SP01",
+              "record": 0,
+              "role": "onomatopoeia",
+              "selector": 31,
+              "until_frame": 37
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 1721400,
+              "field_offset": 14,
+              "frame": 37,
+              "node": "SP01",
+              "record": 0,
+              "role": "hit_effect",
+              "selector": 64,
+              "until_frame": 51
+            },
+            {
+              "channel": "CollisionType1",
+              "condition": "on_collision_hit",
+              "effect": 2359327,
+              "field_offset": 15,
+              "frame": 37,
+              "node": "SP01",
+              "record": 0,
+              "role": "onomatopoeia",
+              "selector": 31,
+              "until_frame": 51
+            }
+          ],
+          "companion_effects": [],
+          "counter_effects": [],
           "edges": [
             {
               "from": "0x1a4420",
               "relation": "GenerateID frame 20",
               "to": "0x1a44a0"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit hit_effect col record 0 selector 0x40",
+              "to": "0x1a4438"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+              "to": "0x24001f"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit hit_effect col record 0 selector 0x40",
+              "to": "0x1a4438"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+              "to": "0x24001f"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit hit_effect col record 0 selector 0x40",
+              "to": "0x1a4438"
+            },
+            {
+              "from": "0x1a4420",
+              "relation": "on-hit onomatopoeia col record 0 selector 0x1f",
+              "to": "0x24001f"
             }
           ],
           "generate_events": [
@@ -3053,13 +4595,31 @@
               "member": "op_s_04_e3.amt",
               "name": "support_3k_action_32_component_01",
               "role": "move_component"
+            },
+            {
+              "art_id": "0x1a4438",
+              "authored_id": 56,
+              "evidence": "native_static_attack_dependency",
+              "member": "op_s_04_e0.amt",
+              "name": "support_3k_action_32_component_02",
+              "role": "move_component"
+            },
+            {
+              "art_id": "0x24001f",
+              "authored_id": 31,
+              "evidence": "native_static_attack_dependency",
+              "member": "jyochu_gion.amt",
+              "name": "support_3k_action_32_component_03",
+              "role": "move_component"
             }
           ],
           "shot_spawns": [],
           "unresolved_art": [],
           "unresolved_shots": [],
           "used_art": [
-            "0x1a44a0"
+            "0x1a44a0",
+            "0x1a4438",
+            "0x24001f"
           ]
         }
       ],
@@ -3191,6 +4751,970 @@
   ],
   "native": {
     "bundles": {
+      "comm_a": {
+        "animations": [
+          {
+            "frames": 10,
+            "id": 0,
+            "index": 0,
+            "loop": 0,
+            "member": "jyocyu_efe_a.amt",
+            "nodes": [
+              {
+                "cell_keys": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ],
+                  [
+                    6,
+                    4
+                  ],
+                  [
+                    8,
+                    0
+                  ],
+                  [
+                    10,
+                    0
+                  ]
+                ],
+                "end": 220,
+                "frames": 10,
+                "id": 0,
+                "name": "SP01",
+                "raw_tracks": [
+                  {
+                    "kind": "const",
+                    "prop": "TextureID",
+                    "raw_hex": "00002100"
+                  },
+                  {
+                    "kind": "key",
+                    "prop": "BoundsIndex",
+                    "raw_hex": "00000100020002000400030006000400080000000a000000ffff"
+                  }
+                ],
+                "reason": null,
+                "resolution_reason": null,
+                "resolution_status": "resolved",
+                "start": 182,
+                "status": "decoded",
+                "tracks": {
+                  "BoundsIndex": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      2,
+                      2
+                    ],
+                    [
+                      4,
+                      3
+                    ],
+                    [
+                      6,
+                      4
+                    ],
+                    [
+                      8,
+                      0
+                    ],
+                    [
+                      10,
+                      0
+                    ]
+                  ],
+                  "TextureID": [
+                    [
+                      0,
+                      2162688
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rate": 60,
+            "stable_id": "comm_a:jyocyu_efe_a.amt:anim:0000"
+          },
+          {
+            "frames": 10,
+            "id": 19,
+            "index": 19,
+            "loop": 0,
+            "member": "jyocyu_efe_a.amt",
+            "nodes": [
+              {
+                "cell_keys": [
+                  [
+                    0,
+                    80
+                  ],
+                  [
+                    2,
+                    81
+                  ],
+                  [
+                    4,
+                    82
+                  ],
+                  [
+                    6,
+                    83
+                  ],
+                  [
+                    8,
+                    0
+                  ],
+                  [
+                    10,
+                    0
+                  ]
+                ],
+                "end": 1516,
+                "frames": 10,
+                "id": 19,
+                "name": "SP01",
+                "raw_tracks": [
+                  {
+                    "kind": "const",
+                    "prop": "TextureID",
+                    "raw_hex": "00002100"
+                  },
+                  {
+                    "kind": "key",
+                    "prop": "BoundsIndex",
+                    "raw_hex": "00005000020051000400520006005300080000000a000000ffff"
+                  }
+                ],
+                "reason": null,
+                "resolution_reason": null,
+                "resolution_status": "resolved",
+                "start": 1478,
+                "status": "decoded",
+                "tracks": {
+                  "BoundsIndex": [
+                    [
+                      0,
+                      80
+                    ],
+                    [
+                      2,
+                      81
+                    ],
+                    [
+                      4,
+                      82
+                    ],
+                    [
+                      6,
+                      83
+                    ],
+                    [
+                      8,
+                      0
+                    ],
+                    [
+                      10,
+                      0
+                    ]
+                  ],
+                  "TextureID": [
+                    [
+                      0,
+                      2162688
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rate": 60,
+            "stable_id": "comm_a:jyocyu_efe_a.amt:anim:0013"
+          }
+        ],
+        "archive_role": "effect",
+        "cell_count": 280,
+        "cells": [
+          {
+            "anchor": [
+              0,
+              0
+            ],
+            "bounds": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "native_cell": 0,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0000.png",
+            "prefix": "comm_a",
+            "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+            "texture": {
+              "local_cell": 0,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              16
+            ],
+            "bounds": [
+              -16,
+              -16,
+              16,
+              16
+            ],
+            "native_cell": 1,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0001.png",
+            "prefix": "comm_a",
+            "sha256": "168ce793ac22f9c225599599fb712f3fdfda86e47c8715c32b1ed3b1b35d21b7",
+            "texture": {
+              "local_cell": 1,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              16
+            ],
+            "bounds": [
+              -16,
+              -16,
+              16,
+              16
+            ],
+            "native_cell": 2,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0002.png",
+            "prefix": "comm_a",
+            "sha256": "95c0ac13e23bbe6b93602b25396c85aa07a19486f45649d8c588b8f759896ab6",
+            "texture": {
+              "local_cell": 2,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              16
+            ],
+            "bounds": [
+              -16,
+              -16,
+              16,
+              16
+            ],
+            "native_cell": 3,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0003.png",
+            "prefix": "comm_a",
+            "sha256": "48691f19f23c75fb69a67ba147259841e6fea9d710443d0697a5e923c508b3e4",
+            "texture": {
+              "local_cell": 3,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              16
+            ],
+            "bounds": [
+              -16,
+              -16,
+              16,
+              16
+            ],
+            "native_cell": 4,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0004.png",
+            "prefix": "comm_a",
+            "sha256": "ae721c1729e25412489b3e6f81c4a7fc7d6d5d992f1d71ee83f465d67e21de12",
+            "texture": {
+              "local_cell": 4,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              16
+            ],
+            "bounds": [
+              -16,
+              -16,
+              16,
+              16
+            ],
+            "native_cell": 80,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0080.png",
+            "prefix": "comm_a",
+            "sha256": "943e79c253ca590841d306a5b41ba55fd387031feaf07186acb17994fad2d35b",
+            "texture": {
+              "local_cell": 80,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              16,
+              24
+            ],
+            "bounds": [
+              -16,
+              -24,
+              16,
+              24
+            ],
+            "native_cell": 81,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0081.png",
+            "prefix": "comm_a",
+            "sha256": "868e810467a11ac4ce4f0c7ab5b24d5cbfb5e6f5763cac76d674ebddf06fa46b",
+            "texture": {
+              "local_cell": 81,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              24,
+              24
+            ],
+            "bounds": [
+              -24,
+              -24,
+              24,
+              24
+            ],
+            "native_cell": 82,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0082.png",
+            "prefix": "comm_a",
+            "sha256": "05beb77809618dd70c9e354686fee38dd3b95a86d86cad2f44f6d88015782fbe",
+            "texture": {
+              "local_cell": 82,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          },
+          {
+            "anchor": [
+              24,
+              24
+            ],
+            "bounds": [
+              -24,
+              -24,
+              24,
+              24
+            ],
+            "native_cell": 83,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_a/cell_0083.png",
+            "prefix": "comm_a",
+            "sha256": "907a59b6c5c6b9c0b6297f296237221754383a2cbcf8c26158adec392309176f",
+            "texture": {
+              "local_cell": 83,
+              "member": "jyocyu_efe_a.dtx",
+              "texture_id": 2162688
+            }
+          }
+        ],
+        "loader": "archive",
+        "panel": null,
+        "prefix": "comm_a",
+        "referenced_cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          80,
+          81,
+          82,
+          83
+        ],
+        "scope": "selected_animations_and_referenced_cells",
+        "source_hashes": {
+          "jyocyu_efe_a.amt": "b8d036b0ad055b482be5d121ac843b3964555b262ff6bb7f168616e1dfd1b2e9",
+          "jyocyu_efe_a.aod": "40c40dd3c90a35f67a0477d68380b65081cc3021a830524cf4e20f540692ab27",
+          "jyocyu_efe_a.dig": "c41c06854c499c3520926f1e9396c6fd045c23d1613555a814f6b63918c4aad1",
+          "jyocyu_efe_a.dtx": "4746c3f3944962d1108a850ca1bd608138d765e09de449cf39721adac15e66cc"
+        },
+        "status": "candidate",
+        "unreferenced_cells": [],
+        "unsupported_nodes": [],
+        "unsupported_textures": []
+      },
+      "comm_c": {
+        "animations": [
+          {
+            "frames": 24,
+            "id": 0,
+            "index": 0,
+            "loop": 0,
+            "member": "jyocyu_efe_c.amt",
+            "nodes": [
+              {
+                "cell_keys": [
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    2,
+                    2
+                  ],
+                  [
+                    4,
+                    3
+                  ],
+                  [
+                    7,
+                    4
+                  ],
+                  [
+                    10,
+                    5
+                  ],
+                  [
+                    13,
+                    6
+                  ],
+                  [
+                    15,
+                    7
+                  ],
+                  [
+                    19,
+                    8
+                  ],
+                  [
+                    21,
+                    9
+                  ],
+                  [
+                    22,
+                    0
+                  ],
+                  [
+                    24,
+                    0
+                  ]
+                ],
+                "end": 212,
+                "frames": 24,
+                "id": 0,
+                "name": "SP01",
+                "raw_tracks": [
+                  {
+                    "kind": "const",
+                    "prop": "TextureID",
+                    "raw_hex": "00002300"
+                  },
+                  {
+                    "kind": "key",
+                    "prop": "BoundsIndex",
+                    "raw_hex": "000001000200020004000300070004000a0005000d0006000f00070013000800150009001600000018000000ffff"
+                  }
+                ],
+                "reason": null,
+                "resolution_reason": null,
+                "resolution_status": "resolved",
+                "start": 154,
+                "status": "decoded",
+                "tracks": {
+                  "BoundsIndex": [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      2,
+                      2
+                    ],
+                    [
+                      4,
+                      3
+                    ],
+                    [
+                      7,
+                      4
+                    ],
+                    [
+                      10,
+                      5
+                    ],
+                    [
+                      13,
+                      6
+                    ],
+                    [
+                      15,
+                      7
+                    ],
+                    [
+                      19,
+                      8
+                    ],
+                    [
+                      21,
+                      9
+                    ],
+                    [
+                      22,
+                      0
+                    ],
+                    [
+                      24,
+                      0
+                    ]
+                  ],
+                  "TextureID": [
+                    [
+                      0,
+                      2293760
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rate": 60,
+            "stable_id": "comm_c:jyocyu_efe_c.amt:anim:0000"
+          }
+        ],
+        "archive_role": "effect",
+        "cell_count": 489,
+        "cells": [
+          {
+            "anchor": [
+              0,
+              0
+            ],
+            "bounds": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "native_cell": 0,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0000.png",
+            "prefix": "comm_c",
+            "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+            "texture": {
+              "local_cell": 0,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              24,
+              16
+            ],
+            "bounds": [
+              -24,
+              -16,
+              0,
+              0
+            ],
+            "native_cell": 1,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0001.png",
+            "prefix": "comm_c",
+            "sha256": "6da8084c9fc4d960f8dc957987d64abc1028590b912a290855354e5c2be36ea9",
+            "texture": {
+              "local_cell": 1,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              40,
+              16
+            ],
+            "bounds": [
+              -40,
+              -16,
+              0,
+              0
+            ],
+            "native_cell": 2,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0002.png",
+            "prefix": "comm_c",
+            "sha256": "31ed3bfcbce34394eee9d5fbc7bdf06db72f5128ac1be1b4b7abcd73dd6b2c69",
+            "texture": {
+              "local_cell": 2,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              56,
+              24
+            ],
+            "bounds": [
+              -56,
+              -24,
+              0,
+              0
+            ],
+            "native_cell": 3,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0003.png",
+            "prefix": "comm_c",
+            "sha256": "d05d946962b07ea5b9540945297316aff034631672ce4713e4c328f5bdfa1964",
+            "texture": {
+              "local_cell": 3,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              56,
+              24
+            ],
+            "bounds": [
+              -56,
+              -24,
+              -16,
+              0
+            ],
+            "native_cell": 4,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0004.png",
+            "prefix": "comm_c",
+            "sha256": "606ac4f611e6e0cc23ef5ac22b00e01c2608c70ae0ef6f2ac8901b081fda1146",
+            "texture": {
+              "local_cell": 4,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              56,
+              32
+            ],
+            "bounds": [
+              -56,
+              -32,
+              -24,
+              0
+            ],
+            "native_cell": 5,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0005.png",
+            "prefix": "comm_c",
+            "sha256": "bf16b55d00a9c2e186dd81f3666151456ad1549a3ca4b351aa3baf7ca445a5ed",
+            "texture": {
+              "local_cell": 5,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              0,
+              0
+            ],
+            "bounds": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "native_cell": 6,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0006.png",
+            "prefix": "comm_c",
+            "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+            "texture": {
+              "local_cell": 6,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              56,
+              32
+            ],
+            "bounds": [
+              -56,
+              -32,
+              -24,
+              0
+            ],
+            "native_cell": 7,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0007.png",
+            "prefix": "comm_c",
+            "sha256": "e85bb89aef674deb456dd721a5c277bca74c036f76c4e54e0a21c205edbe4467",
+            "texture": {
+              "local_cell": 7,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              0,
+              0
+            ],
+            "bounds": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "native_cell": 8,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0008.png",
+            "prefix": "comm_c",
+            "sha256": "c2153f77e11087fcb078ae38527fa83bef29791e3700e30cc87fec4405a66d0f",
+            "texture": {
+              "local_cell": 8,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          },
+          {
+            "anchor": [
+              57,
+              33
+            ],
+            "bounds": [
+              -57,
+              -33,
+              -25,
+              -1
+            ],
+            "native_cell": 9,
+            "path": "labeled_split/misc/native_cells/jyocyu_efe_c/cell_0009.png",
+            "prefix": "comm_c",
+            "sha256": "e85bb89aef674deb456dd721a5c277bca74c036f76c4e54e0a21c205edbe4467",
+            "texture": {
+              "local_cell": 9,
+              "member": "jyocyu_efe_c.dtx",
+              "texture_id": 2293760
+            }
+          }
+        ],
+        "loader": "archive",
+        "panel": null,
+        "prefix": "comm_c",
+        "referenced_cells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "scope": "selected_animations_and_referenced_cells",
+        "source_hashes": {
+          "jyocyu_efe_c.amt": "05a2064e75f8f49ee7a06f363e6318aa785c47e1a9d64c9119c1235c17a13c0d",
+          "jyocyu_efe_c.aod": "40c40dd3c90a35f67a0477d68380b65081cc3021a830524cf4e20f540692ab27",
+          "jyocyu_efe_c.dig": "4a652cb637b38978bec167dee06c5fdf9b6d78d4b0e27af955be9e93a8eb9fbe",
+          "jyocyu_efe_c.dtx": "aab735c99b100811acf93dbdb2677eaebd80fa162ed0af68f4d278fe004a8442"
+        },
+        "status": "candidate",
+        "unreferenced_cells": [],
+        "unsupported_nodes": [],
+        "unsupported_textures": []
+      },
+      "comm_g": {
+        "animations": [
+          {
+            "frames": 4,
+            "id": 27,
+            "index": 27,
+            "loop": 0,
+            "member": "jyochu_gion.amt",
+            "nodes": [
+              {
+                "cell_keys": [
+                  [
+                    0,
+                    27
+                  ]
+                ],
+                "end": 860,
+                "frames": 4,
+                "id": 27,
+                "name": "SP01",
+                "raw_tracks": [
+                  {
+                    "kind": "const",
+                    "prop": "TextureID",
+                    "raw_hex": "00002400"
+                  },
+                  {
+                    "kind": "const",
+                    "prop": "BoundsIndex",
+                    "raw_hex": "1b00"
+                  }
+                ],
+                "reason": null,
+                "resolution_reason": null,
+                "resolution_status": "resolved",
+                "start": 846,
+                "status": "decoded",
+                "tracks": {
+                  "BoundsIndex": [
+                    [
+                      0,
+                      27
+                    ]
+                  ],
+                  "TextureID": [
+                    [
+                      0,
+                      2359296
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rate": 60,
+            "stable_id": "comm_g:jyochu_gion.amt:anim:001b"
+          },
+          {
+            "frames": 4,
+            "id": 31,
+            "index": 31,
+            "loop": 0,
+            "member": "jyochu_gion.amt",
+            "nodes": [
+              {
+                "cell_keys": [
+                  [
+                    0,
+                    31
+                  ]
+                ],
+                "end": 956,
+                "frames": 4,
+                "id": 31,
+                "name": "SP01",
+                "raw_tracks": [
+                  {
+                    "kind": "const",
+                    "prop": "TextureID",
+                    "raw_hex": "00002400"
+                  },
+                  {
+                    "kind": "const",
+                    "prop": "BoundsIndex",
+                    "raw_hex": "1f00"
+                  }
+                ],
+                "reason": null,
+                "resolution_reason": null,
+                "resolution_status": "resolved",
+                "start": 942,
+                "status": "decoded",
+                "tracks": {
+                  "BoundsIndex": [
+                    [
+                      0,
+                      31
+                    ]
+                  ],
+                  "TextureID": [
+                    [
+                      0,
+                      2359296
+                    ]
+                  ]
+                }
+              }
+            ],
+            "rate": 60,
+            "stable_id": "comm_g:jyochu_gion.amt:anim:001f"
+          }
+        ],
+        "archive_role": "effect",
+        "cell_count": 40,
+        "cells": [
+          {
+            "anchor": [
+              21,
+              29
+            ],
+            "bounds": [
+              -21,
+              -29,
+              17,
+              16
+            ],
+            "native_cell": 27,
+            "path": "labeled_split/misc/native_cells/jyochu_gion/cell_0027.png",
+            "prefix": "comm_g",
+            "sha256": "fdbe595b1505e0e8b94d786119e1d4d33cb8793b066b0f3cbf8e05230e80b0e5",
+            "texture": {
+              "local_cell": 27,
+              "member": "jyochu_gion.dtx",
+              "texture_id": 2359296
+            }
+          },
+          {
+            "anchor": [
+              24,
+              33
+            ],
+            "bounds": [
+              -24,
+              -33,
+              29,
+              24
+            ],
+            "native_cell": 31,
+            "path": "labeled_split/misc/native_cells/jyochu_gion/cell_0031.png",
+            "prefix": "comm_g",
+            "sha256": "23352fb9d1b3f6484ba264cb137c987258247e3d2502e4bebbf18bf14cb625cf",
+            "texture": {
+              "local_cell": 31,
+              "member": "jyochu_gion.dtx",
+              "texture_id": 2359296
+            }
+          }
+        ],
+        "loader": "archive",
+        "panel": null,
+        "prefix": "comm_g",
+        "referenced_cells": [
+          27,
+          31
+        ],
+        "scope": "selected_animations_and_referenced_cells",
+        "source_hashes": {
+          "jyochu_gion.amt": "93b4a6c594a39c3e26230928c5011552a20f0e5338212cd989ca5843c3701cdb",
+          "jyochu_gion.aod": "40c40dd3c90a35f67a0477d68380b65081cc3021a830524cf4e20f540692ab27",
+          "jyochu_gion.dig": "a7912b0e7a2eff3218b182426221a01ef50f48a9a171f4a8d07fe6ef3eec8efb",
+          "jyochu_gion.dtx": "839598c256004c401f6d5ef5860f3dfa2a986a4805806c69b5db1fae5bae7856"
+        },
+        "status": "candidate",
+        "unreferenced_cells": [],
+        "unsupported_nodes": [],
+        "unsupported_textures": []
+      },
       "op_s_04": {
         "animations": [
           {
@@ -6698,6 +9222,81 @@
     }
   },
   "owner_asset_labels": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_a",
+          "authored_id": 0,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "orange_hit_spark_00",
+      "ownership": "shared_effect",
+      "role": "hit_spark"
+    },
+    "comm_a:jyocyu_efe_a.amt:anim:0013": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_a",
+          "authored_id": 19,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "blue_hit_spark_13",
+      "ownership": "shared_effect",
+      "role": "hit_spark"
+    },
+    "comm_c:jyocyu_efe_c.amt:anim:0000": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_c",
+          "authored_id": 0,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "dash_dust",
+      "ownership": "shared_effect",
+      "role": "dust"
+    },
+    "comm_g:jyochu_gion.amt:anim:001b": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_g",
+          "authored_id": 27,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "support_action_00",
+      "name": "hit_text_1b",
+      "ownership": "shared_effect",
+      "role": "hit_sound_effect_text"
+    },
+    "comm_g:jyochu_gion.amt:anim:001f": {
+      "category": "supports",
+      "evidence": [
+        {
+          "archive": "comm_g",
+          "authored_id": 31,
+          "kind": "shared_effect_visual_review",
+          "source": "docs/rebuild/cast-art/shared-effects-contact.png"
+        }
+      ],
+      "group": "forward_b",
+      "name": "hit_text_1f",
+      "ownership": "shared_effect",
+      "role": "hit_sound_effect_text"
+    },
     "op_s_04:op_s_04_e0.amt:anim:0000": {
       "category": "supports",
       "evidence": [
@@ -6718,10 +9317,18 @@
           "runtime_dependency": false,
           "status": "visually_reviewed_graphic_identity",
           "trigger": "unknown"
+        },
+        {
+          "actions": [
+            "op_s_04_3:forward_b"
+          ],
+          "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+          "kind": "action_group_membership",
+          "source": "art.json/attack_art"
         }
       ],
-      "group": "unassigned",
-      "name": "unassigned_pink_heart_burst",
+      "group": "forward_b",
+      "name": "forward_b_pink_heart_burst",
       "ownership": "effect",
       "role": "effect"
     }

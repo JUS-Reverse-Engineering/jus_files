@@ -1,0 +1,3678 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "vegeta",
+  "library_id": "vegeta_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_1c",
+        "sequence": "hit_text_1c"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0",
+        "sequence": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0",
+        "sequence": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            65
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "9871d664945e3f57b34626b8b4a87969d6032a0b5b41cd3347063c20ee06fa24",
+          "size": [
+            24,
+            65
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "f1f1046d83dfcc6eb5cff612508c50f75c179dd329a3eec7922c5c7bcd6b1106",
+          "size": [
+            24,
+            55
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "5580fb919bf9f05ab465247a3c13baed342c400b570c4d60124b04825435a5bc",
+          "size": [
+            56,
+            63
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            33,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "30e3db5772eb660cbbe74298a0b944022192d11fc45e1a48e1aeb20c9530c9c4",
+          "size": [
+            48,
+            63
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            27,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "8cc73ffd118d4354f79201d902ab2cd0239c257f7c8709a42903e78a3ecf52e1",
+          "size": [
+            41,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            27,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "d401d388c0b723d68dd86238021d7533126a163cc04c08ba81ce9caecab8e418",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            24,
+            69
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 5]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "3f49657f896cbd5dd8a5df4e626b2db8d8dd1c66dc2553b558720a3c85eebf23",
+          "size": [
+            32,
+            69
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            29,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426208
+          },
+          "sha256": "388b658c23b238e1d0e7f17199673598e3ea51801869d658078025f1ecd496c2",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_3.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 35
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 5
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 16
+            },
+            {
+              "frame": "f008",
+              "ticks": 6
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "52788155a23c15562ac9c046bf1fdba9ec076e218f180080fbd307c362c8449c",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "db_s_03:db_s_03_e30_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 26
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_db_s_03_e0_amt_id_67_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "5932333036c8b2afdc76bae415f4a070ae37150c63de4b9375683aa28815f559",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "db_s_03:db_s_03_e30_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_160_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "f864e0046cf6bfcc36ef5274c36e02450137e8aa1208b7f897b153b6ba707351",
+          "size": [
+            32,
+            72
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e30_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_161_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            40,
+            73
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426337
+          },
+          "sha256": "9f2c01c43b26649ca8f6eee2e68927de8a2b1fd7d3cfd86c1f4600016c9dc36c",
+          "size": [
+            64,
+            73
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e31_.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            40,
+            73
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426337
+          },
+          "sha256": "7bcaea7dde74b3720c46cd82d7330fab773224c705eccd67cd9fdcdc5be0c0c2",
+          "size": [
+            64,
+            73
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e31_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_162_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "81eca6a74e3fea6ed917bfebc8e965d9d1d3f3cfa19561ea5927bbf222ee954f",
+          "size": [
+            40,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e30_.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "30b5b64fb9c62a0f533ffc1ef1c6506536e56eb6a0656556864309b1915a7fd4",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e30_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 5
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_163_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426337
+          },
+          "sha256": "1110e12f773617d492b253e4bead154d85c2d5e1e327bb2abc53cba5556adf0d",
+          "size": [
+            56,
+            56
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e31_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 5
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_164_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426338
+          },
+          "sha256": "c555e7038c0deed36bc79181370528d06c8ffa6918ba038d071f943a58391533",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e32_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426338
+          },
+          "sha256": "46c8c21f9317acef43a6f06c5e7f45ff34c0908837541c1c24a71b2192586a35",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e32_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_165_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426337
+          },
+          "sha256": "9837ac404e65f88fb72b773ee8641ca8bbe28fda2364c270e8f7532267b05f0d",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e31_.dtx:cell:3"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0/002.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426337
+          },
+          "sha256": "edaba8a8d5ea751804c6ff921de75554fa5f1adaab601d648d1c9befbd2e4a24",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e31_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_166_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426338
+          },
+          "sha256": "1a98a8f77fd329dd6e6e826cc03c869041b3c3f0dc2c666ead267207452c73a2",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e32_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426338
+          },
+          "sha256": "aab1f95afb7fcaa883220e3fe17c4155b571ef761a3c356cba1f77d90108514a",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e32_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0_identity"
+    },
+    "forward_b_move_component_db_s_03_e3_amt_id_167_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "c6102418a8a76f45032742f02a522c64d5e38e8a93eec50e4afc42e99825360e",
+          "size": [
+            56,
+            72
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e30_.dtx:cell:3"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426336
+          },
+          "sha256": "62417fdd5cb761c296fe1c80427556c06c37fdfc390f6390088e42a44a8d3dd8",
+          "size": [
+            56,
+            72
+          ],
+          "source_frame_id": "db_s_03_3:db_s_03_e30_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0_identity"
+    },
+    "hit_text_1c": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            28
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_1c/001.png",
+          "provenance": {
+            "cell_id": 28,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2359296
+          },
+          "sha256": "b3a571af04698d2ff288dd9dd8a9f11658d5e5fc7b24018c0147d662c3c52cb1",
+          "size": [
+            35,
+            44
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:28"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_1c",
+      "status": "candidate",
+      "unresolved_id": "hit_text_1c_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            18,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426176
+          },
+          "sha256": "bf9760dc4d2465f89af61a38ba335018220789d5e918ee766ef0747224ff024f",
+          "size": [
+            34,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            45
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426176
+          },
+          "sha256": "5bdc0ef4d20592b8832a63f7ca2128a97d7bec57ca05d283f8dd5190e7781489",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426176
+          },
+          "sha256": "a3073b743307d5ca94c8b45f2c38c749e995897c525fc95f7c081ccd56e5a547",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            18,
+            46
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426176
+          },
+          "sha256": "eb8591e034a674c71b6c16a0efbcb0456d1ddf5be74098afeabc5afeb721fa31",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            22,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426176
+          },
+          "sha256": "39b6d8ca19804b0bcac9735d88cd9537adde96326a5805612d1b9ff11f4fc7e7",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_2.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 20
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 102
+            },
+            {
+              "frame": "f005",
+              "ticks": 8
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "91fc8c9f7375a967cb5171271874d4551bdceeb86be4a5b57133993ba91776e2",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_03:db_s_03_e20_.dtx:cell:10"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 26
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            28,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0/001.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "1f1f8218721d9ecf0b0c5e20d9326687b7143d6cabcc8f4b93b06b0caad172f8",
+          "size": [
+            56,
+            64
+          ],
+          "source_frame_id": "db_s_03:db_s_03_e20_.dtx:cell:11"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426305
+          },
+          "sha256": "a26e8c5033a79d57466fa11a6a37c5c7eeb1a19f31db80ac4c43c0f6d80e7608",
+          "size": [
+            32,
+            72
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e21_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "84e1190e64f81d7715beeeb5fb6dbe34f0d963359042516e30a271245538a250",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "4183a440453e24c96153711572df413de35c018f0a5ae9282091a5fd6362856c",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "18d931b5f8503fae5b14aa00e0ef5f211d1d8121e1c1c23b907d57cb2065e68f",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            29,
+            57
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "30a6d533be7fecfca9895498d41c3bbc2119b2778c4069b118a1601b0615f59c",
+          "size": [
+            58,
+            58
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            31,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "807b79ec8cf31a00ac44cb082c084b530ff51dc11bcaa9e628de6bd8e8ceb7a3",
+          "size": [
+            62,
+            62
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 1
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "f1b8754161d070e7b04490940c2135330653ce21ba9845c1e34c275a1b879773",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "b99802eeb80df73395262386a2286f1f27762a3401c7ac52b1435f64b19d5376",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0/001.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "30e55f16e0319a562ad9a2a800e21acd113abd25e1776689f72d80d180eb735e",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:12"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0/002.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "436f222f1145fdfac0123004dad423bad59ad5a0f97e7bcdd9366f4f036dc8ef",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:13"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426305
+          },
+          "sha256": "2d97664c5f47dd6e3be9672bcdf71f59060181de067e685b25f927449536c25d",
+          "size": [
+            32,
+            24
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e21_.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426305
+          },
+          "sha256": "8d7a3158f503374557b64baeb2197c7831fa4f96d24fbff7079e20080924a511",
+          "size": [
+            32,
+            24
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e21_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "f1b8754161d070e7b04490940c2135330653ce21ba9845c1e34c275a1b879773",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "b99802eeb80df73395262386a2286f1f27762a3401c7ac52b1435f64b19d5376",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "9c6b96d62d6ed549001691827ef818fa0f8c025581730757e634f37156085b94",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "b33cc2931b0480f4794582f2a3c23b0132aa7d549c4886b9a033b7ca69256c39",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            32,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/005.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "c316d5bdf80e8db54a0fd0c771e2bd36db8b06c871939c02a1645e6a3f1fd079",
+          "size": [
+            72,
+            64
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:9"
+        },
+        "f006": {
+          "anchor": [
+            31,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/006.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "807b79ec8cf31a00ac44cb082c084b530ff51dc11bcaa9e628de6bd8e8ceb7a3",
+          "size": [
+            62,
+            62
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:4"
+        },
+        "f007": {
+          "anchor": [
+            29,
+            57
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/007.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "30a6d533be7fecfca9895498d41c3bbc2119b2778c4069b118a1601b0615f59c",
+          "size": [
+            58,
+            58
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:3"
+        },
+        "f008": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/008.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "18d931b5f8503fae5b14aa00e0ef5f211d1d8121e1c1c23b907d57cb2065e68f",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:2"
+        },
+        "f009": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0/009.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+            "manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d",
+            "texture_id": 1426304
+          },
+          "sha256": "4183a440453e24c96153711572df413de35c018f0a5ae9282091a5fd6362856c",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_03_2:db_s_03_e20_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 3
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f009",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03:db_s_03_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_2:db_s_03_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_03_3:db_s_03_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

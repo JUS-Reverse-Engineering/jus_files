@@ -1,0 +1,94 @@
+{
+  "display_name": "Naruto: Shared art",
+  "errors": [],
+  "frames": 101,
+  "inventory_status": "unresolved",
+  "library_id": "naruto_shared",
+  "measured_art_tracks": 24,
+  "omitted_assets": [
+    {
+      "asset": "sheet:hud_0",
+      "name": "source_lifebars_reference_00",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_0",
+      "name": "source_panel_00",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_1",
+      "name": "source_panel_01",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_2",
+      "name": "source_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_4",
+      "name": "source_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_5",
+      "name": "source_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_6",
+      "name": "source_panel_06",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_7",
+      "name": "source_panel_07",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_8",
+      "name": "source_panel_08",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_9",
+      "name": "source_panel_09",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": "orange_hit_spark_00",
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0013": "blue_hit_spark_13",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_g:jyochu_gion.amt:anim:0005": "hit_text_05",
+    "comm_g:jyochu_gion.amt:anim:0022": "hit_text_22",
+    "na_s_01:na_s_01_e0.amt:anim:0000": "shared_support_action_00_move_component",
+    "na_s_01_2:na_s_01_2.amt:anim:0000": "support_action_00_body",
+    "na_s_01_2:na_s_01_e2.amt:anim:0000": "support_action_00_move_component",
+    "na_s_01_2:na_s_01_e2.amt:anim:0001": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0",
+    "na_s_01_2:na_s_01_e2.amt:anim:0002": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0",
+    "na_s_01_2:na_s_01_e2.amt:anim:0003": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0",
+    "na_s_01_2:na_s_01_e2.amt:anim:0004": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0",
+    "na_s_01_3:na_s_01_3.amt:anim:0000": "forward_b_body",
+    "na_s_01_3:na_s_01_e3.amt:anim:0000": "forward_b_move_component",
+    "na_s_01_3:na_s_01_e3.amt:anim:0001": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0002": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0003": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0004": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0005": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0006": "forward_b_bold_impact_sfx_short",
+    "na_s_01_3:na_s_01_e3.amt:anim:0007": "forward_b_bold_impact_sfx_wide",
+    "na_s_01_3:na_s_01_e3.amt:anim:0008": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0",
+    "na_s_01_3:na_s_01_e3.amt:anim:0009": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0",
+    "sheet:panel_3": "mugshot"
+  },
+  "sequences": 25,
+  "source_manifest": "jus_files/sprites/characters/Naruto/naruto/labeled_split/art.json",
+  "source_manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76"
+}

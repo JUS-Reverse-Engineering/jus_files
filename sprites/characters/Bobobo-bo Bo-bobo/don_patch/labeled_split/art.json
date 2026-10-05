@@ -148,10 +148,18 @@
           "runtime_dependency": false,
           "status": "visually_reviewed_graphic_identity",
           "trigger": "unknown"
+        },
+        {
+          "actions": [
+            "bb_s_02_3:forward_b"
+          ],
+          "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+          "kind": "action_group_membership",
+          "source": "art.json/attack_art"
         }
       ],
-      "group": "unassigned",
-      "name": "unassigned_cyan_smiling_face_sparkles",
+      "group": "forward_b",
+      "name": "forward_b_cyan_smiling_face_sparkles",
       "ownership": "effect",
       "role": "effect"
     }
@@ -2397,7 +2405,9 @@
         56,
         56
       ],
-      "attack_uses": [],
+      "attack_uses": [
+        "bb_s_02_3:forward_b"
+      ],
       "branch": null,
       "category": "supports",
       "cell": [
@@ -2512,7 +2522,7 @@
           }
         }
       ],
-      "name": "unassigned_cyan_smiling_face_sparkles",
+      "name": "forward_b_cyan_smiling_face_sparkles",
       "native_animation": {
         "frames": 15,
         "id": 164,
@@ -2608,7 +2618,7 @@
         "stable_id": "bb_s_02_3:bb_s_02_e3.amt:anim:0004"
       },
       "native_node_index": 0,
-      "output": "labeled_split/supports/unassigned/unassigned_cyan_smiling_face_sparkles_bb_s_02_e3_anim_00a4_node_0_strip.png",
+      "output": "labeled_split/supports/forward_b/forward_b_cyan_smiling_face_sparkles_bb_s_02_e3_anim_00a4_node_0_strip.png",
       "ownership": "effect",
       "panel": 3,
       "provenance": {
@@ -2637,6 +2647,14 @@
             "runtime_dependency": false,
             "status": "visually_reviewed_graphic_identity",
             "trigger": "unknown"
+          },
+          {
+            "actions": [
+              "bb_s_02_3:forward_b"
+            ],
+            "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+            "kind": "action_group_membership",
+            "source": "art.json/attack_art"
           }
         ]
       },
@@ -3414,6 +3432,9 @@
           "authored_id": 0,
           "body_art_id": "0x184200",
           "category": "supports",
+          "collision_effects": [],
+          "companion_effects": [],
+          "counter_effects": [],
           "edges": [
             {
               "from": "0x184200",
@@ -3543,6 +3564,23 @@
           "role": "move_component"
         },
         {
+          "asset": "bb_s_02_3:bb_s_02_e3.amt:anim:0004",
+          "evidence": [
+            {
+              "art_id": "0x1842a4",
+              "edges": [
+                {
+                  "from": "0x1842a3",
+                  "relation": "on-hit hit_effect col record 1 selector 0x40",
+                  "to": "0x1842a4"
+                }
+              ],
+              "kind": "native_static_dependency"
+            }
+          ],
+          "role": "move_component"
+        },
+        {
           "asset": "bb_s_02_3:bb_s_02_e3.amt:anim:0000",
           "evidence": [
             {
@@ -3609,6 +3647,9 @@
           "authored_id": 32,
           "body_art_id": "0x184220",
           "category": "supports",
+          "collision_effects": [],
+          "companion_effects": [],
+          "counter_effects": [],
           "edges": [
             {
               "from": "0x184220",
@@ -3619,6 +3660,11 @@
               "from": "shot:0",
               "relation": "shot art field 0xc",
               "to": "0x1842a3"
+            },
+            {
+              "from": "0x1842a3",
+              "relation": "on-hit hit_effect col record 1 selector 0x40",
+              "to": "0x1842a4"
             },
             {
               "from": "0x184220",
@@ -3696,11 +3742,19 @@
               "role": "move_component"
             },
             {
+              "art_id": "0x1842a4",
+              "authored_id": 164,
+              "evidence": "native_static_attack_dependency",
+              "member": "bb_s_02_e3.amt",
+              "name": "support_3k_action_32_component_02",
+              "role": "move_component"
+            },
+            {
               "art_id": "0x1842a0",
               "authored_id": 160,
               "evidence": "native_static_attack_dependency",
               "member": "bb_s_02_e3.amt",
-              "name": "support_3k_action_32_component_02",
+              "name": "support_3k_action_32_component_03",
               "role": "move_component"
             },
             {
@@ -3708,7 +3762,7 @@
               "authored_id": 162,
               "evidence": "native_static_attack_dependency",
               "member": "bb_s_02_e3.amt",
-              "name": "support_3k_action_32_component_03",
+              "name": "support_3k_action_32_component_04",
               "role": "move_component"
             },
             {
@@ -3716,7 +3770,7 @@
               "authored_id": 161,
               "evidence": "native_static_attack_dependency",
               "member": "bb_s_02_e3.amt",
-              "name": "support_3k_action_32_component_04",
+              "name": "support_3k_action_32_component_05",
               "role": "move_component"
             }
           ],
@@ -3735,6 +3789,7 @@
           "unresolved_shots": [],
           "used_art": [
             "0x1842a3",
+            "0x1842a4",
             "0x1842a0",
             "0x1842a2",
             "0x1842a1"
@@ -7731,10 +7786,18 @@
           "runtime_dependency": false,
           "status": "visually_reviewed_graphic_identity",
           "trigger": "unknown"
+        },
+        {
+          "actions": [
+            "bb_s_02_3:forward_b"
+          ],
+          "claim": "Graphic now belongs to these action groups; trigger and phase evidence remains on each component.",
+          "kind": "action_group_membership",
+          "source": "art.json/attack_art"
         }
       ],
-      "group": "unassigned",
-      "name": "unassigned_cyan_smiling_face_sparkles",
+      "group": "forward_b",
+      "name": "forward_b_cyan_smiling_face_sparkles",
       "ownership": "effect",
       "role": "effect"
     }

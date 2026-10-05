@@ -1,0 +1,81 @@
+{
+  "display_name": "Ichigo Kurosaki: Shared art",
+  "errors": [],
+  "frames": 57,
+  "inventory_status": "unresolved",
+  "library_id": "ichigo_kurosaki_shared",
+  "measured_art_tracks": 16,
+  "omitted_assets": [
+    {
+      "asset": "sheet:hud_0",
+      "name": "source_lifebars_reference_00",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_0",
+      "name": "source_panel_00",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_1",
+      "name": "source_panel_01",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_2",
+      "name": "source_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_4",
+      "name": "source_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_5",
+      "name": "source_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_6",
+      "name": "source_panel_06",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_7",
+      "name": "source_panel_07",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_extension",
+      "name": "source_panel_stair_shape",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "bl_s_01:bl_s_01_e0.amt:anim:0000": "support_action_00_move_component",
+    "bl_s_01:bl_s_01_e0.amt:anim:0001": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0002": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0003": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0004": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0005": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0006": "forward_b_move_component",
+    "bl_s_01:bl_s_01_e0.amt:anim:0007": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0008": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0",
+    "bl_s_01:bl_s_01_e0.amt:anim:0009": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0",
+    "bl_s_01_2:bl_s_01_2.amt:anim:0000": "support_action_00_body",
+    "bl_s_01_3:bl_s_01_3.amt:anim:0000": "forward_b_body",
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_c:jyocyu_efe_c.amt:anim:0000": "dash_dust",
+    "comm_g:jyochu_gion.amt:anim:000c": "hit_text_0c",
+    "sheet:panel_3": "mugshot"
+  },
+  "sequences": 17,
+  "source_manifest": "jus_files/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+  "source_manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb"
+}

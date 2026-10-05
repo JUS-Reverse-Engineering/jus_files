@@ -1,0 +1,69 @@
+{
+  "display_name": "Gotenks: Shared art",
+  "errors": [],
+  "frames": 49,
+  "inventory_status": "unresolved",
+  "library_id": "gotenks_shared",
+  "measured_art_tracks": 15,
+  "omitted_assets": [
+    {
+      "asset": "source:gotenks_long_hair_ghost_and_beam_ORIGINAL",
+      "name": "gotenks_long_hair_ghost_and_beam_ORIGINAL",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_01",
+      "name": "gotenks_panel_01",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_02",
+      "name": "gotenks_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_03",
+      "name": "gotenks_panel_03",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_04",
+      "name": "gotenks_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_05",
+      "name": "gotenks_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gotenks_panel_06",
+      "name": "gotenks_panel_06",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": "orange_hit_spark_00",
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0013": "blue_hit_spark_13",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_g:jyochu_gion.amt:anim:001c": "hit_text_1c",
+    "db_s_07:db_s_07_e0.amt:anim:0000": "support_action_00_move_component",
+    "db_s_07:db_s_07_e0.amt:anim:0001": "support_action_00_move_component_db_s_07_e0_amt_id_65_node_0",
+    "db_s_07:db_s_07_e0.amt:anim:0002": "support_action_00_move_component_db_s_07_e0_amt_id_66_node_0",
+    "db_s_07:db_s_07_e0.amt:anim:0003": "support_action_00_move_component_db_s_07_e0_amt_id_67_node_0",
+    "db_s_07:db_s_07_e0.amt:anim:0004": "support_action_00_move_component_db_s_07_e0_amt_id_69_node_0",
+    "db_s_07:db_s_07_e0.amt:anim:0005": "support_action_00_move_component_db_s_07_e0_amt_id_71_node_0",
+    "db_s_07:db_s_07_e0.amt:anim:0006": "forward_b_move_component",
+    "db_s_07:db_s_07_e0.amt:anim:0007": "forward_b_move_component_db_s_07_e0_amt_id_74_node_0",
+    "db_s_07_2:db_s_07_2.amt:anim:0000": "support_action_00_body",
+    "db_s_07_3:db_s_07_3.amt:anim:0000": "forward_b_body"
+  },
+  "sequences": 15,
+  "source_manifest": "jus_files/sprites/characters/Dragon Ball/gotenks/labeled_split/art.json",
+  "source_manifest_sha256": "7fbc232aa5458d6feebf7854288f87dd91bf537962562337ea2d7d0a5d84745e"
+}

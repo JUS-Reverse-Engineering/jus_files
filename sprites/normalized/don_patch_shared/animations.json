@@ -1,0 +1,2013 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "don_patch",
+  "library_id": "don_patch_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0",
+        "sequence": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0",
+        "sequence": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0",
+        "sequence": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0",
+        "sequence": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0",
+        "sequence": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0",
+        "sequence": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_cyan_smiling_face_sparkles",
+        "sequence": "forward_b_cyan_smiling_face_sparkles"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "e674aefd2b4b19a4638405f95ea76d5a63fd88aafc6c93777b83a1f1ea086a29",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            22,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "8f5c948f51157956c2064abc534b5ff06c946cb61dcfca893d63cc367a84c4ca",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            19,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "b9d7de97921837482c740302c0a4a8055fd4b84839a417ed153a99a7f320570c",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            20,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "f7514369d0ac337e1a4e1b3baa398deedc5ebc625684fe486815f25b574c85a5",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            24,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "8b1e9c8037625a7d7d1e5595d4bff5d5264e5ddf9415f4feabc1915ae99a3427",
+          "size": [
+            37,
+            48
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "75654e3a9af894dd72c957602d6b445031a74cec971dee1b0c979fc78b4a069f",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            20,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "b603c7c87ff15bea5cb7dc9bc18ead29841e9f8cb75cc7c3c267ee2b24e0d225",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            21,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "595eba596d02e67f4bbff68d3bb5859313f57a9ac6d357dc5bd96d8145a9da3e",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:7"
+        },
+        "f009": {
+          "anchor": [
+            24,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/009.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589792
+          },
+          "sha256": "1dd2e7f48672a7ec88a0a734e17164a3298f2fac566ecd97a257b571638f0b09",
+          "size": [
+            40,
+            43
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_3.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 6
+            },
+            {
+              "frame": "f002",
+              "ticks": 26
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 6
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 10
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f009",
+              "ticks": 14
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_cyan_smiling_face_sparkles": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_cyan_smiling_face_sparkles/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589824
+          },
+          "sha256": "8e0e46d95d7c51ae727e7bdc9459000188973df2b44fc30aa21b6ea8147ef2ae",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e00_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_cyan_smiling_face_sparkles/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589824
+          },
+          "sha256": "2ec3952a01e1dc92995589f1061510961e6e62eeb1b7a8c0a4c9938c9fb08184",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e00_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_cyan_smiling_face_sparkles/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589824
+          },
+          "sha256": "712f41cf007cc74c302a717b35a814293cfeadfe60d603a5c7338e4965883f9a",
+          "size": [
+            80,
+            80
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e00_.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            48,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_cyan_smiling_face_sparkles/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589824
+          },
+          "sha256": "a5599b5eec60ade78774a9e7fc3da3c9f057a963c3cadb1e052d2cb8e5fd5dc6",
+          "size": [
+            96,
+            96
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e00_.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            56,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_cyan_smiling_face_sparkles/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589824
+          },
+          "sha256": "b2186d1b887ebe26c57cd2a6a0fab6d3a7bcc7127b52be9a79ad14ee2f77ac27",
+          "size": [
+            112,
+            112
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e00_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_cyan_smiling_face_sparkles",
+      "status": "candidate",
+      "unresolved_id": "forward_b_cyan_smiling_face_sparkles_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            20,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "d61bf9c648f890ada7f251d0c2783ea0320a4c30bb5dc89a9b13abf177fcfb4b",
+          "size": [
+            40,
+            72
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            20,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "a7cd93fc36b72c54bf9716e30bf9e5f2d5deb59e5cae95e2872e75dfbaf4a992",
+          "size": [
+            40,
+            72
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            20,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "b16c72b797c1d363cd461934d58f72261f29bcbe284890a31f76489fbcb89d1a",
+          "size": [
+            40,
+            72
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "8e3451c1b9536c4f471e2e6f34f1bf789b6742380c41350d2c0852d3a1788b41",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:4"
+        },
+        "f002": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "9844358cc264399ee367ff6671ec9512de90bb599e25ec77d8ae406e328cb540",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0_identity"
+    },
+    "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0/001.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "7419e60f9e63dd1fca2d0171bbd428eac9f8c3184cff207b607e13aa389a1580",
+          "size": [
+            16,
+            32
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:9"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 8
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0_identity"
+    },
+    "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "9844358cc264399ee367ff6671ec9512de90bb599e25ec77d8ae406e328cb540",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0/002.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "4c24c46178ead7899049149aae30249c07857ca33fd7963ea5e872fcaa136284",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:5"
+        },
+        "f003": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0/003.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "8eb3731e320f834f682f78cd309d7ff6fb6788be4f4f2afcb2fe6ba75ab012ae",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:6"
+        },
+        "f004": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0/004.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "05b8c1f5ca51a1e01a9b5b05fa43685cc6e3d1392c939274f5ecf69ad656b564",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:7"
+        },
+        "f005": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0/005.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589920
+          },
+          "sha256": "7b66cd7fd6571610ceffccf78c6b2e9e1cb7c04f3e1e60e595bc9184988d1170",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "bb_s_02_3:bb_s_02_e30_.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            38,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589760
+          },
+          "sha256": "52e4770f9988e48f5b602689638eb0fc13c7130fd8805a27827e90500a4c7041",
+          "size": [
+            55,
+            48
+          ],
+          "source_frame_id": "bb_s_02_2:bb_s_02_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            31,
+            36
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589760
+          },
+          "sha256": "6f682a2e2b60a3769ae8609435e18cc37847523da5748b0f7fe7067d9c5a5b2a",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "bb_s_02_2:bb_s_02_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            26,
+            45
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589760
+          },
+          "sha256": "046461d9c1bafe64845d6d0033a1a1f3c13eadd21efb64cfe223fb13f5aac502",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "bb_s_02_2:bb_s_02_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            20,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589760
+          },
+          "sha256": "aadf1f40e6b22528772e765a083106b0793dfe66ddf601dc0c0e4a06d243908c",
+          "size": [
+            64,
+            48
+          ],
+          "source_frame_id": "bb_s_02_2:bb_s_02_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            20,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589760
+          },
+          "sha256": "4d13729ce46bc6d6fce42918e51070d296343b88f83696e2a8ca204e8dd7a781",
+          "size": [
+            64,
+            48
+          ],
+          "source_frame_id": "bb_s_02_2:bb_s_02_2.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 16
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 22
+            },
+            {
+              "frame": "f005",
+              "ticks": 19
+            },
+            {
+              "frame": "f004",
+              "ticks": 17
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            45
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [32, 0, 0, 29]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "cb7d935b5b6dadab20d10a39e6ad462a5b43caf540967dadb349750d479d1d77",
+          "size": [
+            48,
+            45
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            0,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [24, 0, 0, 21]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "bb396b84e6504a17b1f037613615c89a69b6fd9982efb9987b0b50f2f89f7542",
+          "size": [
+            56,
+            53
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            0,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [24, 0, 0, 21]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "20f7137be84aab22b0ad3417e78d15db3f46fa512e2d613910244e934aeb5a1d",
+          "size": [
+            56,
+            53
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f001",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            58
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [45, 0, 0, 18]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "3f00b4c6d4df0f4abad32a52cc32154b74fefad0eba186e5cb623a42624ad119",
+          "size": [
+            101,
+            58
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:3"
+        },
+        "f002": {
+          "anchor": [
+            0,
+            58
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0/002.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [45, 0, 0, 18]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "efd07099c06e4f0079113e0fed3036ea35979f39658fec32ac242c5448b995b8",
+          "size": [
+            101,
+            58
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:4"
+        },
+        "f003": {
+          "anchor": [
+            0,
+            58
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0/003.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [45, 0, 0, 18]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "ef52a530c0ae9855c560c8293e55e04b6cc0e4d7dee3bd7551ef2acd4c205813",
+          "size": [
+            101,
+            58
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:5"
+        },
+        "f004": {
+          "anchor": [
+            0,
+            50
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0/004.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [45, 0, 0, 26]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "b0a9e407bb4b305c74a69c8cc0826c656e128914c337ce848bf0d4723c8f7c99",
+          "size": [
+            101,
+            50
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:6"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            43
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0/005.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [46, 0, 0, 35]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "b097697a32e94f2ddeff31aaf435ae39018c283198939fa55eae6729b2378aa1",
+          "size": [
+            102,
+            43
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0_identity"
+    },
+    "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            18
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0/001.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589888
+          },
+          "sha256": "3b75165eb3be67c3303133acdf9f7b42b4d22e3b8b660405d6fdf5a27d295950",
+          "size": [
+            62,
+            42
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e20_.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0_identity"
+    },
+    "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+            "manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7",
+            "texture_id": 1589889
+          },
+          "sha256": "8a11298887c28db75b2403fe81ce377bc23f049ce3409b0af0256b6962361b58",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "bb_s_02:bb_s_02_e21_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 30
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02:bb_s_02_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_2:bb_s_02_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_cyan_smiling_face_sparkles_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bb_s_02_3:bb_s_02_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_cyan_smiling_face_sparkles_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

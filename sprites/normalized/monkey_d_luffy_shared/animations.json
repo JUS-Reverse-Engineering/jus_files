@@ -1,0 +1,3082 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "monkey_d_luffy",
+  "library_id": "monkey_d_luffy_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_00",
+        "sequence": "orange_hit_spark_00"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_13",
+        "sequence": "blue_hit_spark_13"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_00",
+        "sequence": "hit_text_00"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_1c",
+        "sequence": "hit_text_1c"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0",
+        "sequence": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0",
+        "sequence": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0",
+        "sequence": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0",
+        "sequence": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0",
+        "sequence": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0",
+        "sequence": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_13": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/001.png",
+          "provenance": {
+            "cell_id": 80,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "2a210de6f4b2b20427e57626189747e20e880272c209313e99a105163e7ee87f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:80"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/002.png",
+          "provenance": {
+            "cell_id": 81,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "a1d90fbdecd886d5d5cf1eb021beab6ced2e6ec25cadf62d25a3d3ecc4846870",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:81"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/003.png",
+          "provenance": {
+            "cell_id": 82,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "bafa54e3ea2ff2fd672a3367d36b5e5f46445d731bea5188f1b8102c19a536ef",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:82"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/004.png",
+          "provenance": {
+            "cell_id": 83,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "f9e774a02831311af7a89e870ab96530313f7651c9b28f499d3a5931f5aee4ea",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:83"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_13",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_13_identity"
+    },
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "104e009508aa9a4afea2c081099e9b91d6519d4105f85646efbc2317827e4496",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            51
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "0cc341c973892166cd86144f6787656cfe999254c6186fdd2c033b56499c39f8",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "caf213f6c14c3e13d4ab8315e0d2a631772c88e337c19e0a7f4b2d5c7e366d8b",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            71
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "550f05639b40ec609bc121c379729b6cb4e76bf92eb5749d1eb14dbafcaf9809",
+          "size": [
+            56,
+            72
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            29,
+            71
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "e3612fa9fa9bdb41f133412c62f57ce24b66d7ea2f195f6c446f6a37094754ae",
+          "size": [
+            56,
+            78
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            18,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 6]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "786bea3afd042d01ebb618ce82a1b5e8ea410048f7e0f1bf10cda98d48cbb9c3",
+          "size": [
+            32,
+            54
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:6"
+        },
+        "f007": {
+          "anchor": [
+            14,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 6]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "ae45363212046a1339db5360a68ec0da17a7385840b3a3c8fae917ce0a0542f8",
+          "size": [
+            32,
+            54
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:7"
+        },
+        "f008": {
+          "anchor": [
+            24,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "47c5c235d293b71ef8ef93ad7ddadc5754dfdf3373d6573040530b09ad70f23e",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:8"
+        },
+        "f009": {
+          "anchor": [
+            24,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/009.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "2061e650f8de522fbdf322fdf9332dff167098e260f81b54bc3d7e1096e1a85b",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:9"
+        },
+        "f010": {
+          "anchor": [
+            16,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/010.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "bdee6a841026383586ea79506bd1e823669d00c566532a8ccb2218b086434ec8",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:10"
+        },
+        "f011": {
+          "anchor": [
+            13,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/011.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "ec16fb0597a485951d45da26436f95024d0623f9cd6e030283eef302eab936a6",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:11"
+        },
+        "f012": {
+          "anchor": [
+            33,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/012.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 4]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "226dca9f7f4c4036ea34d89757efc38721d4c1a1806a10999c2765f210eaa250",
+          "size": [
+            56,
+            44
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:12"
+        },
+        "f013": {
+          "anchor": [
+            28,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/013.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 3]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "f93e147853298d31c7aa787fd7d990fd3ff76b26856360b95608e59a90d94605",
+          "size": [
+            56,
+            44
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:13"
+        },
+        "f014": {
+          "anchor": [
+            16,
+            51
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/014.png",
+          "provenance": {
+            "cell_id": 14,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720608
+          },
+          "sha256": "adc0c90f744620c95515d82dee2bf30be50d0390a5e662e5b33786db54eaa4a5",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_3.dtx:cell:14"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010",
+        "f011",
+        "f012",
+        "f013",
+        "f014"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 6
+            },
+            {
+              "frame": "f004",
+              "ticks": 6
+            },
+            {
+              "frame": "f005",
+              "ticks": 12
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 2
+            },
+            {
+              "frame": "f011",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 6
+            },
+            {
+              "frame": "f013",
+              "ticks": 6
+            },
+            {
+              "frame": "f014",
+              "ticks": 6
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            4,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "441662e9f56a358ae18f245dc3a8630b842bb9174fef45c71111ec1b1b458bc2",
+          "size": [
+            16,
+            48
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:6"
+        },
+        "f002": {
+          "anchor": [
+            28,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/002.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "2675f0608ae4c712ffffd5e8be3d4533d0134099e0b1bee5d3a140c4b9c1c83a",
+          "size": [
+            64,
+            24
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:7"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/003.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "07eaf1882e2d56bb26b56d7fd08f901c5602d638daa992ca05857827f4fcd5d9",
+          "size": [
+            80,
+            32
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_op_s_01_e0_amt_id_57_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            40,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "73474a02f859995fb4cd95628843fb5d25e3a9371c564deeab5d1ee391ead1e8",
+          "size": [
+            79,
+            56
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            48,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 16]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "63eeeea9e88ef260c483eed71b50572638c8eaceb0de2f5aeb91c5186c9f8aa4",
+          "size": [
+            95,
+            48
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0_identity"
+    },
+    "forward_b_move_component_op_s_01_e0_amt_id_58_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            4
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0/001.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "701f6e2c9b2e1407cf53e266d5a28d3678fe8d4a0846c3ac1fc93698fef7e8d4",
+          "size": [
+            32,
+            8
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:9"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0/002.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "8ff64ac56eae66fbecec469ad5cf96ca792efb1579041df33be44fcd5e5bb40e",
+          "size": [
+            64,
+            16
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:10"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0/003.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "76ad5df381c918f2152c7c53d7d2d80d70c2a7ca34c956618c0be6cb1e1ad150",
+          "size": [
+            64,
+            16
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:11"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0/004.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "27ebe9874c51723ffc78dacd1e5900f38b1760c416b99e8745ea783a4473f34e",
+          "size": [
+            64,
+            16
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:12"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0_identity"
+    },
+    "forward_b_move_component_op_s_01_e0_amt_id_59_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720640
+          },
+          "sha256": "9089437a69732a792cb54576df52ea7a161f936e44c690e9d1f5554b258c5e86",
+          "size": [
+            48,
+            80
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e00_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0_identity"
+    },
+    "forward_b_move_component_op_s_01_e0_amt_id_60_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0/001.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "71bd123ef99609e8bd82c0e8054bd09fb7062f93854b289724e4bc6592bce0a5",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e30_.dtx:cell:13"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 38
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0_identity"
+    },
+    "forward_b_move_component_op_s_01_e3_amt_id_160_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            56,
+            85
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "0d66d2d66d5b362ed759f9d862e046833f7e12d5d407bef298594b680b3a1841",
+          "size": [
+            112,
+            101
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_e30_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            56,
+            86
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "aac9e5fc14fa45419ff1db9dcad7e1a38070cfc624fd79c688a36bbcfc93ea18",
+          "size": [
+            112,
+            94
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_e30_.dtx:cell:3"
+        },
+        "f003": {
+          "anchor": [
+            48,
+            87
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0/003.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "cd5d3d256f346656a7ef7fe19979ca180943a3f6b63642d852962aeea231c48a",
+          "size": [
+            88,
+            93
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_e30_.dtx:cell:4"
+        },
+        "f004": {
+          "anchor": [
+            48,
+            87
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0/004.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720736
+          },
+          "sha256": "96aa152a84c04925e3191e8a34597f5427303d07b68da2a48846a0cedaee52d0",
+          "size": [
+            95,
+            97
+          ],
+          "source_frame_id": "op_s_01_3:op_s_01_e30_.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0_identity"
+    },
+    "hit_text_00": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            26,
+            26
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_00/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2359296
+          },
+          "sha256": "a475554091011a3c622abcb062a76681a1f14a5bdac111fdf3ad26a4124ef074",
+          "size": [
+            59,
+            43
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_00",
+      "status": "candidate",
+      "unresolved_id": "hit_text_00_identity"
+    },
+    "hit_text_1c": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            28
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_1c/001.png",
+          "provenance": {
+            "cell_id": 28,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2359296
+          },
+          "sha256": "b3a571af04698d2ff288dd9dd8a9f11658d5e5fc7b24018c0147d662c3c52cb1",
+          "size": [
+            35,
+            44
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:28"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_1c",
+      "status": "candidate",
+      "unresolved_id": "hit_text_1c_identity"
+    },
+    "orange_hit_spark_00": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "169fbf0f1cdb5152c39fde48e9d948d8335d8c80d4ee33a7e81f8f409f1ef27a",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "7f7e237150ee3bed936490f14727aff50558c277eddbac1c68a201557f592a9f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "d424d7809de950ebf3dcb9318b6e4e8a27f00e7868e701c0b050752624a8b19b",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "ad79013e1a3b4295a8ce895f72bfdc3e20c6f758fcb9e95e39c5dd6c4cf503b4",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_00",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_00_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            23,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "9ede5834bc4d8b7d7a8d2e0fedf59dc77e233bd4c2617dd2bc4d91d483d799d4",
+          "size": [
+            48,
+            49
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            20,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "f75ad051e8d61dc65e83766a490ffe520de496ed7f0d8e61d68a0057a64b29c0",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "34498dfc61950c7766e3d7562d51f27118bd9e843c53b0c78a71fca9b0ed087a",
+          "size": [
+            32,
+            39
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            16,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "aba363301d99faf02b9a8d053e0f8892e8f36274daf45aae3f0bdfc22e2883a0",
+          "size": [
+            32,
+            39
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            29,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "09a546cc537aff8f917c4fd2a3075fd36661a22b6a9a2be837bc8e33035c5d92",
+          "size": [
+            56,
+            40
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:5"
+        },
+        "f006": {
+          "anchor": [
+            29,
+            37
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/006.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720576
+          },
+          "sha256": "b044eaf843d8f579988c4aeaa878205bf6a998c937856f3584b2d839d24bb459",
+          "size": [
+            56,
+            40
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_2.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 5
+            },
+            {
+              "frame": "f002",
+              "ticks": 5
+            },
+            {
+              "frame": "f001",
+              "ticks": 5
+            },
+            {
+              "frame": "f002",
+              "ticks": 5
+            },
+            {
+              "frame": "f001",
+              "ticks": 5
+            },
+            {
+              "frame": "f002",
+              "ticks": 5
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f005",
+              "ticks": 6
+            },
+            {
+              "frame": "f006",
+              "ticks": 10
+            },
+            {
+              "frame": "f006",
+              "ticks": 18
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            36
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720640
+          },
+          "sha256": "a71429b89027720eaafd1d6214826de9edea3e7048c5335662a655ccd3e2f521",
+          "size": [
+            48,
+            72
+          ],
+          "source_frame_id": "op_s_01:op_s_01_e00_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720704
+          },
+          "sha256": "39f82259777e9868085f14325d37681d6a92dea97bca9905489eb59ba01e8c71",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_e20_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            48,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720705
+          },
+          "sha256": "faa3fc932fe146b0c64e67f98c05dbe1dbd6dd814d91a6e0de433ff78e63eefa",
+          "size": [
+            96,
+            96
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_e21_.dtx:cell:0"
+        },
+        "f003": {
+          "anchor": [
+            48,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0/003.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720706
+          },
+          "sha256": "638d403ccf83ca4edf6882f82a0940cf347b3cc8abe333fcfab285866f8abe4c",
+          "size": [
+            96,
+            96
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_e22_.dtx:cell:0"
+        },
+        "f004": {
+          "anchor": [
+            48,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0/004.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/monkey_d_luffy/labeled_split/art.json",
+            "manifest_sha256": "134a3d5b739fc34512be57e0d04beb1d24f1f23cbe28a1ff29018f2ee8df8f2f",
+            "texture_id": 1720707
+          },
+          "sha256": "48e8d3b5dcfa4bfae96c83650df2a67778ea541f1fe13712a15ef1ae4a465f98",
+          "size": [
+            96,
+            96
+          ],
+          "source_frame_id": "op_s_01_2:op_s_01_e23_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 5
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_00_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_00_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_57_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_58_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_59_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e0_amt_id_60_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01:op_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_2:op_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_01_e2_amt_id_128_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_01_3:op_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_op_s_01_e3_amt_id_160_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

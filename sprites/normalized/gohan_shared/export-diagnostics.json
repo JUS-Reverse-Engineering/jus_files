@@ -1,0 +1,69 @@
+{
+  "display_name": "Gohan: Shared art",
+  "errors": [],
+  "frames": 51,
+  "inventory_status": "unresolved",
+  "library_id": "gohan_shared",
+  "measured_art_tracks": 20,
+  "omitted_assets": [
+    {
+      "asset": "source:gohan_panel_01",
+      "name": "gohan_panel_01",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gohan_panel_02",
+      "name": "gohan_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gohan_panel_03",
+      "name": "gohan_panel_03",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gohan_panel_04",
+      "name": "gohan_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gohan_panel_05",
+      "name": "gohan_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:gohan_ssj2_electric_and_reactions_ORIGINAL",
+      "name": "gohan_ssj2_electric_and_reactions_ORIGINAL",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_g:jyochu_gion.amt:anim:001c": "hit_text_1c",
+    "db_s_05_2:db_s_05_2.amt:anim:0000": "support_action_00_body",
+    "db_s_05_2:db_s_05_e2.amt:anim:0000": "support_action_00_move_component",
+    "db_s_05_2:db_s_05_e2.amt:anim:0001": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0002": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0003": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0004": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0005": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0006": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0007": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0",
+    "db_s_05_2:db_s_05_e2.amt:anim:0008": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0",
+    "db_s_05_3:db_s_05_3.amt:anim:0000": "forward_b_body",
+    "db_s_05_3:db_s_05_e3.amt:anim:0000": "forward_b_move_component",
+    "db_s_05_3:db_s_05_e3.amt:anim:0001": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0",
+    "db_s_05_3:db_s_05_e3.amt:anim:0002": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0",
+    "db_s_05_3:db_s_05_e3.amt:anim:0003": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0",
+    "db_s_05_3:db_s_05_e3.amt:anim:0004": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0",
+    "db_s_05_3:db_s_05_e3.amt:anim:0005": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0"
+  },
+  "sequences": 20,
+  "source_manifest": "jus_files/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+  "source_manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c"
+}

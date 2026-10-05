@@ -1,0 +1,511 @@
+{
+  "display_name": "Yusuke Urameshi",
+  "errors": [],
+  "frames": 728,
+  "inventory_status": "unresolved",
+  "library_id": "yusuke",
+  "measured_art_tracks": 136,
+  "omitted_assets": [
+    {
+      "asset": "owner:labeled_split/attacks_heavy/air_strip.png",
+      "name": "air",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/air_strip_ORIGINAL.png",
+      "name": "air",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/air_strip_windup_and_end.png",
+      "name": "air_strip_windup_and_end",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/down_strip.png",
+      "name": "down",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/forward_strip.png",
+      "name": "forward",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/forward_strip_ORIGINAL.png",
+      "name": "forward",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/neutral_strip.png",
+      "name": "neutral",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/neutral_strip_ORIGINAL.png",
+      "name": "neutral",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_heavy/up_strip.png",
+      "name": "up",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_light/air_strip.png",
+      "name": "air",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_light/down_strip.png",
+      "name": "down",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_light/forward_strip.png",
+      "name": "forward",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_light/neutral_strip.png",
+      "name": "neutral",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_light/up_strip.png",
+      "name": "up",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/4k_strip.png",
+      "name": "4k",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/4k_strip_ORIGINAL.png",
+      "name": "4k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/4k_up_strip.png",
+      "name": "4k_up",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/4k_up_strip_ORIGINAL.png",
+      "name": "4k_up",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_fx_charging_strip.png",
+      "name": "5k_fx_charging",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_fx_fired.png",
+      "name": "5k_fx_fired",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_fx_fired_strip.png",
+      "name": "5k_fx_fired",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_projectile_1.png",
+      "name": "5k_projectile_1",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_projectile_2.png",
+      "name": "5k_projectile_2",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_projectile_3.png",
+      "name": "5k_projectile_3",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_projectile_4.png",
+      "name": "5k_projectile_4",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_strip_ORIGINAL.png",
+      "name": "5k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_strip_charge.png",
+      "name": "5k_strip_charge",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_strip_fire.png",
+      "name": "5k_strip_fire",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_up_strip.png",
+      "name": "5k_up",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/5k_up_strip_ORIGINAL.png",
+      "name": "5k_up",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_charged_fired_ORIGINAL.png",
+      "name": "6k_charged_fired",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_charged_fired_strip.png",
+      "name": "6k_charged_fired",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_projectile_charged.png",
+      "name": "6k_projectile_charged",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_projectile_uncharged.png",
+      "name": "6k_projectile_uncharged",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_uncharged_fired_strip.png",
+      "name": "6k_uncharged_fired",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_up_strip_1.png",
+      "name": "6k_up_strip_1",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_up_strip_2.png",
+      "name": "6k_up_strip_2",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/attacks_special/6k_up_strip_ORIGINAL.png",
+      "name": "6k_up",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/dash_strip.png",
+      "name": "dash",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/guard_strip.png",
+      "name": "guard",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/idle_air.png",
+      "name": "idle_air",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/idle_strip.png",
+      "name": "idle",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/jump_strip.png",
+      "name": "jump",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/landed_strip.png",
+      "name": "landed",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/ledge_getup_strip.png",
+      "name": "ledge_getup",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/ledge_hang_strip.png",
+      "name": "ledge_hang",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/postmatch_defeat_strip.png",
+      "name": "postmatch_defeat",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/postmatch_victory_strip.png",
+      "name": "postmatch_victory",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/generics/walk_strip.png",
+      "name": "walk",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/getup_strip.png",
+      "name": "getup",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/grabbed_strip.png",
+      "name": "grabbed",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/hit_type_0.png",
+      "name": "hit_type_0",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/hit_type_1.png",
+      "name": "hit_type_1",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/hit_type_2.png",
+      "name": "hit_type_2",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/knockdown.png",
+      "name": "knockdown",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/launched_strip.png",
+      "name": "launched",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/pop.png",
+      "name": "pop",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/hitstun/surprised.png",
+      "name": "surprised",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/panels/1k.png",
+      "name": "1k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/panels/2k.png",
+      "name": "2k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/panels/3k.png",
+      "name": "3k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/panels/4k.png",
+      "name": "4k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/2k_strip.png",
+      "name": "2k",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/2k_strip_2.png",
+      "name": "2k_strip_2",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/2k_strip_ORIGINAL.png",
+      "name": "2k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/2k_strip_punch_fx.png",
+      "name": "2k_strip_punch_fx",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/3k_fx_1.png",
+      "name": "3k_fx_1",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/3k_fx_2.png",
+      "name": "3k_fx_2",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/3k_strip.png",
+      "name": "3k",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/supports/3k_strip_ORIGINAL.png",
+      "name": "3k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/taunt/taunt_beginning_strip.png",
+      "name": "taunt_beginning",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    },
+    {
+      "asset": "owner:labeled_split/taunt/taunt_end_held_strip.png",
+      "name": "taunt_end_held",
+      "reason": "No individual frame identities; owner strip remains protected in authoring package."
+    }
+  ],
+  "package_role": "fighter",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": "cast_orange_hit_spark_00",
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "cast_orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0013": "cast_blue_hit_spark_13",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "cast_blue_hit_spark_14",
+    "comm_b:jyocyu_efe_b.amt:anim:000f": "cast_orange_radial_sparks",
+    "comm_b:jyocyu_efe_b.amt:anim:0010": "cast_stone_fragments",
+    "comm_c:jyocyu_efe_c.amt:anim:0000": "cast_dash_dust",
+    "comm_g:jyochu_gion.amt:anim:0000": "cast_hit_text_00",
+    "comm_g:jyochu_gion.amt:anim:0001": "cast_hit_text_01",
+    "comm_g:jyochu_gion.amt:anim:0003": "cast_hit_text_03",
+    "comm_g:jyochu_gion.amt:anim:0004": "cast_hit_text_04",
+    "comm_g:jyochu_gion.amt:anim:0005": "cast_hit_text_05",
+    "comm_g:jyochu_gion.amt:anim:000c": "cast_hit_text_0c",
+    "comm_g:jyochu_gion.amt:anim:001c": "cast_hit_text_1c",
+    "comm_g:jyochu_gion.amt:anim:001d": "cast_hit_text_1d",
+    "yh_b_01:yh_b_01.amt:anim:0000": "cast_idle_body",
+    "yh_b_01:yh_b_01.amt:anim:0001": "cast_walk_body",
+    "yh_b_01:yh_b_01.amt:anim:0002": "cast_dash_body",
+    "yh_b_01:yh_b_01.amt:anim:0003": "cast_guard_body",
+    "yh_b_01:yh_b_01.amt:anim:0004": "cast_jump_rise_body",
+    "yh_b_01:yh_b_01.amt:anim:0005": "cast_jump_air_variant_05_body",
+    "yh_b_01:yh_b_01.amt:anim:0006": "cast_jump_air_variant_06_body",
+    "yh_b_01:yh_b_01.amt:anim:0007": "cast_landed_body",
+    "yh_b_01:yh_b_01.amt:anim:0008": "cast_jump_squat_landend_body",
+    "yh_b_01:yh_b_01.amt:anim:0009": "cast_native_anim_09_body",
+    "yh_b_01:yh_b_01.amt:anim:000a": "cast_hit_type_1_body",
+    "yh_b_01:yh_b_01.amt:anim:000b": "cast_hit_type_0_body",
+    "yh_b_01:yh_b_01.amt:anim:000c": "cast_hit_type_2_body",
+    "yh_b_01:yh_b_01.amt:anim:000d": "cast_surprised_body",
+    "yh_b_01:yh_b_01.amt:anim:000e": "cast_hit_alternate_outline_body",
+    "yh_b_01:yh_b_01.amt:anim:000f": "cast_knockdown_body",
+    "yh_b_01:yh_b_01.amt:anim:0010": "cast_pop_body",
+    "yh_b_01:yh_b_01.amt:anim:0011": "cast_downed_body",
+    "yh_b_01:yh_b_01.amt:anim:0012": "cast_pop_alternate_outline_body",
+    "yh_b_01:yh_b_01.amt:anim:0013": "cast_launched_body",
+    "yh_b_01:yh_b_01.amt:anim:0014": "cast_ledge_hang_body",
+    "yh_b_01:yh_b_01.amt:anim:0015": "cast_ledge_getup_anim_15_body",
+    "yh_b_01:yh_b_01.amt:anim:0016": "cast_ledge_getup_phase_2_body",
+    "yh_b_01:yh_b_01.amt:anim:0017": "cast_getup_body",
+    "yh_b_01:yh_b_01.amt:anim:0018": "cast_taunt_body",
+    "yh_b_01:yh_b_01.amt:anim:0019": "cast_postmatch_victory_body",
+    "yh_b_01:yh_b_01.amt:anim:001a": "cast_postmatch_defeat_body",
+    "yh_b_01:yh_b_01.amt:anim:001b": "cast_neutral_b_body",
+    "yh_b_01:yh_b_01.amt:anim:001c": "cast_neutral_y_body",
+    "yh_b_01:yh_b_01.amt:anim:001d": "cast_forward_b_body",
+    "yh_b_01:yh_b_01.amt:anim:001e": "cast_forward_y_body",
+    "yh_b_01:yh_b_01.amt:anim:001f": "cast_up_b_body",
+    "yh_b_01:yh_b_01.amt:anim:0020": "cast_up_y_body",
+    "yh_b_01:yh_b_01.amt:anim:0021": "cast_down_b_body",
+    "yh_b_01:yh_b_01.amt:anim:0022": "cast_down_y_body",
+    "yh_b_01:yh_b_01.amt:anim:0023": "cast_air_b_body",
+    "yh_b_01:yh_b_01.amt:anim:0024": "cast_air_y_body",
+    "yh_b_01:yh_b_01.amt:anim:0025": "cast_heavy_variant_28_body",
+    "yh_b_01:yh_b_01.amt:anim:0026": "cast_k4_x_body",
+    "yh_b_01:yh_b_01.amt:anim:0027": "cast_k4_up_x_body",
+    "yh_b_01:yh_b_01.amt:anim:0028": "cast_k5_x_body",
+    "yh_b_01:yh_b_01.amt:anim:0029": "cast_k5_up_x_body",
+    "yh_b_01:yh_b_01.amt:anim:002a": "cast_k6_x_body",
+    "yh_b_01:yh_b_01.amt:anim:002b": "cast_k6_up_x_body",
+    "yh_b_01:yh_b_01.amt:anim:002c": "cast_grabbed_pose_1_body",
+    "yh_b_01:yh_b_01.amt:anim:002d": "cast_grabbed_pose_2_body",
+    "yh_b_01:yh_b_01.amt:anim:002e": "cast_grabbed_pose_3_body",
+    "yh_b_01:yh_b_01.amt:anim:002f": "cast_grabbed_pose_4_body",
+    "yh_b_01:yh_b_01_e0.amt:anim:0000": "cast_neutral_y_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0001": "cast_shared_forward_y_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0002": "cast_shared_k4_x_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0003": "cast_shared_k4_up_x_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0004": "cast_shared_forward_y_move_component_yh_b_01_e0_amt_id_60_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0005": "cast_shared_forward_y_move_component_yh_b_01_e0_amt_id_61_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0006": "cast_forward_y_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0007": "cast_forward_y_move_component_yh_b_01_e0_amt_id_63_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0008": "cast_forward_y_move_component_yh_b_01_e0_amt_id_64_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0009": "cast_up_y_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:000a": "cast_up_y_move_component_yh_b_01_e0_amt_id_66_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:000b": "cast_up_y_move_component_yh_b_01_e0_amt_id_67_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:000c": "cast_up_y_move_component_yh_b_01_e0_amt_id_68_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:000d": "cast_air_y_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:000e": "cast_taunt_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:000f": "cast_taunt_move_component_yh_b_01_e0_amt_id_78_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0010": "cast_shared_forward_y_move_component_yh_b_01_e0_amt_id_71_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0011": "cast_k6_x_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0012": "cast_k6_x_move_component_yh_b_01_e0_amt_id_80_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0013": "cast_k6_x_move_component_yh_b_01_e0_amt_id_81_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0014": "cast_heavy_variant_28_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:0015": "cast_air_y_move_component_yh_b_01_e0_amt_id_72_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0016": "cast_air_y_move_component_yh_b_01_e0_amt_id_73_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0017": "cast_air_y_move_component_yh_b_01_e0_amt_id_74_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0018": "cast_air_y_move_component_yh_b_01_e0_amt_id_75_node_0",
+    "yh_b_01:yh_b_01_e0.amt:anim:0019": "cast_postmatch_victory_move_component",
+    "yh_b_01:yh_b_01_e0.amt:anim:001a": "cast_postmatch_victory_move_component_yh_b_01_e0_amt_id_77_node_0",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0000": "cast_k4_x_move_component",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0001": "cast_k4_x_move_component_yh_b_01_e4_amt_id_97_node_0",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0002": "cast_k4_x_move_component_yh_b_01_e4_amt_id_98_node_0",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0003": "cast_k4_up_x_move_component",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0004": "cast_k4_up_x_move_component_yh_b_01_e4_amt_id_100_node_0",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0005": "cast_k4_up_x_move_component_yh_b_01_e4_amt_id_101_node_0",
+    "yh_b_01_4:yh_b_01_e4.amt:anim:0006": "cast_k4_up_x_move_component_yh_b_01_e4_amt_id_102_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0000": "cast_k5_x_move_component",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0001": "cast_k5_x_move_component_yh_b_01_e5_amt_id_129_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0002": "cast_k5_x_move_component_yh_b_01_e5_amt_id_130_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0003": "cast_k5_x_move_component_yh_b_01_e5_amt_id_131_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0004": "cast_k5_x_move_component_yh_b_01_e5_amt_id_132_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0005": "cast_k5_up_x_move_component",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0006": "cast_k5_up_x_move_component_yh_b_01_e5_amt_id_134_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0007": "cast_k5_up_x_move_component_yh_b_01_e5_amt_id_135_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0008": "cast_k5_up_x_move_component_yh_b_01_e5_amt_id_136_node_0",
+    "yh_b_01_5:yh_b_01_e5.amt:anim:0009": "cast_k5_up_x_move_component_yh_b_01_e5_amt_id_137_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0000": "cast_k6_x_move_component_yh_b_01_e6_amt_id_160_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0001": "cast_k6_x_move_component_yh_b_01_e6_amt_id_161_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0002": "cast_k6_x_move_component_yh_b_01_e6_amt_id_162_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0003": "cast_k6_x_move_component_yh_b_01_e6_amt_id_163_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0004": "cast_k6_x_move_component_yh_b_01_e6_amt_id_164_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0005": "cast_k6_x_move_component_yh_b_01_e6_amt_id_165_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0006": "cast_k6_x_move_component_yh_b_01_e6_amt_id_166_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0007": "cast_k6_up_x_move_component",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0008": "cast_k6_up_x_move_component_yh_b_01_e6_amt_id_168_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:0009": "cast_k6_up_x_move_component_yh_b_01_e6_amt_id_169_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:000a": "cast_k6_up_x_move_component_yh_b_01_e6_amt_id_170_node_0",
+    "yh_b_01_6:yh_b_01_e6.amt:anim:000b": "cast_k6_up_x_move_component_yh_b_01_e6_amt_id_171_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0000": "cast_support_action_00_move_component",
+    "yh_s_01:yh_s_01_e0.amt:anim:0001": "cast_forward_b_move_component",
+    "yh_s_01:yh_s_01_e0.amt:anim:0002": "cast_forward_b_move_component_yh_s_01_e0_amt_id_58_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0003": "cast_forward_b_move_component_yh_s_01_e0_amt_id_59_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0004": "cast_forward_b_move_component_yh_s_01_e0_amt_id_60_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0005": "cast_forward_b_move_component_yh_s_01_e0_amt_id_61_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0006": "cast_forward_b_move_component_yh_s_01_e0_amt_id_62_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0007": "cast_forward_b_move_component_yh_s_01_e0_amt_id_63_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0008": "cast_forward_b_move_component_yh_s_01_e0_amt_id_64_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:0009": "cast_forward_b_move_component_yh_s_01_e0_amt_id_65_node_0",
+    "yh_s_01:yh_s_01_e0.amt:anim:000a": "cast_forward_b_move_component_yh_s_01_e0_amt_id_66_node_0",
+    "yh_s_01_2:yh_s_01_2.amt:anim:0000": "cast_support_action_00_body",
+    "yh_s_01_3:yh_s_01_3.amt:anim:0000": "cast_forward_b_body_yh_s_01_3_amt_id_32_node_0"
+  },
+  "sequences": 171,
+  "source_manifest": "jus_files/sprites/characters/YuYu Hakusho/yusuke_urameshi/labeled_split/art.json",
+  "source_manifest_sha256": "5d260c189548d71844c89fb53d5b206c3da73df0f9bf41658bef8394662ec7ab"
+}

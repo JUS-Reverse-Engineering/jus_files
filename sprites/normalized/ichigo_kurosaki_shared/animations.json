@@ -1,0 +1,2886 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "ichigo_kurosaki",
+  "library_id": "ichigo_kurosaki_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0",
+        "sequence": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0",
+        "sequence": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0",
+        "sequence": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0",
+        "sequence": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0",
+        "sequence": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0",
+        "sequence": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0",
+        "sequence": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0",
+        "sequence": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "dash_dust",
+        "sequence": "dash_dust"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_0c",
+        "sequence": "hit_text_0c"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+          "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+        ],
+        "required": false,
+        "role": "mugshot",
+        "sequence": "mugshot"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "dash_dust": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "7148dc97e5a99d83326b19b65020e2070a4eaa0333198e94f992a611d3614f43",
+          "size": [
+            24,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            40,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "352d0601a07774c64888727e5785f128a19f52d6636547f58b3c4fc1bb773e65",
+          "size": [
+            40,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "87926878cae8914191731f80f0facc5afb15b7d623a42abf95cdbb436ff32efe",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 16, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "88ab05974ff1449dcc8a91058a977e2bd6f4e5e0137a4620257c819aa1b863bb",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/005.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "b5d619473eaf3180bc6740eb246594781dd814a59cbd6dcc2c9f9f777db88e8a",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:5"
+        },
+        "f006": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/006.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:6"
+        },
+        "f007": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/007.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "c8c1d71d8cfa06bce0fc1d15f33c98be80c64116a94a98e6be5e8cfc45c005ec",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:7"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/008.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:8"
+        },
+        "f009": {
+          "anchor": [
+            57,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/009.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 25, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "1e0aa72fb093b4834750e32cb3c556d0e5dbe90d954869606786540e76cb570b",
+          "size": [
+            57,
+            33
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:9"
+        },
+        "f010": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/010.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f006",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f009",
+              "ticks": 1
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "dash_dust",
+      "status": "candidate",
+      "unresolved_id": "dash_dust_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            11,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "65cee0b70e8965a00b28e79ed280ae7b89c80012edc1180a0b32dc00d306333e",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            10,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "e4bbbe88e71e8f39cd87ee82139e9c90a20bfae988c5d27ebe32c3a085b3e65b",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            18,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "bca31a2fae6ccd6f6fae9930c18dc8dad6dfdd47380a208a05649fe527754e07",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            13,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "ba8edf75de450862b2b9d49f799573bd2b8df40abe88086c48259843c4cd7780",
+          "size": [
+            26,
+            56
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            13,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "946c872f3b7677bff279308de2507e00c1984f116e15484334282c313931eb45",
+          "size": [
+            26,
+            56
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            16,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "600a657633a378c0ab0817cb4772f56e60ebbef580e6b1e2c1de3194f3604bab",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            16,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "4bcd7f90dab16307b067a27a859a1af3bd4a187dc549e2adffad2337522c58be",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            14,
+            23
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540384
+          },
+          "sha256": "f7d474aac69c4acaa3d491cb961ce88a68cb4a91ff76d0e9a8d7a3200325c661",
+          "size": [
+            48,
+            24
+          ],
+          "source_frame_id": "bl_s_01_3:bl_s_01_3.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 9
+            },
+            {
+              "frame": "f002",
+              "ticks": 59
+            },
+            {
+              "frame": "f003",
+              "ticks": 46
+            },
+            {
+              "frame": "f004",
+              "ticks": 7
+            },
+            {
+              "frame": "f005",
+              "ticks": 32
+            },
+            {
+              "frame": "f006",
+              "ticks": 5
+            },
+            {
+              "frame": "f007",
+              "ticks": 5
+            },
+            {
+              "frame": "f008",
+              "ticks": 32
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540416
+          },
+          "sha256": "dc6412946416885da9533402629c27de31d2b10438ae9d53caa2981e1e96ce1a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e00_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 26
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            28,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540416
+          },
+          "sha256": "34499db735bed92e12621e30dbba6b3873feca2244250b06f939219e88b64760",
+          "size": [
+            56,
+            64
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e00_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 30
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0_identity"
+    },
+    "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540512
+          },
+          "sha256": "0a39fc2f9972784de7bb5aa7f425a4d794a594449f318deb8cb030cdaebb40af",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e30_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 40
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0_identity"
+    },
+    "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540512
+          },
+          "sha256": "9a8a169cefbcc33ae6bd096e535e2a7bcc91f0a24960023650543d3023cd6352",
+          "size": [
+            24,
+            16
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e30_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540512
+          },
+          "sha256": "27c55f4a307a11e5a80babe5dcb00ea2c82410498437beab0ad2808ebbfab1e3",
+          "size": [
+            24,
+            20
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e30_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            12,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540512
+          },
+          "sha256": "b8842046cfcf44814b44fed56660435d82290b8053e5579a6bd8b30214abc641",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e30_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0_identity"
+    },
+    "hit_text_0c": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            29
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_0c/001.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2359296
+          },
+          "sha256": "a45330d415dc0a9e3108229608c3e8c72c323480f54ce33b34d27d417e94d485",
+          "size": [
+            46,
+            51
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:12"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_0c",
+      "status": "candidate",
+      "unresolved_id": "hit_text_0c_identity"
+    },
+    "mugshot": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+            "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+          ],
+          "facing": "right",
+          "path": "mugshot/001.png",
+          "provenance": {
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb"
+          },
+          "sha256": "5eb98df941b6ce78ab512b7f0d026391f3de2acf854f125ebcdb6da4665d7185",
+          "size": [
+            120,
+            160
+          ],
+          "source_frame_id": "sheet:panel_3:{\"path\": \"labeled_split/misc/mugshot_frames/000.png\", \"pieces\": [{\"at\": [0, 0], \"rect\": [9, 42, 129, 202], \"source\": \"Ichigo_Kurosaki.png\"}]}"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+            "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+          ],
+          "status": "unresolved",
+          "unresolved_id": "mugshot_playback"
+        }
+      },
+      "role": "mugshot",
+      "status": "candidate",
+      "unresolved_id": "mugshot_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            11,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "2e5fb3be4974a91b51c34d41b5fbc33a8b530f1b2c68d35541f7a92577f74533",
+          "size": [
+            27,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "a7c4cf7c2db181aff37751687ba1657fbf9fec57ae372c5eba3288ad49d689ce",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            22,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "27efd233108eb39f75b649d50c4b67bd376033e83d36f338d04e775ff0a2bf8b",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            20,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "51985c50e401630bbbc85827230ff07b0f7048d23a3a5ea992512f8559dce618",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            27,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "28f31f0b0e006edf6db7a42f7899c0f7821d08ed6d7c7d29165972e3ea3bff81",
+          "size": [
+            56,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            17,
+            43
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "f8f54ad9c7639626c2771481c56bca0f796749dd2d9a280df220213c2ecd71f4",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            6,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "cd0561193631f00a4b0d1ae47ab93ccb006b87195a4f7b0705011ef8f34e64f8",
+          "size": [
+            27,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            10,
+            54
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540352
+          },
+          "sha256": "77a12669eb6e33512208fa3bece7f0b3be944245261859dc131f8b4f659a167a",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "bl_s_01_2:bl_s_01_2.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 51
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 6
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 20
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 15
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "a94476a93d1dd35f1f4ecb0605b17d8f844b21e703bb81eaff628ee0b5ef4e20",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:4"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "fe28be709dacf2367639337f866e82993ffb253e351d6b452c1c9b2feef4406c",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:0"
+        },
+        "f003": {
+          "anchor": [
+            28,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 17]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "7820e4ddf0f86731929a0477c8684f466d327794b2804dd4a535cb8b4094d7ea",
+          "size": [
+            32,
+            49
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            30,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/004.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "06843e6ed99896f6dc77843f528cbc3d5b5eda6ffcbd33857cd5357b9541dd96",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:1"
+        },
+        "f005": {
+          "anchor": [
+            28,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/005.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 31]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "e53330fc57861deae2ee7d5843d69a833477ad1885d78575c0ca37ae4d1b4841",
+          "size": [
+            32,
+            63
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 45
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 6
+            },
+            {
+              "frame": "f004",
+              "ticks": 6
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "caf72d20d3eb32558e6d2962285e55a033b2c329da0c26ca9a945c26ec3ccc7b",
+          "size": [
+            32,
+            24
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "3ee9006d4690a1c50f3e40c166fd03948fae78ae39c46a11e5f9ab7f9fd4d544",
+          "size": [
+            32,
+            24
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0_identity"
+    },
+    "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            12,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0/001.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "0a043bbb0ad940609f8b7ac6cc2ccb9b8d8f4bfb2b2ac243aa11216539cd799f",
+          "size": [
+            24,
+            32
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:7"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0/002.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "f879ef0d4f6d927eb82c537fe10c2fc54d4350110d18df2388760268449f3d37",
+          "size": [
+            24,
+            32
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:8"
+        },
+        "f003": {
+          "anchor": [
+            12,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0/003.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "563082e651e3d56cd839ef97a7c8245a3b50709cf14f11d5563c6f61d85ff400",
+          "size": [
+            24,
+            32
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:9"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0_identity"
+    },
+    "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0/001.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540480
+          },
+          "sha256": "9a0f4885065507542619cd601ad02871786e51d730a32fbf934e63924e2e0a35",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e20_.dtx:cell:10"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 18
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0_identity"
+    },
+    "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            28
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540416
+          },
+          "sha256": "5e9eff88179e82eead504a576cea500c118d27d3205ffac8db22d6b79b5248f4",
+          "size": [
+            48,
+            56
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e00_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 16
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0_identity"
+    },
+    "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Bleach/ichigo_kurosaki/labeled_split/art.json",
+            "manifest_sha256": "535da0fc22e1fec0b15a32243e21efd360e2ced7b93764adbf333fd16be84bdb",
+            "texture_id": 1540416
+          },
+          "sha256": "a17917e0759bb36ca95eed96bacab7abea89d5d07d5b29e936d790c87b676451",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "bl_s_01:bl_s_01_e00_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 24
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_57_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_58_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_59_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_60_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_bl_s_01_e0_amt_id_61_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_63_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_64_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01:bl_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_bl_s_01_e0_amt_id_65_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_2:bl_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset bl_s_01_3:bl_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_0c_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_0c_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "id": "mugshot_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "id": "mugshot_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

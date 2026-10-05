@@ -1,0 +1,65 @@
+{
+  "display_name": "Don Patch: Shared art",
+  "errors": [],
+  "frames": 40,
+  "inventory_status": "unresolved",
+  "library_id": "don_patch_shared",
+  "measured_art_tracks": 11,
+  "omitted_assets": [
+    {
+      "asset": "sheet:panel_1k",
+      "name": "panel_1k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_2k",
+      "name": "panel_2k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_3k",
+      "name": "panel_3k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_4k",
+      "name": "panel_4k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_5k",
+      "name": "panel_5k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_6k",
+      "name": "panel_6k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_7k",
+      "name": "panel_7k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "bb_s_02:bb_s_02_e0.amt:anim:0000": "support_action_00_move_component",
+    "bb_s_02:bb_s_02_e0.amt:anim:0001": "support_action_00_move_component_bb_s_02_e0_amt_id_57_node_0",
+    "bb_s_02:bb_s_02_e0.amt:anim:0002": "support_action_00_move_component_bb_s_02_e0_amt_id_58_node_0",
+    "bb_s_02:bb_s_02_e0.amt:anim:0003": "support_action_00_move_component_bb_s_02_e0_amt_id_59_node_0",
+    "bb_s_02_2:bb_s_02_2.amt:anim:0000": "support_action_00_body",
+    "bb_s_02_3:bb_s_02_3.amt:anim:0000": "forward_b_body",
+    "bb_s_02_3:bb_s_02_e3.amt:anim:0000": "forward_b_move_component",
+    "bb_s_02_3:bb_s_02_e3.amt:anim:0001": "forward_b_move_component_bb_s_02_e3_amt_id_161_node_0",
+    "bb_s_02_3:bb_s_02_e3.amt:anim:0002": "forward_b_move_component_bb_s_02_e3_amt_id_162_node_0",
+    "bb_s_02_3:bb_s_02_e3.amt:anim:0003": "forward_b_move_component_bb_s_02_e3_amt_id_163_node_0",
+    "bb_s_02_3:bb_s_02_e3.amt:anim:0004": "forward_b_cyan_smiling_face_sparkles"
+  },
+  "sequences": 11,
+  "source_manifest": "jus_files/sprites/characters/Bobobo-bo Bo-bobo/don_patch/labeled_split/art.json",
+  "source_manifest_sha256": "d95e9955e6888c4c8557046e9e4cc3dbe0a54cdd52a37199da27802995d0e2c7"
+}

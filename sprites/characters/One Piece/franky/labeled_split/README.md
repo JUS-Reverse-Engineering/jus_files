@@ -1,9 +1,11 @@
 # Franky art authoring package
 
 <!-- current-art-summary:start -->
-Character package: 124 assets, 110 visible strips/panels and 14 transparent native tracks. 433 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 48 action groups.
+Character package: 144 categorized assets, including 14 transparent native tracks. 519 canonical native cell PNGs. [Attack map](ATTACKS.md) contains 48 action groups.
 
-Native diagnostics in the current manifest: 152 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+Authored alternate-facing assets: 0. Source-controlled loose-pose references: 0. Move groups retain body, summon, projectile, effect and conditional-phase associations in `art.json`. Shared art records every action use. Alternate-facing assets preserve actual authored pixels and record runtime display mirroring separately.
+
+Unresolved native node records: 152; unsupported texture records: 0. Source references and poses with unknown sequence positions remain explicit; art-track key times do not establish gameplay trigger times.
 <!-- current-art-summary:end -->
 
 `art.json` records category, authored animation ID, archive member, texture owner, node, frame bounds, anchors and hashes. The category directories contain review strips. `misc/native_cells/` contains the original-size decoded cells.

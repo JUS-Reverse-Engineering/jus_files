@@ -1,0 +1,94 @@
+{
+  "display_name": "Goku: Shared art",
+  "errors": [],
+  "frames": 66,
+  "inventory_status": "unresolved",
+  "library_id": "goku_shared",
+  "measured_art_tracks": 23,
+  "omitted_assets": [
+    {
+      "asset": "source:goku_kaioken_specials_ORIGINAL",
+      "name": "goku_kaioken_specials_ORIGINAL",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_02",
+      "name": "goku_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_03",
+      "name": "goku_panel_03",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_04",
+      "name": "goku_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_05",
+      "name": "goku_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_06",
+      "name": "goku_panel_06",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_09",
+      "name": "goku_panel_09",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_10",
+      "name": "goku_panel_10",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_panel_13",
+      "name": "goku_panel_13",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:goku_transformed_specials_and_aura_ORIGINAL",
+      "name": "goku_transformed_specials_and_aura_ORIGINAL",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_g:jyochu_gion.amt:anim:001c": "hit_text_1c",
+    "db_s_01:db_s_01_e0.amt:anim:0000": "support_action_00_move_component",
+    "db_s_01:db_s_01_e0.amt:anim:0001": "support_action_00_move_component_db_s_01_e0_amt_id_57_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0002": "shared_support_action_00_move_component",
+    "db_s_01:db_s_01_e0.amt:anim:0003": "shared_support_action_00_move_component_db_s_01_e0_amt_id_59_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0004": "forward_b_move_component",
+    "db_s_01:db_s_01_e0.amt:anim:0005": "support_action_00_move_component_db_s_01_e0_amt_id_61_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0006": "support_action_00_move_component_db_s_01_e0_amt_id_62_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0007": "shared_support_action_00_move_component_db_s_01_e0_amt_id_63_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0008": "shared_support_action_00_move_component_db_s_01_e0_amt_id_64_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0009": "shared_support_action_00_move_component_db_s_01_e0_amt_id_65_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:000a": "forward_b_move_component_db_s_01_e0_amt_id_66_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:000b": "forward_b_move_component_db_s_01_e0_amt_id_67_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:000c": "unassigned_cyan_energy_sphere",
+    "db_s_01:db_s_01_e0.amt:anim:000d": "unassigned_cyan_horizontal_energy_beam",
+    "db_s_01:db_s_01_e0.amt:anim:000e": "unassigned_cyan_energy_sphere_trailing_edge",
+    "db_s_01:db_s_01_e0.amt:anim:000f": "forward_b_move_component_db_s_01_e0_amt_id_71_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0010": "forward_b_move_component_db_s_01_e0_amt_id_72_node_0",
+    "db_s_01:db_s_01_e0.amt:anim:0011": "forward_b_move_component_db_s_01_e0_amt_id_73_node_0",
+    "db_s_01_2:db_s_01_2.amt:anim:0000": "support_action_00_body",
+    "db_s_01_3:db_s_01_3.amt:anim:0000": "forward_b_body",
+    "source:goku_speech_component_11": "goku_speech_component_11",
+    "source:goku_speech_component_12": "goku_speech_component_12"
+  },
+  "sequences": 25,
+  "source_manifest": "jus_files/sprites/characters/Dragon Ball/goku/labeled_split/art.json",
+  "source_manifest_sha256": "cdbdce6633bebb474d3a1e9014e2068319c05868c7b23d07ae062ef5eb8d385e"
+}

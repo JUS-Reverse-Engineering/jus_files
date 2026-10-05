@@ -1,0 +1,2961 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "gohan",
+  "library_id": "gohan_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_1c",
+        "sequence": "hit_text_1c"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0",
+        "sequence": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0",
+        "sequence": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0",
+        "sequence": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0",
+        "sequence": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0",
+        "sequence": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0",
+        "sequence": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            18,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "30647ef5a85c5cc5b71c29f7ecb8c3e06b7d31ad80214b9b64971a94b7304db7",
+          "size": [
+            33,
+            56
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "9d9eee8d501f7db84cdf806aa81148a47918d76d77f69ddf25d931575d910d41",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            19,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "b11988603a381e2e732387a4aa6641dabe738421660bcdca0bb810f3b4ffea82",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            26,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "c428fb8fbd9382f9a5f769cce7b8408f0d2f2abc703a64bc5c075a8db73a938e",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            24,
+            43
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "942956cf3b53c2679f59d7dc7ad54f353de87c03d204a06effd074e8d22811bd",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            21,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "87e5a7fce13802fff737eff9f7136fd3d540cab442f3a0004b068f20c39487c0",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            20,
+            45
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "2e67b6da71d7fb132d80fde20a2b03149636cf6e68feae1bacaf2dbc33f5e2fb",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            20,
+            43
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426720
+          },
+          "sha256": "c8244b2be36fdcc402526be598200270ab4f7e19d6f8e3fdb53d8b7658df5372",
+          "size": [
+            44,
+            48
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_3.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 8
+            },
+            {
+              "frame": "f002",
+              "ticks": 16
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 8
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 7
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426848
+          },
+          "sha256": "4d430694c24ee7163703dfd6a8bc4957bfd2899bb3d9a6cf3e9ea54f9e34bf21",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e30_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_db_s_05_e3_amt_id_161_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            40,
+            36
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426848
+          },
+          "sha256": "69f3828900215a9ee31d50643fd314b139f8c287e0a58ebf76bd2cfe2b09eb57",
+          "size": [
+            80,
+            72
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e30_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0_identity"
+    },
+    "forward_b_move_component_db_s_05_e3_amt_id_162_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426848
+          },
+          "sha256": "312d0ff32075ec8246f584e901174533eb71b6a773a58d8a35b81e1f581749da",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e30_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0_identity"
+    },
+    "forward_b_move_component_db_s_05_e3_amt_id_163_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426848
+          },
+          "sha256": "988c83a45aeae47f8f94c31059b5a5be5019496a3ce3cb7f7bc3681e6eff58ec",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e30_.dtx:cell:3"
+        },
+        "f002": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0/002.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426848
+          },
+          "sha256": "568637e989bc38bec03529b27624e98d82be234ec85f896573580a2c82f4c942",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e30_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0_identity"
+    },
+    "forward_b_move_component_db_s_05_e3_amt_id_164_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426849
+          },
+          "sha256": "7f00449b2ef902bb0ffaa858170088c32cc0d1fa3a08530c028f77b979597609",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e31_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426849
+          },
+          "sha256": "3205ef898cc4b25b7fe22f71d077c6308b87d7bd1cc1e5198ff35f8cd911d0db",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e31_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0_identity"
+    },
+    "forward_b_move_component_db_s_05_e3_amt_id_165_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426849
+          },
+          "sha256": "f70b9aff963cde6a67d9de56910b244039ff1dfdfd11ac4c064c83c453dc7ade",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e31_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426849
+          },
+          "sha256": "33fc903513919d6c7d4a59a3eea1090937ef98eadf242c31d5f5c65a42cefb37",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_05_3:db_s_05_e31_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0_identity"
+    },
+    "hit_text_1c": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            28
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_1c/001.png",
+          "provenance": {
+            "cell_id": 28,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2359296
+          },
+          "sha256": "b3a571af04698d2ff288dd9dd8a9f11658d5e5fc7b24018c0147d662c3c52cb1",
+          "size": [
+            35,
+            44
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:28"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_1c",
+      "status": "candidate",
+      "unresolved_id": "hit_text_1c_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            20,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "ce714f975e288b0e1ba487c9a0c3b98b38923a8f8de4b7e95299519b4d610fef",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            23,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "5afff31855045e93d9cce6bdebc957b47594a4763978a976c0e0130e7cff632d",
+          "size": [
+            35,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            27,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "1d1dc27bd6b5fc0c39477bc45cc9e91f8be8eb88bc31fe500d8a3d359fc5160d",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            25,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "35badaf71cd6b04c19b47532d724c4f902a7dbb49ad5f1e63c0526baff101523",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            25,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "e73319ea93429b900359237e5db7bdadfadc7ab1d5dbc77889b179b4ae87ec7a",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            25,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "3fad24a4033dc908eec9fe16d1cfa461b5d4e8a2401ae94a741a1cef202c2ad1",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            25,
+            44
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426688
+          },
+          "sha256": "e3b8761f41b4e2824e8a2070dc8bd6a042e04c60aa26d8e8f5be90c519bd3ccc",
+          "size": [
+            45,
+            49
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_2.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 8
+            },
+            {
+              "frame": "f002",
+              "ticks": 19
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f005",
+              "ticks": 5
+            },
+            {
+              "frame": "f006",
+              "ticks": 5
+            },
+            {
+              "frame": "f005",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f005",
+              "ticks": 5
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "8cb81c38a9fe63c66d7b052ad01c05f0c145f181d252b99cccbc9b935d7a3687",
+          "size": [
+            16,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 22
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "276f90e9d4aa351adc5aa4f65a92012015770a1a9dd0848d70e87c75cd897a64",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 22
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "6f71f91927cafea275d967cc6c6b2066f408b0137d503bb8e43ec47a026fa750",
+          "size": [
+            64,
+            64
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "5876ad2499aefbd4e8883828ec06f0c5c0d6983e20f30a15c273e17503c729fc",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "e095275792190015efeb767dda9281659e093d3e2a7a3b0607691c0894b6cfeb",
+          "size": [
+            57,
+            64
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:4"
+        },
+        "f002": {
+          "anchor": [
+            26,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0/002.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "65d1e5f8c754fd3e23e402f561b6b9a53cff3ecfbfe1af2e50e4fb97cfbea7cc",
+          "size": [
+            50,
+            66
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:5"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0/003.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "6bbf090292e3177caa99cd2e6a285460a679a2adf9566fbee07721b0bfe14ca4",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:6"
+        },
+        "f004": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0/004.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "43078de44423e4ddf7ac37e9fb05e427076bcd50acaab4a33184a559b9822c33",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:7"
+        },
+        "f005": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0/005.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "f4cd98ea14664e88c445e808197be7185eb2e6cc10925df146e25cedc0d933c4",
+          "size": [
+            16,
+            16
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0/001.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "6d244f6b72b89907fe595c13b5ac60d12e9f8b36fea19690a0bb3e32db8231a6",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:9"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0/001.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "f806dea5ef7d63632ab346a05f78025f947494d56981bad6be721c28e5c860e5",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:10"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0/002.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "4174fcf12189a2353811017df10974ddeebbef0aa3412d1bdd5a71751edac117",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:11"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0/001.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "a125fb6db089e08c7063cb93728008d9bfcdebe9c93028a70ccded6981ed9e73",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:12"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0/002.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "ad623f6497af284ff97e0094d5238aca792ed3c6bed0f90105966dcffe65e117",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:13"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0_identity"
+    },
+    "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0/001.png",
+          "provenance": {
+            "cell_id": 14,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "f569a61aac033000c41c9802d1dd885223e984774a36462c09c289483f41c22f",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:14"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0/002.png",
+          "provenance": {
+            "cell_id": 15,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Dragon Ball/gohan/labeled_split/art.json",
+            "manifest_sha256": "c887ac6d241be2072786ddfa0ae2cbb36e5c81f3a31b14f3a8c428d53c18990c",
+            "texture_id": 1426816
+          },
+          "sha256": "809081d0b82828564090b99f72268c3024a7ec504a99737883ec5f21854f514e",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "db_s_05_2:db_s_05_e20_.dtx:cell:15"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1c_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_129_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_130_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_131_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_132_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_133_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_134_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_135_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_2:db_s_05_e2.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_db_s_05_e2_amt_id_136_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_161_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_162_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_163_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_164_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset db_s_05_3:db_s_05_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_db_s_05_e3_amt_id_165_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "display_name": "Vegeta: Shared art",
+  "errors": [],
+  "frames": 63,
+  "inventory_status": "unresolved",
+  "library_id": "vegeta_shared",
+  "measured_art_tracks": 23,
+  "omitted_assets": [
+    {
+      "asset": "source:vegeta_panel_01",
+      "name": "vegeta_panel_01",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_panel_02",
+      "name": "vegeta_panel_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_panel_03",
+      "name": "vegeta_panel_03",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_panel_04",
+      "name": "vegeta_panel_04",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_panel_05",
+      "name": "vegeta_panel_05",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_panel_06",
+      "name": "vegeta_panel_06",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "source:vegeta_support_special_components_ORIGINAL",
+      "name": "vegeta_support_special_components_ORIGINAL",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0001": "orange_hit_spark_01",
+    "comm_a:jyocyu_efe_a.amt:anim:0014": "blue_hit_spark_14",
+    "comm_g:jyochu_gion.amt:anim:001c": "hit_text_1c",
+    "db_s_03:db_s_03_e0.amt:anim:0000": "support_action_00_move_component",
+    "db_s_03:db_s_03_e0.amt:anim:0001": "support_action_00_move_component_db_s_03_e0_amt_id_65_node_0",
+    "db_s_03:db_s_03_e0.amt:anim:0002": "forward_b_move_component",
+    "db_s_03:db_s_03_e0.amt:anim:0003": "forward_b_move_component_db_s_03_e0_amt_id_67_node_0",
+    "db_s_03_2:db_s_03_2.amt:anim:0000": "support_action_00_body",
+    "db_s_03_2:db_s_03_e2.amt:anim:0000": "support_action_00_move_component_db_s_03_e2_amt_id_128_node_0",
+    "db_s_03_2:db_s_03_e2.amt:anim:0001": "support_action_00_move_component_db_s_03_e2_amt_id_129_node_0",
+    "db_s_03_2:db_s_03_e2.amt:anim:0002": "support_action_00_move_component_db_s_03_e2_amt_id_130_node_0",
+    "db_s_03_2:db_s_03_e2.amt:anim:0003": "support_action_00_move_component_db_s_03_e2_amt_id_131_node_0",
+    "db_s_03_2:db_s_03_e2.amt:anim:0004": "support_action_00_move_component_db_s_03_e2_amt_id_132_node_0",
+    "db_s_03_2:db_s_03_e2.amt:anim:0005": "support_action_00_move_component_db_s_03_e2_amt_id_133_node_0",
+    "db_s_03_3:db_s_03_3.amt:anim:0000": "forward_b_body",
+    "db_s_03_3:db_s_03_e3.amt:anim:0000": "forward_b_move_component_db_s_03_e3_amt_id_160_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0001": "forward_b_move_component_db_s_03_e3_amt_id_161_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0002": "forward_b_move_component_db_s_03_e3_amt_id_162_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0003": "forward_b_move_component_db_s_03_e3_amt_id_163_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0004": "forward_b_move_component_db_s_03_e3_amt_id_164_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0005": "forward_b_move_component_db_s_03_e3_amt_id_165_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0006": "forward_b_move_component_db_s_03_e3_amt_id_166_node_0",
+    "db_s_03_3:db_s_03_e3.amt:anim:0007": "forward_b_move_component_db_s_03_e3_amt_id_167_node_0"
+  },
+  "sequences": 23,
+  "source_manifest": "jus_files/sprites/characters/Dragon Ball/vegeta/labeled_split/art.json",
+  "source_manifest_sha256": "ff163e609b5652e5af5c737e9ca345bc564f21df16a3624fe5dca7b882acaa1d"
+}

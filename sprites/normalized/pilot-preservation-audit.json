@@ -1,0 +1,15 @@
+{
+  "pilots": {
+    "kakashi": {
+      "sequences": 49,
+      "frames": 224,
+      "aliases_and_presentation_preserved": true
+    },
+    "yusuke": {
+      "sequences": 39,
+      "frames": 215,
+      "aliases_and_presentation_preserved": true
+    }
+  },
+  "errors": []
+}

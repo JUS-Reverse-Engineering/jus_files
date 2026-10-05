@@ -1,0 +1,5008 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "naruto",
+  "library_id": "naruto_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_00",
+        "sequence": "orange_hit_spark_00"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_13",
+        "sequence": "blue_hit_spark_13"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_05",
+        "sequence": "hit_text_05"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_22",
+        "sequence": "hit_text_22"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "shared_support_action_00_move_component",
+        "sequence": "shared_support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0",
+        "sequence": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0",
+        "sequence": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0",
+        "sequence": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0",
+        "sequence": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_bold_impact_sfx_short",
+        "sequence": "forward_b_bold_impact_sfx_short"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_bold_impact_sfx_wide",
+        "sequence": "forward_b_bold_impact_sfx_wide"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0",
+        "sequence": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+          "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+        ],
+        "required": false,
+        "role": "mugshot",
+        "sequence": "mugshot"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_13": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/001.png",
+          "provenance": {
+            "cell_id": 80,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "2a210de6f4b2b20427e57626189747e20e880272c209313e99a105163e7ee87f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:80"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/002.png",
+          "provenance": {
+            "cell_id": 81,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "a1d90fbdecd886d5d5cf1eb021beab6ced2e6ec25cadf62d25a3d3ecc4846870",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:81"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/003.png",
+          "provenance": {
+            "cell_id": 82,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "bafa54e3ea2ff2fd672a3367d36b5e5f46445d731bea5188f1b8102c19a536ef",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:82"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/004.png",
+          "provenance": {
+            "cell_id": 83,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "f9e774a02831311af7a89e870ab96530313f7651c9b28f499d3a5931f5aee4ea",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:83"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_13",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_13_identity"
+    },
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            25,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "981e4d5611cfe3e53e64e0e9e082acf839f35d0decf2c882bfbdcc789685949a",
+          "size": [
+            41,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            21,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "cf25f36cd397e313928ce127d53a927a6f63948cce279153c1734558b5175fab",
+          "size": [
+            37,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "787264c45ff2395be57eace14e31f768151ca56c7792f3316b0f1c31ef6bddda",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "d3b216f0faae62a6be8912928b04f10edad51e6a01f43a82c873042767fb7e53",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            23,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "8bfaf72da09fb8a62960ee1f84dee37d485cf7ffa723564e7f1c6364fda1e700",
+          "size": [
+            37,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            21,
+            51
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 3]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "e9662b7f0bad43774977fa8e9e9e40e2cf5efb9e4830f0e317fda5218f62f6fa",
+          "size": [
+            57,
+            51
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            15,
+            38
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 6]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "4dcfba04f185fb68070b4e7b5397ddb5f36d12e710b1a7aa96711c87d99177a1",
+          "size": [
+            40,
+            38
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            19,
+            37
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "d67cd7d180cbd46b5ea5426bcb072839f2d09c87052b7e44c5e1761ed61c8847",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:7"
+        },
+        "f009": {
+          "anchor": [
+            25,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/009.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 9]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "f16dfcfc0620b991451c091f6539d7b8b34f0f314642ab79b509caecc9aea2b3",
+          "size": [
+            40,
+            41
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:8"
+        },
+        "f010": {
+          "anchor": [
+            18,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/010.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 7]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "df2807154423f672946c66504e11f4b0602baeeb2219a33723757df8a41ff812",
+          "size": [
+            32,
+            47
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:9"
+        },
+        "f011": {
+          "anchor": [
+            21,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/011.png",
+          "provenance": {
+            "cell_id": 15,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "6327c2480e3977c51ad29dc0632b5172f44f303af4db1f9fa0c84e17eee5f1e8",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:15"
+        },
+        "f012": {
+          "anchor": [
+            22,
+            60
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/012.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 12]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "f0196d3c383a251b0454f4cf8f514cd4129780ac64befdbf17b593cec1552fb4",
+          "size": [
+            34,
+            60
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:10"
+        },
+        "f013": {
+          "anchor": [
+            21,
+            57
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/013.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "a8050d0aa8ff911897fa42f0f2730d8a18c52a688224dcf11cb9eedd6c4d00b8",
+          "size": [
+            59,
+            57
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:11"
+        },
+        "f014": {
+          "anchor": [
+            21,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/014.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "132a3508a9aca1be40a00b9bbc6b892a6c9d8070b20a8ece287f315d89ec9de8",
+          "size": [
+            60,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:12"
+        },
+        "f015": {
+          "anchor": [
+            21,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/015.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "82110e3c9d1345c2fc0081a3c924370d760bc774a51e389a004c357edacb06b4",
+          "size": [
+            40,
+            58
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:13"
+        },
+        "f016": {
+          "anchor": [
+            28,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/016.png",
+          "provenance": {
+            "cell_id": 14,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442080
+          },
+          "sha256": "615be98be2090064fc4eb2f526275b4b9f9ff4670b435ad42f7e49666e259743",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_3.dtx:cell:14"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010",
+        "f011",
+        "f012",
+        "f013",
+        "f014",
+        "f015",
+        "f016"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 6
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 7
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f006",
+              "ticks": 3
+            },
+            {
+              "frame": "f007",
+              "ticks": 3
+            },
+            {
+              "frame": "f008",
+              "ticks": 3
+            },
+            {
+              "frame": "f009",
+              "ticks": 3
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            },
+            {
+              "frame": "f010",
+              "ticks": 1
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 8
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 3
+            },
+            {
+              "frame": "f008",
+              "ticks": 3
+            },
+            {
+              "frame": "f009",
+              "ticks": 3
+            },
+            {
+              "frame": "f010",
+              "ticks": 3
+            },
+            {
+              "frame": "f007",
+              "ticks": 3
+            },
+            {
+              "frame": "f008",
+              "ticks": 3
+            },
+            {
+              "frame": "f009",
+              "ticks": 3
+            },
+            {
+              "frame": "f007",
+              "ticks": 3
+            },
+            {
+              "frame": "f008",
+              "ticks": 3
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 8
+            },
+            {
+              "frame": "f013",
+              "ticks": 3
+            },
+            {
+              "frame": "f014",
+              "ticks": 2
+            },
+            {
+              "frame": "f015",
+              "ticks": 2
+            },
+            {
+              "frame": "f016",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_bold_impact_sfx_short": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            20,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_bold_impact_sfx_short/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442113
+          },
+          "sha256": "c2e9b12d83092ab5378916591cc9deb7ba8825abedc108d924331fb45bc5596c",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e01_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 14
+            }
+          ]
+        }
+      },
+      "role": "forward_b_bold_impact_sfx_short",
+      "status": "candidate",
+      "unresolved_id": "forward_b_bold_impact_sfx_short_identity"
+    },
+    "forward_b_bold_impact_sfx_wide": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            28
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_bold_impact_sfx_wide/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442113
+          },
+          "sha256": "9ba5dcbd7c35a5ce4b9cd5834f614860252b05869e382205890354fe2a9cc2e8",
+          "size": [
+            64,
+            56
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e01_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_bold_impact_sfx_wide",
+      "status": "candidate",
+      "unresolved_id": "forward_b_bold_impact_sfx_wide_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "42506e67256a4a81a26dc18bd262b0380786030430d1dcd7a8b054c05625343c",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 23
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_161_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "69b98dfa1a2ff368bbe4da66876e7a0afd85221f399fb8b18dca76c1cc07f727",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 19
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_162_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "0ee4344bf2a726371ff84cd9f70db051b1026276b9e6ba68aca5effb8b9ec7ba",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 17
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_163_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "7a7021b57de8c916227dfcbacb3b6a415b0bfa7c6827d5a6f0deac17652f003e",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_164_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442210
+          },
+          "sha256": "361227508acb04847909605e8b01d2b3917e911638aa2ec3db3e641f1e5755e3",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e32_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 19
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_165_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            20
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0/001.png",
+          "provenance": {
+            "cell_id": 16,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "3dc626076610eb5a10d6975c67222d0e8ff109219005f5896d0033a22b839f54",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:16"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 14
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_168_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            128,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "1967bff3b929443ec6c2941d6d7b1c52aa25ffb0a7a3ae1f765bed8bf722031d",
+          "size": [
+            128,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:4"
+        },
+        "f002": {
+          "anchor": [
+            124,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/002.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 22, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "42fad8c37ef1cdf7254f00ace79fd40ec6acedc43e9a8c088e3f16b4e6df4fbd",
+          "size": [
+            124,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:5"
+        },
+        "f003": {
+          "anchor": [
+            114,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/003.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 19, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "91776424efbdf165160dacd0d1bc124c67a05fc68f0601a8a7d591f2ac9e298f",
+          "size": [
+            114,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:6"
+        },
+        "f004": {
+          "anchor": [
+            104,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/004.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 16, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "a76d03e451df72b5f5363b65b23c86cce1cc85a4e197958fd653db6f628c13c3",
+          "size": [
+            104,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:10"
+        },
+        "f005": {
+          "anchor": [
+            92,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/005.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 8, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "23a9ef1de674964d5a28e8c7136ae1f12ef5e42fd1d9c354e3b5cc8de04104d0",
+          "size": [
+            92,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:11"
+        },
+        "f006": {
+          "anchor": [
+            80,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/006.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "f3caadec9082d2659e569377f3d7cd167cf47865c5bfc3b018a8f2f4143fd803",
+          "size": [
+            80,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:12"
+        },
+        "f007": {
+          "anchor": [
+            72,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/007.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 8, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "cbe8b8aa5aeebe6e91e4b993243ec3f75dc8eb15dfccede0cfa8150047ac65c6",
+          "size": [
+            72,
+            41
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:0"
+        },
+        "f008": {
+          "anchor": [
+            72,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/008.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 8, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "a03ec03ad63ea4477485245f49a45f5a12362e571fb06b6b292a72e72ea4a0e7",
+          "size": [
+            72,
+            41
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:2"
+        },
+        "f009": {
+          "anchor": [
+            64,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/009.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "8b2b936c9345d1e456786d1121973de43f1274e7b3f8cb539123b05f5d6b03fc",
+          "size": [
+            64,
+            49
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:4"
+        },
+        "f010": {
+          "anchor": [
+            73,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/010.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 10, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "77bff40d0fc2f8e5e0779362a01bab3557c7ab8579c7e07dd8b054341812e981",
+          "size": [
+            73,
+            59
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:6"
+        },
+        "f011": {
+          "anchor": [
+            83,
+            66
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/011.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 18, 6]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "c3018c34ebbe157684462b8d7313983427af35235df012a0abbaebf705f14c87",
+          "size": [
+            83,
+            66
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:7"
+        },
+        "f012": {
+          "anchor": [
+            88,
+            67
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/012.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 25, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "0287e91946428bacf867727777ede38d03d5f14203fd4048803d58da71c2a2a7",
+          "size": [
+            88,
+            67
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:8"
+        },
+        "f013": {
+          "anchor": [
+            93,
+            65
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/013.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 31, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "e68d45844116f43e8929c89db89de701f759f3bb2be0afaada6fbbbab7a44155",
+          "size": [
+            93,
+            65
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:9"
+        },
+        "f014": {
+          "anchor": [
+            96,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/014.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 35, 3]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "efb4d275b15799c621272fb655ddcd559247d626784990edc4abe1841b2c477a",
+          "size": [
+            96,
+            63
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:10"
+        },
+        "f015": {
+          "anchor": [
+            99,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0/015.png",
+          "provenance": {
+            "cell_id": 11,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 38, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "295d9a787355c1b5d22fc712280a5a2a17e6be061235ae3780139f48fcf5fd25",
+          "size": [
+            99,
+            59
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:11"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010",
+        "f011",
+        "f012",
+        "f013",
+        "f014",
+        "f015"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 1
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            },
+            {
+              "frame": "f003",
+              "ticks": 1
+            },
+            {
+              "frame": "f004",
+              "ticks": 1
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 10
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            },
+            {
+              "frame": "f011",
+              "ticks": 2
+            },
+            {
+              "frame": "f012",
+              "ticks": 3
+            },
+            {
+              "frame": "f013",
+              "ticks": 3
+            },
+            {
+              "frame": "f014",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 13
+            },
+            {
+              "frame": "f001",
+              "ticks": 15
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0_identity"
+    },
+    "forward_b_move_component_na_s_01_e3_amt_id_169_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/001.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [24, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "76efe566a0a167451a4098d619bc701ae695e027d3e91cf0d700fea66bd84cd6",
+          "size": [
+            128,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:7"
+        },
+        "f002": {
+          "anchor": [
+            0,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/002.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [22, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "c1bece3508327c146362519587ceba7deb7ddf1b6e199cd22053870cceb5bfdf",
+          "size": [
+            124,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:8"
+        },
+        "f003": {
+          "anchor": [
+            0,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/003.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [19, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "2c53b10d5fc3ea564039f27e57d966f502c1783c2671fcc86a835685ea616fcd",
+          "size": [
+            114,
+            48
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:9"
+        },
+        "f004": {
+          "anchor": [
+            0,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/004.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [16, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "1965d0aa3fef80e2f30cc8839f1129b116db20bc5edc455e512e353ce9bea702",
+          "size": [
+            104,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:13"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/005.png",
+          "provenance": {
+            "cell_id": 14,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "938ebf9734923a6600deb4abb7f9f0bbe9b94fa2a92baadb782f45c62bc9685a",
+          "size": [
+            92,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:14"
+        },
+        "f006": {
+          "anchor": [
+            0,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/006.png",
+          "provenance": {
+            "cell_id": 15,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442208
+          },
+          "sha256": "9f2d0d953defb8a104e9f430717ad4230bd4eb434baea0e43bc52dd08b95293a",
+          "size": [
+            80,
+            33
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e30_.dtx:cell:15"
+        },
+        "f007": {
+          "anchor": [
+            0,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/007.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "c5f71a5f4c6d6408bc30e9131f390856e86379581d663edeb5cf33371c1e4581",
+          "size": [
+            72,
+            41
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:1"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/008.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "1e12778cb9f95838484c099d3fa847aae7b37fc1db9436c5165e0485332040ee",
+          "size": [
+            72,
+            41
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:3"
+        },
+        "f009": {
+          "anchor": [
+            0,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/009.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "fe9834ef08fbf1556bd539d423cbe85e3a2a1fac11e5b7443789965a58a47f9a",
+          "size": [
+            64,
+            49
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:5"
+        },
+        "f010": {
+          "anchor": [
+            0,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/010.png",
+          "provenance": {
+            "cell_id": 12,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [10, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "e349828f2c5d8456f590cd4603c944c59a3522bf4bc002557dcd34a976e9d601",
+          "size": [
+            73,
+            59
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:12"
+        },
+        "f011": {
+          "anchor": [
+            0,
+            66
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/011.png",
+          "provenance": {
+            "cell_id": 13,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [18, 0, 0, 6]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "fc2ff54dbbc78b25745916b330a9e0fb905fac56e58c066f25013e3b6acb02e2",
+          "size": [
+            83,
+            66
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:13"
+        },
+        "f012": {
+          "anchor": [
+            0,
+            67
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/012.png",
+          "provenance": {
+            "cell_id": 14,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [25, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "5500b0eb5e780fdf7866206321e7dc863e590df14cb7a9cecd5309edbfcc9c4c",
+          "size": [
+            88,
+            67
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:14"
+        },
+        "f013": {
+          "anchor": [
+            0,
+            65
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/013.png",
+          "provenance": {
+            "cell_id": 15,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [31, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "ecc888e524a71aab443efa67b5ebb37cf981c7df165d5ea455b165f85815dabe",
+          "size": [
+            93,
+            65
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:15"
+        },
+        "f014": {
+          "anchor": [
+            0,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/014.png",
+          "provenance": {
+            "cell_id": 16,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [35, 0, 0, 3]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "cb52ef5a02b8fc2f771cc935c130b5d8646eea745d71a2869df0f9bb84a4fc31",
+          "size": [
+            96,
+            63
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:16"
+        },
+        "f015": {
+          "anchor": [
+            0,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0/015.png",
+          "provenance": {
+            "cell_id": 17,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [38, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442209
+          },
+          "sha256": "f3123f3bb7a4e024396c7c289bd037c5a092e4f2b2731d35d1f6e1f353057cc2",
+          "size": [
+            99,
+            59
+          ],
+          "source_frame_id": "na_s_01_3:na_s_01_e31_.dtx:cell:17"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010",
+        "f011",
+        "f012",
+        "f013",
+        "f014",
+        "f015"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f001",
+              "ticks": 1
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            },
+            {
+              "frame": "f003",
+              "ticks": 1
+            },
+            {
+              "frame": "f004",
+              "ticks": 1
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 8
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            },
+            {
+              "frame": "f011",
+              "ticks": 2
+            },
+            {
+              "frame": "f012",
+              "ticks": 3
+            },
+            {
+              "frame": "f013",
+              "ticks": 3
+            },
+            {
+              "frame": "f014",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 3
+            },
+            {
+              "frame": "f015",
+              "ticks": 13
+            },
+            {
+              "frame": "f015",
+              "ticks": 15
+            },
+            {
+              "frame": "f015",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0_identity"
+    },
+    "hit_text_05": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            31,
+            27
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_05/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2359296
+          },
+          "sha256": "ef99686018f7880cc04667b322198d0788185bea4c013f07a6b39098332baa0d",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_05",
+      "status": "candidate",
+      "unresolved_id": "hit_text_05_identity"
+    },
+    "hit_text_22": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            47,
+            30
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_22/001.png",
+          "provenance": {
+            "cell_id": 34,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2359296
+          },
+          "sha256": "a0143bdd9d92aa79147894ef386c815b77ccd2de727f7b4c7309ca1eeb6689b1",
+          "size": [
+            99,
+            46
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:34"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_22",
+      "status": "candidate",
+      "unresolved_id": "hit_text_22_identity"
+    },
+    "mugshot": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+            "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+          ],
+          "facing": "right",
+          "path": "mugshot/001.png",
+          "provenance": {
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76"
+          },
+          "sha256": "122ab779240756f3cb7bdc19fed63eba85d5df8df825ae8fd92399f550d9b90a",
+          "size": [
+            120,
+            176
+          ],
+          "source_frame_id": "sheet:panel_3:{\"path\": \"labeled_split/misc/mugshot_frames/000.png\", \"pieces\": [{\"at\": [0, 0], \"rect\": [9, 26, 129, 202], \"source\": \"Naruto.png\"}]}"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+            "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+          ],
+          "status": "unresolved",
+          "unresolved_id": "mugshot_playback"
+        }
+      },
+      "role": "mugshot",
+      "status": "candidate",
+      "unresolved_id": "mugshot_identity"
+    },
+    "orange_hit_spark_00": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "169fbf0f1cdb5152c39fde48e9d948d8335d8c80d4ee33a7e81f8f409f1ef27a",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "7f7e237150ee3bed936490f14727aff50558c277eddbac1c68a201557f592a9f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "d424d7809de950ebf3dcb9318b6e4e8a27f00e7868e701c0b050752624a8b19b",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "ad79013e1a3b4295a8ce895f72bfdc3e20c6f758fcb9e95e39c5dd6c4cf503b4",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_00",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_00_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "shared_support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "shared_support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "b74c7a3b3804f6023b01a1e523d9caf09c8e45f7ddc8f4178fb1deafcf87f004",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "na_s_01:na_s_01_e00_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "shared_support_action_00_move_component/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "971280da3bc068237899cc5c26d50a46cdb584844d5d8c5e0979898316c98282",
+          "size": [
+            48,
+            56
+          ],
+          "source_frame_id": "na_s_01:na_s_01_e00_.dtx:cell:3"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "shared_support_action_00_move_component/003.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "3673307a69e16942ec9f76a987ae350da8365e023cd86f59b159859790eee562",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "na_s_01:na_s_01_e00_.dtx:cell:4"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "shared_support_action_00_move_component/004.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 16]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "21744c440ed76b68e2466d85f08fa9266a086eb23bf8f0f501c98237553dbc15",
+          "size": [
+            48,
+            72
+          ],
+          "source_frame_id": "na_s_01:na_s_01_e00_.dtx:cell:5"
+        },
+        "f005": {
+          "anchor": [
+            16,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "shared_support_action_00_move_component/005.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "cdb8611686900d78168742fc2a393659bf026081aa654df30a69fea0a77f9df9",
+          "size": [
+            40,
+            72
+          ],
+          "source_frame_id": "na_s_01:na_s_01_e00_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "shared_support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "shared_support_action_00_move_component_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            25,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442048
+          },
+          "sha256": "981e4d5611cfe3e53e64e0e9e082acf839f35d0decf2c882bfbdcc789685949a",
+          "size": [
+            41,
+            56
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            21,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442048
+          },
+          "sha256": "cf25f36cd397e313928ce127d53a927a6f63948cce279153c1734558b5175fab",
+          "size": [
+            37,
+            56
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442048
+          },
+          "sha256": "787264c45ff2395be57eace14e31f768151ca56c7792f3316b0f1c31ef6bddda",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442048
+          },
+          "sha256": "d3b216f0faae62a6be8912928b04f10edad51e6a01f43a82c873042767fb7e53",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_2.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 106
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            },
+            {
+              "frame": "f002",
+              "ticks": 5
+            },
+            {
+              "frame": "f001",
+              "ticks": 22
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            44,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "c2b76bbdff5077c1dbb3a85fec6072817f0d7427a4cbb5aec24a5569b4758311",
+          "size": [
+            88,
+            24
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e00_.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 24
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            44,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0/001.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442112
+          },
+          "sha256": "b04cf37edf428f7019b2a28f3c7cc645b9a3dc22ed8f25b6d1292055dc2332cc",
+          "size": [
+            88,
+            24
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e00_.dtx:cell:8"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0_identity"
+    },
+    "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0/001.png",
+          "provenance": {
+            "cell_id": 10,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "cda4bcc8d9354295068f70e63238a214a8ecf9c40ec10a1713dcdabc11f35806",
+          "size": [
+            32,
+            80
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:10"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0_identity"
+    },
+    "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            20,
+            43
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 3]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "9fce8113adb21d4c257514413bd8f515c531afbdabe307a0d73665373ce763f1",
+          "size": [
+            40,
+            43
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            36
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 12]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "afb64a917e7d2f83a5f6ddb5346dc56f716a36ddaec4ec404e9e2bfe5b3e52a6",
+          "size": [
+            24,
+            36
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:0"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/003.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "4f0e7d6e04ae051099297e57eb4f8db9e26c36cf8c64cde68f3cace966e903af",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:1"
+        },
+        "f004": {
+          "anchor": [
+            38,
+            59
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "237acc44d542725da3c9bd7984cb2390cc1ec6d67c1911a3e5bbf094c33553f7",
+          "size": [
+            78,
+            69
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            44,
+            62
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "2b5a5a1f65307ade282ab387b46488552bb3accee7bd12e546653fa35cb01ef6",
+          "size": [
+            89,
+            76
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            50,
+            67
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "a4800664d7a13e0b66b214896a606f7045c11660389edeb99e8002d12fedeff0",
+          "size": [
+            102,
+            87
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            56,
+            73
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "7ab41ef0331a24c9a1122f838d4ef4dba0997f42d6bfe294dddecd682514117d",
+          "size": [
+            114,
+            101
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            63,
+            77
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "350315b849e8ec8a6cd918642602458fdf8d4679cbe80afe107afd329862c4a5",
+          "size": [
+            126,
+            110
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:7"
+        },
+        "f009": {
+          "anchor": [
+            66,
+            80
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/009.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "c63c0841c40fe2e5a00812f282926c2beb52da7a1dd55e05711bed5572d0c211",
+          "size": [
+            133,
+            119
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:8"
+        },
+        "f010": {
+          "anchor": [
+            66,
+            80
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0/010.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442176
+          },
+          "sha256": "3c62f47aa27bfbdc7dccad6d551924038de3e9c11a94130a235723d33d794cf5",
+          "size": [
+            133,
+            119
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e20_.dtx:cell:9"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f009",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0_identity"
+    },
+    "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            46,
+            58
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442177
+          },
+          "sha256": "cf8d5e63fb394bbdeaf47ef1ce36a622970ca125fc3225a44a215b6961545baa",
+          "size": [
+            92,
+            58
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e21_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            46,
+            58
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Naruto/naruto/labeled_split/art.json",
+            "manifest_sha256": "5a042a9f7cffb14871d799cfbacebacd6603793bd7284f7a0cf583a73eab3e76",
+            "texture_id": 1442178
+          },
+          "sha256": "6cdbd3a034781ca84114f4467b0a2820addfdb860b9cb39c0f8ba4915fed52a4",
+          "size": [
+            92,
+            58
+          ],
+          "source_frame_id": "na_s_01_2:na_s_01_e22_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 17
+            },
+            {
+              "frame": "f002",
+              "ticks": 9
+            },
+            {
+              "frame": "f001",
+              "ticks": 8
+            },
+            {
+              "frame": "f002",
+              "ticks": 10
+            },
+            {
+              "frame": "f001",
+              "ticks": 9
+            },
+            {
+              "frame": "f002",
+              "ticks": 9
+            },
+            {
+              "frame": "f001",
+              "ticks": 8
+            },
+            {
+              "frame": "f002",
+              "ticks": 9
+            },
+            {
+              "frame": "f001",
+              "ticks": 32
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_05_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_05_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_22_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_22_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "shared_support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01:na_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "shared_support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_129_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_130_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_131_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_2:na_s_01_e2.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_na_s_01_e2_amt_id_132_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_161_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_162_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_163_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_164_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_165_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_bold_impact_sfx_short_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_bold_impact_sfx_short_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_bold_impact_sfx_wide_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_bold_impact_sfx_wide_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_168_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset na_s_01_3:na_s_01_e3.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_na_s_01_e3_amt_id_169_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "id": "mugshot_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sheet:panel_3; body/component/form ownership remains in export-provenance.json.",
+        "Source authoring positive-x reference coordinates retained; runtime facing/selection remains candidate."
+      ],
+      "id": "mugshot_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "display_name": "Nami: Shared art",
+  "errors": [],
+  "frames": 59,
+  "inventory_status": "unresolved",
+  "library_id": "nami_shared",
+  "measured_art_tracks": 12,
+  "omitted_assets": [
+    {
+      "asset": "sheet:panel_1k",
+      "name": "panel_1k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_2k",
+      "name": "panel_2k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_3k",
+      "name": "panel_3k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_4k",
+      "name": "panel_4k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_4k_variant_02",
+      "name": "panel_4k_variant_02",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_5k",
+      "name": "panel_5k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    },
+    {
+      "asset": "sheet:panel_6k",
+      "name": "panel_6k",
+      "reason": "Non-animation portrait/HUD/source reference retained in authoring package."
+    }
+  ],
+  "package_role": "form_container",
+  "required_role_omissions": [],
+  "runtime_bindings": "Existing pilot bindings retained; no inferred active aliases.",
+  "runtime_grade": "candidate",
+  "selected_assets": {
+    "comm_a:jyocyu_efe_a.amt:anim:0000": "orange_hit_spark_00",
+    "comm_a:jyocyu_efe_a.amt:anim:0013": "blue_hit_spark_13",
+    "comm_c:jyocyu_efe_c.amt:anim:0000": "dash_dust",
+    "comm_g:jyochu_gion.amt:anim:001b": "hit_text_1b",
+    "comm_g:jyochu_gion.amt:anim:001f": "hit_text_1f",
+    "op_s_04:op_s_04_e0.amt:anim:0000": "forward_b_pink_heart_burst",
+    "op_s_04_2:op_s_04_2.amt:anim:0000": "support_action_00_body",
+    "op_s_04_2:op_s_04_e2.amt:anim:0000": "support_action_00_move_component",
+    "op_s_04_2:op_s_04_e2.amt:anim:0001": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0",
+    "op_s_04_2:op_s_04_e2.amt:anim:0002": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0",
+    "op_s_04_3:op_s_04_3.amt:anim:0000": "forward_b_body",
+    "op_s_04_3:op_s_04_e3.amt:anim:0000": "forward_b_move_component"
+  },
+  "sequences": 12,
+  "source_manifest": "jus_files/sprites/characters/One Piece/nami/labeled_split/art.json",
+  "source_manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a"
+}

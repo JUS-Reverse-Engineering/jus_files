@@ -1,0 +1,4017 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "yoh_asakura",
+  "library_id": "yoh_asakura_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_01",
+        "sequence": "orange_hit_spark_01"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_07",
+        "sequence": "orange_hit_spark_07"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_14",
+        "sequence": "blue_hit_spark_14"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_1a",
+        "sequence": "blue_hit_spark_1a"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "dash_dust",
+        "sequence": "dash_dust"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_16",
+        "sequence": "hit_text_16"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0",
+        "sequence": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0",
+        "sequence": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0",
+        "sequence": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0",
+        "sequence": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_exclamation_star_sfx",
+        "sequence": "forward_b_exclamation_star_sfx"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_14": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/001.png",
+          "provenance": {
+            "cell_id": 84,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "edef8e6ceb8da9d31c5a244d4b611f2500734cfccddd27001f4c5a568239858a",
+          "size": [
+            32,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:84"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/002.png",
+          "provenance": {
+            "cell_id": 85,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "94b3e57f0d578e05edb53aabba7c7ed84515cb81f06d5290e022776af105936a",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:85"
+        },
+        "f003": {
+          "anchor": [
+            32,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/003.png",
+          "provenance": {
+            "cell_id": 86,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "3c2ab3474ac7fee796729b7aef5f1459df735ef0496cde4291c57fced3d3e034",
+          "size": [
+            64,
+            80
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:86"
+        },
+        "f004": {
+          "anchor": [
+            32,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/004.png",
+          "provenance": {
+            "cell_id": 87,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "73a5b4742ee84f89a643b4686c8efc1b300287d38c98b36c60163a6d29586944",
+          "size": [
+            64,
+            96
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:87"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_14/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_14",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_14_identity"
+    },
+    "blue_hit_spark_1a": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            37,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/001.png",
+          "provenance": {
+            "cell_id": 126,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 5, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "91f06bae08965471bb53bea19db897c8704a85c3e6a92f1c8b39bece304391aa",
+          "size": [
+            37,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:126"
+        },
+        "f002": {
+          "anchor": [
+            28,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/002.png",
+          "provenance": {
+            "cell_id": 127,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "33c377ce5a498ce3b39a9879a62ccffe448ca36fccd94e8859a7df1432a3fb4a",
+          "size": [
+            32,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:127"
+        },
+        "f003": {
+          "anchor": [
+            28,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/003.png",
+          "provenance": {
+            "cell_id": 128,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "2263268682190dacf41f9a22fdd9d682a8a9f10110fef673a95f0e7b8ff6bf70",
+          "size": [
+            48,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:128"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/004.png",
+          "provenance": {
+            "cell_id": 129,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "7d99f899c06fdff8315cef2cf1a5cb0b1b25e565d8ae57184d938b5a35e3c62d",
+          "size": [
+            64,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:129"
+        },
+        "f005": {
+          "anchor": [
+            22,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/005.png",
+          "provenance": {
+            "cell_id": 130,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "3a8433e262a7738baca60cff67cceb870484f0cfbe9621f7cd9b161dd48a281a",
+          "size": [
+            64,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:130"
+        },
+        "f006": {
+          "anchor": [
+            5,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/006.png",
+          "provenance": {
+            "cell_id": 131,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "2263268682190dacf41f9a22fdd9d682a8a9f10110fef673a95f0e7b8ff6bf70",
+          "size": [
+            48,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:131"
+        },
+        "f007": {
+          "anchor": [
+            0,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/007.png",
+          "provenance": {
+            "cell_id": 132,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [11, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "c1c66481605df13360425163e371876a3e27731e87de31f5e844897fb8c08c9b",
+          "size": [
+            43,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:132"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_1a/008.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 1
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            },
+            {
+              "frame": "f003",
+              "ticks": 1
+            },
+            {
+              "frame": "f004",
+              "ticks": 1
+            },
+            {
+              "frame": "f005",
+              "ticks": 1
+            },
+            {
+              "frame": "f006",
+              "ticks": 1
+            },
+            {
+              "frame": "f007",
+              "ticks": 1
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_1a",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_1a_identity"
+    },
+    "dash_dust": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "7148dc97e5a99d83326b19b65020e2070a4eaa0333198e94f992a611d3614f43",
+          "size": [
+            24,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            40,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "352d0601a07774c64888727e5785f128a19f52d6636547f58b3c4fc1bb773e65",
+          "size": [
+            40,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "87926878cae8914191731f80f0facc5afb15b7d623a42abf95cdbb436ff32efe",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 16, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "88ab05974ff1449dcc8a91058a977e2bd6f4e5e0137a4620257c819aa1b863bb",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/005.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "b5d619473eaf3180bc6740eb246594781dd814a59cbd6dcc2c9f9f777db88e8a",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:5"
+        },
+        "f006": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/006.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:6"
+        },
+        "f007": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/007.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "c8c1d71d8cfa06bce0fc1d15f33c98be80c64116a94a98e6be5e8cfc45c005ec",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:7"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/008.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:8"
+        },
+        "f009": {
+          "anchor": [
+            57,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/009.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 25, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "1e0aa72fb093b4834750e32cb3c556d0e5dbe90d954869606786540e76cb570b",
+          "size": [
+            57,
+            33
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:9"
+        },
+        "f010": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/010.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f006",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f009",
+              "ticks": 1
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "dash_dust",
+      "status": "candidate",
+      "unresolved_id": "dash_dust_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            26,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "486bc03f34eab02ab7744c41397c557329cb2fbf3ea7bdbffd51457c78c7f395",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            15,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "4ea2a18ecd7365e8544091d65546cc5b54ccc5a7c0940896361d04d6d07f9232",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            33,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "0fd68bef4c14483e2ec7da5a8634ce97b36f4110f508e928d2d166e14cacc7c5",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            29,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "30060dbe87032650578a04e23f4675398c4bce04de3bd95d3e0d734496eb8503",
+          "size": [
+            36,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            28,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 4, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "34ab7c85096fb3ab28b16533a539af5b23800320dae6b91f418f3867aa58b066",
+          "size": [
+            28,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            18,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "3edc6ccd63b1a959ecf1eaa6f071e408b6de4edf7962c34ca3528a883f8fd281",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            29,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "84382beb016afc623cb81dd9d1d0367fde0eb2f1f314884ef4035614aed77a12",
+          "size": [
+            48,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            19,
+            50
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "db0f91db680bea19784a725f0651bfe4f29f39fb1da23ed48f99b421ff4450a5",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:7"
+        },
+        "f009": {
+          "anchor": [
+            16,
+            50
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/009.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "7e8008637765a5edd1bda54a89b7793c3e6c779e95bd7f611d8c152c263237cc",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:8"
+        },
+        "f010": {
+          "anchor": [
+            26,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/010.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245472
+          },
+          "sha256": "feb91d6d00e613525f2cefad96fb795b172d073e22c2ae5c6baa36e72fb156b8",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_3.dtx:cell:9"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            },
+            {
+              "frame": "f002",
+              "ticks": 16
+            },
+            {
+              "frame": "f003",
+              "ticks": 16
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 10
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 16
+            },
+            {
+              "frame": "f009",
+              "ticks": 6
+            },
+            {
+              "frame": "f010",
+              "ticks": 6
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_exclamation_star_sfx": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_exclamation_star_sfx/001.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245504
+          },
+          "sha256": "be2c5ff79fbdaebae1d8eb0f3fbef7163bd22b599776d2b556205f83ef22f4a9",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_e00_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_exclamation_star_sfx",
+      "status": "candidate",
+      "unresolved_id": "forward_b_exclamation_star_sfx_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "3275329629645adda5bc59dcc75ff7e8786b8cf5b6bcf8510ead172778abb136",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            4,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "bd490a4588b4ce058baf1201c806ee522048415e89b6bbf5b7ec7729a7564edb",
+          "size": [
+            8,
+            16
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e31_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            12,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "e01435fc66ef89fab216828e5f78e58f3193e8c982cfe5858bb209c0b91466e9",
+          "size": [
+            24,
+            24
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e31_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0/003.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "fbd1c553340d337b98ef9cbb001ab860e96591c85f6f2148477334e5aaa4c2c9",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "5e398d3c61480f3d1254ccee02597cc8fb8df8aea117224fdd205e0492bdb9f6",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "fae1d1291c84979f99ee68e310941bbb65f02eb038c294af4eadb556e91edb29",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e31_.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "144c3b7a95d11e6d2c1f2a6abc542c9ef1fb00d224ff8d53207339e6edfd4b70",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e31_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 8
+            },
+            {
+              "frame": "f001",
+              "ticks": 8
+            },
+            {
+              "frame": "f003",
+              "ticks": 8
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            48
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "374c8fb3bac1654fef51201a5e5e982c1a6517c4adda6f84b003b34750c5e733",
+          "size": [
+            40,
+            56
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            49
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "5d3cc082a7d15aa1ce4410329155b6d176763e67006b0360a63aaf967a807bb0",
+          "size": [
+            40,
+            57
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:3"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0/001.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "6ce6b6ce2eb9b96d4fb1e81467fd2990f857ee3d4f68a95a6479e8755d38208d",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:4"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0/002.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "11475b2452e7bae48a26e7c01a98de9fa15316aeaaf1c83c866ccd23fdadd522",
+          "size": [
+            40,
+            40
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245504
+          },
+          "sha256": "17f4cd6f7bcf07601cb2e3363bf02cac429d062c115dc77ad4341706fb30ec3b",
+          "size": [
+            32,
+            51
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e00_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245504
+          },
+          "sha256": "a1ebb77dbd1b0c02d1ac39e6db0639fa9adab26ea457b07a5054e51e70a51d26",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e00_.dtx:cell:2"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 20
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0/001.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245600
+          },
+          "sha256": "59782956603289390e18aea29aeaf5ad44e185ad6b1415387abe36ec287f5933",
+          "size": [
+            48,
+            32
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e30_.dtx:cell:7"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0/002.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "4af2cbc8d6d8a9c8d98b797818483c8b6ba33bbb11222912f1f5ee99e0bb630f",
+          "size": [
+            48,
+            32
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e31_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "1a5f5d2d8da4b465c29f45a313e5ccf22afd02f0b4c8bdad0fb891fe82f3ef78",
+          "size": [
+            48,
+            80
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_e31_.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 24
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0_identity"
+    },
+    "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0/001.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245601
+          },
+          "sha256": "3d69ff792b7e59aef5d23770e70a7356d71dcfc1deb85c6b4ce4b971e2b503c1",
+          "size": [
+            64,
+            32
+          ],
+          "source_frame_id": "sk_s_01_3:sk_s_01_e31_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0_identity"
+    },
+    "hit_text_16": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            33,
+            26
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_16/001.png",
+          "provenance": {
+            "cell_id": 22,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2359296
+          },
+          "sha256": "af9268229b039d3f88885e5a603e5396f2b9aa46477c48d454fa3a9321dde780",
+          "size": [
+            64,
+            46
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:22"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_16",
+      "status": "candidate",
+      "unresolved_id": "hit_text_16_identity"
+    },
+    "orange_hit_spark_01": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "ad686d138151dbe3aa219fdf81c73472d0438d8d75e91617af39932e132fe702",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/002.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "555f1204cb62d7c7f671e6a302feb4ee65928596827e2a68b3d34310bb849930",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:6"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/003.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "7e139e7bd5b65ec0ed4ed3c2cadfefad9810242a134e304610f16a13a5d87344",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:7"
+        },
+        "f004": {
+          "anchor": [
+            40,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/004.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "377a0de78262728f9558d7df942a5be301fd353f078f3990765b358e4d77cfcc",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:8"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_01/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_01",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_01_identity"
+    },
+    "orange_hit_spark_07": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            36,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/001.png",
+          "provenance": {
+            "cell_id": 45,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 4, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "040d882ffd0bb5843a6a6e98384c7966b971f840fd74888d9e4d353718a1d0d6",
+          "size": [
+            36,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:45"
+        },
+        "f002": {
+          "anchor": [
+            29,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/002.png",
+          "provenance": {
+            "cell_id": 46,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "6b82ebaa3ff48e969800d47d20cc8b2983822efdebd274a84686efefd84871cd",
+          "size": [
+            32,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:46"
+        },
+        "f003": {
+          "anchor": [
+            27,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/003.png",
+          "provenance": {
+            "cell_id": 47,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "8406a11fbad976fed4e2af624e08f81d0c116f9b1e06fafa8786180ad80b5f8e",
+          "size": [
+            48,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:47"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/004.png",
+          "provenance": {
+            "cell_id": 48,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "ab97d3fb6007df1de8af798df641741a933f58d27137210e649c991cc01430f0",
+          "size": [
+            56,
+            47
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:48"
+        },
+        "f005": {
+          "anchor": [
+            19,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/005.png",
+          "provenance": {
+            "cell_id": 49,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "61046804be5efd19d3aa5d68dcca6b4968c0c939f34354ffd230bfda5dec83d1",
+          "size": [
+            56,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:49"
+        },
+        "f006": {
+          "anchor": [
+            8,
+            8
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/006.png",
+          "provenance": {
+            "cell_id": 50,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "7b1e8a8e0e4e4d3bb75b5a90946efed2df9de076cc23576790e35fe9cc7a4bc5",
+          "size": [
+            48,
+            15
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:50"
+        },
+        "f007": {
+          "anchor": [
+            0,
+            4
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/007.png",
+          "provenance": {
+            "cell_id": 51,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [11, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "3884ccd5c9bb2bdb6bf4012cce53881525688fab57dccbaff0a185569356d0cc",
+          "size": [
+            43,
+            8
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:51"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_07/008.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 1
+            },
+            {
+              "frame": "f002",
+              "ticks": 1
+            },
+            {
+              "frame": "f003",
+              "ticks": 1
+            },
+            {
+              "frame": "f004",
+              "ticks": 1
+            },
+            {
+              "frame": "f005",
+              "ticks": 1
+            },
+            {
+              "frame": "f006",
+              "ticks": 1
+            },
+            {
+              "frame": "f007",
+              "ticks": 1
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_07",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_07_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            38,
+            55
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "ec1ce40e0def27aa5ef0ee78b5da1f890ee28659c2bd0a0b59e6807128e953fa",
+          "size": [
+            56,
+            56
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            22,
+            63
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "8dcbd5930162c6fa3ff9a3ec6571f301743779ef641aea94d53873f57c840a3b",
+          "size": [
+            48,
+            64
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "a983491e1a2b47afdc214bf63e9d7f454fe06db1b288ff61fbd4b9560768b27f",
+          "size": [
+            48,
+            53
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            22,
+            46
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "49375ca373607787e863840136c0c6a45f13ea84856cbd4b405f4bd78c33a913",
+          "size": [
+            72,
+            52
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            15,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "faff229b95bec429b7e4ab19445f39c734da6355434b2239f56269c1ce737895",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            24,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "57e638618cccce845edf4d00fbf57a284c34fe126c6bd04b71a56cd096c30305",
+          "size": [
+            56,
+            48
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            17,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "81390317cdb0f3e5c4ac9140921bc18ba75654d38f2e45bf97250a9acc36cc05",
+          "size": [
+            42,
+            54
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            22,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245440
+          },
+          "sha256": "d96c769f81e1da32cec8a747699bfa630f2426c2148bf265baae9453c794e039",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "sk_s_01_2:sk_s_01_2.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 20
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 28
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 6
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            32,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "6ddea407001c3812907b63084b0a9c642e4b24b4d74da36f7d8aa79e9585dc0d",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            32,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "2b1e0bbcb2eaa56c2e27332dd3a1eca82c119ed17aa8e7c880724e5216a9635c",
+          "size": [
+            64,
+            32
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:1"
+        }
+      },
+      "order": [
+        "f001",
+        "f002"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245504
+          },
+          "sha256": "46a857c8dd6088c60335537921838e25191ff3427ab038ea32ba37ad7a369b9c",
+          "size": [
+            32,
+            51
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e00_.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 24
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0_identity"
+    },
+    "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            29,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0/001.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 10]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "467330777ac87ca3266d843a410f1028778d21ca52c691f398c54dcc4182b8b3",
+          "size": [
+            40,
+            42
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:2"
+        },
+        "f002": {
+          "anchor": [
+            14,
+            34
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0/002.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 10]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "97660f65040d2b2aa814cb1c1e388ab131ee655928f2fafde90519440b437a93",
+          "size": [
+            64,
+            34
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:3"
+        },
+        "f003": {
+          "anchor": [
+            13,
+            42
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0/003.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 26]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "49ca32a742208cda54d5aba3e54913de002570afcb14859800df36f7da1ec325",
+          "size": [
+            40,
+            42
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0_identity"
+    },
+    "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            8,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/Shaman King/yoh_asakura/labeled_split/art.json",
+            "manifest_sha256": "5059966decad4b6ffd7c2066df0b88f8ea324c9e677dc05163b028bb76324058",
+            "texture_id": 1245568
+          },
+          "sha256": "6c5c872f0c00e3d8a8b9ead8cfd6cc6834a6ca5573e60a2d5af8fbb6da0e7cab",
+          "size": [
+            16,
+            80
+          ],
+          "source_frame_id": "sk_s_01:sk_s_01_e20_.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 28
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_01_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_07_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_07_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_14_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_1a_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_1a_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_16_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_16_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_65_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_66_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_sk_s_01_e0_amt_id_67_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_69_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_70_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_71_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_72_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_73_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_74_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01:sk_s_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e0_amt_id_75_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_2:sk_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e3_amt_id_160_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_sk_s_01_e3_amt_id_161_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_exclamation_star_sfx_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset sk_s_01_3:sk_s_01_e3.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_exclamation_star_sfx_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}

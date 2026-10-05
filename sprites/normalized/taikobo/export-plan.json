@@ -1,0 +1,2964 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "augment_existing": true,
+  "character_id": "taikobo",
+  "library_id": "taikobo",
+  "sequences": {
+    "air_b_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0023",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0023; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_b_body"
+    },
+    "air_b_mount": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0022",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_b_mount"
+    },
+    "air_b_mount_hs_b_01_e0_amt_id_91_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0023",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0023; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_b_mount_hs_b_01_e0_amt_id_91_node_0"
+    },
+    "air_y_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:002a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:002a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_allied_summon_actor"
+    },
+    "air_y_allied_summon_actor_hs_b_01_e0_amt_id_101_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:002c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:002c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_allied_summon_actor_hs_b_01_e0_amt_id_101_node_0"
+    },
+    "air_y_allied_summon_actor_hs_b_01_e0_amt_id_102_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:002d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:002d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_allied_summon_actor_hs_b_01_e0_amt_id_102_node_0"
+    },
+    "air_y_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0024",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0024; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_body"
+    },
+    "air_y_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_effect"
+    },
+    "air_y_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_move_component"
+    },
+    "air_y_move_component_hs_b_01_e0_amt_id_100_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:002b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:002b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "air_y_move_component_hs_b_01_e0_amt_id_100_node_0"
+    },
+    "blue_hit_spark_13": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0013",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_13"
+    },
+    "blue_hit_spark_14": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0014",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_14"
+    },
+    "blue_hit_spark_15": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0015",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0015; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_15"
+    },
+    "blue_hit_spark_16": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0016",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_16"
+    },
+    "blue_hit_spark_17": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0017",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0017; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_17"
+    },
+    "blue_hit_spark_18": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0018",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0018; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_18"
+    },
+    "blue_hit_spark_19": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0019",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0019; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_19"
+    },
+    "blue_hit_spark_1a": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:001a",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_1a"
+    },
+    "blue_hit_spark_1b": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:001b",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_1b"
+    },
+    "blue_hit_spark_1d": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:001d",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_1d"
+    },
+    "blue_hit_spark_1e": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:001e",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:001e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_hit_spark_1e"
+    },
+    "blue_impact_flash": {
+      "asset": "comm_b:jyocyu_efe_b.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset comm_b:jyocyu_efe_b.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "blue_impact_flash"
+    },
+    "dash_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "dash_body"
+    },
+    "dash_dust": {
+      "asset": "comm_c:jyocyu_efe_c.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "dash_dust"
+    },
+    "down_b_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_b_allied_summon_actor"
+    },
+    "down_b_allied_summon_actor_hs_b_01_e0_amt_id_87_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001f",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_b_allied_summon_actor_hs_b_01_e0_amt_id_87_node_0"
+    },
+    "down_b_blond_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0020",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0020; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_b_blond_actor"
+    },
+    "down_b_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0021",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0021; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_b_body"
+    },
+    "down_b_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0021",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0021; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_b_effect"
+    },
+    "down_y_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0024",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0024; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_allied_summon_actor"
+    },
+    "down_y_allied_summon_actor_hs_b_01_e0_amt_id_93_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0025",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0025; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_allied_summon_actor_hs_b_01_e0_amt_id_93_node_0"
+    },
+    "down_y_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0022",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0022; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_body"
+    },
+    "down_y_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0028",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0028; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_effect"
+    },
+    "down_y_effect_hs_b_01_e0_amt_id_97_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0029",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0029; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_effect_hs_b_01_e0_amt_id_97_node_0"
+    },
+    "down_y_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0027",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0027; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_move_component"
+    },
+    "down_y_standing_fighter_composition": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0026",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0026; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "down_y_standing_fighter_composition"
+    },
+    "downed_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0011",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0011; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "downed_body"
+    },
+    "empty_native_track": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0008",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "empty_native_track"
+    },
+    "empty_native_track_hs_b_01_e5_amt_id_132_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "empty_native_track_hs_b_01_e5_amt_id_132_node_0"
+    },
+    "empty_native_track_hs_b_01_e6_amt_id_173_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:000d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:000d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "empty_native_track_hs_b_01_e6_amt_id_173_node_0"
+    },
+    "forward_b_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_b_body"
+    },
+    "forward_b_body_hs_s_01_3_amt_id_32_node_0": {
+      "asset": "hs_s_01_3:hs_s_01_3.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_3:hs_s_01_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 3,
+      "required": false,
+      "role": "forward_b_body_hs_s_01_3_amt_id_32_node_0"
+    },
+    "forward_b_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_b_move_component"
+    },
+    "forward_b_move_component_hs_s_01_e0_amt_id_56_node_0": {
+      "asset": "hs_s_01:hs_s_01_e0.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01:hs_s_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_b_move_component_hs_s_01_e0_amt_id_56_node_0"
+    },
+    "forward_b_move_component_hs_s_01_e0_amt_id_57_node_0": {
+      "asset": "hs_s_01:hs_s_01_e0.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01:hs_s_01_e0.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_b_move_component_hs_s_01_e0_amt_id_57_node_0"
+    },
+    "forward_b_move_component_hs_s_01_e0_amt_id_58_node_0": {
+      "asset": "hs_s_01:hs_s_01_e0.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01:hs_s_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_b_move_component_hs_s_01_e0_amt_id_58_node_0"
+    },
+    "forward_b_move_component_hs_s_01_e3_amt_id_160_node_0": {
+      "asset": "hs_s_01_3:hs_s_01_e3.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_3:hs_s_01_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 3,
+      "required": false,
+      "role": "forward_b_move_component_hs_s_01_e3_amt_id_160_node_0"
+    },
+    "forward_y_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0010",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0010; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_y_allied_summon_actor"
+    },
+    "forward_y_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_y_body"
+    },
+    "forward_y_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_y_effect"
+    },
+    "forward_y_effect_hs_b_01_e0_amt_id_74_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0011",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0011; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_y_effect_hs_b_01_e0_amt_id_74_node_0"
+    },
+    "forward_y_polearm_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "forward_y_polearm_actor"
+    },
+    "getup_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0017",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0017; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "getup_body"
+    },
+    "grabbed_pose_1_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "grabbed_pose_1_body"
+    },
+    "grabbed_pose_2_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "grabbed_pose_2_body"
+    },
+    "grabbed_pose_3_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "grabbed_pose_3_body"
+    },
+    "grabbed_pose_4_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002f",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "grabbed_pose_4_body"
+    },
+    "guard_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "guard_body"
+    },
+    "heavy_variant_28_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0025",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0025; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "heavy_variant_28_body"
+    },
+    "heavy_variant_28_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "heavy_variant_28_move_component"
+    },
+    "hit_alternate_outline_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_alternate_outline_body"
+    },
+    "hit_text_00": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_00"
+    },
+    "hit_text_03": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_03"
+    },
+    "hit_text_04": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_04"
+    },
+    "hit_text_05": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_05"
+    },
+    "hit_text_06": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_06"
+    },
+    "hit_text_12": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0012",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0012; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_12"
+    },
+    "hit_text_14": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0014",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_14"
+    },
+    "hit_text_15": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0015",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0015; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_15"
+    },
+    "hit_text_16": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0016",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_16"
+    },
+    "hit_text_1d": {
+      "asset": "comm_g:jyochu_gion.amt:anim:001d",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_1d"
+    },
+    "hit_text_21": {
+      "asset": "comm_g:jyochu_gion.amt:anim:0021",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:0021; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_text_21"
+    },
+    "hit_type_0_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_type_0_body"
+    },
+    "hit_type_1_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_type_1_body"
+    },
+    "hit_type_2_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "hit_type_2_body"
+    },
+    "idle_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "idle_body"
+    },
+    "jump_air_variant_05_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "jump_air_variant_05_body"
+    },
+    "jump_air_variant_06_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "jump_air_variant_06_body"
+    },
+    "jump_rise_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "jump_rise_body"
+    },
+    "jump_squat_landend_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0008",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "jump_squat_landend_body"
+    },
+    "k4_up_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0027",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0027; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_body"
+    },
+    "k4_up_x_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0009",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "k4_up_x_move_component"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_104_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_104_node_0"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_105_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_105_node_0"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_106_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_106_node_0"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_107_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_107_node_0"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_108_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_108_node_0"
+    },
+    "k4_up_x_move_component_hs_b_01_e4_amt_id_112_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0009",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_up_x_move_component_hs_b_01_e4_amt_id_112_node_0"
+    },
+    "k4_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0026",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0026; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_x_body"
+    },
+    "k4_x_move_component": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_x_move_component"
+    },
+    "k4_x_move_component_hs_b_01_e4_amt_id_103_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_x_move_component_hs_b_01_e4_amt_id_103_node_0"
+    },
+    "k4_x_move_component_hs_b_01_e4_amt_id_111_node_0": {
+      "asset": "hs_b_01_4:hs_b_01_e4.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_4:hs_b_01_e4.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 4,
+      "required": false,
+      "role": "k4_x_move_component_hs_b_01_e4_amt_id_111_node_0"
+    },
+    "k5_up_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0029",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0029; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_up_x_body"
+    },
+    "k5_up_x_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "k5_up_x_move_component"
+    },
+    "k5_up_x_move_component_hs_b_01_e0_amt_id_63_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "k5_up_x_move_component_hs_b_01_e0_amt_id_63_node_0"
+    },
+    "k5_up_x_move_component_hs_b_01_e5_amt_id_133_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_up_x_move_component_hs_b_01_e5_amt_id_133_node_0"
+    },
+    "k5_up_x_move_component_hs_b_01_e5_amt_id_134_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_up_x_move_component_hs_b_01_e5_amt_id_134_node_0"
+    },
+    "k5_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0028",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0028; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_x_body"
+    },
+    "k5_x_move_component": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_x_move_component"
+    },
+    "k5_x_move_component_hs_b_01_e5_amt_id_129_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_x_move_component_hs_b_01_e5_amt_id_129_node_0"
+    },
+    "k5_x_move_component_hs_b_01_e5_amt_id_130_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_x_move_component_hs_b_01_e5_amt_id_130_node_0"
+    },
+    "k5_x_move_component_hs_b_01_e5_amt_id_131_node_0": {
+      "asset": "hs_b_01_5:hs_b_01_e5.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_5:hs_b_01_e5.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 5,
+      "required": false,
+      "role": "k5_x_move_component_hs_b_01_e5_amt_id_131_node_0"
+    },
+    "k6_up_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_up_x_body"
+    },
+    "k6_up_x_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "k6_up_x_move_component"
+    },
+    "k6_up_x_move_component_hs_b_01_e6_amt_id_170_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:000a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_up_x_move_component_hs_b_01_e6_amt_id_170_node_0"
+    },
+    "k6_up_x_move_component_hs_b_01_e6_amt_id_171_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:000b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_up_x_move_component_hs_b_01_e6_amt_id_171_node_0"
+    },
+    "k6_up_x_move_component_hs_b_01_e6_amt_id_172_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:000c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:000c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_up_x_move_component_hs_b_01_e6_amt_id_172_node_0"
+    },
+    "k6_up_x_move_component_hs_b_01_e6_amt_id_174_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:000e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:000e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_up_x_move_component_hs_b_01_e6_amt_id_174_node_0"
+    },
+    "k6_x_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:002a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:002a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_body"
+    },
+    "k6_x_move_component": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_161_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_161_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_162_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_162_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_163_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_163_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_164_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_164_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_165_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_165_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_166_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_166_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_167_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_167_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_168_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0008",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_168_node_0"
+    },
+    "k6_x_move_component_hs_b_01_e6_amt_id_169_node_0": {
+      "asset": "hs_b_01_6:hs_b_01_e6.amt:anim:0009",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01_6:hs_b_01_e6.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 6,
+      "required": false,
+      "role": "k6_x_move_component_hs_b_01_e6_amt_id_169_node_0"
+    },
+    "knockdown_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000f",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "knockdown_body"
+    },
+    "landed_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "landed_body"
+    },
+    "launched_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0013",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "launched_body"
+    },
+    "ledge_getup_anim_15_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0015",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0015; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "ledge_getup_anim_15_body"
+    },
+    "ledge_getup_phase_2_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0016",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "ledge_getup_phase_2_body"
+    },
+    "ledge_hang_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0014",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "ledge_hang_body"
+    },
+    "native_anim_09_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0009",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "native_anim_09_body"
+    },
+    "neutral_b_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_b_body"
+    },
+    "neutral_b_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_b_move_component"
+    },
+    "neutral_y_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0013",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_allied_summon_actor"
+    },
+    "neutral_y_allied_summon_actor_hs_b_01_e0_amt_id_79_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0016",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0016; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_allied_summon_actor_hs_b_01_e0_amt_id_79_node_0"
+    },
+    "neutral_y_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_body"
+    },
+    "neutral_y_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0017",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0017; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_effect"
+    },
+    "neutral_y_effect_hs_b_01_e0_amt_id_81_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0018",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0018; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_effect_hs_b_01_e0_amt_id_81_node_0"
+    },
+    "neutral_y_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0014",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_move_component"
+    },
+    "neutral_y_move_component_hs_b_01_e0_amt_id_78_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0015",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0015; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_move_component_hs_b_01_e0_amt_id_78_node_0"
+    },
+    "neutral_y_move_component_hs_b_01_e0_amt_id_82_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0019",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0019; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "neutral_y_move_component_hs_b_01_e0_amt_id_82_node_0"
+    },
+    "orange_hit_spark_00": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_00"
+    },
+    "orange_hit_spark_01": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_01"
+    },
+    "orange_hit_spark_02": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_02"
+    },
+    "orange_hit_spark_03": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0003",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_03"
+    },
+    "orange_hit_spark_04": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0004",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_04"
+    },
+    "orange_hit_spark_05": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_05"
+    },
+    "orange_hit_spark_06": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0006",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_06"
+    },
+    "orange_hit_spark_07": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0007",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_07"
+    },
+    "orange_hit_spark_08": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:0008",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_08"
+    },
+    "orange_hit_spark_0a": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:000a",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:000a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_0a"
+    },
+    "orange_hit_spark_0b": {
+      "asset": "comm_a:jyocyu_efe_a.amt:anim:000b",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:000b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "orange_hit_spark_0b"
+    },
+    "pop_alternate_outline_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0012",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0012; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "pop_alternate_outline_body"
+    },
+    "pop_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0010",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0010; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "pop_body"
+    },
+    "postmatch_defeat_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "postmatch_defeat_body"
+    },
+    "postmatch_victory_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0019",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0019; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "postmatch_victory_body"
+    },
+    "postmatch_victory_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "postmatch_victory_move_component"
+    },
+    "postmatch_victory_move_component_hs_b_01_e0_amt_id_69_node_0": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000e",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000e; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "postmatch_victory_move_component_hs_b_01_e0_amt_id_69_node_0"
+    },
+    "shared_k4_x_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0005",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0005; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "shared_k4_x_move_component"
+    },
+    "stone_fragments": {
+      "asset": "comm_b:jyocyu_efe_b.amt:anim:0010",
+      "evidence": [
+        "Reviewed cast-art asset comm_b:jyocyu_efe_b.amt:anim:0010; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "stone_fragments"
+    },
+    "support_action_00_body": {
+      "asset": "hs_s_01_2:hs_s_01_2.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_2:hs_s_01_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 2,
+      "required": false,
+      "role": "support_action_00_body"
+    },
+    "support_action_00_move_component": {
+      "asset": "hs_s_01_2:hs_s_01_e2.amt:anim:0000",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_2:hs_s_01_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 2,
+      "required": false,
+      "role": "support_action_00_move_component"
+    },
+    "support_action_00_move_component_hs_s_01_e2_amt_id_129_node_0": {
+      "asset": "hs_s_01_2:hs_s_01_e2.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_2:hs_s_01_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 2,
+      "required": false,
+      "role": "support_action_00_move_component_hs_s_01_e2_amt_id_129_node_0"
+    },
+    "support_action_00_move_component_hs_s_01_e2_amt_id_130_node_0": {
+      "asset": "hs_s_01_2:hs_s_01_e2.amt:anim:0002",
+      "evidence": [
+        "Reviewed cast-art asset hs_s_01_2:hs_s_01_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "panel": 2,
+      "required": false,
+      "role": "support_action_00_move_component_hs_s_01_e2_amt_id_130_node_0"
+    },
+    "surprised_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:000d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:000d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "surprised_body"
+    },
+    "taunt_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0018",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0018; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "taunt_body"
+    },
+    "unassigned_shout_bubble": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0008",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "unassigned_shout_bubble"
+    },
+    "unassigned_yellow_diagonal_streak": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:0012",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:0012; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "unassigned_yellow_diagonal_streak"
+    },
+    "up_b_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:001f",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_b_body"
+    },
+    "up_b_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:000f",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:000f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_b_move_component"
+    },
+    "up_y_allied_summon_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001a",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001a; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_y_allied_summon_actor"
+    },
+    "up_y_blue_haired_sword_actor": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001b",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_y_blue_haired_sword_actor"
+    },
+    "up_y_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0020",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0020; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_y_body"
+    },
+    "up_y_effect": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001c",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001c; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_y_effect"
+    },
+    "up_y_move_component": {
+      "asset": "hs_b_01:hs_b_01_e0.amt:anim:001d",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01_e0.amt:anim:001d; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "age",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "up_y_move_component"
+    },
+    "walk_body": {
+      "asset": "hs_b_01:hs_b_01.amt:anim:0001",
+      "evidence": [
+        "Reviewed cast-art asset hs_b_01:hs_b_01.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "facing": "right",
+      "native_timeline": {
+        "clock": "anim_tick",
+        "evidence": [
+          "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+          "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved."
+        ]
+      },
+      "required": false,
+      "role": "walk_body"
+    }
+  }
+}

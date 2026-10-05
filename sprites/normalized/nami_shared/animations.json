@@ -1,0 +1,2731 @@
+{
+  "aliases": {
+    "anim": {},
+    "move": {},
+    "projectile": {},
+    "record": {}
+  },
+  "character_id": "nami",
+  "library_id": "nami_shared",
+  "pack": {
+    "attribution": [
+      "Jump! Ultimate Stars; private research/POC only."
+    ],
+    "kind": "jus"
+  },
+  "presentation": {},
+  "role_catalog": {
+    "evidence": [
+      "Reviewed art package does not establish complete runtime role inventory."
+    ],
+    "inventory_status": "unresolved",
+    "roles": [
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "orange_hit_spark_00",
+        "sequence": "orange_hit_spark_00"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "blue_hit_spark_13",
+        "sequence": "blue_hit_spark_13"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "dash_dust",
+        "sequence": "dash_dust"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_1b",
+        "sequence": "hit_text_1b"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "hit_text_1f",
+        "sequence": "hit_text_1f"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "required": false,
+        "role": "forward_b_pink_heart_burst",
+        "sequence": "forward_b_pink_heart_burst"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_body",
+        "sequence": "support_action_00_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component",
+        "sequence": "support_action_00_move_component"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0",
+        "sequence": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 2,
+        "required": false,
+        "role": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0",
+        "sequence": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_body",
+        "sequence": "forward_b_body"
+      },
+      {
+        "evidence": [
+          "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+          "Native unmirrored positive-x reference coordinates."
+        ],
+        "panel": 3,
+        "required": false,
+        "role": "forward_b_move_component",
+        "sequence": "forward_b_move_component"
+      }
+    ],
+    "unresolved_id": "required_inventory"
+  },
+  "schema_version": 1,
+  "sequences": {
+    "blue_hit_spark_13": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/001.png",
+          "provenance": {
+            "cell_id": 80,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "2a210de6f4b2b20427e57626189747e20e880272c209313e99a105163e7ee87f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:80"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/002.png",
+          "provenance": {
+            "cell_id": 81,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "a1d90fbdecd886d5d5cf1eb021beab6ced2e6ec25cadf62d25a3d3ecc4846870",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:81"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/003.png",
+          "provenance": {
+            "cell_id": 82,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "bafa54e3ea2ff2fd672a3367d36b5e5f46445d731bea5188f1b8102c19a536ef",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:82"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/004.png",
+          "provenance": {
+            "cell_id": 83,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "f9e774a02831311af7a89e870ab96530313f7651c9b28f499d3a5931f5aee4ea",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:83"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "blue_hit_spark_13/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "blue_hit_spark_13",
+      "status": "candidate",
+      "unresolved_id": "blue_hit_spark_13_identity"
+    },
+    "dash_dust": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "7148dc97e5a99d83326b19b65020e2070a4eaa0333198e94f992a611d3614f43",
+          "size": [
+            24,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            40,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "352d0601a07774c64888727e5785f128a19f52d6636547f58b3c4fc1bb773e65",
+          "size": [
+            40,
+            16
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "87926878cae8914191731f80f0facc5afb15b7d623a42abf95cdbb436ff32efe",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            56,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 16, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "88ab05974ff1449dcc8a91058a977e2bd6f4e5e0137a4620257c819aa1b863bb",
+          "size": [
+            56,
+            24
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/005.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "b5d619473eaf3180bc6740eb246594781dd814a59cbd6dcc2c9f9f777db88e8a",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:5"
+        },
+        "f006": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/006.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:6"
+        },
+        "f007": {
+          "anchor": [
+            56,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/007.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 24, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "c8c1d71d8cfa06bce0fc1d15f33c98be80c64116a94a98e6be5e8cfc45c005ec",
+          "size": [
+            56,
+            32
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:7"
+        },
+        "f008": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/008.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:8"
+        },
+        "f009": {
+          "anchor": [
+            57,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/009.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 25, 1]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "1e0aa72fb093b4834750e32cb3c556d0e5dbe90d954869606786540e76cb570b",
+          "size": [
+            57,
+            33
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:9"
+        },
+        "f010": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "dash_dust/010.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2293760
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_c:jyocyu_efe_c.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f006",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f009",
+              "ticks": 1
+            },
+            {
+              "frame": "f010",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "dash_dust",
+      "status": "candidate",
+      "unresolved_id": "dash_dust_identity"
+    },
+    "forward_b_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            15,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "051cf7f2012a2eb137afdd6065f991ab79343599ab90fc4a9153ac5f214fc2e9",
+          "size": [
+            26,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            20,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "69c44897f8cbfa6045e75f842a70b7283a68ce4c9a319070e042b99c69a5c687",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            18,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "c9299e9d5fb647a40dc8a8084813d77aa2e3957ddb429703edc14fc374ccb28b",
+          "size": [
+            32,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            17,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "cbf6e70894007b6e2561da81ed7881792402a302c802574333f06b47d1a91a47",
+          "size": [
+            40,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            19,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "225926ee8b8bb4f2a06e215e7def15436462050c727f62f2f598861fd5581dd9",
+          "size": [
+            27,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            19,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_body/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721376
+          },
+          "sha256": "46c5d02350e340cb026f9ed129425f77dc670f843a0e60a023b57c25149751b2",
+          "size": [
+            26,
+            48
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_3.dtx:cell:5"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 16
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 50
+            },
+            {
+              "frame": "f004",
+              "ticks": 7
+            },
+            {
+              "frame": "f005",
+              "ticks": 7
+            },
+            {
+              "frame": "f006",
+              "ticks": 14
+            }
+          ]
+        }
+      },
+      "role": "forward_b_body",
+      "status": "candidate",
+      "unresolved_id": "forward_b_body_identity"
+    },
+    "forward_b_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 8]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721504
+          },
+          "sha256": "808529ac4ffe385d2dc5dcbb8353006310d0964b98cbc33d9f1799b37e3d5f97",
+          "size": [
+            32,
+            40
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_e30_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            24,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721504
+          },
+          "sha256": "1a0b4a6d9b749700ff7ee68461f37cce49075b39557026bb1b7acb61fd4448c6",
+          "size": [
+            48,
+            40
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_e30_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            40,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721504
+          },
+          "sha256": "ff09b9b805c2b65d48ce1b14fa6b03f4fdf825b08700d83144ee9a632b760703",
+          "size": [
+            80,
+            64
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_e30_.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            48,
+            72
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721504
+          },
+          "sha256": "482b5b8378d6e01f17d9dc12f5309d5f3a6097d5ffe80053ae20982774b7ee41",
+          "size": [
+            96,
+            88
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_e30_.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            64,
+            88
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_move_component/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721504
+          },
+          "sha256": "77fb04d4932fb55c99b656d9ca11fcf38356af56cc2968330567244d76aae0d2",
+          "size": [
+            128,
+            112
+          ],
+          "source_frame_id": "op_s_04_3:op_s_04_e30_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "panel": 3,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 6
+            },
+            {
+              "frame": "f002",
+              "ticks": 6
+            },
+            {
+              "frame": "f003",
+              "ticks": 6
+            },
+            {
+              "frame": "f004",
+              "ticks": 5
+            },
+            {
+              "frame": "f005",
+              "ticks": 6
+            }
+          ]
+        }
+      },
+      "role": "forward_b_move_component",
+      "status": "candidate",
+      "unresolved_id": "forward_b_move_component_identity"
+    },
+    "forward_b_pink_heart_burst": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            12
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "551731e666f90a490ade859af3fef0db9d9f70fb5390470ee143b0e35cbff9ae",
+          "size": [
+            32,
+            24
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "8fdb5e6b83fc790545bdb6b9c19ac1e660e3cf0be3c8cd38274a155f4c128d9d",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            24,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "0b724ac0c6317615c244a74b6e6e86d27cc50a72e4b63dd64218383c9b94c528",
+          "size": [
+            48,
+            32
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "d2f7e9ee8c629de4c6bf4ce87a3d7c5e3e2b4b7574e25e4f96f353560de5b92b",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "55ef90b99ff6de6abed0f757ee7080e5167f86e702dc5dadd2148d79b442bb74",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/006.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "2899bf47b565a3e3043aea5b61b26cd4cd2bb2a33789fa419354f2f88cfe5c28",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:5"
+        },
+        "f007": {
+          "anchor": [
+            24,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/007.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "8b5abdda9ec74fd12e123261437ac22eb8354a378ee395dea9a46e01fdd32db8",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:6"
+        },
+        "f008": {
+          "anchor": [
+            32,
+            24
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "forward_b_pink_heart_burst/008.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721408
+          },
+          "sha256": "b22e06c6fcaf978b4540c514ea60dce19774784fd3ef4b626a7126c8adacfacc",
+          "size": [
+            64,
+            48
+          ],
+          "source_frame_id": "op_s_04:op_s_04_e00_.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            },
+            {
+              "frame": "f006",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 2
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "forward_b_pink_heart_burst",
+      "status": "candidate",
+      "unresolved_id": "forward_b_pink_heart_burst_identity"
+    },
+    "hit_text_1b": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            21,
+            29
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_1b/001.png",
+          "provenance": {
+            "cell_id": 27,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2359296
+          },
+          "sha256": "87ee676f77cfef6c80032906632c60019e32061627a2d835a0a3dfc8bdf3bf01",
+          "size": [
+            38,
+            45
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:27"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_1b",
+      "status": "candidate",
+      "unresolved_id": "hit_text_1b_identity"
+    },
+    "hit_text_1f": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            24,
+            33
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "hit_text_1f/001.png",
+          "provenance": {
+            "cell_id": 31,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2359296
+          },
+          "sha256": "4bdc9a0b2721f98000f0760334516d2794cc5dc4ea6f71108e75f941bd67dc67",
+          "size": [
+            53,
+            57
+          ],
+          "source_frame_id": "comm_g:jyochu_gion.dtx:cell:31"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            }
+          ]
+        }
+      },
+      "role": "hit_text_1f",
+      "status": "candidate",
+      "unresolved_id": "hit_text_1f_identity"
+    },
+    "orange_hit_spark_00": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/001.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "169fbf0f1cdb5152c39fde48e9d948d8335d8c80d4ee33a7e81f8f409f1ef27a",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:1"
+        },
+        "f002": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/002.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "7f7e237150ee3bed936490f14727aff50558c277eddbac1c68a201557f592a9f",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:2"
+        },
+        "f003": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/003.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "d424d7809de950ebf3dcb9318b6e4e8a27f00e7868e701c0b050752624a8b19b",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:3"
+        },
+        "f004": {
+          "anchor": [
+            16,
+            16
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/004.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "ad79013e1a3b4295a8ce895f72bfdc3e20c6f758fcb9e95e39c5dd6c4cf503b4",
+          "size": [
+            32,
+            32
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:4"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            0
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "orange_hit_spark_00/005.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 2162688
+          },
+          "sha256": "f2bb5bbaca678ecad746b1fa5ecfa2c8a81dd18817be19f0187c036d25326317",
+          "size": [
+            1,
+            1
+          ],
+          "source_frame_id": "comm_a:jyocyu_efe_a.dtx:cell:0"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005"
+      ],
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 2
+            },
+            {
+              "frame": "f002",
+              "ticks": 2
+            },
+            {
+              "frame": "f003",
+              "ticks": 2
+            },
+            {
+              "frame": "f004",
+              "ticks": 2
+            },
+            {
+              "frame": "f005",
+              "ticks": 2
+            }
+          ]
+        }
+      },
+      "role": "orange_hit_spark_00",
+      "status": "candidate",
+      "unresolved_id": "orange_hit_spark_00_identity"
+    },
+    "support_action_00_body": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            23,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/001.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "c9630ba5fbc7ea285dbcdfabce78e6ea8a5dbb7def9bb0bca7aacb89ad294657",
+          "size": [
+            44,
+            48
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:0"
+        },
+        "f002": {
+          "anchor": [
+            18,
+            53
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/002.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "42c36702f7b8737a6c7ab5548ac845a0aef95234e565e1576c70ca967627aa32",
+          "size": [
+            32,
+            56
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:1"
+        },
+        "f003": {
+          "anchor": [
+            19,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/003.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "45c559cdb7a1e9c84e3b63341ac85521862dcacbee29cd05f2eda32450769e2b",
+          "size": [
+            56,
+            48
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:2"
+        },
+        "f004": {
+          "anchor": [
+            24,
+            41
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/004.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "4920e8cbfe9475991d4f38a1044d4592bad4230f42fdda3872c1256d81fcc77f",
+          "size": [
+            56,
+            42
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:3"
+        },
+        "f005": {
+          "anchor": [
+            26,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/005.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "ba40a53eb56bdf0f553e48c73bb15faed0669076570e45cde33a5154b50365db",
+          "size": [
+            56,
+            46
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:4"
+        },
+        "f006": {
+          "anchor": [
+            42,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/006.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "cbdfa0ff95539cc0b990e93a235c188280f993867529e6ae00ded89ee6f15c1c",
+          "size": [
+            64,
+            40
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:7"
+        },
+        "f007": {
+          "anchor": [
+            43,
+            40
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/007.png",
+          "provenance": {
+            "cell_id": 8,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "bfca1143d9a4457856e57ac6b6606e57c0e614435ec9a1f5534c32e95a6dda8f",
+          "size": [
+            64,
+            40
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:8"
+        },
+        "f008": {
+          "anchor": [
+            23,
+            39
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/008.png",
+          "provenance": {
+            "cell_id": 9,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "796095b1ba305a4a35a44b167b7dc9e4f08a8f632ca69e9b26913e5c5a05d4f3",
+          "size": [
+            49,
+            43
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:9"
+        },
+        "f009": {
+          "anchor": [
+            32,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/009.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "5e0a1571df24fd9a0b988d6c812ec6ceecb84caf5d2360734842c784334b3f72",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:5"
+        },
+        "f010": {
+          "anchor": [
+            32,
+            47
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_body/010.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721344
+          },
+          "sha256": "771558f44ac057681c365ed87209c905736238886958da312acebcc33ab2f9ee",
+          "size": [
+            48,
+            48
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_2.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006",
+        "f007",
+        "f008",
+        "f009",
+        "f010"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 16
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 16
+            },
+            {
+              "frame": "f001",
+              "ticks": 4
+            },
+            {
+              "frame": "f001",
+              "ticks": 11
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 3
+            },
+            {
+              "frame": "f009",
+              "ticks": 6
+            },
+            {
+              "frame": "f010",
+              "ticks": 34
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_body",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_body_identity"
+    },
+    "support_action_00_move_component": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            0,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/001.png",
+          "provenance": {
+            "cell_id": 5,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "a1ada479e10bd79829ef31e635c48d62e24528d5b8032a5c3a4b274a6c9c09fd",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:5"
+        },
+        "f002": {
+          "anchor": [
+            0,
+            60
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/002.png",
+          "provenance": {
+            "cell_id": 0,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "e1910d3435858db2601308f5934442428fbb729fe48c35f403908e46c5640b23",
+          "size": [
+            24,
+            60
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:0"
+        },
+        "f003": {
+          "anchor": [
+            0,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/003.png",
+          "provenance": {
+            "cell_id": 1,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "5739d51f0308dbe69638bac8b94b6614fb86fe4a8933967be6da8ff9799d209a",
+          "size": [
+            28,
+            64
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:1"
+        },
+        "f004": {
+          "anchor": [
+            0,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/004.png",
+          "provenance": {
+            "cell_id": 2,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "93661270ada9eb530666b1ca86f6b62407208c82802659cb7a24c5c26ffa1bcb",
+          "size": [
+            28,
+            64
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:2"
+        },
+        "f005": {
+          "anchor": [
+            0,
+            64
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/005.png",
+          "provenance": {
+            "cell_id": 3,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "e9dd90f0d7f803da0198701b6875d19119f31d8f51749bfd28f5b6d4774dfd88",
+          "size": [
+            28,
+            64
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:3"
+        },
+        "f006": {
+          "anchor": [
+            0,
+            56
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component/006.png",
+          "provenance": {
+            "cell_id": 4,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [8, 0, 0, 24]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "b791bcbcde38207723ea58b11bbbcb51a42092258ff6f2033a780284e8edcc06",
+          "size": [
+            24,
+            56
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:4"
+        }
+      },
+      "order": [
+        "f001",
+        "f002",
+        "f003",
+        "f004",
+        "f005",
+        "f006"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 6
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 14
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_identity"
+    },
+    "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            16,
+            32
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0/001.png",
+          "provenance": {
+            "cell_id": 6,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "01f07d8e4bff75b759f11965ce786ec6a5a6cb1270af1fa08ad593dcc5cb51fa",
+          "size": [
+            39,
+            64
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:6"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 26
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0_identity"
+    },
+    "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0": {
+      "default_playback": "default",
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "frames": {
+        "f001": {
+          "anchor": [
+            5,
+            27
+          ],
+          "baked_effects": [],
+          "evidence": [
+            "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+            "Native unmirrored positive-x reference coordinates."
+          ],
+          "facing": "right",
+          "path": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0/001.png",
+          "provenance": {
+            "cell_id": 7,
+            "geometry_evidence": [
+              "Native cell origin preserved through transparent padding [0, 0, 0, 0]"
+            ],
+            "manifest": "/tmp/cast-refined-authoring/sprites/characters/One Piece/nami/labeled_split/art.json",
+            "manifest_sha256": "610ed5459b603cfd64e501761d15369c113e4a6a99b414ca9a644352e5395b6a",
+            "texture_id": 1721472
+          },
+          "sha256": "1a15040909bec53756a8e72f70195551be64f855ac82fc3af74e4d6feabd04ee",
+          "size": [
+            16,
+            60
+          ],
+          "source_frame_id": "op_s_04_2:op_s_04_e20_.dtx:cell:7"
+        }
+      },
+      "order": [
+        "f001"
+      ],
+      "panel": 2,
+      "playbacks": {
+        "default": {
+          "clock": "age",
+          "end": "hold",
+          "evidence": [
+            "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
+            "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
+            "Exact native art-track keys; gameplay selection epoch remains separate."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 26
+            }
+          ]
+        }
+      },
+      "role": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0",
+      "status": "candidate",
+      "unresolved_id": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0_identity"
+    }
+  },
+  "unresolved": [
+    {
+      "evidence": [
+        "Reviewed art package does not establish complete runtime role inventory."
+      ],
+      "id": "required_inventory",
+      "owner": "cast-port",
+      "reason": "Required runtime role and branch completeness needs separate evidence.",
+      "scope": "role_catalog"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "orange_hit_spark_00_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_a:jyocyu_efe_a.amt:anim:0013; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "blue_hit_spark_13_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_c:jyocyu_efe_c.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "dash_dust_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1b_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001b; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1b_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1f_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset comm_g:jyochu_gion.amt:anim:001f; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "hit_text_1f_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_pink_heart_burst_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04:op_s_04_e0.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_pink_heart_burst_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0001; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_04_e2_amt_id_129_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_2:op_s_04_e2.amt:anim:0002; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "support_action_00_move_component_op_s_04_e2_amt_id_130_node_0_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_body_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_identity",
+      "owner": "cast-port",
+      "reason": "Static art classification does not certify runtime selector or branch identity.",
+      "scope": "sequence"
+    },
+    {
+      "evidence": [
+        "Reviewed cast-art asset op_s_04_3:op_s_04_e3.amt:anim:0000; body/component/form ownership remains in export-provenance.json.",
+        "Native unmirrored positive-x reference coordinates."
+      ],
+      "id": "forward_b_move_component_playback",
+      "owner": "cast-port",
+      "reason": "No gameplay playback epoch or timing inferred from native art keys.",
+      "scope": "playback"
+    }
+  ]
+}
