@@ -1,20 +1,20 @@
-# Dr. Mashirito categorized art
+# dr_mashirito: shared form container
 
-Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
+<!-- current-art-summary:start -->
+Shared container: 36 assets, 36 visible strips/panels and 0 transparent native tracks. 74 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 3 action groups.
 
-Native origins: `ds_b_02`, `ds_b_02_4`, `ds_b_02_5`, `ds_b_02_6`, `ds_b_02_7`, `ds_b_03`, `ds_b_03_8`, `ds_s_02`, `ds_s_02_2`, `ds_s_02_3`, `ds_s_03`, `ds_s_03_2`.
+Native diagnostics in the current manifest: 11 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
 
-Categories: `attacks_heavy` (12), `attacks_light` (10), `attacks_special` (38), `generics` (27), `hitstun` (30), `misc` (58), `panels` (8), `supports` (24), `taunt` (2). Total: 209 selected assets, including 8 source extras.
+Each fighter form has its own source, native bundles and categorized assets.
 
-Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
+- [Caramel Man / base](../forms/base_caramel/labeled_split/README.md)
+- [Gold Caramel Man / native only](../forms/gold_caramel/labeled_split/README.md)
 
-Visual review covered all full source sheet tile overviews, crop candidates and outputs, and native first/last-cell category contacts. The DSIGv2 allocation repair changed 155 canonical cells; before/after contacts were inspected for every affected asset. Native cells and composed source outputs pass exact regeneration verification. Review does not certify gameplay playback, transforms, branch selection or state duration.
+This parent package retains shared supports, source panels, source extras and their region dispositions. Canonical cells remain reference files.
 
-Source coverage remains separate from native archive coverage: 35 bounded source row groups are retained as reference dispositions for compound examples, source-only poses, repeat guides and attribution. They do not assert one-to-one native correspondence or a selected runtime asset for every source pixel.
-
-Residuals:
+Remaining source/composition review:
 
 - Caramel Man ds_b_03 is an alternate native family; its 8k special pieces are separate from ds_b_02 robot summon bodies.
 - No ds_s_03_3 archive exists. Color/palette alternates and source compound transform sequence selection remain unresolved.
-
-Gold `ds_b_03` / `ds_s_03` art is a **native-only alternate-form candidate**. The corrected idle source pixel probe found no match (0%); this form has no source-confirmed rectangle and contributes no source-sheet coverage claim.
+- Gold ds_b_03 / ds_s_03 art is a native-only alternate-form candidate: corrected idle opaque-RGB source probe found no match, so it has no source-confirmed coordinate or equivalence.

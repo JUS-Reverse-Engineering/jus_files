@@ -1,7 +1,13 @@
 up_strip - last 6 sprites on the right are blasts that shoot upward out of his hands at an angle
 
+<!-- current-category-count:start -->
+33 manifest assets in this category.
+<!-- current-category-count:end -->
+
 forward_strip_ORIGINAL - shows proper placement of effects
 
 air_strip_ORIGINAL - shows windup, proper placement of effects, and ending
 
 neutral_strip_ORIGINAL - proper placement of effects
+
+[Attack map](../ATTACKS.md) links body tracks and their dependent art by move.

@@ -1,10 +1,16 @@
 # Jaguar categorized art
 
+<!-- current-art-summary:start -->
+Character package: 123 assets, 123 visible strips/panels and 0 transparent native tracks. 406 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+
+Native diagnostics in the current manifest: 84 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
 
 Native origins: `pj_b_01`, `pj_b_01_4`, `pj_b_01_5`, `pj_b_01_6`, `pj_s_01`, `pj_s_01_2`, `pj_s_01_3`.
 
-Categories: `attacks_heavy` (6), `attacks_light` (5), `attacks_special` (37), `generics` (14), `hitstun` (15), `misc` (26), `panels` (4), `supports` (13), `taunt` (1). Total: 121 selected assets, including 4 source extras.
+Categories: `attacks_heavy` (14), `attacks_light` (10), `attacks_special` (47), `generics` (16), `hitstun` (15), `misc` (2), `panels` (4), `supports` (14), `taunt` (1). Total: 123 selected assets.
 
 Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
 

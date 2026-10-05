@@ -1,21 +1,19 @@
-# Don Patch art authoring package
+# don_patch: shared form container
 
-157 visible categorized strips/panels, including 7 source comic panels; 0 transparent native tracks retained as provenance. 550 canonical native cell PNGs preserve decoded body, support and effect banks.
+<!-- current-art-summary:start -->
+Shared container: 18 assets, 18 visible strips/panels and 0 transparent native tracks. 39 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 2 action groups.
 
-`art.json` records category, authored animation ID, archive member, texture owner, node, frame bounds, anchors and hashes. The category directories contain review strips. `misc/native_cells/` contains the original-size decoded cells.
+Native diagnostics in the current manifest: 0 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
 
-Native archives: `bb_b_02`, `bb_b_02_4`, `bb_b_02_5`, `bb_b_02_6`, `bb_b_04`, `bb_b_04_7`, `bb_s_02`, `bb_s_02_2`, `bb_s_02_3`.
+Each fighter form has its own source, native bundles and categorized assets.
 
-Native pixels retain full origin-relative bounds, full palette indices, index-zero transparency, authored flips and DSIGv2 two-tile segment alignment. Sheet panels use explicit source rectangles and occupied-cell masks. No poses are synthesized by mirroring.
+- [Don Patch](../forms/normal/labeled_split/README.md)
+- [Super Patch](../forms/super_patch/labeled_split/README.md)
 
-`fighter_body` and `support_actor` identify primary tracks; effect, text, summon and child-node art remains separate components. A native actor may be a helper rather than this fighter. Empty tracks are marked `empty_native_track` and excluded from the visible count.
+This parent package retains shared supports, source panels, source extras and their region dispositions. Canonical cells remain reference files.
 
-Strips show distinct native cells in their first occurrence order. Repeated holds and complete key tracks remain in the manifest; these strips are not a runtime playback specification. All runtime candidates remain false until timing, facing, gameplay selection and composition are reconciled.
+Remaining source/composition review:
 
-The original source, every categorized overview, corrected alignment tracks and panel selections were visually inspected. Verification checks source/archive hashes and regenerates canonical pixels and strips. 173 nodes with no cell track, 3 unresolved-node records and 0 unsupported-texture records remain explicit.
-
-Source coverage remains `reviewed_reference_unreconciled`: coordinate bands in `dispositions` document reviewed reference regions, not proven pose matches or complete extraction. Comic panels have exact piece provenance. Native art has exact archive provenance; native-to-sheet pose coverage is still incomplete.
-
-Remaining character-specific work: Base and Super Patch forms are separate. Detached projectiles and transformation composition remain unresolved.
-
-Verify from the research repo with `scripts/analysis/cast_art.py verify --source <character-directory> --stage <character-directory> --repo-root <research-repo>`. The package is an authoring artifact; the normalized runtime library contract is unchanged.
+- Base and Super Patch forms are separate. Detached projectiles and transformation composition remain unresolved.
+- Native cell/texture identity and pixels are verified. Source-to-native pose coverage, node transforms, playback timing and gameplay selection are not certified. Regions marked reviewed_reference_unreconciled do not prove complete extraction.

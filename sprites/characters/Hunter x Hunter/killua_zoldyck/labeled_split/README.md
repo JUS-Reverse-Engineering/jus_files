@@ -1,10 +1,16 @@
 # Killua Zoldyck categorized art
 
+<!-- current-art-summary:start -->
+Character package: 118 assets, 118 visible strips/panels and 0 transparent native tracks. 420 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 48 action groups.
+
+Native diagnostics in the current manifest: 70 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
 
 Native origins: `hh_b_02`, `hh_b_02_4`, `hh_b_02_5`, `hh_s_02`, `hh_s_02_2`, `hh_s_02_3`.
 
-Categories: `attacks_heavy` (6), `attacks_light` (5), `attacks_special` (18), `generics` (14), `hitstun` (15), `misc` (22), `panels` (4), `supports` (11), `taunt` (1). Total: 96 selected assets, including 4 source extras.
+Categories: `attacks_heavy` (14), `attacks_light` (9), `attacks_special` (39), `generics` (19), `hitstun` (15), `misc` (2), `panels` (4), `supports` (13), `taunt` (3). Total: 118 selected assets.
 
 Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
 

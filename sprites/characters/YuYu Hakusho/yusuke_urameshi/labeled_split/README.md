@@ -1,5 +1,11 @@
 # Yusuke Urameshi art
 
+<!-- current-art-summary:start -->
+Character package: 189 assets, 189 visible strips/panels and 0 transparent native tracks. 431 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+
+Native diagnostics in the current manifest: 189 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 The existing manually categorized PNGs and category READMEs are preserved.
 New native strips use `ROLE_ARCHIVE_anim_AUTHORED_ID_node_N_strip.png`;
 canonical frame PNGs live under `misc/native_cells/` and are referenced by

@@ -1,5 +1,11 @@
 # Kakashi art
 
+<!-- current-art-summary:start -->
+Character package: 260 assets, 260 visible strips/panels and 0 transparent native tracks. 701 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+
+Native diagnostics in the current manifest: 144 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 The existing manually categorized PNGs and category READMEs are preserved.
 New native strips use `ROLE_ARCHIVE_anim_AUTHORED_ID_node_N_strip.png`;
 canonical frame PNGs live under `misc/native_cells/` and are referenced by

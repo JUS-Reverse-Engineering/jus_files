@@ -1,10 +1,16 @@
 # Rukia Kuchiki categorized art
 
+<!-- current-art-summary:start -->
+Character package: 111 assets, 111 visible strips/panels and 0 transparent native tracks. 338 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+
+Native diagnostics in the current manifest: 185 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
 
 Native origins: `bl_b_03`, `bl_b_03_4`, `bl_b_03_5`, `bl_b_03_6`, `bl_s_03`, `bl_s_03_2`, `bl_s_03_3`.
 
-Categories: `attacks_heavy` (6), `attacks_light` (5), `attacks_special` (29), `generics` (14), `hitstun` (15), `misc` (21), `panels` (5), `supports` (14), `taunt` (1). Total: 110 selected assets, including 5 source extras.
+Categories: `attacks_heavy` (19), `attacks_light` (5), `attacks_special` (34), `generics` (15), `hitstun` (15), `misc` (2), `panels` (5), `supports` (14), `taunt` (2). Total: 111 selected assets.
 
 Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
 

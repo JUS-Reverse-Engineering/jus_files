@@ -1,5 +1,11 @@
 # Kenshiro art
 
+<!-- current-art-summary:start -->
+Character package: 156 assets, 146 visible strips/panels and 10 transparent native tracks. 527 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 54 action groups.
+
+Native diagnostics in the current manifest: 398 nodes without cell tracks, 1 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 This package uses the shared cast authoring layout. `art.json` records source hashes, authored animation IDs, exact texture ownership, frame bounds, source rectangles and review status.
 
 Native strips contain unique keyed poses, not a frame-timed playback movie. Their suffix identifies archive, authored animation ID and node. Primary fighter bodies, support actors and detached native components remain distinct records. `hit_type_0`, `hit_type_1`, `hit_type_2` and `surprised` follow the four-character reaction evidence. Unknown native 09 stays explicitly unresolved. Jump variants 05/06 and selector timing are not inferred from appearance.

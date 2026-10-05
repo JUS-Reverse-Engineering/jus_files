@@ -1,5 +1,9 @@
 # taunt
 
+<!-- current-category-count:start -->
+1 manifest assets in this category.
+<!-- current-category-count:end -->
+
 Taunt poses; strip pose order does not establish gameplay timing.
 
 Read [the package README](../README.md) and `../art.json` for each asset’s

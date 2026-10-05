@@ -1,18 +1,19 @@
-# Naruto categorized art
+# naruto: shared form container
 
-Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
+<!-- current-art-summary:start -->
+Shared container: 29 assets, 29 visible strips/panels and 0 transparent native tracks. 80 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 2 action groups.
 
-Native origins: `na_b_01`, `na_b_01_4`, `na_b_01_5`, `na_b_01_6`, `na_b_05`, `na_b_05_7`, `na_b_05_8`, `na_s_01`, `na_s_01_2`, `na_s_01_3`.
+Native diagnostics in the current manifest: 20 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
 
-Categories: `attacks_heavy` (12), `attacks_light` (10), `attacks_special` (63), `generics` (28), `hitstun` (30), `misc` (24), `panels` (9), `supports` (15), `taunt` (2). Total: 193 selected assets, including 11 source extras.
+Each fighter form has its own source, native bundles and categorized assets.
 
-Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
+- [Naruto](../forms/normal/labeled_split/README.md)
+- [Nine-Tails chakra form](../forms/nine_tails_chakra/labeled_split/README.md)
 
-Visual review covered all full source sheet tile overviews, crop candidates and outputs, and native first/last-cell category contacts. The DSIGv2 allocation repair changed 155 canonical cells; before/after contacts were inspected for every affected asset. Native cells and composed source outputs pass exact regeneration verification. Review does not certify gameplay playback, transforms, branch selection or state duration.
+This parent package retains shared supports, source panels, source extras and their region dispositions. Canonical cells remain reference files.
 
-Source coverage remains separate from native archive coverage: 139 bounded source row groups are retained as reference dispositions for compound examples, source-only poses, repeat guides and attribution. They do not assert one-to-one native correspondence or a selected runtime asset for every source pixel.
-
-Residuals:
+Remaining source/composition review:
 
 - 2k Sexy Jutsu heart compounds and Kyuubi 7k/8k aura/beam composites retain source reference rows; node composition and branch timing remain unresolved.
 - Normal and Kyuubi UNUSED SPRITES are not certified runtime states.

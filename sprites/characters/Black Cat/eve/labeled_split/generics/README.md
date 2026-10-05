@@ -1,6 +1,10 @@
 Programmatic splitter messed up Dash. Only got 1 of 2 sprites
 Guard strip sprites from left to right: start guard, hold guard, end guard
 
+<!-- current-category-count:start -->
+31 manifest assets in this category.
+<!-- current-category-count:end -->
+
 jump_peak_strip is the two sprites that fire at the top of jump height, before momentum changes to be downward
 
 Standardization (2026-10-04): the native dash strip beside these owner files

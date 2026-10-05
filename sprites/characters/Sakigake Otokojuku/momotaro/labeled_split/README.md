@@ -1,10 +1,16 @@
 # Momotaro categorized art
 
+<!-- current-art-summary:start -->
+Character package: 126 assets, 126 visible strips/panels and 0 transparent native tracks. 414 referenced canonical native cell PNGs. [Attack map](ATTACKS.md) contains 50 action groups.
+
+Native diagnostics in the current manifest: 98 nodes without cell tracks, 0 unresolved-node records and 0 unsupported-texture records. These diagnostics describe decoding; gameplay selection and composition remain separate review items.
+<!-- current-art-summary:end -->
+
 Native body poses, components and supports are exported separately from the immutable source sheet. `art.json` records authored animation IDs, exact archive/texture/cell ownership, frame bounds/origins, source pieces and uncertain branches. Files retain authored facing.
 
 Native origins: `oj_b_02`, `oj_b_02_4`, `oj_b_02_5`, `oj_b_02_6`, `oj_s_02`, `oj_s_02_2`, `oj_s_02_3`.
 
-Categories: `attacks_heavy` (6), `attacks_light` (5), `attacks_special` (36), `generics` (14), `hitstun` (15), `misc` (26), `panels` (5), `supports` (10), `taunt` (1). Total: 118 selected assets, including 5 source extras.
+Categories: `attacks_heavy` (17), `attacks_light` (9), `attacks_special` (47), `generics` (16), `hitstun` (15), `misc` (2), `panels` (5), `supports` (13), `taunt` (2). Total: 126 selected assets.
 
 Body and component strips are separate assets. Base support `_s_` speech/SFX/graphics are `support_component`; actual main-body support nodes are `support_actor`. `misc/native_cells` preserves canonical unused cells and palettes as well as referenced cells. Deck art in `panels` uses reviewed source pieces; touching printed layouts are separate `misc/source_references` crops. Portrait/HUD references also live in `misc`.
 

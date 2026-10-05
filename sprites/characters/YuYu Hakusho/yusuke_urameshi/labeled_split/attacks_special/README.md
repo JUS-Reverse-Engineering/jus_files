@@ -7,8 +7,14 @@
 - 5k_projectile_1 and _2 are the uncharged projectile (1 becomes 2 as it travels)
 - 5k_projectile_3 and _4 are the charged projectile (3 becomes 4 as it travels)
 
+<!-- current-category-count:start -->
+64 manifest assets in this category.
+<!-- current-category-count:end -->
+
 5k_up_strip_ORIGINAL shows proper placement of fx
 
 6k_charged_fired_strip_ORIGINAL shows proper placement of fx and projectile
 
 6k_up_strip_ORIGINAL does not show proper placement of final projectile + fx. does show proper placement of mid-animation fx
+
+[Attack map](../ATTACKS.md) links body tracks and their dependent art by move.
