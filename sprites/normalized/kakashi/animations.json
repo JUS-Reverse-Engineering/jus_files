@@ -42268,6 +42268,46 @@
               "ticks": 1
             }
           ]
+        },
+        "released_guard": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "repo:docs/research/feel-captures/16g-native-replay-2026-10-05/guard-lifecycle/attempt-1/captures/guard-cm-kakashi-5-repeat-1/frames.tsv sha256:2bc127972022ea25ea6292ab2d72c3a6300d0b0e7fa60f2aae72d79524310b51 completed-frame rows131..136: state0, table3, cell15 for one tick then cell16 for five; row137 returns table0. Allocation and numeric selection are measured; native pixel binding and interruption branches remain separate.",
+            "repo:docs/research/feel-captures/16g-native-replay-2026-10-05/guard-lifecycle/attempt-1/captures/guard-cm-kakashi-5-repeat-2/frames.tsv sha256:2bc127972022ea25ea6292ab2d72c3a6300d0b0e7fa60f2aae72d79524310b51 completed-frame rows131..136: state0, table3, cell15 for one tick then cell16 for five; row137 returns table0. Allocation and numeric selection are measured; native pixel binding and interruption branches remain separate."
+          ],
+          "selector": {
+            "conditions": [
+              {
+                "field": "guarding",
+                "values": [
+                  false
+                ]
+              },
+              {
+                "field": "state_code",
+                "values": [
+                  0
+                ]
+              }
+            ],
+            "evidence": [
+              "repo:docs/research/feel-captures/16g-native-replay-2026-10-05/guard-lifecycle/attempt-1/captures/guard-cm-kakashi-5-repeat-1/frames.tsv sha256:2bc127972022ea25ea6292ab2d72c3a6300d0b0e7fa60f2aae72d79524310b51 completed-frame rows131..136: state0, table3, cell15 for one tick then cell16 for five; row137 returns table0. Allocation and numeric selection are measured; native pixel binding and interruption branches remain separate.",
+              "repo:docs/research/feel-captures/16g-native-replay-2026-10-05/guard-lifecycle/attempt-1/captures/guard-cm-kakashi-5-repeat-2/frames.tsv sha256:2bc127972022ea25ea6292ab2d72c3a6300d0b0e7fa60f2aae72d79524310b51 completed-frame rows131..136: state0, table3, cell15 for one tick then cell16 for five; row137 returns table0. Allocation and numeric selection are measured; native pixel binding and interruption branches remain separate."
+            ],
+            "status": "resolved"
+          },
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f002",
+              "ticks": 1
+            },
+            {
+              "frame": "f003",
+              "ticks": 5
+            }
+          ]
         }
       },
       "role": "guard",
