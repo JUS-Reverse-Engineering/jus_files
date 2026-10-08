@@ -151,6 +151,20 @@
         ],
         "sequence": "4x"
       },
+      "x_caught_k5": {
+        "active": true,
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
+        ],
+        "sequence": "cast_k5_x_body"
+      },
+      "x_caught_k6": {
+        "active": true,
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
+        ],
+        "sequence": "cast_k6_x_body"
+      },
       "x_chidori_k6": {
         "active": true,
         "evidence": [
@@ -267,10 +281,10 @@
       "X@k5:L4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
         ],
         "playback": "move_x_k5_l4",
-        "sequence": "5x"
+        "sequence": "cast_k5_x_body"
       },
       "X@k6": {
         "active": true,
@@ -305,10 +319,10 @@
       "X@k6:L4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
         ],
         "playback": "move_x_k6_l4",
-        "sequence": "6x"
+        "sequence": "cast_k6_x_body"
       },
       "air_b": {
         "active": true,
@@ -662,6 +676,48 @@
     "kind": "jus"
   },
   "presentation": {
+    "body_publication": {
+      "X@k5:L4": {
+        "cell_delay": 2,
+        "entry_anim": "x_raikiri_k5",
+        "entry_frame": 6,
+        "entry_moves": [
+          "X@k5",
+          "X@k5:L2",
+          "X@k5:L3"
+        ],
+        "entry_state": 10,
+        "entry_strip": "x_raikiri_k5",
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; measured caught selectors and independently checked finished body pixels. No simulation or universal delay change."
+        ],
+        "exit_state": 0,
+        "move_ticks": 64,
+        "panel": 5,
+        "release_delay": 1,
+        "state_code": 10
+      },
+      "X@k6:L4": {
+        "cell_delay": 2,
+        "entry_anim": "x_chidori_k6",
+        "entry_frame": 6,
+        "entry_moves": [
+          "X@k6",
+          "X@k6:L2",
+          "X@k6:L3"
+        ],
+        "entry_state": 10,
+        "entry_strip": "x_chidori_k6",
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; measured caught selectors and independently checked finished body pixels. No simulation or universal delay change."
+        ],
+        "exit_state": 0,
+        "move_ticks": 73,
+        "panel": 6,
+        "release_delay": 1,
+        "state_code": 10
+      }
+    },
     "down_air": {
       "evidence": [
         "Pinned baseline sprite_tuning.json /strips/down/air_frame or PocSpriteSheet.DOWN_AIR_FRAME default 4; forced airborne frame, no timing inference."
@@ -25098,6 +25154,44 @@
               "ticks": 5
             }
           ]
+        },
+        "move_x_k5_l4": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 37
+            },
+            {
+              "frame": "f009",
+              "ticks": 6
+            }
+          ]
         }
       },
       "role": "cast_k5_x_body",
@@ -28309,6 +28403,44 @@
             {
               "frame": "f009",
               "ticks": 5
+            }
+          ]
+        },
+        "move_x_k6_l4": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "bfb:docs/verification/jus-fidelity/kakashi-x-caught-repair/README.md \u2014 completed native contact controls panel5/6 hold3/60/93; exact body pixels, branch clocks and bounded publication history."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f010",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 4
+            },
+            {
+              "frame": "f011",
+              "ticks": 4
+            },
+            {
+              "frame": "f012",
+              "ticks": 46
+            },
+            {
+              "frame": "f009",
+              "ticks": 6
             }
           ]
         }
