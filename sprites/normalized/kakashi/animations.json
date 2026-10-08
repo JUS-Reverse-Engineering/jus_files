@@ -4726,7 +4726,7 @@
         "f006": {
           "anchor": [
             23,
-            55
+            43
           ],
           "baked_effects": [
             "sheet_lightning_overlay"
@@ -4734,7 +4734,8 @@
           "evidence": [
             "bfb:game/assets/poc_jus/kakashi/sprites.json#/anims/x_raikiri_k5 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
             "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred.",
-            "repo:docs/rebuild/special-strips.json#/characters/kakashi/strips/x_raikiri_k5/frame_check/5 sha256:023bf8504183ed5e881aedde2201f5fbc1b09b6b1fba9a9f7f8d9b6b189779a9 \u2014 Existing static cell comparison, not live branch selection."
+            "repo:docs/rebuild/special-strips.json#/characters/kakashi/strips/x_raikiri_k5/frame_check/5 sha256:023bf8504183ed5e881aedde2201f5fbc1b09b6b1fba9a9f7f8d9b6b189779a9 \u2014 Existing static cell comparison, not live branch selection.",
+            "bfb:docs/verification/jus-fidelity/kakashi-x-charge-anchor/README.md \u2014 K02 completed-frame body registration: unlit source005 native103 y77 + sole44 =121; lit source006 native99 y78 + sole43 =121. Preserve all electrical pixels below the body; original bottom-of-composite anchor55 raised the feet12px."
           ],
           "facing": "right",
           "path": "5x/006.png",
@@ -5973,7 +5974,7 @@
         "f006": {
           "anchor": [
             23,
-            55
+            43
           ],
           "baked_effects": [
             "sheet_lightning_overlay"
@@ -5981,7 +5982,8 @@
           "evidence": [
             "bfb:game/assets/poc_jus/kakashi/sprites.json#/anims/x_chidori_k6 sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
             "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred.",
-            "repo:docs/rebuild/special-strips.json#/characters/kakashi/strips/x_chidori_k6/frame_check/5 sha256:023bf8504183ed5e881aedde2201f5fbc1b09b6b1fba9a9f7f8d9b6b189779a9 \u2014 Existing static cell comparison, not live branch selection."
+            "repo:docs/rebuild/special-strips.json#/characters/kakashi/strips/x_chidori_k6/frame_check/5 sha256:023bf8504183ed5e881aedde2201f5fbc1b09b6b1fba9a9f7f8d9b6b189779a9 \u2014 Existing static cell comparison, not live branch selection.",
+            "bfb:docs/verification/jus-fidelity/kakashi-x-charge-anchor/README.md \u2014 K02 completed-frame body registration: unlit source005 native103 y77 + sole44 =121; lit source006 native99 y78 + sole43 =121. Preserve all electrical pixels below the body; original bottom-of-composite anchor55 raised the feet12px."
           ],
           "facing": "right",
           "path": "6x/006.png",
