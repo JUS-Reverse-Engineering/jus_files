@@ -400,30 +400,42 @@
       "dog_1@k4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+          "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
         ],
-        "sequence": "shot_dog_1_k4"
+        "playback": "default",
+        "sequence": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_102_node_0"
       },
       "dog_2@k4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+          "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
         ],
-        "sequence": "shot_dog_2_k4"
+        "playback": "default",
+        "sequence": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_105_node_0"
       },
       "dog_3@k4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+          "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
         ],
-        "sequence": "shot_dog_3_k4"
+        "playback": "default",
+        "sequence": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_104_node_0"
       },
       "dog_4@k4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+          "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
         ],
-        "sequence": "shot_dog_4_k4"
+        "playback": "default",
+        "sequence": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_103_node_0"
       },
       "dog_8b@k5": {
         "active": true,
@@ -20422,7 +20434,10 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04_4:na_b_04_e4.amt:anim:0006; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+        "Compiled art is drawn at the existing BOUND collision centre. The compensation is the negative of the existing box-centre offset: [-2, 2] to retain the native cell origin relative to the entity. Global native placement/publication remain separate and unresolved.",
+        "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
       ],
       "frames": {
         "f001": {
@@ -20509,6 +20524,10 @@
           ]
         }
       },
+      "render_offset": [
+        -2,
+        2
+      ],
       "role": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_102_node_0",
       "status": "candidate",
       "unresolved_id": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_102_node_0_identity"
@@ -20517,7 +20536,10 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04_4:na_b_04_e4.amt:anim:0007; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+        "Compiled art is drawn at the existing BOUND collision centre. The compensation is the negative of the existing box-centre offset: [0, -4] to retain the native cell origin relative to the entity. Global native placement/publication remain separate and unresolved.",
+        "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
       ],
       "frames": {
         "f001": {
@@ -20604,6 +20626,10 @@
           ]
         }
       },
+      "render_offset": [
+        0,
+        -4
+      ],
       "role": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_103_node_0",
       "status": "candidate",
       "unresolved_id": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_103_node_0_identity"
@@ -20612,7 +20638,10 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04_4:na_b_04_e4.amt:anim:0008; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+        "Compiled art is drawn at the existing BOUND collision centre. The compensation is the negative of the existing box-centre offset: [0, 0] to retain the native cell origin relative to the entity. Global native placement/publication remain separate and unresolved.",
+        "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
       ],
       "frames": {
         "f001": {
@@ -20699,6 +20728,10 @@
           ]
         }
       },
+      "render_offset": [
+        0,
+        0
+      ],
       "role": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_104_node_0",
       "status": "candidate",
       "unresolved_id": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_104_node_0_identity"
@@ -20707,7 +20740,10 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04_4:na_b_04_e4.amt:anim:0009; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/travelling-dog-repair/native-cell-proof.json \u2014 exact full opaque native registration of all8 cells across both owner facings; Art-only repair retains age4/4 and current simulation.",
+        "Compiled art is drawn at the existing BOUND collision centre. The compensation is the negative of the existing box-centre offset: [8, 0] to retain the native cell origin relative to the entity. Global native placement/publication remain separate and unresolved.",
+        "repo:docs/rebuild/anim-timing.md:628 and special-strips.json#/characters/kakashi/strips/dog_1@k4 through dog_4@k4 \u2014 retained static identities060466/060469/060468/060467 and native cells3/6,12/13,10/11,4/7 map to art102/105/104/103. Completed-frame native-cell-proof establishes the cells independently, not their runtime object ownership."
       ],
       "frames": {
         "f001": {
@@ -20794,6 +20830,10 @@
           ]
         }
       },
+      "render_offset": [
+        8,
+        0
+      ],
       "role": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_105_node_0",
       "status": "candidate",
       "unresolved_id": "cast_k4_up_x_move_component_na_b_04_e4_amt_id_105_node_0_identity"
