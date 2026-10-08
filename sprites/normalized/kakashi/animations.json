@@ -359,6 +359,16 @@
       }
     },
     "projectile": {
+      "air_y_thrown": {
+        "active": true,
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/legal-kakashi-air-y/art-proof-corrected.json: primary06043b maps exact source cells8/9 to native texture/palette/UV and opaque RGB.",
+          "bfb:docs/verification/jus-fidelity/kakashi-graphics-publication/corrected-replay-proof.json: actual keyed cells8/9 alternate every4ticks from primary spawn46; publication48..72 is a separate unresolved production route.",
+          "bfb:docs/verification/jus-fidelity/kakashi-air-y-art-repair/transform-proof.json:25live node+50 joins; actual native entity Q8-to-local Q12 stores and22unclipped matrix-to-primary bounds. BOUND collision centre(-1,-3) requires packed right-facing artwork offset(+1,+3)."
+        ],
+        "playback": "default",
+        "sequence": "cast_air_y_move_component"
+      },
       "beam_bolt1@k4": {
         "active": true,
         "evidence": [
@@ -467,9 +477,10 @@
       "dog_anchor@k4": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/dog-outline-repair/native-cell-proof.json \u2014 native K03/K05 full opaque pixel association and both facing controls; art binding only, publication/lifecycle remain separate."
         ],
-        "sequence": "shot_dog_anchor_k4"
+        "sequence": "cast_k4_up_x_ninja_dog"
       },
       "dog_pack@k5": {
         "active": true,
@@ -495,9 +506,11 @@
       "ninken": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/dog-outline-repair/native-cell-proof.json \u2014 native K03/K05 full opaque pixel association and both facing controls; art binding only, publication/lifecycle remain separate."
         ],
-        "sequence": "shot_ninken"
+        "playback": "outline_compat",
+        "sequence": "cast_down_y_ninja_dog"
       },
       "pakkun": {
         "active": true,
@@ -539,10 +552,12 @@
         "0": {
           "active": true,
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+            "bfb:docs/verification/jus-fidelity/dog-outline-repair/native-cell-proof.json \u2014 use the same native dog sequence as projectile alias ninken."
           ],
+          "playback": "outline_compat",
           "scale": 1.0,
-          "sequence": "shot_ninken"
+          "sequence": "cast_down_y_ninja_dog"
         }
       },
       "up_b": {
@@ -7537,7 +7552,10 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04:na_b_04_e0.amt:anim:0003; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/legal-kakashi-air-y/art-proof-corrected.json: primary06043b maps exact source cells8/9 to native texture/palette/UV and opaque RGB.",
+        "bfb:docs/verification/jus-fidelity/kakashi-graphics-publication/corrected-replay-proof.json: actual keyed cells8/9 alternate every4ticks from primary spawn46; publication48..72 is a separate unresolved production route.",
+        "bfb:docs/verification/jus-fidelity/kakashi-air-y-art-repair/transform-proof.json:25live node+50 joins; actual native entity Q8-to-local Q12 stores and22unclipped matrix-to-primary bounds. BOUND collision centre(-1,-3) requires packed right-facing artwork offset(+1,+3)."
       ],
       "frames": {
         "f001": {
@@ -7608,7 +7626,10 @@
           "evidence": [
             "ALMT declares rate60 and exact native art-track key frames; positive integer segments preserve source tick distances.",
             "Clock is an offline art-track representation. Gameplay epoch, branch selection and actor spawn remain unresolved.",
-            "Exact native art-track keys; gameplay selection epoch remains separate."
+            "Exact native art-track keys; gameplay selection epoch remains separate.",
+            "bfb:docs/verification/jus-fidelity/legal-kakashi-air-y/art-proof-corrected.json: primary06043b maps exact source cells8/9 to native texture/palette/UV and opaque RGB.",
+            "bfb:docs/verification/jus-fidelity/kakashi-graphics-publication/corrected-replay-proof.json: actual keyed cells8/9 alternate every4ticks from primary spawn46; publication48..72 is a separate unresolved production route.",
+            "bfb:docs/verification/jus-fidelity/kakashi-air-y-art-repair/transform-proof.json:25live node+50 joins; actual native entity Q8-to-local Q12 stores and22unclipped matrix-to-primary bounds. BOUND collision centre(-1,-3) requires packed right-facing artwork offset(+1,+3)."
           ],
           "status": "measured",
           "timeline": [
@@ -7623,6 +7644,10 @@
           ]
         }
       },
+      "render_offset": [
+        1,
+        3
+      ],
       "role": "cast_air_y_move_component",
       "status": "candidate",
       "unresolved_id": "cast_air_y_move_component_identity"
@@ -11897,7 +11922,8 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04:na_b_04_e0.amt:anim:0014; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/dog-outline-repair/native-cell-proof.json \u2014 native K03/K05 full opaque pixel association and both facing controls; art binding only, publication/lifecycle remain separate."
       ],
       "frames": {
         "f001": {
@@ -12014,8 +12040,31 @@
               "ticks": 6
             }
           ]
+        },
+        "outline_compat": {
+          "clock": "age",
+          "end": "loop",
+          "evidence": [
+            "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/ninken sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
+            "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred.",
+            "Existing ninken10fps looping age clock retained for this asset-only repair; native4/8/6 default remains measured and separate. Record and graphics tails are unresolved."
+          ],
+          "legacy": {
+            "evidence": [
+              "bfb:game/assets/poc_jus/kakashi/sprites.json#/projectiles/ninken sha256:c1dd9855babe493684e1654765711a2c943867f6133cc089e21e56ee5034b0d5 \u2014 Current loaded metadata and compatibility identity.",
+              "bfb:game/characters/poc_sprite_sheet.gd#PocSpriteSheet._strip sha256:6cc92298e918e2463718455cd777e280ebf4d73e3056a29691b24f8cdac85392 \u2014 Current anchor convention: body bottom centre, projectiles centred."
+            ],
+            "fps": 10,
+            "name": "projectile_fps",
+            "unresolved_id": "shot_ninken_projectile_fps"
+          },
+          "status": "legacy"
         }
       },
+      "render_offset": [
+        -13,
+        37
+      ],
       "role": "cast_down_y_ninja_dog",
       "status": "candidate",
       "unresolved_id": "cast_down_y_ninja_dog_identity"
@@ -20939,7 +20988,8 @@
       "default_playback": "default",
       "evidence": [
         "Reviewed cast-art asset na_b_04_4:na_b_04_e4.amt:anim:0004; body/component/form ownership remains in export-provenance.json.",
-        "Native unmirrored positive-x reference coordinates."
+        "Native unmirrored positive-x reference coordinates.",
+        "bfb:docs/verification/jus-fidelity/dog-outline-repair/native-cell-proof.json \u2014 native K03/K05 full opaque pixel association and both facing controls; art binding only, publication/lifecycle remain separate."
       ],
       "frames": {
         "f001": {
@@ -20993,6 +21043,10 @@
           ]
         }
       },
+      "render_offset": [
+        -1,
+        23
+      ],
       "role": "cast_k4_up_x_ninja_dog",
       "status": "candidate",
       "unresolved_id": "cast_k4_up_x_ninja_dog_identity"

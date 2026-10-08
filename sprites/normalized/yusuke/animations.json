@@ -71,6 +71,15 @@
         ],
         "sequence": "jump"
       },
+      "side_y_body": {
+        "active": true,
+        "evidence": [
+          "BOUND Plan16g bf-oy8; completed native turn-whiff-1 and turn-whiff-2, RAM cell boundaries at 21,33,37,41,45,50,55,60; source art yh_b_01:yh_b_01.amt:anim:001e.",
+          "Only the tapped side-Y body binding is resolved here. The original completed framebuffer follows RAM selection; no renderer-delay or full pixel-parity claim."
+        ],
+        "playback": "move_side_y",
+        "sequence": "cast_forward_y_body"
+      },
       "stand": {
         "active": true,
         "evidence": [
@@ -303,10 +312,11 @@
       "side_y": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/yusuke/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "BOUND Plan16g bf-oy8; completed native turn-whiff-1 and turn-whiff-2, RAM cell boundaries at 21,33,37,41,45,50,55,60; source art yh_b_01:yh_b_01.amt:anim:001e.",
+          "Only the tapped side-Y body binding is resolved here. The original completed framebuffer follows RAM selection; no renderer-delay or full pixel-parity claim."
         ],
         "playback": "move_side_y",
-        "sequence": "side_heavy"
+        "sequence": "cast_forward_y_body"
       },
       "up_b": {
         "active": true,
@@ -478,6 +488,34 @@
         ],
         "playback": "default",
         "sequence": "fall_recovery_legacy"
+      }
+    },
+    "body_publication": {
+      "side_y": {
+        "panel": 6,
+        "move_ticks": 53,
+        "cell_delay": 2,
+        "release_delay": 1,
+        "entry_strip": "stand",
+        "entry_frame": 0,
+        "exit_state": 0,
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/native-body-publication/README.md",
+          "bfb:docs/verification/jus-fidelity/body-publication-prototype/proposal.md"
+        ]
+      },
+      "b": {
+        "panel": 6,
+        "move_ticks": 30,
+        "cell_delay": 2,
+        "release_delay": 1,
+        "entry_strip": "stand",
+        "entry_frame": 0,
+        "exit_state": 0,
+        "evidence": [
+          "bfb:docs/verification/jus-fidelity/native-body-publication/README.md",
+          "bfb:docs/verification/jus-fidelity/body-publication-prototype/proposal.md"
+        ]
       }
     }
   },
@@ -10769,6 +10807,50 @@
             {
               "frame": "f008",
               "ticks": 12
+            }
+          ]
+        },
+        "move_side_y": {
+          "clock": "anim_frame",
+          "end": "hold",
+          "evidence": [
+            "BOUND Plan16g bf-oy8; completed native turn-whiff-1 and turn-whiff-2, RAM cell boundaries at 21,33,37,41,45,50,55,60; source art yh_b_01:yh_b_01.amt:anim:001e.",
+            "Only the tapped side-Y body binding is resolved here. The original completed framebuffer follows RAM selection; no renderer-delay or full pixel-parity claim.",
+            "Measured selected cells cover move ages0..51. The end hold is a current renderer policy; source selects idle cell0 at age52 while control returns at age53. This unresolved final transition is not a measured parity claim."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 12
+            },
+            {
+              "frame": "f002",
+              "ticks": 4
+            },
+            {
+              "frame": "f003",
+              "ticks": 4
+            },
+            {
+              "frame": "f004",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 5
+            },
+            {
+              "frame": "f006",
+              "ticks": 5
+            },
+            {
+              "frame": "f007",
+              "ticks": 5
+            },
+            {
+              "frame": "f008",
+              "ticks": 13
             }
           ]
         }
