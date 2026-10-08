@@ -64,6 +64,51 @@
         ],
         "sequence": "hit_ground"
       },
+      "hit_type_0": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 six accepted natural traces settle ordinary reaction-id selection, independent of airborne state.",
+          "Pilot collision libraries have authored alternate byte0 throughout: Kakashi38 records and Yusuke32 records. Alternate selector2 remains a separate import gap.",
+          "Native ALMT single-cell tracks hold their final pose. Publication timing and full victim matrices remain separate acceptance requirements."
+        ],
+        "sequence": "cast_hit_type_0_body"
+      },
+      "hit_type_1": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 six accepted natural traces settle ordinary reaction-id selection, independent of airborne state.",
+          "Pilot collision libraries have authored alternate byte0 throughout: Kakashi38 records and Yusuke32 records. Alternate selector2 remains a separate import gap.",
+          "Native ALMT single-cell tracks hold their final pose. Publication timing and full victim matrices remain separate acceptance requirements."
+        ],
+        "sequence": "cast_hit_type_1_body"
+      },
+      "hit_type_2": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 six accepted natural traces settle ordinary reaction-id selection, independent of airborne state.",
+          "Pilot collision libraries have authored alternate byte0 throughout: Kakashi38 records and Yusuke32 records. Alternate selector2 remains a separate import gap.",
+          "Native ALMT single-cell tracks hold their final pose. Publication timing and full victim matrices remain separate acceptance requirements."
+        ],
+        "sequence": "cast_hit_type_2_body"
+      },
+      "hit_type_3": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 six accepted natural traces settle ordinary reaction-id selection, independent of airborne state.",
+          "Pilot collision libraries have authored alternate byte0 throughout: Kakashi38 records and Yusuke32 records. Alternate selector2 remains a separate import gap.",
+          "Native ALMT single-cell tracks hold their final pose. Publication timing and full victim matrices remain separate acceptance requirements."
+        ],
+        "sequence": "cast_hit_type_2_body"
+      },
+      "hit_type_7": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 six accepted natural traces settle ordinary reaction-id selection, independent of airborne state.",
+          "Pilot collision libraries have authored alternate byte0 throughout: Kakashi38 records and Yusuke32 records. Alternate selector2 remains a separate import gap.",
+          "Native ALMT single-cell tracks hold their final pose. Publication timing and full victim matrices remain separate acceptance requirements."
+        ],
+        "sequence": "cast_surprised_body"
+      },
       "jump": {
         "active": true,
         "evidence": [
