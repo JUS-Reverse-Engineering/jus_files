@@ -192,7 +192,9 @@
       "X@k5": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 3, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:cc387066a259f79d9d370663a1791678c5de991ba60cdf0d98e634dee7917ca9; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k5",
         "sequence": "5x"
@@ -200,7 +202,9 @@
       "X@k5:L2": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 60, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:c814fb2ebabcb97375df4fb579d45ff4a6766d51768b5b6ba24aafe3abdaa488; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k5_l2",
         "sequence": "5x"
@@ -208,7 +212,9 @@
       "X@k5:L3": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 93, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:224f105cf4724d651851c1b836d9f420c316ba1ea77d1c9e6166f1b86f05a9e4; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k5_l3",
         "sequence": "5x"
@@ -224,7 +230,9 @@
       "X@k6": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 3, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:6a0d18ea491425bfd4b2825b5f1f3224683a24bc225144a0e7ff3aa869a3f897; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k6",
         "sequence": "6x"
@@ -232,7 +240,9 @@
       "X@k6:L2": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 60, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:714ba1571221fd2163c51e5bd6100aa72d89a930db3ff356bb68d46fabd6729d; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k6_l2",
         "sequence": "6x"
@@ -240,7 +250,9 @@
       "X@k6:L3": {
         "active": true,
         "evidence": [
-          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves.",
+          "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 93, active identity23, item-free, HP constant.",
+          "Completed-frame watch/request/result sha256:d706133f4735256beb22976505f14af4fcdceb7da1df332eb0c5235db174f832; original cells/time3c retained. RAM selection is separate from finished rendering."
         ],
         "playback": "move_x_k6_l3",
         "sequence": "6x"
@@ -4978,50 +4990,278 @@
           },
           "status": "legacy"
         },
-        "move_x_k5": {
-          "clock": "anim_frame",
+        "measured_held_cell_4": {
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "Same completed-native-frame hold93 control; art clocks28..51 and52->44 wrap retained in raw watches. Finite enumerated selector reuses the existing normalized contract."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "selector": {
+            "conditions": [
+              {
+                "field": "move_id",
+                "values": [
+                  "X@k5"
+                ]
+              },
+              {
+                "field": "holding",
+                "values": [
+                  true
+                ]
+              },
+              {
+                "field": "held",
+                "values": [
+                  0,
+                  1,
+                  2,
+                  7,
+                  8,
+                  9,
+                  10,
+                  15,
+                  16,
+                  17,
+                  18,
+                  23,
+                  24,
+                  25,
+                  26,
+                  31,
+                  32,
+                  33,
+                  34,
+                  39,
+                  40,
+                  41,
+                  42,
+                  47,
+                  48,
+                  49,
+                  50,
+                  55,
+                  56,
+                  57,
+                  58
+                ]
+              }
             ],
-            "name": "move_even_spacing",
-            "unresolved_id": "5x_move_x_k5_move_even_spacing"
+            "evidence": [
+              "Existing FighterViewState.held: finite native charge cap93; observed held0..61, no invented publication delay."
+            ],
+            "status": "resolved"
           },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f005",
+              "ticks": 1
+            }
+          ]
+        },
+        "measured_held_cell_5": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "Same completed-native-frame hold93 control; art clocks28..51 and52->44 wrap retained in raw watches. Finite enumerated selector reuses the existing normalized contract."
+          ],
+          "selector": {
+            "conditions": [
+              {
+                "field": "move_id",
+                "values": [
+                  "X@k5"
+                ]
+              },
+              {
+                "field": "holding",
+                "values": [
+                  true
+                ]
+              },
+              {
+                "field": "held",
+                "values": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  11,
+                  12,
+                  13,
+                  14,
+                  19,
+                  20,
+                  21,
+                  22,
+                  27,
+                  28,
+                  29,
+                  30,
+                  35,
+                  36,
+                  37,
+                  38,
+                  43,
+                  44,
+                  45,
+                  46,
+                  51,
+                  52,
+                  53,
+                  54,
+                  59,
+                  60,
+                  61
+                ]
+              }
+            ],
+            "evidence": [
+              "Existing FighterViewState.held: finite native charge cap93; observed held0..61, no invented publication delay."
+            ],
+            "status": "resolved"
+          },
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f006",
+              "ticks": 1
+            }
+          ]
+        },
+        "move_x_k5": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 3, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:cc387066a259f79d9d370663a1791678c5de991ba60cdf0d98e634dee7917ca9; original cells/time3c retained. RAM selection is separate from finished rendering."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 1
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 11
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k5_l2": {
-          "clock": "anim_frame",
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 60, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:c814fb2ebabcb97375df4fb579d45ff4a6766d51768b5b6ba24aafe3abdaa488; original cells/time3c retained. RAM selection is separate from finished rendering."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
-            ],
-            "name": "move_even_spacing",
-            "unresolved_id": "5x_move_x_k5_l2_move_even_spacing"
-          },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 2
+            },
+            {
+              "frame": "f007",
+              "ticks": 9
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k5_l3": {
-          "clock": "anim_frame",
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 93, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:224f105cf4724d651851c1b836d9f420c316ba1ea77d1c9e6166f1b86f05a9e4; original cells/time3c retained. RAM selection is separate from finished rendering."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
-            ],
-            "name": "move_even_spacing",
-            "unresolved_id": "5x_move_x_k5_l3_move_even_spacing"
-          },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 11
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k5_l4": {
           "clock": "anim_frame",
@@ -5997,50 +6237,286 @@
           },
           "status": "legacy"
         },
-        "move_x_k6": {
-          "clock": "anim_frame",
+        "measured_held_cell_4": {
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "Same completed-native-frame hold93 control; art clocks28..51 and52->44 wrap retained in raw watches. Finite enumerated selector reuses the existing normalized contract."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+          "selector": {
+            "conditions": [
+              {
+                "field": "move_id",
+                "values": [
+                  "X@k6"
+                ]
+              },
+              {
+                "field": "holding",
+                "values": [
+                  true
+                ]
+              },
+              {
+                "field": "held",
+                "values": [
+                  0,
+                  1,
+                  2,
+                  7,
+                  8,
+                  9,
+                  10,
+                  15,
+                  16,
+                  17,
+                  18,
+                  23,
+                  24,
+                  25,
+                  26,
+                  31,
+                  32,
+                  33,
+                  34,
+                  39,
+                  40,
+                  41,
+                  42,
+                  47,
+                  48,
+                  49,
+                  50,
+                  55,
+                  56,
+                  57,
+                  58
+                ]
+              }
             ],
-            "name": "move_even_spacing",
-            "unresolved_id": "6x_move_x_k6_move_even_spacing"
+            "evidence": [
+              "Existing FighterViewState.held: finite native charge cap93; observed held0..61, no invented publication delay."
+            ],
+            "status": "resolved"
           },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f005",
+              "ticks": 1
+            }
+          ]
+        },
+        "measured_held_cell_5": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "Same completed-native-frame hold93 control; art clocks28..51 and52->44 wrap retained in raw watches. Finite enumerated selector reuses the existing normalized contract."
+          ],
+          "selector": {
+            "conditions": [
+              {
+                "field": "move_id",
+                "values": [
+                  "X@k6"
+                ]
+              },
+              {
+                "field": "holding",
+                "values": [
+                  true
+                ]
+              },
+              {
+                "field": "held",
+                "values": [
+                  3,
+                  4,
+                  5,
+                  6,
+                  11,
+                  12,
+                  13,
+                  14,
+                  19,
+                  20,
+                  21,
+                  22,
+                  27,
+                  28,
+                  29,
+                  30,
+                  35,
+                  36,
+                  37,
+                  38,
+                  43,
+                  44,
+                  45,
+                  46,
+                  51,
+                  52,
+                  53,
+                  54,
+                  59,
+                  60,
+                  61
+                ]
+              }
+            ],
+            "evidence": [
+              "Existing FighterViewState.held: finite native charge cap93; observed held0..61, no invented publication delay."
+            ],
+            "status": "resolved"
+          },
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f006",
+              "ticks": 1
+            }
+          ]
+        },
+        "move_x_k6": {
+          "clock": "anim_tick",
+          "end": "hold",
+          "evidence": [
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 3, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:6a0d18ea491425bfd4b2825b5f1f3224683a24bc225144a0e7ff3aa869a3f897; original cells/time3c retained. RAM selection is separate from finished rendering."
+          ],
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f001",
+              "ticks": 3
+            },
+            {
+              "frame": "f002",
+              "ticks": 3
+            },
+            {
+              "frame": "f003",
+              "ticks": 3
+            },
+            {
+              "frame": "f004",
+              "ticks": 3
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 4
+            },
+            {
+              "frame": "f006",
+              "ticks": 4
+            },
+            {
+              "frame": "f005",
+              "ticks": 1
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 13
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k6_l2": {
-          "clock": "anim_frame",
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 60, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:714ba1571221fd2163c51e5bd6100aa72d89a930db3ff356bb68d46fabd6729d; original cells/time3c retained. RAM selection is separate from finished rendering."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
-            ],
-            "name": "move_even_spacing",
-            "unresolved_id": "6x_move_x_k6_l2_move_even_spacing"
-          },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 13
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k6_l3": {
-          "clock": "anim_frame",
+          "clock": "anim_tick",
           "end": "hold",
           "evidence": [
-            "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
+            "bfb:docs/verification/jus-fidelity/kakashi-x-playback-repair/README.md \u2014 completed-native-frame whiff hold 93, active identity23, item-free, HP constant.",
+            "Completed-frame watch/request/result sha256:d706133f4735256beb22976505f14af4fcdceb7da1df332eb0c5235db174f832; original cells/time3c retained. RAM selection is separate from finished rendering."
           ],
-          "legacy": {
-            "evidence": [
-              "repo:docs/rebuild/normalized-library/pilot-aliases.json#/characters/kakashi/aliases sha256:28381ed2f571e7eb6c32262edd9c693af619ad64ac658b128e9ce240c11a7255 \u2014 A0 exact current compatibility inventory; preserved without renaming moves."
-            ],
-            "name": "move_even_spacing",
-            "unresolved_id": "6x_move_x_k6_l3_move_even_spacing"
-          },
-          "status": "legacy"
+          "status": "measured",
+          "timeline": [
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 4
+            },
+            {
+              "frame": "f008",
+              "ticks": 4
+            },
+            {
+              "frame": "f007",
+              "ticks": 9
+            },
+            {
+              "frame": "f012",
+              "ticks": 5
+            }
+          ]
         },
         "move_x_k6_l4": {
           "clock": "anim_frame",
