@@ -1,0 +1,19 @@
+{
+ "parent": "pc-taikoubou-npc-jotaro-dark-tournament.mln.gz",
+ "parent_sha256": "c31495a15d70c33bbb5b9cd2f79fe6f1e60b10a4298df55604e4b0827ffe88d8",
+ "derived_sha256": "0d92d6edb9e1c884fca40563435b3dd10eb1302ec27e6de3f3585c425ec3401d",
+ "patches": [
+  {
+   "addr": "0x0215A60C",
+   "old": "010080e2",
+   "new": "020080e2"
+  }
+ ],
+ "tool": "docs/research/feel-captures/2026-10-09-dream-combo/plans/derive_state.py",
+ "expect": [
+  "0x0215A60C=010080e2"
+ ],
+ "expect_note": "Not recorded when first derived (derive_state.py then had an optional --expect). Re-derived on 2026-10-09 from the parent with --expect set to each patch's recorded old bytes; the parent matched and the derived sha256 is identical.",
+ "measurement_only": true,
+ "measurement_only_reason": "Patches game code (ov6 dream-chain participant counter, 0x0215A60C) to fake the counter for the DC-1 participant-bonus measurement (docs/research/feel-captures/2026-10-09-dream-combo/RESULTS.md, Q4 faked counter). Not a fixture: do not use it for any other measurement or as a starting state for features."
+}
