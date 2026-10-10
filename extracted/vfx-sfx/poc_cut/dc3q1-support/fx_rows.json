@@ -1,0 +1,110 @@
+{
+ "0x210000": {
+  "cells": [
+   1,
+   1,
+   2,
+   2,
+   3,
+   3,
+   4,
+   4,
+   0,
+   0
+  ],
+  "dtx": "jyocyu_efe_a.dtx",
+  "frames": 10,
+  "grade": "static",
+  "member": "jyocyu_efe_a.amt",
+  "source": "comm_a",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x210013": {
+  "cells": [
+   80,
+   80,
+   81,
+   81,
+   82,
+   82,
+   83,
+   83,
+   0,
+   0
+  ],
+  "dtx": "jyocyu_efe_a.dtx",
+  "frames": 10,
+  "grade": "static",
+  "member": "jyocyu_efe_a.amt",
+  "source": "comm_a",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x210014": {
+  "cells": [
+   84,
+   84,
+   85,
+   85,
+   86,
+   86,
+   87,
+   87,
+   0,
+   0
+  ],
+  "dtx": "jyocyu_efe_a.dtx",
+  "frames": 10,
+  "grade": "static",
+  "member": "jyocyu_efe_a.amt",
+  "source": "comm_a",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x220007": {
+  "cells": [
+   196,
+   196,
+   197,
+   198,
+   199,
+   200,
+   201,
+   202,
+   203,
+   204
+  ],
+  "dtx": "jyocyu_efe_b.dtx",
+  "frames": 10,
+  "grade": "static",
+  "member": "jyocyu_efe_b.amt",
+  "source": "comm_b",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x240005": {
+  "cells": [
+   5,
+   5,
+   5,
+   5
+  ],
+  "dtx": "jyochu_gion.dtx",
+  "frames": 4,
+  "grade": "static",
+  "member": "jyochu_gion.amt",
+  "source": "comm_g",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x24001c": {
+  "cells": [
+   28,
+   28,
+   28,
+   28
+  ],
+  "dtx": "jyochu_gion.dtx",
+  "frames": 4,
+  "grade": "static",
+  "member": "jyochu_gion.amt",
+  "source": "comm_g",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ }
+}

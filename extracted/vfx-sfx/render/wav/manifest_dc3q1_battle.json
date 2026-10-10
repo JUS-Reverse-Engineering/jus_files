@@ -1,0 +1,221 @@
+[
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 14,
+  "name": "SE_HIT",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 57,
+    "velocity": 105,
+    "length": 24,
+    "program": 6,
+    "type": 1,
+    "swar": 0,
+    "swav": 18
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 8535,
+  "seconds": 0.26,
+  "audible_seconds": 0.245,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -11.5,
+  "rms_dbfs": -18.1,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_0e_SE_HIT.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 15,
+  "name": "SE_HVYHIT",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 102,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 6,
+    "type": 1,
+    "swar": 0,
+    "swav": 18
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9730,
+  "seconds": 0.297,
+  "audible_seconds": 0.288,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.8,
+  "rms_dbfs": -17.3,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_0f_SE_HVYHIT.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 20,
+  "name": "SE_FURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 1,
+    "type": 1,
+    "swar": 0,
+    "swav": 39
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 7169,
+  "seconds": 0.219,
+  "audible_seconds": 0.213,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.2,
+  "rms_dbfs": -23.5,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_14_SE_FURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 51,
+  "name": "SE_APPEAR",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 68,
+    "velocity": 60,
+    "length": 16,
+    "program": 123,
+    "type": 2,
+    "swar": 0,
+    "swav": 3
+   },
+   {
+    "key": 84,
+    "velocity": 60,
+    "length": 8,
+    "program": 127,
+    "type": 3,
+    "swar": 0,
+    "swav": 0
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 35677,
+  "seconds": 1.089,
+  "audible_seconds": 0.531,
+  "starts_at_s": 0.016,
+  "peak_dbfs": -21.0,
+  "rms_dbfs": -34.0,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_33_SE_APPEAR.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 52,
+  "name": "SE_DASH",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 75,
+  "notes": [
+   {
+    "key": 61,
+    "velocity": 127,
+    "length": 0,
+    "program": 2,
+    "type": 1,
+    "swar": 0,
+    "swav": 6
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 12120,
+  "seconds": 0.37,
+  "audible_seconds": 0.363,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -15.2,
+  "rms_dbfs": -28.0,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_34_SE_DASH.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 54,
+  "name": "SE_CHRCHNG",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 13,
+    "type": 1,
+    "swar": 0,
+    "swav": 5
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9730,
+  "seconds": 0.297,
+  "audible_seconds": 0.289,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.6,
+  "rms_dbfs": -22.2,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_36_SE_CHRCHNG.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 67,
+  "name": "SE_DRON",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 122,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 20,
+    "type": 1,
+    "swar": 0,
+    "swav": 8
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 14851,
+  "seconds": 0.453,
+  "audible_seconds": 0.442,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -7.2,
+  "rms_dbfs": -18.3,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_43_SE_DRON.wav"
+ }
+]

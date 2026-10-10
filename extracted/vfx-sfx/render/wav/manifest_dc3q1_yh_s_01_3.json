@@ -1,0 +1,68 @@
+[
+ {
+  "seqarc": 515,
+  "seqarc_name": "SEQ_YH_S_01_3",
+  "index": 0,
+  "name": "SE_SPT3_YUS_SGUN",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 110,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 6,
+    "program": 17,
+    "type": 1,
+    "swar": 0,
+    "swav": 32
+   },
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 6,
+    "program": 17,
+    "type": 1,
+    "swar": 0,
+    "swav": 32
+   },
+   {
+    "key": 55,
+    "velocity": 127,
+    "length": 10,
+    "program": 19,
+    "type": 1,
+    "swar": 0,
+    "swav": 31
+   },
+   {
+    "key": 77,
+    "velocity": 60,
+    "length": 20,
+    "program": 125,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 62,
+    "velocity": 127,
+    "length": 0,
+    "program": 19,
+    "type": 1,
+    "swar": 0,
+    "swav": 31
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 26800,
+  "seconds": 0.818,
+  "audible_seconds": 0.807,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -7.7,
+  "rms_dbfs": -17.5,
+  "silent": false,
+  "wav": "render/wav/SEQ_YH_S_01_3_00_SE_SPT3_YUS_SGUN.wav"
+ }
+]

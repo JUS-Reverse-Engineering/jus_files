@@ -1,0 +1,59 @@
+[
+ {
+  "seqarc": 120,
+  "seqarc_name": "SEQ_STATIC",
+  "index": 2,
+  "name": "SE_BOBOOO",
+  "bank": 53,
+  "bank_name": "BANK_SE_STATIC",
+  "ssar_volume": 55,
+  "notes": [
+   {
+    "key": 50,
+    "velocity": 110,
+    "length": 4,
+    "program": 116,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 65,
+    "velocity": 83,
+    "length": 4,
+    "program": 116,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 50,
+    "velocity": 110,
+    "length": 16,
+    "program": 116,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 65,
+    "velocity": 83,
+    "length": 16,
+    "program": 116,
+    "type": 2,
+    "swar": 0,
+    "swav": 5
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 12973,
+  "seconds": 0.396,
+  "audible_seconds": 0.318,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -25.1,
+  "rms_dbfs": -31.0,
+  "silent": false,
+  "wav": "render/wav/SEQ_STATIC_02_SE_BOBOOO.wav"
+ }
+]
