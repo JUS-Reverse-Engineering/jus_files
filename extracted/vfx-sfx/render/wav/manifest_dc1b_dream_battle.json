@@ -1,0 +1,368 @@
+[
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 45,
+  "name": "SE_DCOMBO1",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 62,
+    "velocity": 127,
+    "length": 6,
+    "program": 13,
+    "type": 1,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 78,
+    "velocity": 70,
+    "length": 24,
+    "program": 127,
+    "type": 3,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 88,
+    "velocity": 90,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   },
+   {
+    "key": 95,
+    "velocity": 90,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   },
+   {
+    "key": 95,
+    "velocity": 60,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 30556,
+  "seconds": 0.932,
+  "audible_seconds": 0.573,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -10.8,
+  "rms_dbfs": -29.3,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_2d_SE_DCOMBO1.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 46,
+  "name": "SE_DCOMBO2",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 64,
+    "velocity": 127,
+    "length": 6,
+    "program": 13,
+    "type": 1,
+    "swar": 0,
+    "swav": 5
+   },
+   {
+    "key": 80,
+    "velocity": 70,
+    "length": 12,
+    "program": 127,
+    "type": 3,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 97,
+    "velocity": 90,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   },
+   {
+    "key": 90,
+    "velocity": 90,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   },
+   {
+    "key": 90,
+    "velocity": 60,
+    "length": 6,
+    "program": 124,
+    "type": 2,
+    "swar": 0,
+    "swav": 4
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 26630,
+  "seconds": 0.813,
+  "audible_seconds": 0.453,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -9.9,
+  "rms_dbfs": -30.6,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_2e_SE_DCOMBO2.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 49,
+  "name": "SE_DCOMBO5",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 89,
+    "velocity": 90,
+    "length": 16,
+    "program": 127,
+    "type": 3,
+    "swar": 0,
+    "swav": 0
+   },
+   {
+    "key": 76,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 88,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 79,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 91,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 81,
+    "velocity": 100,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 93,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 83,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 95,
+    "velocity": 40,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 86,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 98,
+    "velocity": 90,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 81,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 93,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 83,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 95,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 86,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   },
+   {
+    "key": 98,
+    "velocity": 60,
+    "length": 2,
+    "program": 126,
+    "type": 2,
+    "swar": 0,
+    "swav": 6
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 38067,
+  "seconds": 1.162,
+  "audible_seconds": 0.698,
+  "starts_at_s": 0.016,
+  "peak_dbfs": -12.5,
+  "rms_dbfs": -28.0,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_31_SE_DCOMBO5.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 50,
+  "name": "SE_STARTSP",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 95,
+  "notes": [
+   {
+    "key": 84,
+    "velocity": 120,
+    "length": 18,
+    "program": 39,
+    "type": 1,
+    "swar": 0,
+    "swav": 38
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 18606,
+  "seconds": 0.568,
+  "audible_seconds": 0.412,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -11.1,
+  "rms_dbfs": -30.0,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_32_SE_STARTSP.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 54,
+  "name": "SE_CHRCHNG",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 117,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 13,
+    "type": 1,
+    "swar": 0,
+    "swav": 5
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 9730,
+  "seconds": 0.297,
+  "audible_seconds": 0.289,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.6,
+  "rms_dbfs": -22.2,
+  "silent": false,
+  "wav": "render/wav/SEQ_BATTLE_36_SE_CHRCHNG.wav"
+ }
+]

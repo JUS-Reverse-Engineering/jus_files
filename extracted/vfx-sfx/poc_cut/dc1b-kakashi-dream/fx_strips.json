@@ -1,0 +1,20 @@
+{
+	"_generated": {
+		"by": "cut_dream_fx.py (bf tools/poc_jus/cut_effects.cut_group)",
+		"jus_re": "5bf249708921de4e960f8db0c210ffd9cad8fc0e",
+		"not_for_release": "ripped JUS art; never exported",
+		"note": "generated; do not hand-edit"
+	},
+	"effects": {
+		"0x220009": {
+			"cells": [182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 0],
+			"origin": [46, 70],
+			"size": [92, 92]
+		},
+		"0x22000a": {
+			"cells": [212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223],
+			"origin": [56, 80],
+			"size": [112, 112]
+		}
+	}
+}

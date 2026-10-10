@@ -1,0 +1,61 @@
+{
+ "0x220009": {
+  "cells": [
+   182,
+   183,
+   184,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189,
+   190,
+   191,
+   192,
+   192,
+   193,
+   193,
+   194,
+   195,
+   0
+  ],
+  "dtx": "jyocyu_efe_b.dtx",
+  "frames": 18,
+  "grade": "static",
+  "member": "jyocyu_efe_b.amt",
+  "source": "comm_b",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ },
+ "0x22000a": {
+  "cells": [
+   212,
+   213,
+   214,
+   215,
+   215,
+   216,
+   216,
+   217,
+   217,
+   218,
+   218,
+   219,
+   219,
+   220,
+   220,
+   221,
+   221,
+   222,
+   222,
+   223,
+   223
+  ],
+  "dtx": "jyocyu_efe_b.dtx",
+  "frames": 21,
+  "grade": "static",
+  "member": "jyocyu_efe_b.amt",
+  "source": "comm_b",
+  "src": "vfx-sfx.md \u00a76 (vfx-sfx.json effects)"
+ }
+}
