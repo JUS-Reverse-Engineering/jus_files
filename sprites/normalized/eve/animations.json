@@ -1,7 +1,269 @@
 {
   "aliases": {
-    "anim": {},
-    "move": {},
+    "anim": {
+      "b_attack": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x1e (B) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:001b (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "neutral_b_body"
+      },
+      "b_down": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x24 (down B) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0021 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "down_b_body"
+      },
+      "b_forward": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x20 (side B) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:001d (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "forward_b_body"
+      },
+      "b_jump": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x26 (air B) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0023 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "air_b_body"
+      },
+      "b_up": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x22 (up B) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:001f (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "up_b_body"
+      },
+      "block": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: guard_body (asset anim 0003), three-frame guard raise with the shield cell in the middle. Native ALMT track timing is the measured playback; stand/walk loop, the rest hold."
+        ],
+        "sequence": "guard_body"
+      },
+      "dash": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: dash_body (asset anim 0002), two leaning dash cells. Native ALMT track timing is the measured playback; stand/walk loop, the rest hold."
+        ],
+        "sequence": "dash_body"
+      },
+      "down": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: knockdown_body (asset anim 000f, native 0x0F) tumbles, falls and lies flat in three cells; hit-pose-selection-2026-10-04.md says type 4 plays 0x0F after 0x0C. The get-up (getup_body 0017) is a separate sequence and cannot join the strip."
+        ],
+        "sequence": "knockdown_body"
+      },
+      "hit": {
+        "active": true,
+        "evidence": [
+          "Generic hit strip, used for reaction types that have no hit_type_N strip. hit_type_1 is the ordinary type the table selects for the most common contact (hit-pose-selection-2026-10-04.md); it is a standing flinch, so launch types 5 and 6 look upright until their own selector evidence exists."
+        ],
+        "sequence": "hit_type_1_body"
+      },
+      "hit_type_0": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 reaction type 0 selects native animation 0x0B; Eve cell 26 of bc_b_01 is this pose (upright flinch, head back; Eve B natural contact).",
+          "Native ALMT single-cell track holds its final pose; publication timing remains a separate acceptance requirement."
+        ],
+        "sequence": "hit_type_0_body"
+      },
+      "hit_type_1": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 reaction type 1 selects native animation 0x0A; Eve cell 27 of bc_b_01 is this pose (leaning-back flinch).",
+          "Native ALMT single-cell track holds its final pose; publication timing remains a separate acceptance requirement."
+        ],
+        "sequence": "hit_type_1_body"
+      },
+      "hit_type_2": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 reaction type 2 selects native animation 0x0C; Eve cell 28 of bc_b_01 is this pose (bent-over flinch).",
+          "Native ALMT single-cell track holds its final pose; publication timing remains a separate acceptance requirement."
+        ],
+        "sequence": "hit_type_2_body"
+      },
+      "hit_type_3": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 \"Type 3 starts 0x0C\", the animation hit_type_2 uses (same mapping Kakashi carries)."
+        ],
+        "sequence": "hit_type_2_body"
+      },
+      "hit_type_7": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/findings/hit-pose-selection-2026-10-04.md \u2014 reaction type 7 selects native animation 0x0D; Eve cell 40 of bc_b_01 is this pose (upright pose with the hair swirled out, the surprised pose)."
+        ],
+        "sequence": "surprised_body"
+      },
+      "jump": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: jump_rise_body (asset anim 0004), two winged ascent cells. Native ALMT track timing is the measured playback; stand/walk loop, the rest hold.",
+          "Squat, apex and landing parts live in other sequences (jump_squat_landend_body 0008, jump_air_variant_05/06_body) and cannot join this strip: a compiled strip holds one sequence. The compiler falls back to frame 0 for squat/fall and the last cell for land."
+        ],
+        "sequence": "jump_rise_body"
+      },
+      "stand": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: idle_body (asset anim 0000), four-frame standing loop. Native ALMT track timing is the measured playback; stand/walk loop, the rest hold."
+        ],
+        "sequence": "idle_body"
+      },
+      "up_x_feather_bullets_k4": {
+        "active": true,
+        "evidence": [
+          "Koma 4 slot B is \"Feather Bullets\" (repo:docs/research/guides/systems/koma-list.json); the kit special_sets koma 4 up X move is UP_X@k4, and its anim id 0x2a is asset bc_b_01 anim 0027 + 3. Reviewed frames match. Eve points forward through a 79-tick track; the six feather bullets are a separate move_component set."
+        ],
+        "sequence": "k4_up_x_body"
+      },
+      "up_x_nano_slicer_k5": {
+        "active": true,
+        "evidence": [
+          "Koma 5 slot B is \"Nano-Slicer\" (repo:docs/research/guides/systems/koma-list.json); the kit special_sets koma 5 up X move is UP_X@k5, and its anim id 0x2c is asset bc_b_01 anim 0029 + 3. Reviewed frames match. Hair spiral; the kit mash move (anim 0x2c, 84 frames) is the 84-tick track."
+        ],
+        "sequence": "k5_up_x_body"
+      },
+      "walk": {
+        "active": true,
+        "evidence": [
+          "Reviewed cast-art frames: walk_body (asset anim 0001), eight-frame run cycle. Native ALMT track timing is the measured playback; stand/walk loop, the rest hold."
+        ],
+        "sequence": "walk_body"
+      },
+      "x_golden_hands_k4": {
+        "active": true,
+        "evidence": [
+          "Koma 4 slot A is \"Golden 4-hand Performance\" (repo:docs/research/guides/systems/koma-list.json); the kit special_sets koma 4 X move is X@k4, and its anim id 0x29 is asset bc_b_01 anim 0026 + 3. Reviewed frames match. Fists fan out across the whole screen height; the kit mash move (anim 0x29, 39 frames) is the 39-tick track."
+        ],
+        "sequence": "k4_x_body"
+      },
+      "x_lance_k5": {
+        "active": true,
+        "evidence": [
+          "Koma 5 slot A is \"Transformation - Lance\" (repo:docs/research/guides/systems/koma-list.json); the kit special_sets koma 5 X move is X@k5, and its anim id 0x2b is asset bc_b_01 anim 0028 + 3. Reviewed frames match. Winged lance thrust; the track runs 112 ticks, the kit whiff path returns at 85 and the tail past tick 86 is a branch the library does not select."
+        ],
+        "sequence": "k5_x_body"
+      },
+      "y_attack": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x1f (Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:001c (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "neutral_y_body"
+      },
+      "y_down": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x25 (down Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0022 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "down_y_body"
+      },
+      "y_forward": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x21 (side Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:001e (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "forward_y_body"
+      },
+      "y_jump": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x27 (air Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0024 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "air_y_body"
+      },
+      "y_up": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x23 (up Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0020 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
+        ],
+        "sequence": "up_y_body"
+      }
+    },
+    "move": {
+      "UP_X@k4": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json special_sets koma 4 up X: idle_return 82 is the 79-tick track of k4_up_x_body plus the usual 3 recovery ticks, so the track runs from move tick 0."
+        ],
+        "playback": "default",
+        "sequence": "k4_up_x_body"
+      },
+      "UP_X@k5": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json special_sets koma 5 up X: mash.frames 84 equals the 84-tick track of k5_up_x_body, so the track runs from move tick 0."
+        ],
+        "playback": "default",
+        "sequence": "k5_up_x_body"
+      },
+      "X@k4": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json special_sets koma 4 X: mash.frames 39 equals the 39-tick track of k4_x_body and idle_return 42 is the track plus the usual 3 recovery ticks, so the track runs from move tick 0."
+        ],
+        "playback": "default",
+        "sequence": "k4_x_body"
+      },
+      "X@k5": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json special_sets koma 5 X: idle_return 85 falls inside the 112-tick track of k5_x_body (a 13-tick hold ends at tick 86); ticks 0-85 are the whiff path and the later cells are a branch this alias does not select. Branch selection stays unresolved."
+        ],
+        "playback": "default",
+        "sequence": "k5_x_body"
+      },
+      "b": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 32 equals the 29-tick native track of neutral_b_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "neutral_b_body"
+      },
+      "down_b": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 43 equals the 40-tick native track of down_b_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "down_b_body"
+      },
+      "down_y": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 59 equals the 56-tick native track of down_y_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "down_y_body"
+      },
+      "side_b": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 34 equals the 31-tick native track of forward_b_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "forward_b_body"
+      },
+      "up_b": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 28 equals the 25-tick native track of up_b_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "up_b_body"
+      },
+      "y": {
+        "active": true,
+        "evidence": [
+          "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 51 equals the 48-tick native track of neutral_y_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
+        ],
+        "sequence": "neutral_y_body"
+      }
+    },
     "projectile": {},
     "record": {}
   },
@@ -13,7 +275,33 @@
     ],
     "kind": "jus"
   },
-  "presentation": {},
+  "presentation": {
+    "down_air": {
+      "evidence": [
+        "Reviewed knockdown_body frames: f001 is the head-down start, f002 the diagonal mid-air tumble, f003 lying flat. The forced airborne frame is the tumble."
+      ],
+      "frame": "f002",
+      "sequence": "knockdown_body"
+    },
+    "jump_parts": {
+      "rise": {
+        "evidence": [
+          "Native 8-tick track of jump_rise_body (asset anim 0004) drives the rise part; other parts need cells from other sequences and are left to the compiler fallback."
+        ],
+        "playback": "default",
+        "sequence": "jump_rise_body"
+      }
+    },
+    "reactions": {
+      "falldown": {
+        "evidence": [
+          "Native 16-tick track of knockdown_body (0x0F) plays the fall and holds the lying cell; the get-up is a separate sequence."
+        ],
+        "playback": "default",
+        "sequence": "knockdown_body"
+      }
+    }
+  },
   "role_catalog": {
     "evidence": [
       "Reviewed art package does not establish complete runtime role inventory."
