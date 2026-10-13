@@ -186,6 +186,13 @@
           "repo:docs/rebuild/characters/eve.kit.json moves[].jus_anim 0x23 (up Y) names the same table row as library asset bc_b_01:bc_b_01.amt:anim:0020 (every base slot sits exactly 3 below its jus_anim); the frames were reviewed by eye and show the matching attack."
         ],
         "sequence": "up_y_body"
+      },
+      "ultimate": {
+        "active": true,
+        "evidence": [
+          "Eve's SELECT Ultimate Action plays native animation 0x18 (repo:docs/research/feel-captures/2026-10-13-eve-ua/README.md: move id 11, anim 0x18, state 12), which is library asset bc_b_01:bc_b_01.amt:anim:0018 and the taunt_body sequence (6 cells, 54-tick native track). No Kakashi or Yusuke ultimate strip exists, so the name `ultimate` follows the slot name."
+        ],
+        "sequence": "taunt_body"
       }
     },
     "move": {
@@ -262,6 +269,14 @@
           "repo:docs/rebuild/characters/eve.kit.json moves[] idle_return 51 equals the 48-tick native track of neutral_y_body plus the 3-tick recovery every one of these base moves shows, so the track is measured from move tick 0. up Y, air B and air Y carry no kit length and side Y's track (117) passes its idle_return (62): no move alias."
         ],
         "sequence": "neutral_y_body"
+      },
+      "ULTIMATE": {
+        "active": true,
+        "evidence": [
+          "repo:docs/research/feel-captures/2026-10-13-eve-ua/README.md E1a: UA from idle keeps state 12 for 57 ticks (54 anim frames + 3), which is the 54-tick native track of taunt_body plus the usual 3 recovery ticks, and repo:docs/rebuild/characters/eve.kit.json ULTIMATE idle_return/air_anim_len 57. The track runs from move tick 0."
+        ],
+        "playback": "default",
+        "sequence": "taunt_body"
       }
     },
     "projectile": {},
