@@ -620,6 +620,93 @@
  {
   "seqarc": 122,
   "seqarc_name": "SEQ_BATTLE",
+  "index": 25,
+  "name": "SE_HVYSWDFURI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 107,
+  "notes": [
+   {
+    "key": 45,
+    "velocity": 127,
+    "length": 8,
+    "program": 37,
+    "type": 1,
+    "swar": 0,
+    "swav": 50
+   },
+   {
+    "key": 57,
+    "velocity": 122,
+    "length": 18,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   },
+   {
+    "key": 57,
+    "velocity": 60,
+    "length": 18,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   },
+   {
+    "key": 57,
+    "velocity": 40,
+    "length": 12,
+    "program": 18,
+    "type": 1,
+    "swar": 0,
+    "swav": 33
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 13827,
+  "seconds": 0.422,
+  "audible_seconds": 0.369,
+  "starts_at_s": 0.006,
+  "peak_dbfs": -9.2,
+  "rms_dbfs": -20.9,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_19_SE_HVYSWDFURI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
+  "index": 26,
+  "name": "SE_TUKI",
+  "bank": 55,
+  "bank_name": "BANK_SE_BATTLE",
+  "ssar_volume": 112,
+  "notes": [
+   {
+    "key": 60,
+    "velocity": 127,
+    "length": 0,
+    "program": 37,
+    "type": 1,
+    "swar": 0,
+    "swav": 50
+   }
+  ],
+  "problems": [],
+  "hit_cap": false,
+  "samples": 2731,
+  "seconds": 0.083,
+  "audible_seconds": 0.076,
+  "starts_at_s": 0.005,
+  "peak_dbfs": -8.6,
+  "rms_dbfs": -21.3,
+  "silent": false,
+  "wav": "jus_files/extracted/vfx-sfx/render/wav/SEQ_BATTLE_1a_SE_TUKI.wav"
+ },
+ {
+  "seqarc": 122,
+  "seqarc_name": "SEQ_BATTLE",
   "index": 13,
   "name": "SE_PLUSFEEL",
   "bank": 55,
