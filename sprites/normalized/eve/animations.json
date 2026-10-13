@@ -196,7 +196,7 @@
       }
     },
     "move": {
-      "ULTIMATE": {
+      "ultimate": {
         "active": true,
         "evidence": [
           "repo:docs/research/feel-captures/2026-10-13-eve-ua/README.md E1a: UA from idle keeps state 12 for 57 ticks (54 anim frames + 3), which is the 54-tick native track of taunt_body plus the usual 3 recovery ticks, and repo:docs/rebuild/characters/eve.kit.json ULTIMATE idle_return/air_anim_len 57. The track runs from move tick 0."
