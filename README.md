@@ -1,14 +1,15 @@
 # jus_files
 
-Private reference data for Jump Ultimate Stars research. [jus_re](https://github.com/bound-fullbleed/jus_re)
-uses this repository as its `jus_files/` submodule. JUSToolkit also consumes it.
-The separate [bound-fullbleed](https://github.com/bound-fullbleed/bound-fullbleed) game repository
-copies selected proof-of-concept assets into `game/assets/poc_jus/`.
+Private reference data for Jump Ultimate Stars research.
+[jus-research](https://github.com/JUS-Reverse-Engineering/jus-research) uses this repository
+as its `jus_files/` submodule, and [JUSToolkit](https://github.com/JUS-Reverse-Engineering/JUSToolkit)
+also consumes it.
 
 ## Get the reference files
 
-Clone jus_re with `git clone --recurse-submodules git@github.com:bound-fullbleed/jus_re.git`.
-You need access to both private repositories. From an existing jus_re checkout,
+Clone jus-research with
+`git clone --recurse-submodules git@github.com:JUS-Reverse-Engineering/jus-research.git`.
+You need access to both private repositories. From an existing checkout,
 run `git submodule update --init --recursive` to get its pinned data revision.
 
 All files present here are versioned, including generated sprite splits, captures,
@@ -17,7 +18,7 @@ No raw cartridge image is present in this checkout. A clone therefore does not
 supply the ROM needed to run the emulator.
 
 Commit and push data changes here first, then commit the updated submodule pin
-in jus_re. A parent commit alone does not publish submodule content.
+in the parent repository. A parent commit alone does not publish submodule content.
 
 ## Contents
 
@@ -35,13 +36,13 @@ in jus_re. A parent commit alone does not publish submodule content.
 
 Read [the savestate index](save_states/INDEX.md) before loading a state.
 Read [the sprite guide](sprites/README.md) before refreshing sprite sources.
-Research claims and measurement tools belong in jus_re. Use its `GO.md`,
-`AGENTS.md`, and `docs/confirmed-facts/` to interpret these files.
+Research claims and measurement tools belong in jus-research. Use its
+`docs/confirmed-facts/` to interpret these files.
 A tracked capture preserves evidence; its presence does not establish a PASS.
 
 ## arm9/ — the important one for reverse engineering
 
-Regenerate with, from the jus_re checkout:
+Regenerate with, from the jus-research checkout:
 
 ```bash
 python3 scripts/extract_arm9.py /path/to/jus.nds jus_files/arm9
