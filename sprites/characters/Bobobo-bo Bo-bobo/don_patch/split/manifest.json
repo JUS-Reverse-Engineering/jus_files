@@ -5046,7 +5046,7 @@
    "strip": 58
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Bobobo-bo Bo-bobo__Don_Patch.json",
+ "adjudication": "<adjudications>/Bobobo-bo Bo-bobo__Don_Patch.json",
  "stats": {
   "applied": 27,
   "unmatched": 0,

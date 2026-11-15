@@ -5768,7 +5768,7 @@
    "strip": 80
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dr. Slump__Arale.json",
+ "adjudication": "<adjudications>/Dr. Slump__Arale.json",
  "stats": {
   "applied": 54,
   "unmatched": 0,

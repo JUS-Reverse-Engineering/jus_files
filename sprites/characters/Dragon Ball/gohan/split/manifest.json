@@ -5676,7 +5676,7 @@
    "strip": 68
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Gohan.json",
+ "adjudication": "<adjudications>/Dragon Ball__Gohan.json",
  "stats": {
   "applied": 16,
   "unmatched": 0,

@@ -4375,7 +4375,7 @@
    "strip": 41
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/YuYu Hakusho__Yusuke_Urameshi.json",
+ "adjudication": "<adjudications>/YuYu Hakusho__Yusuke_Urameshi.json",
  "stats": {
   "applied": 26,
   "unmatched": 0,

@@ -3184,7 +3184,7 @@
    "strip": 32
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Black Cat__Train_Heartnet.json",
+ "adjudication": "<adjudications>/Black Cat__Train_Heartnet.json",
  "stats": {
   "applied": 39,
   "unmatched": 0,

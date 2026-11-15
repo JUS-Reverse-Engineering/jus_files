@@ -3726,7 +3726,7 @@
    "strip": 34
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/JoJos Bizarre Adventure__Jotaro_Kujo.json",
+ "adjudication": "<adjudications>/JoJos Bizarre Adventure__Jotaro_Kujo.json",
  "stats": {
   "applied": 8,
   "unmatched": 0,

@@ -5952,7 +5952,7 @@
    "strip": 56
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Nami.json",
+ "adjudication": "<adjudications>/One Piece__Nami.json",
  "stats": {
   "applied": 6,
   "unmatched": 0,

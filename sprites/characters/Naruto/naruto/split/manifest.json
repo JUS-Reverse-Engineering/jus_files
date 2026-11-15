@@ -10168,7 +10168,7 @@
    "strip": 112
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Naruto__Naruto.json",
+ "adjudication": "<adjudications>/Naruto__Naruto.json",
  "stats": {
   "applied": 48,
   "unmatched": 0,

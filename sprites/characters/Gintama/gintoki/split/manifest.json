@@ -4295,7 +4295,7 @@
    "strip": 33
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Gintama__Gintoki.json",
+ "adjudication": "<adjudications>/Gintama__Gintoki.json",
  "stats": {
   "applied": 23,
   "unmatched": 0,

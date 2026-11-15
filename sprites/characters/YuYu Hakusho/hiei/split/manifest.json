@@ -4322,7 +4322,7 @@
    "strip": 62
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/YuYu Hakusho__Hiei.json",
+ "adjudication": "<adjudications>/YuYu Hakusho__Hiei.json",
  "stats": {
   "applied": 17,
   "unmatched": 0,

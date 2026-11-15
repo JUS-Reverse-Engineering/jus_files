@@ -3764,7 +3764,7 @@
    "strip": 44
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Naruto__Sakura.json",
+ "adjudication": "<adjudications>/Naruto__Sakura.json",
  "stats": {
   "applied": 35,
   "unmatched": 0,

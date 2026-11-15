@@ -40,7 +40,7 @@
     "special_strips.py": "0925863ab60538fe2995176f2be04b413fc67be2be0c467b55803e25d1dab3de"
   },
   "manual_fallback": {
-    "path": "game/assets/poc_jus/kakashi/projectiles/shot_mangekyou_eye_k6.png",
+    "path": "<assets>/kakashi/projectiles/shot_mangekyou_eye_k6.png",
     "sha256": "8bc2a20fa89261a657490df04d0945de4f6d3143f78822df3c591f44d3e9be91",
     "size": [
       320,

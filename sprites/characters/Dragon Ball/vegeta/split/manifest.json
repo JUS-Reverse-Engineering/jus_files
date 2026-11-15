@@ -5212,7 +5212,7 @@
    "strip": 68
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Vegeta.json",
+ "adjudication": "<adjudications>/Dragon Ball__Vegeta.json",
  "stats": {
   "applied": 21,
   "unmatched": 0,

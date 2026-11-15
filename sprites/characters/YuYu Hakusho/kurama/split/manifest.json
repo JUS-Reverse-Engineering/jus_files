@@ -5035,7 +5035,7 @@
    "strip": 69
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/YuYu Hakusho__Kurama.json",
+ "adjudication": "<adjudications>/YuYu Hakusho__Kurama.json",
  "stats": {
   "applied": 18,
   "unmatched": 0,

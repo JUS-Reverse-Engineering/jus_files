@@ -7456,7 +7456,7 @@
    "strip": 64
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Sanji.json",
+ "adjudication": "<adjudications>/One Piece__Sanji.json",
  "stats": {
   "applied": 28,
   "unmatched": 0,

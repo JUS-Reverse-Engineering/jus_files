@@ -8495,7 +8495,7 @@
    "strip": 89
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Goku.json",
+ "adjudication": "<adjudications>/Dragon Ball__Goku.json",
  "stats": {
   "applied": 3,
   "unmatched": 0,

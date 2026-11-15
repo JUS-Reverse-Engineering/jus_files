@@ -6238,7 +6238,7 @@
    "strip": 66
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Gotenks.json",
+ "adjudication": "<adjudications>/Dragon Ball__Gotenks.json",
  "stats": {
   "applied": 136,
   "unmatched": 0,
