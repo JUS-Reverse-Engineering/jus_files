@@ -3102,7 +3102,7 @@
    "strip": 34
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Hunter x Hunter__Gon_Freecss.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Hunter x Hunter__Gon_Freecss.json",
  "stats": {
   "applied": 60,
   "unmatched": 0,

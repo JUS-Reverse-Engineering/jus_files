@@ -6275,7 +6275,7 @@
    "strip": 93
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Yu-Gi-Oh!__Yugi.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Yu-Gi-Oh!__Yugi.json",
  "stats": {
   "applied": 44,
   "unmatched": 0,

@@ -3624,7 +3624,7 @@
    "strip": 40
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Bleach__Rukia_Kuchiki.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Bleach__Rukia_Kuchiki.json",
  "stats": {
   "applied": 24,
   "unmatched": 0,

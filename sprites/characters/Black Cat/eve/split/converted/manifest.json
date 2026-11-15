@@ -2839,7 +2839,7 @@
    "strip": 33
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Black Cat__Eve.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Black Cat__Eve.json",
  "stats": {
   "applied": 20,
   "unmatched": 0,

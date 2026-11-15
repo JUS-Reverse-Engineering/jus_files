@@ -9194,7 +9194,7 @@
    "strip": 126
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Bleach__Ichigo_Kurosaki.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Bleach__Ichigo_Kurosaki.json",
  "stats": {
   "applied": 37,
   "unmatched": 0,

@@ -1,5 +1,5 @@
 {
- "rom": "/Users/djdjo/Documents/mine/rom/jus.nds",
+ "rom": "<rom-dir>/jus.nds",
  "title": "JUS",
  "gamecode": "AJUJ",
  "rom_bytes": 67108864,

@@ -2615,7 +2615,7 @@
    "strip": 25
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Saint Seiya__Pegasus_Seiya_8_koma.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Saint Seiya__Pegasus_Seiya_8_koma.json",
  "stats": {
   "applied": 14,
   "unmatched": 0,

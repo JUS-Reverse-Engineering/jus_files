@@ -3751,7 +3751,7 @@
    "strip": 33
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Houshin Engi__Taikobo.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Houshin Engi__Taikobo.json",
  "stats": {
   "applied": 29,
   "unmatched": 0,

@@ -5013,7 +5013,7 @@
    "strip": 83
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Bleach__Renji_Abarai.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Bleach__Renji_Abarai.json",
  "stats": {
   "applied": 32,
   "unmatched": 0,

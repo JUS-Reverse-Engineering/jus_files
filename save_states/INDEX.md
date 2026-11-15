@@ -120,7 +120,7 @@ The glob above loads only top-level states, not this nested corpus.
 ### Charge-transfer empowerment states (22, owner-built 2026-09-11)
 
 Owner pause-menu saves for `jus-charge-transfer-empowerment-pb64`, supplied in
-`/Users/djdjo/Desktop/savestates/charge-state-research`. One state per
+`<savestates-dir>/charge-state-research`. One state per
 (observer, charge source) pair; slot names are the owner's, kept verbatim.
 All are savestate major 14 (same fork as the 2026-09-10 projectile batch).
 **Roster, form (Ichigo 4/5/6 vs 7/8), and charge-source identity are NOT yet

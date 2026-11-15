@@ -4576,7 +4576,7 @@
    "strip": 48
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Pyu to Fuku Jaguar__Jaguar.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Pyu to Fuku Jaguar__Jaguar.json",
  "stats": {
   "applied": 32,
   "unmatched": 0,

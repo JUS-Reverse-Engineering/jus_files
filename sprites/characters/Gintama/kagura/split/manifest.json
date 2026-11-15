@@ -2258,7 +2258,7 @@
    "strip": 30
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Gintama__Kagura.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Gintama__Kagura.json",
  "stats": {
   "applied": 52,
   "unmatched": 0,

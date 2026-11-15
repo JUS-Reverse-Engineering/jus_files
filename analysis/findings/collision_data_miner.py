@@ -21,7 +21,7 @@ set iteration order in any printed output. Running this script twice must
 produce byte-identical stdout.
 
 Run with:
-    /Users/djdjo/Documents/mine/JUSToolkit/.claude/worktrees/battle-engine-atlas/scripts/analysis/.venv/bin/python \
+    <venv>/bin/python \
         jus_files/analysis/findings/collision_data_miner.py
 (plain python3 works equally well; the venv is only needed by other tracer
 scripts in this directory that import capstone.)
@@ -33,7 +33,10 @@ import os
 import statistics
 import collections
 
-COMBAT_DIR = "/Users/djdjo/Documents/mine/JUSToolkit/jus_files/exported_combat"
+COMBAT_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+    "exported_combat",
+)
 JPOWER_PATH = os.path.join(COMBAT_DIR, "jpower.json")
 CHR_B_PATH = os.path.join(COMBAT_DIR, "chr_b.json")
 

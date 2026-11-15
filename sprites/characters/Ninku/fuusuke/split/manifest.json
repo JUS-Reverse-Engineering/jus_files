@@ -4238,7 +4238,7 @@
    "strip": 50
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Ninku__Fuusuke.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Ninku__Fuusuke.json",
  "stats": {
   "applied": 80,
   "unmatched": 0,
