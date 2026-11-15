@@ -52,7 +52,7 @@ The following attack and combo details were extracted into `docs/research/gamefa
 
 ### Yusuke — FAQ 46607
 
-**Source:** `46607-yusuke.txt`; author: Matflipped@aol.com or Brawlfan08.
+**Source:** `46607-yusuke.txt`; author: Brawlfan08 (also credited as Matflipped).
 
 #### Basic attacks and actions
 
