@@ -7444,7 +7444,7 @@
    "strip": 92
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Monkey_D_Luffy.json",
+ "adjudication": "<adjudications>/One Piece__Monkey_D_Luffy.json",
  "stats": {
   "applied": 50,
   "unmatched": 0,

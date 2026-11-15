@@ -2757,7 +2757,7 @@
    "strip": 27
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Piccolo.json",
+ "adjudication": "<adjudications>/Dragon Ball__Piccolo.json",
  "stats": {
   "applied": 27,
   "unmatched": 0,

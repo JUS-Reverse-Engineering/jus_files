@@ -3609,7 +3609,7 @@
    "strip": 39
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Bleach__Toshiro_Hitsugaya.json",
+ "adjudication": "<adjudications>/Bleach__Toshiro_Hitsugaya.json",
  "stats": {
   "applied": 26,
   "unmatched": 0,

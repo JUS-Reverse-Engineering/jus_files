@@ -2983,7 +2983,7 @@
    "strip": 33
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Roronoa_Zoro.json",
+ "adjudication": "<adjudications>/One Piece__Roronoa_Zoro.json",
  "stats": {
   "applied": 33,
   "unmatched": 0,

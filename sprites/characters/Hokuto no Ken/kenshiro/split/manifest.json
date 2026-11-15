@@ -3709,7 +3709,7 @@
    "strip": 51
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Hokuto no Ken__Kenshiro.json",
+ "adjudication": "<adjudications>/Hokuto no Ken__Kenshiro.json",
  "stats": {
   "applied": 14,
   "unmatched": 0,

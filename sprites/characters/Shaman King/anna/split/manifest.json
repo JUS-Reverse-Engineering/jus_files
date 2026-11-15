@@ -2601,7 +2601,7 @@
    "strip": 31
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Shaman King__Anna.json",
+ "adjudication": "<adjudications>/Shaman King__Anna.json",
  "stats": {
   "applied": 2,
   "unmatched": 0,

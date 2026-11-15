@@ -4487,7 +4487,7 @@
    "strip": 57
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Franky.json",
+ "adjudication": "<adjudications>/One Piece__Franky.json",
  "stats": {
   "applied": 18,
   "unmatched": 0,

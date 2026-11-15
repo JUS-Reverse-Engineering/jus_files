@@ -6321,7 +6321,7 @@
    "strip": 39
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Rurouni Kenshin__Kenshin_Himura.json",
+ "adjudication": "<adjudications>/Rurouni Kenshin__Kenshin_Himura.json",
  "stats": {
   "applied": 52,
   "unmatched": 0,

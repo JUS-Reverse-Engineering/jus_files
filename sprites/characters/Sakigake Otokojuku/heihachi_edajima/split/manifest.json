@@ -3575,7 +3575,7 @@
    "strip": 49
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Sakigake Otokojuku__Heihachi_Edajima.json",
+ "adjudication": "<adjudications>/Sakigake Otokojuku__Heihachi_Edajima.json",
  "stats": {
   "applied": 12,
   "unmatched": 0,

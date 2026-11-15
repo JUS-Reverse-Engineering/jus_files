@@ -4570,7 +4570,7 @@
    "strip": 54
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/D.Gray-man__Lenalee_Lee.json",
+ "adjudication": "<adjudications>/D.Gray-man__Lenalee_Lee.json",
  "stats": {
   "applied": 15,
   "unmatched": 0,

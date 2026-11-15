@@ -7275,7 +7275,7 @@
    "strip": 61
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/D.Gray-man__Allen_Walker.json",
+ "adjudication": "<adjudications>/D.Gray-man__Allen_Walker.json",
  "stats": {
   "applied": 15,
   "unmatched": 0,

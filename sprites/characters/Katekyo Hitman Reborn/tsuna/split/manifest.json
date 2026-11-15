@@ -5250,7 +5250,7 @@
    "strip": 38
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Katekyo Hitman Reborn__Tsuna.json",
+ "adjudication": "<adjudications>/Katekyo Hitman Reborn__Tsuna.json",
  "stats": {
   "applied": 18,
   "unmatched": 0,

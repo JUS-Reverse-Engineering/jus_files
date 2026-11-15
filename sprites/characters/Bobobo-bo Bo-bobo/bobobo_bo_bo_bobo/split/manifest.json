@@ -5560,7 +5560,7 @@
    "strip": 80
   }
  ],
- "adjudication": "<workspace>/tools/poc_jus/adjudications/Bobobo-bo Bo-bobo__Bobobo_bo_Bo_bobo.json",
+ "adjudication": "<adjudications>/Bobobo-bo Bo-bobo__Bobobo_bo_Bo_bobo.json",
  "stats": {
   "applied": 64,
   "unmatched": 0,
