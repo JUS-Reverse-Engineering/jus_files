@@ -592,10 +592,10 @@
     {
       "source_path": "JOTARO KUJO/kit.md",
       "archive_path": "JOTARO KUJO/kit.md",
-      "source_bytes": 8432,
-      "source_sha256": "40062fef8aef80d0858065359531482aa8b556b91a2616ec865443c697f0e72e",
-      "archive_bytes": 8432,
-      "archive_sha256": "40062fef8aef80d0858065359531482aa8b556b91a2616ec865443c697f0e72e"
+      "source_bytes": 8394,
+      "source_sha256": "5c7cd961043b5b94c790b7a35fcb7a8d19d6cb94711714b2c4150e9ecb941558",
+      "archive_bytes": 8394,
+      "archive_sha256": "5c7cd961043b5b94c790b7a35fcb7a8d19d6cb94711714b2c4150e9ecb941558"
     },
     {
       "source_path": "KAGURA/4.mln",
@@ -1320,10 +1320,10 @@
     {
       "source_path": "RUKIA KUCHIKI/kit.md",
       "archive_path": "RUKIA KUCHIKI/kit.md",
-      "source_bytes": 8190,
-      "source_sha256": "ff27a08ae06e84c22107eda2bd448821029fa007dc22f550f47d722a9ff78d3d",
-      "archive_bytes": 8190,
-      "archive_sha256": "ff27a08ae06e84c22107eda2bd448821029fa007dc22f550f47d722a9ff78d3d"
+      "source_bytes": 8169,
+      "source_sha256": "dc1fa8188c5cbd408757163b2bd6252e9fd8f777ec02555b2588aafb98d8730a",
+      "archive_bytes": 8169,
+      "archive_sha256": "dc1fa8188c5cbd408757163b2bd6252e9fd8f777ec02555b2588aafb98d8730a"
     },
     {
       "source_path": "RYOTSU KANKICHI/4.mln",
@@ -1424,10 +1424,10 @@
     {
       "source_path": "SANJI/kit.md",
       "archive_path": "SANJI/kit.md",
-      "source_bytes": 11484,
-      "source_sha256": "539a2c3e8bde9932105bdd2dfef302d7b515af8ac0d981e7803379909190dcc4",
-      "archive_bytes": 11484,
-      "archive_sha256": "539a2c3e8bde9932105bdd2dfef302d7b515af8ac0d981e7803379909190dcc4"
+      "source_bytes": 11464,
+      "source_sha256": "7c535a6f16af50fda96ac0e82fe4fddbc3f7af86ba1596bad0a4dcb5fdf973e5",
+      "archive_bytes": 11464,
+      "archive_sha256": "7c535a6f16af50fda96ac0e82fe4fddbc3f7af86ba1596bad0a4dcb5fdf973e5"
     },
     {
       "source_path": "SASUKE UCHIHA/7.mln",
@@ -1816,10 +1816,10 @@
     {
       "source_path": "YUSUKE URAMESHI/kit.md",
       "archive_path": "YUSUKE URAMESHI/kit.md",
-      "source_bytes": 8028,
-      "source_sha256": "50433aedb2263c27979ba706f4cd5996499d8da5b6351f53503df9884ac7ffaa",
-      "archive_bytes": 8028,
-      "archive_sha256": "50433aedb2263c27979ba706f4cd5996499d8da5b6351f53503df9884ac7ffaa"
+      "source_bytes": 8036,
+      "source_sha256": "6fa9a24e421f6088a5b5ff843f28ef2314eab27a4de244460c9419d6e07e5513",
+      "archive_bytes": 8036,
+      "archive_sha256": "6fa9a24e421f6088a5b5ff843f28ef2314eab27a4de244460c9419d6e07e5513"
     }
   ]
 }

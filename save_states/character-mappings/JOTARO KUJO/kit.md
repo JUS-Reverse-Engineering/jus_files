@@ -60,7 +60,7 @@ The following attack and combo details were extracted into `docs/research/gamefa
 
 ### Jotaro — FAQ 46754
 
-**Source:** `46754-jotaro.txt`; author: Evil.Soldier.347 (contact: Evil.Soldier.347@gmail.com).
+**Source:** `46754-jotaro.txt`; author: Evil.Soldier.347.
 
 #### Basic attacks and actions
 

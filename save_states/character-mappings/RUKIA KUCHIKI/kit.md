@@ -54,7 +54,7 @@ The following attack and combo details were extracted into `docs/research/gamefa
 
 ### Rukia — FAQ 46229
 
-**Source:** `46229-rukia.txt`; author: Shiroiame (tennoame@gmail.com).
+**Source:** `46229-rukia.txt`; author: Shiroiame.
 
 #### Basic attacks and actions
 
