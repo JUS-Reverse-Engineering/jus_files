@@ -4954,7 +4954,7 @@
    "strip": 54
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Majin Tantei Nogami Neuro__Neuro_Nogami.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Majin Tantei Nogami Neuro__Neuro_Nogami.json",
  "stats": {
   "applied": 7,
   "unmatched": 0,

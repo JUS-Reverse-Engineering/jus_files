@@ -3903,7 +3903,7 @@
    "strip": 41
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Naruto__Sasuke.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Naruto__Sasuke.json",
  "stats": {
   "applied": 31,
   "unmatched": 0,

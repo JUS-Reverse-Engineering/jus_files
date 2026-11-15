@@ -5522,7 +5522,7 @@
    "strip": 70
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Hokuto no Ken__Raoh.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Hokuto no Ken__Raoh.json",
  "stats": {
   "applied": 26,
   "unmatched": 0,

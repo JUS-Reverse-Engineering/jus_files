@@ -5391,7 +5391,7 @@
    "strip": 65
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Kinnikuman__Kinnikuman.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Kinnikuman__Kinnikuman.json",
  "stats": {
   "applied": 49,
   "unmatched": 0,

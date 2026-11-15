@@ -3703,7 +3703,7 @@
    "strip": 57
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/JoJos Bizarre Adventure__Dio_Brando.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/JoJos Bizarre Adventure__Dio_Brando.json",
  "stats": {
   "applied": 9,
   "unmatched": 0,

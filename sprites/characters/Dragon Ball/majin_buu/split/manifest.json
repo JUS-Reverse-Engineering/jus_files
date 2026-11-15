@@ -2597,7 +2597,7 @@
    "strip": 27
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Dragon Ball__Majin_Buu.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Majin_Buu.json",
  "stats": {
   "applied": 12,
   "unmatched": 0,

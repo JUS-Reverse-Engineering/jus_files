@@ -4030,7 +4030,7 @@
    "strip": 42
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Buso Renkin__Kazuki.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Buso Renkin__Kazuki.json",
  "stats": {
   "applied": 25,
   "unmatched": 0,

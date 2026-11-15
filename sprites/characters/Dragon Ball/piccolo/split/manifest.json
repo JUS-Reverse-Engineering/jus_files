@@ -2757,7 +2757,7 @@
    "strip": 27
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Dragon Ball__Piccolo.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Piccolo.json",
  "stats": {
   "applied": 27,
   "unmatched": 0,

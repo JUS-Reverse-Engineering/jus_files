@@ -4596,7 +4596,7 @@
    "strip": 60
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Sakigake Otokojuku__Momotaro.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Sakigake Otokojuku__Momotaro.json",
  "stats": {
   "applied": 62,
   "unmatched": 0,

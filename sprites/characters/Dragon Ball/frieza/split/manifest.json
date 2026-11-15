@@ -2694,7 +2694,7 @@
    "strip": 34
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Dragon Ball__Frieza.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Dragon Ball__Frieza.json",
  "stats": {
   "applied": 18,
   "unmatched": 0,

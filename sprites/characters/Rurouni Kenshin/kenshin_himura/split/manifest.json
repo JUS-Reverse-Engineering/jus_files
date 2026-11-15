@@ -6321,7 +6321,7 @@
    "strip": 39
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Rurouni Kenshin__Kenshin_Himura.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Rurouni Kenshin__Kenshin_Himura.json",
  "stats": {
   "applied": 52,
   "unmatched": 0,

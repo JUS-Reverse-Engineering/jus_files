@@ -4977,7 +4977,7 @@
    "strip": 63
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/One Piece__Nico_Robin.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/One Piece__Nico_Robin.json",
  "stats": {
   "applied": 29,
   "unmatched": 0,

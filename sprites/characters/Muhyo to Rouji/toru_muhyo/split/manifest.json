@@ -4254,7 +4254,7 @@
    "strip": 50
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Muhyo to Rouji__Toru_Muhyo.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Muhyo to Rouji__Toru_Muhyo.json",
  "stats": {
   "applied": 16,
   "unmatched": 0,

@@ -4950,7 +4950,7 @@
    "strip": 50
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Dr. Slump__Dr_Mashirito.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Dr. Slump__Dr_Mashirito.json",
  "stats": {
   "applied": 22,
   "unmatched": 0,

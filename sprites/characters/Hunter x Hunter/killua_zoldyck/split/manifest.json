@@ -3422,7 +3422,7 @@
    "strip": 42
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Hunter x Hunter__Killua_Zoldyck.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Hunter x Hunter__Killua_Zoldyck.json",
  "stats": {
   "applied": 14,
   "unmatched": 0,

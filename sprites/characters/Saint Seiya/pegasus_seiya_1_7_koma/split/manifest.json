@@ -6019,7 +6019,7 @@
    "strip": 85
   }
  ],
- "adjudication": "/Users/djdjo/Documents/mine/bound-fullbleed/tools/poc_jus/adjudications/Saint Seiya__Pegasus_Seiya_1_7_koma.json",
+ "adjudication": "<workspace>/tools/poc_jus/adjudications/Saint Seiya__Pegasus_Seiya_1_7_koma.json",
  "stats": {
   "applied": 8,
   "unmatched": 0,
